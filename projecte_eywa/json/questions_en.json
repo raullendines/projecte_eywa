@@ -1,0 +1,384 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "Name the administrator of Cloud City who appears in The Empire Strikes Back?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Lando Calrissian ",
+      "incorrect_answers": [
+        "Chewbacca",
+        "Han Solo",
+        "Senador Bail Organa"
+
+      ]
+    },
+    {
+      "id": "2",
+      "question": "Who plays Luke Skywalker throughout the series?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Mark Hamill",
+      "incorrect_answers": [
+        "Will Smith",
+        "Leonardo DiCaprio",
+        "Tom Cruise"
+
+      ]
+    },
+    {
+      "id": "3",
+      "question": "Which character, in Return of the Jedi says “it’s a trap!”?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Admiral Ackbar",
+      "incorrect_answers": [
+        "Luke Skywalker",
+        "Greedo",
+        "Biggs Darklighter"
+
+      ]
+    },
+    {
+      "id": "4",
+      "question": "What year did the first Star Wars film come out?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "1977",
+      "incorrect_answers": [
+        "2004",
+        "1989",
+        "1944"
+
+      ]
+    },
+    {
+      "id": "5",
+      "question": "Which planet is Jar Jar Binks from?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Naboo",
+      "incorrect_answers": [
+        "Tatooine",
+        "Coruscant",
+        "Alderaan"
+
+      ]
+    },
+    {
+      "id": "6",
+      "question": "10. Ewan Macgregor and Alec Guinness play which character?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Obi Wan Kenobi",
+      "incorrect_answers": [
+        "Owen Lars",
+        "C-3PO",
+        "Anakin Skywalker"
+
+      ]
+    },
+    {
+      "id": "7",
+      "question": "In Blade Runner, the artificial humans are formally called what?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Replicant",
+      "incorrect_answers": [
+        "Recombinant",
+        "Synthezoid",
+        "Android"
+
+      ]
+    },
+    {
+      "id": "8",
+      "question": "Who directed Blade Runner, in addition to the sci-fi classic Alien?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Ridley Scott",
+      "incorrect_answers": [
+        "Steven Spielberg",
+        "George Lucas",
+        "M. Night Shyamalan"
+
+      ]
+    },
+    {
+      "id": "9",
+      "question": "In Interestellar, what natural disaster is happening on Earth, that will eventually cause the human race to go extinct?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Dust Storms",
+      "incorrect_answers": [
+        "Earthquakes",
+        "Volcanoes",
+        "Hurricanes"
+
+      ]
+    },
+    {
+      "id": "10",
+      "question": "In Interestellar, What does the message from the ghost say in Murphy's room.",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "STAY",
+      "incorrect_answers": [
+        "I Love You",
+        "Go to Miller's Planet",
+        "Leave Now"
+
+      ]
+    },
+    {
+      "id": "11",
+      "question": "In Interestellar, why does Dr. Mann lie about his planet?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "He wants to live - survival instinct!",
+      "incorrect_answers": [
+        "He wants his planet to the be the one humans live on.",
+        "He believes there are 2 planets humans can live on.",
+        "He doesn't lie."
+
+      ]
+    },
+    {
+      "id": "12",
+      "question": "In Matrix, What exactly did taking the red pill mean?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "The red pill allows us to free ourselves from the virtual reality of the Matrix and lead us to the real world",
+      "incorrect_answers": [
+        "The red pill allows you to forget everything that happened and stay in the virtual reality of the Matrix",
+        "The red pill allows you to jump to another dimension",
+        "The red pill allows you to remember the past and foresee the future"
+
+      ]
+    },
+    {
+      "id": "13",
+      "question": "In Matrix, to find Trinity, Neo must follow...",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "A white rabbit, just like in Alice in Wonderland",
+      "incorrect_answers": [
+        "A white snake",
+        "A white owl",
+        "A white pigeon"
+
+      ]
+    },
+    {
+      "id": "14",
+      "question": "In Matrix, what was the job of Thomas Anderson (Neo) before starting his particular adventure?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Programmer",
+      "incorrect_answers": [
+        "Computer technical service",
+        "Hardware designer",
+        "professional gamer"
+
+      ]
+    },
+    {
+      "id": "15",
+      "question": "In 2001: A Space Odyssey, What airline's name appeared on the spacecraft that Dr. Heywood Floyd took to get to the space station?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Pan Am",
+      "incorrect_answers": [
+        "Ryanair",
+        "AmericanAirlines",
+        "easyJet"
+
+      ]
+    },
+    {
+      "id": "16",
+      "question": "In Back to the future, which type of car is converted into a time machine?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "DeLorean",
+      "incorrect_answers": [
+        "Dodge",
+        "Mitsubishi",
+        "Ferrari"
+
+      ]
+    },
+    {
+      "id": "17",
+      "question": "Who directed Back to the Future?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Robert Zemeckis",
+      "incorrect_answers": [
+        "Steven Spielberg",
+        "George Lucas",
+        "Ron Howard"
+
+      ]
+    },
+    {
+      "id": "18",
+      "question": "In Back to the future, what speed did the DeLorean need to hit to be able to time travel?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "88mph / 141kmh",
+      "incorrect_answers": [
+        "73mph / 117 kmh",
+        "76mph / 122 kmh",
+        "80mph / 128 kmh"
+
+      ]
+    },
+    {
+      "id": "19",
+      "question": "In Inception, why is Cobb wanted by the police?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "He murdered his wife",
+      "incorrect_answers": [
+        "He robbed a big company",
+        "He is a serial killer",
+        "He sneaks into other's dreams"
+
+      ]
+    },
+    {
+      "id": "20",
+      "question": "In Arrival (2016), the aliens are called...",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Heptapods",
+      "incorrect_answers": [
+        "Angosian",
+        "Talaxian",
+        "Xindi"
+
+      ]
+    },
+    {
+      "id": "21",
+      "category": "action",
+      "difficulty": "2",
+      "question": "This movie contains the quote, &quot;I love the smell of napalm in the morning!&quot;",
+      "correct_answer": "Apocalypse Now",
+      "incorrect_answers": [
+        "Platoon",
+        "The Deer Hunter",
+        "Full Metal Jacket"
+      ]
+    },
+    {
+      "id": "22",
+      "category": "action",
+      "difficulty": "2",
+      "question": "In the 1999 movie Fight Club, which of these is not a rule of the &quot;fight club&quot;?",
+      "correct_answer": "Always wear a shirt",
+      "incorrect_answers": [
+        "You do not talk about FIGHT CLUB",
+        "Only two guys to a fight",
+        "Fights will go on as long as they have to"
+      ]
+    },
+    {
+      "id": "23",
+      "category": "action",
+      "difficulty": "1",
+      "question": "What was the first James Bond film?",
+      "correct_answer": "Dr. No",
+      "incorrect_answers": [
+        "Goldfinger",
+        "From Russia With Love",
+        "Thunderball"
+      ]
+    },
+    {
+      "id": "24",
+      "category": "action",
+      "difficulty": "2",
+      "question": "Which actors made up the trio in &quot;The Good, the Bad, and the Ugly&quot;? ",
+      "correct_answer": "Clint Eastwood, Eli Wallach, and Lee Van Cleef",
+      "incorrect_answers": [
+        "Sergio Leone, Ennio Morricone, and Tonino Delli Colli",
+        "Yul Brynner, Steve McQueen, and Charles Bronson",
+        "Aldo Giuffr&egrave;, Mario Brega, and Luigi Pistilli"
+      ]
+    },
+    {
+      "id": "25",
+      "category": "action",
+      "difficulty": "1",
+      "question": "Which movie contains the quote, &quot;Say hello to my little friend!&quot;?",
+      "correct_answer": "Scarface",
+      "incorrect_answers": [
+        "Reservoir Dogs",
+        "Heat",
+        "Goodfellas"
+      ]
+    },
+    {
+      "id": "26",
+      "category": "action",
+      "difficulty": "1",
+      "question": "Leonardo Di Caprio won his first Best Actor Oscar for his performance in which film?",
+      "correct_answer": "The Revenant",
+      "incorrect_answers": [
+        "The Wolf Of Wall Street",
+        "Shutter Island",
+        "Inception"
+      ]
+    },
+    {
+      "id": "27",
+      "category": "action",
+      "difficulty": "1",
+      "question": "Who plays &quot;Bruce Wayne&quot; in the 2008 movie &quot;The Dark Knight&quot;?",
+      "correct_answer": "Christian Bale",
+      "incorrect_answers": [
+        "Michael Caine",
+        "Ron Dean",
+        "Heath Ledger"
+      ]
+    },
+    {
+      "id": "28",
+      "category": "action",
+      "difficulty": "2",
+      "question": "In Mad Max Fury Road, How did War Boy, Nux, refer to Max?",
+      "correct_answer": "Blood Bag",
+      "incorrect_answers": [
+        "Slave",
+        "Body Bag",
+        "Meat"
+      ]
+    },
+    {
+      "id": "29",
+      "category": "action",
+      "difficulty": "1",
+      "question": "How many infinity stones are in MCU?",
+      "correct_answer": "6",
+      "incorrect_answers": [
+        "5",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "id": "30",
+      "category": "action",
+      "difficulty": "1",
+      "question": "What type of doctor is Doctor Strange?",
+      "correct_answer": "A neurosurgeon",
+      "incorrect_answers": [
+        "A Endocrinologist",
+        "A Nephrologist",
+        "A Oncologist"
+      ]
+    }
+  ]
+}

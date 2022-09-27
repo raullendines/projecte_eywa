@@ -1,0 +1,384 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "¿Como se llama el administrador de la Ciudad de las Nubes, que aparece en Star Wars, El Imperio Contraataca?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Lando Calrissian ",
+      "incorrect_answers": [
+        "Chewbacca",
+        "Han Solo",
+        "Senador Bail Organa"
+
+      ]
+    },
+    {
+      "id": "2",
+      "question": "¿Quién interpreta a Luke Skywalker a lo largo de la serie?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Mark Hamill",
+      "incorrect_answers": [
+        "Will Smith",
+        "Leonardo DiCaprio",
+        "Tom Cruise"
+
+      ]
+    },
+    {
+      "id": "3",
+      "question": "¿Qué personaje, en El retorno del Jedi, dice: &quot¡es una trampa!&quot",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Admiral Ackbar",
+      "incorrect_answers": [
+        "Luke Skywalker",
+        "Greedo",
+        "Biggs Darklighter"
+
+      ]
+    },
+    {
+      "id": "4",
+      "question": "¿En qué año se estrenó la primera película de Star Wars?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "1977",
+      "incorrect_answers": [
+        "2004",
+        "1989",
+        "1944"
+
+      ]
+    },
+    {
+      "id": "5",
+      "question": "¿De qué planeta es Jar Jar Binks?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Naboo",
+      "incorrect_answers": [
+        "Tatooine",
+        "Coruscant",
+        "Alderaan"
+
+      ]
+    },
+    {
+      "id": "6",
+      "question": "¿Ewan Macgregor y Alec Guinness interpretan a qué personaje?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Obi Wan Kenobi",
+      "incorrect_answers": [
+        "Owen Lars",
+        "C-3PO",
+        "Anakin Skywalker"
+
+      ]
+    },
+    {
+      "id": "7",
+      "question": "En &quotBlade Runner&quot, los humanos artificiales se llaman ¿cómo?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Replicante",
+      "incorrect_answers": [
+        "Recombinante",
+        "Sintezoide",
+        "Androide"
+
+      ]
+    },
+    {
+      "id": "8",
+      "question": "¿Quién dirigió &quotBlade Runner&quot, además del clásico de ciencia ficción &quotAlien&quot?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Ridley Scott",
+      "incorrect_answers": [
+        "Steven Spielberg",
+        "George Lucas",
+        "M. Night Shyamalan"
+
+      ]
+    },
+    {
+      "id": "9",
+      "question": "En Interestellar, ¿qué desastre natural está ocurriendo en la Tierra que finalmente provocará la extinción de la raza humana?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Tormentas de polvo",
+      "incorrect_answers": [
+        "Terremotos",
+        "Volcanes",
+        "Huracanes"
+
+      ]
+    },
+    {
+      "id": "10",
+      "question": "En Interestellar, ¿Qué dice el mensaje del fantasma en la habitación de Murphy?",
+      "category": "science fiction",
+      "difficulty": "1",
+      "correct_answer": "Quedate",
+      "incorrect_answers": [
+        "Te quiero",
+        "Ve al planeta de Miller",
+        "Vete"
+
+      ]
+    },
+    {
+      "id": "11",
+      "question": "En Interestellar, ¿por qué el Dr. Mann miente sobre su planeta?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Quiere vivir - Instinto de supervivencia",
+      "incorrect_answers": [
+        "Quiere que su planeta sea en el que vivan los humanos.",
+        "Él cree que hay 2 planetas en los que los humanos pueden vivir.",
+        "No miente"
+
+      ]
+    },
+    {
+      "id": "12",
+      "question": "En Matrix, ¿qué significa exactamente tomar la píldora roja?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "La pastilla roja nos permite liberarnos de la realidad virtual de Matrix y llevarnos al mundo real",
+      "incorrect_answers": [
+        "La pastilla roja te permite olvidar todo lo sucedido y permanecer en la realidad virtual de Matrix",
+        "La pastilla roja te permite saltar a otra dimensión",
+        "La pastilla roja te permite recordar el pasado y prever el futuro"
+
+      ]
+    },
+    {
+      "id": "13",
+      "question": "En Matrix, para encontrar a Trinity, Neo debe seguir...",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Un conejo blanco, como en Alicia en el país de las maravillas.",
+      "incorrect_answers": [
+        "Una serpiente blanca",
+        "Un búho blanco",
+        "Una paloma blanca"
+
+      ]
+    },
+    {
+      "id": "14",
+      "question": "En Matrix, ¿cuál era el trabajo de Thomas Anderson (Neo) antes de emprender su particular aventura?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Programador",
+      "incorrect_answers": [
+        "Servicio tecnico informatico",
+        "Diseñador de hardware",
+        "Jugador profesional"
+
+      ]
+    },
+    {
+      "id": "15",
+      "question": "En 2001: A Space Odyssey, ¿Qué nombre de aerolínea apareció en la nave espacial que tomó el Dr. Heywood Floyd para llegar a la estación espacial?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Pan Am",
+      "incorrect_answers": [
+        "Ryanair",
+        "AmericanAirlines",
+        "easyJet"
+
+      ]
+    },
+    {
+      "id": "16",
+      "question": "En Regreso al futuro, ¿qué tipo de automóvil se convierte en una máquina del tiempo?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "DeLorean",
+      "incorrect_answers": [
+        "Dodge",
+        "Mitsubishi",
+        "Ferrari"
+
+      ]
+    },
+    {
+      "id": "17",
+      "question": "¿Quién dirigió Regreso al futuro?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Robert Zemeckis",
+      "incorrect_answers": [
+        "Steven Spielberg",
+        "George Lucas",
+        "Ron Howard"
+
+      ]
+    },
+    {
+      "id": "18",
+      "question": "En Regreso al futuro, ¿qué velocidad necesitaba alcanzar el DeLorean para poder viajar en el tiempo?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "88mph / 141kmh",
+      "incorrect_answers": [
+        "73mph / 117 kmh",
+        "76mph / 122 kmh",
+        "80mph / 128 kmh"
+
+      ]
+    },
+    {
+      "id": "19",
+      "question": "En Origen, ¿por qué la policía busca a Cobb?",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Asesinó a su esposa",
+      "incorrect_answers": [
+        "Robó a una multinacional",
+        "Es un asesino en serie",
+        "Se cuela en los sueños de los demás."
+
+      ]
+    },
+    {
+      "id": "20",
+      "question": "En La Llegada (2016), los extraterrestres se llaman...",
+      "category": "science fiction",
+      "difficulty": "2",
+      "correct_answer": "Heptapods",
+      "incorrect_answers": [
+        "Angosian",
+        "Talaxian",
+        "Xindi"
+
+      ]
+    },
+    {
+      "id": "21",
+      "question": "¿En que película aparece la celebre cita: Me encanta el olor a napalm por la mañana!&quot?",
+      "category": "action",
+      "difficulty": "2",
+      "correct_answer": "Apocalypse Now",
+      "incorrect_answers": [
+        "Platoon",
+        "El Francotirador",
+        "La Chaqueta Metálica"
+      ]
+    },
+    {
+      "id": "22",
+      "question": "En la película El Club de la Lucha de 1999, ¿cuál de estas no es una regla del &quot;club de la lucha&quot;?",
+      "category": "action",
+      "difficulty": "2",
+      "correct_answer": "Siempre usa una camisa",
+      "incorrect_answers": [
+        "No hablas del Club de la Lucha",
+        "Solo dos chicos para una pelea",
+        "Las peleas continuarán mientras sea necesario."
+      ]
+    },
+    {
+      "id": "23",
+      "question": "¿Cuál fue la primera película de James Bond?",
+      "category": "action",
+      "difficulty": "1",
+      "correct_answer": "Agente 007 contra el Dr. No",
+      "incorrect_answers": [
+        "008 contra Goldfinger",
+        "Desde Rusia con Amor",
+        "Operación Trueno"
+      ]
+    },
+    {
+      "id": "24",
+      "question": "¿Qué actores componían el trío de &quot;El bueno, el feo y el malo&quot;? ",
+      "category": "action",
+      "difficulty": "2",
+      "correct_answer": "Clint Eastwood, Eli Wallach, and Lee Van Cleef",
+      "incorrect_answers": [
+        "Sergio Leone, Ennio Morricone, and Tonino Delli Colli",
+        "Yul Brynner, Steve McQueen, and Charles Bronson",
+        "Aldo Giuffr&egrave;, Mario Brega, and Luigi Pistilli"
+      ]
+    },
+    {
+      "id": "25",
+      "question": "¿Qué película contiene la cita, &quot;¡Saluda a mi amiguito!&quot;?",
+      "category": "action",
+      "difficulty": "1",
+      "correct_answer": "Scarface",
+      "incorrect_answers": [
+        "Reservoir Dogs",
+        "Heat",
+        "Goodfellas"
+      ]
+    },
+    {
+      "id": "26",
+      "question": "¿Leonardo Di Caprio ganó su primer Oscar a Mejor Actor por su actuación en qué película?",
+      "category": "action",
+      "difficulty": "1",
+      "correct_answer": "El Renacido",
+      "incorrect_answers": [
+        "El Lobo de Wall Street",
+        "Shutter Island",
+        "Origen"
+      ]
+    },
+    {
+      "id": "27",
+      "question": "¿Quién interpreta a &quot;Bruce Wayne&quot; en la película de 2008 &quot;El Caballero Oscuro&quot;?",
+      "category": "action",
+      "difficulty": "1",
+      "correct_answer": "Christian Bale",
+      "incorrect_answers": [
+        "Michael Caine",
+        "Ron Dean",
+        "Heath Ledger"
+      ]
+    },
+    {
+      "id": "28",
+      "question": "En Mad Max Fury Road, ¿cómo se refirió el Guerrero de la carretera, Nux, a Max?",
+      "category": "action",
+      "difficulty": "2",
+      "correct_answer": "Bolsa de sangre",
+      "incorrect_answers": [
+        "Esclavo",
+        "Bolsa humana",
+        "Carne"
+      ]
+    },
+    {
+      "id": "29",
+      "question": "¿Cuántas gemas del infinito hay en MCU?",
+      "category": "action",
+      "difficulty": "1",
+      "correct_answer": "6",
+      "incorrect_answers": [
+        "5",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "id": "30",
+      "question": "¿Qué tipo de médico es Doctor Strange?",
+      "category": "action",
+      "difficulty": "1",
+      "correct_answer": "Un neurocirujano",
+      "incorrect_answers": [
+        "Un endocrinólogo",
+        "Un nefrólogo",
+        "Un oncólogo"
+      ]
+    }
+  ]
+}
