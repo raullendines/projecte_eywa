@@ -13,8 +13,8 @@ namespace projecte_eywa
         public string question { get; set; }
         public int difficulty { get; set; }
         public string category { get; set; }
-        public string correctAnswer { get; set; }
-        public List<string> incorrectAnswer { get; set; }
+        public string correct_answer { get; set; }
+        public List<string> incorrect_answers { get; set; }
 
         public QuizQuestion(int id, string question, int difficulty, string category, string correctAnswer, List<string> incorrectAnswer)
         {
@@ -22,8 +22,8 @@ namespace projecte_eywa
             this.question = question;
             this.difficulty = difficulty;
             this.category = category;
-            this.correctAnswer = correctAnswer;
-            this.incorrectAnswer = incorrectAnswer;
+            this.correct_answer = correctAnswer;
+            this.incorrect_answers = incorrectAnswer;
         }
     }
 }

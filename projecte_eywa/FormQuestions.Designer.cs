@@ -215,6 +215,7 @@
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Visible = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonOk
             // 
@@ -414,9 +415,8 @@
             this.buttonCatala.Text = "Català";
             this.buttonCatala.UseMnemonic = false;
             this.buttonCatala.UseVisualStyleBackColor = true;
-            
             // 
-            // Form1
+            // FormQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -431,7 +431,7 @@
             this.Controls.Add(this.dataGridViewQuestions);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "FormQuestions";
             this.Text = "Preguntes";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
