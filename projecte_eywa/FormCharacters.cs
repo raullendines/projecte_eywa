@@ -257,7 +257,7 @@ namespace projecte_eywa
             if (e.RowIndex >= 0)
             {
                 quizCharacter = (QuizCharacter)dataGridViewCharacters.CurrentRow.DataBoundItem;
-
+                
                 textBoxNameCharacter.Text = quizCharacter.nameCharacter;
                 textBoxDecriptionCharacter.Text = quizCharacter.descCharacter;
                 textBoxDifficultyCharacter.Text = quizCharacter.difficultyCharacter;
