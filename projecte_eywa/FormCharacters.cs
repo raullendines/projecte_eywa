@@ -28,7 +28,6 @@ namespace projecte_eywa
 
             add = true;
 
-            Console.WriteLine("Despues de cambiar " + add);
             //Creation buttons
             buttonCancel.Visible = true;
             buttonSave.Visible = true;
@@ -42,6 +41,9 @@ namespace projecte_eywa
             buttonCatalan.Enabled = false;
             buttonSpanish.Enabled = false;
             buttonEnglish.Enabled = false;
+
+            //Tabla
+            dataGridViewCharacters.Enabled = false;
 
             //Modificacion habilitada
             comboBoxCategoryCharacter.Enabled = true;
@@ -81,6 +83,9 @@ namespace projecte_eywa
             buttonSpanish.Enabled = true;
             buttonEnglish.Enabled = true;
 
+            //Tabla
+            dataGridViewCharacters.Enabled = true;
+
             //Datos nulos
             textBoxNameCharacter.Text = null;
             textBoxFilmCharacter.Text = null;
@@ -102,6 +107,8 @@ namespace projecte_eywa
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
+            modify = true;
+
             //Creation buttons
             buttonCancel.Visible = true;
             buttonSave.Visible = true;
@@ -110,6 +117,9 @@ namespace projecte_eywa
             buttonAdd.Enabled = false;
             buttonModify.Enabled = false;
             buttonDelete.Enabled = false;
+
+            //Tabla
+            dataGridViewCharacters.Enabled = false;
 
             //Languages buttons
             buttonCatalan.Enabled = false;
@@ -126,44 +136,15 @@ namespace projecte_eywa
             textBoxNameCharacter.Enabled = true;
         }
 
-        private void FormCharacters_Load(object sender, EventArgs e)
-        {
-            dataGridViewCharacters.AutoGenerateColumns = false;
-
-            characters.Add(new QuizCharacter { nameCharacter = "Antonio Banderas", filmCharacter = "Prueba 1", categoryCharacter = "Comedy", difficultyCharacter="Extreme", correctNumCharacter = 5, descCharacter = "SUi", urlImageCharacter = "imagen 1" });
-            characters.Add(new QuizCharacter { nameCharacter = "Will Smith", filmCharacter = "Prueba 2", categoryCharacter = "Action", difficultyCharacter="Medium", correctNumCharacter = 4, descCharacter = "Sui", urlImageCharacter = "Imagen 2" });
-            characters.Add(new QuizCharacter { nameCharacter = "Paco Alcacer", filmCharacter = "Prueba 3", categoryCharacter = "Comedia", difficultyCharacter="Difficult", correctNumCharacter = 7, descCharacter = "Sui", urlImageCharacter = "Imagen 2" });
-            characters.Add(new QuizCharacter { nameCharacter = "Raul Lendines", filmCharacter = "Prueba 4" , categoryCharacter = "Comedia", difficultyCharacter="Easy", correctNumCharacter = 9, descCharacter = "sui", urlImageCharacter = "Imagen 2" });
-
-            dataGridViewCharacters.DataSource = characters;
-        }
-
-        private void dataGridViewCharacters_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                quizCharacter = (QuizCharacter)dataGridViewCharacters.CurrentRow.DataBoundItem;
-
-                textBoxNameCharacter.Text = quizCharacter.nameCharacter;
-                textBoxDecriptionCharacter.Text = quizCharacter.descCharacter;
-                textBoxDifficultyCharacter.Text = quizCharacter.difficultyCharacter;
-                textBoxFilmCharacter.Text = quizCharacter.filmCharacter;
-                comboBoxCategoryCharacter.Text = quizCharacter.categoryCharacter;
-                textBoxImgUrlCharacter.Text = quizCharacter.urlImageCharacter;
-                numericUpDownCorrectNum.Value = quizCharacter.correctNumCharacter;
-            }
-        }
-
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            if(textBoxNameCharacter.Text == null)
+            if (textBoxNameCharacter.Text == null)
             {
                 int rowIndex = dataGridViewCharacters.CurrentCell.RowIndex;
                 dataGridViewCharacters.Rows.RemoveAt(rowIndex);
             }
-           
-        }
 
+        }
         private void buttonSave_Click(object sender, EventArgs e)
         {
             //Text to add
@@ -177,7 +158,8 @@ namespace projecte_eywa
             correctNum = (int)numericUpDownCorrectNum.Value;
             description = textBoxDecriptionCharacter.Text;
             imgUrl = textBoxImgUrlCharacter.Text;
-            if (add == true){
+            if (add == true)
+            {
                 if (correctNum >= 0 || correctNum <= 5)
                 {
                     if (name != null && film != null && category != null && difficulty != null && description != null && imgUrl != null)
@@ -249,8 +231,45 @@ namespace projecte_eywa
                 quizCharacter.urlImageCharacter = textBoxImgUrlCharacter.Text;
                 quizCharacter.correctNumCharacter = numericUpDownCorrectNum.Value;
             }
-            
-            
+
+
+            //Tabla
+            dataGridViewCharacters.Enabled = true;
+
+            //Valores restablecidos
+            add = false;
+            modify = false;
         }
+        private void FormCharacters_Load(object sender, EventArgs e)
+        {
+            dataGridViewCharacters.AutoGenerateColumns = false;
+
+            characters.Add(new QuizCharacter { nameCharacter = "Antonio Banderas", filmCharacter = "Prueba 1", categoryCharacter = "Comedy", difficultyCharacter="Extreme", correctNumCharacter = 5, descCharacter = "SUi", urlImageCharacter = "imagen 1" });
+            characters.Add(new QuizCharacter { nameCharacter = "Will Smith", filmCharacter = "Prueba 2", categoryCharacter = "Action", difficultyCharacter="Medium", correctNumCharacter = 4, descCharacter = "Sui", urlImageCharacter = "Imagen 2" });
+            characters.Add(new QuizCharacter { nameCharacter = "Paco Alcacer", filmCharacter = "Prueba 3", categoryCharacter = "Comedia", difficultyCharacter="Difficult", correctNumCharacter = 7, descCharacter = "Sui", urlImageCharacter = "Imagen 2" });
+            characters.Add(new QuizCharacter { nameCharacter = "Raul Lendines", filmCharacter = "Prueba 4" , categoryCharacter = "Comedia", difficultyCharacter="Easy", correctNumCharacter = 9, descCharacter = "sui", urlImageCharacter = "Imagen 2" });
+
+            dataGridViewCharacters.DataSource = characters;
+        }
+
+        private void dataGridViewCharacters_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                quizCharacter = (QuizCharacter)dataGridViewCharacters.CurrentRow.DataBoundItem;
+
+                textBoxNameCharacter.Text = quizCharacter.nameCharacter;
+                textBoxDecriptionCharacter.Text = quizCharacter.descCharacter;
+                textBoxDifficultyCharacter.Text = quizCharacter.difficultyCharacter;
+                textBoxFilmCharacter.Text = quizCharacter.filmCharacter;
+                comboBoxCategoryCharacter.Text = quizCharacter.categoryCharacter;
+                textBoxImgUrlCharacter.Text = quizCharacter.urlImageCharacter;
+                numericUpDownCorrectNum.Value = quizCharacter.correctNumCharacter;
+            }
+        }
+
+       
+
+       
     }
 }
