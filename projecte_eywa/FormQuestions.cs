@@ -40,9 +40,12 @@ namespace projecte_eywa
         {
 
             //needs to delete the previous document
-            JArray QuizQuestionsArray = (JArray)JToken.FromObject(quizQuestions);
-
-            File.WriteAllText(EN_PATH, QuizQuestionsArray.ToString());
+            JArray QuizQuestionsArrayEN = (JArray)JToken.FromObject(quizQuestionsEN);
+            File.WriteAllText(EN_PATH, QuizQuestionsArrayEN.ToString());
+            JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
+            File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
+            JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
+            File.WriteAllText(CA_PATH, QuizQuestionsArrayCA.ToString());
         }
 
         private void getData()
@@ -77,6 +80,22 @@ namespace projecte_eywa
             }
             dataGridViewQuestions.DataSource = null;
             dataGridViewQuestions.DataSource = quizQuestions;
+        }
+        private void saveSheet()
+        {
+            switch (currentSheet)
+            {
+                case "EN":
+                    quizQuestionsEN = quizQuestions;
+                    break;
+                case "ES":
+                    quizQuestionsES = quizQuestions;
+                    break;
+                case "CA":
+                    quizQuestionsCA = quizQuestions;
+                    break;
+            }
+            
         }
 
         private void dataGridViewQuestions_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -214,18 +233,21 @@ namespace projecte_eywa
 
         private void buttonCatala_Click(object sender, EventArgs e)
         {
+            saveSheet();
             currentSheet = "CA";
             changeSheets();
         }
 
         private void buttonEspañol_Click(object sender, EventArgs e)
         {
+            saveSheet();
             currentSheet = "ES";
             changeSheets();
         }
 
         private void buttonEnglish_Click(object sender, EventArgs e)
         {
+            saveSheet();
             currentSheet = "EN";
             changeSheets();
         }
