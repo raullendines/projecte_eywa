@@ -132,17 +132,8 @@ namespace projecte_eywa
             textBoxIncorrectAnswer3.Text = "";
             comboBoxCategoryDescription.SelectedIndex = -1;
             comboBoxDifficultDescription.SelectedIndex = -1;
-            // Enable boxes
-            textBoxQuestionDescription.ReadOnly = false;
-            textBoxCorrectAnswer.ReadOnly = false;
-            textBoxIncorrectAnswer1.ReadOnly = false;
-            textBoxIncorrectAnswer2.ReadOnly = false;
-            textBoxIncorrectAnswer3.ReadOnly = false;
-            comboBoxCategoryDescription.Enabled = true;
-            comboBoxDifficultDescription.Enabled = true;
-            // Enable buttons
-            buttonOk.Visible = true;
-            buttonCancel.Visible = true;
+            enableBoxes();
+            enableOkCancelButtons();
 
 
         }
@@ -167,38 +158,35 @@ namespace projecte_eywa
                     textBoxCorrectAnswer.Text,
                     ListIncorrects
                     ));
-                // Disable dataGrid 
+                // Enable dataGrid 
                 dataGridViewQuestions.Enabled = true;
-                // Initialize empty boxes
-                textBoxIdDescription.Text = "";
-                textBoxQuestionDescription.Text = "";
-                textBoxCorrectAnswer.Text = "";
-                textBoxIncorrectAnswer1.Text = "";
-                textBoxIncorrectAnswer2.Text = "";
-                textBoxIncorrectAnswer3.Text = "";
-                comboBoxCategoryDescription.SelectedIndex = -1;
-                comboBoxDifficultDescription.SelectedIndex = -1;
-                comboBoxCategoryDescription.Enabled = false;
-                comboBoxDifficultDescription.Enabled = false;
-                // Disable boxes
-                textBoxQuestionDescription.ReadOnly = true;
-                textBoxCorrectAnswer.ReadOnly = true;
-                textBoxIncorrectAnswer1.ReadOnly = true;
-                textBoxIncorrectAnswer2.ReadOnly = true;
-                textBoxIncorrectAnswer3.ReadOnly = true;
+                initializeEmptyBoxes();
+                disableBoxes();
 
-                // Enable buttons
-                buttonOk.Visible = false;
-                buttonCancel.Visible = false;
+                disableOkCancelButtons();
 
                 // Disable Add button
                 addQuestion = false;
             }
             else if (modifyQuestion)
             {
+                index = dataGridViewQuestions.CurrentCell.RowIndex;
+                quizQuestions[index].question = textBoxQuestionDescription.Text;
+                quizQuestions[index].correct_answer = textBoxCorrectAnswer.Text;
+                quizQuestions[index].incorrect_answers[0] = textBoxIncorrectAnswer1.Text;
+                quizQuestions[index].incorrect_answers[1] = textBoxIncorrectAnswer2.Text;
+                quizQuestions[index].incorrect_answers[2] = textBoxIncorrectAnswer3.Text;
+                quizQuestions[index].category = comboBoxCategoryDescription.Text;
+                quizQuestions[index].difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
+                dataGridViewQuestions.DataSource = null;
+                dataGridViewQuestions.DataSource = quizQuestions;
 
+                // Enable dataGrid 
+                dataGridViewQuestions.Enabled = true;
+                initializeEmptyBoxes();
+                disableBoxes();
 
-
+                disableOkCancelButtons();
                 // Disable button
                 modifyQuestion = false;
             }
@@ -210,17 +198,8 @@ namespace projecte_eywa
             dataGridViewQuestions.Enabled = false;
             // Modify button clicked
             modifyQuestion = true;
-            // Enable boxes
-            textBoxQuestionDescription.ReadOnly = false;
-            textBoxCorrectAnswer.ReadOnly = false;
-            textBoxIncorrectAnswer1.ReadOnly = false;
-            textBoxIncorrectAnswer2.ReadOnly = false;
-            textBoxIncorrectAnswer3.ReadOnly = false;
-            comboBoxCategoryDescription.Enabled = true;
-            comboBoxDifficultDescription.Enabled = true;
-            // Enable buttons
-            buttonOk.Visible = true;
-            buttonCancel.Visible = true;
+            enableBoxes();
+            enableOkCancelButtons();
 
 
         }
@@ -229,6 +208,70 @@ namespace projecte_eywa
         {
             index = dataGridViewQuestions.CurrentCell.RowIndex;
             dataGridViewQuestions.Rows.RemoveAt(index);
+        }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+            if (addQuestion)
+            {
+                addQuestion = false;
+            }
+            else
+            {
+                modifyQuestion = false;
+            }
+            // Enable dataGrid 
+            dataGridViewQuestions.Enabled = true;
+            initializeEmptyBoxes();
+            disableBoxes();
+            disableOkCancelButtons();
+        }
+        public void enableOkCancelButtons()
+        {
+            buttonOk.Visible = true;
+            buttonCancel.Visible = true;
+        }
+        public void disableOkCancelButtons()
+        {
+            // Disable buttons
+            buttonOk.Visible = false;
+            buttonCancel.Visible = false;
+        }
+        public void enableBoxes()
+        {
+            // Enable boxes
+            textBoxQuestionDescription.ReadOnly = false;
+            textBoxCorrectAnswer.ReadOnly = false;
+            textBoxIncorrectAnswer1.ReadOnly = false;
+            textBoxIncorrectAnswer2.ReadOnly = false;
+            textBoxIncorrectAnswer3.ReadOnly = false;
+            comboBoxCategoryDescription.Enabled = true;
+            comboBoxDifficultDescription.Enabled = true;
+        }
+        public void disableBoxes()
+        {
+            // Disable boxes
+            textBoxQuestionDescription.ReadOnly = true;
+            textBoxCorrectAnswer.ReadOnly = true;
+            textBoxIncorrectAnswer1.ReadOnly = true;
+            textBoxIncorrectAnswer2.ReadOnly = true;
+            textBoxIncorrectAnswer3.ReadOnly = true;
+
+        }
+
+        public void initializeEmptyBoxes()
+        {
+            // Initialize empty boxes
+            textBoxIdDescription.Text = "";
+            textBoxQuestionDescription.Text = "";
+            textBoxCorrectAnswer.Text = "";
+            textBoxIncorrectAnswer1.Text = "";
+            textBoxIncorrectAnswer2.Text = "";
+            textBoxIncorrectAnswer3.Text = "";
+            comboBoxCategoryDescription.SelectedIndex = -1;
+            comboBoxDifficultDescription.SelectedIndex = -1;
+            comboBoxCategoryDescription.Enabled = false;
+            comboBoxDifficultDescription.Enabled = false;
         }
 
         private void buttonCatala_Click(object sender, EventArgs e)

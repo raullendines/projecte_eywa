@@ -215,6 +215,7 @@
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Visible = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonOk
             // 
@@ -417,6 +418,7 @@
             this.buttonCatala.UseMnemonic = false;
             this.buttonCatala.UseVisualStyleBackColor = true;
             this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
+
             // 
             // FormQuestions
             // 
