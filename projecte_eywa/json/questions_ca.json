@@ -1,5 +1,4 @@
-{
-  "questions": [
+[
     {
       "id": "1",
       "question": "Com es diu l'administrador de la Ciutat dels Núvols, que apareix a Star Wars, L'Imperi Contraataca?",
@@ -380,5 +379,4 @@
         "Un oncòleg"
       ]
     }
-  ]
-}
+]

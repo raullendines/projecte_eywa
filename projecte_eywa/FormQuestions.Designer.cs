@@ -396,6 +396,7 @@
             this.buttonEspañol.TabIndex = 7;
             this.buttonEspañol.Text = "Español";
             this.buttonEspañol.UseVisualStyleBackColor = true;
+            this.buttonEspañol.Click += new System.EventHandler(this.buttonEspañol_Click);
             // 
             // buttonEnglish
             // 
@@ -405,6 +406,7 @@
             this.buttonEnglish.TabIndex = 8;
             this.buttonEnglish.Text = "English";
             this.buttonEnglish.UseVisualStyleBackColor = true;
+            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
             // 
             // buttonCatala
             // 
@@ -415,6 +417,8 @@
             this.buttonCatala.Text = "Català";
             this.buttonCatala.UseMnemonic = false;
             this.buttonCatala.UseVisualStyleBackColor = true;
+            this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
+
             // 
             // FormQuestions
             // 

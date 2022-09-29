@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +14,16 @@ namespace projecte_eywa
 {
     public partial class FormQuestions : Form
     {
+        const string PATH = @"..\..\json\" ;
+        const string EN_PATH = PATH + "questions_en.json";
+        const string ES_PATH = PATH + "questions_es.json";
+        const string CA_PATH = PATH + "questions_ca.json";
         BindingList<QuizQuestion> quizQuestions = new BindingList<QuizQuestion>();
+        BindingList<QuizQuestion> quizQuestionsEN = new BindingList<QuizQuestion>();
+        BindingList<QuizQuestion> quizQuestionsES = new BindingList<QuizQuestion>();
+        BindingList<QuizQuestion> quizQuestionsCA = new BindingList<QuizQuestion>();
+        string currentSheet = "ES";
+
         int index = -1;
         List<string> incorrectAnswers = new List<string>();
         bool addQuestion = false;
@@ -20,21 +31,71 @@ namespace projecte_eywa
         public FormQuestions()
         {
             InitializeComponent();
+            
             getData();
+            //saveJSON();
+        }
+
+        private void saveJSON()
+        {
+
+            //needs to delete the previous document
+            JArray QuizQuestionsArrayEN = (JArray)JToken.FromObject(quizQuestionsEN);
+            File.WriteAllText(EN_PATH, QuizQuestionsArrayEN.ToString());
+            JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
+            File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
+            JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
+            File.WriteAllText(CA_PATH, QuizQuestionsArrayCA.ToString());
         }
 
         private void getData()
         {
-            incorrectAnswers.Add("1");
-            incorrectAnswers.Add("2");
-            incorrectAnswers.Add("3");
 
-            quizQuestions.Add(new QuizQuestion(1, "Test", 1, "Science Fiction", "a", incorrectAnswers));
-            quizQuestions.Add(new QuizQuestion(2, "2Test", 2, "Action", "a", incorrectAnswers));
+            JArray LoadQuestionsEN = JArray.Parse(File.ReadAllText(EN_PATH, Encoding.Default));
+            quizQuestionsEN = LoadQuestionsEN.ToObject<BindingList<QuizQuestion>>();
+            JArray LoadQuestionsES = JArray.Parse(File.ReadAllText(ES_PATH, Encoding.UTF8));
+            quizQuestionsES = LoadQuestionsES.ToObject<BindingList<QuizQuestion>>();
+            JArray LoadQuestionsCA = JArray.Parse(File.ReadAllText(CA_PATH, Encoding.UTF8));
+            quizQuestionsCA = LoadQuestionsCA.ToObject<BindingList<QuizQuestion>>();
+            
+            changeSheets();
+                     
+
+
+        }
+
+        private void changeSheets()
+        {
+            switch (currentSheet)
+            {
+                case "EN":
+                    quizQuestions = quizQuestionsEN;
+                    break;
+                case "ES":
+                    quizQuestions = quizQuestionsES;
+                    break;
+                case "CA":
+                    quizQuestions = quizQuestionsCA;
+                    break;
+            }
             dataGridViewQuestions.DataSource = null;
             dataGridViewQuestions.DataSource = quizQuestions;
-
-
+        }
+        private void saveSheet()
+        {
+            switch (currentSheet)
+            {
+                case "EN":
+                    quizQuestionsEN = quizQuestions;
+                    break;
+                case "ES":
+                    quizQuestionsES = quizQuestions;
+                    break;
+                case "CA":
+                    quizQuestionsCA = quizQuestions;
+                    break;
+            }
+            
         }
 
         private void dataGridViewQuestions_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -50,7 +111,7 @@ namespace projecte_eywa
                 textBoxIncorrectAnswer2.Text = quizQuestions[index].incorrect_answers[1];
                 textBoxIncorrectAnswer3.Text = quizQuestions[index].incorrect_answers[2];
                 comboBoxCategoryDescription.Text = quizQuestions[index].category;
-                comboBoxDifficultDescription.Text = quizQuestions[index].difficulty.ToString();
+                comboBoxDifficultDescription.SelectedIndex = quizQuestions[index].difficulty - 1;
             }
         }
 
@@ -211,6 +272,27 @@ namespace projecte_eywa
             comboBoxDifficultDescription.SelectedIndex = -1;
             comboBoxCategoryDescription.Enabled = false;
             comboBoxDifficultDescription.Enabled = false;
+        }
+
+        private void buttonCatala_Click(object sender, EventArgs e)
+        {
+            saveSheet();
+            currentSheet = "CA";
+            changeSheets();
+        }
+
+        private void buttonEspañol_Click(object sender, EventArgs e)
+        {
+            saveSheet();
+            currentSheet = "ES";
+            changeSheets();
+        }
+
+        private void buttonEnglish_Click(object sender, EventArgs e)
+        {
+            saveSheet();
+            currentSheet = "EN";
+            changeSheets();
         }
     }
 }
