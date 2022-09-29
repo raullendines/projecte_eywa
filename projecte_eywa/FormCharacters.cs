@@ -158,6 +158,7 @@ namespace projecte_eywa
             correctNum = (int)numericUpDownCorrectNum.Value;
             description = textBoxDecriptionCharacter.Text;
             imgUrl = textBoxImgUrlCharacter.Text;
+
             if (add == true)
             {
                 if (correctNum >= 0 || correctNum <= 5)
@@ -177,37 +178,6 @@ namespace projecte_eywa
                    );
                         dataGridViewCharacters.DataSource = characters;
 
-                        //Datos nulos
-                        textBoxNameCharacter.Text = null;
-                        textBoxFilmCharacter.Text = null;
-                        comboBoxCategoryCharacter.Text = null;
-                        textBoxDifficultyCharacter.Text = null;
-                        numericUpDownCorrectNum.Value = 0;
-                        textBoxDecriptionCharacter.Text = null;
-                        textBoxImgUrlCharacter.Text = null;
-
-                        //Creation buttons
-                        buttonCancel.Visible = false;
-                        buttonSave.Visible = false;
-
-                        //Questions buttons
-                        buttonAdd.Enabled = true;
-                        buttonModify.Enabled = true;
-                        buttonDelete.Enabled = true;
-
-                        //Languages buttons
-                        buttonCatalan.Enabled = true;
-                        buttonSpanish.Enabled = true;
-                        buttonEnglish.Enabled = true;
-
-                        //Modificacion habilitada
-                        comboBoxCategoryCharacter.Enabled = false;
-                        numericUpDownCorrectNum.Enabled = false;
-                        textBoxDecriptionCharacter.Enabled = false;
-                        textBoxDifficultyCharacter.Enabled = false;
-                        textBoxFilmCharacter.Enabled = false;
-                        textBoxImgUrlCharacter.Enabled = false;
-                        textBoxNameCharacter.Enabled = false;
                     }
                 }
                 else
@@ -232,6 +202,37 @@ namespace projecte_eywa
                 quizCharacter.correctNumCharacter = numericUpDownCorrectNum.Value;
             }
 
+            //Datos nulos
+            textBoxNameCharacter.Text = null;
+            textBoxFilmCharacter.Text = null;
+            comboBoxCategoryCharacter.Text = null;
+            textBoxDifficultyCharacter.Text = null;
+            numericUpDownCorrectNum.Value = 0;
+            textBoxDecriptionCharacter.Text = null;
+            textBoxImgUrlCharacter.Text = null;
+
+            //Creation buttons
+            buttonCancel.Visible = false;
+            buttonSave.Visible = false;
+
+            //Questions buttons
+            buttonAdd.Enabled = true;
+            buttonModify.Enabled = true;
+            buttonDelete.Enabled = true;
+
+            //Languages buttons
+            buttonCatalan.Enabled = true;
+            buttonSpanish.Enabled = true;
+            buttonEnglish.Enabled = true;
+
+            //Modificacion habilitada
+            comboBoxCategoryCharacter.Enabled = false;
+            numericUpDownCorrectNum.Enabled = false;
+            textBoxDecriptionCharacter.Enabled = false;
+            textBoxDifficultyCharacter.Enabled = false;
+            textBoxFilmCharacter.Enabled = false;
+            textBoxImgUrlCharacter.Enabled = false;
+            textBoxNameCharacter.Enabled = false;
 
             //Tabla
             dataGridViewCharacters.Enabled = true;
@@ -239,6 +240,7 @@ namespace projecte_eywa
             //Valores restablecidos
             add = false;
             modify = false;
+
         }
         private void FormCharacters_Load(object sender, EventArgs e)
         {
