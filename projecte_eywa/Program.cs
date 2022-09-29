@@ -16,7 +16,7 @@ namespace projecte_eywa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormQuestions());
+            Application.Run(new FormCharacters());
         }
     }
 }
