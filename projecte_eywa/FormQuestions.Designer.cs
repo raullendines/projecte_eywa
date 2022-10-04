@@ -225,6 +225,8 @@
             // buttonOk
             // 
             this.buttonOk.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonOk.FlatAppearance.BorderSize = 0;
+            this.buttonOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOk.Location = new System.Drawing.Point(262, 313);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(55, 29);

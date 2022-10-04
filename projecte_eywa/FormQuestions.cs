@@ -23,7 +23,7 @@ namespace projecte_eywa
         BindingList<QuizQuestion> quizQuestionsEN = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsES = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsCA = new BindingList<QuizQuestion>();
-        string currentSheet = "ES";
+        string currentSheet = "EN";
 
         int index = -1;
         List<string> incorrectAnswers = new List<string>();
@@ -71,15 +71,18 @@ namespace projecte_eywa
             {
                 case "EN":
                     quizQuestions = quizQuestionsEN;
-                    
+                    changeLanguageEN();
+
                     break;
                 case "ES":
                     quizQuestions = quizQuestionsES;
-                    
+                    changeLanguageES();
+
                     break;
                 case "CA":
                     quizQuestions = quizQuestionsCA;
-                    
+                    changeLanguageCA();
+
                     break;
             }
             initializeEmptyBoxes();
@@ -92,12 +95,15 @@ namespace projecte_eywa
             {
                 case "EN":
                     quizQuestionsEN = quizQuestions;
+                    
                     break;
                 case "ES":
                     quizQuestionsES = quizQuestions;
+                    
                     break;
                 case "CA":
                     quizQuestionsCA = quizQuestions;
+                    
                     break;
             }
             
@@ -115,7 +121,8 @@ namespace projecte_eywa
                 textBoxIncorrectAnswer1.Text = quizQuestions[index].incorrect_answers[0];
                 textBoxIncorrectAnswer2.Text = quizQuestions[index].incorrect_answers[1];
                 textBoxIncorrectAnswer3.Text = quizQuestions[index].incorrect_answers[2];
-                comboBoxCategoryDescription.Text = quizQuestions[index].category;
+                comboBoxCategoryDescription.SelectedValue= quizQuestions[index].category;
+                
                 comboBoxDifficultDescription.SelectedIndex = quizQuestions[index].difficulty - 1;
             }
         }
@@ -139,6 +146,9 @@ namespace projecte_eywa
             comboBoxDifficultDescription.SelectedIndex = -1;
             enableBoxes();
             enableOkCancelButtons();
+            disableAddModifyDeleteButtons();
+            disableLanguageButtons();
+            
 
 
         }
@@ -162,7 +172,35 @@ namespace projecte_eywa
                 question.id = last;
                 question.question = textBoxQuestionDescription.Text;
                 question.difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
-                question.category = comboBoxCategoryDescription.Text;
+                
+                    int index = comboBoxCategoryDescription.Items.IndexOf(comboBoxCategoryDescription.SelectedItem);
+                    switch (index)
+                    {
+                        case 0:
+                        question.category = "science fiction";
+                            break;
+                        case 1:
+                        question.category = "action";
+                        break;
+                        case 2:
+                        question.category = "comedy";
+                        break;
+                        case 3:
+                        question.category = "animation";
+                        break;
+                        case 4:
+                        question.category = "horror";
+                        break;
+                        case 5:
+                        question.category = "drama";
+                        break;
+                        default:
+                        MessageBox.Show("ERROR");
+                            break;
+                    }
+                
+                
+                
                 question.correct_answer = textBoxCorrectAnswer.Text;
                 question.incorrect_answers = ListIncorrects;
 
@@ -194,6 +232,8 @@ namespace projecte_eywa
                         initializeEmptyBoxes();
                         disableBoxes();
                         disableOkCancelButtons();
+                        enableAddModifyDeleteButtons();
+                        enableLanguageButtons();
 
                 }
                
@@ -221,6 +261,8 @@ namespace projecte_eywa
                 disableBoxes();
 
                 disableOkCancelButtons();
+                enableAddModifyDeleteButtons();
+                enableLanguageButtons();
                 // Disable button
                 modifyQuestion = false;
             }
@@ -234,6 +276,8 @@ namespace projecte_eywa
             modifyQuestion = true;
             enableBoxes();
             enableOkCancelButtons();
+            disableAddModifyDeleteButtons();
+            disableLanguageButtons();
 
 
         }
@@ -261,6 +305,8 @@ namespace projecte_eywa
             initializeEmptyBoxes();
             disableBoxes();
             disableOkCancelButtons();
+            enableAddModifyDeleteButtons();
+            enableLanguageButtons();
         }
         public void enableOkCancelButtons()
         {
@@ -339,6 +385,127 @@ namespace projecte_eywa
         private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
         {
             saveJSON();
+        }
+
+        private void changeLanguageES()
+        {
+            // Change Description
+            labelQuestionDescription.Text = "Pregunta";
+            labelCorrectAnswerDescription.Text = "Respuesta \n correcta";
+            labelIncorrectAnswer1Description.Text = "Respuesta \n incorrecta";
+            labelIncorrectAnswer2Description.Text = "Respuesta \n incorrecta";
+            labelIncorrectAnswer3Description.Text = "Respuesta \n incorrecta";
+            labelCategoryDescription.Text = "Categoría";
+            labelDifficultyDescription.Text = "Dificultad";
+            // Change ADD, MODIFY, DELETE buttons
+            buttonAdd.Text = "Añadir";
+            buttonModify.Text = "Modificar";
+            buttonDelete.Text = "Eliminar";
+            // Change OK, CANCEL buttons
+            buttonOk.Text = "Guardar";
+            buttonCancel.Text = "Cancelar";
+            // Change CategoryComboBox Items
+            comboBoxCategoryDescription.Items.Clear();
+            comboBoxCategoryDescription.Items.Add("Ciencia Ficción");
+            comboBoxCategoryDescription.Items.Add("Acción");
+            comboBoxCategoryDescription.Items.Add("Comedia");
+            comboBoxCategoryDescription.Items.Add("Terror");
+            comboBoxCategoryDescription.Items.Add("Animación");
+            comboBoxCategoryDescription.Items.Add("Drama");
+            // Change DiffultyComboBox Items
+            comboBoxDifficultDescription.Items.Clear();
+            comboBoxDifficultDescription.Items.Add("Fácil");
+            comboBoxDifficultDescription.Items.Add("Media");
+            comboBoxDifficultDescription.Items.Add("Difícil");
+            comboBoxDifficultDescription.Items.Add("Leyenda");
+        }
+        private void changeLanguageEN()
+        {
+            // Change Description
+            labelQuestionDescription.Text = "Question";
+            labelCorrectAnswerDescription.Text = "Correct \n answer";
+            labelIncorrectAnswer1Description.Text = "Incorrect \n answer";
+            labelIncorrectAnswer2Description.Text = "Incorrect \n answer";
+            labelIncorrectAnswer3Description.Text = "Incorrect \n answer";
+            labelCategoryDescription.Text = "Category";
+            labelDifficultyDescription.Text = "Dificulty";
+            // Change ADD, MODIFY, DELETE buttons
+            buttonAdd.Text = "Add";
+            buttonModify.Text = "Modify";
+            buttonDelete.Text = "Delete";
+            // Change OK, CANCEL buttons
+            buttonOk.Text = "Save";
+            buttonCancel.Text = "Cancel";
+            // Change CategoryComboBox Items
+            comboBoxCategoryDescription.Items.Clear();
+            comboBoxCategoryDescription.Items.Add("Science Fiction");
+            comboBoxCategoryDescription.Items.Add("Action");
+            comboBoxCategoryDescription.Items.Add("Comedy");
+            comboBoxCategoryDescription.Items.Add("Horror");
+            comboBoxCategoryDescription.Items.Add("Animation");
+            comboBoxCategoryDescription.Items.Add("Drama");
+            // Change DiffultyComboBox Items
+            comboBoxDifficultDescription.Items.Clear();
+            comboBoxDifficultDescription.Items.Add("Easy");
+            comboBoxDifficultDescription.Items.Add("Medium");
+            comboBoxDifficultDescription.Items.Add("Hard");
+            comboBoxDifficultDescription.Items.Add("Legend");
+        }
+        private void changeLanguageCA()
+        {
+            // Change Description
+            labelQuestionDescription.Text = "Pregunta";
+            labelCorrectAnswerDescription.Text = "Resposta \n correcta";
+            labelIncorrectAnswer1Description.Text = "Resposta \n incorrecta";
+            labelIncorrectAnswer2Description.Text = "Resposta \n incorrecta";
+            labelIncorrectAnswer3Description.Text = "Resposta \n incorrecta";
+            labelCategoryDescription.Text = "Categoria";
+            labelDifficultyDescription.Text = "Dificultat";
+            // Change ADD, MODIFY, DELETE buttons
+            buttonAdd.Text = "Afegir";
+            buttonModify.Text = "Modificar";
+            buttonDelete.Text = "Eliminar";
+            // Change OK, CANCEL buttons
+            buttonOk.Text = "Guardar";
+            buttonCancel.Text = "Cancelar";
+            // Change CategoryComboBox Items
+            comboBoxCategoryDescription.Items.Clear();
+            comboBoxCategoryDescription.Items.Add("Ciència Ficció");
+            comboBoxCategoryDescription.Items.Add("Acció");
+            comboBoxCategoryDescription.Items.Add("Comedia");
+            comboBoxCategoryDescription.Items.Add("Terror");
+            comboBoxCategoryDescription.Items.Add("Animació");
+            comboBoxCategoryDescription.Items.Add("Drama");
+            // Change DiffultyComboBox Items
+            comboBoxDifficultDescription.Items.Clear();
+            comboBoxDifficultDescription.Items.Add("Fàcil");
+            comboBoxDifficultDescription.Items.Add("Mitja");
+            comboBoxDifficultDescription.Items.Add("Difícil");
+            comboBoxDifficultDescription.Items.Add("Llegenda");
+        }
+        private void enableAddModifyDeleteButtons()
+        {
+            buttonAdd.Enabled = true;
+            buttonModify.Enabled = true;
+            buttonDelete.Enabled = true;
+        }
+        private void disableAddModifyDeleteButtons()
+        {
+            buttonAdd.Enabled = false;
+            buttonModify.Enabled = false;
+            buttonDelete.Enabled = false;
+        }
+        private void enableLanguageButtons()
+        {
+            buttonCatala.Enabled = true;
+            buttonEspañol.Enabled = true;
+            buttonEnglish.Enabled = true;
+        }
+        private void disableLanguageButtons()
+        {
+            buttonCatala.Enabled = false;
+            buttonEspañol.Enabled = false;
+            buttonEnglish.Enabled = false;
         }
     }
 }

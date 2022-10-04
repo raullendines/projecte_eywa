@@ -1,5 +1,4 @@
-{
-  "questions": [
+[
     {
       "id": "1",
       "question": "¿Como se llama el administrador de la Ciudad de las Nubes, que aparece en Star Wars, El Imperio Contraataca?",
@@ -381,4 +380,3 @@
       ]
     }
   ]
-}
