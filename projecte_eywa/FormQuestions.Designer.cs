@@ -66,6 +66,9 @@
             this.buttonEnglish = new System.Windows.Forms.Button();
             this.buttonCatala = new System.Windows.Forms.Button();
             this.quizQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.labelFilter = new System.Windows.Forms.Label();
+            this.comboBoxFilter = new System.Windows.Forms.ComboBox();
+            this.buttonApplyFilter = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).BeginInit();
             this.groupBoxPropietats.SuspendLayout();
@@ -426,11 +429,42 @@
             this.buttonCatala.UseVisualStyleBackColor = true;
             this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
             // 
+            // labelFilter
+            // 
+            this.labelFilter.AutoSize = true;
+            this.labelFilter.Location = new System.Drawing.Point(12, 35);
+            this.labelFilter.Name = "labelFilter";
+            this.labelFilter.Size = new System.Drawing.Size(29, 13);
+            this.labelFilter.TabIndex = 9;
+            this.labelFilter.Text = "Filter";
+            // 
+            // comboBoxFilter
+            // 
+            this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFilter.FormattingEnabled = true;
+            this.comboBoxFilter.Location = new System.Drawing.Point(47, 31);
+            this.comboBoxFilter.Name = "comboBoxFilter";
+            this.comboBoxFilter.Size = new System.Drawing.Size(224, 21);
+            this.comboBoxFilter.TabIndex = 10;
+            // 
+            // buttonApplyFilter
+            // 
+            this.buttonApplyFilter.Location = new System.Drawing.Point(298, 27);
+            this.buttonApplyFilter.Name = "buttonApplyFilter";
+            this.buttonApplyFilter.Size = new System.Drawing.Size(110, 29);
+            this.buttonApplyFilter.TabIndex = 11;
+            this.buttonApplyFilter.Text = "Apply Filter";
+            this.buttonApplyFilter.UseVisualStyleBackColor = true;
+            this.buttonApplyFilter.Click += new System.EventHandler(this.buttonApplyFilter_Click);
+            // 
             // FormQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonApplyFilter);
+            this.Controls.Add(this.comboBoxFilter);
+            this.Controls.Add(this.labelFilter);
             this.Controls.Add(this.buttonEnglish);
             this.Controls.Add(this.buttonEspañol);
             this.Controls.Add(this.buttonCatala);
@@ -495,6 +529,9 @@
         private System.Windows.Forms.BindingSource quizQuestionBindingSource;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoryToolStripMenuItem;
+        private System.Windows.Forms.Label labelFilter;
+        private System.Windows.Forms.ComboBox comboBoxFilter;
+        private System.Windows.Forms.Button buttonApplyFilter;
     }
 }
 

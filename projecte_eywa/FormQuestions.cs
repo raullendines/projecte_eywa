@@ -14,19 +14,24 @@ namespace projecte_eywa
 {
     public partial class FormQuestions : Form
     {
+        // PATHING
         const string PATH = @"..\..\json\" ;
         const string EN_PATH = PATH + "questions_en.json";
         const string EN_PATH_TEST = PATH + "test_questions_en.json";
         const string ES_PATH = PATH + "questions_es.json";
         const string CA_PATH = PATH + "questions_ca.json";
+        
+        // LISTS 
         BindingList<QuizQuestion> quizQuestions = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsEN = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsES = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsCA = new BindingList<QuizQuestion>();
+
+        // CURRENT LANGUAGE
         string currentSheet = "EN";
 
         int index = -1;
-        List<string> incorrectAnswers = new List<string>();
+        //List<string> incorrectAnswers = new List<string>();
         bool addQuestion = false;
         bool modifyQuestion = false;
         public FormQuestions()
@@ -60,7 +65,7 @@ namespace projecte_eywa
             quizQuestionsCA = LoadQuestionsCA.ToObject<BindingList<QuizQuestion>>();
             
             changeSheets();
-                     
+               
 
 
         }
@@ -113,15 +118,41 @@ namespace projecte_eywa
         {
             int temporal = index;
             index = dataGridViewQuestions.CurrentCell.RowIndex;
+            // hacer un booleano para saber si se aplica el filtro, y si se aplica pillar la info desde filtredList (se tiene que probar xd)
             if (temporal != index)
             {
+                string category = quizQuestions[index].category;
                 textBoxIdDescription.Text = quizQuestions[index].id.ToString();
                 textBoxQuestionDescription.Text = quizQuestions[index].question;
                 textBoxCorrectAnswer.Text = quizQuestions[index].correct_answer;
                 textBoxIncorrectAnswer1.Text = quizQuestions[index].incorrect_answers[0];
                 textBoxIncorrectAnswer2.Text = quizQuestions[index].incorrect_answers[1];
                 textBoxIncorrectAnswer3.Text = quizQuestions[index].incorrect_answers[2];
-                comboBoxCategoryDescription.SelectedValue= quizQuestions[index].category;
+                switch (category)
+                {
+                    case "science fiction":
+                        comboBoxCategoryDescription.SelectedIndex = 0;
+                        break;
+                    case "action":
+                        comboBoxCategoryDescription.SelectedIndex = 1;
+                        break;
+                    case "comedy":
+                        comboBoxCategoryDescription.SelectedIndex = 2;
+                        break;
+                    case "horror":
+                        comboBoxCategoryDescription.SelectedIndex = 3;
+                        break;
+                    case "animation":
+                        comboBoxCategoryDescription.SelectedIndex = 4;
+                        break;
+                    case "drama":
+                        comboBoxCategoryDescription.SelectedIndex = 5;
+                        break;
+                    default:
+                        comboBoxCategoryDescription.SelectedIndex = -1;
+                        break;
+                }
+                comboBoxCategoryDescription.SelectedItem = comboBoxCategoryDescription.SelectedItem.ToString();
                 
                 comboBoxDifficultDescription.SelectedIndex = quizQuestions[index].difficulty - 1;
             }
@@ -173,31 +204,35 @@ namespace projecte_eywa
                 question.question = textBoxQuestionDescription.Text;
                 question.difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
                 
-                    int index = comboBoxCategoryDescription.Items.IndexOf(comboBoxCategoryDescription.SelectedItem);
-                    switch (index)
+                    if (comboBoxCategoryDescription != null && comboBoxCategoryDescription.SelectedItem != null)
                     {
-                        case 0:
-                        question.category = "science fiction";
-                            break;
-                        case 1:
-                        question.category = "action";
-                        break;
-                        case 2:
-                        question.category = "comedy";
-                        break;
-                        case 3:
-                        question.category = "animation";
-                        break;
-                        case 4:
-                        question.category = "horror";
-                        break;
-                        case 5:
-                        question.category = "drama";
-                        break;
-                        default:
-                        MessageBox.Show("ERROR");
-                            break;
+                        int index = comboBoxCategoryDescription.Items.IndexOf(comboBoxCategoryDescription.SelectedItem);
+                        switch (index)
+                        {
+                            case 0:
+                                question.category = "science fiction";
+                                break;
+                            case 1:
+                                question.category = "action";
+                                break;
+                            case 2:
+                                question.category = "comedy";
+                                break;
+                            case 3:
+                                question.category = "horror";
+                                break;
+                            case 4:
+                                question.category = "animation";
+                                break;
+                            case 5:
+                                question.category = "drama";
+                                break;
+                            default:
+                                MessageBox.Show("ERROR");
+                                break;
+                        }
                     }
+                    
                 
                 
                 
@@ -218,7 +253,11 @@ namespace projecte_eywa
                         textBoxIncorrectAnswer1.Text = question.incorrect_answers[0];
                         textBoxIncorrectAnswer2.Text = question.incorrect_answers[1];
                         textBoxIncorrectAnswer3.Text = question.incorrect_answers[2];
-                        comboBoxCategoryDescription.SelectedIndex = comboBoxCategoryDescription.Items.IndexOf(question.category);
+                        if (comboBoxCategoryDescription.SelectedItem != null)
+                        {
+                            comboBoxCategoryDescription.SelectedIndex = comboBoxCategoryDescription.Items.IndexOf(question.category);
+                        }
+                        
                         comboBoxDifficultDescription.SelectedIndex = question.difficulty - 1;
 
                 }
@@ -379,7 +418,7 @@ namespace projecte_eywa
 
         private void FormQuestions_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
@@ -418,6 +457,13 @@ namespace projecte_eywa
             comboBoxDifficultDescription.Items.Add("Media");
             comboBoxDifficultDescription.Items.Add("Difícil");
             comboBoxDifficultDescription.Items.Add("Leyenda");
+
+            // Filter Items
+            comboBoxFilter.Items.Clear();
+            for (int i = 0; i < comboBoxCategoryDescription.Items.Count; i++)
+            {
+                comboBoxFilter.Items.Add(comboBoxCategoryDescription.Items[i].ToString());
+            }
         }
         private void changeLanguageEN()
         {
@@ -450,6 +496,12 @@ namespace projecte_eywa
             comboBoxDifficultDescription.Items.Add("Medium");
             comboBoxDifficultDescription.Items.Add("Hard");
             comboBoxDifficultDescription.Items.Add("Legend");
+            // Filter Items
+            comboBoxFilter.Items.Clear();
+            for (int i = 0; i < comboBoxCategoryDescription.Items.Count; i++)
+            {
+                comboBoxFilter.Items.Add(comboBoxCategoryDescription.Items[i].ToString());
+            }
         }
         private void changeLanguageCA()
         {
@@ -482,6 +534,13 @@ namespace projecte_eywa
             comboBoxDifficultDescription.Items.Add("Mitja");
             comboBoxDifficultDescription.Items.Add("Difícil");
             comboBoxDifficultDescription.Items.Add("Llegenda");
+            
+            // Filter Items
+            comboBoxFilter.Items.Clear();
+            for (int i = 0; i < comboBoxCategoryDescription.Items.Count; i++)
+            {
+                comboBoxFilter.Items.Add(comboBoxCategoryDescription.Items[i].ToString());
+            }
         }
         private void enableAddModifyDeleteButtons()
         {
@@ -506,6 +565,46 @@ namespace projecte_eywa
             buttonCatala.Enabled = false;
             buttonEspañol.Enabled = false;
             buttonEnglish.Enabled = false;
+        }
+
+        private void buttonApplyFilter_Click(object sender, EventArgs e)
+        {
+            string category =  null;
+            if (comboBoxFilter != null && comboBoxFilter.SelectedItem != null)
+            {
+                int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
+                switch (index)
+                {
+                    case 0:
+                        category = "science fiction";
+                        
+                        break;
+                    case 1:
+                        category= "action";
+                        break;
+                    case 2:
+                        category = "comedy";
+                        break;
+                    case 3:
+                        category = "horror";
+                        break;
+                    case 4:
+                        category = "animation";
+                        break;
+                    case 5:
+                        category = "drama";
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
+                BindingList<QuizQuestion> quizQuestionsCopy = quizQuestions;
+                BindingList<QuizQuestion> filteredList = new BindingList<QuizQuestion>(quizQuestionsCopy.Where(m => m.category.Contains(category) == true).ToList());
+                
+                dataGridViewQuestions.DataSource = filteredList;
+
+
+            }
         }
     }
 }
