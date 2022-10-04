@@ -16,6 +16,7 @@ namespace projecte_eywa
     {
         const string PATH = @"..\..\json\" ;
         const string EN_PATH = PATH + "questions_en.json";
+        const string EN_PATH_TEST = PATH + "test_questions_en.json";
         const string ES_PATH = PATH + "questions_es.json";
         const string CA_PATH = PATH + "questions_ca.json";
         BindingList<QuizQuestion> quizQuestions = new BindingList<QuizQuestion>();
@@ -41,11 +42,11 @@ namespace projecte_eywa
 
             //needs to delete the previous document
             JArray QuizQuestionsArrayEN = (JArray)JToken.FromObject(quizQuestionsEN);
-            File.WriteAllText(EN_PATH, QuizQuestionsArrayEN.ToString());
-            JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
-            File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
-            JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
-            File.WriteAllText(CA_PATH, QuizQuestionsArrayCA.ToString());
+            File.WriteAllText(EN_PATH_TEST, QuizQuestionsArrayEN.ToString());
+            //JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
+            //File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
+            //JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
+            //File.WriteAllText(CA_PATH, QuizQuestionsArrayCA.ToString());
         }
 
         private void getData()
@@ -70,16 +71,15 @@ namespace projecte_eywa
             {
                 case "EN":
                     quizQuestions = quizQuestionsEN;
-                    changeLanguageEN();
                     
                     break;
                 case "ES":
                     quizQuestions = quizQuestionsES;
-                    changeLanguageES();
+                    
                     break;
                 case "CA":
                     quizQuestions = quizQuestionsCA;
-                    changeLanguageCA();
+                    
                     break;
             }
             initializeEmptyBoxes();
@@ -139,8 +139,6 @@ namespace projecte_eywa
             comboBoxDifficultDescription.SelectedIndex = -1;
             enableBoxes();
             enableOkCancelButtons();
-            disableEditButtons();
-            disableLanguageButtons();
 
 
         }
@@ -187,7 +185,7 @@ namespace projecte_eywa
 
                 }
                 else
-                {
+                    {
                         quizQuestions.Add(question);
                         // Disable Add button
                         addQuestion = false;
@@ -196,8 +194,7 @@ namespace projecte_eywa
                         initializeEmptyBoxes();
                         disableBoxes();
                         disableOkCancelButtons();
-                        enableEditButtons();
-                        enableLanguageButtons();
+
                 }
                
 
@@ -222,9 +219,8 @@ namespace projecte_eywa
                 dataGridViewQuestions.Enabled = true;
                 initializeEmptyBoxes();
                 disableBoxes();
+
                 disableOkCancelButtons();
-                enableEditButtons();
-                enableLanguageButtons();
                 // Disable button
                 modifyQuestion = false;
             }
@@ -238,8 +234,6 @@ namespace projecte_eywa
             modifyQuestion = true;
             enableBoxes();
             enableOkCancelButtons();
-            disableEditButtons();
-            disableLanguageButtons();
 
 
         }
@@ -267,8 +261,6 @@ namespace projecte_eywa
             initializeEmptyBoxes();
             disableBoxes();
             disableOkCancelButtons();
-            enableEditButtons();
-            enableLanguageButtons();
         }
         public void enableOkCancelButtons()
         {
@@ -280,30 +272,6 @@ namespace projecte_eywa
             // Disable buttons
             buttonOk.Visible = false;
             buttonCancel.Visible = false;
-        }
-        public void enableLanguageButtons()
-        {
-            buttonCatala.Enabled = true;
-            buttonEnglish.Enabled = true;
-            buttonEspañol.Enabled = true;
-        }
-        public void disableLanguageButtons()
-        {
-            buttonCatala.Enabled = false;
-            buttonEnglish.Enabled = false;
-            buttonEspañol.Enabled = false;
-        }
-        public void enableEditButtons()
-        {
-            buttonAdd.Enabled = true;
-            buttonModify.Enabled = true;
-            buttonDelete.Enabled = true;
-        }
-        public void disableEditButtons()
-        {
-            buttonAdd.Enabled = false;
-            buttonModify.Enabled = false;
-            buttonDelete.Enabled = false;
         }
         public void enableBoxes()
         {
@@ -324,7 +292,7 @@ namespace projecte_eywa
             textBoxIncorrectAnswer1.ReadOnly = true;
             textBoxIncorrectAnswer2.ReadOnly = true;
             textBoxIncorrectAnswer3.ReadOnly = true;
-            
+
         }
 
         public void initializeEmptyBoxes()
@@ -362,101 +330,15 @@ namespace projecte_eywa
             currentSheet = "EN";
             changeSheets();
         }
-        private void changeLanguageES()
+
+        private void FormQuestions_Load(object sender, EventArgs e)
         {
-            // Change description
-            labelQuestionDescription.Text = "Pregunta";
-            labelCorrectAnswerDescription.Text = "Respuesta \n correcta";
-            labelIncorrectAnswer1Description.Text = "Respuesta \n incorrecta";
-            labelIncorrectAnswer2Description.Text = "Respuesta \n incorrecta";
-            labelIncorrectAnswer3Description.Text = "Respuesta \n incorrecta";
-            labelCategoryDescription.Text = "Categoría";
-            labelDifficultyDescription.Text = "Dificultad";
-            // Change ADD, MODIFY AND DELTE buttons
-            buttonAdd.Text = "Añadir";
-            buttonModify.Text = "Modificar";
-            buttonDelete.Text = "Eliminar";
-            // Change OK and Cancel buttons
-            buttonCancel.Text = "Cancelar";
-            buttonOk.Text = "Guardar";
-            // Change Category Collection Items
-            comboBoxCategoryDescription.Items.Clear();
-            comboBoxCategoryDescription.Items.Add("Ciencia ficción");
-            comboBoxCategoryDescription.Items.Add("Acción");
-            comboBoxCategoryDescription.Items.Add("Comedia");
-            comboBoxCategoryDescription.Items.Add("Animación");
-            comboBoxCategoryDescription.Items.Add("Miedo");
-            comboBoxCategoryDescription.Items.Add("Drama");
-            // Change Diffulty Collection Items
-            comboBoxDifficultDescription.Items.Clear();
-            comboBoxDifficultDescription.Items.Add("Fácil");
-            comboBoxDifficultDescription.Items.Add("Media");
-            comboBoxDifficultDescription.Items.Add("Difícil");
-            comboBoxDifficultDescription.Items.Add("Leyenda");
+
         }
-        private void changeLanguageEN()
+
+        private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
         {
-            // Change description
-            labelQuestionDescription.Text = "Question";
-            labelCorrectAnswerDescription.Text = "Correct \n answer";
-            labelIncorrectAnswer1Description.Text = "Incorrect \n answer";
-            labelIncorrectAnswer2Description.Text = "Incorrect \n answer";
-            labelIncorrectAnswer3Description.Text = "Incorrect \n answer";
-            labelCategoryDescription.Text = "Category";
-            labelDifficultyDescription.Text = "Difficulty";
-            // Change ADD, MODIFY AND DELTE buttons
-            buttonAdd.Text = "Add";
-            buttonModify.Text = "Modifify";
-            buttonDelete.Text = "Delete";
-            // Change OK and Cancel buttons
-            buttonCancel.Text = "Cancel";
-            buttonOk.Text = "Save";
-            // Change Category Collection Items
-            comboBoxCategoryDescription.Items.Clear();
-            comboBoxCategoryDescription.Items.Add("Science Fiction");
-            comboBoxCategoryDescription.Items.Add("Action");
-            comboBoxCategoryDescription.Items.Add("Comedy");
-            comboBoxCategoryDescription.Items.Add("Animation");
-            comboBoxCategoryDescription.Items.Add("Horror");
-            comboBoxCategoryDescription.Items.Add("Drama");
-            // Change Diffulty Collection Items
-            comboBoxDifficultDescription.Items.Clear();
-            comboBoxDifficultDescription.Items.Add("Easy");
-            comboBoxDifficultDescription.Items.Add("Medium");
-            comboBoxDifficultDescription.Items.Add("Hard");
-            comboBoxDifficultDescription.Items.Add("Legend");
-        }
-        private void changeLanguageCA()
-        {
-            // Change description
-            labelQuestionDescription.Text = "Pregunta";
-            labelCorrectAnswerDescription.Text = "Resposta \n correcta";
-            labelIncorrectAnswer1Description.Text = "Resposta \n incorrecta";
-            labelIncorrectAnswer2Description.Text = "Resposta \n incorrecta";
-            labelIncorrectAnswer3Description.Text = "Resposta \n incorrecta";
-            labelCategoryDescription.Text = "Categoria";
-            labelDifficultyDescription.Text = "Dificultat";
-            // Change ADD, MODIFY AND DELTE buttons
-            buttonAdd.Text = "Afegir";
-            buttonModify.Text = "Modificar";
-            buttonDelete.Text = "Eliminar";
-            // Change OK and Cancel buttons
-            buttonCancel.Text = "Cancelar";
-            buttonOk.Text = "Guardar";
-            // Change Category Collection Items
-            comboBoxCategoryDescription.Items.Clear();
-            comboBoxCategoryDescription.Items.Add("Ciència ficció");
-            comboBoxCategoryDescription.Items.Add("Acció");
-            comboBoxCategoryDescription.Items.Add("Comedia");
-            comboBoxCategoryDescription.Items.Add("Animació");
-            comboBoxCategoryDescription.Items.Add("Terror");
-            comboBoxCategoryDescription.Items.Add("Drama");
-            // Change Diffulty Collection Items
-            comboBoxDifficultDescription.Items.Clear();
-            comboBoxDifficultDescription.Items.Add("Fàcil");
-            comboBoxDifficultDescription.Items.Add("Mitja");
-            comboBoxDifficultDescription.Items.Add("Difícil");
-            comboBoxDifficultDescription.Items.Add("Llegenda");
+            saveJSON();
         }
     }
 }
