@@ -71,14 +71,18 @@ namespace projecte_eywa
             {
                 case "EN":
                     quizQuestions = quizQuestionsEN;
+                    
                     break;
                 case "ES":
                     quizQuestions = quizQuestionsES;
+                    
                     break;
                 case "CA":
                     quizQuestions = quizQuestionsCA;
+                    
                     break;
             }
+            initializeEmptyBoxes();
             dataGridViewQuestions.DataSource = null;
             dataGridViewQuestions.DataSource = quizQuestions;
         }
@@ -147,27 +151,56 @@ namespace projecte_eywa
                 String newId = last.ToString();
                 textBoxIdDescription.Text = newId;
                 List<string> ListIncorrects = new List<string>();
+                QuizQuestion question = new QuizQuestion();
+
+
                 ListIncorrects.Add(textBoxIncorrectAnswer1.Text);
                 ListIncorrects.Add(textBoxIncorrectAnswer2.Text);
                 ListIncorrects.Add(textBoxIncorrectAnswer3.Text);
 
-                quizQuestions.Add(new QuizQuestion(
-                    last,
-                    textBoxQuestionDescription.Text,
-                    comboBoxDifficultDescription.SelectedIndex + 1,
-                    comboBoxCategoryDescription.Text,
-                    textBoxCorrectAnswer.Text,
-                    ListIncorrects
-                    ));
-                // Enable dataGrid 
-                dataGridViewQuestions.Enabled = true;
-                initializeEmptyBoxes();
-                disableBoxes();
 
-                disableOkCancelButtons();
+                question.id = last;
+                question.question = textBoxQuestionDescription.Text;
+                question.difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
+                question.category = comboBoxCategoryDescription.Text;
+                question.correct_answer = textBoxCorrectAnswer.Text;
+                question.incorrect_answers = ListIncorrects;
 
-                // Disable Add button
-                addQuestion = false;
+
+               
+                        
+                    
+                if (question.question == "" || (question.difficulty < 1 && question.difficulty > 4) || question.category == "" || question.correct_answer == "" || (question.incorrect_answers[0] == "" || question.incorrect_answers[1] == "" || question.incorrect_answers[2] == ""))
+                {
+                     MessageBox.Show("Error - Empty box. " +
+                            "Please be sure to fill all camps.");
+                        textBoxIdDescription.Text = newId;
+                        textBoxQuestionDescription.Text = question.question;
+                        textBoxCorrectAnswer.Text = question.correct_answer;
+                        textBoxIncorrectAnswer1.Text = question.incorrect_answers[0];
+                        textBoxIncorrectAnswer2.Text = question.incorrect_answers[1];
+                        textBoxIncorrectAnswer3.Text = question.incorrect_answers[2];
+                        comboBoxCategoryDescription.SelectedIndex = comboBoxCategoryDescription.Items.IndexOf(question.category);
+                        comboBoxDifficultDescription.SelectedIndex = question.difficulty - 1;
+
+                }
+                else
+                    {
+                        quizQuestions.Add(question);
+                        // Disable Add button
+                        addQuestion = false;
+                        // Enable dataGrid 
+                        dataGridViewQuestions.Enabled = true;
+                        initializeEmptyBoxes();
+                        disableBoxes();
+                        disableOkCancelButtons();
+
+                }
+               
+
+               
+
+                
             }
             else if (modifyQuestion)
             {
@@ -209,6 +242,8 @@ namespace projecte_eywa
         {
             index = dataGridViewQuestions.CurrentCell.RowIndex;
             dataGridViewQuestions.Rows.RemoveAt(index);
+            disableBoxes();
+            initializeEmptyBoxes();
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)

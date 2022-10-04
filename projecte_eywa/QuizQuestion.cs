@@ -25,5 +25,6 @@ namespace projecte_eywa
             this.correct_answer = correctAnswer;
             this.incorrect_answers = incorrectAnswer;
         }
+        public QuizQuestion() { }
     }
 }
