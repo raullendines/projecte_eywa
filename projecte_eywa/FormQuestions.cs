@@ -16,6 +16,7 @@ namespace projecte_eywa
     {
         const string PATH = @"..\..\json\" ;
         const string EN_PATH = PATH + "questions_en.json";
+        const string EN_PATH_TEST = PATH + "test_questions_en.json";
         const string ES_PATH = PATH + "questions_es.json";
         const string CA_PATH = PATH + "questions_ca.json";
         BindingList<QuizQuestion> quizQuestions = new BindingList<QuizQuestion>();
@@ -41,11 +42,11 @@ namespace projecte_eywa
 
             //needs to delete the previous document
             JArray QuizQuestionsArrayEN = (JArray)JToken.FromObject(quizQuestionsEN);
-            File.WriteAllText(EN_PATH, QuizQuestionsArrayEN.ToString());
-            JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
-            File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
-            JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
-            File.WriteAllText(CA_PATH, QuizQuestionsArrayCA.ToString());
+            File.WriteAllText(EN_PATH_TEST, QuizQuestionsArrayEN.ToString());
+            //JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
+            //File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
+            //JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
+            //File.WriteAllText(CA_PATH, QuizQuestionsArrayCA.ToString());
         }
 
         private void getData()
@@ -293,6 +294,16 @@ namespace projecte_eywa
             saveSheet();
             currentSheet = "EN";
             changeSheets();
+        }
+
+        private void FormQuestions_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            saveJSON();
         }
     }
 }

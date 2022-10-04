@@ -418,7 +418,6 @@
             this.buttonCatala.UseMnemonic = false;
             this.buttonCatala.UseVisualStyleBackColor = true;
             this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
-
             // 
             // FormQuestions
             // 
@@ -437,6 +436,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormQuestions";
             this.Text = "Preguntes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormQuestions_FormClosed);
+            this.Load += new System.EventHandler(this.FormQuestions_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).EndInit();
