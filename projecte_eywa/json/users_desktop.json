@@ -1,0 +1,17 @@
+[
+  {
+    "username": "Marcel",
+    "password": "cGAu+f+mNIfuX11BxA8jOApKovkpOfOx+1l216hy03hJTlrFxa1k1NJhmApUwSb4bGZREm11LhacSJnyB1mZqR9wJK/7eICP6a+295MWuukB8PqPPX1Nlgk1RBD+LTee",
+    "type": "admin"
+  },
+  {
+    "username": "Pau",
+    "password": "x4LK59UwNjB1bSZZvvE5Y+gYSsz+zTBGwK2ExjALZiEN7sU9ZHHe4lg20W8IvJK4fOLRtudmL6fLxcjhnY3N9Y0hm0C5GFwSabcAk6KX6Jm069ITm+l62HRoEmEN7O0U",
+    "type": "user"
+  },
+  {
+    "username": "raul",
+    "password": "LFDoenCrzS9rUCu0QHNpyCWyerb3uaPHUw76LNNirbD7QDMOoQHvcmSO0FYQ1+WjFk3metNzFljrN+2JkHG122a3bKWesCD8NXr4h0pYbhyCaNLO64CvKrLZkFFJwFwv",
+    "type": "user"
+  }
+]

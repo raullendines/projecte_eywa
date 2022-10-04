@@ -173,6 +173,16 @@ namespace projecte_eywa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap visibility_off_FILL0_wght400_GRAD0_opsz48 {
+            get {
+                object obj = ResourceManager.GetObject("visibility_off_FILL0_wght400_GRAD0_opsz48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wallpapersden_com_low_poly_blue_geometry_artwork_1920x1080 {
             get {
                 object obj = ResourceManager.GetObject("wallpapersden.com_low-poly-blue-geometry-artwork_1920x1080", resourceCulture);
