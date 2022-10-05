@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +15,8 @@ namespace projecte_eywa
 {
     public partial class FormCharacters : Form
     {
+        const string PATH = @"..\..\json\characters.json";
+
         BindingList<QuizCharacter> characters = new BindingList<QuizCharacter>();
         QuizCharacter quizCharacter;
         bool add = false;
@@ -20,8 +24,30 @@ namespace projecte_eywa
         public FormCharacters()
         {
             InitializeComponent();
+
+            getData();
+
         }
 
+        private void saveJSON()
+        {
+
+            JArray QuizQuestionsArrayEN = (JArray)JToken.FromObject(quizCharacter);
+            File.WriteAllText(PATH, QuizQuestionsArrayEN.ToString());
+         
+        }
+
+        private void getData()
+        {
+
+            JArray LoadCharacters = JArray.Parse(File.ReadAllText(PATH, Encoding.Default));
+            characters = LoadCharacters.ToObject<BindingList<QuizCharacter>>();
+
+            dataGridViewCharacters.DataSource = null;
+            dataGridViewCharacters.DataSource = characters;
+
+
+        }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
