@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using DataGridViewAutoFilter;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,6 +27,7 @@ namespace projecte_eywa
         BindingList<QuizQuestion> quizQuestionsEN = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsES = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsCA = new BindingList<QuizQuestion>();
+        BindingList<QuizQuestion> filteredList = new BindingList<QuizQuestion>();
 
         // CURRENT LANGUAGE
         string currentSheet = "EN";
@@ -34,6 +36,7 @@ namespace projecte_eywa
         //List<string> incorrectAnswers = new List<string>();
         bool addQuestion = false;
         bool modifyQuestion = false;
+        bool filterApplied = false;
         public FormQuestions()
         {
             InitializeComponent();
@@ -119,15 +122,58 @@ namespace projecte_eywa
             int temporal = index;
             index = dataGridViewQuestions.CurrentCell.RowIndex;
             // hacer un booleano para saber si se aplica el filtro, y si se aplica pillar la info desde filtredList (se tiene que probar xd)
-            if (temporal != index)
+            if (!filterApplied)
             {
-                string category = quizQuestions[index].category;
-                textBoxIdDescription.Text = quizQuestions[index].id.ToString();
-                textBoxQuestionDescription.Text = quizQuestions[index].question;
-                textBoxCorrectAnswer.Text = quizQuestions[index].correct_answer;
-                textBoxIncorrectAnswer1.Text = quizQuestions[index].incorrect_answers[0];
-                textBoxIncorrectAnswer2.Text = quizQuestions[index].incorrect_answers[1];
-                textBoxIncorrectAnswer3.Text = quizQuestions[index].incorrect_answers[2];
+                if (temporal != index)
+                {
+                    
+                    string category = quizQuestions[index].category;
+                    textBoxIdDescription.Text = quizQuestions[index].id.ToString();
+                    textBoxQuestionDescription.Text = quizQuestions[index].question;
+                    textBoxCorrectAnswer.Text = quizQuestions[index].correct_answer;
+                    textBoxIncorrectAnswer1.Text = quizQuestions[index].incorrect_answers[0];
+                    textBoxIncorrectAnswer2.Text = quizQuestions[index].incorrect_answers[1];
+                    textBoxIncorrectAnswer3.Text = quizQuestions[index].incorrect_answers[2];
+                    switch (category)
+                    {
+                        case "science fiction":
+                            comboBoxCategoryDescription.SelectedIndex = 0;
+                            break;
+                        case "action":
+                            comboBoxCategoryDescription.SelectedIndex = 1;
+                            break;
+                        case "comedy":
+                            comboBoxCategoryDescription.SelectedIndex = 2;
+                            break;
+                        case "horror":
+                            comboBoxCategoryDescription.SelectedIndex = 3;
+                            break;
+                        case "animation":
+                            comboBoxCategoryDescription.SelectedIndex = 4;
+                            break;
+                        case "drama":
+                            comboBoxCategoryDescription.SelectedIndex = 5;
+                            break;
+                        default:
+                            comboBoxCategoryDescription.SelectedIndex = -1;
+                            break;
+                    }
+                    comboBoxCategoryDescription.SelectedItem = comboBoxCategoryDescription.SelectedItem.ToString();
+
+                    comboBoxDifficultDescription.SelectedIndex = quizQuestions[index].difficulty - 1;
+                }
+            }
+            else
+            {
+               
+                
+                string category = filteredList[index].category;
+                textBoxIdDescription.Text = filteredList[index].id.ToString();
+                textBoxQuestionDescription.Text = filteredList[index].question;
+                textBoxCorrectAnswer.Text = filteredList[index].correct_answer;
+                textBoxIncorrectAnswer1.Text = filteredList[index].incorrect_answers[0];
+                textBoxIncorrectAnswer2.Text = filteredList[index].incorrect_answers[1];
+                textBoxIncorrectAnswer3.Text = filteredList[index].incorrect_answers[2];
                 switch (category)
                 {
                     case "science fiction":
@@ -153,9 +199,11 @@ namespace projecte_eywa
                         break;
                 }
                 comboBoxCategoryDescription.SelectedItem = comboBoxCategoryDescription.SelectedItem.ToString();
-                
-                comboBoxDifficultDescription.SelectedIndex = quizQuestions[index].difficulty - 1;
+
+                comboBoxDifficultDescription.SelectedIndex = filteredList[index].difficulty - 1;
+
             }
+            
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -289,7 +337,31 @@ namespace projecte_eywa
                 quizQuestions[index].incorrect_answers[0] = textBoxIncorrectAnswer1.Text;
                 quizQuestions[index].incorrect_answers[1] = textBoxIncorrectAnswer2.Text;
                 quizQuestions[index].incorrect_answers[2] = textBoxIncorrectAnswer3.Text;
-                quizQuestions[index].category = comboBoxCategoryDescription.Text;
+                int indice = comboBoxCategoryDescription.Items.IndexOf(comboBoxCategoryDescription.SelectedItem);
+                switch (indice)
+                {
+                    case 0:
+                        quizQuestions[index].category = "science fiction";
+                        break;
+                    case 1:
+                        quizQuestions[index].category = "action";
+                        break;
+                    case 2:
+                        quizQuestions[index].category = "comedy";
+                        break;
+                    case 3:
+                        quizQuestions[index].category = "horror";
+                        break;
+                    case 4:
+                        quizQuestions[index].category = "animation";
+                        break;
+                    case 5:
+                        quizQuestions[index].category = "drama";
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
                 quizQuestions[index].difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
                 dataGridViewQuestions.DataSource = null;
                 dataGridViewQuestions.DataSource = quizQuestions;
@@ -569,7 +641,12 @@ namespace projecte_eywa
 
         private void buttonApplyFilter_Click(object sender, EventArgs e)
         {
-            string category =  null;
+
+
+            //(dataGridViewQuestions.DataSource as DataTable).DefaultView.RowFilter = string.Format("[{0}] = '{1}'", "category", comboBoxFilter.Text.ToLower());
+
+            filterApplied = true;
+            string category = null;
             if (comboBoxFilter != null && comboBoxFilter.SelectedItem != null)
             {
                 int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
@@ -577,10 +654,10 @@ namespace projecte_eywa
                 {
                     case 0:
                         category = "science fiction";
-                        
+
                         break;
                     case 1:
-                        category= "action";
+                        category = "action";
                         break;
                     case 2:
                         category = "comedy";
@@ -599,12 +676,17 @@ namespace projecte_eywa
                         break;
                 }
                 BindingList<QuizQuestion> quizQuestionsCopy = quizQuestions;
-                BindingList<QuizQuestion> filteredList = new BindingList<QuizQuestion>(quizQuestionsCopy.Where(m => m.category.Contains(category) == true).ToList());
-                
+                filteredList = new BindingList<QuizQuestion>(quizQuestionsCopy.Where(m => m.category.Contains(category) == true).ToList());
+
                 dataGridViewQuestions.DataSource = filteredList;
 
 
             }
+        }
+
+        private void gestionarPersonatgesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

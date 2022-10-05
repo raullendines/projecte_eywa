@@ -65,10 +65,15 @@
             this.buttonEspañol = new System.Windows.Forms.Button();
             this.buttonEnglish = new System.Windows.Forms.Button();
             this.buttonCatala = new System.Windows.Forms.Button();
-            this.quizQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelFilter = new System.Windows.Forms.Label();
             this.comboBoxFilter = new System.Windows.Forms.ComboBox();
             this.buttonApplyFilter = new System.Windows.Forms.Button();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.difficultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correctanswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quizQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).BeginInit();
             this.groupBoxPropietats.SuspendLayout();
@@ -103,6 +108,7 @@
             this.gestionarPersonatgesToolStripMenuItem.Name = "gestionarPersonatgesToolStripMenuItem";
             this.gestionarPersonatgesToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.gestionarPersonatgesToolStripMenuItem.Text = "Charcater management";
+            this.gestionarPersonatgesToolStripMenuItem.Click += new System.EventHandler(this.gestionarPersonatgesToolStripMenuItem_Click);
             // 
             // userManagementToolStripMenuItem
             // 
@@ -146,8 +152,16 @@
             this.dataGridViewQuestions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewQuestions.AutoGenerateColumns = false;
             this.dataGridViewQuestions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewQuestions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewQuestions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.questionDataGridViewTextBoxColumn,
+            this.difficultyDataGridViewTextBoxColumn,
+            this.categoryDataGridViewTextBoxColumn,
+            this.correctanswerDataGridViewTextBoxColumn});
+            this.dataGridViewQuestions.DataSource = this.quizQuestionBindingSource;
             this.dataGridViewQuestions.Location = new System.Drawing.Point(8, 58);
             this.dataGridViewQuestions.MultiSelect = false;
             this.dataGridViewQuestions.Name = "dataGridViewQuestions";
@@ -457,6 +471,45 @@
             this.buttonApplyFilter.UseVisualStyleBackColor = true;
             this.buttonApplyFilter.Click += new System.EventHandler(this.buttonApplyFilter_Click);
             // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // questionDataGridViewTextBoxColumn
+            // 
+            this.questionDataGridViewTextBoxColumn.DataPropertyName = "question";
+            this.questionDataGridViewTextBoxColumn.HeaderText = "question";
+            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
+            this.questionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // difficultyDataGridViewTextBoxColumn
+            // 
+            this.difficultyDataGridViewTextBoxColumn.DataPropertyName = "difficulty";
+            this.difficultyDataGridViewTextBoxColumn.HeaderText = "difficulty";
+            this.difficultyDataGridViewTextBoxColumn.Name = "difficultyDataGridViewTextBoxColumn";
+            this.difficultyDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "category";
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // correctanswerDataGridViewTextBoxColumn
+            // 
+            this.correctanswerDataGridViewTextBoxColumn.DataPropertyName = "correct_answer";
+            this.correctanswerDataGridViewTextBoxColumn.HeaderText = "correct_answer";
+            this.correctanswerDataGridViewTextBoxColumn.Name = "correctanswerDataGridViewTextBoxColumn";
+            this.correctanswerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quizQuestionBindingSource
+            // 
+            this.quizQuestionBindingSource.DataSource = typeof(projecte_eywa.QuizQuestion);
+            // 
             // FormQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -526,12 +579,17 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.BindingSource quizQuestionBindingSource;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem categoryToolStripMenuItem;
         private System.Windows.Forms.Label labelFilter;
         private System.Windows.Forms.ComboBox comboBoxFilter;
         private System.Windows.Forms.Button buttonApplyFilter;
+        private System.Windows.Forms.BindingSource quizQuestionBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn difficultyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correctanswerDataGridViewTextBoxColumn;
     }
 }
 
