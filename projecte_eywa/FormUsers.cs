@@ -17,8 +17,9 @@ namespace projecte_eywa
     public partial class FormUsers : Form
     {
 
-        List<UserDesktop> DesktopList = new List<UserDesktop>();
+        List<UserDesktop> DesktopList;
         List<UserAndroid> AndroidList = new List<UserAndroid>();
+        UserDesktop actualUser;
         
         const string auth = "EYWA";
         const string PATH = @"..\..\json\";
@@ -26,20 +27,23 @@ namespace projecte_eywa
         const string USERS_ANDROID_PATH = PATH + "users_android.json";
 
 
-        public FormUsers()
+        public FormUsers(List<UserDesktop> DesktopList, UserDesktop actualUser)
         {
+            this.DesktopList = DesktopList;
+            this.actualUser = actualUser;
             InitializeComponent();
         }
 
         private void FormUsers_Load(object sender, EventArgs e)
         {
             loadData();
+            labelActualUserData.Text = actualUser.username.ToString() + " " + actualUser.type.ToString();
         }
 
         private void loadData()
         {
-            JArray LoadDesktopUsers = JArray.Parse(File.ReadAllText(USERS_DESKTOP_PATH, Encoding.Default));
-            DesktopList = LoadDesktopUsers.ToObject<List<UserDesktop>>();
+            //JArray LoadDesktopUsers = JArray.Parse(File.ReadAllText(USERS_DESKTOP_PATH, Encoding.Default));
+            //DesktopList = LoadDesktopUsers.ToObject<List<UserDesktop>>();
             JArray LoadAndroidUsers = JArray.Parse(File.ReadAllText(USERS_ANDROID_PATH, Encoding.Default));
             AndroidList = LoadAndroidUsers.ToObject<List<UserAndroid>>();
 

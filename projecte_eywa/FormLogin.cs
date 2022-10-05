@@ -19,7 +19,8 @@ namespace projecte_eywa
     public partial class FormLogin : Form
     {
 
-        BindingList<UserDesktop> UsersList = new BindingList<UserDesktop>();
+        List<UserDesktop> UsersList = new List<UserDesktop>();
+        UserDesktop actualUser;
         const string auth = "EYWA";
         const string PATH = @"..\..\json\";
         const string USERS_PATH = PATH + "users_desktop.json";
@@ -37,7 +38,7 @@ namespace projecte_eywa
 
 
             JArray LoadUsers = JArray.Parse(File.ReadAllText(USERS_PATH, Encoding.Default));
-            UsersList = LoadUsers.ToObject<BindingList<UserDesktop>>();
+            UsersList = LoadUsers.ToObject<List<UserDesktop>>();
             //UsersList.Add(new UserDesktop("Marcel", BCrypt.Net.BCrypt.HashPassword("marcel1234"), "admin"));
             //UsersList.Add(new UserDesktop("Pau", BCrypt.Net.BCrypt.HashPassword("pau1234"), "admin"));
             //UsersList.Add(new UserDesktop("Raul", BCrypt.Net.BCrypt.HashPassword("raul1234"), "admin"));
@@ -55,8 +56,9 @@ namespace projecte_eywa
             {
                 if (checkCorrectUser())
                 {
-
-                    MessageBox.Show("LOGGED");
+                    FormUsers formUser = new FormUsers(UsersList, actualUser);
+                    formUser.Show();
+                    this.Dispose();
                 }
                 else
                 {
@@ -68,7 +70,13 @@ namespace projecte_eywa
                 //NEW ACCOUNT
                 if (checkCorrectNewUser())
                 {
-
+                    string username = textBoxUser.Text;
+                    string passwordEncrypted = BCrypt.Net.BCrypt.HashPassword(textBoxPassword.Text);
+                    UsersList.Add(new UserDesktop(username, passwordEncrypted, "user"));
+                    MessageBox.Show("New user created!");
+                    changeLoginRegister();
+                    clearTextBox();
+                    saveData();
                 }
             }
 
@@ -83,6 +91,7 @@ namespace projecte_eywa
             {
                 if(user.username.Equals(textBoxUser.Text) && BCrypt.Net.BCrypt.Verify(textBoxPassword.Text, user.password))
                 {
+                    actualUser = user;
                     return true;
                 }
 
@@ -104,30 +113,30 @@ namespace projecte_eywa
                 return false;
             }
 
-            if (textBoxPassword.Text.Equals(textBoxConfirmPassword.Text))
-            {
-                foreach(UserDesktop user in UsersList)
-                {
-                    if (user.username.Equals(textBoxUser))
-                    {
-                        MessageBox.Show("This username already exist");
-                        return false;
-                    }
-                }
-                string username = textBoxUser.Text;
-                string passwordEncrypted = BCrypt.Net.BCrypt.HashPassword(textBoxPassword.Text);
-                UsersList.Add(new UserDesktop(username, passwordEncrypted, "user"));
-                MessageBox.Show("New user created!");
-                changeLoginRegister();
-                return true;
-            }
-            else
+            if (!textBoxPassword.Text.Equals(textBoxConfirmPassword.Text))
             {
                 MessageBox.Show("Confirm the password correctly");
                 return false;
             }
             
-            
+            foreach (UserDesktop user in UsersList)
+            {
+                if (user.username.Equals(textBoxUser))
+                {
+                    MessageBox.Show("This username already exist");
+                    return false;
+                }
+            }
+
+            return true;
+           
+        }
+
+        private void clearTextBox()
+        {
+            textBoxConfirmPassword.Text = "";
+            textBoxPassword.Text = "";
+            textBoxUser.Text = "";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -175,20 +184,53 @@ namespace projecte_eywa
         private void FormLogin_Load(object sender, EventArgs e)
         {
             getData();
+            paintComponents();
         }
+
+        private void paintComponents()
+        {
+            //61, 0, 102 maincolor
+            //238, 199, 252 3th color
+            this.BackColor = Color.FromArgb(255, 61, 0, 102);
+            panelLogin.BackColor = Color.FromArgb(240, 255, 255, 255);
+
+            labelUser.BackColor = Color.Transparent;
+            labelUser.ForeColor = Color.FromArgb(255, 61, 0, 102);
+
+            labelPassword.BackColor = Color.Transparent;
+            labelPassword.ForeColor = Color.FromArgb(255, 61, 0, 102);
+
+            textBoxPassword.ForeColor = Color.FromArgb(255, 61, 0, 102);
+
+            textBoxUser.ForeColor = Color.FromArgb(255, 61, 0, 102);
+
+            buttonLogin.BackColor = Color.FromArgb(220, 61, 0, 102);
+            buttonLogin.ForeColor = Color.FromArgb(255, 255, 255, 255);
+
+            buttonRegister.BackColor = Color.FromArgb(255, 255, 255, 255);
+            buttonRegister.ForeColor = Color.FromArgb(255, 61, 0, 102);
+
+            buttonVisibility.BackColor = Color.Transparent;
+
+            textBoxConfirmPassword.ForeColor = Color.FromArgb(255, 61, 0, 102);
+
+            labelConfirmPassword.BackColor = Color.Transparent;
+            labelConfirmPassword.ForeColor = Color.FromArgb(255, 61, 0, 102);
+
+    }
 
         private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Do you want to save USER_DESKTOP.JSON", "Exit", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                //do something
-                saveData();
-            }
-            else if (dialogResult == DialogResult.No)
-            {
+            //DialogResult dialogResult = MessageBox.Show("Do you want to save USER_DESKTOP.JSON", "Exit", MessageBoxButtons.YesNo);
+            //if (dialogResult == DialogResult.Yes)
+            //{
+            //    //do something
+            //    saveData();
+            //}
+            //else if (dialogResult == DialogResult.No)
+            //{
 
-            }
+            //}
         }
     }
 }

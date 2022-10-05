@@ -46,7 +46,7 @@
             // 
             this.labelUser.AutoSize = true;
             this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUser.Location = new System.Drawing.Point(300, 375);
+            this.labelUser.Location = new System.Drawing.Point(103, 366);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(57, 25);
             this.labelUser.TabIndex = 0;
@@ -56,7 +56,7 @@
             // 
             this.labelPassword.AutoSize = true;
             this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(300, 437);
+            this.labelPassword.Location = new System.Drawing.Point(103, 428);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(106, 25);
             this.labelPassword.TabIndex = 1;
@@ -75,15 +75,15 @@
             this.panelLogin.Controls.Add(this.textBoxUser);
             this.panelLogin.Controls.Add(this.labelUser);
             this.panelLogin.Controls.Add(this.labelPassword);
-            this.panelLogin.Location = new System.Drawing.Point(489, 125);
+            this.panelLogin.Location = new System.Drawing.Point(725, 137);
             this.panelLogin.Name = "panelLogin";
-            this.panelLogin.Size = new System.Drawing.Size(1039, 766);
+            this.panelLogin.Size = new System.Drawing.Size(676, 766);
             this.panelLogin.TabIndex = 2;
             // 
             // textBoxConfirmPassword
             // 
             this.textBoxConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxConfirmPassword.Location = new System.Drawing.Point(305, 527);
+            this.textBoxConfirmPassword.Location = new System.Drawing.Point(108, 518);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.PasswordChar = '*';
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(441, 31);
@@ -94,7 +94,7 @@
             // 
             this.labelConfirmPassword.AutoSize = true;
             this.labelConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConfirmPassword.Location = new System.Drawing.Point(300, 499);
+            this.labelConfirmPassword.Location = new System.Drawing.Point(103, 490);
             this.labelConfirmPassword.Name = "labelConfirmPassword";
             this.labelConfirmPassword.Size = new System.Drawing.Size(186, 25);
             this.labelConfirmPassword.TabIndex = 8;
@@ -107,7 +107,7 @@
             this.buttonRegister.FlatAppearance.BorderSize = 0;
             this.buttonRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonRegister.Location = new System.Drawing.Point(443, 688);
+            this.buttonRegister.Location = new System.Drawing.Point(246, 679);
             this.buttonRegister.Name = "buttonRegister";
             this.buttonRegister.Size = new System.Drawing.Size(192, 66);
             this.buttonRegister.TabIndex = 7;
@@ -122,7 +122,7 @@
             this.buttonVisibility.FlatAppearance.BorderSize = 0;
             this.buttonVisibility.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonVisibility.Image = global::projecte_eywa.Properties.Resources.visibility_FILL0_wght400_GRAD0_opsz48;
-            this.buttonVisibility.Location = new System.Drawing.Point(752, 464);
+            this.buttonVisibility.Location = new System.Drawing.Point(555, 455);
             this.buttonVisibility.Name = "buttonVisibility";
             this.buttonVisibility.Size = new System.Drawing.Size(57, 32);
             this.buttonVisibility.TabIndex = 6;
@@ -135,7 +135,7 @@
             this.buttonLogin.FlatAppearance.BorderSize = 0;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonLogin.Location = new System.Drawing.Point(443, 593);
+            this.buttonLogin.Location = new System.Drawing.Point(246, 584);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(192, 66);
             this.buttonLogin.TabIndex = 5;
@@ -146,7 +146,7 @@
             // labelLogo
             // 
             this.labelLogo.Image = global::projecte_eywa.Properties.Resources.pinterest_profile_image;
-            this.labelLogo.Location = new System.Drawing.Point(380, 18);
+            this.labelLogo.Location = new System.Drawing.Point(183, 9);
             this.labelLogo.Name = "labelLogo";
             this.labelLogo.Size = new System.Drawing.Size(330, 330);
             this.labelLogo.TabIndex = 4;
@@ -154,7 +154,7 @@
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(305, 465);
+            this.textBoxPassword.Location = new System.Drawing.Point(108, 456);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(441, 31);
@@ -163,7 +163,7 @@
             // textBoxUser
             // 
             this.textBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.Location = new System.Drawing.Point(305, 403);
+            this.textBoxUser.Location = new System.Drawing.Point(108, 394);
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(441, 31);
             this.textBoxUser.TabIndex = 2;
@@ -175,7 +175,9 @@
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.panelLogin);
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLogin";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLogin_FormClosing);
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.panelLogin.ResumeLayout(false);
