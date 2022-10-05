@@ -2,21 +2,22 @@
   {
     "username": "Marcel",
     "password": "$2a$11$T6A6qeJ4CgPeqrKBjbHtVe4OcIaHEr.RDqyGj2kczPaej2B9C5vK2",
-    "type": "admin"
+    "image": "path",
+    "gender": "male",
+    "age":  23
   },
   {
     "username": "Pau",
     "password": "$2a$11$LB3cVK7/IU8cfJSoYjvKM.xSiJncH.mKtmg9HiF./5Z.lhBcYa09W",
-    "type": "admin"
+    "image": "path",
+    "gender": "male",
+    "age": 21
   },
   {
     "username": "Raul",
     "password": "$2a$11$bePMql1BxuREW.klxb7UKeVBhpHLhqpEU83lEy/DxyYvrXBWkkQEO",
-    "type": "admin"
-  },
-  {
-    "username": "test",
-    "password": "$2a$11$e60l/AnNhdwRv6oJ8MMdRO5kzXvfqOa0fautcYLB3FZwKdjvxDnui",
-    "type": "user"
+    "image": "path",
+    "gender": "male",
+    "age": 20
   }
 ]

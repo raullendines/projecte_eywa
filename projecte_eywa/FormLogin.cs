@@ -34,8 +34,13 @@ namespace projecte_eywa
 
         private void getData()
         {
+
+
             JArray LoadUsers = JArray.Parse(File.ReadAllText(USERS_PATH, Encoding.Default));
             UsersList = LoadUsers.ToObject<BindingList<UserDesktop>>();
+            //UsersList.Add(new UserDesktop("Marcel", BCrypt.Net.BCrypt.HashPassword("marcel1234"), "admin"));
+            //UsersList.Add(new UserDesktop("Pau", BCrypt.Net.BCrypt.HashPassword("pau1234"), "admin"));
+            //UsersList.Add(new UserDesktop("Raul", BCrypt.Net.BCrypt.HashPassword("raul1234"), "admin"));
         }
 
         private void saveData()
@@ -76,11 +81,11 @@ namespace projecte_eywa
         
             foreach (UserDesktop user in UsersList)
             {
-                string decrypted = EncryptTest.Decrypt(user.password, auth);
-                if(user.username.Equals(textBoxUser.Text) && decrypted.Equals(textBoxPassword.Text))
+                if(user.username.Equals(textBoxUser.Text) && BCrypt.Net.BCrypt.Verify(textBoxPassword.Text, user.password))
                 {
                     return true;
                 }
+
             }
             return false;
 
@@ -110,7 +115,7 @@ namespace projecte_eywa
                     }
                 }
                 string username = textBoxUser.Text;
-                string passwordEncrypted = EncryptTest.Encrypt(textBoxPassword.Text, auth);
+                string passwordEncrypted = BCrypt.Net.BCrypt.HashPassword(textBoxPassword.Text);
                 UsersList.Add(new UserDesktop(username, passwordEncrypted, "user"));
                 MessageBox.Show("New user created!");
                 changeLoginRegister();
