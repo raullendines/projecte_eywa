@@ -124,7 +124,7 @@ namespace projecte_eywa
             index = dataGridViewQuestions.CurrentCell.RowIndex;
             // hacer un booleano para saber si se aplica el filtro, y si se aplica pillar la info desde filtredList (se tiene que probar xd)
             
-                if (temporal != index)
+                if (temporal != index && index < dataGridViewQuestions.RowCount - 1)
                 {
                     
                     string category = quizQuestions[index].category;
@@ -711,7 +711,10 @@ namespace projecte_eywa
 
         private void gestionarPersonatgesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            var myNextForm = new FormCharacters();
+            myNextForm.Show();
+            this.Close();
+
         }
 
         private void buttonClearFilter_Click(object sender, EventArgs e)

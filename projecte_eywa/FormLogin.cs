@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml.Linq;
+using Application = System.Windows.Forms.Application;
 
 namespace projecte_eywa
 {
@@ -29,9 +30,9 @@ namespace projecte_eywa
 
         private void getData()
         {
-            string testPassword = "password12345";
+            string testPassword = "p";
             string passwordEncrypted = EncryptTest.Encrypt(testPassword, auth);
-            UsersList.Add(new User("Marcel", passwordEncrypted, "Admin", "Desktop", "", "Male", 20));
+            UsersList.Add(new User("p", passwordEncrypted, "Admin", "Desktop", "", "Male", 20));
 
 
         }
@@ -42,8 +43,9 @@ namespace projecte_eywa
 
             if (checkCorrectUser())
             {
-                
-                MessageBox.Show("LOGGED");
+                var myNextForm = new FormQuestions();
+                myNextForm.Show();
+                this.Close();
             }
             else
             {
@@ -79,6 +81,16 @@ namespace projecte_eywa
                 textBoxPassword.PasswordChar = '*';
             }
             
+        }
+
+        private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
