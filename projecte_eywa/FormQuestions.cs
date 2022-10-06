@@ -36,7 +36,8 @@ namespace projecte_eywa
         //List<string> incorrectAnswers = new List<string>();
         bool addQuestion = false;
         bool modifyQuestion = false;
-        bool filterApplied = false;
+        bool isFiltered = false;
+        
         public FormQuestions()
         {
             InitializeComponent();
@@ -122,8 +123,7 @@ namespace projecte_eywa
             int temporal = index;
             index = dataGridViewQuestions.CurrentCell.RowIndex;
             // hacer un booleano para saber si se aplica el filtro, y si se aplica pillar la info desde filtredList (se tiene que probar xd)
-            if (!filterApplied)
-            {
+            
                 if (temporal != index)
                 {
                     
@@ -162,47 +162,8 @@ namespace projecte_eywa
 
                     comboBoxDifficultDescription.SelectedIndex = quizQuestions[index].difficulty - 1;
                 }
-            }
-            else
-            {
-               
-                
-                string category = filteredList[index].category;
-                textBoxIdDescription.Text = filteredList[index].id.ToString();
-                textBoxQuestionDescription.Text = filteredList[index].question;
-                textBoxCorrectAnswer.Text = filteredList[index].correct_answer;
-                textBoxIncorrectAnswer1.Text = filteredList[index].incorrect_answers[0];
-                textBoxIncorrectAnswer2.Text = filteredList[index].incorrect_answers[1];
-                textBoxIncorrectAnswer3.Text = filteredList[index].incorrect_answers[2];
-                switch (category)
-                {
-                    case "science fiction":
-                        comboBoxCategoryDescription.SelectedIndex = 0;
-                        break;
-                    case "action":
-                        comboBoxCategoryDescription.SelectedIndex = 1;
-                        break;
-                    case "comedy":
-                        comboBoxCategoryDescription.SelectedIndex = 2;
-                        break;
-                    case "horror":
-                        comboBoxCategoryDescription.SelectedIndex = 3;
-                        break;
-                    case "animation":
-                        comboBoxCategoryDescription.SelectedIndex = 4;
-                        break;
-                    case "drama":
-                        comboBoxCategoryDescription.SelectedIndex = 5;
-                        break;
-                    default:
-                        comboBoxCategoryDescription.SelectedIndex = -1;
-                        break;
-                }
-                comboBoxCategoryDescription.SelectedItem = comboBoxCategoryDescription.SelectedItem.ToString();
-
-                comboBoxDifficultDescription.SelectedIndex = filteredList[index].difficulty - 1;
-
-            }
+            
+            
             
         }
 
@@ -322,6 +283,45 @@ namespace projecte_eywa
                         enableAddModifyDeleteButtons();
                         enableLanguageButtons();
 
+                        string category = null;
+                        
+                    if (isFiltered)
+                    {
+                        int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
+                        switch (index)
+                        {
+                            case 0:
+                                category = "science fiction";
+
+                                break;
+                            case 1:
+                                category = "action";
+                                break;
+                            case 2:
+                                category = "comedy";
+                                break;
+                            case 3:
+                                category = "horror";
+                                break;
+                            case 4:
+                                category = "animation";
+                                break;
+                            case 5:
+                                category = "drama";
+                                break;
+                            default:
+                                MessageBox.Show("ERROR");
+                                break;
+                        }
+                        for (int i = 0; i < quizQuestions.Count; ++i)
+                        {
+                            if (!quizQuestions[i].category.Equals(category))
+                            {
+                                dataGridViewQuestions.CurrentCell = null;
+                                dataGridViewQuestions.Rows[i].Visible = false;
+                            }
+                        }
+                    }
                 }
                
 
@@ -536,6 +536,11 @@ namespace projecte_eywa
             {
                 comboBoxFilter.Items.Add(comboBoxCategoryDescription.Items[i].ToString());
             }
+
+            // Change FilterComboBox language
+            labelFilter.Text = "Filtro";
+            buttonApplyFilter.Text = "Aplicar filtro";
+            buttonClearFilter.Text = "Limpiar filtro";
         }
         private void changeLanguageEN()
         {
@@ -574,6 +579,10 @@ namespace projecte_eywa
             {
                 comboBoxFilter.Items.Add(comboBoxCategoryDescription.Items[i].ToString());
             }
+            // Change FilterComboBox language
+            labelFilter.Text = "Filter";
+            buttonApplyFilter.Text = "Apply filter";
+            buttonClearFilter.Text = "Clear filter";
         }
         private void changeLanguageCA()
         {
@@ -613,6 +622,10 @@ namespace projecte_eywa
             {
                 comboBoxFilter.Items.Add(comboBoxCategoryDescription.Items[i].ToString());
             }
+            // Change FilterComboBox language
+            labelFilter.Text = "Filtre";
+            buttonApplyFilter.Text = "Aplicar filtre";
+            buttonClearFilter.Text = "Netejar filtre";
         }
         private void enableAddModifyDeleteButtons()
         {
@@ -641,12 +654,19 @@ namespace projecte_eywa
 
         private void buttonApplyFilter_Click(object sender, EventArgs e)
         {
-
-
-            //(dataGridViewQuestions.DataSource as DataTable).DefaultView.RowFilter = string.Format("[{0}] = '{1}'", "category", comboBoxFilter.Text.ToLower());
-
-            filterApplied = true;
+            isFiltered = true;
             string category = null;
+            for (int i = 0; i < quizQuestions.Count; ++i)
+            {
+                
+                    dataGridViewQuestions.CurrentCell = null;
+                    dataGridViewQuestions.Rows[i].Visible = true;
+                
+            }
+
+         
+
+            
             if (comboBoxFilter != null && comboBoxFilter.SelectedItem != null)
             {
                 int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
@@ -675,17 +695,36 @@ namespace projecte_eywa
                         MessageBox.Show("ERROR");
                         break;
                 }
-                BindingList<QuizQuestion> quizQuestionsCopy = quizQuestions;
-                filteredList = new BindingList<QuizQuestion>(quizQuestionsCopy.Where(m => m.category.Contains(category) == true).ToList());
+                
 
-                dataGridViewQuestions.DataSource = filteredList;
-
+                for (int i = 0; i < quizQuestions.Count; ++i)
+                {
+                    if (!quizQuestions[i].category.Equals(category))
+                    {
+                        dataGridViewQuestions.CurrentCell = null;
+                        dataGridViewQuestions.Rows[i].Visible = false;
+                    }
+                }
 
             }
         }
 
         private void gestionarPersonatgesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void buttonClearFilter_Click(object sender, EventArgs e)
+        {
+            comboBoxFilter.SelectedIndex = -1;
+            isFiltered = false;
+            for (int i = 0; i < quizQuestions.Count; ++i)
+            {
+
+                dataGridViewQuestions.CurrentCell = null;
+                dataGridViewQuestions.Rows[i].Visible = true;
+
+            }
             
         }
     }

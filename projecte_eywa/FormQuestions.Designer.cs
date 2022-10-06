@@ -43,7 +43,7 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.groupBoxPropietats = new System.Windows.Forms.GroupBox();
+            this.groupBoxQuestionDescription = new System.Windows.Forms.GroupBox();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonOk = new System.Windows.Forms.Button();
             this.comboBoxCategoryDescription = new System.Windows.Forms.ComboBox();
@@ -68,6 +68,7 @@
             this.labelFilter = new System.Windows.Forms.Label();
             this.comboBoxFilter = new System.Windows.Forms.ComboBox();
             this.buttonApplyFilter = new System.Windows.Forms.Button();
+            this.buttonClearFilter = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.difficultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,7 +77,7 @@
             this.quizQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).BeginInit();
-            this.groupBoxPropietats.SuspendLayout();
+            this.groupBoxQuestionDescription.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quizQuestionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -201,32 +202,32 @@
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // groupBoxPropietats
+            // groupBoxQuestionDescription
             // 
-            this.groupBoxPropietats.Controls.Add(this.buttonCancel);
-            this.groupBoxPropietats.Controls.Add(this.buttonOk);
-            this.groupBoxPropietats.Controls.Add(this.comboBoxCategoryDescription);
-            this.groupBoxPropietats.Controls.Add(this.comboBoxDifficultDescription);
-            this.groupBoxPropietats.Controls.Add(this.textBoxIncorrectAnswer3);
-            this.groupBoxPropietats.Controls.Add(this.textBoxIncorrectAnswer2);
-            this.groupBoxPropietats.Controls.Add(this.textBoxIncorrectAnswer1);
-            this.groupBoxPropietats.Controls.Add(this.labelDifficultyDescription);
-            this.groupBoxPropietats.Controls.Add(this.labelCategoryDescription);
-            this.groupBoxPropietats.Controls.Add(this.labelIncorrectAnswer2Description);
-            this.groupBoxPropietats.Controls.Add(this.labelIncorrectAnswer3Description);
-            this.groupBoxPropietats.Controls.Add(this.labelIncorrectAnswer1Description);
-            this.groupBoxPropietats.Controls.Add(this.textBoxCorrectAnswer);
-            this.groupBoxPropietats.Controls.Add(this.labelCorrectAnswerDescription);
-            this.groupBoxPropietats.Controls.Add(this.textBoxQuestionDescription);
-            this.groupBoxPropietats.Controls.Add(this.labelQuestionDescription);
-            this.groupBoxPropietats.Controls.Add(this.textBoxIdDescription);
-            this.groupBoxPropietats.Controls.Add(this.labelIdDescription);
-            this.groupBoxPropietats.Location = new System.Drawing.Point(465, 64);
-            this.groupBoxPropietats.Name = "groupBoxPropietats";
-            this.groupBoxPropietats.Size = new System.Drawing.Size(323, 357);
-            this.groupBoxPropietats.TabIndex = 5;
-            this.groupBoxPropietats.TabStop = false;
-            this.groupBoxPropietats.Text = "Question";
+            this.groupBoxQuestionDescription.Controls.Add(this.buttonCancel);
+            this.groupBoxQuestionDescription.Controls.Add(this.buttonOk);
+            this.groupBoxQuestionDescription.Controls.Add(this.comboBoxCategoryDescription);
+            this.groupBoxQuestionDescription.Controls.Add(this.comboBoxDifficultDescription);
+            this.groupBoxQuestionDescription.Controls.Add(this.textBoxIncorrectAnswer3);
+            this.groupBoxQuestionDescription.Controls.Add(this.textBoxIncorrectAnswer2);
+            this.groupBoxQuestionDescription.Controls.Add(this.textBoxIncorrectAnswer1);
+            this.groupBoxQuestionDescription.Controls.Add(this.labelDifficultyDescription);
+            this.groupBoxQuestionDescription.Controls.Add(this.labelCategoryDescription);
+            this.groupBoxQuestionDescription.Controls.Add(this.labelIncorrectAnswer2Description);
+            this.groupBoxQuestionDescription.Controls.Add(this.labelIncorrectAnswer3Description);
+            this.groupBoxQuestionDescription.Controls.Add(this.labelIncorrectAnswer1Description);
+            this.groupBoxQuestionDescription.Controls.Add(this.textBoxCorrectAnswer);
+            this.groupBoxQuestionDescription.Controls.Add(this.labelCorrectAnswerDescription);
+            this.groupBoxQuestionDescription.Controls.Add(this.textBoxQuestionDescription);
+            this.groupBoxQuestionDescription.Controls.Add(this.labelQuestionDescription);
+            this.groupBoxQuestionDescription.Controls.Add(this.textBoxIdDescription);
+            this.groupBoxQuestionDescription.Controls.Add(this.labelIdDescription);
+            this.groupBoxQuestionDescription.Location = new System.Drawing.Point(465, 64);
+            this.groupBoxQuestionDescription.Name = "groupBoxQuestionDescription";
+            this.groupBoxQuestionDescription.Size = new System.Drawing.Size(323, 357);
+            this.groupBoxQuestionDescription.TabIndex = 5;
+            this.groupBoxQuestionDescription.TabStop = false;
+            this.groupBoxQuestionDescription.Text = "Question";
             // 
             // buttonCancel
             // 
@@ -463,13 +464,23 @@
             // 
             // buttonApplyFilter
             // 
-            this.buttonApplyFilter.Location = new System.Drawing.Point(298, 27);
+            this.buttonApplyFilter.Location = new System.Drawing.Point(287, 27);
             this.buttonApplyFilter.Name = "buttonApplyFilter";
-            this.buttonApplyFilter.Size = new System.Drawing.Size(110, 29);
+            this.buttonApplyFilter.Size = new System.Drawing.Size(68, 29);
             this.buttonApplyFilter.TabIndex = 11;
             this.buttonApplyFilter.Text = "Apply Filter";
             this.buttonApplyFilter.UseVisualStyleBackColor = true;
             this.buttonApplyFilter.Click += new System.EventHandler(this.buttonApplyFilter_Click);
+            // 
+            // buttonClearFilter
+            // 
+            this.buttonClearFilter.Location = new System.Drawing.Point(372, 27);
+            this.buttonClearFilter.Name = "buttonClearFilter";
+            this.buttonClearFilter.Size = new System.Drawing.Size(68, 29);
+            this.buttonClearFilter.TabIndex = 12;
+            this.buttonClearFilter.Text = "Clear Filter";
+            this.buttonClearFilter.UseVisualStyleBackColor = true;
+            this.buttonClearFilter.Click += new System.EventHandler(this.buttonClearFilter_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -515,13 +526,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonClearFilter);
             this.Controls.Add(this.buttonApplyFilter);
             this.Controls.Add(this.comboBoxFilter);
             this.Controls.Add(this.labelFilter);
             this.Controls.Add(this.buttonEnglish);
             this.Controls.Add(this.buttonEspañol);
             this.Controls.Add(this.buttonCatala);
-            this.Controls.Add(this.groupBoxPropietats);
+            this.Controls.Add(this.groupBoxQuestionDescription);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonModify);
             this.Controls.Add(this.buttonAdd);
@@ -536,8 +548,8 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).EndInit();
-            this.groupBoxPropietats.ResumeLayout(false);
-            this.groupBoxPropietats.PerformLayout();
+            this.groupBoxQuestionDescription.ResumeLayout(false);
+            this.groupBoxQuestionDescription.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quizQuestionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -552,7 +564,7 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonModify;
         private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.GroupBox groupBoxPropietats;
+        private System.Windows.Forms.GroupBox groupBoxQuestionDescription;
         private System.Windows.Forms.Button buttonCatala;
         private System.Windows.Forms.Button buttonEspañol;
         private System.Windows.Forms.Button buttonEnglish;
@@ -590,6 +602,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn difficultyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correctanswerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button buttonClearFilter;
     }
 }
 
