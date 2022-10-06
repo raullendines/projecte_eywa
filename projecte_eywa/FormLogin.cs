@@ -13,6 +13,7 @@ using System.Xml.Linq;
 using Newtonsoft.Json.Linq;
 using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Application = System.Windows.Forms.Application;
 
 namespace projecte_eywa
 {
@@ -39,9 +40,11 @@ namespace projecte_eywa
 
             JArray LoadUsers = JArray.Parse(File.ReadAllText(USERS_PATH, Encoding.Default));
             UsersList = LoadUsers.ToObject<List<UserDesktop>>();
-            //UsersList.Add(new UserDesktop("Marcel", BCrypt.Net.BCrypt.HashPassword("marcel1234"), "admin"));
-            //UsersList.Add(new UserDesktop("Pau", BCrypt.Net.BCrypt.HashPassword("pau1234"), "admin"));
-            //UsersList.Add(new UserDesktop("Raul", BCrypt.Net.BCrypt.HashPassword("raul1234"), "admin"));
+            //UsersList.Add(new UserDesktop("Marcel", BCrypt.Net.BCrypt.EnhancedHashPassword("marcel1234"), "admin"));
+            //UsersList.Add(new UserDesktop("Pau", BCrypt.Net.BCrypt.EnhancedHashPassword("pau1234"), "admin"));
+            //UsersList.Add(new UserDesktop("Raul", BCrypt.Net.BCrypt.EnhancedHashPassword("raul1234"), "admin"));
+            //UsersList.Add(new UserDesktop("Test", BCrypt.Net.BCrypt.EnhancedHashPassword("test"), "user"));
+            //saveData();
         }
 
         private void saveData()
@@ -55,10 +58,10 @@ namespace projecte_eywa
             if(formType.Equals("login"))
             {
                 if (checkCorrectUser())
-                {
+                {      
                     FormUsers formUser = new FormUsers(UsersList, actualUser);
                     formUser.Show();
-                    this.Dispose();
+                    this.Close();
                 }
                 else
                 {
@@ -71,7 +74,7 @@ namespace projecte_eywa
                 if (checkCorrectNewUser())
                 {
                     string username = textBoxUser.Text;
-                    string passwordEncrypted = BCrypt.Net.BCrypt.HashPassword(textBoxPassword.Text);
+                    string passwordEncrypted = BCrypt.Net.BCrypt.EnhancedHashPassword(textBoxPassword.Text);
                     UsersList.Add(new UserDesktop(username, passwordEncrypted, "user"));
                     MessageBox.Show("New user created!");
                     changeLoginRegister();
@@ -89,7 +92,7 @@ namespace projecte_eywa
         
             foreach (UserDesktop user in UsersList)
             {
-                if(user.username.Equals(textBoxUser.Text) && BCrypt.Net.BCrypt.Verify(textBoxPassword.Text, user.password))
+                if(user.username.Equals(textBoxUser.Text) && BCrypt.Net.BCrypt.EnhancedVerify(textBoxPassword.Text, user.password))
                 {
                     actualUser = user;
                     return true;
@@ -189,6 +192,7 @@ namespace projecte_eywa
 
         private void paintComponents()
         {
+            pictureBoxLogo.SizeMode = PictureBoxSizeMode.AutoSize;
             //61, 0, 102 maincolor
             //238, 199, 252 3th color
             this.BackColor = Color.FromArgb(255, 61, 0, 102);
@@ -232,5 +236,33 @@ namespace projecte_eywa
 
             //}
         }
+
+        private void textBoxUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Return))
+            {
+                buttonLogin_Click(sender, e);
+
+            }
+        }
+
+        private void textBoxPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Return))
+            {
+                buttonLogin_Click(sender, e);
+
+            }
+        }
+
+        private void textBoxConfirmPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Return))
+            {
+                buttonLogin_Click(sender, e);
+
+            }
+        }
     }
+
 }

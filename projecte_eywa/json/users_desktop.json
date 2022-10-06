@@ -1,22 +1,42 @@
 [
   {
     "username": "Marcel",
-    "password": "$2a$11$T6A6qeJ4CgPeqrKBjbHtVe4OcIaHEr.RDqyGj2kczPaej2B9C5vK2",
+    "password": "$2a$11$vBMQOu/Uj0EFNtTAzcZdj.ktMNDhsf4pJgZWTK9c774ZBrObmP7rO",
     "type": "admin"
   },
   {
     "username": "Pau",
-    "password": "$2a$11$LB3cVK7/IU8cfJSoYjvKM.xSiJncH.mKtmg9HiF./5Z.lhBcYa09W",
+    "password": "$2a$11$mJ3kLCBw3W0jk63s6mFmp.34O51u35L2YTJKtSzv1ivUaBzF44pMW",
     "type": "admin"
   },
   {
     "username": "Raul",
-    "password": "$2a$11$bePMql1BxuREW.klxb7UKeVBhpHLhqpEU83lEy/DxyYvrXBWkkQEO",
+    "password": "$2a$11$ZL1I19eMuiaJPiOp7Rc9MOUpm7vXY/AHEaHNmdr9nrsRhnkiJy3lm",
     "type": "admin"
   },
   {
-    "username": "test",
-    "password": "$2a$11$e60l/AnNhdwRv6oJ8MMdRO5kzXvfqOa0fautcYLB3FZwKdjvxDnui",
+    "username": "Test",
+    "password": "$2a$11$XdiLv5bYITNhKQL9sT6sC.zMtI57Ahb5Xf1oM.ADOWTkzxGTOd9JG",
+    "type": "user"
+  },
+  {
+    "username": "aegn",
+    "password": "$2a$11$XGS9wqTWBq/MQ226eUEJQuWkH1vPbWN0U8RsWxTTXAGmaLhCY8xZ.",
+    "type": "admin"
+  },
+  {
+    "username": "",
+    "password": "$2a$11$07trW9mckZEp4c2beYtKKuTfLX/7Zws26ZL9DkiX8sRseumkaC/KO",
+    "type": ""
+  },
+  {
+    "username": "axaca",
+    "password": "$2a$11$Ek.YTn145md7PTettvna9.yepQBZTRHPmuI9FN893vI1UueIz7i3K",
+    "type": "superadmin"
+  },
+  {
+    "username": "p",
+    "password": "$2a$11$bfuvnJgXLKNpf4/yDoq1VeIeO6PaCJgin4hc4PUuW7696b137Ipg2",
     "type": "user"
   }
 ]

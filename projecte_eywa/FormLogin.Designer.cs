@@ -89,6 +89,7 @@
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(441, 31);
             this.textBoxConfirmPassword.TabIndex = 9;
             this.textBoxConfirmPassword.Visible = false;
+            this.textBoxConfirmPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxConfirmPassword_KeyPress);
             // 
             // labelConfirmPassword
             // 
@@ -159,6 +160,7 @@
             this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(441, 31);
             this.textBoxPassword.TabIndex = 3;
+            this.textBoxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPassword_KeyPress);
             // 
             // textBoxUser
             // 
@@ -167,6 +169,7 @@
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(441, 31);
             this.textBoxUser.TabIndex = 2;
+            this.textBoxUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxUser_KeyPress);
             // 
             // FormLogin
             // 
