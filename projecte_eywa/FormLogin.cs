@@ -192,11 +192,9 @@ namespace projecte_eywa
 
         private void paintComponents()
         {
-            pictureBoxLogo.SizeMode = PictureBoxSizeMode.AutoSize;
             //61, 0, 102 maincolor
             //238, 199, 252 3th color
-            this.BackColor = Color.FromArgb(255, 61, 0, 102);
-            panelLogin.BackColor = Color.FromArgb(240, 255, 255, 255);
+            this.BackColor = Color.FromArgb(255, 177, 212, 224);
 
             labelUser.BackColor = Color.Transparent;
             labelUser.ForeColor = Color.FromArgb(255, 61, 0, 102);
@@ -208,8 +206,12 @@ namespace projecte_eywa
 
             textBoxUser.ForeColor = Color.FromArgb(255, 61, 0, 102);
 
-            buttonLogin.BackColor = Color.FromArgb(220, 61, 0, 102);
-            buttonLogin.ForeColor = Color.FromArgb(255, 255, 255, 255);
+            buttonLogin.BackColor = Color.FromArgb(255, 255, 224, 71);
+            buttonLogin.ForeColor = Color.FromArgb(255, 0, 0, 0);
+
+            roundButton1.BackColor = Color.FromArgb(255, 255, 224, 71);
+            roundButton1.ForeColor = Color.FromArgb(255, 0, 0, 0);
+
 
             buttonRegister.BackColor = Color.FromArgb(255, 255, 255, 255);
             buttonRegister.ForeColor = Color.FromArgb(255, 61, 0, 102);
