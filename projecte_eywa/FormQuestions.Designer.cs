@@ -163,20 +163,20 @@
             this.categoryDataGridViewTextBoxColumn,
             this.correctanswerDataGridViewTextBoxColumn});
             this.dataGridViewQuestions.DataSource = this.quizQuestionBindingSource;
-            this.dataGridViewQuestions.Location = new System.Drawing.Point(8, 58);
+            this.dataGridViewQuestions.Location = new System.Drawing.Point(52, 148);
             this.dataGridViewQuestions.MultiSelect = false;
             this.dataGridViewQuestions.Name = "dataGridViewQuestions";
             this.dataGridViewQuestions.ReadOnly = true;
             this.dataGridViewQuestions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewQuestions.Size = new System.Drawing.Size(446, 298);
+            this.dataGridViewQuestions.Size = new System.Drawing.Size(880, 652);
             this.dataGridViewQuestions.TabIndex = 1;
             this.dataGridViewQuestions.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewQuestions_CellClick);
             // 
             // buttonAdd
             // 
-            this.buttonAdd.Location = new System.Drawing.Point(8, 377);
+            this.buttonAdd.Location = new System.Drawing.Point(49, 818);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(55, 29);
+            this.buttonAdd.Size = new System.Drawing.Size(98, 48);
             this.buttonAdd.TabIndex = 2;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
@@ -184,9 +184,9 @@
             // 
             // buttonModify
             // 
-            this.buttonModify.Location = new System.Drawing.Point(69, 377);
+            this.buttonModify.Location = new System.Drawing.Point(169, 818);
             this.buttonModify.Name = "buttonModify";
-            this.buttonModify.Size = new System.Drawing.Size(55, 29);
+            this.buttonModify.Size = new System.Drawing.Size(98, 48);
             this.buttonModify.TabIndex = 3;
             this.buttonModify.Text = "Modify";
             this.buttonModify.UseVisualStyleBackColor = true;
@@ -194,12 +194,13 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(130, 377);
+            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
+            this.buttonDelete.Location = new System.Drawing.Point(296, 818);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(55, 29);
+            this.buttonDelete.Size = new System.Drawing.Size(98, 48);
             this.buttonDelete.TabIndex = 4;
             this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // groupBoxQuestionDescription
@@ -222,18 +223,18 @@
             this.groupBoxQuestionDescription.Controls.Add(this.labelQuestionDescription);
             this.groupBoxQuestionDescription.Controls.Add(this.textBoxIdDescription);
             this.groupBoxQuestionDescription.Controls.Add(this.labelIdDescription);
-            this.groupBoxQuestionDescription.Location = new System.Drawing.Point(465, 64);
+            this.groupBoxQuestionDescription.Location = new System.Drawing.Point(1091, 148);
             this.groupBoxQuestionDescription.Name = "groupBoxQuestionDescription";
-            this.groupBoxQuestionDescription.Size = new System.Drawing.Size(323, 357);
+            this.groupBoxQuestionDescription.Size = new System.Drawing.Size(687, 459);
             this.groupBoxQuestionDescription.TabIndex = 5;
             this.groupBoxQuestionDescription.TabStop = false;
             this.groupBoxQuestionDescription.Text = "Question";
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(201, 313);
+            this.buttonCancel.Location = new System.Drawing.Point(436, 384);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(55, 29);
+            this.buttonCancel.Size = new System.Drawing.Size(103, 49);
             this.buttonCancel.TabIndex = 26;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -245,9 +246,9 @@
             this.buttonOk.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonOk.FlatAppearance.BorderSize = 0;
             this.buttonOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOk.Location = new System.Drawing.Point(262, 313);
+            this.buttonOk.Location = new System.Drawing.Point(563, 384);
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(55, 29);
+            this.buttonOk.Size = new System.Drawing.Size(102, 49);
             this.buttonOk.TabIndex = 25;
             this.buttonOk.Text = "Save";
             this.buttonOk.UseVisualStyleBackColor = false;
@@ -266,9 +267,9 @@
             "Animation",
             "Horror",
             "Drama"});
-            this.comboBoxCategoryDescription.Location = new System.Drawing.Point(59, 248);
+            this.comboBoxCategoryDescription.Location = new System.Drawing.Point(183, 248);
             this.comboBoxCategoryDescription.Name = "comboBoxCategoryDescription";
-            this.comboBoxCategoryDescription.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxCategoryDescription.Size = new System.Drawing.Size(482, 21);
             this.comboBoxCategoryDescription.TabIndex = 24;
             this.comboBoxCategoryDescription.Tag = "";
             // 
@@ -282,33 +283,33 @@
             "Medium",
             "Hard",
             "Legend"});
-            this.comboBoxDifficultDescription.Location = new System.Drawing.Point(59, 278);
+            this.comboBoxDifficultDescription.Location = new System.Drawing.Point(183, 278);
             this.comboBoxDifficultDescription.Name = "comboBoxDifficultDescription";
-            this.comboBoxDifficultDescription.Size = new System.Drawing.Size(258, 21);
+            this.comboBoxDifficultDescription.Size = new System.Drawing.Size(482, 21);
             this.comboBoxDifficultDescription.TabIndex = 23;
             // 
             // textBoxIncorrectAnswer3
             // 
-            this.textBoxIncorrectAnswer3.Location = new System.Drawing.Point(59, 213);
+            this.textBoxIncorrectAnswer3.Location = new System.Drawing.Point(183, 219);
             this.textBoxIncorrectAnswer3.Name = "textBoxIncorrectAnswer3";
             this.textBoxIncorrectAnswer3.ReadOnly = true;
-            this.textBoxIncorrectAnswer3.Size = new System.Drawing.Size(258, 20);
+            this.textBoxIncorrectAnswer3.Size = new System.Drawing.Size(482, 20);
             this.textBoxIncorrectAnswer3.TabIndex = 22;
             // 
             // textBoxIncorrectAnswer2
             // 
-            this.textBoxIncorrectAnswer2.Location = new System.Drawing.Point(59, 174);
+            this.textBoxIncorrectAnswer2.Location = new System.Drawing.Point(183, 174);
             this.textBoxIncorrectAnswer2.Name = "textBoxIncorrectAnswer2";
             this.textBoxIncorrectAnswer2.ReadOnly = true;
-            this.textBoxIncorrectAnswer2.Size = new System.Drawing.Size(258, 20);
+            this.textBoxIncorrectAnswer2.Size = new System.Drawing.Size(482, 20);
             this.textBoxIncorrectAnswer2.TabIndex = 21;
             // 
             // textBoxIncorrectAnswer1
             // 
-            this.textBoxIncorrectAnswer1.Location = new System.Drawing.Point(59, 135);
+            this.textBoxIncorrectAnswer1.Location = new System.Drawing.Point(183, 135);
             this.textBoxIncorrectAnswer1.Name = "textBoxIncorrectAnswer1";
             this.textBoxIncorrectAnswer1.ReadOnly = true;
-            this.textBoxIncorrectAnswer1.Size = new System.Drawing.Size(258, 20);
+            this.textBoxIncorrectAnswer1.Size = new System.Drawing.Size(482, 20);
             this.textBoxIncorrectAnswer1.TabIndex = 20;
             // 
             // labelDifficultyDescription
@@ -361,10 +362,10 @@
             // 
             // textBoxCorrectAnswer
             // 
-            this.textBoxCorrectAnswer.Location = new System.Drawing.Point(59, 93);
+            this.textBoxCorrectAnswer.Location = new System.Drawing.Point(183, 87);
             this.textBoxCorrectAnswer.Name = "textBoxCorrectAnswer";
             this.textBoxCorrectAnswer.ReadOnly = true;
-            this.textBoxCorrectAnswer.Size = new System.Drawing.Size(258, 20);
+            this.textBoxCorrectAnswer.Size = new System.Drawing.Size(482, 20);
             this.textBoxCorrectAnswer.TabIndex = 14;
             // 
             // labelCorrectAnswerDescription
@@ -379,11 +380,11 @@
             // 
             // textBoxQuestionDescription
             // 
-            this.textBoxQuestionDescription.Location = new System.Drawing.Point(59, 52);
+            this.textBoxQuestionDescription.Location = new System.Drawing.Point(183, 45);
             this.textBoxQuestionDescription.Multiline = true;
             this.textBoxQuestionDescription.Name = "textBoxQuestionDescription";
             this.textBoxQuestionDescription.ReadOnly = true;
-            this.textBoxQuestionDescription.Size = new System.Drawing.Size(258, 24);
+            this.textBoxQuestionDescription.Size = new System.Drawing.Size(482, 24);
             this.textBoxQuestionDescription.TabIndex = 12;
             // 
             // labelQuestionDescription
@@ -397,10 +398,10 @@
             // 
             // textBoxIdDescription
             // 
-            this.textBoxIdDescription.Location = new System.Drawing.Point(59, 19);
+            this.textBoxIdDescription.Location = new System.Drawing.Point(183, 19);
             this.textBoxIdDescription.Name = "textBoxIdDescription";
             this.textBoxIdDescription.ReadOnly = true;
-            this.textBoxIdDescription.Size = new System.Drawing.Size(258, 20);
+            this.textBoxIdDescription.Size = new System.Drawing.Size(482, 20);
             this.textBoxIdDescription.TabIndex = 10;
             // 
             // labelIdDescription
@@ -415,7 +416,7 @@
             // 
             // buttonEspañol
             // 
-            this.buttonEspañol.Location = new System.Drawing.Point(672, 27);
+            this.buttonEspañol.Location = new System.Drawing.Point(1172, 113);
             this.buttonEspañol.Name = "buttonEspañol";
             this.buttonEspañol.Size = new System.Drawing.Size(55, 29);
             this.buttonEspañol.TabIndex = 7;
@@ -425,7 +426,7 @@
             // 
             // buttonEnglish
             // 
-            this.buttonEnglish.Location = new System.Drawing.Point(733, 27);
+            this.buttonEnglish.Location = new System.Drawing.Point(1247, 113);
             this.buttonEnglish.Name = "buttonEnglish";
             this.buttonEnglish.Size = new System.Drawing.Size(55, 29);
             this.buttonEnglish.TabIndex = 8;
@@ -435,7 +436,7 @@
             // 
             // buttonCatala
             // 
-            this.buttonCatala.Location = new System.Drawing.Point(611, 27);
+            this.buttonCatala.Location = new System.Drawing.Point(1100, 113);
             this.buttonCatala.Name = "buttonCatala";
             this.buttonCatala.Size = new System.Drawing.Size(55, 29);
             this.buttonCatala.TabIndex = 6;
@@ -447,36 +448,43 @@
             // labelFilter
             // 
             this.labelFilter.AutoSize = true;
-            this.labelFilter.Location = new System.Drawing.Point(12, 35);
+            this.labelFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFilter.Location = new System.Drawing.Point(47, 60);
             this.labelFilter.Name = "labelFilter";
-            this.labelFilter.Size = new System.Drawing.Size(29, 13);
+            this.labelFilter.Size = new System.Drawing.Size(54, 25);
             this.labelFilter.TabIndex = 9;
             this.labelFilter.Text = "Filter";
+            this.labelFilter.Click += new System.EventHandler(this.labelFilter_Click);
             // 
             // comboBoxFilter
             // 
             this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFilter.FormattingEnabled = true;
-            this.comboBoxFilter.Location = new System.Drawing.Point(47, 31);
+            this.comboBoxFilter.Location = new System.Drawing.Point(107, 57);
             this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(224, 21);
+            this.comboBoxFilter.Size = new System.Drawing.Size(347, 33);
             this.comboBoxFilter.TabIndex = 10;
+            this.comboBoxFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilter_SelectedIndexChanged);
             // 
             // buttonApplyFilter
             // 
-            this.buttonApplyFilter.Location = new System.Drawing.Point(287, 27);
+            this.buttonApplyFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
+            this.buttonApplyFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApplyFilter.Location = new System.Drawing.Point(475, 57);
             this.buttonApplyFilter.Name = "buttonApplyFilter";
-            this.buttonApplyFilter.Size = new System.Drawing.Size(68, 29);
+            this.buttonApplyFilter.Size = new System.Drawing.Size(78, 33);
             this.buttonApplyFilter.TabIndex = 11;
             this.buttonApplyFilter.Text = "Apply Filter";
-            this.buttonApplyFilter.UseVisualStyleBackColor = true;
+            this.buttonApplyFilter.UseVisualStyleBackColor = false;
             this.buttonApplyFilter.Click += new System.EventHandler(this.buttonApplyFilter_Click);
             // 
             // buttonClearFilter
             // 
-            this.buttonClearFilter.Location = new System.Drawing.Point(372, 27);
+            this.buttonClearFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearFilter.Location = new System.Drawing.Point(584, 57);
             this.buttonClearFilter.Name = "buttonClearFilter";
-            this.buttonClearFilter.Size = new System.Drawing.Size(68, 29);
+            this.buttonClearFilter.Size = new System.Drawing.Size(77, 33);
             this.buttonClearFilter.TabIndex = 12;
             this.buttonClearFilter.Text = "Clear Filter";
             this.buttonClearFilter.UseVisualStyleBackColor = true;
@@ -525,6 +533,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.buttonClearFilter);
             this.Controls.Add(this.buttonApplyFilter);

@@ -270,8 +270,16 @@ namespace projecte_eywa
             }
         }
 
-       
+        private void questionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var myNextForm = new FormQuestions();
+            myNextForm.Show();
+            this.Hide();
+        }
 
-       
+        private void FormCharacters_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

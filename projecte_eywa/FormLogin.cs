@@ -11,6 +11,7 @@ using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Xml.Linq;
 using Application = System.Windows.Forms.Application;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace projecte_eywa
 {
@@ -45,7 +46,7 @@ namespace projecte_eywa
             {
                 var myNextForm = new FormQuestions();
                 myNextForm.Show();
-                this.Close();
+                this.Hide();
             }
             else
             {

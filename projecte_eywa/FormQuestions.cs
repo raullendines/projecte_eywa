@@ -496,6 +496,7 @@ namespace projecte_eywa
         private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
         {
             saveJSON();
+            Application.Exit();
         }
 
         private void changeLanguageES()
@@ -713,7 +714,7 @@ namespace projecte_eywa
         {
             var myNextForm = new FormCharacters();
             myNextForm.Show();
-            this.Close();
+            this.Hide();
 
         }
 
@@ -729,6 +730,16 @@ namespace projecte_eywa
 
             }
             
+        }
+
+        private void labelFilter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
