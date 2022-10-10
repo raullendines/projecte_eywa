@@ -14,6 +14,7 @@ using Newtonsoft.Json.Linq;
 using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Application = System.Windows.Forms.Application;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace projecte_eywa
 {
@@ -26,11 +27,15 @@ namespace projecte_eywa
         const string PATH = @"..\..\json\";
         const string USERS_PATH = PATH + "users_desktop.json";
         string formType = "login";
+        Point labelTextPosition;
+        Point labelClickablePosition;
 
 
         public FormLogin()
         {
             InitializeComponent();
+            labelTextPosition = labelChangeFormsText.Location;
+            labelClickablePosition = labelChangeForms.Location;
 
         }
 
@@ -55,10 +60,10 @@ namespace projecte_eywa
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            if(formType.Equals("login"))
+            if (formType.Equals("login"))
             {
                 if (checkCorrectUser())
-                {      
+                {
                     FormUsers formUser = new FormUsers(UsersList, actualUser);
                     formUser.Show();
                     this.Close();
@@ -83,16 +88,49 @@ namespace projecte_eywa
                 }
             }
 
-            
+
 
         }
 
+        private void changeLoginRegister()
+        {
+            int loginX = 1130;
+            int increment = 50;
+            int loginY = 667;
+
+            if (formType.Equals("login"))
+            {
+                buttonLogin.Text = "Register";
+                labelChangeFormsText.Text = "You have an account?";
+                labelChangeForms.Text = "Login";
+                labelConfirmPassword.Visible = true;
+                textBoxConfirmPassword.Visible = true;
+                formType = "register";
+                buttonLogin.Location = new Point(loginX, loginY + increment);
+                labelChangeForms.Location = new Point(loginX - 120, loginY + increment + 7);
+                labelChangeFormsText.Location = new Point(loginX - 298, loginY + increment + 7);
+
+            }
+            else
+            {
+                buttonLogin.Text = "Log in";
+                labelChangeFormsText.Text = "New here?";
+                labelChangeForms.Text = "Create an account";
+                labelConfirmPassword.Visible = false;
+                textBoxConfirmPassword.Visible = false;
+                formType = "login";
+                buttonLogin.Location = new Point(loginX, loginY);
+                labelChangeForms.Location = labelClickablePosition;
+                labelChangeFormsText.Location = labelTextPosition;
+            }
+        }
+
         private bool checkCorrectUser()
-        { 
-        
+        {
+
             foreach (UserDesktop user in UsersList)
             {
-                if(user.username.Equals(textBoxUser.Text) && BCrypt.Net.BCrypt.EnhancedVerify(textBoxPassword.Text, user.password))
+                if (user.username.Equals(textBoxUser.Text) && BCrypt.Net.BCrypt.EnhancedVerify(textBoxPassword.Text, user.password))
                 {
                     actualUser = user;
                     return true;
@@ -121,7 +159,7 @@ namespace projecte_eywa
                 MessageBox.Show("Confirm the password correctly");
                 return false;
             }
-            
+
             foreach (UserDesktop user in UsersList)
             {
                 if (user.username.Equals(textBoxUser))
@@ -132,7 +170,7 @@ namespace projecte_eywa
             }
 
             return true;
-           
+
         }
 
         private void clearTextBox()
@@ -142,46 +180,21 @@ namespace projecte_eywa
             textBoxUser.Text = "";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonVisiblity_Click(object sender, EventArgs e)
         {
+            buttonVisibility.TabStop = false;
             if (textBoxPassword.PasswordChar.Equals('*'))
             {
                 textBoxPassword.PasswordChar = textBoxUser.PasswordChar;
-                buttonVisibility.Image = global::projecte_eywa.Properties.Resources.visibility_off_FILL0_wght400_GRAD0_opsz48;
+                buttonVisibility.Image = global::projecte_eywa.Properties.Resources.visibility_off;
 
             }
             else
             {
                 textBoxPassword.PasswordChar = '*';
-                buttonVisibility.Image = global::projecte_eywa.Properties.Resources.visibility_FILL0_wght400_GRAD0_opsz48;
+                buttonVisibility.Image = global::projecte_eywa.Properties.Resources.visibility_on;
             }
-            
-        }
 
-        private void buttonRegister_Click(object sender, EventArgs e)
-        {
-            changeLoginRegister();
-        }
-
-        private void changeLoginRegister()
-        {
-            if (formType.Equals("login"))
-            {
-                buttonLogin.Text = "Register";
-                buttonRegister.Text = "Log in with my account";
-                labelConfirmPassword.Visible = true;
-                textBoxConfirmPassword.Visible = true;
-                formType = "register";
-            }
-            else
-            {
-                buttonLogin.Text = "Log in";
-                buttonRegister.Text = "New account";
-                labelConfirmPassword.Visible = false;
-                textBoxConfirmPassword.Visible = false;
-                formType = "login";
-            }
-            
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
@@ -209,21 +222,21 @@ namespace projecte_eywa
             buttonLogin.BackColor = Color.FromArgb(255, 255, 224, 71);
             buttonLogin.ForeColor = Color.FromArgb(255, 0, 0, 0);
 
-            roundButton1.BackColor = Color.FromArgb(255, 255, 224, 71);
-            roundButton1.ForeColor = Color.FromArgb(255, 0, 0, 0);
-
-
-            buttonRegister.BackColor = Color.FromArgb(255, 255, 255, 255);
-            buttonRegister.ForeColor = Color.FromArgb(255, 61, 0, 102);
-
-            buttonVisibility.BackColor = Color.Transparent;
+            buttonVisibility.BackColor = Color.White;
 
             textBoxConfirmPassword.ForeColor = Color.FromArgb(255, 61, 0, 102);
 
             labelConfirmPassword.BackColor = Color.Transparent;
             labelConfirmPassword.ForeColor = Color.FromArgb(255, 61, 0, 102);
 
-    }
+            buttonVisibility.FlatAppearance.MouseOverBackColor = buttonVisibility.BackColor;
+            buttonVisibility.BackColorChanged += (s, e) =>
+            {
+                buttonVisibility.FlatAppearance.MouseOverBackColor = buttonVisibility.BackColor;
+            };
+
+
+        }
 
         private void FormLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -265,6 +278,11 @@ namespace projecte_eywa
 
             }
         }
-    }
 
+        private void labelChangeForms_Click(object sender, EventArgs e)
+        {
+            changeLoginRegister();
+        }
+
+    }
 }

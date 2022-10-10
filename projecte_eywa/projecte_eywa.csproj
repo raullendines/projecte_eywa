@@ -95,9 +95,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuizQuestion.cs" />
-    <Compile Include="RoundButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="UserAndroid.cs" />
     <Compile Include="UserDesktop.cs" />
     <EmbeddedResource Include="FormCharacters.resx">
@@ -179,6 +176,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\visibility_off_FILL0_wght400_GRAD0_opsz48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %282%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility_off.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
