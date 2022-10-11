@@ -150,5 +150,20 @@
   <ItemGroup>
     <None Include="Resources\visibility_FILL0_wght400_GRAD0_opsz48.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cataluña_bandera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\españa_boton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cataluña_bandera %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\españa_boton1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandera_england %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

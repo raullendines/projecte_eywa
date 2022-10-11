@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuestions));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.charactersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,13 +69,13 @@
             this.labelQuestionDescription = new System.Windows.Forms.Label();
             this.textBoxIdDescription = new System.Windows.Forms.TextBox();
             this.labelIdDescription = new System.Windows.Forms.Label();
-            this.buttonEspañol = new System.Windows.Forms.Button();
-            this.buttonEnglish = new System.Windows.Forms.Button();
-            this.buttonCatala = new System.Windows.Forms.Button();
             this.labelFilter = new System.Windows.Forms.Label();
             this.comboBoxFilter = new System.Windows.Forms.ComboBox();
             this.buttonApplyFilter = new System.Windows.Forms.Button();
             this.buttonClearFilter = new System.Windows.Forms.Button();
+            this.buttonEnglish = new System.Windows.Forms.Button();
+            this.buttonEspañol = new System.Windows.Forms.Button();
+            this.buttonCatala = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.difficultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -155,7 +162,16 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridViewQuestions.AutoGenerateColumns = false;
             this.dataGridViewQuestions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewQuestions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewQuestions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewQuestions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewQuestions.ColumnHeadersHeight = 30;
             this.dataGridViewQuestions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.questionDataGridViewTextBoxColumn,
@@ -163,6 +179,14 @@
             this.categoryDataGridViewTextBoxColumn,
             this.correctanswerDataGridViewTextBoxColumn});
             this.dataGridViewQuestions.DataSource = this.quizQuestionBindingSource;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewQuestions.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewQuestions.Location = new System.Drawing.Point(52, 148);
             this.dataGridViewQuestions.MultiSelect = false;
             this.dataGridViewQuestions.Name = "dataGridViewQuestions";
@@ -174,30 +198,35 @@
             // 
             // buttonAdd
             // 
+            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.Location = new System.Drawing.Point(49, 818);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(98, 48);
+            this.buttonAdd.Size = new System.Drawing.Size(103, 49);
             this.buttonAdd.TabIndex = 2;
             this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonModify
             // 
+            this.buttonModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonModify.Location = new System.Drawing.Point(169, 818);
             this.buttonModify.Name = "buttonModify";
-            this.buttonModify.Size = new System.Drawing.Size(98, 48);
+            this.buttonModify.Size = new System.Drawing.Size(103, 49);
             this.buttonModify.TabIndex = 3;
             this.buttonModify.Text = "Modify";
-            this.buttonModify.UseVisualStyleBackColor = true;
+            this.buttonModify.UseVisualStyleBackColor = false;
             this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
             // 
             // buttonDelete
             // 
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.Location = new System.Drawing.Point(296, 818);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(98, 48);
+            this.buttonDelete.Size = new System.Drawing.Size(103, 49);
             this.buttonDelete.TabIndex = 4;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
@@ -223,30 +252,35 @@
             this.groupBoxQuestionDescription.Controls.Add(this.labelQuestionDescription);
             this.groupBoxQuestionDescription.Controls.Add(this.textBoxIdDescription);
             this.groupBoxQuestionDescription.Controls.Add(this.labelIdDescription);
-            this.groupBoxQuestionDescription.Location = new System.Drawing.Point(1091, 148);
+            this.groupBoxQuestionDescription.Location = new System.Drawing.Point(991, 148);
             this.groupBoxQuestionDescription.Name = "groupBoxQuestionDescription";
-            this.groupBoxQuestionDescription.Size = new System.Drawing.Size(687, 459);
+            this.groupBoxQuestionDescription.Size = new System.Drawing.Size(787, 652);
             this.groupBoxQuestionDescription.TabIndex = 5;
             this.groupBoxQuestionDescription.TabStop = false;
             this.groupBoxQuestionDescription.Text = "Question";
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(436, 384);
+            this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonCancel.Location = new System.Drawing.Point(462, 551);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(103, 49);
             this.buttonCancel.TabIndex = 26;
             this.buttonCancel.Text = "Cancel";
-            this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Visible = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonOk
             // 
-            this.buttonOk.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonOk.FlatAppearance.BorderSize = 0;
             this.buttonOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOk.Location = new System.Drawing.Point(563, 384);
+            this.buttonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonOk.Location = new System.Drawing.Point(600, 551);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(102, 49);
             this.buttonOk.TabIndex = 25;
@@ -259,6 +293,7 @@
             // 
             this.comboBoxCategoryDescription.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategoryDescription.Enabled = false;
+            this.comboBoxCategoryDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCategoryDescription.FormattingEnabled = true;
             this.comboBoxCategoryDescription.Items.AddRange(new object[] {
             "Science Fiction",
@@ -267,9 +302,9 @@
             "Animation",
             "Horror",
             "Drama"});
-            this.comboBoxCategoryDescription.Location = new System.Drawing.Point(183, 248);
+            this.comboBoxCategoryDescription.Location = new System.Drawing.Point(218, 380);
             this.comboBoxCategoryDescription.Name = "comboBoxCategoryDescription";
-            this.comboBoxCategoryDescription.Size = new System.Drawing.Size(482, 21);
+            this.comboBoxCategoryDescription.Size = new System.Drawing.Size(482, 33);
             this.comboBoxCategoryDescription.TabIndex = 24;
             this.comboBoxCategoryDescription.Tag = "";
             // 
@@ -277,179 +312,163 @@
             // 
             this.comboBoxDifficultDescription.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDifficultDescription.Enabled = false;
+            this.comboBoxDifficultDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDifficultDescription.FormattingEnabled = true;
             this.comboBoxDifficultDescription.Items.AddRange(new object[] {
             "Easy ",
             "Medium",
             "Hard",
             "Legend"});
-            this.comboBoxDifficultDescription.Location = new System.Drawing.Point(183, 278);
+            this.comboBoxDifficultDescription.Location = new System.Drawing.Point(218, 454);
             this.comboBoxDifficultDescription.Name = "comboBoxDifficultDescription";
-            this.comboBoxDifficultDescription.Size = new System.Drawing.Size(482, 21);
+            this.comboBoxDifficultDescription.Size = new System.Drawing.Size(482, 33);
             this.comboBoxDifficultDescription.TabIndex = 23;
             // 
             // textBoxIncorrectAnswer3
             // 
-            this.textBoxIncorrectAnswer3.Location = new System.Drawing.Point(183, 219);
+            this.textBoxIncorrectAnswer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIncorrectAnswer3.Location = new System.Drawing.Point(220, 325);
             this.textBoxIncorrectAnswer3.Name = "textBoxIncorrectAnswer3";
             this.textBoxIncorrectAnswer3.ReadOnly = true;
-            this.textBoxIncorrectAnswer3.Size = new System.Drawing.Size(482, 20);
+            this.textBoxIncorrectAnswer3.Size = new System.Drawing.Size(482, 30);
             this.textBoxIncorrectAnswer3.TabIndex = 22;
             // 
             // textBoxIncorrectAnswer2
             // 
-            this.textBoxIncorrectAnswer2.Location = new System.Drawing.Point(183, 174);
+            this.textBoxIncorrectAnswer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIncorrectAnswer2.Location = new System.Drawing.Point(220, 269);
             this.textBoxIncorrectAnswer2.Name = "textBoxIncorrectAnswer2";
             this.textBoxIncorrectAnswer2.ReadOnly = true;
-            this.textBoxIncorrectAnswer2.Size = new System.Drawing.Size(482, 20);
+            this.textBoxIncorrectAnswer2.Size = new System.Drawing.Size(482, 30);
             this.textBoxIncorrectAnswer2.TabIndex = 21;
             // 
             // textBoxIncorrectAnswer1
             // 
-            this.textBoxIncorrectAnswer1.Location = new System.Drawing.Point(183, 135);
+            this.textBoxIncorrectAnswer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIncorrectAnswer1.Location = new System.Drawing.Point(218, 210);
             this.textBoxIncorrectAnswer1.Name = "textBoxIncorrectAnswer1";
             this.textBoxIncorrectAnswer1.ReadOnly = true;
-            this.textBoxIncorrectAnswer1.Size = new System.Drawing.Size(482, 20);
+            this.textBoxIncorrectAnswer1.Size = new System.Drawing.Size(482, 30);
             this.textBoxIncorrectAnswer1.TabIndex = 20;
             // 
             // labelDifficultyDescription
             // 
             this.labelDifficultyDescription.AutoSize = true;
-            this.labelDifficultyDescription.Location = new System.Drawing.Point(6, 281);
+            this.labelDifficultyDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDifficultyDescription.Location = new System.Drawing.Point(43, 457);
             this.labelDifficultyDescription.Name = "labelDifficultyDescription";
-            this.labelDifficultyDescription.Size = new System.Drawing.Size(47, 13);
+            this.labelDifficultyDescription.Size = new System.Drawing.Size(84, 25);
             this.labelDifficultyDescription.TabIndex = 19;
             this.labelDifficultyDescription.Text = "Difficulty";
             // 
             // labelCategoryDescription
             // 
             this.labelCategoryDescription.AutoSize = true;
-            this.labelCategoryDescription.Location = new System.Drawing.Point(6, 251);
+            this.labelCategoryDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCategoryDescription.Location = new System.Drawing.Point(43, 383);
             this.labelCategoryDescription.Name = "labelCategoryDescription";
-            this.labelCategoryDescription.Size = new System.Drawing.Size(49, 13);
+            this.labelCategoryDescription.Size = new System.Drawing.Size(92, 25);
             this.labelCategoryDescription.TabIndex = 18;
             this.labelCategoryDescription.Text = "Category";
             // 
             // labelIncorrectAnswer2Description
             // 
             this.labelIncorrectAnswer2Description.AutoSize = true;
-            this.labelIncorrectAnswer2Description.Location = new System.Drawing.Point(6, 170);
+            this.labelIncorrectAnswer2Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncorrectAnswer2Description.Location = new System.Drawing.Point(43, 272);
             this.labelIncorrectAnswer2Description.Name = "labelIncorrectAnswer2Description";
-            this.labelIncorrectAnswer2Description.Size = new System.Drawing.Size(49, 26);
+            this.labelIncorrectAnswer2Description.Size = new System.Drawing.Size(155, 25);
             this.labelIncorrectAnswer2Description.TabIndex = 17;
-            this.labelIncorrectAnswer2Description.Text = "Incorrect\r\nanswer\r\n";
+            this.labelIncorrectAnswer2Description.Text = "Incorrect answer\r\n";
             this.labelIncorrectAnswer2Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelIncorrectAnswer3Description
             // 
             this.labelIncorrectAnswer3Description.AutoSize = true;
-            this.labelIncorrectAnswer3Description.Location = new System.Drawing.Point(6, 209);
+            this.labelIncorrectAnswer3Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncorrectAnswer3Description.Location = new System.Drawing.Point(43, 328);
             this.labelIncorrectAnswer3Description.Name = "labelIncorrectAnswer3Description";
-            this.labelIncorrectAnswer3Description.Size = new System.Drawing.Size(52, 39);
+            this.labelIncorrectAnswer3Description.Size = new System.Drawing.Size(155, 25);
             this.labelIncorrectAnswer3Description.TabIndex = 16;
-            this.labelIncorrectAnswer3Description.Text = "Incorrect \r\nanswer\r\n\r\n";
+            this.labelIncorrectAnswer3Description.Text = "Incorrect answer";
             this.labelIncorrectAnswer3Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelIncorrectAnswer1Description
             // 
             this.labelIncorrectAnswer1Description.AutoSize = true;
-            this.labelIncorrectAnswer1Description.Location = new System.Drawing.Point(6, 131);
+            this.labelIncorrectAnswer1Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncorrectAnswer1Description.Location = new System.Drawing.Point(43, 213);
             this.labelIncorrectAnswer1Description.Name = "labelIncorrectAnswer1Description";
-            this.labelIncorrectAnswer1Description.Size = new System.Drawing.Size(49, 26);
+            this.labelIncorrectAnswer1Description.Size = new System.Drawing.Size(155, 25);
             this.labelIncorrectAnswer1Description.TabIndex = 15;
-            this.labelIncorrectAnswer1Description.Text = "Incorrect\r\nanswer\r\n";
+            this.labelIncorrectAnswer1Description.Text = "Incorrect answer";
             this.labelIncorrectAnswer1Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxCorrectAnswer
             // 
-            this.textBoxCorrectAnswer.Location = new System.Drawing.Point(183, 87);
+            this.textBoxCorrectAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCorrectAnswer.Location = new System.Drawing.Point(220, 149);
             this.textBoxCorrectAnswer.Name = "textBoxCorrectAnswer";
             this.textBoxCorrectAnswer.ReadOnly = true;
-            this.textBoxCorrectAnswer.Size = new System.Drawing.Size(482, 20);
+            this.textBoxCorrectAnswer.Size = new System.Drawing.Size(482, 30);
             this.textBoxCorrectAnswer.TabIndex = 14;
             // 
             // labelCorrectAnswerDescription
             // 
             this.labelCorrectAnswerDescription.AutoSize = true;
-            this.labelCorrectAnswerDescription.Location = new System.Drawing.Point(6, 83);
+            this.labelCorrectAnswerDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorrectAnswerDescription.Location = new System.Drawing.Point(43, 152);
             this.labelCorrectAnswerDescription.Name = "labelCorrectAnswerDescription";
-            this.labelCorrectAnswerDescription.Size = new System.Drawing.Size(44, 26);
+            this.labelCorrectAnswerDescription.Size = new System.Drawing.Size(144, 25);
             this.labelCorrectAnswerDescription.TabIndex = 13;
-            this.labelCorrectAnswerDescription.Text = "Correct \r\nanswer\r\n";
+            this.labelCorrectAnswerDescription.Text = "Correct answer";
             this.labelCorrectAnswerDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxQuestionDescription
             // 
-            this.textBoxQuestionDescription.Location = new System.Drawing.Point(183, 45);
+            this.textBoxQuestionDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQuestionDescription.Location = new System.Drawing.Point(220, 98);
             this.textBoxQuestionDescription.Multiline = true;
             this.textBoxQuestionDescription.Name = "textBoxQuestionDescription";
             this.textBoxQuestionDescription.ReadOnly = true;
-            this.textBoxQuestionDescription.Size = new System.Drawing.Size(482, 24);
+            this.textBoxQuestionDescription.Size = new System.Drawing.Size(482, 33);
             this.textBoxQuestionDescription.TabIndex = 12;
             // 
             // labelQuestionDescription
             // 
             this.labelQuestionDescription.AutoSize = true;
-            this.labelQuestionDescription.Location = new System.Drawing.Point(6, 55);
+            this.labelQuestionDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuestionDescription.Location = new System.Drawing.Point(43, 98);
             this.labelQuestionDescription.Name = "labelQuestionDescription";
-            this.labelQuestionDescription.Size = new System.Drawing.Size(49, 13);
+            this.labelQuestionDescription.Size = new System.Drawing.Size(91, 25);
             this.labelQuestionDescription.TabIndex = 11;
             this.labelQuestionDescription.Text = "Question";
             // 
             // textBoxIdDescription
             // 
-            this.textBoxIdDescription.Location = new System.Drawing.Point(183, 19);
+            this.textBoxIdDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIdDescription.Location = new System.Drawing.Point(220, 48);
             this.textBoxIdDescription.Name = "textBoxIdDescription";
             this.textBoxIdDescription.ReadOnly = true;
-            this.textBoxIdDescription.Size = new System.Drawing.Size(482, 20);
+            this.textBoxIdDescription.Size = new System.Drawing.Size(482, 30);
             this.textBoxIdDescription.TabIndex = 10;
             // 
             // labelIdDescription
             // 
             this.labelIdDescription.AutoSize = true;
-            this.labelIdDescription.Location = new System.Drawing.Point(6, 22);
+            this.labelIdDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdDescription.Location = new System.Drawing.Point(43, 42);
             this.labelIdDescription.Name = "labelIdDescription";
-            this.labelIdDescription.Size = new System.Drawing.Size(16, 13);
+            this.labelIdDescription.Size = new System.Drawing.Size(31, 25);
             this.labelIdDescription.TabIndex = 9;
-            this.labelIdDescription.Text = "Id";
+            this.labelIdDescription.Text = "ID";
             this.labelIdDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // buttonEspañol
-            // 
-            this.buttonEspañol.Location = new System.Drawing.Point(1172, 113);
-            this.buttonEspañol.Name = "buttonEspañol";
-            this.buttonEspañol.Size = new System.Drawing.Size(55, 29);
-            this.buttonEspañol.TabIndex = 7;
-            this.buttonEspañol.Text = "Español";
-            this.buttonEspañol.UseVisualStyleBackColor = true;
-            this.buttonEspañol.Click += new System.EventHandler(this.buttonEspañol_Click);
-            // 
-            // buttonEnglish
-            // 
-            this.buttonEnglish.Location = new System.Drawing.Point(1247, 113);
-            this.buttonEnglish.Name = "buttonEnglish";
-            this.buttonEnglish.Size = new System.Drawing.Size(55, 29);
-            this.buttonEnglish.TabIndex = 8;
-            this.buttonEnglish.Text = "English";
-            this.buttonEnglish.UseVisualStyleBackColor = true;
-            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
-            // 
-            // buttonCatala
-            // 
-            this.buttonCatala.Location = new System.Drawing.Point(1100, 113);
-            this.buttonCatala.Name = "buttonCatala";
-            this.buttonCatala.Size = new System.Drawing.Size(55, 29);
-            this.buttonCatala.TabIndex = 6;
-            this.buttonCatala.Text = "Català";
-            this.buttonCatala.UseMnemonic = false;
-            this.buttonCatala.UseVisualStyleBackColor = true;
-            this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
             // 
             // labelFilter
             // 
             this.labelFilter.AutoSize = true;
             this.labelFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFilter.Location = new System.Drawing.Point(47, 60);
+            this.labelFilter.Location = new System.Drawing.Point(55, 90);
             this.labelFilter.Name = "labelFilter";
             this.labelFilter.Size = new System.Drawing.Size(54, 25);
             this.labelFilter.TabIndex = 9;
@@ -461,19 +480,20 @@
             this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFilter.FormattingEnabled = true;
-            this.comboBoxFilter.Location = new System.Drawing.Point(107, 57);
+            this.comboBoxFilter.Location = new System.Drawing.Point(115, 87);
             this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(347, 33);
+            this.comboBoxFilter.Size = new System.Drawing.Size(433, 33);
             this.comboBoxFilter.TabIndex = 10;
             this.comboBoxFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilter_SelectedIndexChanged);
             // 
             // buttonApplyFilter
             // 
             this.buttonApplyFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
-            this.buttonApplyFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonApplyFilter.Location = new System.Drawing.Point(475, 57);
+            this.buttonApplyFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonApplyFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApplyFilter.Location = new System.Drawing.Point(693, 90);
             this.buttonApplyFilter.Name = "buttonApplyFilter";
-            this.buttonApplyFilter.Size = new System.Drawing.Size(78, 33);
+            this.buttonApplyFilter.Size = new System.Drawing.Size(103, 49);
             this.buttonApplyFilter.TabIndex = 11;
             this.buttonApplyFilter.Text = "Apply Filter";
             this.buttonApplyFilter.UseVisualStyleBackColor = false;
@@ -481,47 +501,101 @@
             // 
             // buttonClearFilter
             // 
-            this.buttonClearFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClearFilter.Location = new System.Drawing.Point(584, 57);
+            this.buttonClearFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonClearFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearFilter.Location = new System.Drawing.Point(829, 90);
             this.buttonClearFilter.Name = "buttonClearFilter";
-            this.buttonClearFilter.Size = new System.Drawing.Size(77, 33);
+            this.buttonClearFilter.Size = new System.Drawing.Size(103, 49);
             this.buttonClearFilter.TabIndex = 12;
             this.buttonClearFilter.Text = "Clear Filter";
-            this.buttonClearFilter.UseVisualStyleBackColor = true;
+            this.buttonClearFilter.UseVisualStyleBackColor = false;
             this.buttonClearFilter.Click += new System.EventHandler(this.buttonClearFilter_Click);
+            // 
+            // buttonEnglish
+            // 
+            this.buttonEnglish.BackgroundImage = global::projecte_eywa.Properties.Resources.bandera_england__1_;
+            this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEnglish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
+            this.buttonEnglish.Location = new System.Drawing.Point(1209, 90);
+            this.buttonEnglish.Name = "buttonEnglish";
+            this.buttonEnglish.Size = new System.Drawing.Size(103, 49);
+            this.buttonEnglish.TabIndex = 8;
+            this.buttonEnglish.UseVisualStyleBackColor = true;
+            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
+            // 
+            // buttonEspañol
+            // 
+            this.buttonEspañol.BackgroundImage = global::projecte_eywa.Properties.Resources.españa_boton1;
+            this.buttonEspañol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonEspañol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEspañol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
+            this.buttonEspañol.Location = new System.Drawing.Point(1113, 91);
+            this.buttonEspañol.Name = "buttonEspañol";
+            this.buttonEspañol.Size = new System.Drawing.Size(103, 49);
+            this.buttonEspañol.TabIndex = 7;
+            this.buttonEspañol.UseVisualStyleBackColor = true;
+            this.buttonEspañol.Click += new System.EventHandler(this.buttonEspañol_Click);
+            // 
+            // buttonCatala
+            // 
+            this.buttonCatala.BackgroundImage = global::projecte_eywa.Properties.Resources.cataluña_bandera__1_;
+            this.buttonCatala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonCatala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCatala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
+            this.buttonCatala.Location = new System.Drawing.Point(991, 91);
+            this.buttonCatala.Name = "buttonCatala";
+            this.buttonCatala.Size = new System.Drawing.Size(103, 49);
+            this.buttonCatala.TabIndex = 6;
+            this.buttonCatala.UseMnemonic = false;
+            this.buttonCatala.UseVisualStyleBackColor = true;
+            this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.idDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // questionDataGridViewTextBoxColumn
             // 
             this.questionDataGridViewTextBoxColumn.DataPropertyName = "question";
-            this.questionDataGridViewTextBoxColumn.HeaderText = "question";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.questionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
             this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
             this.questionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // difficultyDataGridViewTextBoxColumn
             // 
             this.difficultyDataGridViewTextBoxColumn.DataPropertyName = "difficulty";
-            this.difficultyDataGridViewTextBoxColumn.HeaderText = "difficulty";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.difficultyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.difficultyDataGridViewTextBoxColumn.HeaderText = "Difficulty";
             this.difficultyDataGridViewTextBoxColumn.Name = "difficultyDataGridViewTextBoxColumn";
             this.difficultyDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // categoryDataGridViewTextBoxColumn
             // 
             this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "category";
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
             this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // correctanswerDataGridViewTextBoxColumn
             // 
             this.correctanswerDataGridViewTextBoxColumn.DataPropertyName = "correct_answer";
-            this.correctanswerDataGridViewTextBoxColumn.HeaderText = "correct_answer";
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.correctanswerDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.correctanswerDataGridViewTextBoxColumn.HeaderText = "Correct Answer";
             this.correctanswerDataGridViewTextBoxColumn.Name = "correctanswerDataGridViewTextBoxColumn";
             this.correctanswerDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -606,12 +680,12 @@
         private System.Windows.Forms.ComboBox comboBoxFilter;
         private System.Windows.Forms.Button buttonApplyFilter;
         private System.Windows.Forms.BindingSource quizQuestionBindingSource;
+        private System.Windows.Forms.Button buttonClearFilter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn difficultyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correctanswerDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button buttonClearFilter;
     }
 }
 
