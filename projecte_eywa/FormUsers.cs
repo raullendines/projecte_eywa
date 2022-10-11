@@ -22,14 +22,16 @@ namespace projecte_eywa
         List<UserAndroid> AndroidList = new List<UserAndroid>();
         UserDesktop actualUser;
         
-        const string auth = "EYWA";
+        
         const string PATH = @"..\..\json\";
         const string USERS_DESKTOP_PATH = PATH + "users_desktop.json";
         const string USERS_ANDROID_PATH = PATH + "users_android.json";
 
         bool AddUser = false;
-        bool ModifyUser = false;
         int index = -1;
+
+        bool DesktopForm = true;
+        bool AndroidForm = false;
 
 
 
@@ -38,6 +40,8 @@ namespace projecte_eywa
             this.DesktopList = DesktopList;
             this.actualUser = actualUser;
             InitializeComponent();
+            comboBoxType.SelectedIndex = 0;
+            
         }
 
         private void FormUsers_Load(object sender, EventArgs e)
@@ -62,7 +66,7 @@ namespace projecte_eywa
 
         private void radioButtonDesktop_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonDesktop.Checked)
+            if (DesktopForm)
             {
                 userDesktopBindingSource.DataSource = DataUtilities.ToDataTable(DesktopList);
                 dataGridViewUsers.DataSource = null;
@@ -88,7 +92,7 @@ namespace projecte_eywa
 
         private void radioButtonAndroid_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonAndroid.Checked)
+            if (AndroidForm)
             {
                 userAndroidBindingSource.DataSource = DataUtilities.ToDataTable(AndroidList);
                 dataGridViewUsers.DataSource = null;
@@ -110,28 +114,66 @@ namespace projecte_eywa
             }
         }
 
+        private void loadDataToTextBox()
+        {
+            
+            index = dataGridViewUsers.CurrentCell.RowIndex;
+            if (DesktopForm)
+            {
+                if (index < DesktopList.Count())
+                {
+                    textBoxUsername.Text = DesktopList[index].username.ToString();
+                    textBoxPassword.Text = DesktopList[index].password.ToString();
+                    comboBoxType.Text = DesktopList[index].type.ToString();
+                }
+            }
+            else
+            {
+                if (index < AndroidList.Count())
+                {
+                    textBoxUsername.Text = AndroidList[index].username.ToString();
+                    textBoxPassword.Text = AndroidList[index].password.ToString();
+                    textBoxImage.Text = AndroidList[index].image.ToString();
+                    textBoxGender.Text = AndroidList[index].gender.ToString();
+                    textBoxAge.Text = AndroidList[index].age.ToString();
+
+                }
+            }
+        }
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             enableTextBox();
             textBoxPassword.ReadOnly = false;
             clearTextBox();
             AddUser = true;
+            disableButtons();
+
 
         }
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
-            enableTextBox();
-            ModifyUser = true;
+            if(index != -1)
+            {
+                loadDataToTextBox();
+                enableTextBox();
+                disableButtons();
+            }
+            else
+            {
+                MessageBox.Show("Please, select an user first");
+            }
+            
         }
 
         private void clearTextBox()
         {
             textBoxUsername.Text = "";
             textBoxPassword.Text = "";
-            if (radioButtonDesktop.Checked)
+            if (DesktopForm)
             {
-                comboBoxType.Text = "";
+                comboBoxType.SelectedIndex = 0;
             }
             else
             {
@@ -147,7 +189,7 @@ namespace projecte_eywa
             textBoxUsername.ReadOnly = false;
             buttonSave.Visible = true;
             buttonCancel.Visible = true;
-            if (radioButtonDesktop.Checked)
+            if (DesktopForm)
             {
                 comboBoxType.Enabled = true;
 
@@ -166,7 +208,7 @@ namespace projecte_eywa
             textBoxPassword.ReadOnly = true;
             buttonSave.Visible = false;
             buttonCancel.Visible = false;
-            if (radioButtonDesktop.Checked)
+            if (DesktopForm)
             {
                 comboBoxType.Enabled = false;
 
@@ -182,26 +224,44 @@ namespace projecte_eywa
         private void buttonCancel_Click(object sender, EventArgs e)
         {
             AddUser = false;
-            ModifyUser = false;
             clearTextBox();
             disableTextBox();
+            enableButtons();
 
+        }
+
+        private void disableButtons()
+        {
+            buttonAdd.Enabled = false;
+            buttonModify.Enabled = false;
+            buttonAndroid.Enabled = false;
+            buttonDesktop.Enabled = false;
+            buttonDelete.Enabled = false;
+        }
+
+        private void enableButtons()
+        {
+            buttonAdd.Enabled = true;
+            buttonModify.Enabled = true;
+            buttonAndroid.Enabled = true;
+            buttonDesktop.Enabled = true;
+            buttonDelete.Enabled = true;
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
 
-            if (radioButtonDesktop.Checked)
+            if (DesktopForm)
             {
                 if (checkValues())
                 {
                     addNewDesktopUser();
                     AddUser = false;
-                    ModifyUser = false;
                     buttonSave.Visible = false;
                     buttonCancel.Visible = false;
                     clearTextBox();
                     disableTextBox();
+                    enableButtons();
                 }
 
             }
@@ -211,11 +271,11 @@ namespace projecte_eywa
                 {
                     addNewAndroidUser();
                     AddUser = false;
-                    ModifyUser = false;
                     buttonSave.Visible = false;
                     buttonCancel.Visible = false;
                     clearTextBox();
                     disableTextBox();
+                    enableButtons();
                 }
             }
         }
@@ -237,6 +297,13 @@ namespace projecte_eywa
             else
             {
                 //TODO MODIFY
+                DesktopList[index].username = textBoxUsername.Text;
+                DesktopList[index].type = comboBoxType.Text.ToLower();
+
+                userDesktopBindingSource.DataSource = DataUtilities.ToDataTable(DesktopList);
+
+                dataGridViewUsers.DataSource = userDesktopBindingSource;
+
             }
         }
 
@@ -262,6 +329,23 @@ namespace projecte_eywa
             else
             {
                 //TODO MODIFY
+                int age;
+                if(!int.TryParse(textBoxAge.Text, out age))
+                {
+                    MessageBox.Show("No se puede parsear la edad");
+                }
+                else
+                {
+                    AndroidList[index].username = textBoxUsername.Text;
+                    AndroidList[index].image = textBoxImage.Text;
+                    AndroidList[index].gender = textBoxGender.Text;
+                    AndroidList[index].age = age;
+
+                    userAndroidBindingSource.DataSource = DataUtilities.ToDataTable(AndroidList);
+
+                    dataGridViewUsers.DataSource = userAndroidBindingSource;
+                }
+                
             }
             
         }
@@ -269,7 +353,7 @@ namespace projecte_eywa
         private bool checkValues()
         {
             int age;
-            if (radioButtonDesktop.Checked)
+            if (DesktopForm)
             {
                 if (string.IsNullOrEmpty(textBoxUsername.Text))
                 {
@@ -332,7 +416,7 @@ namespace projecte_eywa
         {
             int temporal = index;
             index = dataGridViewUsers.CurrentCell.RowIndex;
-            if (radioButtonDesktop.Checked)
+            if (DesktopForm)
             {
                 if (temporal != index && index < DesktopList.Count())
                 {
@@ -357,7 +441,7 @@ namespace projecte_eywa
 
             //    if (temporal != index && index <= DesktopList.Count()) 
             //{
-                
+
             //    if (radioButtonDesktop.Checked)
             //    {
             //        textBoxUsername.Text = DesktopList[index].username.ToString();
@@ -372,13 +456,93 @@ namespace projecte_eywa
             //        textBoxGender.Text = AndroidList[index].gender.ToString();
             //        textBoxAge.Text = AndroidList[index].age.ToString();
             //    }
-                
+
             //}
         }
 
         private void FormUsers_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if (DesktopForm)
+            { 
+                DesktopList.RemoveAt(dataGridViewUsers.CurrentCell.RowIndex);
+                userDesktopBindingSource.DataSource = DataUtilities.ToDataTable(DesktopList);
+
+                dataGridViewUsers.DataSource = userDesktopBindingSource;
+                clearTextBox();
+            }
+            else
+            {
+                AndroidList.RemoveAt(dataGridViewUsers.CurrentCell.RowIndex);
+                userAndroidBindingSource.DataSource = DataUtilities.ToDataTable(AndroidList);
+
+                dataGridViewUsers.DataSource = userAndroidBindingSource;
+                clearTextBox();
+            }
+        }
+
+        private void buttonDesktop_Click(object sender, EventArgs e)
+        {
+            if (!DesktopForm)
+            {
+                userDesktopBindingSource.DataSource = DataUtilities.ToDataTable(DesktopList);
+                dataGridViewUsers.DataSource = null;
+                dataGridViewUsers.DataSource = userDesktopBindingSource;
+                type.Visible = true;
+                image.Visible = false;
+                gender.Visible = false;
+                age.Visible = false;
+
+                labelType.Visible = true;
+                comboBoxType.Visible = true;
+
+
+                labelImage.Visible = false;
+                textBoxImage.Visible = false;
+                labelGender.Visible = false;
+                textBoxGender.Visible = false;
+                labelAge.Visible = false;
+                textBoxAge.Visible = false;
+
+                DesktopForm = true;
+                AndroidForm = false;
+            }
+        }
+
+        private void buttonAndroid_Click(object sender, EventArgs e)
+        {
+            if (!AndroidForm)
+            {
+                userAndroidBindingSource.DataSource = DataUtilities.ToDataTable(AndroidList);
+                dataGridViewUsers.DataSource = null;
+                dataGridViewUsers.DataSource = userAndroidBindingSource;
+                type.Visible = false;
+                image.Visible = true;
+                gender.Visible = true;
+                age.Visible = true;
+
+                labelType.Visible = false;
+                comboBoxType.Visible = false;
+
+                labelImage.Visible = true;
+                textBoxImage.Visible = true;
+                labelGender.Visible = true;
+                textBoxGender.Visible = true;
+                labelAge.Visible = true;
+                textBoxAge.Visible = true;
+
+                AndroidForm = true;
+                DesktopForm = false;
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("TODO");
         }
     }
 }

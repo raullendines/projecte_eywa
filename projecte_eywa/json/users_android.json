@@ -15,37 +15,9 @@
   },
   {
     "username": "Raul",
-    "password": "$2a$11$bePMql1BxuREW.klxb7UKeVBhpHLhqpEU83lEy/DxyYvrXBWkkQEO",
+    "password": "$2a$11$h.ETrs/LJm4/tEUYkkVDm.o7uX0w.Q61Vm5uYfPO3l/rtEhHAVq4G",
     "image": "path",
     "gender": "male",
     "age": 20
-  },
-  {
-    "username": "awrg",
-    "password": "$2a$11$DoapW89jewJLkDta9xBl0Omzgnjyh3l2ITKUzXdlR1a8N7rNXI8JC",
-    "image": "aerh",
-    "gender": "afdhae",
-    "age": 0
-  },
-  {
-    "username": "aeh",
-    "password": "$2a$11$0twrSxtwd9xicRAcq0THxuA5ZQaXaFpfazSyfj7rEzXH5Anhs3xdy",
-    "image": "aetjh",
-    "gender": "aethj44",
-    "age": 44
-  },
-  {
-    "username": "aetjaetj",
-    "password": "$2a$11$sotVGueiec8h3PGVb039YuTxpwtxj4oqS/I4Giyh6PCJvyrYW9X7i",
-    "image": "aetnajaetjaetjadtn",
-    "gender": "aetadgmadgnsdfha",
-    "age": 2
-  },
-  {
-    "username": "a",
-    "password": "$2a$11$p8WS59bwlNF1RjfFyqKy6uR9IbY6Ar31y.7nroGPVeM06rSouu.XG",
-    "image": "aa",
-    "gender": "a",
-    "age": 0
   }
 ]
