@@ -70,7 +70,7 @@ namespace projecte_eywa
 
         private void enabledDataGrid()
         {
-            //Tabla
+            //Tabla activada
             dataGridViewCharacters.Enabled = true;
         }
         private void languageButtons()
@@ -95,7 +95,7 @@ namespace projecte_eywa
         }
         private void disableDataGrid()
         {
-            //Tabla
+            //Tabla desactivada
             dataGridViewCharacters.Enabled = false;
         }
 
