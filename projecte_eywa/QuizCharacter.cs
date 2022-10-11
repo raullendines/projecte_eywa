@@ -10,29 +10,35 @@ namespace projecte_eywa
     public class QuizCharacter
     {
 
-        public String nameCharacter { get; set; }
-        public String filmCharacter { get; set; }
-        public String categoryCharacter { get; set; }
-        public String difficultyCharacter { get; set; }
-        public decimal correctNumCharacter  { get; set; }
-        public String urlImageCharacter { get; set; }
-        public String descCharacter { get; set; }
-       
+        public String name { get; set; }
+        public String film { get; set; }
+        public String category { get; set; }
+        public String difficulty { get; set; }
+        public decimal num_correct  { get; set; }
+        public String image { get; set; }
+        public String description_cat { get; set; }
+        public String description_esp { get; set; }
+        public String description_eng { get; set; }
+
+
         public QuizCharacter()
         {
 
         }
 
 
-        public QuizCharacter(String nameCharacter, String filmCharacter, String categoryCharacter, String difficultyCharacter, int correctNumCharacter, String urlImageCharacter, String descCharacter)
+        public QuizCharacter(String nameCharacter, String filmCharacter, String categoryCharacter, String difficultyCharacter, int correctNumCharacter, String urlImageCharacter, String descCharacterEsp, String descCharacterEng, String descCharacterCat)
         {
-            this.nameCharacter = nameCharacter;
-            this.filmCharacter = filmCharacter;
-            this.categoryCharacter = categoryCharacter;
-            this.difficultyCharacter = difficultyCharacter;
-            this.correctNumCharacter = correctNumCharacter;
-            this.urlImageCharacter = urlImageCharacter;
-            this.descCharacter = descCharacter;
+            this.name = nameCharacter;
+            this.film = filmCharacter;
+            this.category = categoryCharacter;
+            this.difficulty = difficultyCharacter;
+            this.num_correct = correctNumCharacter;
+            this.image = urlImageCharacter;
+            this.description_esp = descCharacterEsp;
+            this.description_eng = descCharacterEng;
+            this.description_cat = descCharacterCat;
+
         }
 
        

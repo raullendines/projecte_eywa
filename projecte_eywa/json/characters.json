@@ -6,7 +6,7 @@
     "difficulty": "E",
     "num_correct": "1",
     "image": "antonio_banderas",
-    "description_cat": "José Antonio Domínguez Bandera, més conegut artísticament com a Antonio Banderas (Màlaga, 10 d'agost de 1960) és un actor espanyol,[2] establert a Hollywood, on hi és des del començament de la dècada del 1990. Es va casar amb Melanie Griffith, i tenen una filla en comú, Stella del Carmen. Ha estat nominat als Globus d'Or, als Premis Tony, als Premis Emmy i als Premis Oscar.",
+    "description_cat": "José Antonio Domínguez Bandera, més conegut artísticament com a Antonio Banderas (Màlaga, 10 d'agost de 1960) és un actor espanyol, establert a Hollywood, on hi és des del començament de la dècada del 1990. Es va casar amb Melanie Griffith, i tenen una filla en comú, Stella del Carmen. Ha estat nominat als Globus d'Or, als Premis Tony, als Premis Emmy i als Premis Oscar.",
     "description_esp": "José Antonio Domínguez Bandera (Málaga, 10 de agosto de 1960), conocido profesionalmente como Antonio Banderas, es un actor, cantante, actor de voz, productor, director, perfumista y empresario español. Ha recibido numerosos reconocimientos, incluyendo un Premio del Festival de Cannes al Mejor Actor y nominaciones para un Premios Tony, un Premios Óscar, dos Premios Primetime Emmy y cinco Premios Globo de Oro.",
     "description_eng": "José Antonio Domínguez Bandera (born 10 August 1960), known professionally as Antonio Banderas, is a Spanish actor. Known for his work in films of several genres, he has received various accolades, including a Cannes Film Festival Award and a European Film Award, in addition to nominations for an Academy Award, a Tony Award, two Primetime Emmy Awards, and five Golden Globe Awards."
   },
@@ -113,18 +113,18 @@
   {
     "name": "Marty McFly",
     "film": "Regreso al futuro",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "1",
-    "image": "marty_mcflyhan",
-    "description_cat": "Marty McFly, és el personatge protagonista de la trilogia de pel·lícules de Back to the Future (Retorn al futur o Tornar al futur), interpretat per Michael J. Fox a les pel·lícules, doblegat per David Kaufman1 a la sèrie de dibuixos animats i A.J Locascio al joc vídeo Back to the Future: The Game. A Back to the Future: Musical[1] va ser interpretat per Olly Dobson i actualment per Ben Joyce. A més el personatge realitza un cameo/referència en un episodi de la sèrie de Nickelodeon Henry Danger, on és interpretat per Madison Durbin. A la sèrie Future Man del 2017, Josh Hutcherson interpreta un personatge basat en Marty McFly com una versió estesa i perdedora del mateix.",
-    "description_esp": "Marty McFly, es el personaje protagonista de la trilogía de películas de Back to the Future (Regreso al futuro o Volver al futuro), interpretado por Michael J. Fox en las películas, doblado por David Kaufman1​ en la serie de dibujos animados y A.J Locascio en el videojuego Back to the Future: The Game. En Back to the Future: Musical[1] fue interpretado por Olly Dobson y actualmente por Ben Joyce. Además el personaje realiza un cameo/referencia en un episodio de la serie de Nickelodeon Henry Danger, donde es interpretado por Madison Durbin. En la serie Future Man del 2017, Josh Hutcherson interpreta un personaje basado en Marty McFly como una versión extendida y perdedora del mísmo.",
-    "description_eng": "Marty McFly, is the main character of the Back to the Future film trilogy, played by Michael J. Fox in the films, dubbed by David Kaufman1 in the cartoon series and A.J. Locascio in the video game Back to the Future: The Game. In Back to the Future: Musical[1] he was played by Olly Dobson and currently by Ben Joyce. In addition, the character makes a cameo / reference in an episode of the Nickelodeon series Henry Danger, where he is played by Madison Durbin. In the 2017 series Future Man, Josh Hutcherson plays a character based on Marty McFly as an extended loser version of himself."
+    "image": "marty_mcfly",
+    "description_cat": "Marty McFly, és el personatge protagonista de la trilogia de pel·lícules de Back to the Future (Retorn al futur o Tornar al futur), interpretat per Michael J. Fox a les pel·lícules, doblegat per David Kaufman1 a la sèrie de dibuixos animats i A.J Locascio al joc vídeo Back to the Future: The Game. A Back to the Future: Musical va ser interpretat per Olly Dobson i actualment per Ben Joyce. A més el personatge realitza un cameo/referència en un episodi de la sèrie de Nickelodeon Henry Danger, on és interpretat per Madison Durbin. A la sèrie Future Man del 2017, Josh Hutcherson interpreta un personatge basat en Marty McFly com una versió estesa i perdedora del mateix.",
+    "description_esp": "Marty McFly, es el personaje protagonista de la trilogía de películas de Back to the Future (Regreso al futuro o Volver al futuro), interpretado por Michael J. Fox en las películas, doblado por David Kaufman1​ en la serie de dibujos animados y A.J Locascio en el videojuego Back to the Future: The Game. En Back to the Future: Musica fue interpretado por Olly Dobson y actualmente por Ben Joyce. Además el personaje realiza un cameo/referencia en un episodio de la serie de Nickelodeon Henry Danger, donde es interpretado por Madison Durbin. En la serie Future Man del 2017, Josh Hutcherson interpreta un personaje basado en Marty McFly como una versión extendida y perdedora del mísmo.",
+    "description_eng": "Marty McFly, is the main character of the Back to the Future film trilogy, played by Michael J. Fox in the films, dubbed by David Kaufman1 in the cartoon series and A.J. Locascio in the video game Back to the Future: The Game. In Back to the Future: Musical he was played by Olly Dobson and currently by Ben Joyce. In addition, the character makes a cameo / reference in an episode of the Nickelodeon series Henry Danger, where he is played by Madison Durbin. In the 2017 series Future Man, Josh Hutcherson plays a character based on Marty McFly as an extended loser version of himself."
   },
   {
     "name": "Han Solo",
     "film": "Star Wars",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "2",
     "image": "han_solo",
@@ -135,7 +135,7 @@
   {
     "name": "RoboCop",
     "film": "RoboCop",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "3",
     "image": "robocop",
@@ -146,7 +146,7 @@
   {
     "name": "Luke Skywalker",
     "film": "Star Wars",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "4",
     "image": "luke_skywalker",
@@ -157,7 +157,7 @@
   {
     "name": "Tony Stark",
     "film": "Iron Man",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "5",
     "image": "tony_stark",
@@ -168,7 +168,7 @@
   {
     "name": "Katniss Everdeen",
     "film": "Los juegos del hambre",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "6",
     "image": "katniss_everdeen",
@@ -179,7 +179,7 @@
   {
     "name": "Sam Bell",
     "film": "Luna (2009)",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "7",
     "image": "sam_bell",
@@ -190,7 +190,7 @@
   {
     "name": "Sarah Connor",
     "film": "Terminator",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "8",
     "image": "sarah_connor",
@@ -201,7 +201,7 @@
   {
     "name": "Frankenstein",
     "film": "Frankenstein",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "9",
     "image": "frankenstein",
@@ -212,7 +212,7 @@
   {
     "name": "Neo",
     "film": "Matrix",
-    "category": "Ciencia Ficcio",
+    "category": "Ciència Ficció",
     "difficulty": "E",
     "num_correct": "10",
     "image": "neo",
@@ -224,7 +224,7 @@
   {
     "name": "John Rambo",
     "film": "Rambo",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "1",
     "image": "john_rambo",
@@ -235,7 +235,7 @@
   {
     "name": "James Bond",
     "film": "James Bond",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "2",
     "image": "james_bond",
@@ -246,7 +246,7 @@
   {
     "name": "Indiana Jones",
     "film": "Indiana Jones",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "3",
     "image": "indiana_jones",
@@ -257,7 +257,7 @@
   {
     "name": "Jack Sparrow",
     "film": "Piratas del carbie",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "4",
     "image": "jack_sparrow",
@@ -268,7 +268,7 @@
   {
     "name": "Dr. Evil",
     "film": "Austin Powers",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "5",
     "image": "dr_evil",
@@ -279,7 +279,7 @@
   {
     "name": "Eggsy",
     "film": "Kingsman",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "6",
     "image": "eggsy",
@@ -290,7 +290,7 @@
   {
     "name": "Natalia Alianovna Romanova​",
     "film": "Viuda negra",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "7",
     "image": "viuda_negra",
@@ -301,7 +301,7 @@
   {
     "name": "Wonder Woman",
     "film": "Wonder Woman",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "8",
     "image": "wonder_woman",
@@ -312,7 +312,7 @@
   {
     "name": "Hermione Granger",
     "film": "Harry Potter",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "9",
     "image": "hermoine_granger",
@@ -323,7 +323,7 @@
   {
     "name": "Bruce Lee",
     "film": "El regreso del dragón",
-    "category": "Accion",
+    "category": "Acció",
     "difficulty": "E",
     "num_correct": "10",
     "image": "bruce_lee",
@@ -665,3 +665,4 @@
     "description_eng": "Annabelle is the cursed doll and the main antagonist and killer of the Anabelle movie series."
   }
 ]
+
