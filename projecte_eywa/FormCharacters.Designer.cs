@@ -38,6 +38,7 @@
             this.questionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxCharacter = new System.Windows.Forms.GroupBox();
+            this.textBoxDescriptionCharacterCat = new System.Windows.Forms.TextBox();
             this.comboBoxDifficulty = new System.Windows.Forms.ComboBox();
             this.textBoxDescriptionCharacterEng = new System.Windows.Forms.TextBox();
             this.numericUpDownCorrectNum = new System.Windows.Forms.NumericUpDown();
@@ -71,7 +72,6 @@
             this.correctNumCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCharacters = new System.Windows.Forms.DataGridView();
-            this.textBoxDescriptionCharacterCat = new System.Windows.Forms.TextBox();
             this.formCharactersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -98,21 +98,20 @@
             this.usersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1712, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1712, 33);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // questionsToolStripMenuItem
             // 
             this.questionsToolStripMenuItem.Name = "questionsToolStripMenuItem";
-            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 32);
+            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 29);
             this.questionsToolStripMenuItem.Text = "Questions";
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 32);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
             this.usersToolStripMenuItem.Text = "Users";
             // 
             // groupBoxCharacter
@@ -143,6 +142,16 @@
             this.groupBoxCharacter.TabIndex = 3;
             this.groupBoxCharacter.TabStop = false;
             this.groupBoxCharacter.Text = "Character";
+            // 
+            // textBoxDescriptionCharacterCat
+            // 
+            this.textBoxDescriptionCharacterCat.Enabled = false;
+            this.textBoxDescriptionCharacterCat.Location = new System.Drawing.Point(171, 394);
+            this.textBoxDescriptionCharacterCat.Multiline = true;
+            this.textBoxDescriptionCharacterCat.Name = "textBoxDescriptionCharacterCat";
+            this.textBoxDescriptionCharacterCat.Size = new System.Drawing.Size(363, 253);
+            this.textBoxDescriptionCharacterCat.TabIndex = 22;
+            this.textBoxDescriptionCharacterCat.Visible = false;
             // 
             // comboBoxDifficulty
             // 
@@ -510,16 +519,6 @@
             this.dataGridViewCharacters.Size = new System.Drawing.Size(1102, 754);
             this.dataGridViewCharacters.TabIndex = 1;
             this.dataGridViewCharacters.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCharacters_CellClick);
-            // 
-            // textBoxDescriptionCharacterCat
-            // 
-            this.textBoxDescriptionCharacterCat.Enabled = false;
-            this.textBoxDescriptionCharacterCat.Location = new System.Drawing.Point(171, 394);
-            this.textBoxDescriptionCharacterCat.Multiline = true;
-            this.textBoxDescriptionCharacterCat.Name = "textBoxDescriptionCharacterCat";
-            this.textBoxDescriptionCharacterCat.Size = new System.Drawing.Size(363, 253);
-            this.textBoxDescriptionCharacterCat.TabIndex = 22;
-            this.textBoxDescriptionCharacterCat.Visible = false;
             // 
             // formCharactersBindingSource2
             // 
