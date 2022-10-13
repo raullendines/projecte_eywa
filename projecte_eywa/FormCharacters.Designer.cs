@@ -76,6 +76,9 @@
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.comboBoxFilter = new System.Windows.Forms.ComboBox();
+            this.buttonApplyFilters = new System.Windows.Forms.Button();
+            this.buttonClearFilters = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBoxCharacter.SuspendLayout();
@@ -98,20 +101,20 @@
             this.usersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1712, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1712, 36);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // questionsToolStripMenuItem
             // 
             this.questionsToolStripMenuItem.Name = "questionsToolStripMenuItem";
-            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 29);
+            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 32);
             this.questionsToolStripMenuItem.Text = "Questions";
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 32);
             this.usersToolStripMenuItem.Text = "Users";
             // 
             // groupBoxCharacter
@@ -536,12 +539,60 @@
             // 
             this.formCharactersBindingSource3.DataSource = typeof(projecte_eywa.FormCharacters);
             // 
+            // comboBoxFilter
+            // 
+            this.comboBoxFilter.Enabled = false;
+            this.comboBoxFilter.FormattingEnabled = true;
+            this.comboBoxFilter.Items.AddRange(new object[] {
+            "Drama",
+            "Ciència ficció",
+            "Acció",
+            "Comedia",
+            "Animació",
+            "Terror"});
+            this.comboBoxFilter.Location = new System.Drawing.Point(38, 76);
+            this.comboBoxFilter.Name = "comboBoxFilter";
+            this.comboBoxFilter.Size = new System.Drawing.Size(756, 28);
+            this.comboBoxFilter.TabIndex = 18;
+            // 
+            // buttonApplyFilters
+            // 
+            this.buttonApplyFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
+            this.buttonApplyFilters.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonApplyFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonApplyFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApplyFilters.ForeColor = System.Drawing.Color.Black;
+            this.buttonApplyFilters.Location = new System.Drawing.Point(840, 59);
+            this.buttonApplyFilters.Name = "buttonApplyFilters";
+            this.buttonApplyFilters.Size = new System.Drawing.Size(146, 55);
+            this.buttonApplyFilters.TabIndex = 20;
+            this.buttonApplyFilters.Text = "Apply filter";
+            this.buttonApplyFilters.UseVisualStyleBackColor = false;
+            this.buttonApplyFilters.Click += new System.EventHandler(this.buttonApplyFilters_Click);
+            // 
+            // buttonClearFilters
+            // 
+            this.buttonClearFilters.BackColor = System.Drawing.Color.White;
+            this.buttonClearFilters.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonClearFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearFilters.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonClearFilters.Location = new System.Drawing.Point(991, 59);
+            this.buttonClearFilters.Name = "buttonClearFilters";
+            this.buttonClearFilters.Size = new System.Drawing.Size(146, 55);
+            this.buttonClearFilters.TabIndex = 19;
+            this.buttonClearFilters.Text = "Clear filter";
+            this.buttonClearFilters.UseVisualStyleBackColor = false;
+            this.buttonClearFilters.Click += new System.EventHandler(this.buttonClearFilters_Click);
+            // 
             // FormCharacters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1712, 1025);
+            this.Controls.Add(this.buttonApplyFilters);
+            this.Controls.Add(this.buttonClearFilters);
+            this.Controls.Add(this.comboBoxFilter);
             this.Controls.Add(this.buttonModify);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonAdd);
@@ -617,6 +668,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nameCharacter;
         private System.Windows.Forms.DataGridView dataGridViewCharacters;
         private System.Windows.Forms.TextBox textBoxDescriptionCharacterCat;
+        private System.Windows.Forms.ComboBox comboBoxFilter;
+        private System.Windows.Forms.Button buttonApplyFilters;
+        private System.Windows.Forms.Button buttonClearFilters;
     }
 }
 

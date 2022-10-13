@@ -21,6 +21,7 @@ namespace projecte_eywa
         QuizCharacter quizCharacter;
         bool add = false;
         bool modify = false;
+        bool isFiltered = false;
         public FormCharacters()
         {
             InitializeComponent();
@@ -321,5 +322,71 @@ namespace projecte_eywa
             textBoxDescriptionCharacterCat.Visible = false;
         }
 
+        private void buttonApplyFilters_Click(object sender, EventArgs e)
+        {
+            isFiltered = true;
+            string category = null;
+            for (int i = 0; i < quizCharacter.Count; ++i)
+            {
+
+                dataGridViewCharacters.CurrentCell = null;
+                dataGridViewCharacters.Rows[i].Visible = true;
+
+            }
+
+            if (comboBoxFilter != null && comboBoxFilter.SelectedItem != null)
+            {
+                int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
+                switch (index)
+                {
+                    case 0:
+                        category = "science fiction";
+
+                        break;
+                    case 1:
+                        category = "action";
+                        break;
+                    case 2:
+                        category = "comedy";
+                        break;
+                    case 3:
+                        category = "horror";
+                        break;
+                    case 4:
+                        category = "animation";
+                        break;
+                    case 5:
+                        category = "drama";
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
+
+
+                for (int i = 0; i < quizQuestions.Count; ++i)
+                {
+                    if (!quizQuestions[i].category.Equals(category))
+                    {
+                        dataGridViewCharacters.CurrentCell = null;
+                        dataGridViewCharacters.Rows[i].Visible = false;
+                    }
+                }
+
+            }
+        }
+
+        private void buttonClearFilters_Click(object sender, EventArgs e)
+        {
+            comboBoxFilter.SelectedIndex = -1;
+            isFiltered = false;
+            for (int i = 0; i < quizQuestions.Count; ++i)
+            {
+
+                dataGridViewCharacters.CurrentCell = null;
+                dataGridViewCharacters.Rows[i].Visible = true;
+
+            }
+        }
     }
 }
