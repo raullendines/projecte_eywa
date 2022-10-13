@@ -15,6 +15,8 @@ using System.IO;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Application = System.Windows.Forms.Application;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
+using System.Runtime.InteropServices.ComTypes;
+
 
 namespace projecte_eywa
 {
@@ -43,6 +45,7 @@ namespace projecte_eywa
         {
 
 
+
             JArray LoadUsers = JArray.Parse(File.ReadAllText(USERS_PATH, Encoding.Default));
             UsersList = LoadUsers.ToObject<List<UserDesktop>>();
             //UsersList.Add(new UserDesktop("Marcel", BCrypt.Net.BCrypt.EnhancedHashPassword("marcel1234"), "admin"));
@@ -62,6 +65,7 @@ namespace projecte_eywa
         {
             if (formType.Equals("login"))
             {
+
                 if (checkCorrectUser())
                 {
                     FormUsers formUser = new FormUsers(UsersList, actualUser);
@@ -72,6 +76,11 @@ namespace projecte_eywa
                 {
                     MessageBox.Show("ERROR");
                 }
+
+               var myNextForm = new FormQuestions();
+                myNextForm.Show();
+                this.Hide();
+
             }
             else
             {
@@ -197,6 +206,7 @@ namespace projecte_eywa
 
         }
 
+
         private void FormLogin_Load(object sender, EventArgs e)
         {
             getData();
@@ -283,6 +293,14 @@ namespace projecte_eywa
         {
             changeLoginRegister();
         }
+
+
+        private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        
 
     }
 }

@@ -14,7 +14,8 @@ namespace projecte_eywa
         public static DataTable ToDataTable<T>(this IList<T> data)
         {
             PropertyDescriptorCollection props =
-            TypeDescriptor.GetProperties(typeof(T));
+                TypeDescriptor.GetProperties(typeof(T));
+
             DataTable table = new DataTable();
             for (int i = 0; i < props.Count; i++)
             {
