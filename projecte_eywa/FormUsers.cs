@@ -32,6 +32,7 @@ namespace projecte_eywa
 
         bool DesktopForm = true;
         bool AndroidForm = false;
+        bool changingForms = false;
 
 
 
@@ -48,6 +49,7 @@ namespace projecte_eywa
         {
             loadData();
             labelActualUserData.Text = actualUser.username.ToString() + " " + actualUser.type.ToString();
+            menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
         }
 
         private void loadData()
@@ -409,7 +411,11 @@ namespace projecte_eywa
 
         private void FormUsers_FormClosing(object sender, FormClosingEventArgs e)
         {
-            saveData();
+            DialogResult dialogResult = MessageBox.Show("Do you want to save changes?", "Exit", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                saveData();
+            }
         }
 
         private void dataGridViewUsers_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -462,7 +468,11 @@ namespace projecte_eywa
 
         private void FormUsers_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            if (!changingForms)
+            {
+                Application.Exit();
+            }
+            
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -542,7 +552,41 @@ namespace projecte_eywa
 
         private void label1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("TODO");
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                FormLogin formLogin = new FormLogin();
+                changingForms = true;
+                this.Close();
+                formLogin.Show();
+            }
+            
+        }
+
+        private void questionManadgementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormQuestions formQuestions = new FormQuestions();
+            formQuestions.Show();
+            changingForms = true;
+            this.Close();
+        }
+
+        private void characterManadgmenetToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCharacters formCharacters = new FormCharacters();
+            formCharacters.Show();
+            changingForms = true;
+            this.Close();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveData();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

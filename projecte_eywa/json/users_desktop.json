@@ -18,5 +18,15 @@
     "username": "Test",
     "password": "$2a$11$z9kyVJIqr5n.GQfP0U1Da.AtG7zWIHTWzbQwx9.xdh4GD7hvvjYnC",
     "type": "user"
+  },
+  {
+    "username": "admin",
+    "password": "$2a$11$YbBtpqrJpMMkZlS0THgEr.SYDAuS/Hq2Tukvhx6vrDnJQf/N61LDK",
+    "type": "admin"
+  },
+  {
+    "username": "profe",
+    "password": "$2a$11$4nJSetxWBXrK0Uxv4fjP2uFEG2uufQhpvqiOcYBZgdEVgyamkzv1O",
+    "type": "admin"
   }
 ]

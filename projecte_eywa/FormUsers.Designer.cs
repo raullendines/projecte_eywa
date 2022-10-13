@@ -30,13 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridViewUsers = new System.Windows.Forms.DataGridView();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.image = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelActualUserData = new System.Windows.Forms.Panel();
             this.labelLogout = new System.Windows.Forms.Label();
             this.labelActualUserData = new System.Windows.Forms.Label();
@@ -62,17 +66,21 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonDesktop = new System.Windows.Forms.Button();
             this.buttonAndroid = new System.Windows.Forms.Button();
-            this.userAndroidBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.userDesktopBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.questionManadgementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.characterManadgmenetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.image = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userAndroidBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userDesktopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.panelActualUserData.SuspendLayout();
             this.groupBoxUsers.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAndroidBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDesktopBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -106,13 +114,60 @@
             this.dataGridViewUsers.TabIndex = 1;
             this.dataGridViewUsers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsers_CellClick);
             // 
+            // type
+            // 
+            this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.type.DataPropertyName = "type";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type.DefaultCellStyle = dataGridViewCellStyle4;
+            this.type.HeaderText = "Type";
+            this.type.Name = "type";
+            this.type.ReadOnly = true;
+            // 
+            // image
+            // 
+            this.image.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.image.DataPropertyName = "image";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.image.DefaultCellStyle = dataGridViewCellStyle5;
+            this.image.HeaderText = "Image";
+            this.image.Name = "image";
+            this.image.ReadOnly = true;
+            this.image.Visible = false;
+            // 
+            // gender
+            // 
+            this.gender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.gender.DataPropertyName = "gender";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.DefaultCellStyle = dataGridViewCellStyle6;
+            this.gender.HeaderText = "Gender";
+            this.gender.Name = "gender";
+            this.gender.ReadOnly = true;
+            this.gender.Visible = false;
+            // 
+            // age
+            // 
+            this.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.age.DataPropertyName = "age";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.age.DefaultCellStyle = dataGridViewCellStyle7;
+            this.age.HeaderText = "Age";
+            this.age.Name = "age";
+            this.age.ReadOnly = true;
+            this.age.Visible = false;
+            // 
             // panelActualUserData
             // 
             this.panelActualUserData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
             this.panelActualUserData.Controls.Add(this.labelLogout);
             this.panelActualUserData.Controls.Add(this.labelActualUserData);
             this.panelActualUserData.Controls.Add(this.labelActualUserIcon);
-            this.panelActualUserData.Location = new System.Drawing.Point(-5, 0);
+            this.panelActualUserData.Location = new System.Drawing.Point(-5, 24);
             this.panelActualUserData.Name = "panelActualUserData";
             this.panelActualUserData.Size = new System.Drawing.Size(196, 124);
             this.panelActualUserData.TabIndex = 2;
@@ -396,13 +451,60 @@
             this.buttonAndroid.UseVisualStyleBackColor = false;
             this.buttonAndroid.Click += new System.EventHandler(this.buttonAndroid_Click);
             // 
-            // userAndroidBindingSource
+            // menuStrip1
             // 
-            this.userAndroidBindingSource.DataSource = typeof(projecte_eywa.UserAndroid);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // userDesktopBindingSource
+            // fileToolStripMenuItem
             // 
-            this.userDesktopBindingSource.DataSource = typeof(projecte_eywa.UserDesktop);
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.questionManadgementToolStripMenuItem,
+            this.characterManadgmenetToolStripMenuItem,
+            this.saveToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
+            // 
+            // questionManadgementToolStripMenuItem
+            // 
+            this.questionManadgementToolStripMenuItem.Name = "questionManadgementToolStripMenuItem";
+            this.questionManadgementToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.questionManadgementToolStripMenuItem.Text = "Question manadgement";
+            this.questionManadgementToolStripMenuItem.Click += new System.EventHandler(this.questionManadgementToolStripMenuItem_Click);
+            // 
+            // characterManadgmenetToolStripMenuItem
+            // 
+            this.characterManadgmenetToolStripMenuItem.Name = "characterManadgmenetToolStripMenuItem";
+            this.characterManadgmenetToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.characterManadgmenetToolStripMenuItem.Text = "Character manadgmenet";
+            this.characterManadgmenetToolStripMenuItem.Click += new System.EventHandler(this.characterManadgmenetToolStripMenuItem_Click);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(203, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -427,52 +529,13 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // type
+            // userAndroidBindingSource
             // 
-            this.type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.type.DataPropertyName = "type";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.type.DefaultCellStyle = dataGridViewCellStyle4;
-            this.type.HeaderText = "Type";
-            this.type.Name = "type";
-            this.type.ReadOnly = true;
+            this.userAndroidBindingSource.DataSource = typeof(projecte_eywa.UserAndroid);
             // 
-            // image
+            // userDesktopBindingSource
             // 
-            this.image.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.image.DataPropertyName = "image";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.image.DefaultCellStyle = dataGridViewCellStyle5;
-            this.image.HeaderText = "Image";
-            this.image.Name = "image";
-            this.image.ReadOnly = true;
-            this.image.Visible = false;
-            // 
-            // gender
-            // 
-            this.gender.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.gender.DataPropertyName = "gender";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.DefaultCellStyle = dataGridViewCellStyle6;
-            this.gender.HeaderText = "Gender";
-            this.gender.Name = "gender";
-            this.gender.ReadOnly = true;
-            this.gender.Visible = false;
-            // 
-            // age
-            // 
-            this.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.age.DataPropertyName = "age";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.age.DefaultCellStyle = dataGridViewCellStyle7;
-            this.age.HeaderText = "Age";
-            this.age.Name = "age";
-            this.age.ReadOnly = true;
-            this.age.Visible = false;
+            this.userDesktopBindingSource.DataSource = typeof(projecte_eywa.UserDesktop);
             // 
             // FormUsers
             // 
@@ -488,6 +551,8 @@
             this.Controls.Add(this.groupBoxUsers);
             this.Controls.Add(this.panelActualUserData);
             this.Controls.Add(this.dataGridViewUsers);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormUsers";
             this.Text = "FormUser";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormUsers_FormClosing);
@@ -497,9 +562,12 @@
             this.panelActualUserData.ResumeLayout(false);
             this.groupBoxUsers.ResumeLayout(false);
             this.groupBoxUsers.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAndroidBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDesktopBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -540,5 +608,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn image;
         private System.Windows.Forms.DataGridViewTextBoxColumn gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn age;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem questionManadgementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem characterManadgmenetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

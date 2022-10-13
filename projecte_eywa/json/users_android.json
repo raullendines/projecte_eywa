@@ -19,5 +19,12 @@
     "image": "path",
     "gender": "male",
     "age": 20
+  },
+  {
+    "username": "Player",
+    "password": "$2a$11$DiNsy27RuVEtU6Sa7MnihuIvC3o022A8glO.Qos7leGbusHfrdXqm",
+    "image": "path",
+    "gender": "male",
+    "age": 21
   }
 ]
