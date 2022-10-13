@@ -1,0 +1,30 @@
+[
+  {
+    "username": "Marcel",
+    "password": "$2a$11$T6A6qeJ4CgPeqrKBjbHtVe4OcIaHEr.RDqyGj2kczPaej2B9C5vK2",
+    "image": "path",
+    "gender": "male",
+    "age": 23
+  },
+  {
+    "username": "Pau",
+    "password": "$2a$11$LB3cVK7/IU8cfJSoYjvKM.xSiJncH.mKtmg9HiF./5Z.lhBcYa09W",
+    "image": "path",
+    "gender": "male",
+    "age": 21
+  },
+  {
+    "username": "Raul",
+    "password": "$2a$11$h.ETrs/LJm4/tEUYkkVDm.o7uX0w.Q61Vm5uYfPO3l/rtEhHAVq4G",
+    "image": "path",
+    "gender": "male",
+    "age": 20
+  },
+  {
+    "username": "Player",
+    "password": "$2a$11$DiNsy27RuVEtU6Sa7MnihuIvC3o022A8glO.Qos7leGbusHfrdXqm",
+    "image": "path",
+    "gender": "male",
+    "age": 21
+  }
+]

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +17,9 @@ namespace projecte_eywa
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCharacters());
+            FormLogin formLogin = new FormLogin();
+            formLogin.Show();
+            Application.Run();
         }
     }
 }
