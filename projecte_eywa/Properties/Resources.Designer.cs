@@ -63,9 +63,11 @@ namespace projecte_eywa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bandera_england__1_ {
+
+        internal static System.Drawing.Bitmap bandera_england {
             get {
-                object obj = ResourceManager.GetObject("bandera_england (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("bandera_england", resourceCulture);
+
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,6 +95,7 @@ namespace projecte_eywa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap cataluña_bandera__1_ {
             get {
                 object obj = ResourceManager.GetObject("cataluña_bandera (1)", resourceCulture);
@@ -103,6 +106,7 @@ namespace projecte_eywa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap españa_boton {
             get {
                 object obj = ResourceManager.GetObject("españa_boton", resourceCulture);
@@ -113,6 +117,7 @@ namespace projecte_eywa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap españa_boton1 {
             get {
                 object obj = ResourceManager.GetObject("españa_boton1", resourceCulture);
@@ -123,6 +128,7 @@ namespace projecte_eywa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
