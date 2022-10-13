@@ -2,7 +2,7 @@
   {
     "name": "Antonio Banderas",
     "film": "Dolor y gloria",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "1",
     "image": "antonio_banderas",
@@ -13,7 +13,7 @@
   {
     "name": "Joaquin Phoenix",
     "film": "Joker (2019)",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "2",
     "image": "joaquin_phoenix",
@@ -24,7 +24,7 @@
   {
     "name": "Spencer Tracy",
     "film": "Capitanes Intrépidos",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "3",
     "image": "spencer_tracy",
@@ -35,7 +35,7 @@
   {
     "name": "Clint Eastwood",
     "film": "Million dollar baby",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "4",
     "image": "clint_eastwood",
@@ -46,7 +46,7 @@
   {
     "name": "Robert De Niro",
     "film": "Toro Salvaje",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "5",
     "image": "robert_de_niro",
@@ -57,7 +57,7 @@
   {
     "name": "Leonardo DiCaprio",
     "film": "El lobo de Wall Street",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "6",
     "image": "leonardo_dicaprio",
@@ -68,7 +68,7 @@
   {
     "name": "Marlon Brando",
     "film": "El padrino",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "7",
     "image": "marlon_brando",
@@ -79,7 +79,7 @@
   {
     "name": "Emilia Clarke",
     "film": "Antes de ti",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "8",
     "image": "emilia_clarkeCienc",
@@ -90,7 +90,7 @@
   {
     "name": "Benedict Cumberbatch",
     "film": "Descifrando Enigma",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "9",
     "image": "bennedict_cumberbatch",
@@ -101,7 +101,7 @@
   {
     "name": "Russell Crowe",
     "film": "Una mente maravillosa",
-    "category": "Drama",
+    "category": "drama",
     "difficulty": "E",
     "num_correct": "10",
     "image": "russel_crowe",
@@ -113,7 +113,7 @@
   {
     "name": "Marty McFly",
     "film": "Regreso al futuro",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "1",
     "image": "marty_mcfly",
@@ -124,7 +124,7 @@
   {
     "name": "Han Solo",
     "film": "Star Wars",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "2",
     "image": "han_solo",
@@ -135,7 +135,7 @@
   {
     "name": "RoboCop",
     "film": "RoboCop",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "3",
     "image": "robocop",
@@ -146,7 +146,7 @@
   {
     "name": "Luke Skywalker",
     "film": "Star Wars",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "4",
     "image": "luke_skywalker",
@@ -157,7 +157,7 @@
   {
     "name": "Tony Stark",
     "film": "Iron Man",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "5",
     "image": "tony_stark",
@@ -168,7 +168,7 @@
   {
     "name": "Katniss Everdeen",
     "film": "Los juegos del hambre",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "6",
     "image": "katniss_everdeen",
@@ -179,7 +179,7 @@
   {
     "name": "Sam Bell",
     "film": "Luna (2009)",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "7",
     "image": "sam_bell",
@@ -190,7 +190,7 @@
   {
     "name": "Sarah Connor",
     "film": "Terminator",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "8",
     "image": "sarah_connor",
@@ -201,7 +201,7 @@
   {
     "name": "Frankenstein",
     "film": "Frankenstein",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "9",
     "image": "frankenstein",
@@ -212,7 +212,7 @@
   {
     "name": "Neo",
     "film": "Matrix",
-    "category": "Ciència Ficció",
+    "category": "science fiction",
     "difficulty": "E",
     "num_correct": "10",
     "image": "neo",
@@ -224,7 +224,7 @@
   {
     "name": "John Rambo",
     "film": "Rambo",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "1",
     "image": "john_rambo",
@@ -235,7 +235,7 @@
   {
     "name": "James Bond",
     "film": "James Bond",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "2",
     "image": "james_bond",
@@ -246,7 +246,7 @@
   {
     "name": "Indiana Jones",
     "film": "Indiana Jones",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "3",
     "image": "indiana_jones",
@@ -257,7 +257,7 @@
   {
     "name": "Jack Sparrow",
     "film": "Piratas del carbie",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "4",
     "image": "jack_sparrow",
@@ -268,7 +268,7 @@
   {
     "name": "Dr. Evil",
     "film": "Austin Powers",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "5",
     "image": "dr_evil",
@@ -279,7 +279,7 @@
   {
     "name": "Eggsy",
     "film": "Kingsman",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "6",
     "image": "eggsy",
@@ -290,7 +290,7 @@
   {
     "name": "Natalia Alianovna Romanova​",
     "film": "Viuda negra",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "7",
     "image": "viuda_negra",
@@ -301,7 +301,7 @@
   {
     "name": "Wonder Woman",
     "film": "Wonder Woman",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "8",
     "image": "wonder_woman",
@@ -312,7 +312,7 @@
   {
     "name": "Hermione Granger",
     "film": "Harry Potter",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "9",
     "image": "hermoine_granger",
@@ -323,7 +323,7 @@
   {
     "name": "Bruce Lee",
     "film": "El regreso del dragón",
-    "category": "Acció",
+    "category": "action",
     "difficulty": "E",
     "num_correct": "10",
     "image": "bruce_lee",
@@ -335,7 +335,7 @@
   {
     "name": "Adam Sandler",
     "film": "Niños Grandes",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "1",
     "image": "adam_sandler",
@@ -346,7 +346,7 @@
   {
     "name": "Borat",
     "film": "Borat: lecciones culturales de Estados Unidos para beneficio de la gloriosa nación de Kazajistán",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "2",
     "image": "borat",
@@ -357,7 +357,7 @@
   {
     "name": "Ali G",
     "film": "Ali G anda suelto",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "3",
     "image": "alig",
@@ -368,7 +368,7 @@
   {
     "name": "Noah Levenstein",
     "film": "American Pie",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "4",
     "image": "noah_levenstein",
@@ -379,7 +379,7 @@
   {
     "name": "Bradley Cooper",
     "film": "Resacon en Las Vegas",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "5",
     "image": "bradley_cooper",
@@ -390,7 +390,7 @@
   {
     "name": "Melissa McCarthy",
     "film": "La boda de mi mejor amiga",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "6",
     "image": "melissa_mccarthy",
@@ -401,7 +401,7 @@
   {
     "name": "Jeff «The Dude» Lebowski",
     "film": "El gran Lebowski",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "7",
     "image": "jeff_lebowski",
@@ -412,7 +412,7 @@
   {
     "name": "Ryan Reynolds",
     "film": "Deadpool",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "8",
     "image": "ryan_reynolds",
@@ -423,7 +423,7 @@
   {
     "name": "Jim Carrey",
     "film": "Dos tontos muy tontos",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "9",
     "image": "jim_carrey",
@@ -434,7 +434,7 @@
   {
     "name": "McLovin",
     "film": "Supersalidos",
-    "category": "Comedia",
+    "category": "comedy",
     "difficulty": "E",
     "num_correct": "10",
     "image": "mclovin",
@@ -446,7 +446,7 @@
   {
     "name": "Po",
     "film": "Kung Fu Panda",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "1",
     "image": "po",
@@ -457,7 +457,7 @@
   {
     "name": "Shrek",
     "film": "Shrek",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "2",
     "image": "shrek",
@@ -468,7 +468,7 @@
   {
     "name": "Bob, Kevin & Stuart",
     "film": "Minions",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "3",
     "image": "minions",
@@ -479,7 +479,7 @@
   {
     "name": "Puss in boots",
     "film": "El Gato con Botas",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "4",
     "image": "gato_botas",
@@ -490,7 +490,7 @@
   {
     "name": "Kowalski",
     "film": "Pinguinos de madagascar",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "5",
     "image": "kowalski",
@@ -501,7 +501,7 @@
   {
     "name": "Joy",
     "film": "Del revés",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "6",
     "image": "alegria",
@@ -512,7 +512,7 @@
   {
     "name": "Simba",
     "film": "Rey Leon",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "7",
     "image": "simba",
@@ -523,7 +523,7 @@
   {
     "name": "Russell",
     "film": "Up",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "8",
     "image": "russell",
@@ -534,7 +534,7 @@
   {
     "name": "Woody",
     "film": "Toy Story 3",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "9",
     "image": "woody",
@@ -545,7 +545,7 @@
   {
     "name": "Remy",
     "film": "Ratatouille",
-    "category": "Animació",
+    "category": "animation",
     "difficulty": "E",
     "num_correct": "10",
     "image": "remy",
@@ -557,7 +557,7 @@
   {
     "name": "Jack Torrance",
     "film": "El resplandor",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "1",
     "image": "jack_nicholson",
@@ -568,7 +568,7 @@
   {
     "name": "Pennywise",
     "film": "It",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "2",
     "image": "pennywise",
@@ -579,7 +579,7 @@
   {
     "name": "Count Drácula",
     "film": "Van Helsing",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "3",
     "image": "conde_dracula",
@@ -590,7 +590,7 @@
   {
     "name": "Werewolf",
     "film": "Van Helsing",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "4",
     "image": "hombre_lobo",
@@ -601,7 +601,7 @@
   {
     "name": "Imhotep",
     "film": "La Momia",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "5",
     "image": "imhotep",
@@ -612,7 +612,7 @@
   {
     "name": "Ghost Rider",
     "film": "Ghost Rider",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "6",
     "image": "ghost_rider",
@@ -623,7 +623,7 @@
   {
     "name": "Blackheart",
     "film": "Blackheart",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "7",
     "image": "blackheart",
@@ -634,7 +634,7 @@
   {
     "name": "Sleepyhollow",
     "film": "Sleepyhollow",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "8",
     "image": "jinete_cabeza",
@@ -645,7 +645,7 @@
   {
     "name": "Regan MacNeil",
     "film": "El Exorcista",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "9",
     "image": "ryan_macneil",
@@ -656,7 +656,7 @@
   {
     "name": "Anabelle",
     "film": "Anabelle",
-    "category": "Terror",
+    "category": "horror",
     "difficulty": "E",
     "num_correct": "10",
     "image": "anabelle",
@@ -665,4 +665,5 @@
     "description_eng": "Annabelle is the cursed doll and the main antagonist and killer of the Anabelle movie series."
   }
 ]
-
+  
+  

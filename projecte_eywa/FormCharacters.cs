@@ -326,7 +326,7 @@ namespace projecte_eywa
         {
             isFiltered = true;
             string category = null;
-            for (int i = 0; i < quizCharacter.Count; ++i)
+            for (int i = 0; i < characters.Count; ++i)
             {
 
                 dataGridViewCharacters.CurrentCell = null;
@@ -340,23 +340,22 @@ namespace projecte_eywa
                 switch (index)
                 {
                     case 0:
-                        category = "science fiction";
-
+                        category = "drama";
                         break;
                     case 1:
-                        category = "action";
+                        category = "science fiction";
                         break;
                     case 2:
-                        category = "comedy";
+                        category = "action";
                         break;
                     case 3:
-                        category = "horror";
+                        category = "comedy";
                         break;
                     case 4:
                         category = "animation";
                         break;
                     case 5:
-                        category = "drama";
+                        category = "horror";
                         break;
                     default:
                         MessageBox.Show("ERROR");
@@ -364,9 +363,9 @@ namespace projecte_eywa
                 }
 
 
-                for (int i = 0; i < quizQuestions.Count; ++i)
+                for (int i = 0; i < characters.Count; ++i)
                 {
-                    if (!quizQuestions[i].category.Equals(category))
+                    if (!characters[i].category.Equals(category))
                     {
                         dataGridViewCharacters.CurrentCell = null;
                         dataGridViewCharacters.Rows[i].Visible = false;
@@ -380,7 +379,7 @@ namespace projecte_eywa
         {
             comboBoxFilter.SelectedIndex = -1;
             isFiltered = false;
-            for (int i = 0; i < quizQuestions.Count; ++i)
+            for (int i = 0; i < characters.Count; ++i)
             {
 
                 dataGridViewCharacters.CurrentCell = null;

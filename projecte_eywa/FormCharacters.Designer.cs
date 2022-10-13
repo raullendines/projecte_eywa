@@ -72,13 +72,13 @@
             this.correctNumCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCharacters = new System.Windows.Forms.DataGridView();
+            this.comboBoxFilter = new System.Windows.Forms.ComboBox();
+            this.buttonApplyFilters = new System.Windows.Forms.Button();
+            this.buttonClearFilters = new System.Windows.Forms.Button();
             this.formCharactersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.comboBoxFilter = new System.Windows.Forms.ComboBox();
-            this.buttonApplyFilters = new System.Windows.Forms.Button();
-            this.buttonClearFilters = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBoxCharacter.SuspendLayout();
@@ -158,6 +158,7 @@
             // 
             // comboBoxDifficulty
             // 
+            this.comboBoxDifficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDifficulty.Enabled = false;
             this.comboBoxDifficulty.FormattingEnabled = true;
             this.comboBoxDifficulty.Items.AddRange(new object[] {
@@ -190,15 +191,16 @@
             // 
             // comboBoxCategoryCharacter
             // 
+            this.comboBoxCategoryCharacter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategoryCharacter.Enabled = false;
             this.comboBoxCategoryCharacter.FormattingEnabled = true;
             this.comboBoxCategoryCharacter.Items.AddRange(new object[] {
-            "Drama",
-            "Ciència ficció",
-            "Acció",
-            "Comedia",
-            "Animació",
-            "Terror"});
+            "drama",
+            "science fiction",
+            "action",
+            "comedy",
+            "animation",
+            "horror"});
             this.comboBoxCategoryCharacter.Location = new System.Drawing.Point(169, 178);
             this.comboBoxCategoryCharacter.Name = "comboBoxCategoryCharacter";
             this.comboBoxCategoryCharacter.Size = new System.Drawing.Size(361, 33);
@@ -523,25 +525,9 @@
             this.dataGridViewCharacters.TabIndex = 1;
             this.dataGridViewCharacters.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCharacters_CellClick);
             // 
-            // formCharactersBindingSource2
-            // 
-            this.formCharactersBindingSource2.DataSource = typeof(projecte_eywa.FormCharacters);
-            // 
-            // formCharactersBindingSource
-            // 
-            this.formCharactersBindingSource.DataSource = typeof(projecte_eywa.FormCharacters);
-            // 
-            // formCharactersBindingSource1
-            // 
-            this.formCharactersBindingSource1.DataSource = typeof(projecte_eywa.FormCharacters);
-            // 
-            // formCharactersBindingSource3
-            // 
-            this.formCharactersBindingSource3.DataSource = typeof(projecte_eywa.FormCharacters);
-            // 
             // comboBoxFilter
             // 
-            this.comboBoxFilter.Enabled = false;
+            this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFilter.FormattingEnabled = true;
             this.comboBoxFilter.Items.AddRange(new object[] {
             "Drama",
@@ -552,7 +538,7 @@
             "Terror"});
             this.comboBoxFilter.Location = new System.Drawing.Point(38, 76);
             this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(756, 28);
+            this.comboBoxFilter.Size = new System.Drawing.Size(771, 28);
             this.comboBoxFilter.TabIndex = 18;
             // 
             // buttonApplyFilters
@@ -583,6 +569,22 @@
             this.buttonClearFilters.Text = "Clear filter";
             this.buttonClearFilters.UseVisualStyleBackColor = false;
             this.buttonClearFilters.Click += new System.EventHandler(this.buttonClearFilters_Click);
+            // 
+            // formCharactersBindingSource2
+            // 
+            this.formCharactersBindingSource2.DataSource = typeof(projecte_eywa.FormCharacters);
+            // 
+            // formCharactersBindingSource
+            // 
+            this.formCharactersBindingSource.DataSource = typeof(projecte_eywa.FormCharacters);
+            // 
+            // formCharactersBindingSource1
+            // 
+            this.formCharactersBindingSource1.DataSource = typeof(projecte_eywa.FormCharacters);
+            // 
+            // formCharactersBindingSource3
+            // 
+            this.formCharactersBindingSource3.DataSource = typeof(projecte_eywa.FormCharacters);
             // 
             // FormCharacters
             // 
