@@ -101,20 +101,20 @@
             this.usersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1712, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1712, 36);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // questionsToolStripMenuItem
             // 
             this.questionsToolStripMenuItem.Name = "questionsToolStripMenuItem";
-            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 29);
+            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 32);
             this.questionsToolStripMenuItem.Text = "Questions";
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 32);
             this.usersToolStripMenuItem.Text = "Users";
             // 
             // groupBoxCharacter
