@@ -101,20 +101,20 @@
             this.usersToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1712, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1712, 33);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // questionsToolStripMenuItem
             // 
             this.questionsToolStripMenuItem.Name = "questionsToolStripMenuItem";
-            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 32);
+            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 29);
             this.questionsToolStripMenuItem.Text = "Questions";
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 32);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
             this.usersToolStripMenuItem.Text = "Users";
             // 
             // groupBoxCharacter
@@ -350,31 +350,41 @@
             // 
             // buttonCatalan
             // 
-            this.buttonCatalan.Location = new System.Drawing.Point(1422, 39);
+            this.buttonCatalan.BackgroundImage = global::projecte_eywa.Properties.Resources.cataluña_bandera;
+            this.buttonCatalan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonCatalan.FlatAppearance.BorderSize = 0;
+            this.buttonCatalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCatalan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.buttonCatalan.Location = new System.Drawing.Point(1501, 59);
             this.buttonCatalan.Name = "buttonCatalan";
-            this.buttonCatalan.Size = new System.Drawing.Size(82, 45);
+            this.buttonCatalan.Size = new System.Drawing.Size(55, 55);
             this.buttonCatalan.TabIndex = 4;
-            this.buttonCatalan.Text = "Catalan";
             this.buttonCatalan.UseVisualStyleBackColor = true;
             this.buttonCatalan.Click += new System.EventHandler(this.buttonCatalan_Click);
             // 
             // buttonEnglish
             // 
-            this.buttonEnglish.Location = new System.Drawing.Point(1600, 39);
+            this.buttonEnglish.BackgroundImage = global::projecte_eywa.Properties.Resources.bandera_england;
+            this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEnglish.FlatAppearance.BorderSize = 0;
+            this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEnglish.Location = new System.Drawing.Point(1637, 59);
             this.buttonEnglish.Name = "buttonEnglish";
-            this.buttonEnglish.Size = new System.Drawing.Size(82, 45);
+            this.buttonEnglish.Size = new System.Drawing.Size(55, 55);
             this.buttonEnglish.TabIndex = 5;
-            this.buttonEnglish.Text = "English";
             this.buttonEnglish.UseVisualStyleBackColor = true;
             this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
             // 
             // buttonSpanish
             // 
-            this.buttonSpanish.Location = new System.Drawing.Point(1511, 39);
+            this.buttonSpanish.BackgroundImage = global::projecte_eywa.Properties.Resources.españa_boton;
+            this.buttonSpanish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSpanish.FlatAppearance.BorderSize = 0;
+            this.buttonSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSpanish.Location = new System.Drawing.Point(1571, 59);
             this.buttonSpanish.Name = "buttonSpanish";
-            this.buttonSpanish.Size = new System.Drawing.Size(82, 45);
+            this.buttonSpanish.Size = new System.Drawing.Size(55, 55);
             this.buttonSpanish.TabIndex = 6;
-            this.buttonSpanish.Text = "Spanish";
             this.buttonSpanish.UseVisualStyleBackColor = true;
             this.buttonSpanish.Click += new System.EventHandler(this.buttonSpanish_Click);
             // 

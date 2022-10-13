@@ -63,9 +63,39 @@ namespace projecte_eywa.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bandera_england {
+            get {
+                object obj = ResourceManager.GetObject("bandera_england", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap baseline_perm_identity_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("baseline_perm_identity_white_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cataluña_bandera {
+            get {
+                object obj = ResourceManager.GetObject("cataluña_bandera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap españa_boton {
+            get {
+                object obj = ResourceManager.GetObject("españa_boton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
