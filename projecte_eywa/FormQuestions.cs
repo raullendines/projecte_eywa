@@ -503,10 +503,10 @@ namespace projecte_eywa
         {
             // Change Description
             labelQuestionDescription.Text = "Pregunta";
-            labelCorrectAnswerDescription.Text = "Respuesta \n correcta";
-            labelIncorrectAnswer1Description.Text = "Respuesta \n incorrecta";
-            labelIncorrectAnswer2Description.Text = "Respuesta \n incorrecta";
-            labelIncorrectAnswer3Description.Text = "Respuesta \n incorrecta";
+            labelCorrectAnswerDescription.Text = "Respuesta correcta";
+            labelIncorrectAnswer1Description.Text = "Respuesta incorrecta";
+            labelIncorrectAnswer2Description.Text = "Respuesta incorrecta";
+            labelIncorrectAnswer3Description.Text = "Respuesta incorrecta";
             labelCategoryDescription.Text = "Categoría";
             labelDifficultyDescription.Text = "Dificultad";
             // Change ADD, MODIFY, DELETE buttons
@@ -547,10 +547,10 @@ namespace projecte_eywa
         {
             // Change Description
             labelQuestionDescription.Text = "Question";
-            labelCorrectAnswerDescription.Text = "Correct \n answer";
-            labelIncorrectAnswer1Description.Text = "Incorrect \n answer";
-            labelIncorrectAnswer2Description.Text = "Incorrect \n answer";
-            labelIncorrectAnswer3Description.Text = "Incorrect \n answer";
+            labelCorrectAnswerDescription.Text = "Correct answer";
+            labelIncorrectAnswer1Description.Text = "Incorrect answer";
+            labelIncorrectAnswer2Description.Text = "Incorrect answer";
+            labelIncorrectAnswer3Description.Text = "Incorrect answer";
             labelCategoryDescription.Text = "Category";
             labelDifficultyDescription.Text = "Dificulty";
             // Change ADD, MODIFY, DELETE buttons
@@ -589,10 +589,10 @@ namespace projecte_eywa
         {
             // Change Description
             labelQuestionDescription.Text = "Pregunta";
-            labelCorrectAnswerDescription.Text = "Resposta \n correcta";
-            labelIncorrectAnswer1Description.Text = "Resposta \n incorrecta";
-            labelIncorrectAnswer2Description.Text = "Resposta \n incorrecta";
-            labelIncorrectAnswer3Description.Text = "Resposta \n incorrecta";
+            labelCorrectAnswerDescription.Text = "Resposta correcta";
+            labelIncorrectAnswer1Description.Text = "Resposta incorrecta";
+            labelIncorrectAnswer2Description.Text = "Resposta incorrecta";
+            labelIncorrectAnswer3Description.Text = "Resposta incorrecta";
             labelCategoryDescription.Text = "Categoria";
             labelDifficultyDescription.Text = "Dificultat";
             // Change ADD, MODIFY, DELETE buttons

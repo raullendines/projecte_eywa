@@ -90,6 +90,8 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.charactersToolStripMenuItem,
             this.newToolStripMenuItem});
@@ -108,37 +110,37 @@
             this.toolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.charactersToolStripMenuItem.Name = "charactersToolStripMenuItem";
-            this.charactersToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.charactersToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.charactersToolStripMenuItem.Text = "File";
             // 
             // gestionarPersonatgesToolStripMenuItem
             // 
             this.gestionarPersonatgesToolStripMenuItem.Name = "gestionarPersonatgesToolStripMenuItem";
-            this.gestionarPersonatgesToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.gestionarPersonatgesToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.gestionarPersonatgesToolStripMenuItem.Text = "Charcater management";
             this.gestionarPersonatgesToolStripMenuItem.Click += new System.EventHandler(this.gestionarPersonatgesToolStripMenuItem_Click);
             // 
             // userManagementToolStripMenuItem
             // 
             this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
-            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.userManagementToolStripMenuItem.Text = "User management";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(201, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // newToolStripMenuItem
@@ -146,7 +148,7 @@
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.categoryToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.newToolStripMenuItem.Text = "New";
             // 
             // categoryToolStripMenuItem
@@ -163,10 +165,11 @@
             this.dataGridViewQuestions.AutoGenerateColumns = false;
             this.dataGridViewQuestions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewQuestions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.dataGridViewQuestions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -199,8 +202,10 @@
             // buttonAdd
             // 
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonAdd.FlatAppearance.BorderSize = 0;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(49, 818);
+            this.buttonAdd.Location = new System.Drawing.Point(52, 818);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(103, 49);
             this.buttonAdd.TabIndex = 2;
@@ -211,6 +216,8 @@
             // buttonModify
             // 
             this.buttonModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonModify.FlatAppearance.BorderSize = 0;
+            this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonModify.Location = new System.Drawing.Point(169, 818);
             this.buttonModify.Name = "buttonModify";
@@ -223,8 +230,10 @@
             // buttonDelete
             // 
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelete.Location = new System.Drawing.Point(296, 818);
+            this.buttonDelete.Location = new System.Drawing.Point(291, 818);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(103, 49);
             this.buttonDelete.TabIndex = 4;
@@ -257,14 +266,15 @@
             this.groupBoxQuestionDescription.Size = new System.Drawing.Size(787, 652);
             this.groupBoxQuestionDescription.TabIndex = 5;
             this.groupBoxQuestionDescription.TabStop = false;
-            this.groupBoxQuestionDescription.Text = "Question";
             // 
             // buttonCancel
             // 
             this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonCancel.FlatAppearance.BorderSize = 0;
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonCancel.Location = new System.Drawing.Point(462, 551);
+            this.buttonCancel.Location = new System.Drawing.Point(499, 551);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(103, 49);
             this.buttonCancel.TabIndex = 26;
@@ -280,7 +290,7 @@
             this.buttonOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonOk.Location = new System.Drawing.Point(600, 551);
+            this.buttonOk.Location = new System.Drawing.Point(637, 551);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(102, 49);
             this.buttonOk.TabIndex = 25;
@@ -302,7 +312,7 @@
             "Animation",
             "Horror",
             "Drama"});
-            this.comboBoxCategoryDescription.Location = new System.Drawing.Point(218, 380);
+            this.comboBoxCategoryDescription.Location = new System.Drawing.Point(255, 380);
             this.comboBoxCategoryDescription.Name = "comboBoxCategoryDescription";
             this.comboBoxCategoryDescription.Size = new System.Drawing.Size(482, 33);
             this.comboBoxCategoryDescription.TabIndex = 24;
@@ -319,7 +329,7 @@
             "Medium",
             "Hard",
             "Legend"});
-            this.comboBoxDifficultDescription.Location = new System.Drawing.Point(218, 454);
+            this.comboBoxDifficultDescription.Location = new System.Drawing.Point(255, 454);
             this.comboBoxDifficultDescription.Name = "comboBoxDifficultDescription";
             this.comboBoxDifficultDescription.Size = new System.Drawing.Size(482, 33);
             this.comboBoxDifficultDescription.TabIndex = 23;
@@ -327,7 +337,7 @@
             // textBoxIncorrectAnswer3
             // 
             this.textBoxIncorrectAnswer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIncorrectAnswer3.Location = new System.Drawing.Point(220, 325);
+            this.textBoxIncorrectAnswer3.Location = new System.Drawing.Point(257, 325);
             this.textBoxIncorrectAnswer3.Name = "textBoxIncorrectAnswer3";
             this.textBoxIncorrectAnswer3.ReadOnly = true;
             this.textBoxIncorrectAnswer3.Size = new System.Drawing.Size(482, 30);
@@ -336,7 +346,7 @@
             // textBoxIncorrectAnswer2
             // 
             this.textBoxIncorrectAnswer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIncorrectAnswer2.Location = new System.Drawing.Point(220, 269);
+            this.textBoxIncorrectAnswer2.Location = new System.Drawing.Point(257, 269);
             this.textBoxIncorrectAnswer2.Name = "textBoxIncorrectAnswer2";
             this.textBoxIncorrectAnswer2.ReadOnly = true;
             this.textBoxIncorrectAnswer2.Size = new System.Drawing.Size(482, 30);
@@ -345,7 +355,7 @@
             // textBoxIncorrectAnswer1
             // 
             this.textBoxIncorrectAnswer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIncorrectAnswer1.Location = new System.Drawing.Point(218, 210);
+            this.textBoxIncorrectAnswer1.Location = new System.Drawing.Point(255, 210);
             this.textBoxIncorrectAnswer1.Name = "textBoxIncorrectAnswer1";
             this.textBoxIncorrectAnswer1.ReadOnly = true;
             this.textBoxIncorrectAnswer1.Size = new System.Drawing.Size(482, 30);
@@ -407,7 +417,7 @@
             // textBoxCorrectAnswer
             // 
             this.textBoxCorrectAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCorrectAnswer.Location = new System.Drawing.Point(220, 149);
+            this.textBoxCorrectAnswer.Location = new System.Drawing.Point(257, 149);
             this.textBoxCorrectAnswer.Name = "textBoxCorrectAnswer";
             this.textBoxCorrectAnswer.ReadOnly = true;
             this.textBoxCorrectAnswer.Size = new System.Drawing.Size(482, 30);
@@ -427,7 +437,7 @@
             // textBoxQuestionDescription
             // 
             this.textBoxQuestionDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxQuestionDescription.Location = new System.Drawing.Point(220, 98);
+            this.textBoxQuestionDescription.Location = new System.Drawing.Point(257, 98);
             this.textBoxQuestionDescription.Multiline = true;
             this.textBoxQuestionDescription.Name = "textBoxQuestionDescription";
             this.textBoxQuestionDescription.ReadOnly = true;
@@ -447,7 +457,7 @@
             // textBoxIdDescription
             // 
             this.textBoxIdDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIdDescription.Location = new System.Drawing.Point(220, 48);
+            this.textBoxIdDescription.Location = new System.Drawing.Point(257, 48);
             this.textBoxIdDescription.Name = "textBoxIdDescription";
             this.textBoxIdDescription.ReadOnly = true;
             this.textBoxIdDescription.Size = new System.Drawing.Size(482, 30);
@@ -489,9 +499,10 @@
             // buttonApplyFilter
             // 
             this.buttonApplyFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
+            this.buttonApplyFilter.FlatAppearance.BorderSize = 0;
             this.buttonApplyFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonApplyFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonApplyFilter.Location = new System.Drawing.Point(693, 90);
+            this.buttonApplyFilter.Location = new System.Drawing.Point(694, 80);
             this.buttonApplyFilter.Name = "buttonApplyFilter";
             this.buttonApplyFilter.Size = new System.Drawing.Size(103, 49);
             this.buttonApplyFilter.TabIndex = 11;
@@ -502,9 +513,10 @@
             // buttonClearFilter
             // 
             this.buttonClearFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonClearFilter.FlatAppearance.BorderSize = 0;
             this.buttonClearFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClearFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClearFilter.Location = new System.Drawing.Point(829, 90);
+            this.buttonClearFilter.Location = new System.Drawing.Point(829, 80);
             this.buttonClearFilter.Name = "buttonClearFilter";
             this.buttonClearFilter.Size = new System.Drawing.Size(103, 49);
             this.buttonClearFilter.TabIndex = 12;
@@ -559,6 +571,7 @@
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.idDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.idDataGridViewTextBoxColumn.FillWeight = 25.38071F;
             this.idDataGridViewTextBoxColumn.HeaderText = "ID";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
@@ -568,6 +581,7 @@
             this.questionDataGridViewTextBoxColumn.DataPropertyName = "question";
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.questionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.questionDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
             this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
             this.questionDataGridViewTextBoxColumn.ReadOnly = true;
@@ -577,6 +591,7 @@
             this.difficultyDataGridViewTextBoxColumn.DataPropertyName = "difficulty";
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.difficultyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.difficultyDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.difficultyDataGridViewTextBoxColumn.HeaderText = "Difficulty";
             this.difficultyDataGridViewTextBoxColumn.Name = "difficultyDataGridViewTextBoxColumn";
             this.difficultyDataGridViewTextBoxColumn.ReadOnly = true;
@@ -586,6 +601,7 @@
             this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.categoryDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
             this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
@@ -595,6 +611,7 @@
             this.correctanswerDataGridViewTextBoxColumn.DataPropertyName = "correct_answer";
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.correctanswerDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.correctanswerDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.correctanswerDataGridViewTextBoxColumn.HeaderText = "Correct Answer";
             this.correctanswerDataGridViewTextBoxColumn.Name = "correctanswerDataGridViewTextBoxColumn";
             this.correctanswerDataGridViewTextBoxColumn.ReadOnly = true;
