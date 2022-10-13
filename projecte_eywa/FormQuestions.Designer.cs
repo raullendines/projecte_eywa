@@ -526,7 +526,7 @@
             // 
             // buttonEnglish
             // 
-            this.buttonEnglish.BackgroundImage = global::projecte_eywa.Properties.Resources.bandera_england__1_;
+          
             this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEnglish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
@@ -539,7 +539,7 @@
             // 
             // buttonEspañol
             // 
-            this.buttonEspañol.BackgroundImage = global::projecte_eywa.Properties.Resources.españa_boton1;
+            
             this.buttonEspañol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonEspañol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEspañol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
@@ -552,7 +552,7 @@
             // 
             // buttonCatala
             // 
-            this.buttonCatala.BackgroundImage = global::projecte_eywa.Properties.Resources.cataluña_bandera__1_;
+            
             this.buttonCatala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonCatala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCatala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
