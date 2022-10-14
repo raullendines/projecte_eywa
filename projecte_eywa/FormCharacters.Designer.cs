@@ -86,6 +86,407 @@
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
+
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.questionsToolStripMenuItem,
+            this.usersToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1712, 33);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // questionsToolStripMenuItem
+            // 
+            this.questionsToolStripMenuItem.Name = "questionsToolStripMenuItem";
+            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 29);
+            this.questionsToolStripMenuItem.Text = "Questions";
+            // 
+            // usersToolStripMenuItem
+            // 
+            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.usersToolStripMenuItem.Text = "Users";
+            // 
+            // groupBoxCharacter
+            // 
+            this.groupBoxCharacter.Controls.Add(this.textBoxDescriptionCharacterCat);
+            this.groupBoxCharacter.Controls.Add(this.comboBoxDifficulty);
+            this.groupBoxCharacter.Controls.Add(this.textBoxDescriptionCharacterEng);
+            this.groupBoxCharacter.Controls.Add(this.numericUpDownCorrectNum);
+            this.groupBoxCharacter.Controls.Add(this.comboBoxCategoryCharacter);
+            this.groupBoxCharacter.Controls.Add(this.buttonCancel);
+            this.groupBoxCharacter.Controls.Add(this.buttonSave);
+            this.groupBoxCharacter.Controls.Add(this.textBoxDescriptionCharacterEsp);
+            this.groupBoxCharacter.Controls.Add(this.labelDescriptionCharacter);
+            this.groupBoxCharacter.Controls.Add(this.textBoxImgUrlCharacter);
+            this.groupBoxCharacter.Controls.Add(this.labelImgUrl);
+            this.groupBoxCharacter.Controls.Add(this.labelNumCorrecto);
+            this.groupBoxCharacter.Controls.Add(this.labelDifficultyCharacter);
+            this.groupBoxCharacter.Controls.Add(this.labelCategoryCharacter);
+            this.groupBoxCharacter.Controls.Add(this.labelFilmCharacter);
+            this.groupBoxCharacter.Controls.Add(this.textBoxFilmCharacter);
+            this.groupBoxCharacter.Controls.Add(this.label1);
+            this.groupBoxCharacter.Controls.Add(this.textBoxNameCharacter);
+            this.groupBoxCharacter.Controls.Add(this.labelNameCharacter);
+            this.groupBoxCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxCharacter.Location = new System.Drawing.Point(1146, 148);
+            this.groupBoxCharacter.Name = "groupBoxCharacter";
+            this.groupBoxCharacter.Size = new System.Drawing.Size(549, 754);
+            this.groupBoxCharacter.TabIndex = 3;
+            this.groupBoxCharacter.TabStop = false;
+            this.groupBoxCharacter.Text = "Character";
+            // 
+            // textBoxDescriptionCharacterCat
+            // 
+            this.textBoxDescriptionCharacterCat.Enabled = false;
+            this.textBoxDescriptionCharacterCat.Location = new System.Drawing.Point(171, 394);
+            this.textBoxDescriptionCharacterCat.Multiline = true;
+            this.textBoxDescriptionCharacterCat.Name = "textBoxDescriptionCharacterCat";
+            this.textBoxDescriptionCharacterCat.Size = new System.Drawing.Size(363, 253);
+            this.textBoxDescriptionCharacterCat.TabIndex = 22;
+            this.textBoxDescriptionCharacterCat.Visible = false;
+            // 
+            // comboBoxDifficulty
+            // 
+            this.comboBoxDifficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDifficulty.Enabled = false;
+            this.comboBoxDifficulty.FormattingEnabled = true;
+            this.comboBoxDifficulty.Items.AddRange(new object[] {
+            "E",
+            "M",
+            "H",
+            "I"});
+            this.comboBoxDifficulty.Location = new System.Drawing.Point(171, 232);
+            this.comboBoxDifficulty.Name = "comboBoxDifficulty";
+            this.comboBoxDifficulty.Size = new System.Drawing.Size(361, 33);
+            this.comboBoxDifficulty.TabIndex = 20;
+            // 
+            // textBoxDescriptionCharacterEng
+            // 
+            this.textBoxDescriptionCharacterEng.Enabled = false;
+            this.textBoxDescriptionCharacterEng.Location = new System.Drawing.Point(171, 394);
+            this.textBoxDescriptionCharacterEng.Multiline = true;
+            this.textBoxDescriptionCharacterEng.Name = "textBoxDescriptionCharacterEng";
+            this.textBoxDescriptionCharacterEng.Size = new System.Drawing.Size(361, 244);
+            this.textBoxDescriptionCharacterEng.TabIndex = 18;
+            this.textBoxDescriptionCharacterEng.Visible = false;
+            // 
+            // numericUpDownCorrectNum
+            // 
+            this.numericUpDownCorrectNum.Enabled = false;
+            this.numericUpDownCorrectNum.Location = new System.Drawing.Point(171, 286);
+            this.numericUpDownCorrectNum.Name = "numericUpDownCorrectNum";
+            this.numericUpDownCorrectNum.Size = new System.Drawing.Size(363, 30);
+            this.numericUpDownCorrectNum.TabIndex = 10;
+            // 
+            // comboBoxCategoryCharacter
+            // 
+            this.comboBoxCategoryCharacter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCategoryCharacter.Enabled = false;
+            this.comboBoxCategoryCharacter.FormattingEnabled = true;
+            this.comboBoxCategoryCharacter.Items.AddRange(new object[] {
+            "drama",
+            "science fiction",
+            "action",
+            "comedy",
+            "animation",
+            "horror"});
+            this.comboBoxCategoryCharacter.Location = new System.Drawing.Point(169, 178);
+            this.comboBoxCategoryCharacter.Name = "comboBoxCategoryCharacter";
+            this.comboBoxCategoryCharacter.Size = new System.Drawing.Size(361, 33);
+            this.comboBoxCategoryCharacter.TabIndex = 17;
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.Color.White;
+            this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonCancel.Location = new System.Drawing.Point(237, 671);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(146, 55);
+            this.buttonCancel.TabIndex = 16;
+            this.buttonCancel.Text = "Cancel";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Visible = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
+            // buttonSave
+            // 
+            this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonSave.Location = new System.Drawing.Point(388, 671);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(146, 55);
+            this.buttonSave.TabIndex = 15;
+            this.buttonSave.Text = "Save";
+            this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Visible = false;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // textBoxDescriptionCharacterEsp
+            // 
+            this.textBoxDescriptionCharacterEsp.Enabled = false;
+            this.textBoxDescriptionCharacterEsp.Location = new System.Drawing.Point(171, 394);
+            this.textBoxDescriptionCharacterEsp.Multiline = true;
+            this.textBoxDescriptionCharacterEsp.Name = "textBoxDescriptionCharacterEsp";
+            this.textBoxDescriptionCharacterEsp.Size = new System.Drawing.Size(361, 242);
+            this.textBoxDescriptionCharacterEsp.TabIndex = 13;
+            // 
+            // labelDescriptionCharacter
+            // 
+            this.labelDescriptionCharacter.AutoSize = true;
+            this.labelDescriptionCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescriptionCharacter.Location = new System.Drawing.Point(17, 396);
+            this.labelDescriptionCharacter.Name = "labelDescriptionCharacter";
+            this.labelDescriptionCharacter.Size = new System.Drawing.Size(109, 25);
+            this.labelDescriptionCharacter.TabIndex = 14;
+            this.labelDescriptionCharacter.Text = "Description";
+            // 
+            // textBoxImgUrlCharacter
+            // 
+            this.textBoxImgUrlCharacter.Enabled = false;
+            this.textBoxImgUrlCharacter.Location = new System.Drawing.Point(169, 340);
+            this.textBoxImgUrlCharacter.Name = "textBoxImgUrlCharacter";
+            this.textBoxImgUrlCharacter.Size = new System.Drawing.Size(363, 30);
+            this.textBoxImgUrlCharacter.TabIndex = 11;
+            // 
+            // labelImgUrl
+            // 
+            this.labelImgUrl.AutoSize = true;
+            this.labelImgUrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImgUrl.Location = new System.Drawing.Point(17, 340);
+            this.labelImgUrl.Name = "labelImgUrl";
+            this.labelImgUrl.Size = new System.Drawing.Size(92, 25);
+            this.labelImgUrl.TabIndex = 12;
+            this.labelImgUrl.Text = "Image url";
+            // 
+            // labelNumCorrecto
+            // 
+            this.labelNumCorrecto.AutoSize = true;
+            this.labelNumCorrecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumCorrecto.Location = new System.Drawing.Point(17, 288);
+            this.labelNumCorrecto.Name = "labelNumCorrecto";
+            this.labelNumCorrecto.Size = new System.Drawing.Size(147, 25);
+            this.labelNumCorrecto.TabIndex = 10;
+            this.labelNumCorrecto.Text = "Correct number";
+            // 
+            // labelDifficultyCharacter
+            // 
+            this.labelDifficultyCharacter.AutoSize = true;
+            this.labelDifficultyCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDifficultyCharacter.Location = new System.Drawing.Point(17, 234);
+            this.labelDifficultyCharacter.Name = "labelDifficultyCharacter";
+            this.labelDifficultyCharacter.Size = new System.Drawing.Size(84, 25);
+            this.labelDifficultyCharacter.TabIndex = 8;
+            this.labelDifficultyCharacter.Text = "Difficulty";
+            // 
+            // labelCategoryCharacter
+            // 
+            this.labelCategoryCharacter.AutoSize = true;
+            this.labelCategoryCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCategoryCharacter.Location = new System.Drawing.Point(19, 182);
+            this.labelCategoryCharacter.Name = "labelCategoryCharacter";
+            this.labelCategoryCharacter.Size = new System.Drawing.Size(92, 25);
+            this.labelCategoryCharacter.TabIndex = 6;
+            this.labelCategoryCharacter.Text = "Category";
+            // 
+            // labelFilmCharacter
+            // 
+            this.labelFilmCharacter.AutoSize = true;
+            this.labelFilmCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFilmCharacter.Location = new System.Drawing.Point(19, 128);
+            this.labelFilmCharacter.Name = "labelFilmCharacter";
+            this.labelFilmCharacter.Size = new System.Drawing.Size(48, 25);
+            this.labelFilmCharacter.TabIndex = 4;
+            this.labelFilmCharacter.Text = "Film";
+            // 
+            // textBoxFilmCharacter
+            // 
+            this.textBoxFilmCharacter.Enabled = false;
+            this.textBoxFilmCharacter.Location = new System.Drawing.Point(169, 125);
+            this.textBoxFilmCharacter.Name = "textBoxFilmCharacter";
+            this.textBoxFilmCharacter.Size = new System.Drawing.Size(365, 30);
+            this.textBoxFilmCharacter.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 92);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 25);
+            this.label1.TabIndex = 2;
+            // 
+            // textBoxNameCharacter
+            // 
+            this.textBoxNameCharacter.Enabled = false;
+            this.textBoxNameCharacter.Location = new System.Drawing.Point(169, 71);
+            this.textBoxNameCharacter.Name = "textBoxNameCharacter";
+            this.textBoxNameCharacter.Size = new System.Drawing.Size(365, 30);
+            this.textBoxNameCharacter.TabIndex = 1;
+            // 
+            // labelNameCharacter
+            // 
+            this.labelNameCharacter.AutoSize = true;
+            this.labelNameCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameCharacter.Location = new System.Drawing.Point(17, 74);
+            this.labelNameCharacter.Name = "labelNameCharacter";
+            this.labelNameCharacter.Size = new System.Drawing.Size(64, 25);
+            this.labelNameCharacter.TabIndex = 0;
+            this.labelNameCharacter.Text = "Name";
+            // 
+            // buttonCatalan
+            // 
+            this.buttonCatalan.BackgroundImage = global::projecte_eywa.Properties.Resources.cataluña_bandera;
+            this.buttonCatalan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonCatalan.FlatAppearance.BorderSize = 0;
+            this.buttonCatalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCatalan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.buttonCatalan.Location = new System.Drawing.Point(1501, 59);
+            this.buttonCatalan.Name = "buttonCatalan";
+            this.buttonCatalan.Size = new System.Drawing.Size(55, 55);
+            this.buttonCatalan.TabIndex = 4;
+            this.buttonCatalan.UseVisualStyleBackColor = true;
+            this.buttonCatalan.Click += new System.EventHandler(this.buttonCatalan_Click);
+            // 
+            // buttonEnglish
+            // 
+            this.buttonEnglish.BackgroundImage = global::projecte_eywa.Properties.Resources.bandera_england;
+            this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEnglish.FlatAppearance.BorderSize = 0;
+            this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEnglish.Location = new System.Drawing.Point(1637, 59);
+            this.buttonEnglish.Name = "buttonEnglish";
+            this.buttonEnglish.Size = new System.Drawing.Size(55, 55);
+            this.buttonEnglish.TabIndex = 5;
+            this.buttonEnglish.UseVisualStyleBackColor = true;
+            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
+            // 
+            // buttonSpanish
+            // 
+            this.buttonSpanish.BackgroundImage = global::projecte_eywa.Properties.Resources.españa_boton;
+            this.buttonSpanish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSpanish.FlatAppearance.BorderSize = 0;
+            this.buttonSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSpanish.Location = new System.Drawing.Point(1571, 59);
+            this.buttonSpanish.Name = "buttonSpanish";
+            this.buttonSpanish.Size = new System.Drawing.Size(55, 55);
+            this.buttonSpanish.TabIndex = 6;
+            this.buttonSpanish.UseVisualStyleBackColor = true;
+            this.buttonSpanish.Click += new System.EventHandler(this.buttonSpanish_Click);
+            // 
+            // buttonModify
+            // 
+            this.buttonModify.BackColor = System.Drawing.Color.White;
+            this.buttonModify.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonModify.Location = new System.Drawing.Point(189, 923);
+            this.buttonModify.Name = "buttonModify";
+            this.buttonModify.Size = new System.Drawing.Size(146, 55);
+            this.buttonModify.TabIndex = 9;
+            this.buttonModify.Text = "Modify";
+            this.buttonModify.UseVisualStyleBackColor = false;
+            this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.buttonDelete.Location = new System.Drawing.Point(340, 923);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(146, 55);
+            this.buttonDelete.TabIndex = 8;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.BackColor = System.Drawing.Color.White;
+            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonAdd.Location = new System.Drawing.Point(38, 923);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(146, 55);
+            this.buttonAdd.TabIndex = 7;
+            this.buttonAdd.Text = "Add";
+            this.buttonAdd.UseVisualStyleBackColor = false;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
+            // filmCharacter
+            // 
+            this.filmCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.filmCharacter.DataPropertyName = "film";
+            this.filmCharacter.HeaderText = "Film";
+            this.filmCharacter.MinimumWidth = 8;
+            this.filmCharacter.Name = "filmCharacter";
+            // 
+            // difficultyCharacter
+            // 
+            this.difficultyCharacter.DataPropertyName = "difficultyCharacter";
+            this.difficultyCharacter.HeaderText = "Difficulty";
+            this.difficultyCharacter.MinimumWidth = 8;
+            this.difficultyCharacter.Name = "difficultyCharacter";
+            this.difficultyCharacter.Visible = false;
+            this.difficultyCharacter.Width = 150;
+            // 
+            // categoryCharacter
+            // 
+            this.categoryCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.categoryCharacter.DataPropertyName = "category";
+            this.categoryCharacter.HeaderText = "Category";
+            this.categoryCharacter.MinimumWidth = 8;
+            this.categoryCharacter.Name = "categoryCharacter";
+            // 
+            // descCharacter
+            // 
+            this.descCharacter.DataPropertyName = "descCharacter";
+            this.descCharacter.HeaderText = "Description";
+            this.descCharacter.MinimumWidth = 8;
+            this.descCharacter.Name = "descCharacter";
+            this.descCharacter.Visible = false;
+            this.descCharacter.Width = 150;
+            // 
+            // urlImageCharacter
+            // 
+            this.urlImageCharacter.DataPropertyName = "urlImageCharacter";
+            this.urlImageCharacter.HeaderText = "Url image";
+            this.urlImageCharacter.MinimumWidth = 8;
+            this.urlImageCharacter.Name = "urlImageCharacter";
+            this.urlImageCharacter.Visible = false;
+            this.urlImageCharacter.Width = 150;
+            // 
+            // correctNumCharacter
+            // 
+            this.correctNumCharacter.DataPropertyName = "corr";
+            this.correctNumCharacter.HeaderText = "Correct number";
+            this.correctNumCharacter.MinimumWidth = 8;
+            this.correctNumCharacter.Name = "correctNumCharacter";
+            this.correctNumCharacter.Visible = false;
+            this.correctNumCharacter.Width = 150;
+            // 
+            // nameCharacter
+            // 
+            this.nameCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameCharacter.DataPropertyName = "name";
+            this.nameCharacter.HeaderText = "Name";
+            this.nameCharacter.MinimumWidth = 8;
+            this.nameCharacter.Name = "nameCharacter";
+            // 
             // dataGridViewCharacters
             // 
             this.dataGridViewCharacters.AllowUserToOrderColumns = true;
