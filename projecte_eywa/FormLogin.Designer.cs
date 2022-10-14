@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.labelPassword = new System.Windows.Forms.Label();
-
             this.labelUser = new System.Windows.Forms.Label();
             this.textBoxUser = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
@@ -40,7 +39,6 @@
             this.buttonVisibility = new System.Windows.Forms.Button();
             this.labelChangeFormsText = new System.Windows.Forms.Label();
             this.labelChangeForms = new System.Windows.Forms.Label();
-
             this.SuspendLayout();
             // 
             // labelPassword
@@ -63,11 +61,10 @@
             this.labelUser.TabIndex = 0;
             this.labelUser.Text = "Username";
             // 
-            // button1
+            // textBoxUser
             // 
-
             this.textBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.Location = new System.Drawing.Point(836, 548);
+            this.textBoxUser.Location = new System.Drawing.Point(836, 545);
             this.textBoxUser.Name = "textBoxUser";
             this.textBoxUser.Size = new System.Drawing.Size(441, 31);
             this.textBoxUser.TabIndex = 2;
@@ -82,7 +79,6 @@
             this.textBoxPassword.Size = new System.Drawing.Size(441, 31);
             this.textBoxPassword.TabIndex = 3;
             this.textBoxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPassword_KeyPress);
-
             // 
             // buttonLogin
             // 
@@ -98,7 +94,6 @@
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-
             // labelConfirmPassword
             // 
             this.labelConfirmPassword.AutoSize = true;
@@ -111,7 +106,6 @@
             this.labelConfirmPassword.Visible = false;
             // 
             // textBoxConfirmPassword
-
             // 
             this.textBoxConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxConfirmPassword.Location = new System.Drawing.Point(836, 669);
@@ -166,23 +160,6 @@
             this.labelChangeForms.Text = "Create an account";
             this.labelChangeForms.Click += new System.EventHandler(this.labelChangeForms_Click);
             // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(305, 465);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(441, 31);
-            this.textBoxPassword.TabIndex = 3;
-            // 
-            // textBoxUser
-            // 
-            this.textBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUser.Location = new System.Drawing.Point(305, 403);
-            this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(441, 31);
-            this.textBoxUser.TabIndex = 2;
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,10 +181,8 @@
             this.Text = "FormLogin";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLogin_FormClosing);
-            this.Load += new System.EventHandler(this.FormLogin_Load);
-
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLogin_FormClosed);
-           
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

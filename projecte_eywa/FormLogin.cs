@@ -68,18 +68,18 @@ namespace projecte_eywa
 
                 if (checkCorrectUser())
                 {
-                    FormUsers formUser = new FormUsers(UsersList, actualUser);
-                    formUser.Show();
+                    FormQuestions myNextForm = new FormQuestions();
+                    Program.changingForms = true;
+                    myNextForm.Show();
                     this.Close();
+                    Program.changingForms = false;
                 }
                 else
                 {
                     MessageBox.Show("ERROR");
                 }
 
-               var myNextForm = new FormQuestions();
-                myNextForm.Show();
-                this.Hide();
+               
 
             }
             else
@@ -297,7 +297,10 @@ namespace projecte_eywa
 
         private void FormLogin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            if (!Program.changingForms)
+            {
+                Application.Exit();
+            }
         }
 
         

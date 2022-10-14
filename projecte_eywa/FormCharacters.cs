@@ -388,6 +388,22 @@ namespace projecte_eywa
             }
         }
 
+        private void questionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormQuestions formQuestions = new FormQuestions();
+            formQuestions.Show();
+            Program.changingForms = true;
+            this.Close();
+            Program.changingForms = false;
+        }
 
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUsers formUsers = new FormUsers();
+            formUsers.Show();
+            Program.changingForms = true;
+            this.Close();
+            Program.changingForms = false;
+        }
     }
 }

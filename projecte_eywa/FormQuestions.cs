@@ -495,8 +495,10 @@ namespace projecte_eywa
 
         private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
         {
-            saveJSON();
-            Application.Exit();
+            if (!Program.changingForms)
+            {
+                Application.Exit();
+            }
         }
 
         private void changeLanguageES()
@@ -712,9 +714,11 @@ namespace projecte_eywa
 
         private void gestionarPersonatgesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var myNextForm = new FormCharacters();
-            myNextForm.Show();
-            this.Hide();
+            FormCharacters formCharacters = new FormCharacters();
+            formCharacters.Show();
+            Program.changingForms = true;
+            this.Close();
+            Program.changingForms = false;
 
         }
 
@@ -740,6 +744,15 @@ namespace projecte_eywa
         private void comboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void userManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormUsers formUsers = new FormUsers();
+            formUsers.Show();
+            Program.changingForms = true;
+            this.Close();
+            Program.changingForms = false;
         }
     }
 }

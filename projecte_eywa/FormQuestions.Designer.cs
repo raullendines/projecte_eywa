@@ -47,6 +47,12 @@
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewQuestions = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.difficultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correctanswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quizQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
@@ -76,16 +82,10 @@
             this.buttonEnglish = new System.Windows.Forms.Button();
             this.buttonEspañol = new System.Windows.Forms.Button();
             this.buttonCatala = new System.Windows.Forms.Button();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.difficultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correctanswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quizQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).BeginInit();
-            this.groupBoxQuestionDescription.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quizQuestionBindingSource)).BeginInit();
+            this.groupBoxQuestionDescription.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -125,6 +125,7 @@
             this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
             this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.userManagementToolStripMenuItem.Text = "User management";
+            this.userManagementToolStripMenuItem.Click += new System.EventHandler(this.userManagementToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
@@ -198,6 +199,62 @@
             this.dataGridViewQuestions.Size = new System.Drawing.Size(880, 652);
             this.dataGridViewQuestions.TabIndex = 1;
             this.dataGridViewQuestions.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewQuestions_CellClick);
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.idDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            this.idDataGridViewTextBoxColumn.FillWeight = 25.38071F;
+            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // questionDataGridViewTextBoxColumn
+            // 
+            this.questionDataGridViewTextBoxColumn.DataPropertyName = "question";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.questionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
+            this.questionDataGridViewTextBoxColumn.FillWeight = 118.6548F;
+            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
+            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
+            this.questionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // difficultyDataGridViewTextBoxColumn
+            // 
+            this.difficultyDataGridViewTextBoxColumn.DataPropertyName = "difficulty";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.difficultyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
+            this.difficultyDataGridViewTextBoxColumn.FillWeight = 118.6548F;
+            this.difficultyDataGridViewTextBoxColumn.HeaderText = "Difficulty";
+            this.difficultyDataGridViewTextBoxColumn.Name = "difficultyDataGridViewTextBoxColumn";
+            this.difficultyDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // categoryDataGridViewTextBoxColumn
+            // 
+            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
+            this.categoryDataGridViewTextBoxColumn.FillWeight = 118.6548F;
+            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
+            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
+            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // correctanswerDataGridViewTextBoxColumn
+            // 
+            this.correctanswerDataGridViewTextBoxColumn.DataPropertyName = "correct_answer";
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.correctanswerDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
+            this.correctanswerDataGridViewTextBoxColumn.FillWeight = 118.6548F;
+            this.correctanswerDataGridViewTextBoxColumn.HeaderText = "Correct Answer";
+            this.correctanswerDataGridViewTextBoxColumn.Name = "correctanswerDataGridViewTextBoxColumn";
+            this.correctanswerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quizQuestionBindingSource
+            // 
+            this.quizQuestionBindingSource.DataSource = typeof(projecte_eywa.QuizQuestion);
             // 
             // buttonAdd
             // 
@@ -526,7 +583,6 @@
             // 
             // buttonEnglish
             // 
-          
             this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEnglish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
@@ -539,7 +595,6 @@
             // 
             // buttonEspañol
             // 
-            
             this.buttonEspañol.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonEspañol.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEspañol.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
@@ -552,7 +607,6 @@
             // 
             // buttonCatala
             // 
-            
             this.buttonCatala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonCatala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCatala.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
@@ -563,62 +617,6 @@
             this.buttonCatala.UseMnemonic = false;
             this.buttonCatala.UseVisualStyleBackColor = true;
             this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.idDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
-            this.idDataGridViewTextBoxColumn.FillWeight = 25.38071F;
-            this.idDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // questionDataGridViewTextBoxColumn
-            // 
-            this.questionDataGridViewTextBoxColumn.DataPropertyName = "question";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.questionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
-            this.questionDataGridViewTextBoxColumn.FillWeight = 118.6548F;
-            this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
-            this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
-            this.questionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // difficultyDataGridViewTextBoxColumn
-            // 
-            this.difficultyDataGridViewTextBoxColumn.DataPropertyName = "difficulty";
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.difficultyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
-            this.difficultyDataGridViewTextBoxColumn.FillWeight = 118.6548F;
-            this.difficultyDataGridViewTextBoxColumn.HeaderText = "Difficulty";
-            this.difficultyDataGridViewTextBoxColumn.Name = "difficultyDataGridViewTextBoxColumn";
-            this.difficultyDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // categoryDataGridViewTextBoxColumn
-            // 
-            this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
-            this.categoryDataGridViewTextBoxColumn.FillWeight = 118.6548F;
-            this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
-            this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
-            this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // correctanswerDataGridViewTextBoxColumn
-            // 
-            this.correctanswerDataGridViewTextBoxColumn.DataPropertyName = "correct_answer";
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.correctanswerDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
-            this.correctanswerDataGridViewTextBoxColumn.FillWeight = 118.6548F;
-            this.correctanswerDataGridViewTextBoxColumn.HeaderText = "Correct Answer";
-            this.correctanswerDataGridViewTextBoxColumn.Name = "correctanswerDataGridViewTextBoxColumn";
-            this.correctanswerDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // quizQuestionBindingSource
-            // 
-            this.quizQuestionBindingSource.DataSource = typeof(projecte_eywa.QuizQuestion);
             // 
             // FormQuestions
             // 
@@ -648,9 +646,9 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quizQuestionBindingSource)).EndInit();
             this.groupBoxQuestionDescription.ResumeLayout(false);
             this.groupBoxQuestionDescription.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quizQuestionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

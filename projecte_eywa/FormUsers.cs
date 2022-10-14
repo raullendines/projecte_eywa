@@ -32,14 +32,18 @@ namespace projecte_eywa
 
         bool DesktopForm = true;
         bool AndroidForm = false;
-        bool changingForms = false;
+        
 
 
-
+        public FormUsers()
+        {
+            InitializeComponent();
+            comboBoxType.SelectedIndex = 0;
+        }
         public FormUsers(List<UserDesktop> DesktopList, UserDesktop actualUser)
         {
-            this.DesktopList = DesktopList;
-            this.actualUser = actualUser;
+            //this.DesktopList = DesktopList;
+            //this.actualUser = actualUser;
             InitializeComponent();
             comboBoxType.SelectedIndex = 0;
             
@@ -48,14 +52,15 @@ namespace projecte_eywa
         private void FormUsers_Load(object sender, EventArgs e)
         {
             loadData();
-            labelActualUserData.Text = actualUser.username.ToString() + " " + actualUser.type.ToString();
+            //labelActualUserData.Text = actualUser.username.ToString() + " " + actualUser.type.ToString();
             menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
         }
 
         private void loadData()
         {
-            //JArray LoadDesktopUsers = JArray.Parse(File.ReadAllText(USERS_DESKTOP_PATH, Encoding.Default));
-            //DesktopList = LoadDesktopUsers.ToObject<List<UserDesktop>>();
+            
+            JArray LoadDesktopUsers = JArray.Parse(File.ReadAllText(USERS_DESKTOP_PATH, Encoding.Default));
+            DesktopList = LoadDesktopUsers.ToObject<List<UserDesktop>>();
             JArray LoadAndroidUsers = JArray.Parse(File.ReadAllText(USERS_ANDROID_PATH, Encoding.Default));
             AndroidList = LoadAndroidUsers.ToObject<List<UserAndroid>>();
 
@@ -468,7 +473,7 @@ namespace projecte_eywa
 
         private void FormUsers_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (!changingForms)
+            if (!Program.changingForms)
             {
                 Application.Exit();
             }
@@ -556,7 +561,7 @@ namespace projecte_eywa
             if (dialogResult == DialogResult.Yes)
             {
                 FormLogin formLogin = new FormLogin();
-                changingForms = true;
+                Program.changingForms = true;
                 this.Close();
                 formLogin.Show();
             }
@@ -567,7 +572,7 @@ namespace projecte_eywa
         {
             FormQuestions formQuestions = new FormQuestions();
             formQuestions.Show();
-            changingForms = true;
+            Program.changingForms = true;
             this.Close();
         }
 
@@ -575,7 +580,7 @@ namespace projecte_eywa
         {
             FormCharacters formCharacters = new FormCharacters();
             formCharacters.Show();
-            changingForms = true;
+            Program.changingForms = true;
             this.Close();
         }
 

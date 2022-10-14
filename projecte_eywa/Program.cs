@@ -12,7 +12,7 @@ namespace projecte_eywa
 {
     public static class Program
     {
-        public static bool running = true;
+        public static bool changingForms = false;
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
@@ -20,21 +20,12 @@ namespace projecte_eywa
         
         static void Main()
         {
-           
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            
-            var formLogin = new FormCharacters();
+            var formLogin = new FormLogin();
             formLogin.Show();
             Application.Run();
-            if (!running)
-            {
-                Application.Exit();
-            }
-            
-            
-
         }
     }
 }
