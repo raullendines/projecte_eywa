@@ -33,22 +33,28 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCharacters));
+            this.dataGridViewCharacters = new System.Windows.Forms.DataGridView();
+            this.nameCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correctNumCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.urlImageCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.difficultyCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.filmCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.characterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.questionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxCharacter = new System.Windows.Forms.GroupBox();
-            this.textBoxDescriptionCharacterCat = new System.Windows.Forms.TextBox();
-            this.comboBoxDifficulty = new System.Windows.Forms.ComboBox();
-            this.textBoxDescriptionCharacterEng = new System.Windows.Forms.TextBox();
             this.numericUpDownCorrectNum = new System.Windows.Forms.NumericUpDown();
             this.comboBoxCategoryCharacter = new System.Windows.Forms.ComboBox();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
-            this.textBoxDescriptionCharacterEsp = new System.Windows.Forms.TextBox();
+            this.textBoxDecriptionCharacter = new System.Windows.Forms.TextBox();
             this.labelDescriptionCharacter = new System.Windows.Forms.Label();
             this.textBoxImgUrlCharacter = new System.Windows.Forms.TextBox();
             this.labelImgUrl = new System.Windows.Forms.Label();
+            this.textBoxDifficultyCharacter = new System.Windows.Forms.TextBox();
             this.labelNumCorrecto = new System.Windows.Forms.Label();
             this.labelDifficultyCharacter = new System.Windows.Forms.Label();
             this.labelCategoryCharacter = new System.Windows.Forms.Label();
@@ -64,432 +70,21 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.characterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.filmCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.difficultyCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.urlImageCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correctNumCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewCharacters = new System.Windows.Forms.DataGridView();
-            this.comboBoxFilter = new System.Windows.Forms.ComboBox();
-            this.buttonApplyFilters = new System.Windows.Forms.Button();
-            this.buttonClearFilters = new System.Windows.Forms.Button();
             this.formCharactersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBoxCharacter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCorrectNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.questionsToolStripMenuItem,
-            this.usersToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1712, 36);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // questionsToolStripMenuItem
-            // 
-            this.questionsToolStripMenuItem.Name = "questionsToolStripMenuItem";
-            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(108, 32);
-            this.questionsToolStripMenuItem.Text = "Questions";
-            // 
-            // usersToolStripMenuItem
-            // 
-            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(71, 32);
-            this.usersToolStripMenuItem.Text = "Users";
-            // 
-            // groupBoxCharacter
-            // 
-            this.groupBoxCharacter.Controls.Add(this.textBoxDescriptionCharacterCat);
-            this.groupBoxCharacter.Controls.Add(this.comboBoxDifficulty);
-            this.groupBoxCharacter.Controls.Add(this.textBoxDescriptionCharacterEng);
-            this.groupBoxCharacter.Controls.Add(this.numericUpDownCorrectNum);
-            this.groupBoxCharacter.Controls.Add(this.comboBoxCategoryCharacter);
-            this.groupBoxCharacter.Controls.Add(this.buttonCancel);
-            this.groupBoxCharacter.Controls.Add(this.buttonSave);
-            this.groupBoxCharacter.Controls.Add(this.textBoxDescriptionCharacterEsp);
-            this.groupBoxCharacter.Controls.Add(this.labelDescriptionCharacter);
-            this.groupBoxCharacter.Controls.Add(this.textBoxImgUrlCharacter);
-            this.groupBoxCharacter.Controls.Add(this.labelImgUrl);
-            this.groupBoxCharacter.Controls.Add(this.labelNumCorrecto);
-            this.groupBoxCharacter.Controls.Add(this.labelDifficultyCharacter);
-            this.groupBoxCharacter.Controls.Add(this.labelCategoryCharacter);
-            this.groupBoxCharacter.Controls.Add(this.labelFilmCharacter);
-            this.groupBoxCharacter.Controls.Add(this.textBoxFilmCharacter);
-            this.groupBoxCharacter.Controls.Add(this.label1);
-            this.groupBoxCharacter.Controls.Add(this.textBoxNameCharacter);
-            this.groupBoxCharacter.Controls.Add(this.labelNameCharacter);
-            this.groupBoxCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCharacter.Location = new System.Drawing.Point(1146, 148);
-            this.groupBoxCharacter.Name = "groupBoxCharacter";
-            this.groupBoxCharacter.Size = new System.Drawing.Size(549, 754);
-            this.groupBoxCharacter.TabIndex = 3;
-            this.groupBoxCharacter.TabStop = false;
-            this.groupBoxCharacter.Text = "Character";
-            // 
-            // textBoxDescriptionCharacterCat
-            // 
-            this.textBoxDescriptionCharacterCat.Enabled = false;
-            this.textBoxDescriptionCharacterCat.Location = new System.Drawing.Point(171, 394);
-            this.textBoxDescriptionCharacterCat.Multiline = true;
-            this.textBoxDescriptionCharacterCat.Name = "textBoxDescriptionCharacterCat";
-            this.textBoxDescriptionCharacterCat.Size = new System.Drawing.Size(363, 253);
-            this.textBoxDescriptionCharacterCat.TabIndex = 22;
-            this.textBoxDescriptionCharacterCat.Visible = false;
-            // 
-            // comboBoxDifficulty
-            // 
-            this.comboBoxDifficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxDifficulty.Enabled = false;
-            this.comboBoxDifficulty.FormattingEnabled = true;
-            this.comboBoxDifficulty.Items.AddRange(new object[] {
-            "E",
-            "M",
-            "H",
-            "I"});
-            this.comboBoxDifficulty.Location = new System.Drawing.Point(171, 232);
-            this.comboBoxDifficulty.Name = "comboBoxDifficulty";
-            this.comboBoxDifficulty.Size = new System.Drawing.Size(361, 33);
-            this.comboBoxDifficulty.TabIndex = 20;
-            // 
-            // textBoxDescriptionCharacterEng
-            // 
-            this.textBoxDescriptionCharacterEng.Enabled = false;
-            this.textBoxDescriptionCharacterEng.Location = new System.Drawing.Point(171, 394);
-            this.textBoxDescriptionCharacterEng.Multiline = true;
-            this.textBoxDescriptionCharacterEng.Name = "textBoxDescriptionCharacterEng";
-            this.textBoxDescriptionCharacterEng.Size = new System.Drawing.Size(361, 244);
-            this.textBoxDescriptionCharacterEng.TabIndex = 18;
-            this.textBoxDescriptionCharacterEng.Visible = false;
-            // 
-            // numericUpDownCorrectNum
-            // 
-            this.numericUpDownCorrectNum.Enabled = false;
-            this.numericUpDownCorrectNum.Location = new System.Drawing.Point(171, 286);
-            this.numericUpDownCorrectNum.Name = "numericUpDownCorrectNum";
-            this.numericUpDownCorrectNum.Size = new System.Drawing.Size(363, 30);
-            this.numericUpDownCorrectNum.TabIndex = 10;
-            // 
-            // comboBoxCategoryCharacter
-            // 
-            this.comboBoxCategoryCharacter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxCategoryCharacter.Enabled = false;
-            this.comboBoxCategoryCharacter.FormattingEnabled = true;
-            this.comboBoxCategoryCharacter.Items.AddRange(new object[] {
-            "drama",
-            "science fiction",
-            "action",
-            "comedy",
-            "animation",
-            "horror"});
-            this.comboBoxCategoryCharacter.Location = new System.Drawing.Point(169, 178);
-            this.comboBoxCategoryCharacter.Name = "comboBoxCategoryCharacter";
-            this.comboBoxCategoryCharacter.Size = new System.Drawing.Size(361, 33);
-            this.comboBoxCategoryCharacter.TabIndex = 17;
-            // 
-            // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.Color.White;
-            this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonCancel.Location = new System.Drawing.Point(237, 671);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(146, 55);
-            this.buttonCancel.TabIndex = 16;
-            this.buttonCancel.Text = "Cancel";
-            this.buttonCancel.UseVisualStyleBackColor = false;
-            this.buttonCancel.Visible = false;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
-            // 
-            // buttonSave
-            // 
-            this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonSave.Location = new System.Drawing.Point(388, 671);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(146, 55);
-            this.buttonSave.TabIndex = 15;
-            this.buttonSave.Text = "Save";
-            this.buttonSave.UseVisualStyleBackColor = false;
-            this.buttonSave.Visible = false;
-            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
-            // 
-            // textBoxDescriptionCharacterEsp
-            // 
-            this.textBoxDescriptionCharacterEsp.Enabled = false;
-            this.textBoxDescriptionCharacterEsp.Location = new System.Drawing.Point(171, 394);
-            this.textBoxDescriptionCharacterEsp.Multiline = true;
-            this.textBoxDescriptionCharacterEsp.Name = "textBoxDescriptionCharacterEsp";
-            this.textBoxDescriptionCharacterEsp.Size = new System.Drawing.Size(361, 242);
-            this.textBoxDescriptionCharacterEsp.TabIndex = 13;
-            // 
-            // labelDescriptionCharacter
-            // 
-            this.labelDescriptionCharacter.AutoSize = true;
-            this.labelDescriptionCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescriptionCharacter.Location = new System.Drawing.Point(17, 396);
-            this.labelDescriptionCharacter.Name = "labelDescriptionCharacter";
-            this.labelDescriptionCharacter.Size = new System.Drawing.Size(109, 25);
-            this.labelDescriptionCharacter.TabIndex = 14;
-            this.labelDescriptionCharacter.Text = "Description";
-            // 
-            // textBoxImgUrlCharacter
-            // 
-            this.textBoxImgUrlCharacter.Enabled = false;
-            this.textBoxImgUrlCharacter.Location = new System.Drawing.Point(169, 340);
-            this.textBoxImgUrlCharacter.Name = "textBoxImgUrlCharacter";
-            this.textBoxImgUrlCharacter.Size = new System.Drawing.Size(363, 30);
-            this.textBoxImgUrlCharacter.TabIndex = 11;
-            // 
-            // labelImgUrl
-            // 
-            this.labelImgUrl.AutoSize = true;
-            this.labelImgUrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImgUrl.Location = new System.Drawing.Point(17, 340);
-            this.labelImgUrl.Name = "labelImgUrl";
-            this.labelImgUrl.Size = new System.Drawing.Size(92, 25);
-            this.labelImgUrl.TabIndex = 12;
-            this.labelImgUrl.Text = "Image url";
-            // 
-            // labelNumCorrecto
-            // 
-            this.labelNumCorrecto.AutoSize = true;
-            this.labelNumCorrecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumCorrecto.Location = new System.Drawing.Point(17, 288);
-            this.labelNumCorrecto.Name = "labelNumCorrecto";
-            this.labelNumCorrecto.Size = new System.Drawing.Size(147, 25);
-            this.labelNumCorrecto.TabIndex = 10;
-            this.labelNumCorrecto.Text = "Correct number";
-            // 
-            // labelDifficultyCharacter
-            // 
-            this.labelDifficultyCharacter.AutoSize = true;
-            this.labelDifficultyCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDifficultyCharacter.Location = new System.Drawing.Point(17, 234);
-            this.labelDifficultyCharacter.Name = "labelDifficultyCharacter";
-            this.labelDifficultyCharacter.Size = new System.Drawing.Size(84, 25);
-            this.labelDifficultyCharacter.TabIndex = 8;
-            this.labelDifficultyCharacter.Text = "Difficulty";
-            // 
-            // labelCategoryCharacter
-            // 
-            this.labelCategoryCharacter.AutoSize = true;
-            this.labelCategoryCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCategoryCharacter.Location = new System.Drawing.Point(19, 182);
-            this.labelCategoryCharacter.Name = "labelCategoryCharacter";
-            this.labelCategoryCharacter.Size = new System.Drawing.Size(92, 25);
-            this.labelCategoryCharacter.TabIndex = 6;
-            this.labelCategoryCharacter.Text = "Category";
-            // 
-            // labelFilmCharacter
-            // 
-            this.labelFilmCharacter.AutoSize = true;
-            this.labelFilmCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFilmCharacter.Location = new System.Drawing.Point(19, 128);
-            this.labelFilmCharacter.Name = "labelFilmCharacter";
-            this.labelFilmCharacter.Size = new System.Drawing.Size(48, 25);
-            this.labelFilmCharacter.TabIndex = 4;
-            this.labelFilmCharacter.Text = "Film";
-            // 
-            // textBoxFilmCharacter
-            // 
-            this.textBoxFilmCharacter.Enabled = false;
-            this.textBoxFilmCharacter.Location = new System.Drawing.Point(169, 125);
-            this.textBoxFilmCharacter.Name = "textBoxFilmCharacter";
-            this.textBoxFilmCharacter.Size = new System.Drawing.Size(365, 30);
-            this.textBoxFilmCharacter.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 92);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 25);
-            this.label1.TabIndex = 2;
-            // 
-            // textBoxNameCharacter
-            // 
-            this.textBoxNameCharacter.Enabled = false;
-            this.textBoxNameCharacter.Location = new System.Drawing.Point(169, 71);
-            this.textBoxNameCharacter.Name = "textBoxNameCharacter";
-            this.textBoxNameCharacter.Size = new System.Drawing.Size(365, 30);
-            this.textBoxNameCharacter.TabIndex = 1;
-            // 
-            // labelNameCharacter
-            // 
-            this.labelNameCharacter.AutoSize = true;
-            this.labelNameCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameCharacter.Location = new System.Drawing.Point(17, 74);
-            this.labelNameCharacter.Name = "labelNameCharacter";
-            this.labelNameCharacter.Size = new System.Drawing.Size(64, 25);
-            this.labelNameCharacter.TabIndex = 0;
-            this.labelNameCharacter.Text = "Name";
-            // 
-            // buttonCatalan
-            // 
-            this.buttonCatalan.BackgroundImage = global::projecte_eywa.Properties.Resources.cataluña_bandera;
-            this.buttonCatalan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonCatalan.FlatAppearance.BorderSize = 0;
-            this.buttonCatalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCatalan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.buttonCatalan.Location = new System.Drawing.Point(1501, 59);
-            this.buttonCatalan.Name = "buttonCatalan";
-            this.buttonCatalan.Size = new System.Drawing.Size(55, 55);
-            this.buttonCatalan.TabIndex = 4;
-            this.buttonCatalan.UseVisualStyleBackColor = true;
-            this.buttonCatalan.Click += new System.EventHandler(this.buttonCatalan_Click);
-            // 
-            // buttonEnglish
-            // 
-            this.buttonEnglish.BackgroundImage = global::projecte_eywa.Properties.Resources.bandera_england;
-            this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonEnglish.FlatAppearance.BorderSize = 0;
-            this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEnglish.Location = new System.Drawing.Point(1637, 59);
-            this.buttonEnglish.Name = "buttonEnglish";
-            this.buttonEnglish.Size = new System.Drawing.Size(55, 55);
-            this.buttonEnglish.TabIndex = 5;
-            this.buttonEnglish.UseVisualStyleBackColor = true;
-            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
-            // 
-            // buttonSpanish
-            // 
-            this.buttonSpanish.BackgroundImage = global::projecte_eywa.Properties.Resources.españa_boton;
-            this.buttonSpanish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonSpanish.FlatAppearance.BorderSize = 0;
-            this.buttonSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSpanish.Location = new System.Drawing.Point(1571, 59);
-            this.buttonSpanish.Name = "buttonSpanish";
-            this.buttonSpanish.Size = new System.Drawing.Size(55, 55);
-            this.buttonSpanish.TabIndex = 6;
-            this.buttonSpanish.UseVisualStyleBackColor = true;
-            this.buttonSpanish.Click += new System.EventHandler(this.buttonSpanish_Click);
-            // 
-            // buttonModify
-            // 
-            this.buttonModify.BackColor = System.Drawing.Color.White;
-            this.buttonModify.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonModify.Location = new System.Drawing.Point(189, 923);
-            this.buttonModify.Name = "buttonModify";
-            this.buttonModify.Size = new System.Drawing.Size(146, 55);
-            this.buttonModify.TabIndex = 9;
-            this.buttonModify.Text = "Modify";
-            this.buttonModify.UseVisualStyleBackColor = false;
-            this.buttonModify.Click += new System.EventHandler(this.buttonModify_Click);
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
-            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDelete.Location = new System.Drawing.Point(340, 923);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(146, 55);
-            this.buttonDelete.TabIndex = 8;
-            this.buttonDelete.Text = "Delete";
-            this.buttonDelete.UseVisualStyleBackColor = false;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.BackColor = System.Drawing.Color.White;
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonAdd.Location = new System.Drawing.Point(38, 923);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(146, 55);
-            this.buttonAdd.TabIndex = 7;
-            this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = false;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
-            // filmCharacter
-            // 
-            this.filmCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.filmCharacter.DataPropertyName = "film";
-            this.filmCharacter.HeaderText = "Film";
-            this.filmCharacter.MinimumWidth = 8;
-            this.filmCharacter.Name = "filmCharacter";
-            // 
-            // difficultyCharacter
-            // 
-            this.difficultyCharacter.DataPropertyName = "difficultyCharacter";
-            this.difficultyCharacter.HeaderText = "Difficulty";
-            this.difficultyCharacter.MinimumWidth = 8;
-            this.difficultyCharacter.Name = "difficultyCharacter";
-            this.difficultyCharacter.Visible = false;
-            this.difficultyCharacter.Width = 150;
-            // 
-            // categoryCharacter
-            // 
-            this.categoryCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.categoryCharacter.DataPropertyName = "category";
-            this.categoryCharacter.HeaderText = "Category";
-            this.categoryCharacter.MinimumWidth = 8;
-            this.categoryCharacter.Name = "categoryCharacter";
-            // 
-            // descCharacter
-            // 
-            this.descCharacter.DataPropertyName = "descCharacter";
-            this.descCharacter.HeaderText = "Description";
-            this.descCharacter.MinimumWidth = 8;
-            this.descCharacter.Name = "descCharacter";
-            this.descCharacter.Visible = false;
-            this.descCharacter.Width = 150;
-            // 
-            // urlImageCharacter
-            // 
-            this.urlImageCharacter.DataPropertyName = "urlImageCharacter";
-            this.urlImageCharacter.HeaderText = "Url image";
-            this.urlImageCharacter.MinimumWidth = 8;
-            this.urlImageCharacter.Name = "urlImageCharacter";
-            this.urlImageCharacter.Visible = false;
-            this.urlImageCharacter.Width = 150;
-            // 
-            // correctNumCharacter
-            // 
-            this.correctNumCharacter.DataPropertyName = "corr";
-            this.correctNumCharacter.HeaderText = "Correct number";
-            this.correctNumCharacter.MinimumWidth = 8;
-            this.correctNumCharacter.Name = "correctNumCharacter";
-            this.correctNumCharacter.Visible = false;
-            this.correctNumCharacter.Width = 150;
-            // 
-            // nameCharacter
-            // 
-            this.nameCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameCharacter.DataPropertyName = "name";
-            this.nameCharacter.HeaderText = "Name";
-            this.nameCharacter.MinimumWidth = 8;
-            this.nameCharacter.Name = "nameCharacter";
             // 
             // dataGridViewCharacters
             // 
@@ -519,10 +114,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewCharacters.DefaultCellStyle = dataGridViewCellStyle2;
-
-            //this.dataGridViewCharacters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridViewCharacters.Location = new System.Drawing.Point(38, 148);
-
+            this.dataGridViewCharacters.Location = new System.Drawing.Point(8, 58);
+            this.dataGridViewCharacters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewCharacters.Name = "dataGridViewCharacters";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
@@ -534,7 +127,6 @@
             this.dataGridViewCharacters.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewCharacters.RowHeadersWidth = 62;
             this.dataGridViewCharacters.RowTemplate.Height = 28;
-
             this.dataGridViewCharacters.Size = new System.Drawing.Size(446, 298);
             this.dataGridViewCharacters.TabIndex = 1;
             this.dataGridViewCharacters.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCharacters_CellClick);
@@ -884,56 +476,6 @@
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-
-            this.dataGridViewCharacters.Size = new System.Drawing.Size(1102, 754);
-            this.dataGridViewCharacters.TabIndex = 1;
-            this.dataGridViewCharacters.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCharacters_CellClick);
-            // 
-            // comboBoxFilter
-            // 
-            this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxFilter.FormattingEnabled = true;
-            this.comboBoxFilter.Items.AddRange(new object[] {
-            "Drama",
-            "Ciència ficció",
-            "Acció",
-            "Comedia",
-            "Animació",
-            "Terror"});
-            this.comboBoxFilter.Location = new System.Drawing.Point(38, 76);
-            this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(771, 28);
-            this.comboBoxFilter.TabIndex = 18;
-            // 
-            // buttonApplyFilters
-            // 
-            this.buttonApplyFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
-            this.buttonApplyFilters.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonApplyFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonApplyFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonApplyFilters.ForeColor = System.Drawing.Color.Black;
-            this.buttonApplyFilters.Location = new System.Drawing.Point(840, 59);
-            this.buttonApplyFilters.Name = "buttonApplyFilters";
-            this.buttonApplyFilters.Size = new System.Drawing.Size(146, 55);
-            this.buttonApplyFilters.TabIndex = 20;
-            this.buttonApplyFilters.Text = "Apply filter";
-            this.buttonApplyFilters.UseVisualStyleBackColor = false;
-            this.buttonApplyFilters.Click += new System.EventHandler(this.buttonApplyFilters_Click);
-            // 
-            // buttonClearFilters
-            // 
-            this.buttonClearFilters.BackColor = System.Drawing.Color.White;
-            this.buttonClearFilters.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClearFilters.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonClearFilters.Location = new System.Drawing.Point(991, 59);
-            this.buttonClearFilters.Name = "buttonClearFilters";
-            this.buttonClearFilters.Size = new System.Drawing.Size(146, 55);
-            this.buttonClearFilters.TabIndex = 19;
-            this.buttonClearFilters.Text = "Clear filter";
-            this.buttonClearFilters.UseVisualStyleBackColor = false;
-            this.buttonClearFilters.Click += new System.EventHandler(this.buttonClearFilters_Click);
-
             // 
             // formCharactersBindingSource2
             // 
@@ -955,13 +497,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1712, 1025);
-            this.Controls.Add(this.buttonApplyFilters);
-            this.Controls.Add(this.buttonClearFilters);
-            this.Controls.Add(this.comboBoxFilter);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonModify);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonAdd);
@@ -975,11 +511,9 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormCharacters";
             this.Text = "Form1";
-
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormCharacters_FormClosed);
             this.Load += new System.EventHandler(this.FormCharacters_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).EndInit();
-
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -987,7 +521,6 @@
             this.groupBoxCharacter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCorrectNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource1)).EndInit();
@@ -998,19 +531,22 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.DataGridView dataGridViewCharacters;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem questionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBoxCharacter;
         private System.Windows.Forms.Label labelNumCorrecto;
         private System.Windows.Forms.Label labelDifficultyCharacter;
+        private System.Windows.Forms.TextBox textBoxDifficultyCharacter;
         private System.Windows.Forms.Label labelCategoryCharacter;
         private System.Windows.Forms.Label labelFilmCharacter;
         private System.Windows.Forms.TextBox textBoxFilmCharacter;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxNameCharacter;
         private System.Windows.Forms.Label labelNameCharacter;
-        private System.Windows.Forms.TextBox textBoxDescriptionCharacterEsp;
+        private System.Windows.Forms.TextBox textBoxDecriptionCharacter;
         private System.Windows.Forms.Label labelDescriptionCharacter;
         private System.Windows.Forms.TextBox textBoxImgUrlCharacter;
         private System.Windows.Forms.Label labelImgUrl;
@@ -1028,22 +564,15 @@
         private System.Windows.Forms.BindingSource formCharactersBindingSource1;
         private System.Windows.Forms.BindingSource formCharactersBindingSource2;
         private System.Windows.Forms.BindingSource formCharactersBindingSource3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correctNumCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn urlImageCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn difficultyCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn filmCharacter;
         private System.Windows.Forms.ComboBox comboBoxCategoryCharacter;
         private System.Windows.Forms.NumericUpDown numericUpDownCorrectNum;
-        private System.Windows.Forms.TextBox textBoxDescriptionCharacterEng;
-        private System.Windows.Forms.ComboBox comboBoxDifficulty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn filmCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn difficultyCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn urlImageCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn correctNumCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameCharacter;
-        private System.Windows.Forms.DataGridView dataGridViewCharacters;
-        private System.Windows.Forms.TextBox textBoxDescriptionCharacterCat;
-        private System.Windows.Forms.ComboBox comboBoxFilter;
-        private System.Windows.Forms.Button buttonApplyFilters;
-        private System.Windows.Forms.Button buttonClearFilters;
     }
 }
 
