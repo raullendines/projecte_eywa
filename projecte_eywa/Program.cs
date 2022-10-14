@@ -25,7 +25,7 @@ namespace projecte_eywa
             Application.SetCompatibleTextRenderingDefault(false);
 
             
-            var formLogin = new FormLogin();
+            var formLogin = new FormCharacters();
             formLogin.Show();
             Application.Run();
             if (!running)

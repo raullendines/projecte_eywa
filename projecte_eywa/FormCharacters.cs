@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,55 +15,155 @@ namespace projecte_eywa
 {
     public partial class FormCharacters : Form
     {
+        const string PATH = @"..\..\json\characters.json";
+
         BindingList<QuizCharacter> characters = new BindingList<QuizCharacter>();
         QuizCharacter quizCharacter;
         bool add = false;
         bool modify = false;
+        bool isFiltered = false;
         public FormCharacters()
         {
             InitializeComponent();
+
+            getData();
+
         }
 
+        private void saveJSON()
+        {
+
+            JArray QuizCharacters = (JArray)JToken.FromObject(quizCharacter);
+            File.WriteAllText(PATH, QuizCharacters.ToString());
+
+        }
+
+        private void getData()
+        {
+            dataGridViewCharacters.AutoGenerateColumns = false;
+
+            JArray LoadCharacters = JArray.Parse(File.ReadAllText(PATH, Encoding.Default));
+            characters = LoadCharacters.ToObject<BindingList<QuizCharacter>>();
+
+            dataGridViewCharacters.DataSource = null;
+            dataGridViewCharacters.DataSource = characters;
+        }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
 
             add = true;
 
+            visibleButtons();
+
+            controlBtnsDisabled();
+
+            languageClicked();
+
+
+            disableDataGrid();
+
+            enabledTextBoxes();
+
+            nullTextBoxes();
+
+        }
+
+        private void enabledDataGrid()
+        {
+            //Tabla activada
+            dataGridViewCharacters.Enabled = true;
+        }
+        private void languageButtons()
+        {
+            //Languages buttons
+            buttonCatalan.Enabled = true;
+            buttonSpanish.Enabled = true;
+            buttonEnglish.Enabled = true;
+        }
+
+        private void visibleButtons()
+        {
             //Creation buttons
             buttonCancel.Visible = true;
             buttonSave.Visible = true;
-                
-            //Questions buttons
-            buttonAdd.Enabled = false;
-            buttonModify.Enabled = false;  
-            buttonDelete.Enabled = false;
-                
+        }
+        private void invisibleButtons()
+        {
+            //Creation buttons
+            buttonCancel.Visible = false;
+            buttonSave.Visible = false;
+        }
+        private void disableDataGrid()
+        {
+            //Tabla desactivada
+            dataGridViewCharacters.Enabled = false;
+        }
+
+        private void enabledTextBoxes()
+        {
+            //Modificacion habilitada
+            comboBoxCategoryCharacter.Enabled = true;
+            numericUpDownCorrectNum.Enabled = true;
+            textBoxDescriptionCharacterEsp.Enabled = true;
+            textBoxDescriptionCharacterCat.Enabled = true;
+            textBoxDescriptionCharacterEng.Enabled = true;
+            comboBoxDifficulty.Enabled = true;
+            textBoxFilmCharacter.Enabled = true;
+            textBoxImgUrlCharacter.Enabled = true;
+            textBoxNameCharacter.Enabled = true;
+        }
+
+        private void disabledTextBoxes()
+        {
+            //Modificacion habilitada
+            comboBoxCategoryCharacter.Enabled = false;
+            numericUpDownCorrectNum.Enabled = false;
+            textBoxDescriptionCharacterEsp.Enabled = false;
+            textBoxDescriptionCharacterCat.Enabled = false;
+            textBoxDescriptionCharacterEng.Enabled = false;
+            comboBoxDifficulty.Enabled = false;
+            textBoxFilmCharacter.Enabled = false;
+            textBoxImgUrlCharacter.Enabled = false;
+            textBoxNameCharacter.Enabled = false;
+        }
+
+        private void nullTextBoxes()
+        {
+            //Clear data textbox
+            comboBoxCategoryCharacter.Text = null;
+            numericUpDownCorrectNum.Text = null;
+            textBoxDescriptionCharacterEsp.Text = null;
+            textBoxDescriptionCharacterCat.Text = null;
+            textBoxDescriptionCharacterEng.Text = null;
+            comboBoxDifficulty.Text = null;
+            textBoxFilmCharacter.Text = null;
+            textBoxImgUrlCharacter.Text = null;
+            textBoxNameCharacter.Text = null;
+        }
+
+        private void languageClicked()
+        {
             //Languages buttons
             buttonCatalan.Enabled = false;
             buttonSpanish.Enabled = false;
             buttonEnglish.Enabled = false;
+        }
 
-            //Tabla
-            dataGridViewCharacters.Enabled = false;
+        private void controlBtnsEnabled()
+        {
+            //Questions buttons
+            buttonAdd.Enabled = true;
+            buttonModify.Enabled = true;
+            buttonDelete.Enabled = true;
+        }
 
-            //Modificacion habilitada
-            comboBoxCategoryCharacter.Enabled = true;
-            numericUpDownCorrectNum.Enabled = true;
-            textBoxDecriptionCharacter.Enabled = true;
-            textBoxDifficultyCharacter.Enabled = true;
-            textBoxFilmCharacter.Enabled = true;
-            textBoxImgUrlCharacter.Enabled = true;
-            textBoxNameCharacter.Enabled = true;
-
-            //Clear data textbox
-            comboBoxCategoryCharacter.Text = null;
-            numericUpDownCorrectNum.Text = null;
-            textBoxDecriptionCharacter.Text = null;
-            textBoxDifficultyCharacter.Text = null;
-            textBoxFilmCharacter.Text = null;
-            textBoxImgUrlCharacter.Text = null;
-            textBoxNameCharacter.Text = null;
+        private void controlBtnsDisabled()
+        {
+            //Questions buttons
+            buttonAdd.Enabled = false;
+            buttonModify.Enabled = false;
+            buttonDelete.Enabled = false;
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -69,71 +171,32 @@ namespace projecte_eywa
             modify = false;
             add = false;
 
-            //Creation buttons
-            buttonCancel.Visible = false;
-            buttonSave.Visible = false;
+            invisibleButtons();
 
-            //Questions buttons
-            buttonAdd.Enabled = true;
-            buttonModify.Enabled = true;
-            buttonDelete.Enabled = true;
+            controlBtnsEnabled();
 
-            //Languages buttons
-            buttonCatalan.Enabled = true;
-            buttonSpanish.Enabled = true;
-            buttonEnglish.Enabled = true;
+            languageButtons();
 
-            //Tabla
-            dataGridViewCharacters.Enabled = true;
+            enabledDataGrid();
 
-            //Datos nulos
-            textBoxNameCharacter.Text = null;
-            textBoxFilmCharacter.Text = null;
-            comboBoxCategoryCharacter.Text = null;
-            textBoxDifficultyCharacter.Text = null;
-            numericUpDownCorrectNum.Value = 0;
-            textBoxDecriptionCharacter.Text = null;
-            textBoxImgUrlCharacter.Text = null;
+            // nullTextBoxes();
 
-            //Modificacion habilitada
-            comboBoxCategoryCharacter.Enabled = false;
-            numericUpDownCorrectNum.Enabled = false;
-            textBoxDecriptionCharacter.Enabled = false;
-            textBoxDifficultyCharacter.Enabled = false;
-            textBoxFilmCharacter.Enabled = false;
-            textBoxImgUrlCharacter.Enabled = false;
-            textBoxNameCharacter.Enabled = false;
+            disabledTextBoxes();
         }
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
             modify = true;
 
-            //Creation buttons
-            buttonCancel.Visible = true;
-            buttonSave.Visible = true;
+            visibleButtons();
 
-            //Questions buttons
-            buttonAdd.Enabled = false;
-            buttonModify.Enabled = false;
-            buttonDelete.Enabled = false;
+            controlBtnsDisabled();
 
-            //Tabla
-            dataGridViewCharacters.Enabled = false;
+            disableDataGrid();
 
-            //Languages buttons
-            buttonCatalan.Enabled = false;
-            buttonSpanish.Enabled = false;
-            buttonEnglish.Enabled = false;
+            languageClicked();
 
-            //Modificacion habilitada
-            comboBoxCategoryCharacter.Enabled = true;
-            numericUpDownCorrectNum.Enabled = true;
-            textBoxDecriptionCharacter.Enabled = true;
-            textBoxDifficultyCharacter.Enabled = true;
-            textBoxFilmCharacter.Enabled = true;
-            textBoxImgUrlCharacter.Enabled = true;
-            textBoxNameCharacter.Enabled = true;
+            enabledTextBoxes();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -154,9 +217,9 @@ namespace projecte_eywa
             name = textBoxNameCharacter.Text;
             film = textBoxFilmCharacter.Text;
             category = comboBoxCategoryCharacter.Text;
-            difficulty = textBoxDifficultyCharacter.Text;
+            difficulty = comboBoxDifficulty.Text;
             correctNum = (int)numericUpDownCorrectNum.Value;
-            description = textBoxDecriptionCharacter.Text;
+            description = textBoxDescriptionCharacterEsp.Text;
             imgUrl = textBoxImgUrlCharacter.Text;
 
             if (add == true)
@@ -167,13 +230,13 @@ namespace projecte_eywa
                     {
                         characters.Add(new QuizCharacter
                         {
-                            nameCharacter = name,
-                            filmCharacter = film,
-                            categoryCharacter = category,
-                            difficultyCharacter = difficulty,
-                            correctNumCharacter = correctNum,
-                            descCharacter = description,
-                            urlImageCharacter = imgUrl
+                            name = name,
+                            film = film,
+                            category = category,
+                            difficulty = difficulty,
+                            num_correct = correctNum,
+                            description_esp = description,
+                            image = imgUrl
                         }
                    );
                         dataGridViewCharacters.DataSource = characters;
@@ -193,65 +256,30 @@ namespace projecte_eywa
             }
             else if (modify == true)
             {
-                quizCharacter.nameCharacter = textBoxNameCharacter.Text;
-                quizCharacter.descCharacter = textBoxDecriptionCharacter.Text;
-                quizCharacter.difficultyCharacter = textBoxDifficultyCharacter.Text;
-                quizCharacter.filmCharacter = textBoxFilmCharacter.Text;
-                quizCharacter.categoryCharacter = comboBoxCategoryCharacter.Text;
-                quizCharacter.urlImageCharacter = textBoxImgUrlCharacter.Text;
-                quizCharacter.correctNumCharacter = numericUpDownCorrectNum.Value;
+                quizCharacter.name = textBoxNameCharacter.Text;
+                quizCharacter.description_esp = textBoxDescriptionCharacterEsp.Text;
+                quizCharacter.difficulty = comboBoxDifficulty.Text;
+                quizCharacter.film = textBoxFilmCharacter.Text;
+                quizCharacter.category = comboBoxCategoryCharacter.Text;
+                quizCharacter.image = textBoxImgUrlCharacter.Text;
+                quizCharacter.num_correct = numericUpDownCorrectNum.Value;
             }
 
-            //Datos nulos
-            textBoxNameCharacter.Text = null;
-            textBoxFilmCharacter.Text = null;
-            comboBoxCategoryCharacter.Text = null;
-            textBoxDifficultyCharacter.Text = null;
-            numericUpDownCorrectNum.Value = 0;
-            textBoxDecriptionCharacter.Text = null;
-            textBoxImgUrlCharacter.Text = null;
+            //nullTextBoxes();
 
-            //Creation buttons
-            buttonCancel.Visible = false;
-            buttonSave.Visible = false;
+            invisibleButtons();
 
-            //Questions buttons
-            buttonAdd.Enabled = true;
-            buttonModify.Enabled = true;
-            buttonDelete.Enabled = true;
+            controlBtnsEnabled();
 
-            //Languages buttons
-            buttonCatalan.Enabled = true;
-            buttonSpanish.Enabled = true;
-            buttonEnglish.Enabled = true;
+            languageButtons();
 
-            //Modificacion habilitada
-            comboBoxCategoryCharacter.Enabled = false;
-            numericUpDownCorrectNum.Enabled = false;
-            textBoxDecriptionCharacter.Enabled = false;
-            textBoxDifficultyCharacter.Enabled = false;
-            textBoxFilmCharacter.Enabled = false;
-            textBoxImgUrlCharacter.Enabled = false;
-            textBoxNameCharacter.Enabled = false;
+            disabledTextBoxes();
 
-            //Tabla
-            dataGridViewCharacters.Enabled = true;
+            enabledDataGrid();
 
             //Valores restablecidos
             add = false;
             modify = false;
-
-        }
-        private void FormCharacters_Load(object sender, EventArgs e)
-        {
-            dataGridViewCharacters.AutoGenerateColumns = false;
-
-            characters.Add(new QuizCharacter { nameCharacter = "Antonio Banderas", filmCharacter = "Prueba 1", categoryCharacter = "Comedy", difficultyCharacter="Extreme", correctNumCharacter = 5, descCharacter = "SUi", urlImageCharacter = "imagen 1" });
-            characters.Add(new QuizCharacter { nameCharacter = "Will Smith", filmCharacter = "Prueba 2", categoryCharacter = "Action", difficultyCharacter="Medium", correctNumCharacter = 4, descCharacter = "Sui", urlImageCharacter = "Imagen 2" });
-            characters.Add(new QuizCharacter { nameCharacter = "Paco Alcacer", filmCharacter = "Prueba 3", categoryCharacter = "Comedia", difficultyCharacter="Difficult", correctNumCharacter = 7, descCharacter = "Sui", urlImageCharacter = "Imagen 2" });
-            characters.Add(new QuizCharacter { nameCharacter = "Raul Lendines", filmCharacter = "Prueba 4" , categoryCharacter = "Comedia", difficultyCharacter="Easy", correctNumCharacter = 9, descCharacter = "sui", urlImageCharacter = "Imagen 2" });
-
-            dataGridViewCharacters.DataSource = characters;
         }
 
         private void dataGridViewCharacters_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -259,27 +287,107 @@ namespace projecte_eywa
             if (e.RowIndex >= 0)
             {
                 quizCharacter = (QuizCharacter)dataGridViewCharacters.CurrentRow.DataBoundItem;
-                
-                textBoxNameCharacter.Text = quizCharacter.nameCharacter;
-                textBoxDecriptionCharacter.Text = quizCharacter.descCharacter;
-                textBoxDifficultyCharacter.Text = quizCharacter.difficultyCharacter;
-                textBoxFilmCharacter.Text = quizCharacter.filmCharacter;
-                comboBoxCategoryCharacter.Text = quizCharacter.categoryCharacter;
-                textBoxImgUrlCharacter.Text = quizCharacter.urlImageCharacter;
-                numericUpDownCorrectNum.Value = quizCharacter.correctNumCharacter;
+
+                textBoxNameCharacter.Text = quizCharacter.name;
+                textBoxDescriptionCharacterEsp.Text = quizCharacter.description_esp;
+                textBoxDescriptionCharacterCat.Text = quizCharacter.description_cat;
+                textBoxDescriptionCharacterEng.Text = quizCharacter.description_eng;
+                comboBoxDifficulty.Text = quizCharacter.difficulty;
+                textBoxFilmCharacter.Text = quizCharacter.film;
+                comboBoxCategoryCharacter.Text = quizCharacter.category;
+                textBoxImgUrlCharacter.Text = quizCharacter.image;
+                numericUpDownCorrectNum.Value = quizCharacter.num_correct;
+
             }
         }
 
-        private void questionsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void buttonCatalan_Click(object sender, EventArgs e)
         {
-            var myNextForm = new FormQuestions();
-            myNextForm.Show();
-            this.Hide();
+            textBoxDescriptionCharacterEsp.Visible = false;
+            textBoxDescriptionCharacterEng.Visible = false;
+            textBoxDescriptionCharacterCat.Visible = true;
         }
 
-        private void FormCharacters_FormClosed(object sender, FormClosedEventArgs e)
+        private void buttonSpanish_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            textBoxDescriptionCharacterEsp.Visible = true;
+            textBoxDescriptionCharacterEng.Visible = false;
+            textBoxDescriptionCharacterCat.Visible = false;
         }
+
+        private void buttonEnglish_Click(object sender, EventArgs e)
+        {
+            textBoxDescriptionCharacterEsp.Visible = false;
+            textBoxDescriptionCharacterEng.Visible = true;
+            textBoxDescriptionCharacterCat.Visible = false;
+        }
+
+        private void buttonApplyFilters_Click(object sender, EventArgs e)
+        {
+            isFiltered = true;
+            string category = null;
+            for (int i = 0; i < characters.Count; ++i)
+            {
+
+                dataGridViewCharacters.CurrentCell = null;
+                dataGridViewCharacters.Rows[i].Visible = true;
+
+            }
+
+            if (comboBoxFilter != null && comboBoxFilter.SelectedItem != null)
+            {
+                int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
+                switch (index)
+                {
+                    case 0:
+                        category = "drama";
+                        break;
+                    case 1:
+                        category = "science fiction";
+                        break;
+                    case 2:
+                        category = "action";
+                        break;
+                    case 3:
+                        category = "comedy";
+                        break;
+                    case 4:
+                        category = "animation";
+                        break;
+                    case 5:
+                        category = "horror";
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
+
+
+                for (int i = 0; i < characters.Count; ++i)
+                {
+                    if (!characters[i].category.Equals(category))
+                    {
+                        dataGridViewCharacters.CurrentCell = null;
+                        dataGridViewCharacters.Rows[i].Visible = false;
+                    }
+                }
+
+            }
+        }
+
+        private void buttonClearFilters_Click(object sender, EventArgs e)
+        {
+            comboBoxFilter.SelectedIndex = -1;
+            isFiltered = false;
+            for (int i = 0; i < characters.Count; ++i)
+            {
+
+                dataGridViewCharacters.CurrentCell = null;
+                dataGridViewCharacters.Rows[i].Visible = true;
+
+            }
+        }
+
+
     }
 }
