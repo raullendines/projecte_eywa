@@ -90,6 +90,7 @@
             this.dataGridViewUsers.AllowUserToAddRows = false;
             this.dataGridViewUsers.AllowUserToDeleteRows = false;
             this.dataGridViewUsers.AutoGenerateColumns = false;
+            this.dataGridViewUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -107,10 +108,10 @@
             this.gender,
             this.age});
             this.dataGridViewUsers.DataSource = this.userAndroidBindingSource;
-            this.dataGridViewUsers.Location = new System.Drawing.Point(12, 176);
+            this.dataGridViewUsers.Location = new System.Drawing.Point(52, 148);
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.ReadOnly = true;
-            this.dataGridViewUsers.Size = new System.Drawing.Size(1080, 546);
+            this.dataGridViewUsers.Size = new System.Drawing.Size(973, 652);
             this.dataGridViewUsers.TabIndex = 1;
             this.dataGridViewUsers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsers_CellClick);
             // 
@@ -169,7 +170,7 @@
             this.panelActualUserData.Controls.Add(this.labelActualUserIcon);
             this.panelActualUserData.Location = new System.Drawing.Point(-5, 24);
             this.panelActualUserData.Name = "panelActualUserData";
-            this.panelActualUserData.Size = new System.Drawing.Size(196, 124);
+            this.panelActualUserData.Size = new System.Drawing.Size(193, 118);
             this.panelActualUserData.TabIndex = 2;
             // 
             // labelLogout
@@ -216,9 +217,9 @@
             this.groupBoxUsers.Controls.Add(this.labelType);
             this.groupBoxUsers.Controls.Add(this.labelPassword);
             this.groupBoxUsers.Controls.Add(this.labelUsername);
-            this.groupBoxUsers.Location = new System.Drawing.Point(1119, 176);
+            this.groupBoxUsers.Location = new System.Drawing.Point(1083, 148);
             this.groupBoxUsers.Name = "groupBoxUsers";
-            this.groupBoxUsers.Size = new System.Drawing.Size(735, 632);
+            this.groupBoxUsers.Size = new System.Drawing.Size(752, 652);
             this.groupBoxUsers.TabIndex = 3;
             this.groupBoxUsers.TabStop = false;
             // 
@@ -226,15 +227,15 @@
             // 
             this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxType.Enabled = false;
-            this.comboBoxType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxType.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             "user",
             "admin",
             "superadmin"});
-            this.comboBoxType.Location = new System.Drawing.Point(231, 140);
+            this.comboBoxType.Location = new System.Drawing.Point(237, 217);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(498, 33);
+            this.comboBoxType.Size = new System.Drawing.Size(498, 35);
             this.comboBoxType.TabIndex = 14;
             // 
             // buttonCancel
@@ -243,7 +244,7 @@
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonCancel.Location = new System.Drawing.Point(503, 497);
+            this.buttonCancel.Location = new System.Drawing.Point(490, 588);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(103, 49);
             this.buttonCancel.TabIndex = 13;
@@ -258,7 +259,7 @@
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSave.ForeColor = System.Drawing.Color.White;
-            this.buttonSave.Location = new System.Drawing.Point(626, 497);
+            this.buttonSave.Location = new System.Drawing.Point(628, 588);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(103, 49);
             this.buttonSave.TabIndex = 12;
@@ -269,59 +270,59 @@
             // 
             // textBoxAge
             // 
-            this.textBoxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAge.Location = new System.Drawing.Point(231, 261);
+            this.textBoxAge.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAge.Location = new System.Drawing.Point(237, 337);
             this.textBoxAge.Name = "textBoxAge";
             this.textBoxAge.ReadOnly = true;
-            this.textBoxAge.Size = new System.Drawing.Size(498, 30);
+            this.textBoxAge.Size = new System.Drawing.Size(498, 32);
             this.textBoxAge.TabIndex = 11;
             this.textBoxAge.Visible = false;
             // 
             // textBoxGender
             // 
-            this.textBoxGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGender.Location = new System.Drawing.Point(231, 197);
+            this.textBoxGender.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGender.Location = new System.Drawing.Point(237, 277);
             this.textBoxGender.Name = "textBoxGender";
             this.textBoxGender.ReadOnly = true;
-            this.textBoxGender.Size = new System.Drawing.Size(498, 30);
+            this.textBoxGender.Size = new System.Drawing.Size(498, 32);
             this.textBoxGender.TabIndex = 10;
             this.textBoxGender.Visible = false;
             // 
             // textBoxImage
             // 
-            this.textBoxImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxImage.Location = new System.Drawing.Point(231, 140);
+            this.textBoxImage.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxImage.Location = new System.Drawing.Point(237, 157);
             this.textBoxImage.Name = "textBoxImage";
             this.textBoxImage.ReadOnly = true;
-            this.textBoxImage.Size = new System.Drawing.Size(498, 30);
+            this.textBoxImage.Size = new System.Drawing.Size(498, 32);
             this.textBoxImage.TabIndex = 9;
             this.textBoxImage.Visible = false;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(231, 86);
+            this.textBoxPassword.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Location = new System.Drawing.Point(237, 97);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.ReadOnly = true;
-            this.textBoxPassword.Size = new System.Drawing.Size(498, 30);
+            this.textBoxPassword.Size = new System.Drawing.Size(498, 32);
             this.textBoxPassword.TabIndex = 7;
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(231, 30);
+            this.textBoxUsername.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.Location = new System.Drawing.Point(237, 35);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.ReadOnly = true;
-            this.textBoxUsername.Size = new System.Drawing.Size(498, 30);
+            this.textBoxUsername.Size = new System.Drawing.Size(498, 32);
             this.textBoxUsername.TabIndex = 6;
             // 
             // labelAge
             // 
             this.labelAge.AutoSize = true;
-            this.labelAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAge.Location = new System.Drawing.Point(6, 261);
+            this.labelAge.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAge.Location = new System.Drawing.Point(32, 340);
             this.labelAge.Name = "labelAge";
-            this.labelAge.Size = new System.Drawing.Size(48, 25);
+            this.labelAge.Size = new System.Drawing.Size(53, 27);
             this.labelAge.TabIndex = 5;
             this.labelAge.Text = "Age";
             this.labelAge.Visible = false;
@@ -329,10 +330,10 @@
             // labelGender
             // 
             this.labelGender.AutoSize = true;
-            this.labelGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGender.Location = new System.Drawing.Point(6, 197);
+            this.labelGender.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGender.Location = new System.Drawing.Point(32, 280);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(77, 25);
+            this.labelGender.Size = new System.Drawing.Size(87, 27);
             this.labelGender.TabIndex = 4;
             this.labelGender.Text = "Gender";
             this.labelGender.Visible = false;
@@ -340,10 +341,10 @@
             // labelImage
             // 
             this.labelImage.AutoSize = true;
-            this.labelImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImage.Location = new System.Drawing.Point(6, 140);
+            this.labelImage.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImage.Location = new System.Drawing.Point(32, 160);
             this.labelImage.Name = "labelImage";
-            this.labelImage.Size = new System.Drawing.Size(66, 25);
+            this.labelImage.Size = new System.Drawing.Size(77, 27);
             this.labelImage.TabIndex = 3;
             this.labelImage.Text = "Image";
             this.labelImage.Visible = false;
@@ -351,30 +352,30 @@
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelType.Location = new System.Drawing.Point(6, 140);
+            this.labelType.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelType.Location = new System.Drawing.Point(32, 220);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(57, 25);
+            this.labelType.Size = new System.Drawing.Size(61, 27);
             this.labelType.TabIndex = 2;
             this.labelType.Text = "Type";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPassword.Location = new System.Drawing.Point(6, 86);
+            this.labelPassword.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(32, 100);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(205, 25);
+            this.labelPassword.Size = new System.Drawing.Size(112, 27);
             this.labelPassword.TabIndex = 1;
-            this.labelPassword.Text = "Password (Encrypted)";
+            this.labelPassword.Text = "Password";
             // 
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUsername.Location = new System.Drawing.Point(6, 30);
+            this.labelUsername.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Location = new System.Drawing.Point(32, 40);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(102, 25);
+            this.labelUsername.Size = new System.Drawing.Size(117, 27);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "Username";
             // 
@@ -389,7 +390,7 @@
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAdd.Location = new System.Drawing.Point(12, 743);
+            this.buttonAdd.Location = new System.Drawing.Point(52, 818);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(103, 49);
             this.buttonAdd.TabIndex = 4;
@@ -402,7 +403,7 @@
             this.buttonModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonModify.Location = new System.Drawing.Point(121, 743);
+            this.buttonModify.Location = new System.Drawing.Point(169, 818);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(103, 49);
             this.buttonModify.TabIndex = 5;
@@ -415,7 +416,7 @@
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDelete.Location = new System.Drawing.Point(230, 743);
+            this.buttonDelete.Location = new System.Drawing.Point(291, 818);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(103, 49);
             this.buttonDelete.TabIndex = 6;
@@ -427,9 +428,9 @@
             // 
             this.buttonDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(71)))), ((int)(((byte)(186)))));
             this.buttonDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDesktop.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
             this.buttonDesktop.ForeColor = System.Drawing.Color.White;
-            this.buttonDesktop.Location = new System.Drawing.Point(1751, 108);
+            this.buttonDesktop.Location = new System.Drawing.Point(1715, 99);
             this.buttonDesktop.Name = "buttonDesktop";
             this.buttonDesktop.Size = new System.Drawing.Size(103, 49);
             this.buttonDesktop.TabIndex = 7;
@@ -441,9 +442,9 @@
             // 
             this.buttonAndroid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(217)))), ((int)(((byte)(87)))));
             this.buttonAndroid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAndroid.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAndroid.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
             this.buttonAndroid.ForeColor = System.Drawing.Color.Black;
-            this.buttonAndroid.Location = new System.Drawing.Point(1642, 108);
+            this.buttonAndroid.Location = new System.Drawing.Point(1606, 99);
             this.buttonAndroid.Name = "buttonAndroid";
             this.buttonAndroid.Size = new System.Drawing.Size(103, 49);
             this.buttonAndroid.TabIndex = 8;
@@ -554,7 +555,8 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormUsers";
-            this.Text = "FormUser";
+            this.Text = "Users";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormUsers_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormUsers_FormClosed);
             this.Load += new System.EventHandler(this.FormUsers_Load);

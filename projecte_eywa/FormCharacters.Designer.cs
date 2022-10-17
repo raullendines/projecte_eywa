@@ -30,8 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCharacters));
             this.characterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -64,17 +65,18 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.characterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.filmCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.difficultyCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.categoryCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.urlImageCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.correctNumCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCharacters = new System.Windows.Forms.DataGridView();
+            this.nameCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correctNumCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.urlImageCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoryCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.difficultyCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.filmCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comboBoxFilter = new System.Windows.Forms.ComboBox();
             this.buttonApplyFilters = new System.Windows.Forms.Button();
             this.buttonClearFilters = new System.Windows.Forms.Button();
+            this.Filter = new System.Windows.Forms.Label();
             this.formCharactersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -101,7 +103,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1141, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -141,23 +143,23 @@
             this.groupBoxCharacter.Controls.Add(this.textBoxNameCharacter);
             this.groupBoxCharacter.Controls.Add(this.labelNameCharacter);
             this.groupBoxCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCharacter.Location = new System.Drawing.Point(764, 96);
-            this.groupBoxCharacter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxCharacter.Location = new System.Drawing.Point(1083, 148);
+            this.groupBoxCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxCharacter.Name = "groupBoxCharacter";
-            this.groupBoxCharacter.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBoxCharacter.Size = new System.Drawing.Size(366, 490);
+            this.groupBoxCharacter.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBoxCharacter.Size = new System.Drawing.Size(752, 652);
             this.groupBoxCharacter.TabIndex = 3;
             this.groupBoxCharacter.TabStop = false;
-            this.groupBoxCharacter.Text = "Character";
             // 
             // textBoxDescriptionCharacterCat
             // 
             this.textBoxDescriptionCharacterCat.Enabled = false;
-            this.textBoxDescriptionCharacterCat.Location = new System.Drawing.Point(114, 256);
-            this.textBoxDescriptionCharacterCat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDescriptionCharacterCat.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDescriptionCharacterCat.Location = new System.Drawing.Point(246, 404);
+            this.textBoxDescriptionCharacterCat.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDescriptionCharacterCat.Multiline = true;
             this.textBoxDescriptionCharacterCat.Name = "textBoxDescriptionCharacterCat";
-            this.textBoxDescriptionCharacterCat.Size = new System.Drawing.Size(243, 166);
+            this.textBoxDescriptionCharacterCat.Size = new System.Drawing.Size(482, 166);
             this.textBoxDescriptionCharacterCat.TabIndex = 22;
             this.textBoxDescriptionCharacterCat.Visible = false;
             // 
@@ -165,42 +167,46 @@
             // 
             this.comboBoxDifficulty.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDifficulty.Enabled = false;
+            this.comboBoxDifficulty.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDifficulty.FormattingEnabled = true;
             this.comboBoxDifficulty.Items.AddRange(new object[] {
             "E",
             "M",
             "H",
             "I"});
-            this.comboBoxDifficulty.Location = new System.Drawing.Point(114, 151);
-            this.comboBoxDifficulty.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxDifficulty.Location = new System.Drawing.Point(246, 224);
+            this.comboBoxDifficulty.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxDifficulty.Name = "comboBoxDifficulty";
-            this.comboBoxDifficulty.Size = new System.Drawing.Size(242, 24);
+            this.comboBoxDifficulty.Size = new System.Drawing.Size(482, 35);
             this.comboBoxDifficulty.TabIndex = 20;
             // 
             // textBoxDescriptionCharacterEng
             // 
             this.textBoxDescriptionCharacterEng.Enabled = false;
-            this.textBoxDescriptionCharacterEng.Location = new System.Drawing.Point(114, 256);
-            this.textBoxDescriptionCharacterEng.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDescriptionCharacterEng.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDescriptionCharacterEng.Location = new System.Drawing.Point(246, 404);
+            this.textBoxDescriptionCharacterEng.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDescriptionCharacterEng.Multiline = true;
             this.textBoxDescriptionCharacterEng.Name = "textBoxDescriptionCharacterEng";
-            this.textBoxDescriptionCharacterEng.Size = new System.Drawing.Size(242, 160);
+            this.textBoxDescriptionCharacterEng.Size = new System.Drawing.Size(481, 160);
             this.textBoxDescriptionCharacterEng.TabIndex = 18;
             this.textBoxDescriptionCharacterEng.Visible = false;
             // 
             // numericUpDownCorrectNum
             // 
             this.numericUpDownCorrectNum.Enabled = false;
-            this.numericUpDownCorrectNum.Location = new System.Drawing.Point(114, 186);
-            this.numericUpDownCorrectNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDownCorrectNum.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDownCorrectNum.Location = new System.Drawing.Point(246, 285);
+            this.numericUpDownCorrectNum.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDownCorrectNum.Name = "numericUpDownCorrectNum";
-            this.numericUpDownCorrectNum.Size = new System.Drawing.Size(242, 23);
+            this.numericUpDownCorrectNum.Size = new System.Drawing.Size(482, 32);
             this.numericUpDownCorrectNum.TabIndex = 10;
             // 
             // comboBoxCategoryCharacter
             // 
             this.comboBoxCategoryCharacter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategoryCharacter.Enabled = false;
+            this.comboBoxCategoryCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCategoryCharacter.FormattingEnabled = true;
             this.comboBoxCategoryCharacter.Items.AddRange(new object[] {
             "drama",
@@ -209,23 +215,23 @@
             "comedy",
             "animation",
             "horror"});
-            this.comboBoxCategoryCharacter.Location = new System.Drawing.Point(113, 116);
-            this.comboBoxCategoryCharacter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxCategoryCharacter.Location = new System.Drawing.Point(246, 164);
+            this.comboBoxCategoryCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxCategoryCharacter.Name = "comboBoxCategoryCharacter";
-            this.comboBoxCategoryCharacter.Size = new System.Drawing.Size(242, 24);
+            this.comboBoxCategoryCharacter.Size = new System.Drawing.Size(482, 35);
             this.comboBoxCategoryCharacter.TabIndex = 17;
             // 
             // buttonCancel
             // 
-            this.buttonCancel.BackColor = System.Drawing.Color.White;
+            this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonCancel.Location = new System.Drawing.Point(158, 436);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCancel.Location = new System.Drawing.Point(490, 588);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(97, 36);
+            this.buttonCancel.Size = new System.Drawing.Size(103, 49);
             this.buttonCancel.TabIndex = 16;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = false;
@@ -235,13 +241,13 @@
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSave.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonSave.Location = new System.Drawing.Point(259, 436);
-            this.buttonSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSave.Location = new System.Drawing.Point(628, 588);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(97, 36);
+            this.buttonSave.Size = new System.Drawing.Size(103, 49);
             this.buttonSave.TabIndex = 15;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = false;
@@ -251,95 +257,98 @@
             // textBoxDescriptionCharacterEsp
             // 
             this.textBoxDescriptionCharacterEsp.Enabled = false;
-            this.textBoxDescriptionCharacterEsp.Location = new System.Drawing.Point(114, 256);
-            this.textBoxDescriptionCharacterEsp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxDescriptionCharacterEsp.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxDescriptionCharacterEsp.Location = new System.Drawing.Point(246, 404);
+            this.textBoxDescriptionCharacterEsp.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxDescriptionCharacterEsp.Multiline = true;
             this.textBoxDescriptionCharacterEsp.Name = "textBoxDescriptionCharacterEsp";
-            this.textBoxDescriptionCharacterEsp.Size = new System.Drawing.Size(242, 159);
+            this.textBoxDescriptionCharacterEsp.Size = new System.Drawing.Size(481, 159);
             this.textBoxDescriptionCharacterEsp.TabIndex = 13;
             // 
             // labelDescriptionCharacter
             // 
             this.labelDescriptionCharacter.AutoSize = true;
-            this.labelDescriptionCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescriptionCharacter.Location = new System.Drawing.Point(11, 257);
+            this.labelDescriptionCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescriptionCharacter.Location = new System.Drawing.Point(32, 400);
             this.labelDescriptionCharacter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDescriptionCharacter.Name = "labelDescriptionCharacter";
-            this.labelDescriptionCharacter.Size = new System.Drawing.Size(79, 17);
+            this.labelDescriptionCharacter.Size = new System.Drawing.Size(132, 27);
             this.labelDescriptionCharacter.TabIndex = 14;
             this.labelDescriptionCharacter.Text = "Description";
             // 
             // textBoxImgUrlCharacter
             // 
             this.textBoxImgUrlCharacter.Enabled = false;
-            this.textBoxImgUrlCharacter.Location = new System.Drawing.Point(113, 221);
-            this.textBoxImgUrlCharacter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxImgUrlCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxImgUrlCharacter.Location = new System.Drawing.Point(246, 344);
+            this.textBoxImgUrlCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxImgUrlCharacter.Name = "textBoxImgUrlCharacter";
-            this.textBoxImgUrlCharacter.Size = new System.Drawing.Size(243, 23);
+            this.textBoxImgUrlCharacter.Size = new System.Drawing.Size(482, 32);
             this.textBoxImgUrlCharacter.TabIndex = 11;
             // 
             // labelImgUrl
             // 
             this.labelImgUrl.AutoSize = true;
-            this.labelImgUrl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImgUrl.Location = new System.Drawing.Point(11, 221);
+            this.labelImgUrl.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImgUrl.Location = new System.Drawing.Point(32, 340);
             this.labelImgUrl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelImgUrl.Name = "labelImgUrl";
-            this.labelImgUrl.Size = new System.Drawing.Size(66, 17);
+            this.labelImgUrl.Size = new System.Drawing.Size(111, 27);
             this.labelImgUrl.TabIndex = 12;
             this.labelImgUrl.Text = "Image url";
             // 
             // labelNumCorrecto
             // 
             this.labelNumCorrecto.AutoSize = true;
-            this.labelNumCorrecto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumCorrecto.Location = new System.Drawing.Point(11, 187);
+            this.labelNumCorrecto.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumCorrecto.Location = new System.Drawing.Point(32, 280);
             this.labelNumCorrecto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNumCorrecto.Name = "labelNumCorrecto";
-            this.labelNumCorrecto.Size = new System.Drawing.Size(106, 17);
+            this.labelNumCorrecto.Size = new System.Drawing.Size(177, 27);
             this.labelNumCorrecto.TabIndex = 10;
             this.labelNumCorrecto.Text = "Correct number";
             // 
             // labelDifficultyCharacter
             // 
             this.labelDifficultyCharacter.AutoSize = true;
-            this.labelDifficultyCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDifficultyCharacter.Location = new System.Drawing.Point(11, 152);
+            this.labelDifficultyCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDifficultyCharacter.Location = new System.Drawing.Point(32, 220);
             this.labelDifficultyCharacter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDifficultyCharacter.Name = "labelDifficultyCharacter";
-            this.labelDifficultyCharacter.Size = new System.Drawing.Size(61, 17);
+            this.labelDifficultyCharacter.Size = new System.Drawing.Size(108, 27);
             this.labelDifficultyCharacter.TabIndex = 8;
             this.labelDifficultyCharacter.Text = "Difficulty";
             // 
             // labelCategoryCharacter
             // 
             this.labelCategoryCharacter.AutoSize = true;
-            this.labelCategoryCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCategoryCharacter.Location = new System.Drawing.Point(13, 118);
+            this.labelCategoryCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCategoryCharacter.Location = new System.Drawing.Point(32, 160);
             this.labelCategoryCharacter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCategoryCharacter.Name = "labelCategoryCharacter";
-            this.labelCategoryCharacter.Size = new System.Drawing.Size(65, 17);
+            this.labelCategoryCharacter.Size = new System.Drawing.Size(106, 27);
             this.labelCategoryCharacter.TabIndex = 6;
             this.labelCategoryCharacter.Text = "Category";
             // 
             // labelFilmCharacter
             // 
             this.labelFilmCharacter.AutoSize = true;
-            this.labelFilmCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFilmCharacter.Location = new System.Drawing.Point(13, 83);
+            this.labelFilmCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFilmCharacter.Location = new System.Drawing.Point(32, 100);
             this.labelFilmCharacter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFilmCharacter.Name = "labelFilmCharacter";
-            this.labelFilmCharacter.Size = new System.Drawing.Size(33, 17);
+            this.labelFilmCharacter.Size = new System.Drawing.Size(58, 27);
             this.labelFilmCharacter.TabIndex = 4;
             this.labelFilmCharacter.Text = "Film";
             // 
             // textBoxFilmCharacter
             // 
             this.textBoxFilmCharacter.Enabled = false;
-            this.textBoxFilmCharacter.Location = new System.Drawing.Point(113, 81);
-            this.textBoxFilmCharacter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxFilmCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFilmCharacter.Location = new System.Drawing.Point(246, 104);
+            this.textBoxFilmCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxFilmCharacter.Name = "textBoxFilmCharacter";
-            this.textBoxFilmCharacter.Size = new System.Drawing.Size(245, 23);
+            this.textBoxFilmCharacter.Size = new System.Drawing.Size(482, 32);
             this.textBoxFilmCharacter.TabIndex = 3;
             // 
             // label1
@@ -354,20 +363,21 @@
             // textBoxNameCharacter
             // 
             this.textBoxNameCharacter.Enabled = false;
-            this.textBoxNameCharacter.Location = new System.Drawing.Point(113, 46);
-            this.textBoxNameCharacter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxNameCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNameCharacter.Location = new System.Drawing.Point(246, 44);
+            this.textBoxNameCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNameCharacter.Name = "textBoxNameCharacter";
-            this.textBoxNameCharacter.Size = new System.Drawing.Size(245, 23);
+            this.textBoxNameCharacter.Size = new System.Drawing.Size(482, 32);
             this.textBoxNameCharacter.TabIndex = 1;
             // 
             // labelNameCharacter
             // 
             this.labelNameCharacter.AutoSize = true;
-            this.labelNameCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNameCharacter.Location = new System.Drawing.Point(11, 48);
+            this.labelNameCharacter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNameCharacter.Location = new System.Drawing.Point(32, 40);
             this.labelNameCharacter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNameCharacter.Name = "labelNameCharacter";
-            this.labelNameCharacter.Size = new System.Drawing.Size(45, 17);
+            this.labelNameCharacter.Size = new System.Drawing.Size(73, 27);
             this.labelNameCharacter.TabIndex = 0;
             this.labelNameCharacter.Text = "Name";
             // 
@@ -378,8 +388,8 @@
             this.buttonCatalan.FlatAppearance.BorderSize = 0;
             this.buttonCatalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCatalan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.buttonCatalan.Location = new System.Drawing.Point(1001, 38);
-            this.buttonCatalan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCatalan.Location = new System.Drawing.Point(1083, 93);
+            this.buttonCatalan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCatalan.Name = "buttonCatalan";
             this.buttonCatalan.Size = new System.Drawing.Size(37, 36);
             this.buttonCatalan.TabIndex = 4;
@@ -392,8 +402,8 @@
             this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonEnglish.FlatAppearance.BorderSize = 0;
             this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEnglish.Location = new System.Drawing.Point(1091, 38);
-            this.buttonEnglish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonEnglish.Location = new System.Drawing.Point(1292, 93);
+            this.buttonEnglish.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEnglish.Name = "buttonEnglish";
             this.buttonEnglish.Size = new System.Drawing.Size(37, 36);
             this.buttonEnglish.TabIndex = 5;
@@ -406,8 +416,8 @@
             this.buttonSpanish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonSpanish.FlatAppearance.BorderSize = 0;
             this.buttonSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSpanish.Location = new System.Drawing.Point(1047, 38);
-            this.buttonSpanish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSpanish.Location = new System.Drawing.Point(1183, 93);
+            this.buttonSpanish.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSpanish.Name = "buttonSpanish";
             this.buttonSpanish.Size = new System.Drawing.Size(37, 36);
             this.buttonSpanish.TabIndex = 6;
@@ -416,15 +426,16 @@
             // 
             // buttonModify
             // 
-            this.buttonModify.BackColor = System.Drawing.Color.White;
+            this.buttonModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonModify.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonModify.FlatAppearance.BorderSize = 0;
             this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModify.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
             this.buttonModify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonModify.Location = new System.Drawing.Point(126, 600);
-            this.buttonModify.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonModify.Location = new System.Drawing.Point(169, 818);
+            this.buttonModify.Margin = new System.Windows.Forms.Padding(2);
             this.buttonModify.Name = "buttonModify";
-            this.buttonModify.Size = new System.Drawing.Size(97, 36);
+            this.buttonModify.Size = new System.Drawing.Size(103, 49);
             this.buttonModify.TabIndex = 9;
             this.buttonModify.Text = "Modify";
             this.buttonModify.UseVisualStyleBackColor = false;
@@ -433,13 +444,14 @@
             // buttonDelete
             // 
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
+            this.buttonDelete.FlatAppearance.BorderSize = 0;
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
             this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDelete.Location = new System.Drawing.Point(227, 600);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonDelete.Location = new System.Drawing.Point(291, 818);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(97, 36);
+            this.buttonDelete.Size = new System.Drawing.Size(103, 49);
             this.buttonDelete.TabIndex = 8;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
@@ -447,82 +459,24 @@
             // 
             // buttonAdd
             // 
-            this.buttonAdd.BackColor = System.Drawing.Color.White;
+            this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonAdd.Location = new System.Drawing.Point(25, 600);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonAdd.Location = new System.Drawing.Point(52, 818);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(97, 36);
+            this.buttonAdd.Size = new System.Drawing.Size(103, 49);
             this.buttonAdd.TabIndex = 7;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = false;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // filmCharacter
-            // 
-            this.filmCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.filmCharacter.DataPropertyName = "film";
-            this.filmCharacter.HeaderText = "Film";
-            this.filmCharacter.MinimumWidth = 8;
-            this.filmCharacter.Name = "filmCharacter";
-            // 
-            // difficultyCharacter
-            // 
-            this.difficultyCharacter.DataPropertyName = "difficultyCharacter";
-            this.difficultyCharacter.HeaderText = "Difficulty";
-            this.difficultyCharacter.MinimumWidth = 8;
-            this.difficultyCharacter.Name = "difficultyCharacter";
-            this.difficultyCharacter.Visible = false;
-            this.difficultyCharacter.Width = 150;
-            // 
-            // categoryCharacter
-            // 
-            this.categoryCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.categoryCharacter.DataPropertyName = "category";
-            this.categoryCharacter.HeaderText = "Category";
-            this.categoryCharacter.MinimumWidth = 8;
-            this.categoryCharacter.Name = "categoryCharacter";
-            // 
-            // descCharacter
-            // 
-            this.descCharacter.DataPropertyName = "descCharacter";
-            this.descCharacter.HeaderText = "Description";
-            this.descCharacter.MinimumWidth = 8;
-            this.descCharacter.Name = "descCharacter";
-            this.descCharacter.Visible = false;
-            this.descCharacter.Width = 150;
-            // 
-            // urlImageCharacter
-            // 
-            this.urlImageCharacter.DataPropertyName = "urlImageCharacter";
-            this.urlImageCharacter.HeaderText = "Url image";
-            this.urlImageCharacter.MinimumWidth = 8;
-            this.urlImageCharacter.Name = "urlImageCharacter";
-            this.urlImageCharacter.Visible = false;
-            this.urlImageCharacter.Width = 150;
-            // 
-            // correctNumCharacter
-            // 
-            this.correctNumCharacter.DataPropertyName = "corr";
-            this.correctNumCharacter.HeaderText = "Correct number";
-            this.correctNumCharacter.MinimumWidth = 8;
-            this.correctNumCharacter.Name = "correctNumCharacter";
-            this.correctNumCharacter.Visible = false;
-            this.correctNumCharacter.Width = 150;
-            // 
-            // nameCharacter
-            // 
-            this.nameCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nameCharacter.DataPropertyName = "name";
-            this.nameCharacter.HeaderText = "Name";
-            this.nameCharacter.MinimumWidth = 8;
-            this.nameCharacter.Name = "nameCharacter";
-            // 
             // dataGridViewCharacters
             // 
             this.dataGridViewCharacters.AllowUserToOrderColumns = true;
+            this.dataGridViewCharacters.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -540,34 +494,101 @@
             this.categoryCharacter,
             this.difficultyCharacter,
             this.filmCharacter});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCharacters.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewCharacters.Location = new System.Drawing.Point(25, 96);
-            this.dataGridViewCharacters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridViewCharacters.Name = "dataGridViewCharacters";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCharacters.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCharacters.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewCharacters.GridColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dataGridViewCharacters.Location = new System.Drawing.Point(52, 148);
+            this.dataGridViewCharacters.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridViewCharacters.Name = "dataGridViewCharacters";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCharacters.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewCharacters.RowHeadersWidth = 62;
             this.dataGridViewCharacters.RowTemplate.Height = 28;
-            this.dataGridViewCharacters.Size = new System.Drawing.Size(735, 490);
+            this.dataGridViewCharacters.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewCharacters.Size = new System.Drawing.Size(973, 652);
             this.dataGridViewCharacters.TabIndex = 1;
             this.dataGridViewCharacters.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCharacters_CellClick);
+            // 
+            // nameCharacter
+            // 
+            this.nameCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nameCharacter.DataPropertyName = "name";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.nameCharacter.DefaultCellStyle = dataGridViewCellStyle2;
+            this.nameCharacter.HeaderText = "Name";
+            this.nameCharacter.MinimumWidth = 8;
+            this.nameCharacter.Name = "nameCharacter";
+            // 
+            // correctNumCharacter
+            // 
+            this.correctNumCharacter.DataPropertyName = "corr";
+            this.correctNumCharacter.HeaderText = "Correct number";
+            this.correctNumCharacter.MinimumWidth = 8;
+            this.correctNumCharacter.Name = "correctNumCharacter";
+            this.correctNumCharacter.Visible = false;
+            this.correctNumCharacter.Width = 150;
+            // 
+            // urlImageCharacter
+            // 
+            this.urlImageCharacter.DataPropertyName = "urlImageCharacter";
+            this.urlImageCharacter.HeaderText = "Url image";
+            this.urlImageCharacter.MinimumWidth = 8;
+            this.urlImageCharacter.Name = "urlImageCharacter";
+            this.urlImageCharacter.Visible = false;
+            this.urlImageCharacter.Width = 150;
+            // 
+            // descCharacter
+            // 
+            this.descCharacter.DataPropertyName = "descCharacter";
+            this.descCharacter.HeaderText = "Description";
+            this.descCharacter.MinimumWidth = 8;
+            this.descCharacter.Name = "descCharacter";
+            this.descCharacter.Visible = false;
+            this.descCharacter.Width = 150;
+            // 
+            // categoryCharacter
+            // 
+            this.categoryCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.categoryCharacter.DataPropertyName = "category";
+            this.categoryCharacter.HeaderText = "Category";
+            this.categoryCharacter.MinimumWidth = 8;
+            this.categoryCharacter.Name = "categoryCharacter";
+            // 
+            // difficultyCharacter
+            // 
+            this.difficultyCharacter.DataPropertyName = "difficultyCharacter";
+            this.difficultyCharacter.HeaderText = "Difficulty";
+            this.difficultyCharacter.MinimumWidth = 8;
+            this.difficultyCharacter.Name = "difficultyCharacter";
+            this.difficultyCharacter.Visible = false;
+            this.difficultyCharacter.Width = 150;
+            // 
+            // filmCharacter
+            // 
+            this.filmCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.filmCharacter.DataPropertyName = "film";
+            this.filmCharacter.HeaderText = "Film";
+            this.filmCharacter.MinimumWidth = 8;
+            this.filmCharacter.Name = "filmCharacter";
             // 
             // comboBoxFilter
             // 
             this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.comboBoxFilter.FormattingEnabled = true;
             this.comboBoxFilter.Items.AddRange(new object[] {
             "Drama",
@@ -576,23 +597,24 @@
             "Comedia",
             "Animació",
             "Terror"});
-            this.comboBoxFilter.Location = new System.Drawing.Point(25, 49);
-            this.comboBoxFilter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBoxFilter.Location = new System.Drawing.Point(140, 87);
+            this.comboBoxFilter.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(515, 21);
+            this.comboBoxFilter.Size = new System.Drawing.Size(528, 33);
             this.comboBoxFilter.TabIndex = 18;
             // 
             // buttonApplyFilters
             // 
             this.buttonApplyFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
             this.buttonApplyFilters.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonApplyFilters.FlatAppearance.BorderSize = 0;
             this.buttonApplyFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonApplyFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApplyFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonApplyFilters.ForeColor = System.Drawing.Color.Black;
-            this.buttonApplyFilters.Location = new System.Drawing.Point(560, 38);
-            this.buttonApplyFilters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonApplyFilters.Location = new System.Drawing.Point(780, 80);
+            this.buttonApplyFilters.Margin = new System.Windows.Forms.Padding(2);
             this.buttonApplyFilters.Name = "buttonApplyFilters";
-            this.buttonApplyFilters.Size = new System.Drawing.Size(97, 36);
+            this.buttonApplyFilters.Size = new System.Drawing.Size(103, 49);
             this.buttonApplyFilters.TabIndex = 20;
             this.buttonApplyFilters.Text = "Apply filter";
             this.buttonApplyFilters.UseVisualStyleBackColor = false;
@@ -600,18 +622,29 @@
             // 
             // buttonClearFilters
             // 
-            this.buttonClearFilters.BackColor = System.Drawing.Color.White;
-            this.buttonClearFilters.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonClearFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonClearFilters.FlatAppearance.BorderSize = 0;
+            this.buttonClearFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClearFilters.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonClearFilters.Location = new System.Drawing.Point(661, 38);
-            this.buttonClearFilters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonClearFilters.Location = new System.Drawing.Point(922, 80);
+            this.buttonClearFilters.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClearFilters.Name = "buttonClearFilters";
-            this.buttonClearFilters.Size = new System.Drawing.Size(97, 36);
+            this.buttonClearFilters.Size = new System.Drawing.Size(103, 49);
             this.buttonClearFilters.TabIndex = 19;
             this.buttonClearFilters.Text = "Clear filter";
             this.buttonClearFilters.UseVisualStyleBackColor = false;
             this.buttonClearFilters.Click += new System.EventHandler(this.buttonClearFilters_Click);
+            // 
+            // Filter
+            // 
+            this.Filter.AutoSize = true;
+            this.Filter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filter.Location = new System.Drawing.Point(55, 90);
+            this.Filter.Name = "Filter";
+            this.Filter.Size = new System.Drawing.Size(66, 27);
+            this.Filter.TabIndex = 21;
+            this.Filter.Text = "Filter";
             // 
             // formCharactersBindingSource2
             // 
@@ -634,7 +667,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1141, 666);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.Filter);
             this.Controls.Add(this.buttonApplyFilters);
             this.Controls.Add(this.buttonClearFilters);
             this.Controls.Add(this.comboBoxFilter);
@@ -650,7 +684,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormCharacters";
-            this.Text = "Form1";
+            this.Text = "Characters";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -703,18 +738,19 @@
         private System.Windows.Forms.NumericUpDown numericUpDownCorrectNum;
         private System.Windows.Forms.TextBox textBoxDescriptionCharacterEng;
         private System.Windows.Forms.ComboBox comboBoxDifficulty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn filmCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn difficultyCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn urlImageCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn correctNumCharacter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameCharacter;
         private System.Windows.Forms.DataGridView dataGridViewCharacters;
         private System.Windows.Forms.TextBox textBoxDescriptionCharacterCat;
         private System.Windows.Forms.ComboBox comboBoxFilter;
         private System.Windows.Forms.Button buttonApplyFilters;
         private System.Windows.Forms.Button buttonClearFilters;
+        private System.Windows.Forms.Label Filter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correctNumCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn urlImageCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn difficultyCharacter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn filmCharacter;
     }
 }
 
