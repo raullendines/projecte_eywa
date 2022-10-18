@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -169,7 +170,7 @@
             this.dataGridViewQuestions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -185,7 +186,7 @@
             this.dataGridViewQuestions.DataSource = this.quizQuestionBindingSource;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Montserrat", 8F);
             dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -195,6 +196,14 @@
             this.dataGridViewQuestions.MultiSelect = false;
             this.dataGridViewQuestions.Name = "dataGridViewQuestions";
             this.dataGridViewQuestions.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewQuestions.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewQuestions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewQuestions.Size = new System.Drawing.Size(973, 652);
             this.dataGridViewQuestions.TabIndex = 1;
@@ -570,7 +579,7 @@
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat Medium", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.idDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.idDataGridViewTextBoxColumn.FillWeight = 25.38071F;
@@ -581,7 +590,7 @@
             // questionDataGridViewTextBoxColumn
             // 
             this.questionDataGridViewTextBoxColumn.DataPropertyName = "question";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat Medium", 12F);
             this.questionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.questionDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
@@ -591,7 +600,7 @@
             // difficultyDataGridViewTextBoxColumn
             // 
             this.difficultyDataGridViewTextBoxColumn.DataPropertyName = "difficulty";
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat Medium", 12F);
             this.difficultyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.difficultyDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.difficultyDataGridViewTextBoxColumn.HeaderText = "Difficulty";
@@ -601,7 +610,7 @@
             // categoryDataGridViewTextBoxColumn
             // 
             this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Montserrat Medium", 12F);
             this.categoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
             this.categoryDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
@@ -611,7 +620,7 @@
             // correctanswerDataGridViewTextBoxColumn
             // 
             this.correctanswerDataGridViewTextBoxColumn.DataPropertyName = "correct_answer";
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Montserrat Medium", 12F);
             this.correctanswerDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.correctanswerDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.correctanswerDataGridViewTextBoxColumn.HeaderText = "Correct Answer";

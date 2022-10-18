@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -93,7 +94,7 @@
             this.dataGridViewUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -111,6 +112,9 @@
             this.dataGridViewUsers.Location = new System.Drawing.Point(52, 148);
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.ReadOnly = true;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            this.dataGridViewUsers.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewUsers.Size = new System.Drawing.Size(973, 652);
             this.dataGridViewUsers.TabIndex = 1;
             this.dataGridViewUsers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsers_CellClick);
@@ -175,7 +179,7 @@
             // 
             // labelLogout
             // 
-            this.labelLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogout.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLogout.Location = new System.Drawing.Point(8, 89);
             this.labelLogout.Name = "labelLogout";
             this.labelLogout.Size = new System.Drawing.Size(185, 25);
@@ -233,7 +237,7 @@
             "user",
             "admin",
             "superadmin"});
-            this.comboBoxType.Location = new System.Drawing.Point(237, 217);
+            this.comboBoxType.Location = new System.Drawing.Point(237, 157);
             this.comboBoxType.Name = "comboBoxType";
             this.comboBoxType.Size = new System.Drawing.Size(498, 35);
             this.comboBoxType.TabIndex = 14;
@@ -271,7 +275,7 @@
             // textBoxAge
             // 
             this.textBoxAge.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxAge.Location = new System.Drawing.Point(237, 337);
+            this.textBoxAge.Location = new System.Drawing.Point(237, 277);
             this.textBoxAge.Name = "textBoxAge";
             this.textBoxAge.ReadOnly = true;
             this.textBoxAge.Size = new System.Drawing.Size(498, 32);
@@ -281,7 +285,7 @@
             // textBoxGender
             // 
             this.textBoxGender.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxGender.Location = new System.Drawing.Point(237, 277);
+            this.textBoxGender.Location = new System.Drawing.Point(237, 217);
             this.textBoxGender.Name = "textBoxGender";
             this.textBoxGender.ReadOnly = true;
             this.textBoxGender.Size = new System.Drawing.Size(498, 32);
@@ -320,7 +324,7 @@
             // 
             this.labelAge.AutoSize = true;
             this.labelAge.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAge.Location = new System.Drawing.Point(32, 340);
+            this.labelAge.Location = new System.Drawing.Point(32, 280);
             this.labelAge.Name = "labelAge";
             this.labelAge.Size = new System.Drawing.Size(53, 27);
             this.labelAge.TabIndex = 5;
@@ -331,7 +335,7 @@
             // 
             this.labelGender.AutoSize = true;
             this.labelGender.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelGender.Location = new System.Drawing.Point(32, 280);
+            this.labelGender.Location = new System.Drawing.Point(32, 220);
             this.labelGender.Name = "labelGender";
             this.labelGender.Size = new System.Drawing.Size(87, 27);
             this.labelGender.TabIndex = 4;
@@ -353,7 +357,7 @@
             // 
             this.labelType.AutoSize = true;
             this.labelType.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelType.Location = new System.Drawing.Point(32, 220);
+            this.labelType.Location = new System.Drawing.Point(32, 162);
             this.labelType.Name = "labelType";
             this.labelType.Size = new System.Drawing.Size(61, 27);
             this.labelType.TabIndex = 2;

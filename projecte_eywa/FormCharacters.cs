@@ -405,5 +405,13 @@ namespace projecte_eywa
             this.Close();
             Program.changingForms = false;
         }
+
+        private void FormCharacters_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (!Program.changingForms)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
