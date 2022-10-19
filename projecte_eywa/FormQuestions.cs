@@ -18,7 +18,7 @@ namespace projecte_eywa
         // PATHING
         const string PATH = @"..\..\json\" ;
         const string EN_PATH = PATH + "questions_en.json";
-        const string EN_PATH_TEST = PATH + "test_questions_en.json";
+        
         const string ES_PATH = PATH + "questions_es.json";
         const string CA_PATH = PATH + "questions_ca.json";
         
@@ -27,7 +27,8 @@ namespace projecte_eywa
         BindingList<QuizQuestion> quizQuestionsEN = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsES = new BindingList<QuizQuestion>();
         BindingList<QuizQuestion> quizQuestionsCA = new BindingList<QuizQuestion>();
-        BindingList<QuizQuestion> filteredList = new BindingList<QuizQuestion>();
+
+        UserDesktop user;
 
         // CURRENT LANGUAGE
         string currentSheet = "EN";
@@ -38,10 +39,10 @@ namespace projecte_eywa
         bool modifyQuestion = false;
         bool isFiltered = false;
         
-        public FormQuestions()
+        public FormQuestions(UserDesktop user)
         {
             InitializeComponent();
-            
+            this.user = user;
             getData();
             //saveJSON();
         }
@@ -51,7 +52,7 @@ namespace projecte_eywa
 
             //needs to delete the previous document
             JArray QuizQuestionsArrayEN = (JArray)JToken.FromObject(quizQuestionsEN);
-            File.WriteAllText(EN_PATH_TEST, QuizQuestionsArrayEN.ToString());
+            File.WriteAllText(EN_PATH, QuizQuestionsArrayEN.ToString());
             //JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
             //File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
             //JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
@@ -490,7 +491,8 @@ namespace projecte_eywa
 
         private void FormQuestions_Load(object sender, EventArgs e)
         {
-            
+            labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
+            menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
         }
 
         private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
@@ -714,7 +716,7 @@ namespace projecte_eywa
 
         private void gestionarPersonatgesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCharacters formCharacters = new FormCharacters();
+            FormCharacters formCharacters = new FormCharacters(user);
             formCharacters.Show();
             Program.changingForms = true;
             this.Close();
@@ -748,11 +750,24 @@ namespace projecte_eywa
 
         private void userManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormUsers formUsers = new FormUsers();
+            FormUsers formUsers = new FormUsers(user);
             formUsers.Show();
             Program.changingForms = true;
             this.Close();
             Program.changingForms = false;
+        }
+
+        private void labelLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                FormLogin formLogin = new FormLogin();
+                Program.changingForms = true;
+                this.Close();
+                Program.changingForms = false;
+                formLogin.Show();
+            }
         }
     }
 }

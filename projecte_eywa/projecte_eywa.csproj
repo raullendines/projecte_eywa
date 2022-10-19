@@ -35,8 +35,6 @@
   <ItemGroup>
     <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
       <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
-
-
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -81,6 +79,11 @@
     <Compile Include="FormUsers.Designer.cs">
       <DependentUpon>FormUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="QuizCharacter.cs" />
     <Compile Include="FormCharacters.cs">
       <SubType>Form</SubType>
@@ -108,21 +111,14 @@
     <EmbeddedResource Include="FormQuestions.resx">
       <DependentUpon>FormQuestions.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="FormUsers.resx">
       <DependentUpon>FormUsers.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -180,7 +176,6 @@
     <None Include="Resources\visibility_FILL0_wght400_GRAD0_opsz48.png" />
   </ItemGroup>
   <ItemGroup>
-
     <None Include="Resources\visibility_off_FILL0_wght400_GRAD0_opsz48.png" />
   </ItemGroup>
   <ItemGroup>
@@ -197,21 +192,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\visibility_off.png" />
-
-    <None Include="Resources\cataluña_bandera.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\españa_boton.png" />
+    <None Include="Resources\cataluña_bandera__1_.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cataluña_bandera %281%29.png" />
+    <None Include="Resources\bandera_england__1_.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\españa_boton1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bandera_england %281%29.png" />
-
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,7 +20,7 @@ namespace projecte_eywa
 
         List<UserDesktop> DesktopList;
         List<UserAndroid> AndroidList = new List<UserAndroid>();
-        UserDesktop actualUser;
+        UserDesktop user;
         
         
         const string PATH = @"..\..\json\";
@@ -35,15 +35,10 @@ namespace projecte_eywa
         
 
 
-        public FormUsers()
+        
+        public FormUsers(UserDesktop user)
         {
-            InitializeComponent();
-            comboBoxType.SelectedIndex = 0;
-        }
-        public FormUsers(List<UserDesktop> DesktopList, UserDesktop actualUser)
-        {
-            //this.DesktopList = DesktopList;
-            //this.actualUser = actualUser;
+            this.user = user;
             InitializeComponent();
             comboBoxType.SelectedIndex = 0;
             
@@ -52,7 +47,7 @@ namespace projecte_eywa
         private void FormUsers_Load(object sender, EventArgs e)
         {
             loadData();
-            //labelActualUserData.Text = actualUser.username.ToString() + " " + actualUser.type.ToString();
+            labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
             menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
         }
 
@@ -563,6 +558,7 @@ namespace projecte_eywa
                 FormLogin formLogin = new FormLogin();
                 Program.changingForms = true;
                 this.Close();
+                Program.changingForms = false;
                 formLogin.Show();
             }
             
@@ -570,18 +566,20 @@ namespace projecte_eywa
 
         private void questionManadgementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormQuestions formQuestions = new FormQuestions();
+            FormQuestions formQuestions = new FormQuestions(user);
             formQuestions.Show();
             Program.changingForms = true;
             this.Close();
+            Program.changingForms = false;
         }
 
         private void characterManadgmenetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormCharacters formCharacters = new FormCharacters();
+            FormCharacters formCharacters = new FormCharacters(user);
             formCharacters.Show();
             Program.changingForms = true;
             this.Close();
+            Program.changingForms = false;
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)

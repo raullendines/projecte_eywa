@@ -24,14 +24,14 @@ namespace projecte_eywa
     {
 
         List<UserDesktop> UsersList = new List<UserDesktop>();
-        UserDesktop actualUser;
+        UserDesktop user;
         const string auth = "EYWA";
         const string PATH = @"..\..\json\";
         const string USERS_PATH = PATH + "users_desktop.json";
         string formType = "login";
         Point labelTextPosition;
         Point labelClickablePosition;
-
+        
 
         public FormLogin()
         {
@@ -68,7 +68,7 @@ namespace projecte_eywa
 
                 if (checkCorrectUser())
                 {
-                    FormQuestions myNextForm = new FormQuestions();
+                    FormQuestions myNextForm = new FormQuestions(user);
                     Program.changingForms = true;
                     myNextForm.Show();
                     this.Close();
@@ -141,7 +141,7 @@ namespace projecte_eywa
             {
                 if (user.username.Equals(textBoxUser.Text) && BCrypt.Net.BCrypt.EnhancedVerify(textBoxPassword.Text, user.password))
                 {
-                    actualUser = user;
+                    this.user = user;
                     return true;
                 }
 

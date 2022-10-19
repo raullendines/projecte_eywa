@@ -22,10 +22,11 @@ namespace projecte_eywa
         bool add = false;
         bool modify = false;
         bool isFiltered = false;
-        public FormCharacters()
+        UserDesktop user;
+        public FormCharacters(UserDesktop user)
         {
             InitializeComponent();
-
+            this.user = user;
             getData();
 
         }
@@ -390,7 +391,7 @@ namespace projecte_eywa
 
         private void questionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormQuestions formQuestions = new FormQuestions();
+            FormQuestions formQuestions = new FormQuestions(user);
             formQuestions.Show();
             Program.changingForms = true;
             this.Close();
@@ -399,7 +400,7 @@ namespace projecte_eywa
 
         private void usersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormUsers formUsers = new FormUsers();
+            FormUsers formUsers = new FormUsers(user);
             formUsers.Show();
             Program.changingForms = true;
             this.Close();
@@ -411,6 +412,26 @@ namespace projecte_eywa
             if (!Program.changingForms)
             {
                 Application.Exit();
+            }
+        }
+
+        private void FormCharacters_Load(object sender, EventArgs e)
+        {
+            labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
+            menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
+        }
+
+
+        private void labelLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to log out?", "Log out", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                FormLogin formLogin = new FormLogin();
+                Program.changingForms = true;
+                this.Close();
+                Program.changingForms = false;
+                formLogin.Show();
             }
         }
     }

@@ -37,7 +37,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCharacters));
-            this.characterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.questionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,12 +66,7 @@
             this.buttonModify = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
-            this.characterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewCharacters = new System.Windows.Forms.DataGridView();
-            this.comboBoxFilter = new System.Windows.Forms.ComboBox();
-            this.buttonApplyFilters = new System.Windows.Forms.Button();
-            this.buttonClearFilters = new System.Windows.Forms.Button();
-            this.Filter = new System.Windows.Forms.Label();
             this.nameCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correctNumCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.urlImageCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,16 +74,28 @@
             this.categoryCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.difficultyCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.filmCharacter = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comboBoxFilter = new System.Windows.Forms.ComboBox();
+            this.buttonApplyFilters = new System.Windows.Forms.Button();
+            this.buttonClearFilters = new System.Windows.Forms.Button();
+            this.Filter = new System.Windows.Forms.Label();
+            this.panelActualUserData = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelLogout = new System.Windows.Forms.Label();
+            this.labelActualUserData = new System.Windows.Forms.Label();
+            this.labelActualUserIcon = new System.Windows.Forms.Label();
+            this.characterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.characterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBoxCharacter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCorrectNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).BeginInit();
+            this.panelActualUserData.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource1)).BeginInit();
@@ -146,7 +152,7 @@
             this.groupBoxCharacter.Controls.Add(this.textBoxNameCharacter);
             this.groupBoxCharacter.Controls.Add(this.labelNameCharacter);
             this.groupBoxCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCharacter.Location = new System.Drawing.Point(1083, 148);
+            this.groupBoxCharacter.Location = new System.Drawing.Point(1083, 231);
             this.groupBoxCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxCharacter.Name = "groupBoxCharacter";
             this.groupBoxCharacter.Padding = new System.Windows.Forms.Padding(2);
@@ -386,12 +392,12 @@
             // 
             // buttonCatalan
             // 
-            this.buttonCatalan.BackgroundImage = global::projecte_eywa.Properties.Resources.cataluña_bandera;
             this.buttonCatalan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonCatalan.FlatAppearance.BorderSize = 0;
             this.buttonCatalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCatalan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.buttonCatalan.Location = new System.Drawing.Point(1083, 93);
+            this.buttonCatalan.Image = global::projecte_eywa.Properties.Resources.cataluña_bandera__1_;
+            this.buttonCatalan.Location = new System.Drawing.Point(1083, 176);
             this.buttonCatalan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCatalan.Name = "buttonCatalan";
             this.buttonCatalan.Size = new System.Drawing.Size(37, 36);
@@ -401,11 +407,11 @@
             // 
             // buttonEnglish
             // 
-            this.buttonEnglish.BackgroundImage = global::projecte_eywa.Properties.Resources.bandera_england__1_;
             this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonEnglish.FlatAppearance.BorderSize = 0;
             this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEnglish.Location = new System.Drawing.Point(1292, 93);
+            this.buttonEnglish.Image = global::projecte_eywa.Properties.Resources.bandera_england__1_;
+            this.buttonEnglish.Location = new System.Drawing.Point(1292, 176);
             this.buttonEnglish.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEnglish.Name = "buttonEnglish";
             this.buttonEnglish.Size = new System.Drawing.Size(37, 36);
@@ -415,11 +421,11 @@
             // 
             // buttonSpanish
             // 
-            this.buttonSpanish.BackgroundImage = global::projecte_eywa.Properties.Resources.españa_boton;
             this.buttonSpanish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonSpanish.FlatAppearance.BorderSize = 0;
             this.buttonSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSpanish.Location = new System.Drawing.Point(1183, 93);
+            this.buttonSpanish.Image = global::projecte_eywa.Properties.Resources.españa_boton1;
+            this.buttonSpanish.Location = new System.Drawing.Point(1183, 176);
             this.buttonSpanish.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSpanish.Name = "buttonSpanish";
             this.buttonSpanish.Size = new System.Drawing.Size(37, 36);
@@ -435,7 +441,7 @@
             this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonModify.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
             this.buttonModify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonModify.Location = new System.Drawing.Point(169, 818);
+            this.buttonModify.Location = new System.Drawing.Point(169, 901);
             this.buttonModify.Margin = new System.Windows.Forms.Padding(2);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(103, 49);
@@ -451,7 +457,7 @@
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDelete.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
             this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDelete.Location = new System.Drawing.Point(291, 818);
+            this.buttonDelete.Location = new System.Drawing.Point(291, 901);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(103, 49);
@@ -467,7 +473,7 @@
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonAdd.Location = new System.Drawing.Point(52, 818);
+            this.buttonAdd.Location = new System.Drawing.Point(52, 901);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(103, 49);
@@ -506,7 +512,7 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewCharacters.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridViewCharacters.Location = new System.Drawing.Point(52, 148);
+            this.dataGridViewCharacters.Location = new System.Drawing.Point(52, 231);
             this.dataGridViewCharacters.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewCharacters.MultiSelect = false;
             this.dataGridViewCharacters.Name = "dataGridViewCharacters";
@@ -527,67 +533,6 @@
             this.dataGridViewCharacters.Size = new System.Drawing.Size(973, 652);
             this.dataGridViewCharacters.TabIndex = 1;
             this.dataGridViewCharacters.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCharacters_CellClick);
-            // 
-            // comboBoxFilter
-            // 
-            this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.comboBoxFilter.FormattingEnabled = true;
-            this.comboBoxFilter.Items.AddRange(new object[] {
-            "Drama",
-            "Ciència ficció",
-            "Acció",
-            "Comedia",
-            "Animació",
-            "Terror"});
-            this.comboBoxFilter.Location = new System.Drawing.Point(140, 87);
-            this.comboBoxFilter.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(528, 33);
-            this.comboBoxFilter.TabIndex = 18;
-            // 
-            // buttonApplyFilters
-            // 
-            this.buttonApplyFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
-            this.buttonApplyFilters.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonApplyFilters.FlatAppearance.BorderSize = 0;
-            this.buttonApplyFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonApplyFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonApplyFilters.ForeColor = System.Drawing.Color.Black;
-            this.buttonApplyFilters.Location = new System.Drawing.Point(780, 80);
-            this.buttonApplyFilters.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonApplyFilters.Name = "buttonApplyFilters";
-            this.buttonApplyFilters.Size = new System.Drawing.Size(103, 49);
-            this.buttonApplyFilters.TabIndex = 20;
-            this.buttonApplyFilters.Text = "Apply filter";
-            this.buttonApplyFilters.UseVisualStyleBackColor = false;
-            this.buttonApplyFilters.Click += new System.EventHandler(this.buttonApplyFilters_Click);
-            // 
-            // buttonClearFilters
-            // 
-            this.buttonClearFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
-            this.buttonClearFilters.FlatAppearance.BorderSize = 0;
-            this.buttonClearFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonClearFilters.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonClearFilters.Location = new System.Drawing.Point(922, 80);
-            this.buttonClearFilters.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonClearFilters.Name = "buttonClearFilters";
-            this.buttonClearFilters.Size = new System.Drawing.Size(103, 49);
-            this.buttonClearFilters.TabIndex = 19;
-            this.buttonClearFilters.Text = "Clear filter";
-            this.buttonClearFilters.UseVisualStyleBackColor = false;
-            this.buttonClearFilters.Click += new System.EventHandler(this.buttonClearFilters_Click);
-            // 
-            // Filter
-            // 
-            this.Filter.AutoSize = true;
-            this.Filter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filter.Location = new System.Drawing.Point(55, 90);
-            this.Filter.Name = "Filter";
-            this.Filter.Size = new System.Drawing.Size(66, 27);
-            this.Filter.TabIndex = 21;
-            this.Filter.Text = "Filter";
             // 
             // nameCharacter
             // 
@@ -666,6 +611,114 @@
             this.filmCharacter.Name = "filmCharacter";
             this.filmCharacter.ReadOnly = true;
             // 
+            // comboBoxFilter
+            // 
+            this.comboBoxFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.comboBoxFilter.FormattingEnabled = true;
+            this.comboBoxFilter.Items.AddRange(new object[] {
+            "Drama",
+            "Ciència ficció",
+            "Acció",
+            "Comedia",
+            "Animació",
+            "Terror"});
+            this.comboBoxFilter.Location = new System.Drawing.Point(140, 170);
+            this.comboBoxFilter.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxFilter.Name = "comboBoxFilter";
+            this.comboBoxFilter.Size = new System.Drawing.Size(528, 33);
+            this.comboBoxFilter.TabIndex = 18;
+            // 
+            // buttonApplyFilters
+            // 
+            this.buttonApplyFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
+            this.buttonApplyFilters.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonApplyFilters.FlatAppearance.BorderSize = 0;
+            this.buttonApplyFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonApplyFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApplyFilters.ForeColor = System.Drawing.Color.Black;
+            this.buttonApplyFilters.Location = new System.Drawing.Point(780, 163);
+            this.buttonApplyFilters.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonApplyFilters.Name = "buttonApplyFilters";
+            this.buttonApplyFilters.Size = new System.Drawing.Size(103, 49);
+            this.buttonApplyFilters.TabIndex = 20;
+            this.buttonApplyFilters.Text = "Apply filter";
+            this.buttonApplyFilters.UseVisualStyleBackColor = false;
+            this.buttonApplyFilters.Click += new System.EventHandler(this.buttonApplyFilters_Click);
+            // 
+            // buttonClearFilters
+            // 
+            this.buttonClearFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonClearFilters.FlatAppearance.BorderSize = 0;
+            this.buttonClearFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearFilters.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonClearFilters.Location = new System.Drawing.Point(922, 163);
+            this.buttonClearFilters.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonClearFilters.Name = "buttonClearFilters";
+            this.buttonClearFilters.Size = new System.Drawing.Size(103, 49);
+            this.buttonClearFilters.TabIndex = 19;
+            this.buttonClearFilters.Text = "Clear filter";
+            this.buttonClearFilters.UseVisualStyleBackColor = false;
+            this.buttonClearFilters.Click += new System.EventHandler(this.buttonClearFilters_Click);
+            // 
+            // Filter
+            // 
+            this.Filter.AutoSize = true;
+            this.Filter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Filter.Location = new System.Drawing.Point(55, 173);
+            this.Filter.Name = "Filter";
+            this.Filter.Size = new System.Drawing.Size(66, 27);
+            this.Filter.TabIndex = 21;
+            this.Filter.Text = "Filter";
+            // 
+            // panelActualUserData
+            // 
+            this.panelActualUserData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
+            this.panelActualUserData.Controls.Add(this.label2);
+            this.panelActualUserData.Controls.Add(this.labelLogout);
+            this.panelActualUserData.Controls.Add(this.labelActualUserData);
+            this.panelActualUserData.Controls.Add(this.labelActualUserIcon);
+            this.panelActualUserData.Location = new System.Drawing.Point(1642, 12);
+            this.panelActualUserData.Name = "panelActualUserData";
+            this.panelActualUserData.Size = new System.Drawing.Size(193, 118);
+            this.panelActualUserData.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.Image = global::projecte_eywa.Properties.Resources.person_FILL0_wght400_GRAD0_opsz48;
+            this.label2.Location = new System.Drawing.Point(79, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(36, 38);
+            this.label2.TabIndex = 3;
+            // 
+            // labelLogout
+            // 
+            this.labelLogout.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogout.Location = new System.Drawing.Point(8, 89);
+            this.labelLogout.Name = "labelLogout";
+            this.labelLogout.Size = new System.Drawing.Size(185, 25);
+            this.labelLogout.TabIndex = 2;
+            this.labelLogout.Text = "Log Out";
+            this.labelLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelLogout.Click += new System.EventHandler(this.labelLogout_Click);
+            // 
+            // labelActualUserData
+            // 
+            this.labelActualUserData.Font = new System.Drawing.Font("Montserrat Medium", 15F);
+            this.labelActualUserData.Location = new System.Drawing.Point(7, 58);
+            this.labelActualUserData.Name = "labelActualUserData";
+            this.labelActualUserData.Size = new System.Drawing.Size(185, 25);
+            this.labelActualUserData.TabIndex = 1;
+            this.labelActualUserData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelActualUserIcon
+            // 
+            this.labelActualUserIcon.Location = new System.Drawing.Point(79, 4);
+            this.labelActualUserIcon.Name = "labelActualUserIcon";
+            this.labelActualUserIcon.Size = new System.Drawing.Size(36, 38);
+            this.labelActualUserIcon.TabIndex = 0;
+            // 
             // formCharactersBindingSource2
             // 
             this.formCharactersBindingSource2.DataSource = typeof(projecte_eywa.FormCharacters);
@@ -688,6 +741,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.panelActualUserData);
             this.Controls.Add(this.Filter);
             this.Controls.Add(this.buttonApplyFilters);
             this.Controls.Add(this.buttonClearFilters);
@@ -707,14 +761,15 @@
             this.Text = "Characters";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormCharacters_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBoxCharacter.ResumeLayout(false);
             this.groupBoxCharacter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCorrectNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).EndInit();
+            this.panelActualUserData.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource1)).EndInit();
@@ -772,6 +827,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn categoryCharacter;
         private System.Windows.Forms.DataGridViewTextBoxColumn difficultyCharacter;
         private System.Windows.Forms.DataGridViewTextBoxColumn filmCharacter;
+        private System.Windows.Forms.Panel panelActualUserData;
+        private System.Windows.Forms.Label labelLogout;
+        private System.Windows.Forms.Label labelActualUserData;
+        private System.Windows.Forms.Label labelActualUserIcon;
+        private System.Windows.Forms.Label label2;
     }
 }
 
