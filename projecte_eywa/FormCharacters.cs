@@ -187,17 +187,25 @@ namespace projecte_eywa
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
-            modify = true;
+            if (dataGridViewCharacters.CurrentCell.RowIndex != -1)
+            {
+                modify = true;
 
-            visibleButtons();
+                visibleButtons();
 
-            controlBtnsDisabled();
+                controlBtnsDisabled();
 
-            disableDataGrid();
+                disableDataGrid();
 
-            languageClicked();
+                languageClicked();
 
-            enabledTextBoxes();
+                enabledTextBoxes();
+            }
+            else
+            {
+                MessageBox.Show("Please, select a character first");
+            }
+            
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
@@ -415,11 +423,7 @@ namespace projecte_eywa
             }
         }
 
-        private void FormCharacters_Load(object sender, EventArgs e)
-        {
-            labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
-            menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
-        }
+        
 
 
         private void labelLogout_Click(object sender, EventArgs e)
@@ -433,6 +437,51 @@ namespace projecte_eywa
                 Program.changingForms = false;
                 formLogin.Show();
             }
+        }
+        private void userType(UserDesktop user)
+        {
+            switch (user.type)
+            {
+                case "user":
+                    controlBtnsDisabled();
+                    usersToolStripMenuItem.Visible = false;
+                    buttonUsersIcon.Visible = false;
+                    //usersToolStripMenuItem.Enabled = false;  
+                    break;
+                case "admin":
+                    usersToolStripMenuItem.Visible = false;
+                    buttonUsersIcon.Visible = false;
+                    //usersToolStripMenuItem.Enabled = false; 
+                    break;
+                default:
+                    MessageBox.Show("Welcome Boss");
+                    break;
+            }
+        }
+
+        private void FormCharacters_Load(object sender, EventArgs e)
+        {
+            labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
+            menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
+            userType(user);
+        }
+
+        private void buttonQuestionsIcon_Click(object sender, EventArgs e)
+        {
+            FormQuestions formQuestions = new FormQuestions(user);
+            formQuestions.Show();
+            Program.changingForms = true;
+            this.Close();
+            Program.changingForms = false;
+        }
+
+        private void buttonUsersIcon_Click(object sender, EventArgs e)
+        {
+            FormUsers formUsers = new FormUsers(user);
+            formUsers.Show();
+            Program.changingForms = true;
+            this.Close();
+            Program.changingForms = false;
         }
     }
 }

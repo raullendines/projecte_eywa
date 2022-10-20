@@ -32,12 +32,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuestions));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuestions));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.charactersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarPersonatgesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,6 +81,8 @@
             this.buttonEnglish = new System.Windows.Forms.Button();
             this.buttonEspañol = new System.Windows.Forms.Button();
             this.buttonCatala = new System.Windows.Forms.Button();
+            this.buttonCharactersIcon = new System.Windows.Forms.Button();
+            this.buttonUsersIcon = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.difficultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -138,6 +140,7 @@
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -149,6 +152,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // newToolStripMenuItem
             // 
@@ -220,6 +224,7 @@
             this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonAdd.Location = new System.Drawing.Point(52, 901);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(103, 49);
@@ -234,6 +239,7 @@
             this.buttonModify.FlatAppearance.BorderSize = 0;
             this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonModify.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonModify.Location = new System.Drawing.Point(169, 901);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(103, 49);
@@ -452,6 +458,7 @@
             // 
             // textBoxQuestionDescription
             // 
+            this.textBoxQuestionDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxQuestionDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxQuestionDescription.Location = new System.Drawing.Point(246, 95);
             this.textBoxQuestionDescription.Multiline = true;
@@ -522,7 +529,7 @@
             this.buttonApplyFilter.Name = "buttonApplyFilter";
             this.buttonApplyFilter.Size = new System.Drawing.Size(103, 49);
             this.buttonApplyFilter.TabIndex = 11;
-            this.buttonApplyFilter.Text = "Apply Filter";
+            this.buttonApplyFilter.Text = "Apply filter";
             this.buttonApplyFilter.UseVisualStyleBackColor = false;
             this.buttonApplyFilter.Click += new System.EventHandler(this.buttonApplyFilter_Click);
             // 
@@ -536,7 +543,7 @@
             this.buttonClearFilter.Name = "buttonClearFilter";
             this.buttonClearFilter.Size = new System.Drawing.Size(103, 49);
             this.buttonClearFilter.TabIndex = 12;
-            this.buttonClearFilter.Text = "Clear Filter";
+            this.buttonClearFilter.Text = "Clear filter";
             this.buttonClearFilter.UseVisualStyleBackColor = false;
             this.buttonClearFilter.Click += new System.EventHandler(this.buttonClearFilter_Click);
             // 
@@ -573,10 +580,10 @@
             // 
             // labelActualUserIcon
             // 
-            this.labelActualUserIcon.Image = global::projecte_eywa.Properties.Resources.person_FILL0_wght400_GRAD0_opsz48;
-            this.labelActualUserIcon.Location = new System.Drawing.Point(79, 4);
+            this.labelActualUserIcon.Image = ((System.Drawing.Image)(resources.GetObject("labelActualUserIcon.Image")));
+            this.labelActualUserIcon.Location = new System.Drawing.Point(66, 3);
             this.labelActualUserIcon.Name = "labelActualUserIcon";
-            this.labelActualUserIcon.Size = new System.Drawing.Size(36, 38);
+            this.labelActualUserIcon.Size = new System.Drawing.Size(55, 55);
             this.labelActualUserIcon.TabIndex = 0;
             // 
             // buttonEnglish
@@ -618,6 +625,32 @@
             this.buttonCatala.UseMnemonic = false;
             this.buttonCatala.UseVisualStyleBackColor = true;
             this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
+            // 
+            // buttonCharactersIcon
+            // 
+            this.buttonCharactersIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonCharactersIcon.FlatAppearance.BorderSize = 0;
+            this.buttonCharactersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCharactersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonCharactersIcon.Image")));
+            this.buttonCharactersIcon.Location = new System.Drawing.Point(12, 46);
+            this.buttonCharactersIcon.Name = "buttonCharactersIcon";
+            this.buttonCharactersIcon.Size = new System.Drawing.Size(70, 70);
+            this.buttonCharactersIcon.TabIndex = 3;
+            this.buttonCharactersIcon.UseVisualStyleBackColor = true;
+            this.buttonCharactersIcon.Click += new System.EventHandler(this.buttonCharactersIcon_Click);
+            // 
+            // buttonUsersIcon
+            // 
+            this.buttonUsersIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonUsersIcon.FlatAppearance.BorderSize = 0;
+            this.buttonUsersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUsersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonUsersIcon.Image")));
+            this.buttonUsersIcon.Location = new System.Drawing.Point(102, 46);
+            this.buttonUsersIcon.Name = "buttonUsersIcon";
+            this.buttonUsersIcon.Size = new System.Drawing.Size(70, 70);
+            this.buttonUsersIcon.TabIndex = 14;
+            this.buttonUsersIcon.UseVisualStyleBackColor = true;
+            this.buttonUsersIcon.Click += new System.EventHandler(this.buttonUsersIcon_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -681,6 +714,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonUsersIcon);
+            this.Controls.Add(this.buttonCharactersIcon);
             this.Controls.Add(this.panelActualUserData);
             this.Controls.Add(this.buttonClearFilter);
             this.Controls.Add(this.buttonApplyFilter);
@@ -765,6 +800,8 @@
         private System.Windows.Forms.Label labelLogout;
         private System.Windows.Forms.Label labelActualUserData;
         private System.Windows.Forms.Label labelActualUserIcon;
+        private System.Windows.Forms.Button buttonCharactersIcon;
+        private System.Windows.Forms.Button buttonUsersIcon;
     }
 }
 

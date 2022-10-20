@@ -85,6 +85,8 @@
             this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.characterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.characterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonQuestionsIcon = new System.Windows.Forms.Button();
+            this.buttonUsersIcon = new System.Windows.Forms.Button();
             this.formCharactersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -233,6 +235,7 @@
             // buttonCancel
             // 
             this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
+            this.buttonCancel.FlatAppearance.BorderSize = 0;
             this.buttonCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -250,6 +253,7 @@
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
+            this.buttonSave.FlatAppearance.BorderSize = 0;
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSave.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSave.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -400,7 +404,7 @@
             this.buttonCatalan.Location = new System.Drawing.Point(1083, 176);
             this.buttonCatalan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCatalan.Name = "buttonCatalan";
-            this.buttonCatalan.Size = new System.Drawing.Size(37, 36);
+            this.buttonCatalan.Size = new System.Drawing.Size(103, 49);
             this.buttonCatalan.TabIndex = 4;
             this.buttonCatalan.UseVisualStyleBackColor = true;
             this.buttonCatalan.Click += new System.EventHandler(this.buttonCatalan_Click);
@@ -414,7 +418,7 @@
             this.buttonEnglish.Location = new System.Drawing.Point(1292, 176);
             this.buttonEnglish.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEnglish.Name = "buttonEnglish";
-            this.buttonEnglish.Size = new System.Drawing.Size(37, 36);
+            this.buttonEnglish.Size = new System.Drawing.Size(103, 49);
             this.buttonEnglish.TabIndex = 5;
             this.buttonEnglish.UseVisualStyleBackColor = true;
             this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
@@ -428,7 +432,7 @@
             this.buttonSpanish.Location = new System.Drawing.Point(1183, 176);
             this.buttonSpanish.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSpanish.Name = "buttonSpanish";
-            this.buttonSpanish.Size = new System.Drawing.Size(37, 36);
+            this.buttonSpanish.Size = new System.Drawing.Size(103, 49);
             this.buttonSpanish.TabIndex = 6;
             this.buttonSpanish.UseVisualStyleBackColor = true;
             this.buttonSpanish.Click += new System.EventHandler(this.buttonSpanish_Click);
@@ -454,7 +458,7 @@
             // 
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
             this.buttonDelete.FlatAppearance.BorderSize = 0;
-            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold);
             this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonDelete.Location = new System.Drawing.Point(291, 901);
@@ -635,7 +639,7 @@
             this.buttonApplyFilters.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonApplyFilters.FlatAppearance.BorderSize = 0;
             this.buttonApplyFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonApplyFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonApplyFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 10F, System.Drawing.FontStyle.Bold);
             this.buttonApplyFilters.ForeColor = System.Drawing.Color.Black;
             this.buttonApplyFilters.Location = new System.Drawing.Point(780, 163);
             this.buttonApplyFilters.Margin = new System.Windows.Forms.Padding(2);
@@ -651,7 +655,7 @@
             this.buttonClearFilters.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonClearFilters.FlatAppearance.BorderSize = 0;
             this.buttonClearFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonClearFilters.Font = new System.Drawing.Font("Montserrat SemiBold", 10F, System.Drawing.FontStyle.Bold);
             this.buttonClearFilters.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonClearFilters.Location = new System.Drawing.Point(922, 163);
             this.buttonClearFilters.Margin = new System.Windows.Forms.Padding(2);
@@ -686,10 +690,10 @@
             // 
             // label2
             // 
-            this.label2.Image = global::projecte_eywa.Properties.Resources.person_FILL0_wght400_GRAD0_opsz48;
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.Location = new System.Drawing.Point(79, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 38);
+            this.label2.Size = new System.Drawing.Size(55, 55);
             this.label2.TabIndex = 3;
             // 
             // labelLogout
@@ -719,6 +723,32 @@
             this.labelActualUserIcon.Size = new System.Drawing.Size(36, 38);
             this.labelActualUserIcon.TabIndex = 0;
             // 
+            // buttonQuestionsIcon
+            // 
+            this.buttonQuestionsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonQuestionsIcon.FlatAppearance.BorderSize = 0;
+            this.buttonQuestionsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQuestionsIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonQuestionsIcon.Image")));
+            this.buttonQuestionsIcon.Location = new System.Drawing.Point(12, 27);
+            this.buttonQuestionsIcon.Name = "buttonQuestionsIcon";
+            this.buttonQuestionsIcon.Size = new System.Drawing.Size(70, 70);
+            this.buttonQuestionsIcon.TabIndex = 15;
+            this.buttonQuestionsIcon.UseVisualStyleBackColor = true;
+            this.buttonQuestionsIcon.Click += new System.EventHandler(this.buttonQuestionsIcon_Click);
+            // 
+            // buttonUsersIcon
+            // 
+            this.buttonUsersIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonUsersIcon.FlatAppearance.BorderSize = 0;
+            this.buttonUsersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUsersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonUsersIcon.Image")));
+            this.buttonUsersIcon.Location = new System.Drawing.Point(100, 27);
+            this.buttonUsersIcon.Name = "buttonUsersIcon";
+            this.buttonUsersIcon.Size = new System.Drawing.Size(70, 70);
+            this.buttonUsersIcon.TabIndex = 23;
+            this.buttonUsersIcon.UseVisualStyleBackColor = true;
+            this.buttonUsersIcon.Click += new System.EventHandler(this.buttonUsersIcon_Click);
+            // 
             // formCharactersBindingSource2
             // 
             this.formCharactersBindingSource2.DataSource = typeof(projecte_eywa.FormCharacters);
@@ -741,6 +771,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonUsersIcon);
+            this.Controls.Add(this.buttonQuestionsIcon);
             this.Controls.Add(this.panelActualUserData);
             this.Controls.Add(this.Filter);
             this.Controls.Add(this.buttonApplyFilters);
@@ -761,6 +793,7 @@
             this.Text = "Characters";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormCharacters_FormClosed);
+            this.Load += new System.EventHandler(this.FormCharacters_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBoxCharacter.ResumeLayout(false);
@@ -832,6 +865,8 @@
         private System.Windows.Forms.Label labelActualUserData;
         private System.Windows.Forms.Label labelActualUserIcon;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonQuestionsIcon;
+        private System.Windows.Forms.Button buttonUsersIcon;
     }
 }
 

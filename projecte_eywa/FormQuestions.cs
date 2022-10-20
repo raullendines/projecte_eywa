@@ -382,14 +382,22 @@ namespace projecte_eywa
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
-            // Disable dataGrid 
-            dataGridViewQuestions.Enabled = false;
-            // Modify button clicked
-            modifyQuestion = true;
-            enableBoxes();
-            enableOkCancelButtons();
-            disableAddModifyDeleteButtons();
-            disableLanguageButtons();
+            if (index != -1)
+            {
+                // Disable dataGrid 
+                dataGridViewQuestions.Enabled = false;
+                // Modify button clicked
+                modifyQuestion = true;
+                enableBoxes();
+                enableOkCancelButtons();
+                disableAddModifyDeleteButtons();
+                disableLanguageButtons();
+            }
+            else
+            {
+                MessageBox.Show("Please, select a question first");
+            }
+            
 
 
         }
@@ -493,6 +501,7 @@ namespace projecte_eywa
         {
             labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
             menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
+            userType(user);
         }
 
         private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
@@ -768,6 +777,54 @@ namespace projecte_eywa
                 Program.changingForms = false;
                 formLogin.Show();
             }
+        }
+
+        private void userType(UserDesktop user)
+        {
+            switch (user.type)
+            {
+                case "user":
+                    disableAddModifyDeleteButtons();
+                    //userManagementToolStripMenuItem.Enabled = false;
+                    userManagementToolStripMenuItem.Visible = false;
+                    userManagementToolStripMenuItem.Visible = false;
+                    break;
+                case "admin":
+                    //userManagementToolStripMenuItem.Enabled = false;
+                    userManagementToolStripMenuItem.Visible = false;
+                    break;
+                default:
+                    MessageBox.Show("Welcome Boss");
+                    break;
+            }
+        }
+
+        private void buttonCharactersIcon_Click(object sender, EventArgs e)
+        {
+            FormCharacters formCharacters = new FormCharacters(user);
+            formCharacters.Show();
+            Program.changingForms = true;
+            this.Close();
+            Program.changingForms = false;
+        }
+
+        private void buttonUsersIcon_Click(object sender, EventArgs e)
+        {
+            FormUsers formUsers = new FormUsers(user);
+            formUsers.Show();
+            Program.changingForms = true;
+            this.Close();
+            Program.changingForms = false;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //saveJSON();
         }
     }
 }

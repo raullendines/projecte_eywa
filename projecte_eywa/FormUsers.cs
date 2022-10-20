@@ -567,18 +567,18 @@ namespace projecte_eywa
         private void questionManadgementToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormQuestions formQuestions = new FormQuestions(user);
-            formQuestions.Show();
             Program.changingForms = true;
             this.Close();
+            formQuestions.Show();  
             Program.changingForms = false;
         }
 
         private void characterManadgmenetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormCharacters formCharacters = new FormCharacters(user);
-            formCharacters.Show();
             Program.changingForms = true;
             this.Close();
+            formCharacters.Show();
             Program.changingForms = false;
         }
 
@@ -590,6 +590,24 @@ namespace projecte_eywa
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void buttonQuestionsIcon_Click(object sender, EventArgs e)
+        {
+            FormQuestions formQuestions = new FormQuestions(user);
+            Program.changingForms = true;
+            this.Close();
+            formQuestions.Show();
+            Program.changingForms = false;
+        }
+
+        private void buttonCharactersIcon_Click(object sender, EventArgs e)
+        {
+            FormCharacters formCharacters = new FormCharacters(user);
+            Program.changingForms = true;
+            this.Close();
+            formCharacters.Show();
+            Program.changingForms = false;
         }
     }
 }
