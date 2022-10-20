@@ -32,21 +32,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuestions));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.charactersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionarPersonatgesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.userManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.categoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewQuestions = new System.Windows.Forms.DataGridView();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
@@ -77,104 +69,29 @@
             this.panelActualUserData = new System.Windows.Forms.Panel();
             this.labelLogout = new System.Windows.Forms.Label();
             this.labelActualUserData = new System.Windows.Forms.Label();
+            this.buttonSave = new System.Windows.Forms.Button();
+            this.buttonUsersIcon = new System.Windows.Forms.Button();
+            this.buttonCharactersIcon = new System.Windows.Forms.Button();
             this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.buttonEnglish = new System.Windows.Forms.Button();
             this.buttonEspañol = new System.Windows.Forms.Button();
             this.buttonCatala = new System.Windows.Forms.Button();
-            this.buttonCharactersIcon = new System.Windows.Forms.Button();
-            this.buttonUsersIcon = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.difficultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correctanswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quizQuestionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.menuStrip1.SuspendLayout();
+            this.quizQuestionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).BeginInit();
             this.groupBoxQuestionDescription.SuspendLayout();
             this.panelActualUserData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.quizQuestionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quizQuestionsBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.charactersToolStripMenuItem,
-            this.newToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // charactersToolStripMenuItem
-            // 
-            this.charactersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionarPersonatgesToolStripMenuItem,
-            this.userManagementToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.exitToolStripMenuItem});
-            this.charactersToolStripMenuItem.Name = "charactersToolStripMenuItem";
-            this.charactersToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.charactersToolStripMenuItem.Text = "File";
-            // 
-            // gestionarPersonatgesToolStripMenuItem
-            // 
-            this.gestionarPersonatgesToolStripMenuItem.Name = "gestionarPersonatgesToolStripMenuItem";
-            this.gestionarPersonatgesToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.gestionarPersonatgesToolStripMenuItem.Text = "Charcater management";
-            this.gestionarPersonatgesToolStripMenuItem.Click += new System.EventHandler(this.gestionarPersonatgesToolStripMenuItem_Click);
-            // 
-            // userManagementToolStripMenuItem
-            // 
-            this.userManagementToolStripMenuItem.Name = "userManagementToolStripMenuItem";
-            this.userManagementToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.userManagementToolStripMenuItem.Text = "User management";
-            this.userManagementToolStripMenuItem.Click += new System.EventHandler(this.userManagementToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(201, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.categoryToolStripMenuItem});
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.newToolStripMenuItem.Text = "New";
-            // 
-            // categoryToolStripMenuItem
-            // 
-            this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.categoryToolStripMenuItem.Text = "Category";
             // 
             // dataGridViewQuestions
             // 
-            this.dataGridViewQuestions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewQuestions.AllowUserToOrderColumns = true;
             this.dataGridViewQuestions.AutoGenerateColumns = false;
-            this.dataGridViewQuestions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewQuestions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.dataGridViewQuestions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -185,27 +102,27 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewQuestions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewQuestions.ColumnHeadersHeight = 30;
+            this.dataGridViewQuestions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewQuestions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDataGridViewTextBoxColumn,
             this.questionDataGridViewTextBoxColumn,
             this.difficultyDataGridViewTextBoxColumn,
             this.categoryDataGridViewTextBoxColumn,
             this.correctanswerDataGridViewTextBoxColumn});
-            this.dataGridViewQuestions.DataSource = this.quizQuestionBindingSource;
+            this.dataGridViewQuestions.DataSource = this.quizQuestionsBindingSource;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Montserrat", 8F);
             dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewQuestions.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridViewQuestions.Location = new System.Drawing.Point(52, 231);
             this.dataGridViewQuestions.MultiSelect = false;
             this.dataGridViewQuestions.Name = "dataGridViewQuestions";
             this.dataGridViewQuestions.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -213,6 +130,9 @@
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewQuestions.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewQuestions.RowHeadersWidth = 62;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            this.dataGridViewQuestions.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridViewQuestions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewQuestions.Size = new System.Drawing.Size(973, 652);
             this.dataGridViewQuestions.TabIndex = 1;
@@ -578,9 +498,48 @@
             this.labelActualUserData.TabIndex = 1;
             this.labelActualUserData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // buttonSave
+            // 
+            this.buttonSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSave.FlatAppearance.BorderSize = 0;
+            this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSave.Image = ((System.Drawing.Image)(resources.GetObject("buttonSave.Image")));
+            this.buttonSave.Location = new System.Drawing.Point(232, 50);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.Size = new System.Drawing.Size(70, 70);
+            this.buttonSave.TabIndex = 15;
+            this.buttonSave.UseVisualStyleBackColor = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
+            // 
+            // buttonUsersIcon
+            // 
+            this.buttonUsersIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonUsersIcon.FlatAppearance.BorderSize = 0;
+            this.buttonUsersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUsersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonUsersIcon.Image")));
+            this.buttonUsersIcon.Location = new System.Drawing.Point(142, 50);
+            this.buttonUsersIcon.Name = "buttonUsersIcon";
+            this.buttonUsersIcon.Size = new System.Drawing.Size(70, 70);
+            this.buttonUsersIcon.TabIndex = 14;
+            this.buttonUsersIcon.UseVisualStyleBackColor = true;
+            this.buttonUsersIcon.Click += new System.EventHandler(this.buttonUsersIcon_Click);
+            // 
+            // buttonCharactersIcon
+            // 
+            this.buttonCharactersIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonCharactersIcon.FlatAppearance.BorderSize = 0;
+            this.buttonCharactersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCharactersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonCharactersIcon.Image")));
+            this.buttonCharactersIcon.Location = new System.Drawing.Point(52, 50);
+            this.buttonCharactersIcon.Name = "buttonCharactersIcon";
+            this.buttonCharactersIcon.Size = new System.Drawing.Size(70, 70);
+            this.buttonCharactersIcon.TabIndex = 3;
+            this.buttonCharactersIcon.UseVisualStyleBackColor = true;
+            this.buttonCharactersIcon.Click += new System.EventHandler(this.buttonCharactersIcon_Click);
+            // 
             // labelActualUserIcon
             // 
-            this.labelActualUserIcon.Image = ((System.Drawing.Image)(resources.GetObject("labelActualUserIcon.Image")));
+            this.labelActualUserIcon.Image = global::projecte_eywa.Properties.Resources.usuario__1_;
             this.labelActualUserIcon.Location = new System.Drawing.Point(66, 3);
             this.labelActualUserIcon.Name = "labelActualUserIcon";
             this.labelActualUserIcon.Size = new System.Drawing.Size(55, 55);
@@ -626,32 +585,6 @@
             this.buttonCatala.UseVisualStyleBackColor = true;
             this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
             // 
-            // buttonCharactersIcon
-            // 
-            this.buttonCharactersIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonCharactersIcon.FlatAppearance.BorderSize = 0;
-            this.buttonCharactersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCharactersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonCharactersIcon.Image")));
-            this.buttonCharactersIcon.Location = new System.Drawing.Point(12, 46);
-            this.buttonCharactersIcon.Name = "buttonCharactersIcon";
-            this.buttonCharactersIcon.Size = new System.Drawing.Size(70, 70);
-            this.buttonCharactersIcon.TabIndex = 3;
-            this.buttonCharactersIcon.UseVisualStyleBackColor = true;
-            this.buttonCharactersIcon.Click += new System.EventHandler(this.buttonCharactersIcon_Click);
-            // 
-            // buttonUsersIcon
-            // 
-            this.buttonUsersIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonUsersIcon.FlatAppearance.BorderSize = 0;
-            this.buttonUsersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUsersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonUsersIcon.Image")));
-            this.buttonUsersIcon.Location = new System.Drawing.Point(102, 46);
-            this.buttonUsersIcon.Name = "buttonUsersIcon";
-            this.buttonUsersIcon.Size = new System.Drawing.Size(70, 70);
-            this.buttonUsersIcon.TabIndex = 14;
-            this.buttonUsersIcon.UseVisualStyleBackColor = true;
-            this.buttonUsersIcon.Click += new System.EventHandler(this.buttonUsersIcon_Click);
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -663,6 +596,7 @@
             this.idDataGridViewTextBoxColumn.HeaderText = "ID";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 47;
             // 
             // questionDataGridViewTextBoxColumn
             // 
@@ -673,6 +607,7 @@
             this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
             this.questionDataGridViewTextBoxColumn.Name = "questionDataGridViewTextBoxColumn";
             this.questionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.questionDataGridViewTextBoxColumn.Width = 221;
             // 
             // difficultyDataGridViewTextBoxColumn
             // 
@@ -683,6 +618,7 @@
             this.difficultyDataGridViewTextBoxColumn.HeaderText = "Difficulty";
             this.difficultyDataGridViewTextBoxColumn.Name = "difficultyDataGridViewTextBoxColumn";
             this.difficultyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.difficultyDataGridViewTextBoxColumn.Width = 221;
             // 
             // categoryDataGridViewTextBoxColumn
             // 
@@ -693,6 +629,7 @@
             this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
             this.categoryDataGridViewTextBoxColumn.Name = "categoryDataGridViewTextBoxColumn";
             this.categoryDataGridViewTextBoxColumn.ReadOnly = true;
+            this.categoryDataGridViewTextBoxColumn.Width = 220;
             // 
             // correctanswerDataGridViewTextBoxColumn
             // 
@@ -703,10 +640,11 @@
             this.correctanswerDataGridViewTextBoxColumn.HeaderText = "Correct Answer";
             this.correctanswerDataGridViewTextBoxColumn.Name = "correctanswerDataGridViewTextBoxColumn";
             this.correctanswerDataGridViewTextBoxColumn.ReadOnly = true;
+            this.correctanswerDataGridViewTextBoxColumn.Width = 221;
             // 
-            // quizQuestionBindingSource
+            // quizQuestionsBindingSource
             // 
-            this.quizQuestionBindingSource.DataSource = typeof(projecte_eywa.QuizQuestion);
+            this.quizQuestionsBindingSource.DataSource = typeof(projecte_eywa.QuizQuestion);
             // 
             // FormQuestions
             // 
@@ -714,6 +652,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.buttonUsersIcon);
             this.Controls.Add(this.buttonCharactersIcon);
             this.Controls.Add(this.panelActualUserData);
@@ -729,30 +668,24 @@
             this.Controls.Add(this.buttonModify);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.dataGridViewQuestions);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormQuestions";
             this.Text = "Questions";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormQuestions_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormQuestions_FormClosed);
             this.Load += new System.EventHandler(this.FormQuestions_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).EndInit();
             this.groupBoxQuestionDescription.ResumeLayout(false);
             this.groupBoxQuestionDescription.PerformLayout();
             this.panelActualUserData.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.quizQuestionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quizQuestionsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem charactersToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridViewQuestions;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonModify;
@@ -779,17 +712,10 @@
         private System.Windows.Forms.Button buttonOk;
         private System.Windows.Forms.ComboBox comboBoxCategoryDescription;
         private System.Windows.Forms.ComboBox comboBoxDifficultDescription;
-        private System.Windows.Forms.ToolStripMenuItem gestionarPersonatgesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem userManagementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem categoryToolStripMenuItem;
         private System.Windows.Forms.Label labelFilter;
         private System.Windows.Forms.ComboBox comboBoxFilter;
         private System.Windows.Forms.Button buttonApplyFilter;
-        private System.Windows.Forms.BindingSource quizQuestionBindingSource;
+        private System.Windows.Forms.BindingSource quizQuestionsBindingSource;
         private System.Windows.Forms.Button buttonClearFilter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
@@ -802,6 +728,7 @@
         private System.Windows.Forms.Label labelActualUserIcon;
         private System.Windows.Forms.Button buttonCharactersIcon;
         private System.Windows.Forms.Button buttonUsersIcon;
+        private System.Windows.Forms.Button buttonSave;
     }
 }
 

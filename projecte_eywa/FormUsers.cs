@@ -32,6 +32,8 @@ namespace projecte_eywa
 
         bool DesktopForm = true;
         bool AndroidForm = false;
+
+        bool changes = false;
         
 
 
@@ -48,7 +50,6 @@ namespace projecte_eywa
         {
             loadData();
             labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
-            menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
         }
 
         private void loadData()
@@ -264,6 +265,7 @@ namespace projecte_eywa
                     clearTextBox();
                     disableTextBox();
                     enableButtons();
+                    changes = true;
                 }
 
             }
@@ -278,6 +280,7 @@ namespace projecte_eywa
                     clearTextBox();
                     disableTextBox();
                     enableButtons();
+                    changes = true;
                 }
             }
         }
@@ -292,7 +295,6 @@ namespace projecte_eywa
                 DesktopList.Add(new UserDesktop(username, password, type));
 
                 userDesktopBindingSource.DataSource = DataUtilities.ToDataTable(DesktopList);
-
                 dataGridViewUsers.DataSource = userDesktopBindingSource;
 
             }
@@ -411,11 +413,15 @@ namespace projecte_eywa
 
         private void FormUsers_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Do you want to save changes?", "Exit", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            if (changes)
             {
-                saveData();
+                DialogResult dialogResult = MessageBox.Show("Do you want to save changes?", "Exit", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    saveData();
+                }
             }
+            
         }
 
         private void dataGridViewUsers_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -484,6 +490,7 @@ namespace projecte_eywa
 
                 dataGridViewUsers.DataSource = userDesktopBindingSource;
                 clearTextBox();
+                changes = true;
             }
             else
             {
@@ -492,6 +499,7 @@ namespace projecte_eywa
 
                 dataGridViewUsers.DataSource = userAndroidBindingSource;
                 clearTextBox();
+                changes = true;
             }
         }
 
@@ -608,6 +616,11 @@ namespace projecte_eywa
             this.Close();
             formCharacters.Show();
             Program.changingForms = false;
+        }
+
+        private void buttonSaveJSON_Click(object sender, EventArgs e)
+        {
+            //saveData();
         }
     }
 }

@@ -37,9 +37,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCharacters));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.questionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxCharacter = new System.Windows.Forms.GroupBox();
             this.textBoxDescriptionCharacterCat = new System.Windows.Forms.TextBox();
             this.comboBoxDifficulty = new System.Windows.Forms.ComboBox();
@@ -60,9 +57,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNameCharacter = new System.Windows.Forms.TextBox();
             this.labelNameCharacter = new System.Windows.Forms.Label();
-            this.buttonCatalan = new System.Windows.Forms.Button();
-            this.buttonEnglish = new System.Windows.Forms.Button();
-            this.buttonSpanish = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
@@ -79,58 +73,33 @@
             this.buttonClearFilters = new System.Windows.Forms.Button();
             this.Filter = new System.Windows.Forms.Label();
             this.panelActualUserData = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.labelLogout = new System.Windows.Forms.Label();
             this.labelActualUserData = new System.Windows.Forms.Label();
             this.labelActualUserIcon = new System.Windows.Forms.Label();
-            this.characterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.characterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.buttonQuestionsIcon = new System.Windows.Forms.Button();
+            this.buttonSaveJSON = new System.Windows.Forms.Button();
             this.buttonUsersIcon = new System.Windows.Forms.Button();
+            this.buttonQuestionsIcon = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.buttonSpanish = new System.Windows.Forms.Button();
+            this.buttonEnglish = new System.Windows.Forms.Button();
+            this.buttonCatalan = new System.Windows.Forms.Button();
+            this.quizCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.characterBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.menuStrip1.SuspendLayout();
             this.groupBoxCharacter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCorrectNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).BeginInit();
             this.panelActualUserData.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quizCharactersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.questionsToolStripMenuItem,
-            this.usersToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // questionsToolStripMenuItem
-            // 
-            this.questionsToolStripMenuItem.Name = "questionsToolStripMenuItem";
-            this.questionsToolStripMenuItem.Size = new System.Drawing.Size(72, 22);
-            this.questionsToolStripMenuItem.Text = "Questions";
-            this.questionsToolStripMenuItem.Click += new System.EventHandler(this.questionsToolStripMenuItem_Click);
-            // 
-            // usersToolStripMenuItem
-            // 
-            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(47, 22);
-            this.usersToolStripMenuItem.Text = "Users";
-            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // groupBoxCharacter
             // 
@@ -394,49 +363,6 @@
             this.labelNameCharacter.TabIndex = 0;
             this.labelNameCharacter.Text = "Name";
             // 
-            // buttonCatalan
-            // 
-            this.buttonCatalan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonCatalan.FlatAppearance.BorderSize = 0;
-            this.buttonCatalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCatalan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
-            this.buttonCatalan.Image = global::projecte_eywa.Properties.Resources.cataluña_bandera__1_;
-            this.buttonCatalan.Location = new System.Drawing.Point(1083, 176);
-            this.buttonCatalan.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonCatalan.Name = "buttonCatalan";
-            this.buttonCatalan.Size = new System.Drawing.Size(103, 49);
-            this.buttonCatalan.TabIndex = 4;
-            this.buttonCatalan.UseVisualStyleBackColor = true;
-            this.buttonCatalan.Click += new System.EventHandler(this.buttonCatalan_Click);
-            // 
-            // buttonEnglish
-            // 
-            this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonEnglish.FlatAppearance.BorderSize = 0;
-            this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEnglish.Image = global::projecte_eywa.Properties.Resources.bandera_england__1_;
-            this.buttonEnglish.Location = new System.Drawing.Point(1292, 176);
-            this.buttonEnglish.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonEnglish.Name = "buttonEnglish";
-            this.buttonEnglish.Size = new System.Drawing.Size(103, 49);
-            this.buttonEnglish.TabIndex = 5;
-            this.buttonEnglish.UseVisualStyleBackColor = true;
-            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
-            // 
-            // buttonSpanish
-            // 
-            this.buttonSpanish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonSpanish.FlatAppearance.BorderSize = 0;
-            this.buttonSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSpanish.Image = global::projecte_eywa.Properties.Resources.españa_boton1;
-            this.buttonSpanish.Location = new System.Drawing.Point(1183, 176);
-            this.buttonSpanish.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonSpanish.Name = "buttonSpanish";
-            this.buttonSpanish.Size = new System.Drawing.Size(103, 49);
-            this.buttonSpanish.TabIndex = 6;
-            this.buttonSpanish.UseVisualStyleBackColor = true;
-            this.buttonSpanish.Click += new System.EventHandler(this.buttonSpanish_Click);
-            // 
             // buttonModify
             // 
             this.buttonModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
@@ -688,14 +614,6 @@
             this.panelActualUserData.Size = new System.Drawing.Size(193, 118);
             this.panelActualUserData.TabIndex = 22;
             // 
-            // label2
-            // 
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(79, 4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 55);
-            this.label2.TabIndex = 3;
-            // 
             // labelLogout
             // 
             this.labelLogout.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -723,18 +641,18 @@
             this.labelActualUserIcon.Size = new System.Drawing.Size(36, 38);
             this.labelActualUserIcon.TabIndex = 0;
             // 
-            // buttonQuestionsIcon
+            // buttonSaveJSON
             // 
-            this.buttonQuestionsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonQuestionsIcon.FlatAppearance.BorderSize = 0;
-            this.buttonQuestionsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQuestionsIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonQuestionsIcon.Image")));
-            this.buttonQuestionsIcon.Location = new System.Drawing.Point(12, 27);
-            this.buttonQuestionsIcon.Name = "buttonQuestionsIcon";
-            this.buttonQuestionsIcon.Size = new System.Drawing.Size(70, 70);
-            this.buttonQuestionsIcon.TabIndex = 15;
-            this.buttonQuestionsIcon.UseVisualStyleBackColor = true;
-            this.buttonQuestionsIcon.Click += new System.EventHandler(this.buttonQuestionsIcon_Click);
+            this.buttonSaveJSON.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSaveJSON.FlatAppearance.BorderSize = 0;
+            this.buttonSaveJSON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSaveJSON.Image = ((System.Drawing.Image)(resources.GetObject("buttonSaveJSON.Image")));
+            this.buttonSaveJSON.Location = new System.Drawing.Point(232, 50);
+            this.buttonSaveJSON.Name = "buttonSaveJSON";
+            this.buttonSaveJSON.Size = new System.Drawing.Size(70, 70);
+            this.buttonSaveJSON.TabIndex = 24;
+            this.buttonSaveJSON.UseVisualStyleBackColor = true;
+            this.buttonSaveJSON.Click += new System.EventHandler(this.button1_Click);
             // 
             // buttonUsersIcon
             // 
@@ -742,12 +660,76 @@
             this.buttonUsersIcon.FlatAppearance.BorderSize = 0;
             this.buttonUsersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonUsersIcon.Image")));
-            this.buttonUsersIcon.Location = new System.Drawing.Point(100, 27);
+            this.buttonUsersIcon.Location = new System.Drawing.Point(142, 50);
             this.buttonUsersIcon.Name = "buttonUsersIcon";
             this.buttonUsersIcon.Size = new System.Drawing.Size(70, 70);
             this.buttonUsersIcon.TabIndex = 23;
             this.buttonUsersIcon.UseVisualStyleBackColor = true;
             this.buttonUsersIcon.Click += new System.EventHandler(this.buttonUsersIcon_Click);
+            // 
+            // buttonQuestionsIcon
+            // 
+            this.buttonQuestionsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonQuestionsIcon.FlatAppearance.BorderSize = 0;
+            this.buttonQuestionsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQuestionsIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonQuestionsIcon.Image")));
+            this.buttonQuestionsIcon.Location = new System.Drawing.Point(52, 50);
+            this.buttonQuestionsIcon.Name = "buttonQuestionsIcon";
+            this.buttonQuestionsIcon.Size = new System.Drawing.Size(70, 70);
+            this.buttonQuestionsIcon.TabIndex = 15;
+            this.buttonQuestionsIcon.UseVisualStyleBackColor = true;
+            this.buttonQuestionsIcon.Click += new System.EventHandler(this.buttonQuestionsIcon_Click);
+            // 
+            // label2
+            // 
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.Location = new System.Drawing.Point(79, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 55);
+            this.label2.TabIndex = 3;
+            // 
+            // buttonSpanish
+            // 
+            this.buttonSpanish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSpanish.FlatAppearance.BorderSize = 0;
+            this.buttonSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSpanish.Image = global::projecte_eywa.Properties.Resources.españa_boton1;
+            this.buttonSpanish.Location = new System.Drawing.Point(1183, 176);
+            this.buttonSpanish.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSpanish.Name = "buttonSpanish";
+            this.buttonSpanish.Size = new System.Drawing.Size(103, 49);
+            this.buttonSpanish.TabIndex = 6;
+            this.buttonSpanish.UseVisualStyleBackColor = true;
+            this.buttonSpanish.Click += new System.EventHandler(this.buttonSpanish_Click);
+            // 
+            // buttonEnglish
+            // 
+            this.buttonEnglish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonEnglish.FlatAppearance.BorderSize = 0;
+            this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEnglish.Image = global::projecte_eywa.Properties.Resources.bandera_england__1_;
+            this.buttonEnglish.Location = new System.Drawing.Point(1292, 176);
+            this.buttonEnglish.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEnglish.Name = "buttonEnglish";
+            this.buttonEnglish.Size = new System.Drawing.Size(103, 49);
+            this.buttonEnglish.TabIndex = 5;
+            this.buttonEnglish.UseVisualStyleBackColor = true;
+            this.buttonEnglish.Click += new System.EventHandler(this.buttonEnglish_Click);
+            // 
+            // buttonCatalan
+            // 
+            this.buttonCatalan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonCatalan.FlatAppearance.BorderSize = 0;
+            this.buttonCatalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCatalan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
+            this.buttonCatalan.Image = global::projecte_eywa.Properties.Resources.cataluña_bandera__1_;
+            this.buttonCatalan.Location = new System.Drawing.Point(1083, 176);
+            this.buttonCatalan.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonCatalan.Name = "buttonCatalan";
+            this.buttonCatalan.Size = new System.Drawing.Size(103, 49);
+            this.buttonCatalan.TabIndex = 4;
+            this.buttonCatalan.UseVisualStyleBackColor = true;
+            this.buttonCatalan.Click += new System.EventHandler(this.buttonCatalan_Click);
             // 
             // formCharactersBindingSource2
             // 
@@ -771,6 +753,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonSaveJSON);
             this.Controls.Add(this.buttonUsersIcon);
             this.Controls.Add(this.buttonQuestionsIcon);
             this.Controls.Add(this.panelActualUserData);
@@ -786,22 +769,19 @@
             this.Controls.Add(this.buttonCatalan);
             this.Controls.Add(this.groupBoxCharacter);
             this.Controls.Add(this.dataGridViewCharacters);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormCharacters";
             this.Text = "Characters";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCharacters_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormCharacters_FormClosed);
             this.Load += new System.EventHandler(this.FormCharacters_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.groupBoxCharacter.ResumeLayout(false);
             this.groupBoxCharacter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCorrectNum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).EndInit();
             this.panelActualUserData.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quizCharactersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.characterBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource)).EndInit();
@@ -813,9 +793,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem questionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.GroupBox groupBoxCharacter;
         private System.Windows.Forms.Label labelNumCorrecto;
         private System.Windows.Forms.Label labelDifficultyCharacter;
@@ -837,7 +814,7 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.BindingSource characterBindingSource;
+        private System.Windows.Forms.BindingSource quizCharactersBindingSource;
         private System.Windows.Forms.BindingSource formCharactersBindingSource;
         private System.Windows.Forms.BindingSource characterBindingSource1;
         private System.Windows.Forms.BindingSource formCharactersBindingSource1;
@@ -867,6 +844,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonQuestionsIcon;
         private System.Windows.Forms.Button buttonUsersIcon;
+        private System.Windows.Forms.Button buttonSaveJSON;
     }
 }
 

@@ -38,6 +38,7 @@ namespace projecte_eywa
         bool addQuestion = false;
         bool modifyQuestion = false;
         bool isFiltered = false;
+        bool changes = false;
         
         public FormQuestions(UserDesktop user)
         {
@@ -96,8 +97,8 @@ namespace projecte_eywa
                     break;
             }
             initializeEmptyBoxes();
-            dataGridViewQuestions.DataSource = null;
-            dataGridViewQuestions.DataSource = quizQuestions;
+            quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
+            dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
         }
         private void saveSheet()
         {
@@ -241,6 +242,7 @@ namespace projecte_eywa
                                 MessageBox.Show("ERROR");
                                 break;
                         }
+
                     }
                     
                 
@@ -248,11 +250,11 @@ namespace projecte_eywa
                 
                 question.correct_answer = textBoxCorrectAnswer.Text;
                 question.incorrect_answers = ListIncorrects;
-
-
                
-                        
-                    
+
+
+
+
                 if (question.question == "" || (question.difficulty < 1 && question.difficulty > 4) || question.category == "" || question.correct_answer == "" || (question.incorrect_answers[0] == "" || question.incorrect_answers[1] == "" || question.incorrect_answers[2] == ""))
                 {
                      MessageBox.Show("Error - Empty box. " +
@@ -283,8 +285,9 @@ namespace projecte_eywa
                         disableOkCancelButtons();
                         enableAddModifyDeleteButtons();
                         enableLanguageButtons();
+                        changes = true;
 
-                        string category = null;
+                    string category = null;
                         
                     if (isFiltered)
                     {
@@ -364,8 +367,8 @@ namespace projecte_eywa
                         break;
                 }
                 quizQuestions[index].difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
-                dataGridViewQuestions.DataSource = null;
-                dataGridViewQuestions.DataSource = quizQuestions;
+                quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
+                dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
 
                 // Enable dataGrid 
                 dataGridViewQuestions.Enabled = true;
@@ -377,6 +380,7 @@ namespace projecte_eywa
                 enableLanguageButtons();
                 // Disable button
                 modifyQuestion = false;
+                changes = true;
             }
         }
 
@@ -408,6 +412,7 @@ namespace projecte_eywa
             dataGridViewQuestions.Rows.RemoveAt(index);
             disableBoxes();
             initializeEmptyBoxes();
+            changes = true;
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
@@ -500,8 +505,9 @@ namespace projecte_eywa
         private void FormQuestions_Load(object sender, EventArgs e)
         {
             labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
-            menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
             userType(user);
+            quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
+            dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
         }
 
         private void FormQuestions_FormClosed(object sender, FormClosedEventArgs e)
@@ -785,16 +791,15 @@ namespace projecte_eywa
             {
                 case "user":
                     disableAddModifyDeleteButtons();
-                    //userManagementToolStripMenuItem.Enabled = false;
-                    userManagementToolStripMenuItem.Visible = false;
-                    userManagementToolStripMenuItem.Visible = false;
+                    buttonUsersIcon.Visible = false;
+                    buttonSave.Location = new Point(142, 50);
                     break;
                 case "admin":
-                    //userManagementToolStripMenuItem.Enabled = false;
-                    userManagementToolStripMenuItem.Visible = false;
+                    buttonUsersIcon.Visible = false;
+                    buttonSave.Location = new Point(142, 50);
                     break;
                 default:
-                    MessageBox.Show("Welcome Boss");
+                    
                     break;
             }
         }
@@ -817,14 +822,21 @@ namespace projecte_eywa
             Program.changingForms = false;
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
             //saveJSON();
+        }
+
+        private void FormQuestions_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (changes)
+            {
+                DialogResult dialogResult = MessageBox.Show("Do you want to save changes?", "Exit", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    //saveJSON();
+                }
+            }
         }
     }
 }

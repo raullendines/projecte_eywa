@@ -46,7 +46,6 @@
             this.panelActualUserData = new System.Windows.Forms.Panel();
             this.labelLogout = new System.Windows.Forms.Label();
             this.labelActualUserData = new System.Windows.Forms.Label();
-            this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.groupBoxUsers = new System.Windows.Forms.GroupBox();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -68,15 +67,10 @@
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonDesktop = new System.Windows.Forms.Button();
             this.buttonAndroid = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.questionManadgementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.characterManadgmenetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buttonQuestionsIcon = new System.Windows.Forms.Button();
+            this.buttonSaveJSON = new System.Windows.Forms.Button();
             this.buttonCharactersIcon = new System.Windows.Forms.Button();
+            this.buttonQuestionsIcon = new System.Windows.Forms.Button();
+            this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userAndroidBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -84,7 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUsers)).BeginInit();
             this.panelActualUserData.SuspendLayout();
             this.groupBoxUsers.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAndroidBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDesktopBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -199,14 +192,6 @@
             this.labelActualUserData.Size = new System.Drawing.Size(185, 25);
             this.labelActualUserData.TabIndex = 1;
             this.labelActualUserData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // labelActualUserIcon
-            // 
-            this.labelActualUserIcon.Image = ((System.Drawing.Image)(resources.GetObject("labelActualUserIcon.Image")));
-            this.labelActualUserIcon.Location = new System.Drawing.Point(79, 4);
-            this.labelActualUserIcon.Name = "labelActualUserIcon";
-            this.labelActualUserIcon.Size = new System.Drawing.Size(55, 55);
-            this.labelActualUserIcon.TabIndex = 0;
             // 
             // groupBoxUsers
             // 
@@ -467,73 +452,18 @@
             this.buttonAndroid.UseVisualStyleBackColor = false;
             this.buttonAndroid.Click += new System.EventHandler(this.buttonAndroid_Click);
             // 
-            // menuStrip1
+            // buttonSaveJSON
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1904, 24);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.questionManadgementToolStripMenuItem,
-            this.characterManadgmenetToolStripMenuItem,
-            this.saveToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
-            // 
-            // questionManadgementToolStripMenuItem
-            // 
-            this.questionManadgementToolStripMenuItem.Name = "questionManadgementToolStripMenuItem";
-            this.questionManadgementToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.questionManadgementToolStripMenuItem.Text = "Question management";
-            this.questionManadgementToolStripMenuItem.Click += new System.EventHandler(this.questionManadgementToolStripMenuItem_Click);
-            // 
-            // characterManadgmenetToolStripMenuItem
-            // 
-            this.characterManadgmenetToolStripMenuItem.Name = "characterManadgmenetToolStripMenuItem";
-            this.characterManadgmenetToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.characterManadgmenetToolStripMenuItem.Text = "Character management";
-            this.characterManadgmenetToolStripMenuItem.Click += new System.EventHandler(this.characterManadgmenetToolStripMenuItem_Click);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.saveToolStripMenuItem.Text = "Save";
-            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // buttonQuestionsIcon
-            // 
-            this.buttonQuestionsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonQuestionsIcon.FlatAppearance.BorderSize = 0;
-            this.buttonQuestionsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQuestionsIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonQuestionsIcon.Image")));
-            this.buttonQuestionsIcon.Location = new System.Drawing.Point(12, 31);
-            this.buttonQuestionsIcon.Name = "buttonQuestionsIcon";
-            this.buttonQuestionsIcon.Size = new System.Drawing.Size(70, 70);
-            this.buttonQuestionsIcon.TabIndex = 16;
-            this.buttonQuestionsIcon.UseVisualStyleBackColor = true;
-            this.buttonQuestionsIcon.Click += new System.EventHandler(this.buttonQuestionsIcon_Click);
+            this.buttonSaveJSON.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonSaveJSON.FlatAppearance.BorderSize = 0;
+            this.buttonSaveJSON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSaveJSON.Image = ((System.Drawing.Image)(resources.GetObject("buttonSaveJSON.Image")));
+            this.buttonSaveJSON.Location = new System.Drawing.Point(232, 50);
+            this.buttonSaveJSON.Name = "buttonSaveJSON";
+            this.buttonSaveJSON.Size = new System.Drawing.Size(70, 70);
+            this.buttonSaveJSON.TabIndex = 18;
+            this.buttonSaveJSON.UseVisualStyleBackColor = true;
+            this.buttonSaveJSON.Click += new System.EventHandler(this.buttonSaveJSON_Click);
             // 
             // buttonCharactersIcon
             // 
@@ -541,12 +471,33 @@
             this.buttonCharactersIcon.FlatAppearance.BorderSize = 0;
             this.buttonCharactersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCharactersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonCharactersIcon.Image")));
-            this.buttonCharactersIcon.Location = new System.Drawing.Point(99, 31);
+            this.buttonCharactersIcon.Location = new System.Drawing.Point(142, 50);
             this.buttonCharactersIcon.Name = "buttonCharactersIcon";
             this.buttonCharactersIcon.Size = new System.Drawing.Size(70, 70);
             this.buttonCharactersIcon.TabIndex = 17;
             this.buttonCharactersIcon.UseVisualStyleBackColor = true;
             this.buttonCharactersIcon.Click += new System.EventHandler(this.buttonCharactersIcon_Click);
+            // 
+            // buttonQuestionsIcon
+            // 
+            this.buttonQuestionsIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonQuestionsIcon.FlatAppearance.BorderSize = 0;
+            this.buttonQuestionsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQuestionsIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonQuestionsIcon.Image")));
+            this.buttonQuestionsIcon.Location = new System.Drawing.Point(52, 50);
+            this.buttonQuestionsIcon.Name = "buttonQuestionsIcon";
+            this.buttonQuestionsIcon.Size = new System.Drawing.Size(70, 70);
+            this.buttonQuestionsIcon.TabIndex = 16;
+            this.buttonQuestionsIcon.UseVisualStyleBackColor = true;
+            this.buttonQuestionsIcon.Click += new System.EventHandler(this.buttonQuestionsIcon_Click);
+            // 
+            // labelActualUserIcon
+            // 
+            this.labelActualUserIcon.Image = ((System.Drawing.Image)(resources.GetObject("labelActualUserIcon.Image")));
+            this.labelActualUserIcon.Location = new System.Drawing.Point(79, 4);
+            this.labelActualUserIcon.Name = "labelActualUserIcon";
+            this.labelActualUserIcon.Size = new System.Drawing.Size(55, 55);
+            this.labelActualUserIcon.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -585,6 +536,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.buttonSaveJSON);
             this.Controls.Add(this.buttonCharactersIcon);
             this.Controls.Add(this.buttonQuestionsIcon);
             this.Controls.Add(this.buttonAndroid);
@@ -595,8 +547,7 @@
             this.Controls.Add(this.groupBoxUsers);
             this.Controls.Add(this.panelActualUserData);
             this.Controls.Add(this.dataGridViewUsers);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormUsers";
             this.Text = "Users";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -607,12 +558,9 @@
             this.panelActualUserData.ResumeLayout(false);
             this.groupBoxUsers.ResumeLayout(false);
             this.groupBoxUsers.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userAndroidBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userDesktopBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -653,14 +601,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn image;
         private System.Windows.Forms.DataGridViewTextBoxColumn gender;
         private System.Windows.Forms.DataGridViewTextBoxColumn age;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem questionManadgementToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem characterManadgmenetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button buttonQuestionsIcon;
         private System.Windows.Forms.Button buttonCharactersIcon;
+        private System.Windows.Forms.Button buttonSaveJSON;
     }
 }

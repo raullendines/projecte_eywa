@@ -22,6 +22,7 @@ namespace projecte_eywa
         bool add = false;
         bool modify = false;
         bool isFiltered = false;
+        bool changes = false;
         UserDesktop user;
         public FormCharacters(UserDesktop user)
         {
@@ -46,8 +47,8 @@ namespace projecte_eywa
             JArray LoadCharacters = JArray.Parse(File.ReadAllText(PATH, Encoding.Default));
             characters = LoadCharacters.ToObject<BindingList<QuizCharacter>>();
 
-            dataGridViewCharacters.DataSource = null;
-            dataGridViewCharacters.DataSource = characters;
+            quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
+            dataGridViewCharacters.DataSource = quizCharactersBindingSource;
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
@@ -214,6 +215,7 @@ namespace projecte_eywa
             {
                 int rowIndex = dataGridViewCharacters.CurrentCell.RowIndex;
                 dataGridViewCharacters.Rows.RemoveAt(rowIndex);
+                changes = true;
             }
 
         }
@@ -248,8 +250,9 @@ namespace projecte_eywa
                             image = imgUrl
                         }
                    );
-                        dataGridViewCharacters.DataSource = characters;
-
+                        quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
+                        dataGridViewCharacters.DataSource = quizCharactersBindingSource;
+                        changes = true;
                     }
                 }
                 else
@@ -272,6 +275,7 @@ namespace projecte_eywa
                 quizCharacter.category = comboBoxCategoryCharacter.Text;
                 quizCharacter.image = textBoxImgUrlCharacter.Text;
                 quizCharacter.num_correct = numericUpDownCorrectNum.Value;
+                changes = true;
             }
 
             //nullTextBoxes();
@@ -295,8 +299,8 @@ namespace projecte_eywa
         {
             if (e.RowIndex >= 0)
             {
+                //quizCharacter = (QuizCharacter)dataGridViewCharacters.CurrentRow.DataBoundItem;
                 quizCharacter = (QuizCharacter)dataGridViewCharacters.CurrentRow.DataBoundItem;
-
                 textBoxNameCharacter.Text = quizCharacter.name;
                 textBoxDescriptionCharacterEsp.Text = quizCharacter.description_esp;
                 textBoxDescriptionCharacterCat.Text = quizCharacter.description_cat;
@@ -444,17 +448,21 @@ namespace projecte_eywa
             {
                 case "user":
                     controlBtnsDisabled();
-                    usersToolStripMenuItem.Visible = false;
+                    buttonQuestionsIcon.Visible = true;
                     buttonUsersIcon.Visible = false;
-                    //usersToolStripMenuItem.Enabled = false;  
+                    buttonSaveJSON.Location = new Point(142, 50);
+
                     break;
                 case "admin":
-                    usersToolStripMenuItem.Visible = false;
+                    buttonQuestionsIcon.Visible=true;
                     buttonUsersIcon.Visible = false;
-                    //usersToolStripMenuItem.Enabled = false; 
+                    buttonSaveJSON.Location = new Point(142, 50);
                     break;
                 default:
-                    MessageBox.Show("Welcome Boss");
+                    buttonQuestionsIcon.Visible = true;
+                    buttonUsersIcon.Visible = true;
+                    buttonSaveJSON.Location = new Point(232, 50);
+
                     break;
             }
         }
@@ -462,7 +470,7 @@ namespace projecte_eywa
         private void FormCharacters_Load(object sender, EventArgs e)
         {
             labelActualUserData.Text = user.username.ToString() + " " + user.type.ToString();
-            menuStrip1.BackColor = Color.FromArgb(255, 178, 212, 223);
+            
             userType(user);
         }
 
@@ -482,6 +490,23 @@ namespace projecte_eywa
             Program.changingForms = true;
             this.Close();
             Program.changingForms = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //saveJSON();
+        }
+
+        private void FormCharacters_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (changes)
+            {
+                DialogResult dialogResult = MessageBox.Show("Do you want to save changes?", "Exit", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    //saveJSON();
+                }
+            }
         }
     }
 }
