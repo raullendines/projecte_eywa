@@ -69,19 +69,19 @@
             this.panelActualUserData = new System.Windows.Forms.Panel();
             this.labelLogout = new System.Windows.Forms.Label();
             this.labelActualUserData = new System.Windows.Forms.Label();
+            this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonUsersIcon = new System.Windows.Forms.Button();
             this.buttonCharactersIcon = new System.Windows.Forms.Button();
-            this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.buttonEnglish = new System.Windows.Forms.Button();
             this.buttonEspañol = new System.Windows.Forms.Button();
             this.buttonCatala = new System.Windows.Forms.Button();
+            this.quizQuestionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.questionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.difficultyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correctanswerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quizQuestionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).BeginInit();
             this.groupBoxQuestionDescription.SuspendLayout();
             this.panelActualUserData.SuspendLayout();
@@ -96,7 +96,7 @@
             this.dataGridViewQuestions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.MenuText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -112,7 +112,7 @@
             this.dataGridViewQuestions.DataSource = this.quizQuestionsBindingSource;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Montserrat", 8F);
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -124,15 +124,16 @@
             this.dataGridViewQuestions.ReadOnly = true;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Montserrat Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewQuestions.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridViewQuestions.RowHeadersWidth = 62;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dataGridViewQuestions.RowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridViewQuestions.RowTemplate.Height = 28;
             this.dataGridViewQuestions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewQuestions.Size = new System.Drawing.Size(973, 652);
             this.dataGridViewQuestions.TabIndex = 1;
@@ -143,7 +144,7 @@
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonAdd.Location = new System.Drawing.Point(52, 901);
             this.buttonAdd.Name = "buttonAdd";
@@ -158,7 +159,7 @@
             this.buttonModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonModify.FlatAppearance.BorderSize = 0;
             this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonModify.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonModify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonModify.Location = new System.Drawing.Point(169, 901);
             this.buttonModify.Name = "buttonModify";
@@ -173,7 +174,7 @@
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
             this.buttonDelete.FlatAppearance.BorderSize = 0;
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonDelete.Location = new System.Drawing.Point(291, 901);
             this.buttonDelete.Name = "buttonDelete";
@@ -214,7 +215,7 @@
             this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonCancel.FlatAppearance.BorderSize = 0;
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonCancel.Location = new System.Drawing.Point(490, 588);
             this.buttonCancel.Name = "buttonCancel";
@@ -230,7 +231,7 @@
             this.buttonOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonOk.FlatAppearance.BorderSize = 0;
             this.buttonOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOk.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buttonOk.Location = new System.Drawing.Point(628, 588);
             this.buttonOk.Name = "buttonOk";
@@ -245,7 +246,7 @@
             // 
             this.comboBoxCategoryDescription.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategoryDescription.Enabled = false;
-            this.comboBoxCategoryDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxCategoryDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxCategoryDescription.FormattingEnabled = true;
             this.comboBoxCategoryDescription.Items.AddRange(new object[] {
             "Science Fiction",
@@ -256,7 +257,7 @@
             "Drama"});
             this.comboBoxCategoryDescription.Location = new System.Drawing.Point(246, 427);
             this.comboBoxCategoryDescription.Name = "comboBoxCategoryDescription";
-            this.comboBoxCategoryDescription.Size = new System.Drawing.Size(482, 35);
+            this.comboBoxCategoryDescription.Size = new System.Drawing.Size(482, 33);
             this.comboBoxCategoryDescription.TabIndex = 24;
             this.comboBoxCategoryDescription.Tag = "";
             // 
@@ -264,7 +265,7 @@
             // 
             this.comboBoxDifficultDescription.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDifficultDescription.Enabled = false;
-            this.comboBoxDifficultDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxDifficultDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDifficultDescription.FormattingEnabled = true;
             this.comboBoxDifficultDescription.Items.AddRange(new object[] {
             "Easy ",
@@ -273,63 +274,63 @@
             "Legend"});
             this.comboBoxDifficultDescription.Location = new System.Drawing.Point(246, 487);
             this.comboBoxDifficultDescription.Name = "comboBoxDifficultDescription";
-            this.comboBoxDifficultDescription.Size = new System.Drawing.Size(482, 35);
+            this.comboBoxDifficultDescription.Size = new System.Drawing.Size(482, 33);
             this.comboBoxDifficultDescription.TabIndex = 23;
             // 
             // textBoxIncorrectAnswer3
             // 
-            this.textBoxIncorrectAnswer3.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIncorrectAnswer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxIncorrectAnswer3.Location = new System.Drawing.Point(246, 367);
             this.textBoxIncorrectAnswer3.Name = "textBoxIncorrectAnswer3";
             this.textBoxIncorrectAnswer3.ReadOnly = true;
-            this.textBoxIncorrectAnswer3.Size = new System.Drawing.Size(482, 32);
+            this.textBoxIncorrectAnswer3.Size = new System.Drawing.Size(482, 30);
             this.textBoxIncorrectAnswer3.TabIndex = 22;
             // 
             // textBoxIncorrectAnswer2
             // 
-            this.textBoxIncorrectAnswer2.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIncorrectAnswer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxIncorrectAnswer2.Location = new System.Drawing.Point(246, 307);
             this.textBoxIncorrectAnswer2.Name = "textBoxIncorrectAnswer2";
             this.textBoxIncorrectAnswer2.ReadOnly = true;
-            this.textBoxIncorrectAnswer2.Size = new System.Drawing.Size(482, 32);
+            this.textBoxIncorrectAnswer2.Size = new System.Drawing.Size(482, 30);
             this.textBoxIncorrectAnswer2.TabIndex = 21;
             // 
             // textBoxIncorrectAnswer1
             // 
-            this.textBoxIncorrectAnswer1.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIncorrectAnswer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxIncorrectAnswer1.Location = new System.Drawing.Point(246, 247);
             this.textBoxIncorrectAnswer1.Name = "textBoxIncorrectAnswer1";
             this.textBoxIncorrectAnswer1.ReadOnly = true;
-            this.textBoxIncorrectAnswer1.Size = new System.Drawing.Size(482, 32);
+            this.textBoxIncorrectAnswer1.Size = new System.Drawing.Size(482, 30);
             this.textBoxIncorrectAnswer1.TabIndex = 20;
             // 
             // labelDifficultyDescription
             // 
             this.labelDifficultyDescription.AutoSize = true;
-            this.labelDifficultyDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDifficultyDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDifficultyDescription.Location = new System.Drawing.Point(32, 490);
             this.labelDifficultyDescription.Name = "labelDifficultyDescription";
-            this.labelDifficultyDescription.Size = new System.Drawing.Size(108, 27);
+            this.labelDifficultyDescription.Size = new System.Drawing.Size(94, 25);
             this.labelDifficultyDescription.TabIndex = 19;
             this.labelDifficultyDescription.Text = "Difficulty";
             // 
             // labelCategoryDescription
             // 
             this.labelCategoryDescription.AutoSize = true;
-            this.labelCategoryDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCategoryDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCategoryDescription.Location = new System.Drawing.Point(32, 430);
             this.labelCategoryDescription.Name = "labelCategoryDescription";
-            this.labelCategoryDescription.Size = new System.Drawing.Size(106, 27);
+            this.labelCategoryDescription.Size = new System.Drawing.Size(100, 25);
             this.labelCategoryDescription.TabIndex = 18;
             this.labelCategoryDescription.Text = "Category";
             // 
             // labelIncorrectAnswer2Description
             // 
             this.labelIncorrectAnswer2Description.AutoSize = true;
-            this.labelIncorrectAnswer2Description.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncorrectAnswer2Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIncorrectAnswer2Description.Location = new System.Drawing.Point(32, 310);
             this.labelIncorrectAnswer2Description.Name = "labelIncorrectAnswer2Description";
-            this.labelIncorrectAnswer2Description.Size = new System.Drawing.Size(185, 27);
+            this.labelIncorrectAnswer2Description.Size = new System.Drawing.Size(171, 25);
             this.labelIncorrectAnswer2Description.TabIndex = 17;
             this.labelIncorrectAnswer2Description.Text = "Incorrect answer\r\n";
             this.labelIncorrectAnswer2Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -337,10 +338,10 @@
             // labelIncorrectAnswer3Description
             // 
             this.labelIncorrectAnswer3Description.AutoSize = true;
-            this.labelIncorrectAnswer3Description.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncorrectAnswer3Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIncorrectAnswer3Description.Location = new System.Drawing.Point(32, 370);
             this.labelIncorrectAnswer3Description.Name = "labelIncorrectAnswer3Description";
-            this.labelIncorrectAnswer3Description.Size = new System.Drawing.Size(185, 27);
+            this.labelIncorrectAnswer3Description.Size = new System.Drawing.Size(171, 25);
             this.labelIncorrectAnswer3Description.TabIndex = 16;
             this.labelIncorrectAnswer3Description.Text = "Incorrect answer";
             this.labelIncorrectAnswer3Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -348,30 +349,30 @@
             // labelIncorrectAnswer1Description
             // 
             this.labelIncorrectAnswer1Description.AutoSize = true;
-            this.labelIncorrectAnswer1Description.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIncorrectAnswer1Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIncorrectAnswer1Description.Location = new System.Drawing.Point(32, 250);
             this.labelIncorrectAnswer1Description.Name = "labelIncorrectAnswer1Description";
-            this.labelIncorrectAnswer1Description.Size = new System.Drawing.Size(185, 27);
+            this.labelIncorrectAnswer1Description.Size = new System.Drawing.Size(171, 25);
             this.labelIncorrectAnswer1Description.TabIndex = 15;
             this.labelIncorrectAnswer1Description.Text = "Incorrect answer";
             this.labelIncorrectAnswer1Description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBoxCorrectAnswer
             // 
-            this.textBoxCorrectAnswer.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCorrectAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCorrectAnswer.Location = new System.Drawing.Point(246, 187);
             this.textBoxCorrectAnswer.Name = "textBoxCorrectAnswer";
             this.textBoxCorrectAnswer.ReadOnly = true;
-            this.textBoxCorrectAnswer.Size = new System.Drawing.Size(482, 32);
+            this.textBoxCorrectAnswer.Size = new System.Drawing.Size(482, 30);
             this.textBoxCorrectAnswer.TabIndex = 14;
             // 
             // labelCorrectAnswerDescription
             // 
             this.labelCorrectAnswerDescription.AutoSize = true;
-            this.labelCorrectAnswerDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCorrectAnswerDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCorrectAnswerDescription.Location = new System.Drawing.Point(32, 190);
             this.labelCorrectAnswerDescription.Name = "labelCorrectAnswerDescription";
-            this.labelCorrectAnswerDescription.Size = new System.Drawing.Size(168, 27);
+            this.labelCorrectAnswerDescription.Size = new System.Drawing.Size(158, 25);
             this.labelCorrectAnswerDescription.TabIndex = 13;
             this.labelCorrectAnswerDescription.Text = "Correct answer";
             this.labelCorrectAnswerDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -379,7 +380,7 @@
             // textBoxQuestionDescription
             // 
             this.textBoxQuestionDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxQuestionDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxQuestionDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxQuestionDescription.Location = new System.Drawing.Point(246, 95);
             this.textBoxQuestionDescription.Multiline = true;
             this.textBoxQuestionDescription.Name = "textBoxQuestionDescription";
@@ -390,29 +391,29 @@
             // labelQuestionDescription
             // 
             this.labelQuestionDescription.AutoSize = true;
-            this.labelQuestionDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuestionDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelQuestionDescription.Location = new System.Drawing.Point(32, 98);
             this.labelQuestionDescription.Name = "labelQuestionDescription";
-            this.labelQuestionDescription.Size = new System.Drawing.Size(106, 27);
+            this.labelQuestionDescription.Size = new System.Drawing.Size(99, 25);
             this.labelQuestionDescription.TabIndex = 11;
             this.labelQuestionDescription.Text = "Question";
             // 
             // textBoxIdDescription
             // 
-            this.textBoxIdDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxIdDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxIdDescription.Location = new System.Drawing.Point(246, 35);
             this.textBoxIdDescription.Name = "textBoxIdDescription";
             this.textBoxIdDescription.ReadOnly = true;
-            this.textBoxIdDescription.Size = new System.Drawing.Size(482, 32);
+            this.textBoxIdDescription.Size = new System.Drawing.Size(482, 30);
             this.textBoxIdDescription.TabIndex = 10;
             // 
             // labelIdDescription
             // 
             this.labelIdDescription.AutoSize = true;
-            this.labelIdDescription.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIdDescription.Location = new System.Drawing.Point(32, 38);
             this.labelIdDescription.Name = "labelIdDescription";
-            this.labelIdDescription.Size = new System.Drawing.Size(35, 27);
+            this.labelIdDescription.Size = new System.Drawing.Size(33, 25);
             this.labelIdDescription.TabIndex = 9;
             this.labelIdDescription.Text = "ID";
             this.labelIdDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -420,10 +421,10 @@
             // labelFilter
             // 
             this.labelFilter.AutoSize = true;
-            this.labelFilter.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFilter.Location = new System.Drawing.Point(55, 173);
             this.labelFilter.Name = "labelFilter";
-            this.labelFilter.Size = new System.Drawing.Size(66, 27);
+            this.labelFilter.Size = new System.Drawing.Size(60, 25);
             this.labelFilter.TabIndex = 9;
             this.labelFilter.Text = "Filter";
             this.labelFilter.Click += new System.EventHandler(this.labelFilter_Click);
@@ -444,7 +445,7 @@
             this.buttonApplyFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(71)))));
             this.buttonApplyFilter.FlatAppearance.BorderSize = 0;
             this.buttonApplyFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonApplyFilter.Font = new System.Drawing.Font("Montserrat SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonApplyFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.buttonApplyFilter.Location = new System.Drawing.Point(780, 163);
             this.buttonApplyFilter.Name = "buttonApplyFilter";
             this.buttonApplyFilter.Size = new System.Drawing.Size(103, 49);
@@ -458,7 +459,7 @@
             this.buttonClearFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonClearFilter.FlatAppearance.BorderSize = 0;
             this.buttonClearFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClearFilter.Font = new System.Drawing.Font("Montserrat SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.buttonClearFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.buttonClearFilter.Location = new System.Drawing.Point(922, 163);
             this.buttonClearFilter.Name = "buttonClearFilter";
             this.buttonClearFilter.Size = new System.Drawing.Size(103, 49);
@@ -480,7 +481,7 @@
             // 
             // labelLogout
             // 
-            this.labelLogout.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLogout.Location = new System.Drawing.Point(8, 89);
             this.labelLogout.Name = "labelLogout";
             this.labelLogout.Size = new System.Drawing.Size(185, 25);
@@ -491,12 +492,20 @@
             // 
             // labelActualUserData
             // 
-            this.labelActualUserData.Font = new System.Drawing.Font("Montserrat Medium", 15F);
+            this.labelActualUserData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.labelActualUserData.Location = new System.Drawing.Point(7, 58);
             this.labelActualUserData.Name = "labelActualUserData";
             this.labelActualUserData.Size = new System.Drawing.Size(185, 25);
             this.labelActualUserData.TabIndex = 1;
             this.labelActualUserData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelActualUserIcon
+            // 
+            this.labelActualUserIcon.Image = global::projecte_eywa.Properties.Resources.usuario__1_;
+            this.labelActualUserIcon.Location = new System.Drawing.Point(66, 3);
+            this.labelActualUserIcon.Name = "labelActualUserIcon";
+            this.labelActualUserIcon.Size = new System.Drawing.Size(55, 55);
+            this.labelActualUserIcon.TabIndex = 0;
             // 
             // buttonSave
             // 
@@ -536,14 +545,6 @@
             this.buttonCharactersIcon.TabIndex = 3;
             this.buttonCharactersIcon.UseVisualStyleBackColor = true;
             this.buttonCharactersIcon.Click += new System.EventHandler(this.buttonCharactersIcon_Click);
-            // 
-            // labelActualUserIcon
-            // 
-            this.labelActualUserIcon.Image = global::projecte_eywa.Properties.Resources.usuario__1_;
-            this.labelActualUserIcon.Location = new System.Drawing.Point(66, 3);
-            this.labelActualUserIcon.Name = "labelActualUserIcon";
-            this.labelActualUserIcon.Size = new System.Drawing.Size(55, 55);
-            this.labelActualUserIcon.TabIndex = 0;
             // 
             // buttonEnglish
             // 
@@ -585,11 +586,15 @@
             this.buttonCatala.UseVisualStyleBackColor = true;
             this.buttonCatala.Click += new System.EventHandler(this.buttonCatala_Click);
             // 
+            // quizQuestionsBindingSource
+            // 
+            this.quizQuestionsBindingSource.DataSource = typeof(projecte_eywa.QuizQuestion);
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.idDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.idDataGridViewTextBoxColumn.FillWeight = 25.38071F;
@@ -601,7 +606,7 @@
             // questionDataGridViewTextBoxColumn
             // 
             this.questionDataGridViewTextBoxColumn.DataPropertyName = "question";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.questionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle3;
             this.questionDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.questionDataGridViewTextBoxColumn.HeaderText = "Question";
@@ -612,7 +617,7 @@
             // difficultyDataGridViewTextBoxColumn
             // 
             this.difficultyDataGridViewTextBoxColumn.DataPropertyName = "difficulty";
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.difficultyDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle4;
             this.difficultyDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.difficultyDataGridViewTextBoxColumn.HeaderText = "Difficulty";
@@ -623,7 +628,7 @@
             // categoryDataGridViewTextBoxColumn
             // 
             this.categoryDataGridViewTextBoxColumn.DataPropertyName = "category";
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.categoryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle5;
             this.categoryDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.categoryDataGridViewTextBoxColumn.HeaderText = "Category";
@@ -633,18 +638,14 @@
             // 
             // correctanswerDataGridViewTextBoxColumn
             // 
+            this.correctanswerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.correctanswerDataGridViewTextBoxColumn.DataPropertyName = "correct_answer";
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.correctanswerDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle6;
             this.correctanswerDataGridViewTextBoxColumn.FillWeight = 118.6548F;
             this.correctanswerDataGridViewTextBoxColumn.HeaderText = "Correct Answer";
             this.correctanswerDataGridViewTextBoxColumn.Name = "correctanswerDataGridViewTextBoxColumn";
             this.correctanswerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.correctanswerDataGridViewTextBoxColumn.Width = 221;
-            // 
-            // quizQuestionsBindingSource
-            // 
-            this.quizQuestionsBindingSource.DataSource = typeof(projecte_eywa.QuizQuestion);
             // 
             // FormQuestions
             // 
@@ -717,11 +718,6 @@
         private System.Windows.Forms.Button buttonApplyFilter;
         private System.Windows.Forms.BindingSource quizQuestionsBindingSource;
         private System.Windows.Forms.Button buttonClearFilter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn difficultyDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn correctanswerDataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panelActualUserData;
         private System.Windows.Forms.Label labelLogout;
         private System.Windows.Forms.Label labelActualUserData;
@@ -729,6 +725,11 @@
         private System.Windows.Forms.Button buttonCharactersIcon;
         private System.Windows.Forms.Button buttonUsersIcon;
         private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn questionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn difficultyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn categoryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correctanswerDataGridViewTextBoxColumn;
     }
 }
 

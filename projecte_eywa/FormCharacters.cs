@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,7 @@ namespace projecte_eywa
 
         BindingList<QuizCharacter> characters = new BindingList<QuizCharacter>();
         QuizCharacter quizCharacter;
+        int index;
         bool add = false;
         bool modify = false;
         bool isFiltered = false;
@@ -297,19 +299,20 @@ namespace projecte_eywa
 
         private void dataGridViewCharacters_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
+            int temporal = index;
+            index = dataGridViewCharacters.CurrentCell.RowIndex;
+            if (temporal != index && index < dataGridViewCharacters.RowCount - 1)
             {
-                //quizCharacter = (QuizCharacter)dataGridViewCharacters.CurrentRow.DataBoundItem;
-                quizCharacter = (QuizCharacter)dataGridViewCharacters.CurrentRow.DataBoundItem;
-                textBoxNameCharacter.Text = quizCharacter.name;
-                textBoxDescriptionCharacterEsp.Text = quizCharacter.description_esp;
-                textBoxDescriptionCharacterCat.Text = quizCharacter.description_cat;
-                textBoxDescriptionCharacterEng.Text = quizCharacter.description_eng;
-                comboBoxDifficulty.Text = quizCharacter.difficulty;
-                textBoxFilmCharacter.Text = quizCharacter.film;
-                comboBoxCategoryCharacter.Text = quizCharacter.category;
-                textBoxImgUrlCharacter.Text = quizCharacter.image;
-                numericUpDownCorrectNum.Value = quizCharacter.num_correct;
+                
+                textBoxNameCharacter.Text = characters[index].name;
+                textBoxDescriptionCharacterEsp.Text = characters[index].description_esp;
+                textBoxDescriptionCharacterCat.Text = characters[index].description_cat;
+                textBoxDescriptionCharacterEng.Text = characters[index].description_eng;
+                comboBoxDifficulty.Text = characters[index].difficulty;
+                textBoxFilmCharacter.Text = characters[index].film;
+                comboBoxCategoryCharacter.Text = characters[index].category;
+                textBoxImgUrlCharacter.Text = characters[index].image;
+                numericUpDownCorrectNum.Value = characters[index].num_correct;
 
             }
         }

@@ -46,6 +46,7 @@
             this.panelActualUserData = new System.Windows.Forms.Panel();
             this.labelLogout = new System.Windows.Forms.Label();
             this.labelActualUserData = new System.Windows.Forms.Label();
+            this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.groupBoxUsers = new System.Windows.Forms.GroupBox();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.buttonCancel = new System.Windows.Forms.Button();
@@ -70,7 +71,6 @@
             this.buttonSaveJSON = new System.Windows.Forms.Button();
             this.buttonCharactersIcon = new System.Windows.Forms.Button();
             this.buttonQuestionsIcon = new System.Windows.Forms.Button();
-            this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.userAndroidBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -90,7 +90,7 @@
             this.dataGridViewUsers.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -106,11 +106,14 @@
             this.age});
             this.dataGridViewUsers.DataSource = this.userAndroidBindingSource;
             this.dataGridViewUsers.Location = new System.Drawing.Point(52, 231);
+            this.dataGridViewUsers.MultiSelect = false;
             this.dataGridViewUsers.Name = "dataGridViewUsers";
             this.dataGridViewUsers.ReadOnly = true;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Montserrat Medium", 12F);
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.dataGridViewUsers.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridViewUsers.RowTemplate.Height = 28;
+            this.dataGridViewUsers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewUsers.Size = new System.Drawing.Size(973, 652);
             this.dataGridViewUsers.TabIndex = 1;
             this.dataGridViewUsers.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUsers_CellClick);
@@ -175,7 +178,7 @@
             // 
             // labelLogout
             // 
-            this.labelLogout.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLogout.Location = new System.Drawing.Point(8, 89);
             this.labelLogout.Name = "labelLogout";
             this.labelLogout.Size = new System.Drawing.Size(185, 25);
@@ -192,6 +195,14 @@
             this.labelActualUserData.Size = new System.Drawing.Size(185, 25);
             this.labelActualUserData.TabIndex = 1;
             this.labelActualUserData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelActualUserIcon
+            // 
+            this.labelActualUserIcon.Image = ((System.Drawing.Image)(resources.GetObject("labelActualUserIcon.Image")));
+            this.labelActualUserIcon.Location = new System.Drawing.Point(79, 4);
+            this.labelActualUserIcon.Name = "labelActualUserIcon";
+            this.labelActualUserIcon.Size = new System.Drawing.Size(55, 55);
+            this.labelActualUserIcon.TabIndex = 0;
             // 
             // groupBoxUsers
             // 
@@ -219,7 +230,7 @@
             // 
             this.comboBoxType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxType.Enabled = false;
-            this.comboBoxType.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxType.FormattingEnabled = true;
             this.comboBoxType.Items.AddRange(new object[] {
             "user",
@@ -227,7 +238,7 @@
             "superadmin"});
             this.comboBoxType.Location = new System.Drawing.Point(237, 157);
             this.comboBoxType.Name = "comboBoxType";
-            this.comboBoxType.Size = new System.Drawing.Size(498, 35);
+            this.comboBoxType.Size = new System.Drawing.Size(498, 33);
             this.comboBoxType.TabIndex = 14;
             // 
             // buttonCancel
@@ -235,7 +246,7 @@
             this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonCancel.FlatAppearance.BorderSize = 0;
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancel.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonCancel.Location = new System.Drawing.Point(490, 588);
             this.buttonCancel.Name = "buttonCancel";
@@ -251,7 +262,7 @@
             this.buttonSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonSave.FlatAppearance.BorderSize = 0;
             this.buttonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSave.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSave.ForeColor = System.Drawing.Color.White;
             this.buttonSave.Location = new System.Drawing.Point(628, 588);
             this.buttonSave.Name = "buttonSave";
@@ -264,59 +275,59 @@
             // 
             // textBoxAge
             // 
-            this.textBoxAge.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxAge.Location = new System.Drawing.Point(237, 277);
             this.textBoxAge.Name = "textBoxAge";
             this.textBoxAge.ReadOnly = true;
-            this.textBoxAge.Size = new System.Drawing.Size(498, 32);
+            this.textBoxAge.Size = new System.Drawing.Size(498, 30);
             this.textBoxAge.TabIndex = 11;
             this.textBoxAge.Visible = false;
             // 
             // textBoxGender
             // 
-            this.textBoxGender.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGender.Location = new System.Drawing.Point(237, 217);
             this.textBoxGender.Name = "textBoxGender";
             this.textBoxGender.ReadOnly = true;
-            this.textBoxGender.Size = new System.Drawing.Size(498, 32);
+            this.textBoxGender.Size = new System.Drawing.Size(498, 30);
             this.textBoxGender.TabIndex = 10;
             this.textBoxGender.Visible = false;
             // 
             // textBoxImage
             // 
-            this.textBoxImage.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxImage.Location = new System.Drawing.Point(237, 157);
             this.textBoxImage.Name = "textBoxImage";
             this.textBoxImage.ReadOnly = true;
-            this.textBoxImage.Size = new System.Drawing.Size(498, 32);
+            this.textBoxImage.Size = new System.Drawing.Size(498, 30);
             this.textBoxImage.TabIndex = 9;
             this.textBoxImage.Visible = false;
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(237, 97);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.ReadOnly = true;
-            this.textBoxPassword.Size = new System.Drawing.Size(498, 32);
+            this.textBoxPassword.Size = new System.Drawing.Size(498, 30);
             this.textBoxPassword.TabIndex = 7;
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.Location = new System.Drawing.Point(237, 35);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.ReadOnly = true;
-            this.textBoxUsername.Size = new System.Drawing.Size(498, 32);
+            this.textBoxUsername.Size = new System.Drawing.Size(498, 30);
             this.textBoxUsername.TabIndex = 6;
             // 
             // labelAge
             // 
             this.labelAge.AutoSize = true;
-            this.labelAge.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAge.Location = new System.Drawing.Point(32, 280);
             this.labelAge.Name = "labelAge";
-            this.labelAge.Size = new System.Drawing.Size(53, 27);
+            this.labelAge.Size = new System.Drawing.Size(51, 25);
             this.labelAge.TabIndex = 5;
             this.labelAge.Text = "Age";
             this.labelAge.Visible = false;
@@ -324,10 +335,10 @@
             // labelGender
             // 
             this.labelGender.AutoSize = true;
-            this.labelGender.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGender.Location = new System.Drawing.Point(32, 220);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(87, 27);
+            this.labelGender.Size = new System.Drawing.Size(83, 25);
             this.labelGender.TabIndex = 4;
             this.labelGender.Text = "Gender";
             this.labelGender.Visible = false;
@@ -335,10 +346,10 @@
             // labelImage
             // 
             this.labelImage.AutoSize = true;
-            this.labelImage.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelImage.Location = new System.Drawing.Point(32, 160);
             this.labelImage.Name = "labelImage";
-            this.labelImage.Size = new System.Drawing.Size(77, 27);
+            this.labelImage.Size = new System.Drawing.Size(71, 25);
             this.labelImage.TabIndex = 3;
             this.labelImage.Text = "Image";
             this.labelImage.Visible = false;
@@ -346,30 +357,30 @@
             // labelType
             // 
             this.labelType.AutoSize = true;
-            this.labelType.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelType.Location = new System.Drawing.Point(32, 162);
             this.labelType.Name = "labelType";
-            this.labelType.Size = new System.Drawing.Size(61, 27);
+            this.labelType.Size = new System.Drawing.Size(61, 25);
             this.labelType.TabIndex = 2;
             this.labelType.Text = "Type";
             // 
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.Location = new System.Drawing.Point(32, 100);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(112, 27);
+            this.labelPassword.Size = new System.Drawing.Size(106, 25);
             this.labelPassword.TabIndex = 1;
             this.labelPassword.Text = "Password";
             // 
             // labelUsername
             // 
             this.labelUsername.AutoSize = true;
-            this.labelUsername.Font = new System.Drawing.Font("Montserrat SemiBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.Location = new System.Drawing.Point(32, 40);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(117, 27);
+            this.labelUsername.Size = new System.Drawing.Size(110, 25);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "Username";
             // 
@@ -384,7 +395,7 @@
             this.buttonAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonAdd.FlatAppearance.BorderSize = 0;
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonAdd.Location = new System.Drawing.Point(52, 901);
             this.buttonAdd.Name = "buttonAdd";
@@ -399,7 +410,7 @@
             this.buttonModify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.buttonModify.FlatAppearance.BorderSize = 0;
             this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonModify.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonModify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
             this.buttonModify.Location = new System.Drawing.Point(169, 901);
             this.buttonModify.Name = "buttonModify";
@@ -414,7 +425,7 @@
             this.buttonDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(20)))), ((int)(((byte)(32)))));
             this.buttonDelete.FlatAppearance.BorderSize = 0;
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDelete.Font = new System.Drawing.Font("Montserrat Medium", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.buttonDelete.Location = new System.Drawing.Point(291, 901);
             this.buttonDelete.Name = "buttonDelete";
@@ -428,7 +439,7 @@
             // 
             this.buttonDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(71)))), ((int)(((byte)(186)))));
             this.buttonDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDesktop.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.buttonDesktop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.buttonDesktop.ForeColor = System.Drawing.Color.White;
             this.buttonDesktop.Location = new System.Drawing.Point(1715, 182);
             this.buttonDesktop.Name = "buttonDesktop";
@@ -442,7 +453,7 @@
             // 
             this.buttonAndroid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(217)))), ((int)(((byte)(87)))));
             this.buttonAndroid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAndroid.Font = new System.Drawing.Font("Montserrat SemiBold", 13F, System.Drawing.FontStyle.Bold);
+            this.buttonAndroid.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold);
             this.buttonAndroid.ForeColor = System.Drawing.Color.Black;
             this.buttonAndroid.Location = new System.Drawing.Point(1606, 182);
             this.buttonAndroid.Name = "buttonAndroid";
@@ -490,14 +501,6 @@
             this.buttonQuestionsIcon.TabIndex = 16;
             this.buttonQuestionsIcon.UseVisualStyleBackColor = true;
             this.buttonQuestionsIcon.Click += new System.EventHandler(this.buttonQuestionsIcon_Click);
-            // 
-            // labelActualUserIcon
-            // 
-            this.labelActualUserIcon.Image = ((System.Drawing.Image)(resources.GetObject("labelActualUserIcon.Image")));
-            this.labelActualUserIcon.Location = new System.Drawing.Point(79, 4);
-            this.labelActualUserIcon.Name = "labelActualUserIcon";
-            this.labelActualUserIcon.Size = new System.Drawing.Size(55, 55);
-            this.labelActualUserIcon.TabIndex = 0;
             // 
             // dataGridViewTextBoxColumn1
             // 
