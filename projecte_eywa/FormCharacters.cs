@@ -213,12 +213,16 @@ namespace projecte_eywa
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            if (textBoxNameCharacter.Text == null)
-            {
+
                 int rowIndex = dataGridViewCharacters.CurrentCell.RowIndex;
                 dataGridViewCharacters.Rows.RemoveAt(rowIndex);
+                characters.RemoveAt(rowIndex);
+                quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
+                dataGridViewCharacters.DataSource = quizCharactersBindingSource;
+                disabledTextBoxes();
+                nullTextBoxes();   
                 changes = true;
-            }
+            
 
         }
         private void buttonSave_Click(object sender, EventArgs e)
@@ -251,9 +255,54 @@ namespace projecte_eywa
                             description_esp = description,
                             image = imgUrl
                         }
-                   );
-                        quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
-                        dataGridViewCharacters.DataSource = quizCharactersBindingSource;
+                        );
+                        if (isFiltered)
+                        {
+                            int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
+                            switch (index)
+                            {
+                                case 0:
+                                    category = "science fiction";
+
+                                    break;
+                                case 1:
+                                    category = "action";
+                                    break;
+                                case 2:
+                                    category = "comedy";
+                                    break;
+                                case 3:
+                                    category = "horror";
+                                    break;
+                                case 4:
+                                    category = "animation";
+                                    break;
+                                case 5:
+                                    category = "drama";
+                                    break;
+                                default:
+                                    MessageBox.Show("ERROR");
+                                    break;
+                            }
+                            quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
+                            dataGridViewCharacters.DataSource = quizCharactersBindingSource;
+                            for (int i = 0; i < characters.Count; ++i)
+                            {
+                                if (!characters[i].category.Equals(category))
+                                {
+                                    dataGridViewCharacters.CurrentCell = null;
+                                    dataGridViewCharacters.Rows[i].Visible = false;
+                                }
+                            }
+
+                        }
+                        else
+                        {
+                            quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
+                            dataGridViewCharacters.DataSource = quizCharactersBindingSource;
+                        }
+                   
+                        
                         changes = true;
                     }
                 }
@@ -277,6 +326,7 @@ namespace projecte_eywa
                 quizCharacter.category = comboBoxCategoryCharacter.Text;
                 quizCharacter.image = textBoxImgUrlCharacter.Text;
                 quizCharacter.num_correct = numericUpDownCorrectNum.Value;
+                
                 changes = true;
             }
 
@@ -291,6 +341,8 @@ namespace projecte_eywa
             disabledTextBoxes();
 
             enabledDataGrid();
+
+            
 
             //Valores restablecidos
             add = false;
@@ -356,22 +408,22 @@ namespace projecte_eywa
                 switch (index)
                 {
                     case 0:
-                        category = "drama";
-                        break;
-                    case 1:
                         category = "science fiction";
                         break;
-                    case 2:
+                    case 1:
                         category = "action";
                         break;
-                    case 3:
+                    case 2:
                         category = "comedy";
+                        break;
+                    case 3:
+                        category = "horror";
                         break;
                     case 4:
                         category = "animation";
                         break;
                     case 5:
-                        category = "horror";
+                        category = "drama";
                         break;
                     default:
                         MessageBox.Show("ERROR");
@@ -395,6 +447,8 @@ namespace projecte_eywa
         {
             comboBoxFilter.SelectedIndex = -1;
             isFiltered = false;
+            quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
+            dataGridViewCharacters.DataSource = quizCharactersBindingSource;
             for (int i = 0; i < characters.Count; ++i)
             {
 

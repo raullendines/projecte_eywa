@@ -286,6 +286,8 @@ namespace projecte_eywa
                         enableAddModifyDeleteButtons();
                         enableLanguageButtons();
                         changes = true;
+                        quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
+                        dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
 
                     string category = null;
                         
@@ -317,6 +319,8 @@ namespace projecte_eywa
                                 MessageBox.Show("ERROR");
                                 break;
                         }
+                        quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
+                        dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
                         for (int i = 0; i < quizQuestions.Count; ++i)
                         {
                             if (!quizQuestions[i].category.Equals(category))
@@ -325,6 +329,7 @@ namespace projecte_eywa
                                 dataGridViewQuestions.Rows[i].Visible = false;
                             }
                         }
+                        
                     }
                 }
                
@@ -381,6 +386,8 @@ namespace projecte_eywa
                 // Disable button
                 modifyQuestion = false;
                 changes = true;
+                quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
+                dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
             }
         }
 
@@ -410,6 +417,9 @@ namespace projecte_eywa
         {
             index = dataGridViewQuestions.CurrentCell.RowIndex;
             dataGridViewQuestions.Rows.RemoveAt(index);
+            quizQuestions.RemoveAt(index);
+            quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
+            dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
             disableBoxes();
             initializeEmptyBoxes();
             changes = true;
