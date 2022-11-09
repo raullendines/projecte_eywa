@@ -45,7 +45,7 @@ namespace projecte_eywa
             InitializeComponent();
             this.user = user;
             getData();
-            //saveJSON();
+            saveJSON();
         }
 
         private void saveJSON()
@@ -54,16 +54,16 @@ namespace projecte_eywa
             //needs to delete the previous document
             JArray QuizQuestionsArrayEN = (JArray)JToken.FromObject(quizQuestionsEN);
             File.WriteAllText(EN_PATH, QuizQuestionsArrayEN.ToString());
-            //JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
-            //File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
-            //JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
-            //File.WriteAllText(CA_PATH, QuizQuestionsArrayCA.ToString());
+            JArray QuizQuestionsArrayES = (JArray)JToken.FromObject(quizQuestionsES);
+            File.WriteAllText(ES_PATH, QuizQuestionsArrayES.ToString());
+            JArray QuizQuestionsArrayCA = (JArray)JToken.FromObject(quizQuestionsCA);
+            File.WriteAllText(CA_PATH, QuizQuestionsArrayCA.ToString());
         }
 
         private void getData()
         {
 
-            JArray LoadQuestionsEN = JArray.Parse(File.ReadAllText(EN_PATH, Encoding.Default));
+            JArray LoadQuestionsEN = JArray.Parse(File.ReadAllText(EN_PATH, Encoding.UTF8));
             quizQuestionsEN = LoadQuestionsEN.ToObject<BindingList<QuizQuestion>>();
             JArray LoadQuestionsES = JArray.Parse(File.ReadAllText(ES_PATH, Encoding.UTF8));
             quizQuestionsES = LoadQuestionsES.ToObject<BindingList<QuizQuestion>>();
@@ -834,7 +834,7 @@ namespace projecte_eywa
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            //saveJSON();
+            saveJSON();
         }
 
         private void FormQuestions_FormClosing(object sender, FormClosingEventArgs e)
@@ -844,7 +844,7 @@ namespace projecte_eywa
                 DialogResult dialogResult = MessageBox.Show("Do you want to save changes?", "Exit", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    //saveJSON();
+                    saveJSON();
                 }
             }
         }

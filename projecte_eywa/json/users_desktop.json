@@ -28,5 +28,10 @@
     "username": "profe",
     "password": "$2a$11$4nJSetxWBXrK0Uxv4fjP2uFEG2uufQhpvqiOcYBZgdEVgyamkzv1O",
     "type": "admin"
+  },
+  {
+    "username": "Paz",
+    "password": "$2a$11$Iv5Ay4gkwgLnnayG4fLe8eRmMF2sUfNmCS924cgg6sVgnJ1BPhcxK",
+    "type": "user"
   }
 ]
