@@ -358,5 +358,377 @@
       "Un nefròleg",
       "Un oncòleg"
     ]
+  },
+  {
+    "id": 31,
+    "question": "Qui és l'assassí a 'Divendres 13'?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Pamela Voorhees",
+    "incorrect_answers": [
+      "Norman Bates",
+      "Jason Voorhees",
+      "Ghostface"
+    ]
+  },
+  {
+    "id": 32,
+    "question": "Qui va dirigir Scream?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "Wes Craven",
+    "incorrect_answers": [
+      "George Romero",
+      "John Carpenter",
+      "Ridley Scott"
+    ]
+  },
+  {
+    "id": 33,
+    "question": "Quina és l'ocupació de Hannibal Lecter, l'assassí en sèrie que apareix en la pel·lícula 'El silenci dels anyells'?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Psiquiatre",
+    "incorrect_answers": [
+      "Pediatrici",
+      "Xef",
+      "Dentista"
+    ]
+  },
+  {
+    "id": 34,
+    "question": "Qui és el dolent de Halloween?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Michael Myers",
+    "incorrect_answers": [
+      "Freddy Krueger",
+      "Pennywise",
+      "Jack Torrance"
+    ]
+  },
+  {
+    "id": 35,
+    "question": "Quin actor va fer el seu debut cinematogràfic a \r\n'Un malson al carrer Elm'?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Jhonny Depp",
+    "incorrect_answers": [
+      "Nicolas Cage",
+      "Robert Englund",
+      "Charlie Sheen"
+    ]
+  },
+  {
+    "id": 36,
+    "question": "Quin dels següents no es basava en una obra de Stephen King?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "L'exorcista",
+    "incorrect_answers": [
+      "Children of The Corn",
+      "Misteri",
+      "Cujo"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "Quin assassí de la vida real va inspirar la pel·lícula Psycho d'Alfred Hitchcock?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "Ed Gein",
+    "incorrect_answers": [
+      "Richard Speck",
+      "Charles Manson",
+      "Joel Rifkin"
+    ]
+  },
+  {
+    "id": 38,
+    "question": "El Leatherface de la massacre de Texas porta una màscara feta de què?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Pell humana",
+    "incorrect_answers": [
+      "Cuir",
+      "Plàstic",
+      "Cap de les anteriors"
+    ]
+  },
+  {
+    "id": 39,
+    "question": "Quina va ser la primera víctima de Michael Myers?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "La seva germana",
+    "incorrect_answers": [
+      "La seva mare",
+      "El seu pare",
+      "La seva mainadera"
+    ]
+  },
+  {
+    "id": 40,
+    "question": "Cuantes vegades has de dir Candyman en front del mirral per a què aparegui?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Cinc",
+    "incorrect_answers": [
+      "Tres",
+      "Quatre",
+      "Sis"
+    ]
+  },
+  {
+    "id": 41,
+    "question": "Quin és el nom del nen que apareix a la pel·lícula 'La profecia'?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "Damien",
+    "incorrect_answers": [
+      "Kevin",
+      "Devon",
+      "Jonathan"
+    ]
+  },
+  {
+    "id": 42,
+    "question": "Quina és la protagonista a la versió de 2020 de la pel·lícula 'L'home Invisible'?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "Elisabeth Moss",
+    "incorrect_answers": [
+      "Florence Pugh",
+      "Toni Collette",
+      "Lupita Nyong'o"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "Quin dels següents títols no és un títol de la saga 'Resident Evil'?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Resident Evil: Absolution",
+    "incorrect_answers": [
+      "Resident Evil: Extiction",
+      "Resident Evil: Afterlife",
+      "Resident Evil: Apocalypse"
+    ]
+  },
+  {
+    "id": 44,
+    "question": "Quina pel·lícula de terror clàssica presenta un assassí en sèrie en una màscara de William Shatner?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Halloween",
+    "incorrect_answers": [
+      "La boira",
+      "Divendres 13",
+      "The Texas Chain Saw Massacre"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "En quina pel·lícula de terror escriu el protagonista un llibre que conté només la línia 'Tot el treball i cap obra fa que Jack sigui un noi avorrit' repetit una vegada i una altra?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "The shining",
+    "incorrect_answers": [
+      "The Devil's rain",
+      "Writer's Block",
+      "La novena porta"
+    ]
+  },
+  {
+    "id": 46,
+    "question": "Quantes persones associades a 'L'exorcista' van morir durant la producció?",
+    "difficulty": 3,
+    "category": "horror",
+    "correct_answer": "9",
+    "incorrect_answers": [
+      "6",
+      "12",
+      "3"
+    ]
+  },
+  {
+    "id": 47,
+    "question": "Quina pel·lícula de terror va ser la primera que va mostrar una dona amb roba íntima?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "Psycho",
+    "incorrect_answers": [
+      "Bride of Frankestein",
+      "The Haunting",
+      "The Wax Museum"
+    ]
+  },
+  {
+    "id": 48,
+    "question": "De quin color és la samarreta de Freddy Krueger?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Vermell i Verd",
+    "incorrect_answers": [
+      "Vermell i Groc",
+      "Vermell i Negre",
+      "Vermell i Blau"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "A quantes persones mata Jason a la PRIMERA pel·lícula de 'Divendres 13'?",
+    "difficulty": 3,
+    "category": "horror",
+    "correct_answer": "0",
+    "incorrect_answers": [
+      "5",
+      "9",
+      "13"
+    ]
+  },
+  {
+    "id": 50,
+    "question": "A la pel·lícula Scream, quina es la regla número 1 a la llista de Randy per sobreviure a les pel·lícules de terror?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "No tenir sexe",
+    "incorrect_answers": [
+      "No beure o pendre drogues",
+      "No surtis fora sol",
+      "No diguis 'Vinc de seguida'"
+    ]
+  },
+  {
+    "id": 51,
+    "question": "Quina pel·lícula de terror va requerir la compra de 500 granotes de Florida i 100  Sud-Americanes?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "The Frogs",
+    "incorrect_answers": [
+      "Pet Sematary",
+      "Invasion of the body Snatchers",
+      "Creature from the black Lagoon"
+    ]
+  },
+  {
+    "id": 52,
+    "question": "Quin es el títol original de 'the Blob'?",
+    "difficulty": 4,
+    "category": "horror",
+    "correct_answer": "The Glob",
+    "incorrect_answers": [
+      "The Lump",
+      "The Spheroid",
+      "The Thing"
+    ]
+  },
+  {
+    "id": 53,
+    "question": "Quina pel·lícula de terror té un assassí en sèrie portant una màscara inspirada en un quadre de Edward Munch?",
+    "difficulty": 1,
+    "category": "horror",
+    "correct_answer": "Scream",
+    "incorrect_answers": [
+      "Halloween",
+      "The man in the black suit",
+      "Henry: Portrait of a serial killer"
+    ]
+  },
+  {
+    "id": 54,
+    "question": "Quina pel·lícula de terror va causar que alguns teatres suggerissin que els espectadors propensos a la malaltia de moviment es trobaven als seients del passadís?",
+    "difficulty": 4,
+    "category": "horror",
+    "correct_answer": "The Blair Witch Project",
+    "incorrect_answers": [
+      "Divendres 13",
+      "Vertigo",
+      "Mimic"
+    ]
+  },
+  {
+    "id": 55,
+    "question": "A Poltergeist, què agafa en Robbie Freeling per la finestra del seu dormitori?",
+    "difficulty": 3,
+    "category": "horror",
+    "correct_answer": "Un arbre",
+    "incorrect_answers": [
+      "Un pallasso",
+      "Un Indi",
+      "Un cub d'aigua"
+    ]
+  },
+  {
+    "id": 56,
+    "question": "Quan temps surt en pantalla Freddy Krueger a la primera pel·lícula de 'A nightmare on Elm Street'?",
+    "difficulty": 3,
+    "category": "horror",
+    "correct_answer": "7 minuts",
+    "incorrect_answers": [
+      "21 minuts",
+      "14 minuts",
+      "3 minuts"
+    ]
+  },
+  {
+    "id": 57,
+    "question": "On té lloc la pel·lícula 'Divendres 13'?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "Camp Crystal Lake",
+    "incorrect_answers": [
+      "Camp Kikiwaka",
+      "Camp Clear Lake",
+      "Camp Crescent Lake"
+    ]
+  },
+  {
+    "id": 58,
+    "question": "Per què Michael Myers no pot ser matat?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "Per una maledicció druida antiga",
+    "incorrect_answers": [
+      "És un Dèu",
+      "És un fantasma",
+      "Simplement té sort"
+    ]
+  },
+  {
+    "id": 59,
+    "question": "Quina actriu infantil se li va oferir originalment el paper de Regan MacNeill a 'L'exorcista'?",
+    "difficulty": 4,
+    "category": "horror",
+    "correct_answer": "Dana Plato",
+    "incorrect_answers": [
+      "Melissa Gilbert",
+      "Lisa Bonet",
+      "Carrie Fisher"
+    ]
+  },
+  {
+    "id": 60,
+    "question": "Quina pel·lícula de terror va ser grabada en només 7 dies?",
+    "difficulty": 3,
+    "category": "horror",
+    "correct_answer": "Paranormal Activity",
+    "incorrect_answers": [
+      "Halloween",
+      "A nightmare on Elm Street",
+      "The Texas chain saw massacre"
+    ]
+  },
+  {
+    "id": 61,
+    "question": "Quina pel·lícula de terror va ser nominada per primera vegada a l'Òscar per millor fotografia?",
+    "difficulty": 2,
+    "category": "horror",
+    "correct_answer": "L'exorcista",
+    "incorrect_answers": [
+      "The Shining",
+      "Psycho",
+      "El silenci dels anyells"
+    ]
   }
 ]
