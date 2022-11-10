@@ -358,5 +358,569 @@
       "Un nefrólogo",
       "Un oncólogo"
     ]
+  },
+  {
+    "id": 131,
+    "question": "¿Cuál de las siguientes canciones aparece en la banda sonora de 'Vaiana'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Cuán lejos voy",
+    "incorrect_answers": [
+      "Cuán lejos vamos",
+      "Cuán lejos vais",
+      "Cuán lejos vas"
+    ]
+  },
+  {
+    "id": 132,
+    "question": "¿Cómo se llama el pueblo de Pesadilla antes de Navidad?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Halloween Town",
+    "incorrect_answers": [
+      "Christmas Town",
+      "Skeletown",
+      "Gateshead"
+    ]
+  },
+  {
+    "id": 133,
+    "question": "¿Qué tipo de primate es el personaje de El Rey León, Rafiki?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Mandril",
+    "incorrect_answers": [
+      "Babuino",
+      "Mono araña",
+      "Tarsero"
+    ]
+  },
+  {
+    "id": 134,
+    "question": "¿Cómo se llama el protagonista de la película Coco?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Miguel",
+    "incorrect_answers": [
+      "Andreas",
+      "Paulo",
+      "Max"
+    ]
+  },
+  {
+    "id": 135,
+    "question": "¿Quién fue el director de la película animada 'El niño y la bestia'?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Mamoru Hosoda",
+    "incorrect_answers": [
+      "Hayao Miyazaki",
+      "Tatsuyuki Nagai",
+      "Seiji Mizushima"
+    ]
+  },
+  {
+    "id": 136,
+    "question": "¿Como se llaman los personajes principales de la película animada 'La ruta hacia El Dorado'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Tulio and Miguel",
+    "incorrect_answers": [
+      "Tulio and Marco",
+      "Manuel and Julio",
+      "Hector and Miguel"
+    ]
+  },
+  {
+    "id": 137,
+    "question": "¿En qué se transformó la Otra Madre en 'Coraline' cerca del final de la película?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Araña",
+    "incorrect_answers": [
+      "Mariposa",
+      "Avispa",
+      "Hormiga"
+    ]
+  },
+  {
+    "id": 138,
+    "question": "¿Cuándo se estrenó la película 'Lilo & Stitch'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "2002",
+    "incorrect_answers": [
+      "2004",
+      "2000",
+      "2007"
+    ]
+  },
+  {
+    "id": 139,
+    "question": "¿Cuál de las siguientes es una película de Studio Ghibli?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "La princesa Mononoke (1997)",
+    "incorrect_answers": [
+      "Una Voz Silenciosa (Koe No Katachi) (2016)",
+      "Children Who Chase Lost Voices (2011)",
+      "Your Name (2016)"
+    ]
+  },
+  {
+    "id": 140,
+    "question": "¿Cuál es el nombre completo de Jack en la película 'Pesadilla antes de Navidad'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Jack Skellington",
+    "incorrect_answers": [
+      "Jack Skeleton",
+      "Jack Stalfos",
+      "Jack Skulltula"
+    ]
+  },
+  {
+    "id": 141,
+    "question": "¿En qué animal se convirtió Kuzco en la película 'The Emperor's New Groove'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Llama",
+    "incorrect_answers": [
+      "Burro",
+      "Caballo",
+      "Cabra"
+    ]
+  },
+  {
+    "id": 142,
+    "question": "¿Cómo se llama el animal que acompaña a Shrek?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Asno",
+    "incorrect_answers": [
+      "Mula",
+      "Manuel",
+      "Luís"
+    ]
+  },
+  {
+    "id": 143,
+    "question": "¿Cuál fue el único anime que ha ganado un Oscar actualmente?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "El Viaje de Chihiro (2001)",
+    "incorrect_answers": [
+      "El cuento de la princesa Kaguya (2013)",
+      "El Castillo Ambulante (2004)",
+      "El Viento se Levanta (2013)"
+    ]
+  },
+  {
+    "id": 144,
+    "question": "¿Qué estudio de animación produjo la película animada 'Spirit: El Corcel Indomable'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Dreamworks Animation",
+    "incorrect_answers": [
+      "A-1 Pictures",
+      "Walt Disney Animation Studios",
+      "Bones Inc."
+    ]
+  },
+  {
+    "id": 145,
+    "question": "¿Cuál es el segundo nombre de Hipo Abadejo III en 'Cómo entrenar a tu dragón'?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Horrendo",
+    "incorrect_answers": [
+      "Horrible",
+      "Horroroso",
+      "Howards"
+    ]
+  },
+  {
+    "id": 146,
+    "question": "¿Qué villano amenaza a todo el universo Lego en 'The Lego Movie'?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Lord Business",
+    "incorrect_answers": [
+      "Lord 1 Percent",
+      "Lord Corporate",
+      "Lord Evil"
+    ]
+  },
+  {
+    "id": 147,
+    "question": "¿'Fantastic Mr. Fox' está basado en un libro infantil de qué autor?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Roald Dahl",
+    "incorrect_answers": [
+      "Dr. Seuss",
+      "J. K. Rowling",
+      "Beverly Cleary"
+    ]
+  },
+  {
+    "id": 148,
+    "question": "¿Qué dragón monta Hipo en las películas de 'Cómo entrenar a tu dragón'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Desdentado",
+    "incorrect_answers": [
+      "Desterrado",
+      "Desolado",
+      "Desnudo"
+    ]
+  },
+  {
+    "id": 149,
+    "question": "'Dumbo' de Disney tenía extremadamente grande ¿qué?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Orejas",
+    "incorrect_answers": [
+      "Colmillos",
+      "Pies",
+      "Uñas"
+    ]
+  },
+  {
+    "id": 150,
+    "question": "¿Dash es un personaje de qué película animada?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Los Increíbles",
+    "incorrect_answers": [
+      "Shrek",
+      "Toy Story",
+      "Madagascar"
+    ]
+  },
+  {
+    "id": 151,
+    "question": "¿Qué familia dirige la granja de pollos en 'Chicken Run'?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "The Tweedys",
+    "incorrect_answers": [
+      "The Twiddles",
+      "The Twaddys",
+      "The Tweedles"
+    ]
+  },
+  {
+    "id": 152,
+    "question": "¿De quién se enamora Asno en 'Shrek'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "La Dragona",
+    "incorrect_answers": [
+      "La Gigante",
+      "La Hada Madrina",
+      "Lord Farquaad"
+    ]
+  },
+  {
+    "id": 153,
+    "question": "¿Quien dirigió la película de animación stop motion 'La novia cadáver'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Tim Burton",
+    "incorrect_answers": [
+      "Brad Bird",
+      "Wes Anderson",
+      "Edgar Wright"
+    ]
+  },
+  {
+    "id": 154,
+    "question": "¿Qué nombre le da Homer a su amado cerdo adoptivo en 'La película de Los Simpson'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Spider-Cerdo",
+    "incorrect_answers": [
+      "Capitán Cerdo",
+      "El Increible Cerdo",
+      "Cerlobo"
+    ]
+  },
+  {
+    "id": 155,
+    "question": "¿En qué año se estrenó la película 'Ratatouille'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "2007",
+    "incorrect_answers": [
+      "2005",
+      "2004",
+      "2002"
+    ]
+  },
+  {
+    "id": 156,
+    "question": "¿Cómo se llamó la película derivada de 'Cars' que se estrenó en 2013?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Aviones",
+    "incorrect_answers": [
+      "Barcos",
+      "Trenes",
+      "Bicis"
+    ]
+  },
+  {
+    "id": 157,
+    "question": "¿Qué tipo de pez es el personaje principal de la película de Pixar 'Buscando a Nemo'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Pez Payaso",
+    "incorrect_answers": [
+      "Pez Nieve",
+      "Blowfish",
+      "Pez León"
+    ]
+  },
+  {
+    "id": 158,
+    "question": "¿Completa el título de la secuela de 'Madagascar' 'Escape to...'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Africa",
+    "incorrect_answers": [
+      "Asia",
+      "Europa",
+      "Latinoamérica"
+    ]
+  },
+  {
+    "id": 159,
+    "question": "¿En qué año se vendió Pixar a Disney?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "2006",
+    "incorrect_answers": [
+      "2012",
+      "1996",
+      "2003"
+    ]
+  },
+  {
+    "id": 160,
+    "question": "¿Quién dirigió 'Perfect Blue'?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Satoshi Kon",
+    "incorrect_answers": [
+      "Makoto Shinkai",
+      "Katsuhiro Otomo",
+      "Yoshikazu Takeuchi"
+    ]
+  },
+  {
+    "id": 161,
+    "question": "En 'Perfect Blue', ¿con qué mata Mima a su acosador?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Martillo",
+    "incorrect_answers": [
+      "Pistola",
+      "Destornillador",
+      "Cuchillo"
+    ]
+  },
+  {
+    "id": 162,
+    "question": "En 'Perfect Blue', ¿cuál es el nombre del sitio web que visita Mima?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "El cuarto de Mima",
+    "incorrect_answers": [
+      "El sitio de Mima",
+      "La casa de Mima",
+      "El dominio de Mima"
+    ]
+  },
+  {
+    "id": 163,
+    "question": "En 'El viaje de Chihiro', ¿en qué se convierten los padres de Chihiro?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Cerdos",
+    "incorrect_answers": [
+      "Gatos",
+      "Espiritus",
+      "Sushi"
+    ]
+  },
+  {
+    "id": 164,
+    "question": "¿Cuál es el vehículo en Mi Vecino Totoro?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Un Gato-Bus",
+    "incorrect_answers": [
+      "Un Gato-Avión",
+      "Un Gato-Barco",
+      "Un Pulpo-Tren"
+    ]
+  },
+  {
+    "id": 165,
+    "question": "¿Cómo se llama el príncipe guerrero de 'La princesa Mononoke'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Ashitaka",
+    "incorrect_answers": [
+      "Aoki",
+      "Kenji",
+      "San"
+    ]
+  },
+  {
+    "id": 166,
+    "question": "En 'Princesa Mononoke', ¿cómo se manifiesta físicamente la maldición de Ashitaka?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "en una infección que se extiende por su brazo",
+    "incorrect_answers": [
+      "tose gusanos negros",
+      "se le ponen los ojos rojos",
+      "se le cae el pelo"
+    ]
+  },
+  {
+    "id": 167,
+    "question": "¿El Rey León se inspira en qué obra de Shakespeare?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Hamlet",
+    "incorrect_answers": [
+      "King Lear",
+      "Henry IV",
+      "The Tempest"
+    ]
+  },
+  {
+    "id": 168,
+    "question": "Los dos ratones de Cenicienta se llaman:",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Jaq and Gus",
+    "incorrect_answers": [
+      "Jaq and Gary",
+      "Jaq and Maurice",
+      "Jaq and Daxter"
+    ]
+  },
+  {
+    "id": 169,
+    "question": "En La Sirenita, ¿cuál es el nombre completo de Sebastián?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Horatio Thelonious Ignacious Crustaceous Sebastian",
+    "incorrect_answers": [
+      "Horatio Thelonious Pugnacious Crustaceous Sebastian",
+      "Horatio Thelonious Keith Crustaceous Sebastian",
+      "Johann Sebastian Bach"
+    ]
+  },
+  {
+    "id": 170,
+    "question": "¿Cuál de los siguientes no era uno de los Siete Enanitos?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Juguetón",
+    "incorrect_answers": [
+      "Gruñón",
+      "Mudito",
+      "Mocoso"
+    ]
+  },
+  {
+    "id": 171,
+    "question": "En 'La Bella Durmiente', ¿qué nombre usa Aurora mientras vive en el bosque con sus Hadas Madrinas?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Briar Rose",
+    "incorrect_answers": [
+      "May Fern",
+      "Jasmine Fuschia",
+      "Lily Magenta"
+    ]
+  },
+  {
+    "id": 172,
+    "question": "¿Cómo se llama la madre de Simba?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Sarabi",
+    "incorrect_answers": [
+      "Zoya",
+      "Shenzi",
+      "Nala"
+    ]
+  },
+  {
+    "id": 173,
+    "question": "¿Cuál fue la película más larga de Disney?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Fantasia",
+    "incorrect_answers": [
+      "101 dálmatas",
+      "Pinocho",
+      "Vaiana"
+    ]
+  },
+  {
+    "id": 174,
+    "question": "¿Cuántos lobos atacaron a Bella cuando intentó huir del castillo de Bestia?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "5",
+      "3",
+      "2"
+    ]
+  },
+  {
+    "id": 175,
+    "question": "¿Cómo se llama la taberna de Enredados?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "El Patito Frito",
+    "incorrect_answers": [
+      "El Oso Asado",
+      "La Serpiente Deslizante",
+      "El Perro Anadón"
+    ]
+  },
+  {
+    "id": 176,
+    "question": "¿Cuál era el musical favorito de Wall-E?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Hello Dolly",
+    "incorrect_answers": [
+      "The Sound Of Music",
+      "The Wizard Of Oz",
+      "My Fair Lady"
+    ]
+  },
+  {
+    "id": 177,
+    "question": "En Aladdin, ¿cuántos años dice el Genio que ha estado atrapado en la lámpara?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "10.000",
+    "incorrect_answers": [
+      "100.000",
+      "1.000.000",
+      "1.000.000.000.000"
+    ]
   }
 ]

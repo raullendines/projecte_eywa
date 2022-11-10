@@ -1753,7 +1753,7 @@
   },
   {
     "id": 147,
-    "question": "\"Fantastic Mr. Fox\" is based on a children's book by what author?",
+    "question": "'Fantastic Mr. Fox' is based on a children's book by what author?",
     "difficulty": 2,
     "category": "animation",
     "correct_answer": "Roald Dahl",
@@ -1972,9 +1972,9 @@
     "question": "What is the name of the warrior prince in 'Princess Mononoke'?",
     "difficulty": 2,
     "category": "animation",
-    "correct_answer": "Aoki",
+    "correct_answer": "Ashitaka",
     "incorrect_answers": [
-      "Ashitaka",
+      "Aoki",
       "Kenji",
       "San"
     ]
@@ -1989,6 +1989,138 @@
       "in black worms he coughs up",
       "his eyes turn red",
       "his hair falls out"
+    ]
+  },
+  {
+    "id": 167,
+    "question": "'The Lion King' is loosely based on which Shakespeare play?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Hamlet",
+    "incorrect_answers": [
+      "King Lear",
+      "Henry IV",
+      "The Tempest"
+    ]
+  },
+  {
+    "id": 168,
+    "question": "The two mice in Cinderella are named:",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Jaq and Gus",
+    "incorrect_answers": [
+      "Jaq and Gary",
+      "Jaq and Maurice",
+      "Jaq and Daxter"
+    ]
+  },
+  {
+    "id": 169,
+    "question": "In The Little Mermaid, what is Sebastian's full name?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Horatio Thelonious Ignacious Crustaceous Sebastian",
+    "incorrect_answers": [
+      "Horatio Thelonious Pugnacious Crustaceous Sebastian",
+      "Horatio Thelonious Keith Crustaceous Sebastian",
+      "Johann Sebastian Bach"
+    ]
+  },
+  {
+    "id": 170,
+    "question": "Which of the following was not one of the Seven Dwarfs?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Playful",
+    "incorrect_answers": [
+      "Grumpy",
+      "Dopey",
+      "Sneezy"
+    ]
+  },
+  {
+    "id": 171,
+    "question": "In 'Sleeping Beauty', what name does Aurora use while living in the woods with her Fairy Godmothers?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Briar Rose",
+    "incorrect_answers": [
+      "May Fern",
+      "Jasmine Fuschia",
+      "Lily Magenta"
+    ]
+  },
+  {
+    "id": 172,
+    "question": "What is the name of Simba's mother?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Sarabi",
+    "incorrect_answers": [
+      "Zoya",
+      "Shenzi",
+      "Nala"
+    ]
+  },
+  {
+    "id": 173,
+    "question": "What was Disney's longest movie?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Fantasia",
+    "incorrect_answers": [
+      "One Hundred and One Dalmatians",
+      "Pinocchio",
+      "Moana"
+    ]
+  },
+  {
+    "id": 174,
+    "question": "How many wolves attacked Belle when she attempted to flee Beast's castle?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "5",
+      "3",
+      "2"
+    ]
+  },
+  {
+    "id": 175,
+    "question": "What's the name of the tavern in Tangled?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Snuggly Duckling",
+    "incorrect_answers": [
+      "The Wumble Bumble",
+      "The Slithering Snake",
+      "The Duckling Dive"
+    ]
+  },
+  {
+    "id": 176,
+    "question": "What was Wall-E's favourite musical?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Hello Dolly",
+    "incorrect_answers": [
+      "The Sound Of Music",
+      "The Wizard Of Oz",
+      "My Fair Lady"
+    ]
+  },
+  {
+    "id": 177,
+    "question": "In Aladdin, how many years does the Genie say he has been trapped in the lamp?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "10.000",
+    "incorrect_answers": [
+      "100.000",
+      "1.000.000",
+      "1.000.000.000.000"
     ]
   }
 ]

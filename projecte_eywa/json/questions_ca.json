@@ -730,5 +730,569 @@
       "Psycho",
       "El silenci dels anyells"
     ]
+  },
+  {
+    "id": 131,
+    "question": "Quina de les següents cançons apareix a la banda sonora de 'Vaiana'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "On aniré",
+    "incorrect_answers": [
+      "On anirem",
+      "On anireu",
+      "On vas"
+    ]
+  },
+  {
+    "id": 132,
+    "question": "Com es diu el poble de 'Pesadilla antes de Navidad'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Halloween Town",
+    "incorrect_answers": [
+      "Christmas Town",
+      "Skeletown",
+      "Gateshead"
+    ]
+  },
+  {
+    "id": 133,
+    "question": "Quin tipus de primat és el personatge d'El Rey León, Rafiki?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Mandril",
+    "incorrect_answers": [
+      "Babuí",
+      "Mono aranya",
+      "Tarsero"
+    ]
+  },
+  {
+    "id": 134,
+    "question": "Com es diu el protagonista de la pel·lícula Coco?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Miguel",
+    "incorrect_answers": [
+      "Andreas",
+      "Paulo",
+      "Max"
+    ]
+  },
+  {
+    "id": 135,
+    "question": "Qui va ser el director de la pel·lícula animada 'El niño y la bestia'?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Mamoru Hosoda",
+    "incorrect_answers": [
+      "Hayao Miyazaki",
+      "Tatsuyuki Nagai",
+      "Seiji Mizushima"
+    ]
+  },
+  {
+    "id": 136,
+    "question": "Com es diuen els personatges principals de la pel·lícula animada 'La ruta hacia El Dorado'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Tulio and Miguel",
+    "incorrect_answers": [
+      "Tulio and Marco",
+      "Manuel and Julio",
+      "Hector and Miguel"
+    ]
+  },
+  {
+    "id": 137,
+    "question": "En què es va transformar l'Altra Mare a 'Coraline' prop del final de la pel·lícula?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Aranya",
+    "incorrect_answers": [
+      "Papallona",
+      "Vespa",
+      "Fromiga"
+    ]
+  },
+  {
+    "id": 138,
+    "question": "Quan es va estrenar la pel·lícula 'Lilo & Stitch'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "2002",
+    "incorrect_answers": [
+      "2004",
+      "2000",
+      "2007"
+    ]
+  },
+  {
+    "id": 139,
+    "question": "Quina de les següents és una pel·lícula de Studio Ghibli?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "La princesa Mononoke (1997)",
+    "incorrect_answers": [
+      "Una Voz Silenciosa (Koe No Katachi) (2016)",
+      "Children Who Chase Lost Voices (2011)",
+      "Your Name (2016)"
+    ]
+  },
+  {
+    "id": 140,
+    "question": "Quin és el nom complet de Jack a la pel·lícula 'Pesadilla antes de Navidad'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Jack Skellington",
+    "incorrect_answers": [
+      "Jack Skeleton",
+      "Jack Stalfos",
+      "Jack Skulltula"
+    ]
+  },
+  {
+    "id": 141,
+    "question": "En quin animal es va convertir Kuzco a la pel·lícula 'The Emperor's New Groove'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Llama",
+    "incorrect_answers": [
+      "Ruc",
+      "Cavall",
+      "Cabra"
+    ]
+  },
+  {
+    "id": 142,
+    "question": "Com es diu l'animal que acompanya Shrek?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Ase",
+    "incorrect_answers": [
+      "Mula",
+      "Manel",
+      "Lluís"
+    ]
+  },
+  {
+    "id": 143,
+    "question": "Quin ha estat l'únic 'anime' que ha guanyat un Oscar actualment?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "El Viaje de Chihiro (2001)",
+    "incorrect_answers": [
+      "El cuento de la princesa Kaguya (2013)",
+      "El Castillo Ambulante (2004)",
+      "El Viento se Levanta (2013)"
+    ]
+  },
+  {
+    "id": 144,
+    "question": "Quin estudi d'animació va produir la pel·lícula animada 'Spirit: El Corcel Indomable'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Dreamworks Animation",
+    "incorrect_answers": [
+      "A-1 Pictures",
+      "Walt Disney Animation Studios",
+      "Bones Inc."
+    ]
+  },
+  {
+    "id": 145,
+    "question": "Quin és el segon nom de Singlot Sardina III a 'Com ensinistrar un drac'?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Horrorós",
+    "incorrect_answers": [
+      "Horrible",
+      "Horrent",
+      "Howards"
+    ]
+  },
+  {
+    "id": 146,
+    "question": "¿Qué villano amenaza a todo el universo Lego en 'La Lego pel·lícula'?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Mega Dolent",
+    "incorrect_answers": [
+      "Super Dolent",
+      "Mega empresari",
+      "Super empresari"
+    ]
+  },
+  {
+    "id": 147,
+    "question": "'Fantastic Mr. Fox' està basat en un llibre infantil de quin autor?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Roald Dahl",
+    "incorrect_answers": [
+      "Dr. Seuss",
+      "J. K. Rowling",
+      "Beverly Cleary"
+    ]
+  },
+  {
+    "id": 148,
+    "question": "Quin drac munta Singlot a les pel·lícules de 'Com ensinistrar un drac'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Esdentegat ",
+    "incorrect_answers": [
+      "Desterrat",
+      "Desdentat ",
+      "Esmaixellat"
+    ]
+  },
+  {
+    "id": 149,
+    "question": "'Dumbo' de Disney tenia extremadament gran què?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Orelles",
+    "incorrect_answers": [
+      "Ullals",
+      "Peus",
+      "Ungles"
+    ]
+  },
+  {
+    "id": 150,
+    "question": "Dash és un personatge de quina pel·lícula animada?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Los Increíbles",
+    "incorrect_answers": [
+      "Shrek",
+      "Toy Story",
+      "Madagascar"
+    ]
+  },
+  {
+    "id": 151,
+    "question": "Quina família dirigeix ​​la granja de pollastres a 'Chicken Run'?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "The Tweedys",
+    "incorrect_answers": [
+      "The Twiddles",
+      "The Twaddys",
+      "The Tweedles"
+    ]
+  },
+  {
+    "id": 152,
+    "question": "De qui s'enamora Ase a 'Shrek'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "La Dragona",
+    "incorrect_answers": [
+      "La Gegant",
+      "La Fada Madrina",
+      "Lord Farquaad"
+    ]
+  },
+  {
+    "id": 153,
+    "question": "Qui va dirigir la pel·lícula d'animació stop motion 'La novia cadàver'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Tim Burton",
+    "incorrect_answers": [
+      "Brad Bird",
+      "Wes Anderson",
+      "Edgar Wright"
+    ]
+  },
+  {
+    "id": 154,
+    "question": "Quin nom dóna Homer al seu estimat porc adoptiu a 'The Simpsons Movie'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Spider-Cerdo",
+    "incorrect_answers": [
+      "Capitán Cerdo",
+      "El Increible Cerdo",
+      "Cerlobo"
+    ]
+  },
+  {
+    "id": 155,
+    "question": "Quin any es va estrenar la pel·lícula 'Ratatouille'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "2007",
+    "incorrect_answers": [
+      "2005",
+      "2004",
+      "2002"
+    ]
+  },
+  {
+    "id": 156,
+    "question": "Com es va anomenar la pel·lícula derivada de 'Cars' que es va estrenar el 2013?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Avions",
+    "incorrect_answers": [
+      "Vaixells",
+      "Trens",
+      "Bicis"
+    ]
+  },
+  {
+    "id": 157,
+    "question": "Quin tipus de peix és el personatge principal de la pel·lícula de Pixar 'Buscando a Nemo'?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Peix Pallasso",
+    "incorrect_answers": [
+      "Peix Neu",
+      "Blowfish",
+      "Peix Lleó"
+    ]
+  },
+  {
+    "id": 158,
+    "question": "¿Completa el títol de la seqüela de 'Madagascar' 'Escape to...'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Africa",
+    "incorrect_answers": [
+      "Asia",
+      "Europa",
+      "Latinoamérica"
+    ]
+  },
+  {
+    "id": 159,
+    "question": "Quin any es va vendre Pixar a Disney?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "2006",
+    "incorrect_answers": [
+      "2012",
+      "1996",
+      "2003"
+    ]
+  },
+  {
+    "id": 160,
+    "question": "Qui va dirigir 'Perfect Blue'?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Satoshi Kon",
+    "incorrect_answers": [
+      "Makoto Shinkai",
+      "Katsuhiro Otomo",
+      "Yoshikazu Takeuchi"
+    ]
+  },
+  {
+    "id": 161,
+    "question": "A 'Perfect Blue', amb què mata Mima el seu assetjador?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Martell",
+    "incorrect_answers": [
+      "Pistola",
+      "Tornavís",
+      "Ganivet"
+    ]
+  },
+  {
+    "id": 162,
+    "question": "A 'Perfect Blue', quin és el nom del lloc web que visita Mima?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "El cuarto de Mima",
+    "incorrect_answers": [
+      "El sitio de Mima",
+      "La casa de Mima",
+      "El dominio de Mima"
+    ]
+  },
+  {
+    "id": 163,
+    "question": "A 'El viatge de Chihiro', en què es converteixen els pares de Chihiro?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "Porcs",
+    "incorrect_answers": [
+      "Gats",
+      "Esperits",
+      "Sushi"
+    ]
+  },
+  {
+    "id": 164,
+    "question": "Quin és el vehicle a 'Mi Vecino Totoro'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Un Gat-Bus",
+    "incorrect_answers": [
+      "Un Gat-Avió",
+      "Un Gat-Vaixell",
+      "Un Pop-Tren"
+    ]
+  },
+  {
+    "id": 165,
+    "question": "Com es diu el príncep guerrer de 'La princesa Mononoke'?",
+    "difficulty": 2,
+    "category": "animation",
+    "correct_answer": "Ashitaka",
+    "incorrect_answers": [
+      "Aoki",
+      "Kenji",
+      "San"
+    ]
+  },
+  {
+    "id": 166,
+    "question": "A 'Princesa Mononoke', com es manifesta físicament la maledicció d'Ashitaka?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "en una infecció que s'estén pel braç",
+    "incorrect_answers": [
+      "tus cucs negres",
+      "se li posen els ulls vermells",
+      "li cau els cabells"
+    ]
+  },
+  {
+    "id": 167,
+    "question": "El Rey León s'inspira en quina obra de Shakespeare?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Hamlet",
+    "incorrect_answers": [
+      "King Lear",
+      "Henry IV",
+      "The Tempest"
+    ]
+  },
+  {
+    "id": 168,
+    "question": "Els dos ratolins de Ventafocs es diuen:",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Jaq and Gus",
+    "incorrect_answers": [
+      "Jaq and Gary",
+      "Jaq and Maurice",
+      "Jaq and Daxter"
+    ]
+  },
+  {
+    "id": 169,
+    "question": "A 'La Sirenita', quin és el nom complet de Sebastian?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Horatio Thelonious Ignacious Crustaceous Sebastian",
+    "incorrect_answers": [
+      "Horatio Thelonious Pugnacious Crustaceous Sebastian",
+      "Horatio Thelonious Keith Crustaceous Sebastian",
+      "Johann Sebastian Bach"
+    ]
+  },
+  {
+    "id": 170,
+    "question": "Quin dels següents no era un dels Set Nans?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Juganer",
+    "incorrect_answers": [
+      "Rondinaire",
+      "Mudet",
+      "Esternuts"
+    ]
+  },
+  {
+    "id": 171,
+    "question": "A 'La Bella Dorment', quin nom fa servir Aurora mentre viu al bosc amb les seves Fades Madrines?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Briar Rose",
+    "incorrect_answers": [
+      "May Fern",
+      "Jasmine Fuschia",
+      "Lily Magenta"
+    ]
+  },
+  {
+    "id": 172,
+    "question": "Com es diu la mare de Simba?",
+    "difficulty": 3,
+    "category": "animation",
+    "correct_answer": "Sarabi",
+    "incorrect_answers": [
+      "Zoya",
+      "Shenzi",
+      "Nala"
+    ]
+  },
+  {
+    "id": 173,
+    "question": "Quina va ser la pel·lícula més llarga de Disney?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Fantasia",
+    "incorrect_answers": [
+      "101 dálmatas",
+      "Pinocho",
+      "Vaiana"
+    ]
+  },
+  {
+    "id": 174,
+    "question": "Quants llops van atacar Bella quan va intentar fugir del castell de Bèstia?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "5",
+      "3",
+      "2"
+    ]
+  },
+  {
+    "id": 175,
+    "question": "Com es diu la taverna d'Enredats?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "El Patito Frito",
+    "incorrect_answers": [
+      "El Oso Asado",
+      "La Serpiente Deslizante",
+      "El Perro Anadón"
+    ]
+  },
+  {
+    "id": 176,
+    "question": "Quin era el musical preferit de Wall-E?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "Hello Dolly",
+    "incorrect_answers": [
+      "The Sound Of Music",
+      "The Wizard Of Oz",
+      "My Fair Lady"
+    ]
+  },
+  {
+    "id": 177,
+    "question": "A Aladdin, quants anys diu el Geni que ha estat atrapat a la làmpara?",
+    "difficulty": 4,
+    "category": "animation",
+    "correct_answer": "10.000",
+    "incorrect_answers": [
+      "100.000",
+      "1.000.000",
+      "1.000.000.000.000"
+    ]
   }
 ]
