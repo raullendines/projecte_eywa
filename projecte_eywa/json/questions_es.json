@@ -361,7 +361,7 @@
   },
   {
     "id": 31,
-    "question": "¿Quién es el asesino el viernes 13?",
+    "question": "¿Quién es el asesino en 'Viernes 13'?",
     "difficulty": 1,
     "category": "horror",
     "correct_answer": "Pamela Voorhees",
@@ -409,7 +409,7 @@
  },
   {
     "id": 35,
-    "question": "¿Qué actor hizo su debut cinematográfico en una pesadilla en Elm Street?",
+    "question": "¿Qué actor hizo su debut cinematográfico en 'Pesadilla en Elm Street'?",
     "difficulty": 1,
     "category": "horror",
     "correct_answer": "Johnny Depp",
@@ -445,7 +445,7 @@
  },
   {
     "id": 38,
-    "question": "El cuero de Leatherface de la masacre de Texas Chainsaw usa una máscara hecha de qué?",
+    "question": "El protagonista de 'La matanza de Texas 3' usa una máscara hecha de qué?",
     "difficulty": 1,
     "category": "horror",
     "correct_answer": "Piel humana",
@@ -472,11 +472,11 @@
     "question": "¿Cuántas veces necesitas decir el nombre de Candyman en el espejo para que aparezca?",
     "difficulty": 1,
     "category": "horror",
-    "correct_answer": "Cinco",
+    "correct_answer": "5",
     "incorrect_answers": [
-       "Tres",
-       "Cuatro",
-       "Seis"
+       "3",
+       "4",
+       "6"
     ]
  },
   {
@@ -493,7 +493,7 @@
  },
   {
     "id": 42,
-    "question": "¿Quién es la actriz principal en la versión 2020 del hombre invisible?",
+    "question": "¿Quién es la actriz principal en la versión 2020 de 'El hombre invisible'?",
     "difficulty": 2,
     "category": "horror",
     "correct_answer": "Elisabeth Moss",
@@ -577,7 +577,7 @@
  },
   {
     "id": 49,
-    "question": "¿Cuántas personas mata Jason en el primer viernes 13?",
+    "question": "¿Cuántas personas mata Jason en el primer 'Viernes 13'?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "0",
@@ -613,10 +613,10 @@
  },
   {
     "id": 52,
-    "question": "¿Cuál era el título original de The Blob?",
+    "question": "¿Cuál era el título original de 'The Blob'?",
     "difficulty": 4,
     "category": "horror",
-    "correct_answer": "El globo",
+    "correct_answer": "The Glob",
     "incorrect_answers": [
        "El bulto",
        "El esferoide",
@@ -628,7 +628,7 @@
     "question": "¿Qué película de terror presenta a un asesino en serie con una máscara inspirada en una pintura de Edvard Munch?",
     "difficulty": 1,
     "category": "horror",
-    "correct_answer": "Grito",
+    "correct_answer": "Scream",
     "incorrect_answers": [
        "Víspera de Todos los Santos",
        "El hombre con el traje negro",
@@ -649,7 +649,7 @@
  },
   {
     "id": 55,
-    "question": "En Poltergeist, ¿qué captura a Robbie freeling por la ventana de su habitación?",
+    "question": "En Poltergeist, ¿qué captura a Robbie Freeling por la ventana de su habitación?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "Un árbol",
@@ -661,7 +661,7 @@
  },
   {
     "id": 56,
-    "question": "¿Cuánto tiempo de pantalla obtiene Freddy Krueger en la primera película de una pesadilla en Elm Street?",
+    "question": "¿Cuánto tiempo de pantalla obtiene Freddy Krueger en la primera película de 'Pesadilla en Elm Street'?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "7 minutos",
@@ -673,7 +673,7 @@
  },
   {
     "id": 57,
-    "question": "¿Dónde tiene lugar el viernes 13?",
+    "question": "¿Dónde tiene lugar el 'Viernes 13'?",
     "difficulty": 2,
     "category": "horror",
     "correct_answer": "Camp Crystal Lake",
@@ -745,7 +745,7 @@
  },
   {
     "id": 63,
-    "question": "¿Cuál es el nombre del tipo de construcción de apartamentos y el movimiento de Rosemary en el bebé de Rosemary?",
+    "question": "¿Cuál es el nombre del tipo de construcción de apartamentos y el movimiento de Rosemary en 'El bebé de Rosemary'?",
     "difficulty": 4,
     "category": "horror",
     "correct_answer": "El Bramford",
@@ -757,7 +757,7 @@
  },
   {
     "id": 64,
-    "question": "¿Quién es responsable de liberar el virus mortal en 28 días después?",
+    "question": "¿Quién es responsable de liberar el virus mortal en '28 días después'?",
     "difficulty": 2,
     "category": "horror",
     "correct_answer": "Activistas por los derechos de los animales",
@@ -793,19 +793,19 @@
  },
   {
     "id": 67,
-    "question": "¿De quién usa Kirsty en Hellbound: Hellraiser II?",
+    "question": "¿De quién es la piel que usa Kirsty en 'Hellbound: Hellraiser II'?",
     "difficulty": 4,
     "category": "horror",
-    "correct_answer": "Julia's",
+    "correct_answer": "Julia",
     "incorrect_answers": [
-       "Tiffany's",
-       "De Frank",
-       "Larry's"
+       "Tiffany",
+       "Frank",
+       "Larry"
     ]
  },
   {
     "id": 68,
-    "question": "¿Cuál es el hobby de Norman en psicópata?",
+    "question": "¿Cuál es el hobby de Norman en 'Psicosis'?",
     "difficulty": 2,
     "category": "horror",
     "correct_answer": "Taxidermia",
@@ -817,7 +817,7 @@
  },
   {
     "id": 69,
-    "question": "¿Qué pasa con la primera niñera de Damien en el presagio?",
+    "question": "¿Qué pasa con la primera niñera de Damien en 'El Presagio'?",
     "difficulty": 2,
     "category": "horror",
     "correct_answer": "Ella se cuelga",
@@ -829,7 +829,7 @@
  },
   {
     "id": 70,
-    "question": "¿Quién habla con Isaac en los niños del maíz?",
+    "question": "¿Quién habla con Isaac en 'Los niños del maíz'?",
     "difficulty": 2,
     "category": "horror",
     "correct_answer": "El que camina detrás de las filas",
@@ -841,7 +841,7 @@
  },
   {
     "id": 71,
-    "question": "¿Cuál era el nombre humano de Pinhead?",
+    "question": "¿Cuál era el nombre humano de 'Pinhead'?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "Elliot",
@@ -853,7 +853,7 @@
  },
   {
     "id": 72,
-    "question": "¿Qué tiene de inusual la cinta de video en el ring?",
+    "question": "¿Qué tiene de inusual la cinta de video en 'La señal'?",
     "difficulty": 1,
     "category": "horror",
     "correct_answer": "No incluye código de tiempo",
@@ -865,7 +865,7 @@
  },
   {
     "id": 73,
-    "question": "¿Qué le da al chamán nativo americano a Steve en Poltergeist II?",
+    "question": "¿Qué le da al chamán nativo americano a Steve en 'Poltergeist II'?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "Poder de humo",
@@ -877,7 +877,7 @@
  },
   {
     "id": 74,
-    "question": "¿Quién es el único personaje que aparece y sobrevive a las cuatro películas de Jaws?",
+    "question": "¿Quién es el único personaje que aparece y sobrevive a las cuatro películas de 'Jaws'?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "Michael Brody",
@@ -889,7 +889,7 @@
  },
   {
     "id": 75,
-    "question": "¿Cuál era el apellido de Damien en las películas de Omen?",
+    "question": "¿Cuál era el apellido de Damien en las películas de 'Omen'?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "Espina",
@@ -906,14 +906,14 @@
     "category": "horror",
     "correct_answer": "Pennywise",
     "incorrect_answers": [
-       "Lunar",
-       "Pizca",
-       "Centavo"
+       "Poundfoolish",
+       "Pennyworth",
+       "Penny"
     ]
  },
   {
     "id": 77,
-    "question": "¿En qué película de Slasher, apareció por primera vez Jason Voorhees como el asesino?",
+    "question": "¿En qué película de 'Slasher', apareció por primera vez Jason Voorhees como el asesino?",
     "difficulty": 1,
     "category": "horror",
     "correct_answer": "Viernes 13 Parte 2",
@@ -925,7 +925,7 @@
  },
   {
     "id": 78,
-    "question": "¿En qué mes se ha lanzado cada película SAW?",
+    "question": "¿En qué mes se ha lanzado cada película 'SAW'?",
     "difficulty": 2,
     "category": "horror",
     "correct_answer": "Octubre",
@@ -937,7 +937,7 @@
  },
   {
     "id": 79,
-    "question": "En total, ¿cuántas personas han muerto en la serie SAW? (Incluidos oficiales de policía no identificados y otros extras)",
+    "question": "En total, ¿cuántas personas han muerto en la serie 'SAW'? (Incluidos oficiales de policía no identificados y otros extras)",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "80",
@@ -949,7 +949,7 @@
  },
   {
     "id": 80,
-    "question": "¿Para qué sería el subtítulo original para 'Saw Vi'?",
+    "question": "¿Para qué sería el subtítulo original para 'Saw VI'?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "Juego final",
@@ -961,19 +961,19 @@
  },
   {
     "id": 81,
-    "question": "¿Cuántas personas han trabajado para el asesino de rompecabezas?",
+    "question": "¿Cuántas personas han trabajado para el asesino de 'Rompecabezas'?",
     "difficulty": 3,
     "category": "horror",
-    "correct_answer": "Seis",
+    "correct_answer": "6",
     "incorrect_answers": [
-       "Siete",
-       "Cinco",
-       "Cuatro"
+       "7",
+       "5",
+       "4"
     ]
  },
   {
     "id": 82,
-    "question": "¿Qué edad tenía Jigsaw en su momento de muerte?",
+    "question": "¿Qué edad tenía 'Jigsaw' en el momento de su muerte?",
     "difficulty": 3,
     "category": "horror",
     "correct_answer": "52",
@@ -985,7 +985,7 @@
  },
   {
     "id": 83,
-    "question": "¿Dónde tiene lugar la primera película de la resaca?",
+    "question": "¿Dónde tiene lugar la primera película de 'The Hangover'?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Las Vegas",
@@ -997,7 +997,7 @@
  },
   {
     "id": 84,
-    "question": "En la película Hangover, ¿quién desaparece la mañana después de que los chicos llegaron a Las Vegas?",
+    "question": "En la película 'The Hangover', ¿quién desaparece la mañana después de que los chicos llegaron a Las Vegas?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Doug",
@@ -1009,7 +1009,7 @@
  },
   {
     "id": 85,
-    "question": "En la resaca, ¿qué animales encuentran los chicos en su baño?",
+    "question": "En 'The Hangover', ¿qué animales encuentran los chicos en su baño?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Tigre",
@@ -1117,7 +1117,7 @@
  },
   {
     "id": 94,
-    "question": "¿Qué coche conduce Ali G.?",
+    "question": "¿Qué coche conduce Ali G?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Renault amarillo 5 GT Turbo",
@@ -1129,7 +1129,7 @@
  },
   {
     "id": 95,
-    "question": "En tonto y más tonto, ¿cómo se llama la tienda que Harry y Lloyd quieren abrir?",
+    "question": "En 'Dos tontos muy tontos', ¿cómo se llama la tienda que Harry y Lloyd quieren abrir?",
     "difficulty": 2,
     "category": "comedy",
     "correct_answer": "Tengo gusanos",
@@ -1141,7 +1141,7 @@
  },
   {
     "id": 96,
-    "question": "En la película Dumb and Dumber, Lloyd y Harry huyen de su casa porque piensan que serán asesinados por no pagar ...?",
+    "question": "En la película 'Dos tontos muy tontos', Lloyd y Harry huyen de su casa porque piensan que serán asesinados por no pagar el que?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Gas",
@@ -1153,7 +1153,7 @@
  },
   {
     "id": 97,
-    "question": "¿Quiénes son los principales actores de Dumb and Dumber?",
+    "question": "¿Quiénes son los principales actores de 'Dos tontos muy tontos'?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Jim Carrey y Jeff Daniels",
@@ -1170,14 +1170,14 @@
     "category": "comedy",
     "correct_answer": "Comienzo",
     "incorrect_answers": [
-       "Hacer clic",
+       "Click",
        "Píxeles",
        "Sígueme el rollo"
     ]
  },
   {
     "id": 99,
-    "question": "En School of Rock, ¿cómo llaman a la banda?",
+    "question": "En 'School of Rock', ¿cómo llaman a la banda?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "La escuela de rock",
@@ -1189,7 +1189,7 @@
  },
   {
     "id": 100,
-    "question": "En School of Rock, ¿qué trabajo tiene Dewey/Ned al final de la película?",
+    "question": "En 'School of Rock', ¿qué trabajo tiene Dewey/Ned al final de la película?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Profesor del programa de música después de la escuela",
@@ -1201,7 +1201,7 @@
  },
   {
     "id": 101,
-    "question": "En Pitch Perfect, ¿cómo se llama este grupo de canto de Barden University?",
+    "question": "En 'Pitch Perfect', ¿cómo se llama este grupo de canto de Barden University?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Los Barden Bellas",
@@ -1213,7 +1213,7 @@
  },
   {
     "id": 102,
-    "question": "En Pitch Perfect, ¿dónde está la Universidad de Barden?",
+    "question": "En 'Pitch Perfect', ¿dónde está la Universidad de Barden?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Atlanta",
@@ -1225,7 +1225,7 @@
  },
   {
     "id": 103,
-    "question": "En Pitch Perfect, ¿cuál es el verdadero nombre de Fat Amy?",
+    "question": "En 'Pitch Perfect', ¿cuál es el verdadero nombre de Fat Amy?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Patricia",
@@ -1237,7 +1237,7 @@
  },
   {
     "id": 104,
-    "question": "En un tono perfecto, ¿qué baile especial puede hacer Fat Amy?",
+    "question": "En 'Pitch Perfect', ¿qué baile especial puede hacer Fat Amy?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "El baile de la sirena",
@@ -1249,7 +1249,7 @@
  },
   {
     "id": 105,
-    "question": "En un tono perfecto, ¿quién juega a Fat Amy?",
+    "question": "En un 'Pitch Perfect', ¿quién juega a Fat Amy?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Rebelde Wilson",
@@ -1261,7 +1261,7 @@
  },
   {
     "id": 106,
-    "question": "En 'lugares comerciales', ¿cuáles eran los ricos nombres de Duke Brothers?",
+    "question": "En 'Entre pillos anda el juego', ¿cuáles eran los ricos nombres de Duke Brothers?",
     "difficulty": 3,
     "category": "comedy",
     "correct_answer": "Randolph y Mortimer",
@@ -1285,7 +1285,7 @@
  },
   {
     "id": 108,
-    "question": " ¿Qué película encaja esta cita?\nJim nunca vomita en casa.",
+    "question": " ¿Qué película encaja esta cita? 'Jim nunca vomita en casa'",
     "difficulty": 3,
     "category": "comedy",
     "correct_answer": "Avión",
@@ -1312,7 +1312,7 @@
     "question": "¡En la tienda profesional en Caddyshack, Rodney Dangerfield dice que si compras un sombrero como Ted Knightyu obtenga un ______________ gratis!",
     "difficulty": 4,
     "category": "comedy",
-    "correct_answer": "plato de sopa",
+    "correct_answer": "Plato de sopa",
     "incorrect_answers": [
        "Caja de camisetas",
        "Lección de golf",
@@ -1321,7 +1321,7 @@
  },
   {
     "id": 111,
-    "question": "En 'Dumb and Dumber', ¿con qué bebe Lloyd Spike Harrys?",
+    "question": "En 'Dos tontos muy tontos', ¿con qué bebe Lloyd Spike Harrys?",
     "difficulty": 3,
     "category": "comedy",
     "correct_answer": "Turbo laxo",
@@ -1333,7 +1333,7 @@
  },
   {
     "id": 112,
-    "question": "¿Qué es la ocupación de Bill Murray en el Día de la Marmota?",
+    "question": "¿Qué es la ocupación de Bill Murray en 'el Día de la Marmota'?",
     "difficulty": 2,
     "category": "comedy",
     "correct_answer": "Meteorólogo",
@@ -1381,7 +1381,7 @@
  },
   {
     "id": 116,
-    "question": "En 'Wedding Crashers 2', ¿qué se estrellará el personaje de Ferrell?",
+    "question": "En 'De boda en boda 2', ¿qué se estrellará el personaje de Ferrell?",
     "difficulty": 2,
     "category": "comedy",
     "correct_answer": "Funerales",
@@ -1393,7 +1393,7 @@
  },
   {
     "id": 117,
-    "question": "En 'Wedding Crashers', ¿qué se bloquea los personajes principales?",
+    "question": "En 'De boda en boda', ¿qué se bloquea los personajes principales?",
     "difficulty": 1,
     "category": "comedy",
     "correct_answer": "Boda",
@@ -1405,7 +1405,7 @@
  },
   {
     "id": 118,
-    "question": "¿Qué fue significativo sobre la escena de la fogata en 'blazing sillings'?",
+    "question": "¿Qué fue significativo sobre la escena de la fogata en 'Sillas de montar calientes'?",
     "difficulty": 4,
     "category": "comedy",
     "correct_answer": "Todos los vaqueros tenían gas.",
@@ -1441,7 +1441,7 @@
  },
   {
     "id": 121,
-    "question": "¿Qué película encaja esta cita?\n'Los hermanos no se dan la mano. ¡Los hermanos tienen que abrazar!'",
+    "question": "¿Qué película encaja esta cita? 'Los hermanos no se dan la mano. ¡Los hermanos tienen que abrazar!'",
     "difficulty": 3,
     "category": "comedy",
     "correct_answer": "Tommy Boy",
@@ -1453,7 +1453,7 @@
  },
   {
     "id": 122,
-    "question": "¿Qué película encaja esta cita?\n'¡Ooooh, compórtate!'",
+    "question": "¿Qué película encaja esta cita? '¡Ooooh, compórtate!'",
     "difficulty": 3,
     "category": "comedy",
     "correct_answer": "Austin Powers",
@@ -1465,7 +1465,7 @@
  },
   {
     "id": 123,
-    "question": "¿Cuántas películas de 'películas de miedo' 'son?",
+    "question": "¿Cuántas películas de 'Scary Movie' hay?",
     "difficulty": 2,
     "category": "comedy",
     "correct_answer": "5",
@@ -1480,7 +1480,7 @@
     "question": "¿Qué parodia de personajes aterradores en 'Scary Movie 1'?",
     "difficulty": 2,
     "category": "comedy",
-    "correct_answer": "Grito",
+    "correct_answer": "Scream",
     "incorrect_answers": [
        "Freddy Krueger",
        "El exorcista",
@@ -1489,7 +1489,7 @@
  },
   {
     "id": 125,
-    "question": "¿Qué personajes de 'película de terror' dicen 'waaaaaassuup'?",
+    "question": "¿Qué personajes de 'Scream' dicen 'waaaaaassuup'?",
     "difficulty": 2,
     "category": "comedy",
     "correct_answer": "Gritar y shorty",
@@ -1501,7 +1501,7 @@
  },
   {
     "id": 126,
-    "question": "¿Quiénes son los principales actores en '21 Jump Street '?",
+    "question": "¿Quiénes son los principales actores en '21 Jump Street'?",
     "difficulty": 2,
     "category": "comedy",
     "correct_answer": "Jonah Hill y Channing Tatum",
@@ -1513,7 +1513,7 @@
  },
   {
     "id": 127,
-    "question": "En Ghostbusters, ¿en qué edificio Ray, Peter y Egon se encuentran con su primer fantasma?",
+    "question": "En 'Cazafantasmas', ¿en qué edificio Ray, Peter y Egon se encuentran con su primer fantasma?",
     "difficulty": 3,
     "category": "comedy",
     "correct_answer": "La Biblioteca Pública de Nueva York",
@@ -1525,7 +1525,7 @@
  },
   {
     "id": 128,
-    "question": "Ghostbusters fue escrito por ambos ...",
+    "question": "Ghostbusters fue escrito por __________",
     "difficulty": 3,
     "category": "comedy",
     "correct_answer": "Dan Aykroyd y Harold Ramis",
@@ -1537,7 +1537,7 @@
  },
   {
     "id": 129,
-    "question": "¿Cuál es la última línea de la película ''?",
+    "question": "¿Cuál es la última línea de la película?",
     "difficulty": 3,
     "category": "comedy",
     "correct_answer": "Amo esta ciudad",
@@ -1573,7 +1573,7 @@
   },
   {
     "id": 132,
-    "question": "¿Cómo se llama el pueblo de Pesadilla antes de Navidad?",
+    "question": "¿Cómo se llama el pueblo de 'Pesadilla antes de Navidad'?",
     "difficulty": 2,
     "category": "animation",
     "correct_answer": "Halloween Town",
