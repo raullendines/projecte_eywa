@@ -1,2126 +1,2727 @@
 [
-  {
-    "id": 1,
-    "question": "Name the administrator of Cloud City who appears in The Empire Strikes Back?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Lando Calrissian ",
-    "incorrect_answers": [
-      "Chewbacca",
-      "Han Solo",
-      "Senador Bail Organa"
-    ]
-  },
-  {
-    "id": 2,
-    "question": "Who plays Luke Skywalker throughout the series?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Mark Hamill",
-    "incorrect_answers": [
-      "Will Smith",
-      "Leonardo DiCaprio",
-      "Tom Cruise"
-    ]
-  },
-  {
-    "id": 3,
-    "question": "Which character, in Return of the Jedi says 'It's a trap'?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Admiral Ackbar",
-    "incorrect_answers": [
-      "Luke Skywalker",
-      "Greedo",
-      "Biggs Darklighter"
-    ]
-  },
-  {
-    "id": 4,
-    "question": "What year did the first Star Wars film come out?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "1977",
-    "incorrect_answers": [
-      "2004",
-      "1989",
-      "1944"
-    ]
-  },
-  {
-    "id": 5,
-    "question": "Which planet is Jar Jar Binks from?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Naboo",
-    "incorrect_answers": [
-      "Tatooine",
-      "Coruscant",
-      "Alderaan"
-    ]
-  },
-  {
-    "id": 6,
-    "question": "10. Ewan Macgregor and Alec Guinness play which character?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Obi Wan Kenobi",
-    "incorrect_answers": [
-      "Owen Lars",
-      "C-3PO",
-      "Anakin Skywalker"
-    ]
-  },
-  {
-    "id": 7,
-    "question": "In Blade Runner, the artificial humans are formally called what?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Replicant",
-    "incorrect_answers": [
-      "Recombinant",
-      "Synthezoid",
-      "Android"
-    ]
-  },
-  {
-    "id": 8,
-    "question": "Who directed Blade Runner, in addition to the sci-fi classic Alien?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Ridley Scott",
-    "incorrect_answers": [
-      "Steven Spielberg",
-      "George Lucas",
-      "M. Night Shyamalan"
-    ]
-  },
-  {
-    "id": 9,
-    "question": "In Interestellar, what natural disaster is happening on Earth, that will eventually cause the human race to go extinct?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Dust Storms",
-    "incorrect_answers": [
-      "Earthquakes",
-      "Volcanoes",
-      "Hurricanes"
-    ]
-  },
-  {
-    "id": 10,
-    "question": "In Interestellar, What does the message from the ghost say in Murphy's room.",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "STAY",
-    "incorrect_answers": [
-      "I Love You",
-      "Go to Miller's Planet",
-      "Leave Now"
-    ]
-  },
-  {
-    "id": 11,
-    "question": "In Interestellar, why does Dr. Mann lie about his planet?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "He wants to live - survival instinct!",
-    "incorrect_answers": [
-      "He wants his planet to the be the one humans live on.",
-      "He believes there are 2 planets humans can live on.",
-      "He doesn't lie."
-    ]
-  },
-  {
-    "id": 12,
-    "question": "In Matrix, What exactly did taking the red pill mean?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "The red pill allows us to free ourselves from the virtual reality of the Matrix and lead us to the real world",
-    "incorrect_answers": [
-      "The red pill allows you to forget everything that happened and stay in the virtual reality of the Matrix",
-      "The red pill allows you to jump to another dimension",
-      "The red pill allows you to remember the past and foresee the future"
-    ]
-  },
-  {
-    "id": 13,
-    "question": "In Matrix, to find Trinity, Neo must follow...",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "A white rabbit, just like in Alice in Wonderland",
-    "incorrect_answers": [
-      "A white snake",
-      "A white owl",
-      "A white pigeon"
-    ]
-  },
-  {
-    "id": 14,
-    "question": "In Matrix, what was the job of Thomas Anderson (Neo) before starting his particular adventure?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Programmer",
-    "incorrect_answers": [
-      "Computer technical service",
-      "Hardware designer",
-      "professional gamer"
-    ]
-  },
-  {
-    "id": 15,
-    "question": "In 2001: A Space Odyssey, What airline's name appeared on the spacecraft that Dr. Heywood Floyd took to get to the space station?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Pan Am",
-    "incorrect_answers": [
-      "Ryanair",
-      "AmericanAirlines",
-      "easyJet"
-    ]
-  },
-  {
-    "id": 16,
-    "question": "In Back to the future, which type of car is converted into a time machine?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "DeLorean",
-    "incorrect_answers": [
-      "Dodge",
-      "Mitsubishi",
-      "Ferrari"
-    ]
-  },
-  {
-    "id": 17,
-    "question": "Who directed Back to the Future?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Robert Zemeckis",
-    "incorrect_answers": [
-      "Steven Spielberg",
-      "George Lucas",
-      "Ron Howard"
-    ]
-  },
-  {
-    "id": 18,
-    "question": "In Back to the future, what speed did the DeLorean need to hit to be able to time travel?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "88mph / 141kmh",
-    "incorrect_answers": [
-      "73mph / 117 kmh",
-      "76mph / 122 kmh",
-      "80mph / 128 kmh"
-    ]
-  },
-  {
-    "id": 19,
-    "question": "In Inception, why is Cobb wanted by the police?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "He murdered his wife",
-    "incorrect_answers": [
-      "He robbed a big company",
-      "He is a serial killer",
-      "He sneaks into other's dreams"
-    ]
-  },
-  {
-    "id": 20,
-    "question": "In Arrival (2016), the aliens are called...",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Heptapods",
-    "incorrect_answers": [
-      "Angosian",
-      "Talaxian",
-      "Xindi"
-    ]
-  },
-  {
-    "id": 21,
-    "question": "This movie contains the quote, &quot;I love the smell of napalm in the morning!&quot;",
-    "difficulty": 2,
-    "category": "action",
-    "correct_answer": "Apocalypse Now",
-    "incorrect_answers": [
-      "Platoon",
-      "The Deer Hunter",
-      "Full Metal Jacket"
-    ]
-  },
-  {
-    "id": 22,
-    "question": "In the 1999 movie Fight Club, which of these is not a rule of the &quot;fight club&quot;?",
-    "difficulty": 2,
-    "category": "action",
-    "correct_answer": "Always wear a shirt",
-    "incorrect_answers": [
-      "You do not talk about FIGHT CLUB",
-      "Only two guys to a fight",
-      "Fights will go on as long as they have to"
-    ]
-  },
-  {
-    "id": 23,
-    "question": "What was the first James Bond film?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "Dr. No",
-    "incorrect_answers": [
-      "Goldfinger",
-      "From Russia With Love",
-      "Thunderball"
-    ]
-  },
-  {
-    "id": 24,
-    "question": "Which actors made up the trio in &quot;The Good, the Bad, and the Ugly&quot;? ",
-    "difficulty": 2,
-    "category": "action",
-    "correct_answer": "Clint Eastwood, Eli Wallach, and Lee Van Cleef",
-    "incorrect_answers": [
-      "Sergio Leone, Ennio Morricone, and Tonino Delli Colli",
-      "Yul Brynner, Steve McQueen, and Charles Bronson",
-      "Aldo Giuffr&egrave;, Mario Brega, and Luigi Pistilli"
-    ]
-  },
-  {
-    "id": 25,
-    "question": "Which movie contains the quote, &quot;Say hello to my little friend!&quot;?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "Scarface",
-    "incorrect_answers": [
-      "Reservoir Dogs",
-      "Heat",
-      "Goodfellas"
-    ]
-  },
-  {
-    "id": 26,
-    "question": "Leonardo Di Caprio won his first Best Actor Oscar for his performance in which film?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "The Revenant",
-    "incorrect_answers": [
-      "The Wolf Of Wall Street",
-      "Shutter Island",
-      "Inception"
-    ]
-  },
-  {
-    "id": 27,
-    "question": "Who plays &quot;Bruce Wayne&quot; in the 2008 movie &quot;The Dark Knight&quot;?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "Christian Bale",
-    "incorrect_answers": [
-      "Michael Caine",
-      "Ron Dean",
-      "Heath Ledger"
-    ]
-  },
-  {
-    "id": 28,
-    "question": "In Mad Max Fury Road, How did War Boy, Nux, refer to Max?",
-    "difficulty": 2,
-    "category": "action",
-    "correct_answer": "Blood Bag",
-    "incorrect_answers": [
-      "Slave",
-      "Body Bag",
-      "Meat"
-    ]
-  },
-  {
-    "id": 29,
-    "question": "How many infinity stones are in MCU?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "6",
-    "incorrect_answers": [
-      "5",
-      "7",
-      "8"
-    ]
-  },
-  {
-    "id": 30,
-    "question": "What type of doctor is Doctor Strange?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "A neurosurgeon",
-    "incorrect_answers": [
-      "A Endocrinologist",
-      "A Nephrologist",
-      "A Oncologist"
-    ]
-  },
-  {
-    "id": 31,
-    "question": "Who is the murderer in Friday the 13th?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Pamela Voorhees",
-    "incorrect_answers": [
-      "Norman Bates",
-      "Jason Voorhees",
-      "Ghostface"
-    ]
-  },
-  {
-    "id": 32,
-    "question": "Who directed Scream?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Wes Craven",
-    "incorrect_answers": [
-      "George Romero",
-      "John Carpenter",
-      "Ridley Scott"
-    ]
-  },
-  {
-    "id": 33,
-    "question": "What is the occupation of Hannibal Lecter, the serial killer who appears in such films as The Silence of the Lambs?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Psychiatrist",
-    "incorrect_answers": [
-      "Pediatrician",
-      "Chef",
-      "Dentist"
-    ]
-  },
-  {
-    "id": 34,
-    "question": "Who is the villain in Halloween?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Michael Myers",
-    "incorrect_answers": [
-      "Freddy Krueger",
-      "Pennywise",
-      "Jack Torrance"
-    ]
-  },
-  {
-    "id": 35,
-    "question": "Which actor made his film debut in A Nightmare on Elm Street?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Johnny Depp",
-    "incorrect_answers": [
-      "Nicolas Cage",
-      "Robert Englund",
-      "Charlie Sheen"
-    ]
-  },
-  {
-    "id": 36,
-    "question": "Which of the following was not based on a Stephen King work?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "The Exorcist",
-    "incorrect_answers": [
-      "Children of the Corn",
-      "Misery",
-      "Cujo"
-    ]
-  },
-  {
-    "id": 37,
-    "question": "What real-life killer inspired Alfred Hitchcock's Psycho?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Ed Gein",
-    "incorrect_answers": [
-      "Richard Speck",
-      "Charles Manson",
-      "Joel Rifkin"
-    ]
-  },
-  {
-    "id": 38,
-    "question": "The Texas Chainsaw Massacre's Leatherface wears a mask made from what?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Human skin",
-    "incorrect_answers": [
-      "Leather",
-      "Plastic",
-      "None of these"
-    ]
-  },
-  {
-    "id": 39,
-    "question": "Who was Michael Myers' very first victim?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "His sister",
-    "incorrect_answers": [
-      "His mother",
-      "His father",
-      "His babysitter"
-    ]
-  },
-  {
-    "id": 40,
-    "question": "How many times do you need to say Candyman's name into the mirror to make him appear?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Five",
-    "incorrect_answers": [
-      "Three",
-      "Four ",
-      "Six"
-    ]
-  },
-  {
-    "id": 41,
-    "question": "What is the name of the young boy in The Omen?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Damien",
-    "incorrect_answers": [
-      "Kevin ",
-      "Devon ",
-      "Jonathan"
-    ]
-  },
-  {
-    "id": 42,
-    "question": "Who is the leading actress in the 2020 version of The Invisible Man?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Elisabeth Moss",
-    "incorrect_answers": [
-      "Florence Pugh",
-      "Toni Collette",
-      "Lupita Nyong'o"
-    ]
-  },
-  {
-    "id": 43,
-    "question": "Which of these is NOT the title of a Resident Evil movie?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Resident Evil: Absolution ",
-    "incorrect_answers": [
-      "Resident Evil: Extiction",
-      "Resident Evil: Afterlife",
-      "Resident Evil: Apocalypse"
-    ]
-  },
-  {
-    "id": 44,
-    "question": "What classic horror movie features a serial killer in a William Shatner mask?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Halloween",
-    "incorrect_answers": [
-      "The Fog",
-      "Friday the 13th",
-      "Texas Chainsaw Massacre"
-    ]
-  },
-  {
-    "id": 45,
-    "question": "In which horror movie does the protagonist write a book that contains only the line \"All work and no play makes Jack a dull boy\" repeated over and over and over?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "The shining",
-    "incorrect_answers": [
-      "The Devil's rain",
-      "Writer's Block",
-      "The Ninth Gate"
-    ]
-  },
-  {
-    "id": 46,
-    "question": "How many people associated with The Exorcist died during production?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "9",
-    "incorrect_answers": [
-      "6",
-      "12",
-      "3"
-    ]
-  },
-  {
-    "id": 47,
-    "question": "What horror film was the first movie to show a woman in just a bra and slip?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Psycho",
-    "incorrect_answers": [
-      "Bride of Frankenstein ",
-      "The Haunting ",
-      "The Wax Museuem"
-    ]
-  },
-  {
-    "id": 48,
-    "question": "What color is Freddy Krueger's sweater?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Red and Green ",
-    "incorrect_answers": [
-      "Red and Yellow ",
-      "Red and Black",
-      "Red and Blue"
-    ]
-  },
-  {
-    "id": 49,
-    "question": "How many people does Jason kill in the FIRST Friday the 13th film?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "0",
-    "incorrect_answers": [
-      "5",
-      "9",
-      "13"
-    ]
-  },
-  {
-    "id": 50,
-    "question": "In Scream, what is Rule #1 on Randy's list of rules for surviving a horror movie?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Don't have sex",
-    "incorrect_answers": [
-      "Don't drink or do drugs",
-      "Don't go outside alone ",
-      "Don't say ' I'll be right back '"
-    ]
-  },
-  {
-    "id": 51,
-    "question": "What horror movie required the purchase of 500 Florida frogs and 100 giant South American toads?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "The Frogs",
-    "incorrect_answers": [
-      "Pet Sematary",
-      "Invasion of the body Snatchers",
-      "Creature from the Black Lagoon"
-    ]
-  },
-  {
-    "id": 52,
-    "question": "What was the original title of The Blob?",
-    "difficulty": 4,
-    "category": "horror",
-    "correct_answer": "The Glob",
-    "incorrect_answers": [
-      "The Lump ",
-      "The Spheroid",
-      "The Thing"
-    ]
-  },
-  {
-    "id": 53,
-    "question": "What horror movie features a serial killer wearing a mask inspired by an Edvard Munch painting?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Scream",
-    "incorrect_answers": [
-      "Halloween",
-      "The man in the black suit ",
-      "Henry: Portrait of a serial killer"
-    ]
-  },
-  {
-    "id": 54,
-    "question": "What horror film caused some theatres to suggest that patrons prone to motion sickness sit in the aisle seats?",
-    "difficulty": 4,
-    "category": "horror",
-    "correct_answer": "The Blair Witch Project",
-    "incorrect_answers": [
-      "Friday the 13th",
-      "Vertigo",
-      "Mimic"
-    ]
-  },
-  {
-    "id": 55,
-    "question": "In Poltergeist, what grabs Robbie Freeling through his bedroom window?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "A tree",
-    "incorrect_answers": [
-      "A clown",
-      "An Indian",
-      "A water hose"
-    ]
-  },
-  {
-    "id": 56,
-    "question": "How much screen time does Freddy Krueger get in the first A Nightmare on Elm Street movie?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "7 minutes",
-    "incorrect_answers": [
-      "21 minutes",
-      "14 minutes ",
-      "3 minutes"
-    ]
-  },
-  {
-    "id": 57,
-    "question": "Where does Friday the 13th take place?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Camp Crystal Lake",
-    "incorrect_answers": [
-      "Camp Kikiwaka",
-      "Camp Clear Lake",
-      "Camp Crescent Lake"
-    ]
-  },
-  {
-    "id": 58,
-    "question": "Why can't Michael Myers be killed?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "An ancient Druid curse",
-    "incorrect_answers": [
-      "He's a god",
-      "He's a ghost",
-      "He's just lucky"
-    ]
-  },
-  {
-    "id": 59,
-    "question": "What child actress was originally offered the role of Regan MacNeill in The Exorcist?",
-    "difficulty": 4,
-    "category": "horror",
-    "correct_answer": "Dana Plato",
-    "incorrect_answers": [
-      "Melissa Gilbert",
-      "Lisa Bonet",
-      "Carrie Fisher"
-    ]
-  },
-  {
-    "id": 60,
-    "question": "Which horror movie was filmed in just 7 days?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Paranormal Activity",
-    "incorrect_answers": [
-      "Halloween",
-      "A nightmare on Elm Street ",
-      "The Texas chain saw massacre"
-    ]
-  },
-  {
-    "id": 61,
-    "question": "What was the first horror film nominated for a Best Picture Oscar?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "The Exorcist",
-    "incorrect_answers": [
-      "The Shining",
-      "Psycho",
-      "The silence of the lambs"
-    ]
-  },
-  {
-    "id": 62,
-    "question": "In the first two Hellraiser films, how many different actors played Frank Cotton?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "3",
-    "incorrect_answers": [
-      "1",
-      "2",
-      "4"
-    ]
-  },
-  {
-    "id": 63,
-    "question": "What is the name of the apartment building Guy and Rosemary move into in Rosemary's Baby?",
-    "difficulty": 4,
-    "category": "horror",
-    "correct_answer": "The Bramford",
-    "incorrect_answers": [
-      "The Branson",
-      "The Brockworth",
-      "The Bordsky"
-    ]
-  },
-  {
-    "id": 64,
-    "question": "Who is responsible for releasing the deadly virus in 28 Days Later?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Animal Rights Activists",
-    "incorrect_answers": [
-      "Taxi Driver",
-      "Islamic Terrorist",
-      "The Chinese Government"
-    ]
-  },
-  {
-    "id": 65,
-    "question": "In Carrie, what do the other students dump on Carrie at prom?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Pig's Blood",
-    "incorrect_answers": [
-      "Cow Manure",
-      "Red Paint",
-      "Spaghetti Sauce"
-    ]
-  },
-  {
-    "id": 66,
-    "question": "Which room does Dick Hallorann tell Danny to stay away from in The Shining?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "237",
-    "incorrect_answers": [
-      "119",
-      "453",
-      "311"
-    ]
-  },
-  {
-    "id": 67,
-    "question": "Whose skin does Kirsty wear in Hellbound: Hellraiser II?",
-    "difficulty": 4,
-    "category": "horror",
-    "correct_answer": "Julia's",
-    "incorrect_answers": [
-      "Tiffany's",
-      "Frank's",
-      "Larry's"
-    ]
-  },
-  {
-    "id": 68,
-    "question": "What is Norman's hobby in Psycho?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Taxidermy",
-    "incorrect_answers": [
-      "Model Ships",
-      "Photography",
-      "Stamp collecting"
-    ]
-  },
-  {
-    "id": 69,
-    "question": "What happens to Damien's first nanny in The Omen?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "She hangs herself",
-    "incorrect_answers": [
-      "She goes insane",
-      "She disappears",
-      "She quits"
-    ]
-  },
-  {
-    "id": 70,
-    "question": "Who speaks to Isaac in Children of the Corn?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "He who walks behind the rows",
-    "incorrect_answers": [
-      "He who shall not be named",
-      "He who knows no sin",
-      "He who comes with fire"
-    ]
-  },
-  {
-    "id": 71,
-    "question": "What was Pinhead's human name?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Elliot",
-    "incorrect_answers": [
-      "Winston",
-      "Gerald",
-      "Duncan"
-    ]
-  },
-  {
-    "id": 72,
-    "question": "What is unusual about the videotape in The Ring?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "It doesn't include time code",
-    "incorrect_answers": [
-      "It's more than 100 years old ",
-      "It won't burn in fire ",
-      "It can't be copied"
-    ]
-  },
-  {
-    "id": 73,
-    "question": " What does the Native American shaman give Steve in Poltergeist II?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Power of smoke",
-    "incorrect_answers": [
-      "Power of stone",
-      "Power of earth",
-      "Power of dreams"
-    ]
-  },
-  {
-    "id": 74,
-    "question": "Who is the only character to appear in and survive all four Jaws movies?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Michael Brody",
-    "incorrect_answers": [
-      "Martin Brody",
-      "Ellen Brody",
-      "Sean Brody"
-    ]
-  },
-  {
-    "id": 75,
-    "question": "What was the surname of Damien in The Omen films?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Thorn",
-    "incorrect_answers": [
-      "DeVille",
-      "Trotter",
-      "Evans"
-    ]
-  },
-  {
-    "id": 76,
-    "question": "What is the name of the clown in Stephen King's It?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Pennywise",
-    "incorrect_answers": [
-      "Poundfoolish",
-      "Pennyworth",
-      "Penny"
-    ]
-  },
-  {
-    "id": 77,
-    "question": "In which slasher film did Jason Voorhees first appear as the killer?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Friday the 13th Part 2",
-    "incorrect_answers": [
-      "Friday the 13th Part 3",
-      "Friday the 13th ",
-      "Friday the 13th Part 4"
-    ]
-  },
-  {
-    "id": 78,
-    "question": "What month has every SAW film been released in?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "October",
-    "incorrect_answers": [
-      "September",
-      "December",
-      "November"
-    ]
-  },
-  {
-    "id": 79,
-    "question": "In total, about how many people have died in the SAW series? (Including unnamed police officers and other extras)",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "80",
-    "incorrect_answers": [
-      "100",
-      "20",
-      "40"
-    ]
-  },
-  {
-    "id": 80,
-    "question": "What was the original subtitle going to be for 'SAW VI'?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Endgame",
-    "incorrect_answers": [
-      "Game Over",
-      "Legacy",
-      "Flesh and Blood"
-    ]
-  },
-  {
-    "id": 81,
-    "question": "How many people have worked for the Jigsaw Killer?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Six",
-    "incorrect_answers": [
-      "Seven",
-      "Five",
-      "Four"
-    ]
-  },
-  {
-    "id": 82,
-    "question": "How old was Jigsaw at his time of death?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "52",
-    "incorrect_answers": [
-      "49",
-      "54",
-      "56"
-    ]
-  },
-  {
-    "id": 83,
-    "question": "Where does the first The Hangover movie take place?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Las Vegas",
-    "incorrect_answers": [
-      "Paris",
-      "Seattle",
-      "Stockholm"
-    ]
-  },
-  {
-    "id": 84,
-    "question": "In The Hangover movie, who is missing the morning after the guys arrived in Las Vegas?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Doug",
-    "incorrect_answers": [
-      "Stu",
-      "Phil",
-      "Alan"
-    ]
-  },
-  {
-    "id": 85,
-    "question": "In the Hangover, what animal do the guys find in their bathroom?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Tiger",
-    "incorrect_answers": [
-      "Horse",
-      "Dog",
-      "Cat"
-    ]
-  },
-  {
-    "id": 86,
-    "question": "What is the first name of Ted's girlfriend?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Tami-Lynn",
-    "incorrect_answers": [
-      "Sarah-Lynn",
-      "Sandy-Lynn",
-      "Amber-Lynn"
-    ]
-  },
-  {
-    "id": 87,
-    "question": "In Ted, which of the following was found on the apartment floor, causing Lori to flip out?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "A turd",
-    "incorrect_answers": [
-      "A pee station",
-      "A usead condom ",
-      "A joint"
-    ]
-  },
-  {
-    "id": 88,
-    "question": "In Ted, at which of the following does John Bennett work at?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "A rental car company",
-    "incorrect_answers": [
+      {
+        "id": 1,
+        "question": "Name the administrator of Cloud City who appears in The Empire Strikes Back?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "Lando Calrissian ",
+        "incorrect_answers": [
+          "Chewbacca",
+          "Han Solo",
+          "Senador Bail Organa"
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Who plays Luke Skywalker throughout the series?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "Mark Hamill",
+        "incorrect_answers": [
+          "Will Smith",
+          "Leonardo DiCaprio",
+          "Tom Cruise"
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Which character, in Return of the Jedi says 'It's a trap'?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "Admiral Ackbar",
+        "incorrect_answers": [
+          "Luke Skywalker",
+          "Greedo",
+          "Biggs Darklighter"
+        ]
+      },
+      {
+        "id": 4,
+        "question": "What year did the first Star Wars film come out?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "1977",
+        "incorrect_answers": [
+          "2004",
+          "1989",
+          "1944"
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Which planet is Jar Jar Binks from?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "Naboo",
+        "incorrect_answers": [
+          "Tatooine",
+          "Coruscant",
+          "Alderaan"
+        ]
+      },
+      {
+        "id": 6,
+        "question": "10. Ewan Macgregor and Alec Guinness play which character?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "Obi Wan Kenobi",
+        "incorrect_answers": [
+          "Owen Lars",
+          "C-3PO",
+          "Anakin Skywalker"
+        ]
+      },
+      {
+        "id": 7,
+        "question": "In Blade Runner, the artificial humans are formally called what?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "Replicant",
+        "incorrect_answers": [
+          "Recombinant",
+          "Synthezoid",
+          "Android"
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Who directed Blade Runner, in addition to the sci-fi classic Alien?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "Ridley Scott",
+        "incorrect_answers": [
+          "Steven Spielberg",
+          "George Lucas",
+          "M. Night Shyamalan"
+        ]
+      },
+      {
+        "id": 9,
+        "question": "In Interestellar, what natural disaster is happening on Earth, that will eventually cause the human race to go extinct?",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "Dust Storms",
+        "incorrect_answers": [
+          "Earthquakes",
+          "Volcanoes",
+          "Hurricanes"
+        ]
+      },
+      {
+        "id": 10,
+        "question": "In Interestellar, What does the message from the ghost say in Murphy's room.",
+        "difficulty": 1,
+        "category": "science fiction",
+        "correct_answer": "STAY",
+        "incorrect_answers": [
+          "I Love You",
+          "Go to Miller's Planet",
+          "Leave Now"
+        ]
+      },
+      {
+        "id": 11,
+        "question": "In Interestellar, why does Dr. Mann lie about his planet?",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "He wants to live - survival instinct!",
+        "incorrect_answers": [
+          "He wants his planet to the be the one humans live on.",
+          "He believes there are 2 planets humans can live on.",
+          "He doesn't lie."
+        ]
+      },
+      {
+        "id": 12,
+        "question": "In Matrix, What exactly did taking the red pill mean?",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "The red pill allows us to free ourselves from the virtual reality of the Matrix and lead us to the real world",
+        "incorrect_answers": [
+          "The red pill allows you to forget everything that happened and stay in the virtual reality of the Matrix",
+          "The red pill allows you to jump to another dimension",
+          "The red pill allows you to remember the past and foresee the future"
+        ]
+      },
+      {
+        "id": 13,
+        "question": "In Matrix, to find Trinity, Neo must follow...",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "A white rabbit, just like in Alice in Wonderland",
+        "incorrect_answers": [
+          "A white snake",
+          "A white owl",
+          "A white pigeon"
+        ]
+      },
+      {
+        "id": 14,
+        "question": "In Matrix, what was the job of Thomas Anderson (Neo) before starting his particular adventure?",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "Programmer",
+        "incorrect_answers": [
+          "Computer technical service",
+          "Hardware designer",
+          "professional gamer"
+        ]
+      },
+      {
+        "id": 15,
+        "question": "In 2001: A Space Odyssey, What airline's name appeared on the spacecraft that Dr. Heywood Floyd took to get to the space station?",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "Pan Am",
+        "incorrect_answers": [
+          "Ryanair",
+          "AmericanAirlines",
+          "easyJet"
+        ]
+      },
+      {
+        "id": 16,
+        "question": "In Back to the future, which type of car is converted into a time machine?",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "DeLorean",
+        "incorrect_answers": [
+          "Dodge",
+          "Mitsubishi",
+          "Ferrari"
+        ]
+      },
+      {
+        "id": 17,
+        "question": "Who directed Back to the Future?",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "Robert Zemeckis",
+        "incorrect_answers": [
+          "Steven Spielberg",
+          "George Lucas",
+          "Ron Howard"
+        ]
+      },
+      {
+        "id": 18,
+        "question": "In Back to the future, what speed did the DeLorean need to hit to be able to time travel?",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "88mph / 141kmh",
+        "incorrect_answers": [
+          "73mph / 117 kmh",
+          "76mph / 122 kmh",
+          "80mph / 128 kmh"
+        ]
+      },
+      {
+        "id": 19,
+        "question": "In Inception, why is Cobb wanted by the police?",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "He murdered his wife",
+        "incorrect_answers": [
+          "He robbed a big company",
+          "He is a serial killer",
+          "He sneaks into other's dreams"
+        ]
+      },
+      {
+        "id": 20,
+        "question": "In Arrival (2016), the aliens are called...",
+        "difficulty": 2,
+        "category": "science fiction",
+        "correct_answer": "Heptapods",
+        "incorrect_answers": [
+          "Angosian",
+          "Talaxian",
+          "Xindi"
+        ]
+      },
+      {
+        "id": 21,
+        "question": "This movie contains the quote, &quot;I love the smell of napalm in the morning!&quot;",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Apocalypse Now",
+        "incorrect_answers": [
+          "Platoon",
+          "The Deer Hunter",
+          "Full Metal Jacket"
+        ]
+      },
+      {
+        "id": 22,
+        "question": "In the 1999 movie Fight Club, which of these is not a rule of the &quot;fight club&quot;?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Always wear a shirt",
+        "incorrect_answers": [
+          "You do not talk about FIGHT CLUB",
+          "Only two guys to a fight",
+          "Fights will go on as long as they have to"
+        ]
+      },
+      {
+        "id": 23,
+        "question": "What was the first James Bond film?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "Dr. No",
+        "incorrect_answers": [
+          "Goldfinger",
+          "From Russia With Love",
+          "Thunderball"
+        ]
+      },
+      {
+        "id": 24,
+        "question": "Which actors made up the trio in &quot;The Good, the Bad, and the Ugly&quot;? ",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Clint Eastwood, Eli Wallach, and Lee Van Cleef",
+        "incorrect_answers": [
+          "Sergio Leone, Ennio Morricone, and Tonino Delli Colli",
+          "Yul Brynner, Steve McQueen, and Charles Bronson",
+          "Aldo Giuffr&egrave;, Mario Brega, and Luigi Pistilli"
+        ]
+      },
+      {
+        "id": 25,
+        "question": "Which movie contains the quote, &quot;Say hello to my little friend!&quot;?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "Scarface",
+        "incorrect_answers": [
+          "Reservoir Dogs",
+          "Heat",
+          "Goodfellas"
+        ]
+      },
+      {
+        "id": 26,
+        "question": "Leonardo Di Caprio won his first Best Actor Oscar for his performance in which film?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "The Revenant",
+        "incorrect_answers": [
+          "The Wolf Of Wall Street",
+          "Shutter Island",
+          "Inception"
+        ]
+      },
+      {
+        "id": 27,
+        "question": "Who plays &quot;Bruce Wayne&quot; in the 2008 movie &quot;The Dark Knight&quot;?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "Christian Bale",
+        "incorrect_answers": [
+          "Michael Caine",
+          "Ron Dean",
+          "Heath Ledger"
+        ]
+      },
+      {
+        "id": 28,
+        "question": "In Mad Max Fury Road, How did War Boy, Nux, refer to Max?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Blood Bag",
+        "incorrect_answers": [
+          "Slave",
+          "Body Bag",
+          "Meat"
+        ]
+      },
+      {
+        "id": 29,
+        "question": "How many infinity stones are in MCU?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "6",
+        "incorrect_answers": [
+          "5",
+          "7",
+          "8"
+        ]
+      },
+      {
+        "id": 30,
+        "question": "What type of doctor is Doctor Strange?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "A neurosurgeon",
+        "incorrect_answers": [
+          "A Endocrinologist",
+          "A Nephrologist",
+          "A Oncologist"
+        ]
+      },
+      {
+        "id": 31,
+        "question": "Who is the murderer in Friday the 13th?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Pamela Voorhees",
+        "incorrect_answers": [
+          "Norman Bates",
+          "Jason Voorhees",
+          "Ghostface"
+        ]
+      },
+      {
+        "id": 32,
+        "question": "Who directed Scream?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Wes Craven",
+        "incorrect_answers": [
+          "George Romero",
+          "John Carpenter",
+          "Ridley Scott"
+        ]
+      },
+      {
+        "id": 33,
+        "question": "What is the occupation of Hannibal Lecter, the serial killer who appears in such films as The Silence of the Lambs?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Psychiatrist",
+        "incorrect_answers": [
+          "Pediatrician",
+          "Chef",
+          "Dentist"
+        ]
+      },
+      {
+        "id": 34,
+        "question": "Who is the villain in Halloween?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Michael Myers",
+        "incorrect_answers": [
+          "Freddy Krueger",
+          "Pennywise",
+          "Jack Torrance"
+        ]
+      },
+      {
+        "id": 35,
+        "question": "Which actor made his film debut in A Nightmare on Elm Street?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Johnny Depp",
+        "incorrect_answers": [
+          "Nicolas Cage",
+          "Robert Englund",
+          "Charlie Sheen"
+        ]
+      },
+      {
+        "id": 36,
+        "question": "Which of the following was not based on a Stephen King work?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "The Exorcist",
+        "incorrect_answers": [
+          "Children of the Corn",
+          "Misery",
+          "Cujo"
+        ]
+      },
+      {
+        "id": 37,
+        "question": "What real-life killer inspired Alfred Hitchcock's Psycho?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Ed Gein",
+        "incorrect_answers": [
+          "Richard Speck",
+          "Charles Manson",
+          "Joel Rifkin"
+        ]
+      },
+      {
+        "id": 38,
+        "question": "The Texas Chainsaw Massacre's Leatherface wears a mask made from what?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Human skin",
+        "incorrect_answers": [
+          "Leather",
+          "Plastic",
+          "None of these"
+        ]
+      },
+      {
+        "id": 39,
+        "question": "Who was Michael Myers' very first victim?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "His sister",
+        "incorrect_answers": [
+          "His mother",
+          "His father",
+          "His babysitter"
+        ]
+      },
+      {
+        "id": 40,
+        "question": "How many times do you need to say Candyman's name into the mirror to make him appear?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Five",
+        "incorrect_answers": [
+          "Three",
+          "Four ",
+          "Six"
+        ]
+      },
+      {
+        "id": 41,
+        "question": "What is the name of the young boy in The Omen?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Damien",
+        "incorrect_answers": [
+          "Kevin ",
+          "Devon ",
+          "Jonathan"
+        ]
+      },
+      {
+        "id": 42,
+        "question": "Who is the leading actress in the 2020 version of The Invisible Man?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Elisabeth Moss",
+        "incorrect_answers": [
+          "Florence Pugh",
+          "Toni Collette",
+          "Lupita Nyong'o"
+        ]
+      },
+      {
+        "id": 43,
+        "question": "Which of these is NOT the title of a Resident Evil movie?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Resident Evil: Absolution ",
+        "incorrect_answers": [
+          "Resident Evil: Extiction",
+          "Resident Evil: Afterlife",
+          "Resident Evil: Apocalypse"
+        ]
+      },
+      {
+        "id": 44,
+        "question": "What classic horror movie features a serial killer in a William Shatner mask?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Halloween",
+        "incorrect_answers": [
+          "The Fog",
+          "Friday the 13th",
+          "Texas Chainsaw Massacre"
+        ]
+      },
+      {
+        "id": 45,
+        "question": "In which horror movie does the protagonist write a book that contains only the line \"All work and no play makes Jack a dull boy\" repeated over and over and over?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "The shining",
+        "incorrect_answers": [
+          "The Devil's rain",
+          "Writer's Block",
+          "The Ninth Gate"
+        ]
+      },
+      {
+        "id": 46,
+        "question": "How many people associated with The Exorcist died during production?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "9",
+        "incorrect_answers": [
+          "6",
+          "12",
+          "3"
+        ]
+      },
+      {
+        "id": 47,
+        "question": "What horror film was the first movie to show a woman in just a bra and slip?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Psycho",
+        "incorrect_answers": [
+          "Bride of Frankenstein ",
+          "The Haunting ",
+          "The Wax Museuem"
+        ]
+      },
+      {
+        "id": 48,
+        "question": "What color is Freddy Krueger's sweater?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Red and Green ",
+        "incorrect_answers": [
+          "Red and Yellow ",
+          "Red and Black",
+          "Red and Blue"
+        ]
+      },
+      {
+        "id": 49,
+        "question": "How many people does Jason kill in the FIRST Friday the 13th film?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "0",
+        "incorrect_answers": [
+          "5",
+          "9",
+          "13"
+        ]
+      },
+      {
+        "id": 50,
+        "question": "In Scream, what is Rule #1 on Randy's list of rules for surviving a horror movie?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Don't have sex",
+        "incorrect_answers": [
+          "Don't drink or do drugs",
+          "Don't go outside alone ",
+          "Don't say ' I'll be right back '"
+        ]
+      },
+      {
+        "id": 51,
+        "question": "What horror movie required the purchase of 500 Florida frogs and 100 giant South American toads?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "The Frogs",
+        "incorrect_answers": [
+          "Pet Sematary",
+          "Invasion of the body Snatchers",
+          "Creature from the Black Lagoon"
+        ]
+      },
+      {
+        "id": 52,
+        "question": "What was the original title of The Blob?",
+        "difficulty": 4,
+        "category": "horror",
+        "correct_answer": "The Glob",
+        "incorrect_answers": [
+          "The Lump ",
+          "The Spheroid",
+          "The Thing"
+        ]
+      },
+      {
+        "id": 53,
+        "question": "What horror movie features a serial killer wearing a mask inspired by an Edvard Munch painting?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Scream",
+        "incorrect_answers": [
+          "Halloween",
+          "The man in the black suit ",
+          "Henry: Portrait of a serial killer"
+        ]
+      },
+      {
+        "id": 54,
+        "question": "What horror film caused some theatres to suggest that patrons prone to motion sickness sit in the aisle seats?",
+        "difficulty": 4,
+        "category": "horror",
+        "correct_answer": "The Blair Witch Project",
+        "incorrect_answers": [
+          "Friday the 13th",
+          "Vertigo",
+          "Mimic"
+        ]
+      },
+      {
+        "id": 55,
+        "question": "In Poltergeist, what grabs Robbie Freeling through his bedroom window?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "A tree",
+        "incorrect_answers": [
+          "A clown",
+          "An Indian",
+          "A water hose"
+        ]
+      },
+      {
+        "id": 56,
+        "question": "How much screen time does Freddy Krueger get in the first A Nightmare on Elm Street movie?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "7 minutes",
+        "incorrect_answers": [
+          "21 minutes",
+          "14 minutes ",
+          "3 minutes"
+        ]
+      },
+      {
+        "id": 57,
+        "question": "Where does Friday the 13th take place?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Camp Crystal Lake",
+        "incorrect_answers": [
+          "Camp Kikiwaka",
+          "Camp Clear Lake",
+          "Camp Crescent Lake"
+        ]
+      },
+      {
+        "id": 58,
+        "question": "Why can't Michael Myers be killed?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "An ancient Druid curse",
+        "incorrect_answers": [
+          "He's a god",
+          "He's a ghost",
+          "He's just lucky"
+        ]
+      },
+      {
+        "id": 59,
+        "question": "What child actress was originally offered the role of Regan MacNeill in The Exorcist?",
+        "difficulty": 4,
+        "category": "horror",
+        "correct_answer": "Dana Plato",
+        "incorrect_answers": [
+          "Melissa Gilbert",
+          "Lisa Bonet",
+          "Carrie Fisher"
+        ]
+      },
+      {
+        "id": 60,
+        "question": "Which horror movie was filmed in just 7 days?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Paranormal Activity",
+        "incorrect_answers": [
+          "Halloween",
+          "A nightmare on Elm Street ",
+          "The Texas chain saw massacre"
+        ]
+      },
+      {
+        "id": 61,
+        "question": "What was the first horror film nominated for a Best Picture Oscar?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "The Exorcist",
+        "incorrect_answers": [
+          "The Shining",
+          "Psycho",
+          "The silence of the lambs"
+        ]
+      },
+      {
+        "id": 62,
+        "question": "In the first two Hellraiser films, how many different actors played Frank Cotton?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "3",
+        "incorrect_answers": [
+          "1",
+          "2",
+          "4"
+        ]
+      },
+      {
+        "id": 63,
+        "question": "What is the name of the apartment building Guy and Rosemary move into in Rosemary's Baby?",
+        "difficulty": 4,
+        "category": "horror",
+        "correct_answer": "The Bramford",
+        "incorrect_answers": [
+          "The Branson",
+          "The Brockworth",
+          "The Bordsky"
+        ]
+      },
+      {
+        "id": 64,
+        "question": "Who is responsible for releasing the deadly virus in 28 Days Later?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Animal Rights Activists",
+        "incorrect_answers": [
+          "Taxi Driver",
+          "Islamic Terrorist",
+          "The Chinese Government"
+        ]
+      },
+      {
+        "id": 65,
+        "question": "In Carrie, what do the other students dump on Carrie at prom?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Pig's Blood",
+        "incorrect_answers": [
+          "Cow Manure",
+          "Red Paint",
+          "Spaghetti Sauce"
+        ]
+      },
+      {
+        "id": 66,
+        "question": "Which room does Dick Hallorann tell Danny to stay away from in The Shining?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "237",
+        "incorrect_answers": [
+          "119",
+          "453",
+          "311"
+        ]
+      },
+      {
+        "id": 67,
+        "question": "Whose skin does Kirsty wear in Hellbound: Hellraiser II?",
+        "difficulty": 4,
+        "category": "horror",
+        "correct_answer": "Julia's",
+        "incorrect_answers": [
+          "Tiffany's",
+          "Frank's",
+          "Larry's"
+        ]
+      },
+      {
+        "id": 68,
+        "question": "What is Norman's hobby in Psycho?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Taxidermy",
+        "incorrect_answers": [
+          "Model Ships",
+          "Photography",
+          "Stamp collecting"
+        ]
+      },
+      {
+        "id": 69,
+        "question": "What happens to Damien's first nanny in The Omen?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "She hangs herself",
+        "incorrect_answers": [
+          "She goes insane",
+          "She disappears",
+          "She quits"
+        ]
+      },
+      {
+        "id": 70,
+        "question": "Who speaks to Isaac in Children of the Corn?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "He who walks behind the rows",
+        "incorrect_answers": [
+          "He who shall not be named",
+          "He who knows no sin",
+          "He who comes with fire"
+        ]
+      },
+      {
+        "id": 71,
+        "question": "What was Pinhead's human name?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Elliot",
+        "incorrect_answers": [
+          "Winston",
+          "Gerald",
+          "Duncan"
+        ]
+      },
+      {
+        "id": 72,
+        "question": "What is unusual about the videotape in The Ring?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "It doesn't include time code",
+        "incorrect_answers": [
+          "It's more than 100 years old ",
+          "It won't burn in fire ",
+          "It can't be copied"
+        ]
+      },
+      {
+        "id": 73,
+        "question": " What does the Native American shaman give Steve in Poltergeist II?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Power of smoke",
+        "incorrect_answers": [
+          "Power of stone",
+          "Power of earth",
+          "Power of dreams"
+        ]
+      },
+      {
+        "id": 74,
+        "question": "Who is the only character to appear in and survive all four Jaws movies?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Michael Brody",
+        "incorrect_answers": [
+          "Martin Brody",
+          "Ellen Brody",
+          "Sean Brody"
+        ]
+      },
+      {
+        "id": 75,
+        "question": "What was the surname of Damien in The Omen films?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Thorn",
+        "incorrect_answers": [
+          "DeVille",
+          "Trotter",
+          "Evans"
+        ]
+      },
+      {
+        "id": 76,
+        "question": "What is the name of the clown in Stephen King's It?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Pennywise",
+        "incorrect_answers": [
+          "Poundfoolish",
+          "Pennyworth",
+          "Penny"
+        ]
+      },
+      {
+        "id": 77,
+        "question": "In which slasher film did Jason Voorhees first appear as the killer?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Friday the 13th Part 2",
+        "incorrect_answers": [
+          "Friday the 13th Part 3",
+          "Friday the 13th ",
+          "Friday the 13th Part 4"
+        ]
+      },
+      {
+        "id": 78,
+        "question": "What month has every SAW film been released in?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "October",
+        "incorrect_answers": [
+          "September",
+          "December",
+          "November"
+        ]
+      },
+      {
+        "id": 79,
+        "question": "In total, about how many people have died in the SAW series? (Including unnamed police officers and other extras)",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "80",
+        "incorrect_answers": [
+          "100",
+          "20",
+          "40"
+        ]
+      },
+      {
+        "id": 80,
+        "question": "What was the original subtitle going to be for 'SAW VI'?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Endgame",
+        "incorrect_answers": [
+          "Game Over",
+          "Legacy",
+          "Flesh and Blood"
+        ]
+      },
+      {
+        "id": 81,
+        "question": "How many people have worked for the Jigsaw Killer?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Six",
+        "incorrect_answers": [
+          "Seven",
+          "Five",
+          "Four"
+        ]
+      },
+      {
+        "id": 82,
+        "question": "How old was Jigsaw at his time of death?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "52",
+        "incorrect_answers": [
+          "49",
+          "54",
+          "56"
+        ]
+      },
+      {
+        "id": 83,
+        "question": "Where does the first The Hangover movie take place?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Las Vegas",
+        "incorrect_answers": [
+          "Paris",
+          "Seattle",
+          "Stockholm"
+        ]
+      },
+      {
+        "id": 84,
+        "question": "In The Hangover movie, who is missing the morning after the guys arrived in Las Vegas?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Doug",
+        "incorrect_answers": [
+          "Stu",
+          "Phil",
+          "Alan"
+        ]
+      },
+      {
+        "id": 85,
+        "question": "In the Hangover, what animal do the guys find in their bathroom?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Tiger",
+        "incorrect_answers": [
+          "Horse",
+          "Dog",
+          "Cat"
+        ]
+      },
+      {
+        "id": 86,
+        "question": "What is the first name of Ted's girlfriend?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Tami-Lynn",
+        "incorrect_answers": [
+          "Sarah-Lynn",
+          "Sandy-Lynn",
+          "Amber-Lynn"
+        ]
+      },
+      {
+        "id": 87,
+        "question": "In Ted, which of the following was found on the apartment floor, causing Lori to flip out?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "A turd",
+        "incorrect_answers": [
+          "A pee station",
+          "A usead condom ",
+          "A joint"
+        ]
+      },
+      {
+        "id": 88,
+        "question": "In Ted, at which of the following does John Bennett work at?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "A rental car company",
+        "incorrect_answers": [
+          "A grocery store",
+          "A banking institution",
+          "A restaurant"
+        ]
+      },
+      {
+        "id": 89,
+        "question": "What does Ted's boss do when he finds out Ted is having sex at work?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Promotes him",
+        "incorrect_answers": [
+          "Shakes his head",
+          "Fires him",
+          "Gives him  a high five"
+        ]
+      },
+      {
+        "id": 90,
+        "question": "In Ted movie, what have John and Ted been afraid of since youth?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Thunder",
+        "incorrect_answers": [
+          "Evil Monkeys",
+          "Commitment",
+          "Clowns"
+        ]
+      },
+      {
+        "id": 91,
+        "question": "In Ali G movie, what is the name of the community centre Ali is fighting to save?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "John Nike Leisure Centre",
+        "incorrect_answers": [
+          "Fila Sports Centre",
+          "James Adidas Leisure Centre",
+          "Puma Community Centre"
+        ]
+      },
+      {
+        "id": 92,
+        "question": "In Ali G movie, what colour is Ali's posse represented by?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Yellow",
+        "incorrect_answers": [
+          "Blue",
+          "Red",
+          "Green"
+        ]
+      },
+      {
+        "id": 93,
+        "question": "In Ali G, Ali becomes the Ambassador of which country at the end of the film?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Jamaica",
+        "incorrect_answers": [
+          "Colombia",
+          "Cuba",
+          "Burkina Faso"
+        ]
+      },
+      {
+        "id": 94,
+        "question": "What car does Ali G. drive?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Yellow Renault 5 GT Turbo",
+        "incorrect_answers": [
+          "Blue BMW 318i",
+          "Red Golf GTi",
+          "Green Peugeot 206 GTi"
+        ]
+      },
+      {
+        "id": 95,
+        "question": "In dumb and dumber, what's the name of the store that Harry and Lloyd want to open?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "I got worms",
+        "incorrect_answers": [
+          "Mutt Cuts",
+          "Nice Hooters",
+          "Dumb and Dumber store"
+        ]
+      },
+      {
+        "id": 96,
+        "question": "In Dumb and Dumber film Lloyd and Harry flee their home because they think they're going to be killed for not paying ... ?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Gas",
+        "incorrect_answers": [
+          "Rent",
+          "Electricity",
+          "Water"
+        ]
+      },
+      {
+        "id": 97,
+        "question": "Who are the main actors from Dumb and Dumber?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Jim Carrey and Jeff Daniels",
+        "incorrect_answers": [
+          "Adam Sandler and Jim Carrey",
+          "Brad Pitt and Leonardo DiCaprio",
+          "Dwayne Johnson and Tom Cruise"
+        ]
+      },
+      {
+        "id": 98,
+        "question": "Which movie is not starring Adam Sandler?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Inception",
+        "incorrect_answers": [
+          "Click",
+          "Pixels",
+          "Just Go With It"
+        ]
+      },
+      {
+        "id": 99,
+        "question": "In School of Rock, what do they name the band?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "The School of Rock",
+        "incorrect_answers": [
+          "The Kids of Rock",
+          "Mr. S and the Kids",
+          "Rock's band"
+        ]
+      },
+      {
+        "id": 100,
+        "question": "In School of Rock, what job does Dewey/Ned have at the end of the movie?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "After-school music program teacher",
+        "incorrect_answers": [
+          "Programmer",
+          "He's in his old band, toruing the state",
+          "Rapper"
+        ]
+      },
+      {
+        "id": 101,
+        "question": "In Pitch Perfect, what is the name of this Barden University singing group?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "The Barden Bellas",
+        "incorrect_answers": [
+          "The Garden Harmony",
+          "The Barden Divas",
+          "One Direction"
+        ]
+      },
+      {
+        "id": 102,
+        "question": "In Pitch Perfect, where is Barden University?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Atlanta",
+        "incorrect_answers": [
+          "New York",
+          "Melbourne",
+          "Sydney"
+        ]
+      },
+      {
+        "id": 103,
+        "question": "In Pitch Perfect, what is Fat Amy's real first name?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Patricia",
+        "incorrect_answers": [
+          "Melissa",
+          "Deborah",
+          "Donna"
+        ]
+      },
+      {
+        "id": 104,
+        "question": "In Perfect Pitch, what special dance can Fat Amy do?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "The Mermaid Dance",
+        "incorrect_answers": [
+          "The Samba",
+          "The Charleston",
+          "Breakdancing"
+        ]
+      },
+      {
+        "id": 105,
+        "question": "In Perfect Pitch, who plays Fat Amy?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Rebel Wilson",
+        "incorrect_answers": [
+          "Anna Kendrick",
+          "Scarlett Johansson",
+          "Gal Gadot"
+        ]
+      },
+      {
+        "id": 106,
+        "question": "In 'Trading Places',what were the wealthy Duke brothers first names?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Randolph and Mortimer",
+        "incorrect_answers": [
+          "Rudolph and Randolph",
+          "Mortimer and Michael",
+          "Randolph and Michael"
+        ]
+      },
+      {
+        "id": 107,
+        "question": "In what movie does the Stay Puft Marshmallow Man begin destroying New York City?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Ghostbusters",
+        "incorrect_answers": [
+          "Waiting for Guffman",
+          "Dirty Rotten Scoundrels",
+          "Planes, Trains, and Automobiles"
+        ]
+      },
+      {
+        "id": 108,
+        "question": " Which movie does this quote fit? \r\n'Jim never vomits at home.'",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Airplane",
+        "incorrect_answers": [
+          "Annie Hall",
+          "Anchorman: The Legend of Ron Burgundy",
+          "Austin Powers: International Man of Mystery"
+        ]
+      },
+      {
+        "id": 109,
+        "question": "According to Buddy the Elf, the four food groups are candy, candy canes, candy corns and ___________?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Syrup",
+        "incorrect_answers": [
+          "Marshmallows",
+          "Peanut butter",
+          "Milk chocolate"
+        ]
+      },
+      {
+        "id": 110,
+        "question": "In the pro shop in Caddyshack, Rodney Dangerfield says if you buy a hat like Ted Knightyou get a free ______________!",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Bowl of soup",
+        "incorrect_answers": [
+          "Box of tees",
+          "Golf lesson",
+          "Car"
+        ]
+      },
+      {
+        "id": 111,
+        "question": "In 'Dumb and Dumber',what does Lloyd spike Harrys drink with?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Turbo Lax",
+        "incorrect_answers": [
+          "Alcohol",
+          "Sleep-All-Nite",
+          "Salt"
+        ]
+      },
+      {
+        "id": 112,
+        "question": "What is Bill Murray occupation in Groundhog Day?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Meteorologist",
+        "incorrect_answers": [
+          "Schoolteacher",
+          "Dentist",
+          "Salesman"
+        ]
+      },
+      {
+        "id": 113,
+        "question": "What is Napoleon Dynamite's favorite sport?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Tetherball",
+        "incorrect_answers": [
+          "Racquetball",
+          "Bocce Ball",
+          "Volleyball"
+        ]
+      },
+      {
+        "id": 114,
+        "question": "In what movie did Jennifer Aniston's boss ask her to wear 37 pieces of flair?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Office Space",
+        "incorrect_answers": [
+          "Friends With Money",
+          "Along Came Polly",
+          "She's the One"
+        ]
+      },
+      {
+        "id": 115,
+        "question": "What was John BelushiDelta Tau Chi name in 'Animal House'?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Bluto",
+        "incorrect_answers": [
+          "Flounder",
+          "Pinto",
+          "Otter"
+        ]
+      },
+      {
+        "id": 116,
+        "question": "In 'Wedding Crashers 2' what does Will Ferrell character crash?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Funerals",
+        "incorrect_answers": [
+          "Baby showers",
+          "Bar Mitzvahs",
+          "Graduation Parties"
+        ]
+      },
+      {
+        "id": 117,
+        "question": "In 'Wedding Crashers', what does main characters crash?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Wedding",
+        "incorrect_answers": [
+          "Funerals",
+          "Bar Mitzvahs",
+          "Graduation parties"
+        ]
+      },
+      {
+        "id": 118,
+        "question": "What was significant about the campfire scene in 'Blazing Saddles'?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "All the cowboys had gas.",
+        "incorrect_answers": [
+          "All the cowboys had headaches.",
+          "All the cowboys were wearing rhinestone hats.",
+          "All the cowboys were singing opera."
+        ]
+      },
+      {
+        "id": 119,
+        "question": "Who were 'on a mission from God'?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "John Belushi and Dan Akroyd",
+        "incorrect_answers": [
+          "Steve Martin and John Candy",
+          "Gene Wilder and Richard Pryor",
+          "Eddie Murphy and Dan Akroyd"
+        ]
+      },
+      {
+        "id": 120,
+        "question": "In 'There's Something About Mary',what football player plays Mary former love interest?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Brett Favre",
+        "incorrect_answers": [
+          "John Elway",
+          "Peyton Manning",
+          "Joe Namath"
+        ]
+      },
+      {
+        "id": 121,
+        "question": "Which movie does this quote fit?\r\n\"Brothers don't shake hands. Brothers gotta hug!\"",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Tommy Boy",
+        "incorrect_answers": [
+          "Wedding Crashers",
+          "Dumb & Dumber",
+          "Trading Places"
+        ]
+      },
+      {
+        "id": 122,
+        "question": "Which movie does this quote fit?\r\n\"Ooooh, behave!\"",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Austin Powers",
+        "incorrect_answers": [
+          "Ace Ventura",
+          "Napoleon Dynamite",
+          "Buddy the Elf"
+        ]
+      },
+      {
+        "id": 123,
+        "question": "How many 'Scary Movie' 's films are?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "5",
+        "incorrect_answers": [
+          "3",
+          "4",
+          "6"
+        ]
+      },
+      {
+        "id": 124,
+        "question": "What scary character parody in 'Scary Movie 1'?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Scream",
+        "incorrect_answers": [
+          "Freddy Krueger",
+          "The exorcist",
+          "The ring"
+        ]
+      },
+      {
+        "id": 125,
+        "question": "Which 'Scary Movie' characters say 'waaaaassuup'? ",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Scream and Shorty",
+        "incorrect_answers": [
+          "Cindy and Brenda",
+          "Scream and Cindy",
+          "Scream and Brenda"
+        ]
+      },
+      {
+        "id": 126,
+        "question": "Who are the main actors in '21 Jump Street'?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Jonah Hill and Channing Tatum",
+        "incorrect_answers": [
+          "Dave Franco and Channing Tatum",
+          "Jonah Hill and Dave Franco",
+          "Dave Franco and Ice Cube"
+        ]
+      },
+      {
+        "id": 127,
+        "question": "In Ghostbusters, In what building do Ray, Peter and Egon encounter their first ghost?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "The New York Public Library",
+        "incorrect_answers": [
+          "Grand Central Station ",
+          "Dana's Apartment",
+          "The Empire State Building"
+        ]
+      },
+      {
+        "id": 128,
+        "question": "Ghostbusters was written by both...",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Dan Aykroyd and Harold Ramis",
+        "incorrect_answers": [
+          "Bill Murray and Dan Aykroyd",
+          "Harold Ramis and Bill Murray",
+          "Moranis and that guy with the ginger beard"
+        ]
+      },
+      {
+        "id": 129,
+        "question": "What is the last line in the film''?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "I love this town",
+        "incorrect_answers": [
+          "I love this job",
+          "I love New York",
+          "I love this country"
+        ]
+      },
+      {
+        "id": 130,
+        "question": "How tall is the average Minion?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "105 cm",
+        "incorrect_answers": [
+          "10 cm",
+          "50 cm",
+          "99 cm"
+        ]
+      },
+      {
+        "id": 131,
+        "question": "Which of the following songs appear on the Moana soundtrack?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "How Far I'll Go",
+        "incorrect_answers": [
+          "How Far We'll Go",
+          "How Far They'll Go",
+          "How Far You'll Go"
+        ]
+      },
+      {
+        "id": 132,
+        "question": "What's the name of the town in The Nightmare Before Christmas?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Halloween Town",
+        "incorrect_answers": [
+          "Christmas Town",
+          "Skeletown",
+          "Gateshead"
+        ]
+      },
+      {
+        "id": 133,
+        "question": "What type of primate is The Lion King character Rafiki?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Mandrill",
+        "incorrect_answers": [
+          "Baboon",
+          "Spider monkey",
+          "Tarsier"
+        ]
+      },
+      {
+        "id": 134,
+        "question": "What is the name of the protagonist of the Movie Coco?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Miguel",
+        "incorrect_answers": [
+          "Andreas",
+          "Paulo",
+          "Max"
+        ]
+      },
+      {
+        "id": 135,
+        "question": "Who was the director of the animated film 'The Boy and the Beast'?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "Mamoru Hosoda",
+        "incorrect_answers": [
+          "Hayao Miyazaki",
+          "Tatsuyuki Nagai",
+          "Seiji Mizushima"
+        ]
+      },
+      {
+        "id": 136,
+        "question": "Who are the main characters in the animated film, 'The Road to El Dorado'?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Tulio and Miguel",
+        "incorrect_answers": [
+          "Tulio and Marco",
+          "Manuel and Julio",
+          "Hector and Miguel"
+        ]
+      },
+      {
+        "id": 137,
+        "question": "What did the Other Mother in 'Coraline' transform into near the end of the film?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Spider",
+        "incorrect_answers": [
+          "Butterfly",
+          "Wasp",
+          "Ant"
+        ]
+      },
+      {
+        "id": 138,
+        "question": "When was the film, 'Lilo & Stitch' released?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "2002",
+        "incorrect_answers": [
+          "2004",
+          "2000",
+          "2007"
+        ]
+      },
+      {
+        "id": 139,
+        "question": "Which of the following is a Studio Ghibli film?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Princess Mononoke (1997)",
+        "incorrect_answers": [
+          "A Silent Voice (2016)",
+          "Children Who Chase Lost Voices (2011)",
+          "Your Name (2016)"
+        ]
+      },
+      {
+        "id": 140,
+        "question": "What is Jack's full name in the film, 'The Nightmare Before Christmas'?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Jack Skellington",
+        "incorrect_answers": [
+          "Jack Skeleton",
+          "Jack Stalfos",
+          "Jack Skulltula"
+        ]
+      },
+      {
+        "id": 141,
+        "question": "What animal did Kuzco turn into in the film, 'The Emperor's New Groove'?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Llama",
+        "incorrect_answers": [
+          "Donkey",
+          "Horse",
+          "Goat"
+        ]
+      },
+      {
+        "id": 142,
+        "question": "What is the name of Shrek's animal companion in 'Shrek'?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Donkey",
+        "incorrect_answers": [
+          "Mule",
+          "Dean",
+          "Eddie"
+        ]
+      },
+      {
+        "id": 143,
+        "question": "What was the only anime that has won an Oscar currently?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Spirited Away (2001)",
+        "incorrect_answers": [
+          "The Tale of Princess Kaguya (2013)",
+          "Howl's Moving Castle (2004)",
+          "The Wind Rises (2013)"
+        ]
+      },
+      {
+        "id": 144,
+        "question": "What animation studio produced the animated film 'Spirit: Stallion of the Cimarron'?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Dreamworks Animation",
+        "incorrect_answers": [
+          "A-1 Pictures",
+          "Walt Disney Animation Studios",
+          "Bones Inc."
+        ]
+      },
+      {
+        "id": 145,
+        "question": "What is Hiccup Haddock III's middle name in 'How to Train Your Dragon'?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "Horrendous",
+        "incorrect_answers": [
+          "Horrible",
+          "Harrowing",
+          "Horrid"
+        ]
+      },
+      {
+        "id": 146,
+        "question": "What villain threatens the entire Lego universe in 'The Lego Movie'?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "Lord Business",
+        "incorrect_answers": [
+          "Lord 1 Percent",
+          "Lord Corporate",
+          "Lord Evil"
+        ]
+      },
+      {
+        "id": 147,
+        "question": "'Fantastic Mr. Fox' is based on a children's book by what author?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Roald Dahl",
+        "incorrect_answers": [
+          "Dr. Seuss",
+          "J. K. Rowling",
+          "Beverly Cleary"
+        ]
+      },
+      {
+        "id": 148,
+        "question": "What dragon does Hiccup ride in the 'How to Train Your Dragon' movies?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Toothless",
+        "incorrect_answers": [
+          "Tailless",
+          "Tubby",
+          "Tagrid"
+        ]
+      },
+      {
+        "id": 149,
+        "question": "Disney's 'Dumbo' had extremely large what?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Ears",
+        "incorrect_answers": [
+          "Tusks",
+          "Feet",
+          "Toenails"
+        ]
+      },
+      {
+        "id": 150,
+        "question": "Dash was a character in which animated film?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "The Incredibles",
+        "incorrect_answers": [
+          "Shrek",
+          "Toy Story",
+          "Madagascar"
+        ]
+      },
+      {
+        "id": 151,
+        "question": "What family runs the chicken farm in 'Chicken Run'?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "The Tweedys",
+        "incorrect_answers": [
+          "The Twiddles",
+          "The Twaddys",
+          "The Tweedles"
+        ]
+      },
+      {
+        "id": 152,
+        "question": "Who falls in love with the Donkey in 'Shrek'?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "The Dragon",
+        "incorrect_answers": [
+          "The Giant",
+          "The Fairy Godmother",
+          "Prince Charming"
+        ]
+      },
+      {
+        "id": 153,
+        "question": "What director made the stop motion animated movie 'Corpse Bride'?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Tim Burton",
+        "incorrect_answers": [
+          "Brad Bird",
+          "Wes Anderson",
+          "Edgar Wright"
+        ]
+      },
+      {
+        "id": 154,
+        "question": "What name does Homer give to his beloved adopted pig in 'The Simpsons Movie'?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Spider-Pig",
+        "incorrect_answers": [
+          "Captain Pork",
+          "The Incredible Pig",
+          "Wolverpig"
+        ]
+      },
+      {
+        "id": 155,
+        "question": "In what year was the movie 'Ratatouille' released?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "2007",
+        "incorrect_answers": [
+          "2005",
+          "2004",
+          "2002"
+        ]
+      },
+      {
+        "id": 156,
+        "question": "What was the spin off film from 'Cars' called that released in 2013?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Planes",
+        "incorrect_answers": [
+          "Boats",
+          "Trains",
+          "Bikes"
+        ]
+      },
+      {
+        "id": 157,
+        "question": "What type of fish is the main character in the Pixar movie 'Finding Nemo'?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Clownfish",
+        "incorrect_answers": [
+          "Snowfish",
+          "Blowfish",
+          "Frownfish"
+        ]
+      },
+      {
+        "id": 158,
+        "question": "Complete the title of the 'Madagascar' sequel 'Escape to…'?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Africa",
+        "incorrect_answers": [
+          "Asia",
+          "Europe",
+          "North Pole"
+        ]
+      },
+      {
+        "id": 159,
+        "question": "In what year was Pixar sold to Disney?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "2006",
+        "incorrect_answers": [
+          "2012",
+          "1996",
+          "2003"
+        ]
+      },
+      {
+        "id": 160,
+        "question": "Who directed 'Perfect Blue'?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "Satoshi Kon",
+        "incorrect_answers": [
+          "Makoto Shinkai",
+          "Katsuhiro Otomo",
+          "Yoshikazu Takeuchi"
+        ]
+      },
+      {
+        "id": 161,
+        "question": "In 'Perfect Blue', what does Mima kill the stalker with?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "Hammer",
+        "incorrect_answers": [
+          "Gun",
+          "Screwdriver",
+          "Knife"
+        ]
+      },
+      {
+        "id": 162,
+        "question": "In 'Perfect Blue', what is the name of the website Mima visits?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "Mima's room",
+        "incorrect_answers": [
+          "Mima's place",
+          "Mima's house",
+          "Mima's domain"
+        ]
+      },
+      {
+        "id": 163,
+        "question": "In 'Spirited Away', What are Chihiro's parents turned into?",
+        "difficulty": 1,
+        "category": "animation",
+        "correct_answer": "Pigs",
+        "incorrect_answers": [
+          "Cats",
+          "Spirits",
+          "Sushi"
+        ]
+      },
+      {
+        "id": 164,
+        "question": "What is the vehicle in My Neighbour Totoro?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "A Cat-Bus",
+        "incorrect_answers": [
+          "A Cat-Plane",
+          "A Cat-Boat",
+          "A Squid-Train"
+        ]
+      },
+      {
+        "id": 165,
+        "question": "What is the name of the warrior prince in 'Princess Mononoke'?",
+        "difficulty": 2,
+        "category": "animation",
+        "correct_answer": "Ashitaka",
+        "incorrect_answers": [
+          "Aoki",
+          "Kenji",
+          "San"
+        ]
+      },
+      {
+        "id": 166,
+        "question": "In 'Princess Mononoke', how does Ashitaka's curse manifest itself physically?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "in an infection that spreads down his arm",
+        "incorrect_answers": [
+          "in black worms he coughs up",
+          "his eyes turn red",
+          "his hair falls out"
+        ]
+      },
+      {
+        "id": 167,
+        "question": "'The Lion King' is loosely based on which Shakespeare play?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "Hamlet",
+        "incorrect_answers": [
+          "King Lear",
+          "Henry IV",
+          "The Tempest"
+        ]
+      },
+      {
+        "id": 168,
+        "question": "The two mice in Cinderella are named:",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "Jaq and Gus",
+        "incorrect_answers": [
+          "Jaq and Gary",
+          "Jaq and Maurice",
+          "Jaq and Daxter"
+        ]
+      },
+      {
+        "id": 169,
+        "question": "In The Little Mermaid, what is Sebastian's full name?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "Horatio Thelonious Ignacious Crustaceous Sebastian",
+        "incorrect_answers": [
+          "Horatio Thelonious Pugnacious Crustaceous Sebastian",
+          "Horatio Thelonious Keith Crustaceous Sebastian",
+          "Johann Sebastian Bach"
+        ]
+      },
+      {
+        "id": 170,
+        "question": "Which of the following was not one of the Seven Dwarfs?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "Playful",
+        "incorrect_answers": [
+          "Grumpy",
+          "Dopey",
+          "Sneezy"
+        ]
+      },
+      {
+        "id": 171,
+        "question": "In 'Sleeping Beauty', what name does Aurora use while living in the woods with her Fairy Godmothers?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "Briar Rose",
+        "incorrect_answers": [
+          "May Fern",
+          "Jasmine Fuschia",
+          "Lily Magenta"
+        ]
+      },
+      {
+        "id": 172,
+        "question": "What is the name of Simba's mother?",
+        "difficulty": 3,
+        "category": "animation",
+        "correct_answer": "Sarabi",
+        "incorrect_answers": [
+          "Zoya",
+          "Shenzi",
+          "Nala"
+        ]
+      },
+      {
+        "id": 173,
+        "question": "What was Disney's longest movie?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "Fantasia",
+        "incorrect_answers": [
+          "One Hundred and One Dalmatians",
+          "Pinocchio",
+          "Moana"
+        ]
+      },
+      {
+        "id": 174,
+        "question": "How many wolves attacked Belle when she attempted to flee Beast's castle?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "4",
+        "incorrect_answers": [
+          "5",
+          "3",
+          "2"
+        ]
+      },
+      {
+        "id": 175,
+        "question": "What's the name of the tavern in Tangled?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "Snuggly Duckling",
+        "incorrect_answers": [
+          "The Wumble Bumble",
+          "The Slithering Snake",
+          "The Duckling Dive"
+        ]
+      },
+      {
+        "id": 176,
+        "question": "What was Wall-E's favourite musical?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "Hello Dolly",
+        "incorrect_answers": [
+          "The Sound Of Music",
+          "The Wizard Of Oz",
+          "My Fair Lady"
+        ]
+      },
+      {
+        "id": 177,
+        "question": "In Aladdin, how many years does the Genie say he has been trapped in the lamp?",
+        "difficulty": 4,
+        "category": "animation",
+        "correct_answer": "10.000",
+        "incorrect_answers": [
+          "100.000",
+          "1.000.000",
+          "1.000.000.000.000"
+        ]
+      },
+    
+ {
+   "id": 178,
+   "question": "Who is the main actor of the movie 'Casino Royale'?",
+   "category": "action",
+   "difficulty": 1,
+   "correct_answer": "Daniel Craig",
+   "incorrect_answers": [
+      "Bruce Willis",
+      "Ben Affleck",
+      "Roger Moore"
+   ]
+},
+ {
+   "id": 179,
+   "question": "Is Tom Cruise famous for which of these action films?",
+   "category": "action",
+   "difficulty": 1,
+   "correct_answer": "Mission Impossible",
+   "incorrect_answers": [
+      "An explosive couple",
+      "Pirates of the Caribbean",
+      "James Bond"
+   ]
+},
+ {
+   "id": 180,
+   "question": "Who is the hero of the 1987 'Predator' movie?",
+   "category": "action",
+   "difficulty": 1,
+   "correct_answer": "Arnold Schwarzenegger",
+   "incorrect_answers": [
+      "Sylvester Stallone",
+      "Brad Pitt",
+      "Bruce Willis"
+   ]
+},
+ {
+   "id": 181,
+   "question": "Harrison Ford plays Indiana Jones, but also, which of these other action movies starred?",
+   "category": "action",
+   "difficulty": 1,
+   "correct_answer": "Presidential plane",
+   "incorrect_answers": [
+      "Total risk",
+      "Passenger 57",
+      "Terror on board"
+   ]
+},
+ {
+   "id": 182,
+   "question": "Which of these actresses began in 1986 to act in the Horror Saga 'Aliens'?",
+   "category": "action",
+   "difficulty": 1,
+   "correct_answer": "Sigourney Weaver",
+   "incorrect_answers": [
+      "Susan Sarandon",
+      "Bette Midler",
+      "Sally Field"
+   ]
+},
+ {
+   "id": 183,
+   "question": "Linda Hamilton is the action star of which film in which Arnold Schwarzenegger also participated?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Terminator 2: The final judgment",
+   "incorrect_answers": [
+      "Red hell",
+      "True Lies",
+      "A policeman at the Kinder 2"
+   ]
+},
+ {
+   "id": 184,
+   "question": "Who is the star of the films 'Kill Bill'?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Uma Thurman",
+   "incorrect_answers": [
+      "Julia Roberts",
+      "Melissa McCarthy",
+      "Sandra Bullock"
+   ]
+},
+ {
+   "id": 185,
+   "question": "Which of these action films that are not starring Keanu Reeves?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Maximum speed 2",
+   "incorrect_answers": [
+      "Matrix",
+      "Limit point",
+      "John Wick"
+   ]
+},
+ {
+   "id": 186,
+   "question": "Which of these action films is not starring Charlize Theron?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "The evil guest",
+   "incorrect_answers": [
+      "Mad Max: Fury on the road",
+      "Atomic",
+      "Æon Flux"
+   ]
+},
+ {
+   "id": 187,
+   "question": "What is the revolver model that Dirty Harry Callahan of Clint Eastwood made famous?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Smith & Wesson Model 29 .44 Magnum",
+   "incorrect_answers": [
+      "Remington Model 1858",
+      "Apache Revolver",
+      "Automatic revolver"
+   ]
+},
+ {
+   "id": 188,
+   "question": "What action film star Nicolas Cage and John Travolta together?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Counter",
+   "incorrect_answers": [
+      "Human White",
+      "The pay",
+      "Code: Rota arrow"
+   ]
+},
+ {
+   "id": 189,
+   "question": "Who is the protagonist of the 'Bourne' saga?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Matt Damon",
+   "incorrect_answers": [
+      "Brad Pitt",
+      "Ben Affleck",
+      "Joaquin Phoenix"
+   ]
+},
+ {
+   "id": 190,
+   "question": "Which of these action films is not starring Angelina Jolie?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Fast and furious 8",
+   "incorrect_answers": [
+      "Wanted",
+      "Salt agent",
+      "Lara Croft: Tomb Raider"
+   ]
+},
+ {
+   "id": 191,
+   "question": "Which of these action movies will you find Bruce Willis?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Hard to Kill",
+   "incorrect_answers": [
+      "Another day to die",
+      "Romeo must die",
+      "Live and Die in LA"
+   ]
+},
+ {
+   "id": 192,
+   "question": "Which of these action films is starring Dwayne Johnson?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "All of them",
+   "incorrect_answers": [
+      "Rampage: Devastation",
+      "Bay guardians",
+      "Skyscrapers: rescue on the heights"
+   ]
+},
+ {
+   "id": 193,
+   "question": "What action film is starring Sylvester Stallone, Bruce Willis and Arnold Schwarzenegger?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "The indestructible 2",
+   "incorrect_answers": [
+      "Impossible escape",
+      "Cobra, the strong arm of the law",
+      "Hard to kill 3 - Revenge"
+   ]
+},
+ {
+   "id": 194,
+   "question": "What DC character is Deadpool based on?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Deathstroke",
+   "incorrect_answers": [
+      "Deathshot",
+      "None",
+      "Both of them"
+   ]
+},
+ {
+   "id": 195,
+   "question": "What is Deadpool's real name?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Wade Wilson",
+   "incorrect_answers": [
+      "Bruce Banner",
+      "Clint Barton",
+      "Tony Stark"
+   ]
+},
+ {
+   "id": 196,
+   "question": "What is the name that Thor puts to his hammer?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Mjolnir",
+   "incorrect_answers": [
+      "Milonrj",
+      "Minuet",
+      "Minourl"
+   ]
+},
+ {
+   "id": 197,
+   "question": "What is the shield of Captain America?",
+   "category": "action",
+   "difficulty": 2,
+   "correct_answer": "Vibranium",
+   "incorrect_answers": [
+      "Uranium",
+      "Steel",
+      "Diamond"
+   ]
+},
+ {
+   "id": 198,
+   "question": "Name the film that matches the following plot summary: 'War prisoners plan to escape a German field during World War II'",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "The great evasion",
+   "incorrect_answers": [
+      "Haine",
+      "Kill Bill: Vol. 1",
+      "There will be blood"
+   ]
+},
+ {
+   "id": 199,
+   "question": "Paul Rudd plays the role of which character in Marvel's cinematographic universe?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Ant-Man",
+   "incorrect_answers": [
+      "Spiderman",
+      "Hombre de Hierro",
+      "Black Panther"
+   ]
+},
+ {
+   "id": 200,
+   "question": "What actor does the role of Odin in the Marvel cinematographic universe?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Anthony Hopkins",
+   "incorrect_answers": [
+      "Jon Favreau",
+      "Benedict Cumberbatch",
+      "Roberto Redford"
+   ]
+},
+ {
+   "id": 201,
+   "question": "Who played the character of Sing in 'Kung Fu Hustle'?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Stephen Chow",
+   "incorrect_answers": [
+      "Li Yun",
+      "Jackie Chan",
+      "Zhi Chow Young"
+   ]
+},
+ {
+   "id": 202,
+   "question": "Who played Batman in 'Batman Begins'?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Christian bale",
+   "incorrect_answers": [
+      "Toby McGuare",
+      "Christopher Bale",
+      "Leonardo Dicaprio"
+   ]
+},
+ {
+   "id": 203,
+   "question": "In 'The Legend of Drunken Master', who did Jackie Chan play?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Wong Fei-Hong",
+   "incorrect_answers": [
+      "Wong Kei-Ying",
+      "Fu wen-chi",
+      "Ye San Hon"
+   ]
+},
+ {
+   "id": 204,
+   "question": "In Terminator 2: Judgment Day, what part of the body of the previous Terminator has caused the investigation of Miles Dyson?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Hand arm",
+   "incorrect_answers": [
+      "Foot leg",
+      "Head",
+      "Torso"
+   ]
+},
+ {
+   "id": 205,
+   "question": "In search of the lost ark, what was the name of the well full of snakes that they threw Indy and Marion?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "The well of souls",
+   "incorrect_answers": [
+      "The mortality lair",
+      "The Cave of Humanity",
+      "The Lady of Sin"
+   ]
+},
+ {
+   "id": 206,
+   "question": "Is John Rambo a veteran of what war?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Vietnam War",
+   "incorrect_answers": [
+      "First World War",
+      "Second World War",
+      "Korean war"
+   ]
+},
+ {
+   "id": 207,
+   "question": "Where does Harry work the dirty?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "San Francisco Police Department",
+   "incorrect_answers": [
+      "New York Police",
+      "LAPD",
+      "DPC"
+   ]
+},
+ {
+   "id": 208,
+   "question": "Where does The Terminator find the true Sarah Connor?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "A nightclub",
+   "incorrect_answers": [
+      "A park",
       "A grocery store",
-      "A banking institution",
-      "A restaurant"
-    ]
-  },
-  {
-    "id": 89,
-    "question": "What does Ted's boss do when he finds out Ted is having sex at work?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Promotes him",
-    "incorrect_answers": [
-      "Shakes his head",
-      "Fires him",
-      "Gives him  a high five"
-    ]
-  },
-  {
-    "id": 90,
-    "question": "In Ted movie, what have John and Ted been afraid of since youth?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Thunder",
-    "incorrect_answers": [
-      "Evil Monkeys",
-      "Commitment",
-      "Clowns"
-    ]
-  },
-  {
-    "id": 91,
-    "question": "In Ali G movie, what is the name of the community centre Ali is fighting to save?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "John Nike Leisure Centre",
-    "incorrect_answers": [
-      "Fila Sports Centre",
-      "James Adidas Leisure Centre",
-      "Puma Community Centre"
-    ]
-  },
-  {
-    "id": 92,
-    "question": "In Ali G movie, what colour is Ali's posse represented by?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Yellow",
-    "incorrect_answers": [
-      "Blue",
-      "Red",
-      "Green"
-    ]
-  },
-  {
-    "id": 93,
-    "question": "In Ali G, Ali becomes the Ambassador of which country at the end of the film?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Jamaica",
-    "incorrect_answers": [
-      "Colombia",
-      "Cuba",
-      "Burkina Faso"
-    ]
-  },
-  {
-    "id": 94,
-    "question": "What car does Ali G. drive?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Yellow Renault 5 GT Turbo",
-    "incorrect_answers": [
-      "Blue BMW 318i",
-      "Red Golf GTi",
-      "Green Peugeot 206 GTi"
-    ]
-  },
-  {
-    "id": 95,
-    "question": "In dumb and dumber, what's the name of the store that Harry and Lloyd want to open?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "I got worms",
-    "incorrect_answers": [
-      "Mutt Cuts",
-      "Nice Hooters",
-      "Dumb and Dumber store"
-    ]
-  },
-  {
-    "id": 96,
-    "question": "In Dumb and Dumber film Lloyd and Harry flee their home because they think they're going to be killed for not paying ... ?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Gas",
-    "incorrect_answers": [
-      "Rent",
-      "Electricity",
-      "Water"
-    ]
-  },
-  {
-    "id": 97,
-    "question": "Who are the main actors from Dumb and Dumber?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Jim Carrey and Jeff Daniels",
-    "incorrect_answers": [
-      "Adam Sandler and Jim Carrey",
-      "Brad Pitt and Leonardo DiCaprio",
-      "Dwayne Johnson and Tom Cruise"
-    ]
-  },
-  {
-    "id": 98,
-    "question": "Which movie is not starring Adam Sandler?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Inception",
-    "incorrect_answers": [
-      "Click",
-      "Pixels",
-      "Just Go With It"
-    ]
-  },
-  {
-    "id": 99,
-    "question": "In School of Rock, what do they name the band?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "The School of Rock",
-    "incorrect_answers": [
-      "The Kids of Rock",
-      "Mr. S and the Kids",
-      "Rock's band"
-    ]
-  },
-  {
-    "id": 100,
-    "question": "In School of Rock, what job does Dewey/Ned have at the end of the movie?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "After-school music program teacher",
-    "incorrect_answers": [
-      "Programmer",
-      "He's in his old band, toruing the state",
-      "Rapper"
-    ]
-  },
-  {
-    "id": 101,
-    "question": "In Pitch Perfect, what is the name of this Barden University singing group?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "The Barden Bellas",
-    "incorrect_answers": [
-      "The Garden Harmony",
-      "The Barden Divas",
-      "One Direction"
-    ]
-  },
-  {
-    "id": 102,
-    "question": "In Pitch Perfect, where is Barden University?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Atlanta",
-    "incorrect_answers": [
+      "His appartament"
+   ]
+},
+ {
+   "id": 209,
+   "question": "What Red Hot Chili Pepper makes a brief appearance in the movie 'Point Break'?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Anthony Kiedis",
+   "incorrect_answers": [
+      "Chad Smith",
+      "Flea",
+      "John frusciante"
+   ]
+},
+ {
+   "id": 210,
+   "question": "Who was the actor who played James Bond in Goldeneye?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Pierce Brosnan",
+   "incorrect_answers": [
+      "Daniel Craig",
+      "Sean Connery",
+      "George Lazenby"
+   ]
+},
+ {
+   "id": 211,
+   "question": "Who were the protagonists of Mr. and Mrs. Smith?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Brad Pitt and Angelina Jolie",
+   "incorrect_answers": [
+      "Tom Cruise and Penelope Cruz",
+      "Johnny Depp and Amber Heard",
+      "Javier Bardem and Scarlett Johansson"
+   ]
+},
+ {
+   "id": 212,
+   "question": "In the 'hunger games', who replaces Katniss when it is offered as a volunteer?",
+   "category": "action",
+   "difficulty": 3,
+   "correct_answer": "Prim",
+   "incorrect_answers": [
+      "Peeta",
+      "Rue",
+      "Gale"
+   ]
+},
+ {
+   "id": 213,
+   "question": "At what speed should the bus fall in the 1994 action thriller 'Speed'?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "50 mph / 80kmh",
+   "incorrect_answers": [
+      "70 mph / 115kmh",
+      "55 mph / 90kmh",
+      "60 mph / 100kmh"
+   ]
+},
+ {
+   "id": 214,
+   "question": "Peter Weller played what icon of the action film in 1987 and then again in 1990?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Robocop",
+   "incorrect_answers": [
+      "James Bond",
+      "Judge Dredd",
+      "Ash Williams"
+   ]
+},
+ {
+   "id": 215,
+   "question": "Who is Terminator's goal in the 1984 original film?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Sarah",
+   "incorrect_answers": [
+      "John",
+      "Paul",
+      "Pretty"
+   ]
+},
+ {
+   "id": 216,
+   "question": "What action and comedy movie of 1995 were Smith and Martin Lawrence?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Bad Boys",
+   "incorrect_answers": [
+      "Kick-Ass",
+      "Rush Hour",
+      "Men in black"
+   ]
+},
+ {
+   "id": 217,
+   "question": "What is the name of the main character of the 1983 movie 'Scarface'?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Tony Montana",
+   "incorrect_answers": [
+      "Jeffrey Fontana",
+      "Brian Havana",
+      "Tony Pontine"
+   ]
+},
+ {
+   "id": 218,
+   "question": "Starring Arnold Schwarzenegger, the 1987 'The Running Man' film is based on a novel of whom?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Holly",
+   "incorrect_answers": [
+      "Polly",
+      "Molly",
+      "Sarah"
+   ]
+},
+ {
+   "id": 219,
+   "question": "What is the first name of John Mclane's wife in Die Hard movies?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Holly",
+   "incorrect_answers": [
+      "Polly",
+      "Molly",
+      "Sarah"
+   ]
+},
+ {
+   "id": 220,
+   "question": "How many occasions did Timothy Dalton the role of James Bond?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "2",
+   "incorrect_answers": [
+      "1",
+      "3",
+      "4"
+   ]
+},
+ {
+   "id": 221,
+   "question": "What actor gives Batman of Christopher Nolan?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Chris Bale",
+   "incorrect_answers": [
+      "Brad Pitt",
+      "Adam Driver",
+      "Jeremy Renner"
+   ]
+},
+ {
+   "id": 222,
+   "question": "What district Katniss comes in hunger games?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "12",
+   "incorrect_answers": [
+      "13",
+      "9",
+      "5"
+   ]
+},
+ {
+   "id": 223,
+   "question": "What is the franchise focused on series and films that is based on Marvel Comics characters?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Marvel's cinematographic universe",
+   "incorrect_answers": [
+      "DC",
+      "Sony",
+      "Pixar"
+   ]
+},
+ {
+   "id": 224,
+   "question": "Arnold Schwarzenegger plays the Delta Force operator, Colonel John Matrix, in which action movie?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Commando",
+   "incorrect_answers": [
+      "The Last Stand",
+      "Predator",
+      "True Lies"
+   ]
+},
+ {
+   "id": 225,
+   "question": "'Rogue Nation' was a delivery in which series of action movies?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Mission impossible",
+   "incorrect_answers": [
+      "Star Trek",
+      "Divergent",
+      "Star Wars"
+   ]
+},
+ {
+   "id": 226,
+   "question": "In which city does the 1974 Oscar -winning disaster film 'The Towering Inferno' take place?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "San Francisco",
+   "incorrect_answers": [
+      "Miami",
       "New York",
-      "Melbourne",
-      "Sydney"
-    ]
-  },
-  {
-    "id": 103,
-    "question": "In Pitch Perfect, what is Fat Amy's real first name?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Patricia",
-    "incorrect_answers": [
-      "Melissa",
-      "Deborah",
-      "Donna"
-    ]
-  },
-  {
-    "id": 104,
-    "question": "In Perfect Pitch, what special dance can Fat Amy do?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "The Mermaid Dance",
-    "incorrect_answers": [
-      "The Samba",
-      "The Charleston",
-      "Breakdancing"
-    ]
-  },
-  {
-    "id": 105,
-    "question": "In Perfect Pitch, who plays Fat Amy?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Rebel Wilson",
-    "incorrect_answers": [
-      "Anna Kendrick",
-      "Scarlett Johansson",
-      "Gal Gadot"
-    ]
-  },
-  {
-    "id": 106,
-    "question": "In 'Trading Places',what were the wealthy Duke brothers first names?",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "Randolph and Mortimer",
-    "incorrect_answers": [
-      "Rudolph and Randolph",
-      "Mortimer and Michael",
-      "Randolph and Michael"
-    ]
-  },
-  {
-    "id": 107,
-    "question": "In what movie does the Stay Puft Marshmallow Man begin destroying New York City?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Ghostbusters",
-    "incorrect_answers": [
-      "Waiting for Guffman",
-      "Dirty Rotten Scoundrels",
-      "Planes, Trains, and Automobiles"
-    ]
-  },
-  {
-    "id": 108,
-    "question": " Which movie does this quote fit? \r\n'Jim never vomits at home.'",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "Airplane",
-    "incorrect_answers": [
-      "Annie Hall",
-      "Anchorman: The Legend of Ron Burgundy",
-      "Austin Powers: International Man of Mystery"
-    ]
-  },
-  {
-    "id": 109,
-    "question": "According to Buddy the Elf, the four food groups are candy, candy canes, candy corns and ___________?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Syrup",
-    "incorrect_answers": [
-      "Marshmallows",
-      "Peanut butter",
-      "Milk chocolate"
-    ]
-  },
-  {
-    "id": 110,
-    "question": "In the pro shop in Caddyshack, Rodney Dangerfield says if you buy a hat like Ted Knightyou get a free ______________!",
-    "difficulty": 4,
-    "category": "comedy",
-    "correct_answer": "Bowl of soup",
-    "incorrect_answers": [
-      "Box of tees",
-      "Golf lesson",
-      "Car"
-    ]
-  },
-  {
-    "id": 111,
-    "question": "In 'Dumb and Dumber',what does Lloyd spike Harrys drink with?",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "Turbo Lax",
-    "incorrect_answers": [
-      "Alcohol",
-      "Sleep-All-Nite",
-      "Salt"
-    ]
-  },
-  {
-    "id": 112,
-    "question": "What is Bill Murray occupation in Groundhog Day?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Meteorologist",
-    "incorrect_answers": [
-      "Schoolteacher",
-      "Dentist",
-      "Salesman"
-    ]
-  },
-  {
-    "id": 113,
-    "question": "What is Napoleon Dynamite's favorite sport?",
-    "difficulty": 4,
-    "category": "comedy",
-    "correct_answer": "Tetherball",
-    "incorrect_answers": [
-      "Racquetball",
-      "Bocce Ball",
-      "Volleyball"
-    ]
-  },
-  {
-    "id": 114,
-    "question": "In what movie did Jennifer Aniston's boss ask her to wear 37 pieces of flair?",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "Office Space",
-    "incorrect_answers": [
-      "Friends With Money",
-      "Along Came Polly",
-      "She's the One"
-    ]
-  },
-  {
-    "id": 115,
-    "question": "What was John BelushiDelta Tau Chi name in 'Animal House'?",
-    "difficulty": 4,
-    "category": "comedy",
-    "correct_answer": "Bluto",
-    "incorrect_answers": [
-      "Flounder",
-      "Pinto",
-      "Otter"
-    ]
-  },
-  {
-    "id": 116,
-    "question": "In 'Wedding Crashers 2' what does Will Ferrell character crash?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Funerals",
-    "incorrect_answers": [
-      "Baby showers",
-      "Bar Mitzvahs",
-      "Graduation Parties"
-    ]
-  },
-  {
-    "id": 117,
-    "question": "In 'Wedding Crashers', what does main characters crash?",
-    "difficulty": 1,
-    "category": "comedy",
-    "correct_answer": "Wedding",
-    "incorrect_answers": [
-      "Funerals",
-      "Bar Mitzvahs",
-      "Graduation parties"
-    ]
-  },
-  {
-    "id": 118,
-    "question": "What was significant about the campfire scene in 'Blazing Saddles'?",
-    "difficulty": 4,
-    "category": "comedy",
-    "correct_answer": "All the cowboys had gas.",
-    "incorrect_answers": [
-      "All the cowboys had headaches.",
-      "All the cowboys were wearing rhinestone hats.",
-      "All the cowboys were singing opera."
-    ]
-  },
-  {
-    "id": 119,
-    "question": "Who were 'on a mission from God'?",
-    "difficulty": 4,
-    "category": "comedy",
-    "correct_answer": "John Belushi and Dan Akroyd",
-    "incorrect_answers": [
-      "Steve Martin and John Candy",
-      "Gene Wilder and Richard Pryor",
-      "Eddie Murphy and Dan Akroyd"
-    ]
-  },
-  {
-    "id": 120,
-    "question": "In 'There's Something About Mary',what football player plays Mary former love interest?",
-    "difficulty": 4,
-    "category": "comedy",
-    "correct_answer": "Brett Favre",
-    "incorrect_answers": [
-      "John Elway",
-      "Peyton Manning",
-      "Joe Namath"
-    ]
-  },
-  {
-    "id": 121,
-    "question": "Which movie does this quote fit?\r\n\"Brothers don't shake hands. Brothers gotta hug!\"",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "Tommy Boy",
-    "incorrect_answers": [
-      "Wedding Crashers",
-      "Dumb & Dumber",
-      "Trading Places"
-    ]
-  },
-  {
-    "id": 122,
-    "question": "Which movie does this quote fit?\r\n\"Ooooh, behave!\"",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "Austin Powers",
-    "incorrect_answers": [
-      "Ace Ventura",
-      "Napoleon Dynamite",
-      "Buddy the Elf"
-    ]
-  },
-  {
-    "id": 123,
-    "question": "How many 'Scary Movie' 's films are?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "5",
-    "incorrect_answers": [
-      "3",
-      "4",
-      "6"
-    ]
-  },
-  {
-    "id": 124,
-    "question": "What scary character parody in 'Scary Movie 1'?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Scream",
-    "incorrect_answers": [
-      "Freddy Krueger",
-      "The exorcist",
-      "The ring"
-    ]
-  },
-  {
-    "id": 125,
-    "question": "Which 'Scary Movie' characters say 'waaaaassuup'? ",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Scream and Shorty",
-    "incorrect_answers": [
-      "Cindy and Brenda",
-      "Scream and Cindy",
-      "Scream and Brenda"
-    ]
-  },
-  {
-    "id": 126,
-    "question": "Who are the main actors in '21 Jump Street'?",
-    "difficulty": 2,
-    "category": "comedy",
-    "correct_answer": "Jonah Hill and Channing Tatum",
-    "incorrect_answers": [
-      "Dave Franco and Channing Tatum",
-      "Jonah Hill and Dave Franco",
-      "Dave Franco and Ice Cube"
-    ]
-  },
-  {
-    "id": 127,
-    "question": "In Ghostbusters, In what building do Ray, Peter and Egon encounter their first ghost?",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "The New York Public Library",
-    "incorrect_answers": [
-      "Grand Central Station ",
-      "Dana's Apartment",
-      "The Empire State Building"
-    ]
-  },
-  {
-    "id": 128,
-    "question": "Ghostbusters was written by both...",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "Dan Aykroyd and Harold Ramis",
-    "incorrect_answers": [
-      "Bill Murray and Dan Aykroyd",
-      "Harold Ramis and Bill Murray",
-      "Moranis and that guy with the ginger beard"
-    ]
-  },
-  {
-    "id": 129,
-    "question": "What is the last line in the film''?",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "I love this town",
-    "incorrect_answers": [
-      "I love this job",
-      "I love New York",
-      "I love this country"
-    ]
-  },
-  {
-    "id": 130,
-    "question": "How tall is the average Minion?",
-    "difficulty": 3,
-    "category": "comedy",
-    "correct_answer": "105 cm",
-    "incorrect_answers": [
-      "10 cm",
-      "50 cm",
-      "99 cm"
-    ]
-  },
-  {
-    "id": 131,
-    "question": "Which of the following songs appear on the Moana soundtrack?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "How Far I'll Go",
-    "incorrect_answers": [
-      "How Far We'll Go",
-      "How Far They'll Go",
-      "How Far You'll Go"
-    ]
-  },
-  {
-    "id": 132,
-    "question": "What's the name of the town in The Nightmare Before Christmas?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Halloween Town",
-    "incorrect_answers": [
-      "Christmas Town",
-      "Skeletown",
-      "Gateshead"
-    ]
-  },
-  {
-    "id": 133,
-    "question": "What type of primate is The Lion King character Rafiki?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Mandrill",
-    "incorrect_answers": [
-      "Baboon",
-      "Spider monkey",
-      "Tarsier"
-    ]
-  },
-  {
-    "id": 134,
-    "question": "What is the name of the protagonist of the Movie Coco?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Miguel",
-    "incorrect_answers": [
-      "Andreas",
-      "Paulo",
-      "Max"
-    ]
-  },
-  {
-    "id": 135,
-    "question": "Who was the director of the animated film 'The Boy and the Beast'?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Mamoru Hosoda",
-    "incorrect_answers": [
-      "Hayao Miyazaki",
-      "Tatsuyuki Nagai",
-      "Seiji Mizushima"
-    ]
-  },
-  {
-    "id": 136,
-    "question": "Who are the main characters in the animated film, 'The Road to El Dorado'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Tulio and Miguel",
-    "incorrect_answers": [
-      "Tulio and Marco",
-      "Manuel and Julio",
-      "Hector and Miguel"
-    ]
-  },
-  {
-    "id": 137,
-    "question": "What did the Other Mother in 'Coraline' transform into near the end of the film?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Spider",
-    "incorrect_answers": [
-      "Butterfly",
-      "Wasp",
-      "Ant"
-    ]
-  },
-  {
-    "id": 138,
-    "question": "When was the film, 'Lilo & Stitch' released?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "2002",
-    "incorrect_answers": [
-      "2004",
-      "2000",
-      "2007"
-    ]
-  },
-  {
-    "id": 139,
-    "question": "Which of the following is a Studio Ghibli film?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Princess Mononoke (1997)",
-    "incorrect_answers": [
-      "A Silent Voice (2016)",
-      "Children Who Chase Lost Voices (2011)",
-      "Your Name (2016)"
-    ]
-  },
-  {
-    "id": 140,
-    "question": "What is Jack's full name in the film, 'The Nightmare Before Christmas'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Jack Skellington",
-    "incorrect_answers": [
-      "Jack Skeleton",
-      "Jack Stalfos",
-      "Jack Skulltula"
-    ]
-  },
-  {
-    "id": 141,
-    "question": "What animal did Kuzco turn into in the film, 'The Emperor's New Groove'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Llama",
-    "incorrect_answers": [
-      "Donkey",
-      "Horse",
-      "Goat"
-    ]
-  },
-  {
-    "id": 142,
-    "question": "What is the name of Shrek's animal companion in 'Shrek'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Donkey",
-    "incorrect_answers": [
-      "Mule",
-      "Dean",
-      "Eddie"
-    ]
-  },
-  {
-    "id": 143,
-    "question": "What was the only anime that has won an Oscar currently?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Spirited Away (2001)",
-    "incorrect_answers": [
-      "The Tale of Princess Kaguya (2013)",
-      "Howl's Moving Castle (2004)",
-      "The Wind Rises (2013)"
-    ]
-  },
-  {
-    "id": 144,
-    "question": "What animation studio produced the animated film 'Spirit: Stallion of the Cimarron'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Dreamworks Animation",
-    "incorrect_answers": [
-      "A-1 Pictures",
-      "Walt Disney Animation Studios",
-      "Bones Inc."
-    ]
-  },
-  {
-    "id": 145,
-    "question": "What is Hiccup Haddock III's middle name in 'How to Train Your Dragon'?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Horrendous",
-    "incorrect_answers": [
-      "Horrible",
-      "Harrowing",
-      "Horrid"
-    ]
-  },
-  {
-    "id": 146,
-    "question": "What villain threatens the entire Lego universe in 'The Lego Movie'?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Lord Business",
-    "incorrect_answers": [
-      "Lord 1 Percent",
-      "Lord Corporate",
-      "Lord Evil"
-    ]
-  },
-  {
-    "id": 147,
-    "question": "'Fantastic Mr. Fox' is based on a children's book by what author?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Roald Dahl",
-    "incorrect_answers": [
-      "Dr. Seuss",
-      "J. K. Rowling",
-      "Beverly Cleary"
-    ]
-  },
-  {
-    "id": 148,
-    "question": "What dragon does Hiccup ride in the 'How to Train Your Dragon' movies?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Toothless",
-    "incorrect_answers": [
-      "Tailless",
-      "Tubby",
-      "Tagrid"
-    ]
-  },
-  {
-    "id": 149,
-    "question": "Disney's 'Dumbo' had extremely large what?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Ears",
-    "incorrect_answers": [
-      "Tusks",
-      "Feet",
-      "Toenails"
-    ]
-  },
-  {
-    "id": 150,
-    "question": "Dash was a character in which animated film?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "The Incredibles",
-    "incorrect_answers": [
-      "Shrek",
-      "Toy Story",
-      "Madagascar"
-    ]
-  },
-  {
-    "id": 151,
-    "question": "What family runs the chicken farm in 'Chicken Run'?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "The Tweedys",
-    "incorrect_answers": [
-      "The Twiddles",
-      "The Twaddys",
-      "The Tweedles"
-    ]
-  },
-  {
-    "id": 152,
-    "question": "Who falls in love with the Donkey in 'Shrek'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "The Dragon",
-    "incorrect_answers": [
-      "The Giant",
-      "The Fairy Godmother",
-      "Prince Charming"
-    ]
-  },
-  {
-    "id": 153,
-    "question": "What director made the stop motion animated movie 'Corpse Bride'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Tim Burton",
-    "incorrect_answers": [
-      "Brad Bird",
-      "Wes Anderson",
-      "Edgar Wright"
-    ]
-  },
-  {
-    "id": 154,
-    "question": "What name does Homer give to his beloved adopted pig in 'The Simpsons Movie'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Spider-Pig",
-    "incorrect_answers": [
-      "Captain Pork",
-      "The Incredible Pig",
-      "Wolverpig"
-    ]
-  },
-  {
-    "id": 155,
-    "question": "In what year was the movie 'Ratatouille' released?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "2007",
-    "incorrect_answers": [
-      "2005",
-      "2004",
-      "2002"
-    ]
-  },
-  {
-    "id": 156,
-    "question": "What was the spin off film from 'Cars' called that released in 2013?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Planes",
-    "incorrect_answers": [
-      "Boats",
-      "Trains",
-      "Bikes"
-    ]
-  },
-  {
-    "id": 157,
-    "question": "What type of fish is the main character in the Pixar movie 'Finding Nemo'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Clownfish",
-    "incorrect_answers": [
-      "Snowfish",
-      "Blowfish",
-      "Frownfish"
-    ]
-  },
-  {
-    "id": 158,
-    "question": "Complete the title of the 'Madagascar' sequel 'Escape to…'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Africa",
-    "incorrect_answers": [
-      "Asia",
-      "Europe",
-      "North Pole"
-    ]
-  },
-  {
-    "id": 159,
-    "question": "In what year was Pixar sold to Disney?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "2006",
-    "incorrect_answers": [
-      "2012",
-      "1996",
-      "2003"
-    ]
-  },
-  {
-    "id": 160,
-    "question": "Who directed 'Perfect Blue'?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Satoshi Kon",
-    "incorrect_answers": [
-      "Makoto Shinkai",
-      "Katsuhiro Otomo",
-      "Yoshikazu Takeuchi"
-    ]
-  },
-  {
-    "id": 161,
-    "question": "In 'Perfect Blue', what does Mima kill the stalker with?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Hammer",
-    "incorrect_answers": [
-      "Gun",
-      "Screwdriver",
-      "Knife"
-    ]
-  },
-  {
-    "id": 162,
-    "question": "In 'Perfect Blue', what is the name of the website Mima visits?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Mima's room",
-    "incorrect_answers": [
-      "Mima's place",
-      "Mima's house",
-      "Mima's domain"
-    ]
-  },
-  {
-    "id": 163,
-    "question": "In 'Spirited Away', What are Chihiro's parents turned into?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Pigs",
-    "incorrect_answers": [
-      "Cats",
-      "Spirits",
-      "Sushi"
-    ]
-  },
-  {
-    "id": 164,
-    "question": "What is the vehicle in My Neighbour Totoro?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "A Cat-Bus",
-    "incorrect_answers": [
-      "A Cat-Plane",
-      "A Cat-Boat",
-      "A Squid-Train"
-    ]
-  },
-  {
-    "id": 165,
-    "question": "What is the name of the warrior prince in 'Princess Mononoke'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Ashitaka",
-    "incorrect_answers": [
-      "Aoki",
-      "Kenji",
-      "San"
-    ]
-  },
-  {
-    "id": 166,
-    "question": "In 'Princess Mononoke', how does Ashitaka's curse manifest itself physically?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "in an infection that spreads down his arm",
-    "incorrect_answers": [
-      "in black worms he coughs up",
-      "his eyes turn red",
-      "his hair falls out"
-    ]
-  },
-  {
-    "id": 167,
-    "question": "'The Lion King' is loosely based on which Shakespeare play?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Hamlet",
-    "incorrect_answers": [
-      "King Lear",
-      "Henry IV",
-      "The Tempest"
-    ]
-  },
-  {
-    "id": 168,
-    "question": "The two mice in Cinderella are named:",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Jaq and Gus",
-    "incorrect_answers": [
-      "Jaq and Gary",
-      "Jaq and Maurice",
-      "Jaq and Daxter"
-    ]
-  },
-  {
-    "id": 169,
-    "question": "In The Little Mermaid, what is Sebastian's full name?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Horatio Thelonious Ignacious Crustaceous Sebastian",
-    "incorrect_answers": [
-      "Horatio Thelonious Pugnacious Crustaceous Sebastian",
-      "Horatio Thelonious Keith Crustaceous Sebastian",
-      "Johann Sebastian Bach"
-    ]
-  },
-  {
-    "id": 170,
-    "question": "Which of the following was not one of the Seven Dwarfs?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Playful",
-    "incorrect_answers": [
-      "Grumpy",
-      "Dopey",
-      "Sneezy"
-    ]
-  },
-  {
-    "id": 171,
-    "question": "In 'Sleeping Beauty', what name does Aurora use while living in the woods with her Fairy Godmothers?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Briar Rose",
-    "incorrect_answers": [
-      "May Fern",
-      "Jasmine Fuschia",
-      "Lily Magenta"
-    ]
-  },
-  {
-    "id": 172,
-    "question": "What is the name of Simba's mother?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Sarabi",
-    "incorrect_answers": [
-      "Zoya",
-      "Shenzi",
-      "Nala"
-    ]
-  },
-  {
-    "id": 173,
-    "question": "What was Disney's longest movie?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Fantasia",
-    "incorrect_answers": [
-      "One Hundred and One Dalmatians",
-      "Pinocchio",
-      "Moana"
-    ]
-  },
-  {
-    "id": 174,
-    "question": "How many wolves attacked Belle when she attempted to flee Beast's castle?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "4",
-    "incorrect_answers": [
-      "5",
-      "3",
-      "2"
-    ]
-  },
-  {
-    "id": 175,
-    "question": "What's the name of the tavern in Tangled?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Snuggly Duckling",
-    "incorrect_answers": [
-      "The Wumble Bumble",
-      "The Slithering Snake",
-      "The Duckling Dive"
-    ]
-  },
-  {
-    "id": 176,
-    "question": "What was Wall-E's favourite musical?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Hello Dolly",
-    "incorrect_answers": [
-      "The Sound Of Music",
-      "The Wizard Of Oz",
-      "My Fair Lady"
-    ]
-  },
-  {
-    "id": 177,
-    "question": "In Aladdin, how many years does the Genie say he has been trapped in the lamp?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "10.000",
-    "incorrect_answers": [
-      "100.000",
-      "1.000.000",
-      "1.000.000.000.000"
-    ]
-  }
+      "The Angels"
+   ]
+},
+ {
+   "id": 227,
+   "question": "What futuristic action film of 1973 became a 2016 television show?",
+   "category": "action",
+   "difficulty": 4,
+   "correct_answer": "Westworld",
+   "incorrect_answers": [
+      "SOLDADOS DE LA NAVA ESTELLA",
+      "Serenity",
+      "Total recovery"
+   ]
+}
 ]
