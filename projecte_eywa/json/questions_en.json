@@ -1285,7 +1285,7 @@
       },
       {
         "id": 108,
-        "question": " Which movie does this quote fit? \r\n'Jim never vomits at home.'",
+        "question": " Which movie does this quote fit? 'Jim never vomits at home.'",
         "difficulty": 3,
         "category": "comedy",
         "correct_answer": "Airplane",
@@ -1453,7 +1453,7 @@
       },
       {
         "id": 122,
-        "question": "Which movie does this quote fit?\r\n\"Ooooh, behave!\"",
+        "question": "Which movie does this quote fit?'Ooooh, behave!'",
         "difficulty": 3,
         "category": "comedy",
         "correct_answer": "Austin Powers",
@@ -2609,12 +2609,12 @@
    "question": "Starring Arnold Schwarzenegger, the 1987 'The Running Man' film is based on a novel of whom?",
    "category": "action",
    "difficulty": 4,
-   "correct_answer": "Holly",
-   "incorrect_answers": [
-      "Polly",
-      "Molly",
-      "Sarah"
-   ]
+   "correct_answer": "Stephen King",
+        "incorrect_answers": [
+           "J. K. Rowling",
+           "Clive Cussler",
+           "Julio Verne"
+        ]
 },
  {
    "id": 219,

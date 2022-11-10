@@ -2607,11 +2607,11 @@
         "question": "Protagonitzada per Arnold Schwarzenegger, la pel·lícula 'The Running Man' de 1987 es basa en una novel·la de qui?",
         "difficulty": 4,
         "category": "action",
-        "correct_answer": "Holly",
+        "correct_answer": "Stephen King",
         "incorrect_answers": [
-           "Polly",
-           "Muty",
-           "Sara"
+           "J. K. Rowling",
+           "Clive Cussler",
+           "Julio Verne"
         ]
      },
       {
