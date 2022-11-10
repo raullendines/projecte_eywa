@@ -1,1298 +1,2726 @@
 [
-  {
-    "id": 1,
-    "question": "Com es diu l'administrador de la Ciutat dels Núvols, que apareix a Star Wars, L'Imperi Contraataca?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Lando Calrissian ",
-    "incorrect_answers": [
-      "Chewbacca",
-      "Han Solo",
-      "Senador Bail Organa"
-    ]
-  },
-  {
-    "id": 2,
-    "question": "Qui interpreta Luke Skywalker al llarg de la sèrie?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Mark Hamill",
-    "incorrect_answers": [
-      "Will Smith",
-      "Leonardo DiCaprio",
-      "Tom Cruise"
-    ]
-  },
-  {
-    "id": 3,
-    "question": "Quin personatge, a El retorn del Jedi, diu: &quot¡és una trampa!&quot",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Admiral Ackbar",
-    "incorrect_answers": [
-      "Luke Skywalker",
-      "Greedo",
-      "Biggs Darklighter"
-    ]
-  },
-  {
-    "id": 4,
-    "question": "Quin any es va estrenar la primera pel·lícula de Star Wars?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "1977",
-    "incorrect_answers": [
-      "2004",
-      "1989",
-      "1944"
-    ]
-  },
-  {
-    "id": 5,
-    "question": "De quin planeta és Jar Jar Binks?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Naboo",
-    "incorrect_answers": [
-      "Tatooine",
-      "Coruscant",
-      "Alderaan"
-    ]
-  },
-  {
-    "id": 6,
-    "question": "Ewan Macgregor i Alec Guinness interpreten quin personatge?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Obi Wan Kenobi",
-    "incorrect_answers": [
-      "Owen Lars",
-      "C-3PO",
-      "Anakin Skywalker"
-    ]
-  },
-  {
-    "id": 7,
-    "question": "A &quotBlade Runner&quot, els humans artificials es diuen com?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Replicants",
-    "incorrect_answers": [
-      "Recombinants",
-      "Sintezoides",
-      "Androides"
-    ]
-  },
-  {
-    "id": 8,
-    "question": "Qui va dirigir &quotBlade Runner&quot, a més del clàssic de ciència ficció &quotAlien&quot?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Ridley Scott",
-    "incorrect_answers": [
-      "Steven Spielberg",
-      "George Lucas",
-      "M. Night Shyamalan"
-    ]
-  },
-  {
-    "id": 9,
-    "question": "A Interestellar, quin desastre natural està passant a la Terra que finalment provocarà l'extinció de la raça humana?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Tempestes de pols",
-    "incorrect_answers": [
-      "Terratrèmols",
-      "Volcans",
-      "Huracans"
-    ]
-  },
-  {
-    "id": 10,
-    "question": "A Interestellar, què diu el missatge del fantasma a l'habitació de Murphy?",
-    "difficulty": 1,
-    "category": "science fiction",
-    "correct_answer": "Queda't",
-    "incorrect_answers": [
-      "T'estimo",
-      "Ves al planeta de Miller",
-      "Vés-te'n"
-    ]
-  },
-  {
-    "id": 11,
-    "question": "A Interestellar, per què el Dr. Mann menteix sobre el seu planeta?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Vol viure - Instint de supervivència",
-    "incorrect_answers": [
-      "Vol que el seu planeta sigui on visquin els humans.",
-      "Ell creu que hi ha 2 planetes en què els humans poden viure.",
-      "No menteix"
-    ]
-  },
-  {
-    "id": 12,
-    "question": "A Matrix, què vol dir exactament prendre la píndola vermella?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "La pastilla vermella ens permet alliberar-nos de la realitat virtual de Matrix i portar-nos al món real",
-    "incorrect_answers": [
-      "La pastilla vermella et permet oblidar tot el que ha passat i romandre a la realitat virtual de Matrix",
-      "La pastilla vermella permet saltar a una altra dimensió",
-      "La pastilla vermella permet recordar el passat i preveure el futur"
-    ]
-  },
-  {
-    "id": 13,
-    "question": "A Matrix, per trobar Trinity, Neo ha de seguir...",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Un conill blanc, com a Alícia al país de les meravelles.",
-    "incorrect_answers": [
-      "Una serp blanca",
-      "Un mussol blanc",
-      "Un colom blanc"
-    ]
-  },
-  {
-    "id": 14,
-    "question": "A Matrix, quina era la feina de Thomas Anderson (Neo) abans d'emprendre la seva particular aventura?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Programador",
-    "incorrect_answers": [
-      "Servei tecnic informatic",
-      "Dissenyador de maquinari",
-      "Jugador profesional"
-    ]
-  },
-  {
-    "id": 15,
-    "question": "El 2001: A Space Odyssey, Quin nom d'aerolínia va aparèixer a la nau espacial que va prendre el Dr. Heywood Floyd per arribar a l'estació espacial?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Pan Am",
-    "incorrect_answers": [
-      "Ryanair",
-      "AmericanAirlines",
-      "easyJet"
-    ]
-  },
-  {
-    "id": 16,
-    "question": "A Retorn al futur, quin tipus de cotxe es converteix en una màquina del temps?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "DeLorean",
-    "incorrect_answers": [
-      "Dodge",
-      "Mitsubishi",
-      "Ferrari"
-    ]
-  },
-  {
-    "id": 17,
-    "question": "Qui va dirigir Retorn al futur?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Robert Zemeckis",
-    "incorrect_answers": [
-      "Steven Spielberg",
-      "George Lucas",
-      "Ron Howard"
-    ]
-  },
-  {
-    "id": 18,
-    "question": "A Retorn al futur, quina velocitat necessitava assolir el DeLorean per poder viatjar en el temps?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "88mph / 141kmh",
-    "incorrect_answers": [
-      "73mph / 117 kmh",
-      "76mph / 122 kmh",
-      "80mph / 128 kmh"
-    ]
-  },
-  {
-    "id": 19,
-    "question": "A Origen, per què la policia busca Cobb?",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Va assassinar la seva dona",
-    "incorrect_answers": [
-      "Va robar a una multinacional",
-      "És un assassí en sèrie",
-      "Es cola als somnis dels altres."
-    ]
-  },
-  {
-    "id": 20,
-    "question": "A La Arribada (2016), els extraterrestres es diuen...",
-    "difficulty": 2,
-    "category": "science fiction",
-    "correct_answer": "Heptapods",
-    "incorrect_answers": [
-      "Angosian",
-      "Talaxian",
-      "Xindi"
-    ]
-  },
-  {
-    "id": 21,
-    "question": "En quina pel·lícula apareix la celebre cita: M'encanta l'olor de napalm al matí!&quot?",
-    "difficulty": 2,
-    "category": "action",
-    "correct_answer": "Apocalypse Now",
-    "incorrect_answers": [
-      "Platoon",
-      "El Francotirador",
-      "La Chaqueta Metálica"
-    ]
-  },
-  {
-    "id": 22,
-    "question": "A la pel·lícula El Club de la Lluita de 1999, quina d'aquestes no és una regla del &quot;club de la lluita&quot;?",
-    "difficulty": 2,
-    "category": "action",
-    "correct_answer": "Sempre fes servir una camisa",
-    "incorrect_answers": [
-      "No parles del Club de la Lluita",
-      "Només dos nois per a una baralla",
-      "Les baralles continuaran mentre sigui necessari."
-    ]
-  },
-  {
-    "id": 23,
-    "question": "Quina va ser la primera pel·lícula de James Bond?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "Agent 007 contra el Dr. No",
-    "incorrect_answers": [
-      "007 contra Goldfinger",
-      "Des de Rússia amb Amor",
-      "Operación Trueno"
-    ]
-  },
-  {
-    "id": 24,
-    "question": "Quins actors componien el trio de &quot;El bueno, el feo y el malo&quot;? ",
-    "difficulty": 2,
-    "category": "action",
-    "correct_answer": "Clint Eastwood, Eli Wallach, and Lee Van Cleef",
-    "incorrect_answers": [
-      "Sergio Leone, Ennio Morricone, and Tonino Delli Colli",
-      "Yul Brynner, Steve McQueen, and Charles Bronson",
-      "Aldo Giuffr&egrave;, Mario Brega, and Luigi Pistilli"
-    ]
-  },
-  {
-    "id": 25,
-    "question": "Quina pel·lícula conté la cita, &quot;¡Saluda a mi amiguito!&quot;?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "Scarface",
-    "incorrect_answers": [
-      "Reservoir Dogs",
-      "Heat",
-      "Goodfellas"
-    ]
-  },
-  {
-    "id": 26,
-    "question": "Leonardo Di Caprio va guanyar el seu primer Oscar a Millor Actor per la seva actuació en quina pel·lícula?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "El Renacido",
-    "incorrect_answers": [
-      "El Lobo de Wall Street",
-      "Shutter Island",
-      "Origen"
-    ]
-  },
-  {
-    "id": 27,
-    "question": "Qui interpreta &quot;Bruce Wayne&quot; a la pel·lícula de 2008 &quot;El Cavaller Fosc &quot;?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "Christian Bale",
-    "incorrect_answers": [
-      "Michael Caine",
-      "Ron Dean",
-      "Heath Ledger"
-    ]
-  },
-  {
-    "id": 28,
-    "question": "A Mad Max Fury Road, com es referia el Guerrer de la carretera, Nux, a Max?",
-    "difficulty": 2,
-    "category": "action",
-    "correct_answer": "Bossa de sang",
-    "incorrect_answers": [
-      "Esclau",
-      "Bossa humana",
-      "Carn"
-    ]
-  },
-  {
-    "id": 29,
-    "question": "Quantes gemmes de l'infinit hi ha a MCU?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "6",
-    "incorrect_answers": [
-      "5",
-      "7",
-      "8"
-    ]
-  },
-  {
-    "id": 30,
-    "question": "Quin tipus de metge és Doctor Strange?",
-    "difficulty": 1,
-    "category": "action",
-    "correct_answer": "Un neurocirurgià",
-    "incorrect_answers": [
-      "Un endocrinòleg",
-      "Un nefròleg",
-      "Un oncòleg"
-    ]
-  },
-  {
-    "id": 31,
-    "question": "Qui és l'assassí a 'Divendres 13'?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Pamela Voorhees",
-    "incorrect_answers": [
-      "Norman Bates",
-      "Jason Voorhees",
-      "Ghostface"
-    ]
-  },
-  {
-    "id": 32,
-    "question": "Qui va dirigir Scream?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Wes Craven",
-    "incorrect_answers": [
-      "George Romero",
-      "John Carpenter",
-      "Ridley Scott"
-    ]
-  },
-  {
-    "id": 33,
-    "question": "Quina és l'ocupació de Hannibal Lecter, l'assassí en sèrie que apareix en la pel·lícula 'El silenci dels anyells'?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Psiquiatre",
-    "incorrect_answers": [
-      "Pediatrici",
-      "Xef",
-      "Dentista"
-    ]
-  },
-  {
-    "id": 34,
-    "question": "Qui és el dolent de Halloween?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Michael Myers",
-    "incorrect_answers": [
-      "Freddy Krueger",
-      "Pennywise",
-      "Jack Torrance"
-    ]
-  },
-  {
-    "id": 35,
-    "question": "Quin actor va fer el seu debut cinematogràfic a \r\n'Un malson al carrer Elm'?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Jhonny Depp",
-    "incorrect_answers": [
-      "Nicolas Cage",
-      "Robert Englund",
-      "Charlie Sheen"
-    ]
-  },
-  {
-    "id": 36,
-    "question": "Quin dels següents no es basava en una obra de Stephen King?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "L'exorcista",
-    "incorrect_answers": [
-      "Children of The Corn",
-      "Misteri",
-      "Cujo"
-    ]
-  },
-  {
-    "id": 37,
-    "question": "Quin assassí de la vida real va inspirar la pel·lícula Psycho d'Alfred Hitchcock?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Ed Gein",
-    "incorrect_answers": [
-      "Richard Speck",
-      "Charles Manson",
-      "Joel Rifkin"
-    ]
-  },
-  {
-    "id": 38,
-    "question": "El Leatherface de la massacre de Texas porta una màscara feta de què?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Pell humana",
-    "incorrect_answers": [
-      "Cuir",
-      "Plàstic",
-      "Cap de les anteriors"
-    ]
-  },
-  {
-    "id": 39,
-    "question": "Quina va ser la primera víctima de Michael Myers?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "La seva germana",
-    "incorrect_answers": [
-      "La seva mare",
-      "El seu pare",
-      "La seva mainadera"
-    ]
-  },
-  {
-    "id": 40,
-    "question": "Cuantes vegades has de dir Candyman en front del mirral per a què aparegui?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Cinc",
-    "incorrect_answers": [
-      "Tres",
-      "Quatre",
-      "Sis"
-    ]
-  },
-  {
-    "id": 41,
-    "question": "Quin és el nom del nen que apareix a la pel·lícula 'La profecia'?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Damien",
-    "incorrect_answers": [
-      "Kevin",
-      "Devon",
-      "Jonathan"
-    ]
-  },
-  {
-    "id": 42,
-    "question": "Quina és la protagonista a la versió de 2020 de la pel·lícula 'L'home Invisible'?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Elisabeth Moss",
-    "incorrect_answers": [
-      "Florence Pugh",
-      "Toni Collette",
-      "Lupita Nyong'o"
-    ]
-  },
-  {
-    "id": 43,
-    "question": "Quin dels següents títols no és un títol de la saga 'Resident Evil'?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Resident Evil: Absolution",
-    "incorrect_answers": [
-      "Resident Evil: Extiction",
-      "Resident Evil: Afterlife",
-      "Resident Evil: Apocalypse"
-    ]
-  },
-  {
-    "id": 44,
-    "question": "Quina pel·lícula de terror clàssica presenta un assassí en sèrie en una màscara de William Shatner?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Halloween",
-    "incorrect_answers": [
-      "La boira",
-      "Divendres 13",
-      "The Texas Chain Saw Massacre"
-    ]
-  },
-  {
-    "id": 45,
-    "question": "En quina pel·lícula de terror escriu el protagonista un llibre que conté només la línia 'Tot el treball i cap obra fa que Jack sigui un noi avorrit' repetit una vegada i una altra?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "The shining",
-    "incorrect_answers": [
-      "The Devil's rain",
-      "Writer's Block",
-      "La novena porta"
-    ]
-  },
-  {
-    "id": 46,
-    "question": "Quantes persones associades a 'L'exorcista' van morir durant la producció?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "9",
-    "incorrect_answers": [
-      "6",
-      "12",
-      "3"
-    ]
-  },
-  {
-    "id": 47,
-    "question": "Quina pel·lícula de terror va ser la primera que va mostrar una dona amb roba íntima?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Psycho",
-    "incorrect_answers": [
-      "Bride of Frankestein",
-      "The Haunting",
-      "The Wax Museum"
-    ]
-  },
-  {
-    "id": 48,
-    "question": "De quin color és la samarreta de Freddy Krueger?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Vermell i Verd",
-    "incorrect_answers": [
-      "Vermell i Groc",
-      "Vermell i Negre",
-      "Vermell i Blau"
-    ]
-  },
-  {
-    "id": 49,
-    "question": "A quantes persones mata Jason a la PRIMERA pel·lícula de 'Divendres 13'?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "0",
-    "incorrect_answers": [
-      "5",
-      "9",
-      "13"
-    ]
-  },
-  {
-    "id": 50,
-    "question": "A la pel·lícula Scream, quina es la regla número 1 a la llista de Randy per sobreviure a les pel·lícules de terror?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "No tenir sexe",
-    "incorrect_answers": [
-      "No beure o pendre drogues",
-      "No surtis fora sol",
-      "No diguis 'Vinc de seguida'"
-    ]
-  },
-  {
-    "id": 51,
-    "question": "Quina pel·lícula de terror va requerir la compra de 500 granotes de Florida i 100  Sud-Americanes?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "The Frogs",
-    "incorrect_answers": [
-      "Pet Sematary",
-      "Invasion of the body Snatchers",
-      "Creature from the black Lagoon"
-    ]
-  },
-  {
-    "id": 52,
-    "question": "Quin es el títol original de 'the Blob'?",
-    "difficulty": 4,
-    "category": "horror",
-    "correct_answer": "The Glob",
-    "incorrect_answers": [
-      "The Lump",
-      "The Spheroid",
-      "The Thing"
-    ]
-  },
-  {
-    "id": 53,
-    "question": "Quina pel·lícula de terror té un assassí en sèrie portant una màscara inspirada en un quadre de Edward Munch?",
-    "difficulty": 1,
-    "category": "horror",
-    "correct_answer": "Scream",
-    "incorrect_answers": [
-      "Halloween",
-      "The man in the black suit",
-      "Henry: Portrait of a serial killer"
-    ]
-  },
-  {
-    "id": 54,
-    "question": "Quina pel·lícula de terror va causar que alguns teatres suggerissin que els espectadors propensos a la malaltia de moviment es trobaven als seients del passadís?",
-    "difficulty": 4,
-    "category": "horror",
-    "correct_answer": "The Blair Witch Project",
-    "incorrect_answers": [
-      "Divendres 13",
-      "Vertigo",
-      "Mimic"
-    ]
-  },
-  {
-    "id": 55,
-    "question": "A Poltergeist, què agafa en Robbie Freeling per la finestra del seu dormitori?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Un arbre",
-    "incorrect_answers": [
-      "Un pallasso",
-      "Un Indi",
-      "Un cub d'aigua"
-    ]
-  },
-  {
-    "id": 56,
-    "question": "Quan temps surt en pantalla Freddy Krueger a la primera pel·lícula de 'A nightmare on Elm Street'?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "7 minuts",
-    "incorrect_answers": [
-      "21 minuts",
-      "14 minuts",
-      "3 minuts"
-    ]
-  },
-  {
-    "id": 57,
-    "question": "On té lloc la pel·lícula 'Divendres 13'?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Camp Crystal Lake",
-    "incorrect_answers": [
-      "Camp Kikiwaka",
-      "Camp Clear Lake",
-      "Camp Crescent Lake"
-    ]
-  },
-  {
-    "id": 58,
-    "question": "Per què Michael Myers no pot ser matat?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "Per una maledicció druida antiga",
-    "incorrect_answers": [
-      "És un Dèu",
-      "És un fantasma",
-      "Simplement té sort"
-    ]
-  },
-  {
-    "id": 59,
-    "question": "Quina actriu infantil se li va oferir originalment el paper de Regan MacNeill a 'L'exorcista'?",
-    "difficulty": 4,
-    "category": "horror",
-    "correct_answer": "Dana Plato",
-    "incorrect_answers": [
-      "Melissa Gilbert",
-      "Lisa Bonet",
-      "Carrie Fisher"
-    ]
-  },
-  {
-    "id": 60,
-    "question": "Quina pel·lícula de terror va ser grabada en només 7 dies?",
-    "difficulty": 3,
-    "category": "horror",
-    "correct_answer": "Paranormal Activity",
-    "incorrect_answers": [
-      "Halloween",
-      "A nightmare on Elm Street",
-      "The Texas chain saw massacre"
-    ]
-  },
-  {
-    "id": 61,
-    "question": "Quina pel·lícula de terror va ser nominada per primera vegada a l'Òscar per millor fotografia?",
-    "difficulty": 2,
-    "category": "horror",
-    "correct_answer": "L'exorcista",
-    "incorrect_answers": [
-      "The Shining",
-      "Psycho",
-      "El silenci dels anyells"
-    ]
-  },
-  {
-    "id": 131,
-    "question": "Quina de les següents cançons apareix a la banda sonora de 'Vaiana'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "On aniré",
-    "incorrect_answers": [
-      "On anirem",
-      "On anireu",
-      "On vas"
-    ]
-  },
-  {
-    "id": 132,
-    "question": "Com es diu el poble de 'Pesadilla antes de Navidad'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Halloween Town",
-    "incorrect_answers": [
-      "Christmas Town",
-      "Skeletown",
-      "Gateshead"
-    ]
-  },
-  {
-    "id": 133,
-    "question": "Quin tipus de primat és el personatge d'El Rey León, Rafiki?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Mandril",
-    "incorrect_answers": [
-      "Babuí",
-      "Mono aranya",
-      "Tarsero"
-    ]
-  },
-  {
-    "id": 134,
-    "question": "Com es diu el protagonista de la pel·lícula Coco?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Miguel",
-    "incorrect_answers": [
-      "Andreas",
-      "Paulo",
-      "Max"
-    ]
-  },
-  {
-    "id": 135,
-    "question": "Qui va ser el director de la pel·lícula animada 'El niño y la bestia'?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Mamoru Hosoda",
-    "incorrect_answers": [
-      "Hayao Miyazaki",
-      "Tatsuyuki Nagai",
-      "Seiji Mizushima"
-    ]
-  },
-  {
-    "id": 136,
-    "question": "Com es diuen els personatges principals de la pel·lícula animada 'La ruta hacia El Dorado'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Tulio and Miguel",
-    "incorrect_answers": [
-      "Tulio and Marco",
-      "Manuel and Julio",
-      "Hector and Miguel"
-    ]
-  },
-  {
-    "id": 137,
-    "question": "En què es va transformar l'Altra Mare a 'Coraline' prop del final de la pel·lícula?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Aranya",
-    "incorrect_answers": [
-      "Papallona",
-      "Vespa",
-      "Fromiga"
-    ]
-  },
-  {
-    "id": 138,
-    "question": "Quan es va estrenar la pel·lícula 'Lilo & Stitch'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "2002",
-    "incorrect_answers": [
-      "2004",
-      "2000",
-      "2007"
-    ]
-  },
-  {
-    "id": 139,
-    "question": "Quina de les següents és una pel·lícula de Studio Ghibli?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "La princesa Mononoke (1997)",
-    "incorrect_answers": [
-      "Una Voz Silenciosa (Koe No Katachi) (2016)",
-      "Children Who Chase Lost Voices (2011)",
-      "Your Name (2016)"
-    ]
-  },
-  {
-    "id": 140,
-    "question": "Quin és el nom complet de Jack a la pel·lícula 'Pesadilla antes de Navidad'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Jack Skellington",
-    "incorrect_answers": [
-      "Jack Skeleton",
-      "Jack Stalfos",
-      "Jack Skulltula"
-    ]
-  },
-  {
-    "id": 141,
-    "question": "En quin animal es va convertir Kuzco a la pel·lícula 'The Emperor's New Groove'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Llama",
-    "incorrect_answers": [
-      "Ruc",
-      "Cavall",
-      "Cabra"
-    ]
-  },
-  {
-    "id": 142,
-    "question": "Com es diu l'animal que acompanya Shrek?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Ase",
-    "incorrect_answers": [
-      "Mula",
-      "Manel",
-      "Lluís"
-    ]
-  },
-  {
-    "id": 143,
-    "question": "Quin ha estat l'únic 'anime' que ha guanyat un Oscar actualment?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "El Viaje de Chihiro (2001)",
-    "incorrect_answers": [
-      "El cuento de la princesa Kaguya (2013)",
-      "El Castillo Ambulante (2004)",
-      "El Viento se Levanta (2013)"
-    ]
-  },
-  {
-    "id": 144,
-    "question": "Quin estudi d'animació va produir la pel·lícula animada 'Spirit: El Corcel Indomable'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Dreamworks Animation",
-    "incorrect_answers": [
-      "A-1 Pictures",
-      "Walt Disney Animation Studios",
-      "Bones Inc."
-    ]
-  },
-  {
-    "id": 145,
-    "question": "Quin és el segon nom de Singlot Sardina III a 'Com ensinistrar un drac'?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Horrorós",
-    "incorrect_answers": [
-      "Horrible",
-      "Horrent",
-      "Howards"
-    ]
-  },
-  {
-    "id": 146,
-    "question": "¿Qué villano amenaza a todo el universo Lego en 'La Lego pel·lícula'?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Mega Dolent",
-    "incorrect_answers": [
-      "Super Dolent",
-      "Mega empresari",
-      "Super empresari"
-    ]
-  },
-  {
-    "id": 147,
-    "question": "'Fantastic Mr. Fox' està basat en un llibre infantil de quin autor?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Roald Dahl",
-    "incorrect_answers": [
-      "Dr. Seuss",
-      "J. K. Rowling",
-      "Beverly Cleary"
-    ]
-  },
-  {
-    "id": 148,
-    "question": "Quin drac munta Singlot a les pel·lícules de 'Com ensinistrar un drac'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Esdentegat ",
-    "incorrect_answers": [
-      "Desterrat",
-      "Desdentat ",
-      "Esmaixellat"
-    ]
-  },
-  {
-    "id": 149,
-    "question": "'Dumbo' de Disney tenia extremadament gran què?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Orelles",
-    "incorrect_answers": [
-      "Ullals",
-      "Peus",
-      "Ungles"
-    ]
-  },
-  {
-    "id": 150,
-    "question": "Dash és un personatge de quina pel·lícula animada?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Los Increíbles",
-    "incorrect_answers": [
-      "Shrek",
-      "Toy Story",
-      "Madagascar"
-    ]
-  },
-  {
-    "id": 151,
-    "question": "Quina família dirigeix ​​la granja de pollastres a 'Chicken Run'?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "The Tweedys",
-    "incorrect_answers": [
-      "The Twiddles",
-      "The Twaddys",
-      "The Tweedles"
-    ]
-  },
-  {
-    "id": 152,
-    "question": "De qui s'enamora Ase a 'Shrek'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "La Dragona",
-    "incorrect_answers": [
-      "La Gegant",
-      "La Fada Madrina",
-      "Lord Farquaad"
-    ]
-  },
-  {
-    "id": 153,
-    "question": "Qui va dirigir la pel·lícula d'animació stop motion 'La novia cadàver'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Tim Burton",
-    "incorrect_answers": [
-      "Brad Bird",
-      "Wes Anderson",
-      "Edgar Wright"
-    ]
-  },
-  {
-    "id": 154,
-    "question": "Quin nom dóna Homer al seu estimat porc adoptiu a 'The Simpsons Movie'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Spider-Cerdo",
-    "incorrect_answers": [
-      "Capitán Cerdo",
-      "El Increible Cerdo",
-      "Cerlobo"
-    ]
-  },
-  {
-    "id": 155,
-    "question": "Quin any es va estrenar la pel·lícula 'Ratatouille'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "2007",
-    "incorrect_answers": [
-      "2005",
-      "2004",
-      "2002"
-    ]
-  },
-  {
-    "id": 156,
-    "question": "Com es va anomenar la pel·lícula derivada de 'Cars' que es va estrenar el 2013?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Avions",
-    "incorrect_answers": [
-      "Vaixells",
-      "Trens",
-      "Bicis"
-    ]
-  },
-  {
-    "id": 157,
-    "question": "Quin tipus de peix és el personatge principal de la pel·lícula de Pixar 'Buscando a Nemo'?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Peix Pallasso",
-    "incorrect_answers": [
-      "Peix Neu",
-      "Blowfish",
-      "Peix Lleó"
-    ]
-  },
-  {
-    "id": 158,
-    "question": "¿Completa el títol de la seqüela de 'Madagascar' 'Escape to...'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Africa",
-    "incorrect_answers": [
-      "Asia",
-      "Europa",
-      "Latinoamérica"
-    ]
-  },
-  {
-    "id": 159,
-    "question": "Quin any es va vendre Pixar a Disney?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "2006",
-    "incorrect_answers": [
-      "2012",
-      "1996",
-      "2003"
-    ]
-  },
-  {
-    "id": 160,
-    "question": "Qui va dirigir 'Perfect Blue'?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Satoshi Kon",
-    "incorrect_answers": [
-      "Makoto Shinkai",
-      "Katsuhiro Otomo",
-      "Yoshikazu Takeuchi"
-    ]
-  },
-  {
-    "id": 161,
-    "question": "A 'Perfect Blue', amb què mata Mima el seu assetjador?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Martell",
-    "incorrect_answers": [
-      "Pistola",
-      "Tornavís",
-      "Ganivet"
-    ]
-  },
-  {
-    "id": 162,
-    "question": "A 'Perfect Blue', quin és el nom del lloc web que visita Mima?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "El cuarto de Mima",
-    "incorrect_answers": [
-      "El sitio de Mima",
-      "La casa de Mima",
-      "El dominio de Mima"
-    ]
-  },
-  {
-    "id": 163,
-    "question": "A 'El viatge de Chihiro', en què es converteixen els pares de Chihiro?",
-    "difficulty": 1,
-    "category": "animation",
-    "correct_answer": "Porcs",
-    "incorrect_answers": [
-      "Gats",
-      "Esperits",
-      "Sushi"
-    ]
-  },
-  {
-    "id": 164,
-    "question": "Quin és el vehicle a 'Mi Vecino Totoro'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Un Gat-Bus",
-    "incorrect_answers": [
-      "Un Gat-Avió",
-      "Un Gat-Vaixell",
-      "Un Pop-Tren"
-    ]
-  },
-  {
-    "id": 165,
-    "question": "Com es diu el príncep guerrer de 'La princesa Mononoke'?",
-    "difficulty": 2,
-    "category": "animation",
-    "correct_answer": "Ashitaka",
-    "incorrect_answers": [
-      "Aoki",
-      "Kenji",
-      "San"
-    ]
-  },
-  {
-    "id": 166,
-    "question": "A 'Princesa Mononoke', com es manifesta físicament la maledicció d'Ashitaka?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "en una infecció que s'estén pel braç",
-    "incorrect_answers": [
-      "tus cucs negres",
-      "se li posen els ulls vermells",
-      "li cau els cabells"
-    ]
-  },
-  {
-    "id": 167,
-    "question": "El Rey León s'inspira en quina obra de Shakespeare?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Hamlet",
-    "incorrect_answers": [
-      "King Lear",
-      "Henry IV",
-      "The Tempest"
-    ]
-  },
-  {
-    "id": 168,
-    "question": "Els dos ratolins de Ventafocs es diuen:",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Jaq and Gus",
-    "incorrect_answers": [
-      "Jaq and Gary",
-      "Jaq and Maurice",
-      "Jaq and Daxter"
-    ]
-  },
-  {
-    "id": 169,
-    "question": "A 'La Sirenita', quin és el nom complet de Sebastian?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Horatio Thelonious Ignacious Crustaceous Sebastian",
-    "incorrect_answers": [
-      "Horatio Thelonious Pugnacious Crustaceous Sebastian",
-      "Horatio Thelonious Keith Crustaceous Sebastian",
-      "Johann Sebastian Bach"
-    ]
-  },
-  {
-    "id": 170,
-    "question": "Quin dels següents no era un dels Set Nans?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Juganer",
-    "incorrect_answers": [
-      "Rondinaire",
-      "Mudet",
-      "Esternuts"
-    ]
-  },
-  {
-    "id": 171,
-    "question": "A 'La Bella Dorment', quin nom fa servir Aurora mentre viu al bosc amb les seves Fades Madrines?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Briar Rose",
-    "incorrect_answers": [
-      "May Fern",
-      "Jasmine Fuschia",
-      "Lily Magenta"
-    ]
-  },
-  {
-    "id": 172,
-    "question": "Com es diu la mare de Simba?",
-    "difficulty": 3,
-    "category": "animation",
-    "correct_answer": "Sarabi",
-    "incorrect_answers": [
-      "Zoya",
-      "Shenzi",
-      "Nala"
-    ]
-  },
-  {
-    "id": 173,
-    "question": "Quina va ser la pel·lícula més llarga de Disney?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Fantasia",
-    "incorrect_answers": [
-      "101 dálmatas",
-      "Pinocho",
-      "Vaiana"
-    ]
-  },
-  {
-    "id": 174,
-    "question": "Quants llops van atacar Bella quan va intentar fugir del castell de Bèstia?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "4",
-    "incorrect_answers": [
-      "5",
-      "3",
-      "2"
-    ]
-  },
-  {
-    "id": 175,
-    "question": "Com es diu la taverna d'Enredats?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "El Patito Frito",
-    "incorrect_answers": [
-      "El Oso Asado",
-      "La Serpiente Deslizante",
-      "El Perro Anadón"
-    ]
-  },
-  {
-    "id": 176,
-    "question": "Quin era el musical preferit de Wall-E?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "Hello Dolly",
-    "incorrect_answers": [
-      "The Sound Of Music",
-      "The Wizard Of Oz",
-      "My Fair Lady"
-    ]
-  },
-  {
-    "id": 177,
-    "question": "A Aladdin, quants anys diu el Geni que ha estat atrapat a la làmpara?",
-    "difficulty": 4,
-    "category": "animation",
-    "correct_answer": "10.000",
-    "incorrect_answers": [
-      "100.000",
-      "1.000.000",
-      "1.000.000.000.000"
-    ]
-  }
-]
+    {
+      "id": 1,
+      "question": "Com es diu l'administrador de la Ciutat dels Núvols, que apareix a Star Wars, L'Imperi Contraataca?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Lando Calrissian ",
+      "incorrect_answers": [
+        "Chewbacca",
+        "Han Solo",
+        "Senador Bail Organa"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Qui interpreta Luke Skywalker al llarg de la sèrie?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Mark Hamill",
+      "incorrect_answers": [
+        "Will Smith",
+        "Leonardo DiCaprio",
+        "Tom Cruise"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Quin personatge, a El retorn del Jedi, diu: &quot¡és una trampa!&quot",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Admiral Ackbar",
+      "incorrect_answers": [
+        "Luke Skywalker",
+        "Greedo",
+        "Biggs Darklighter"
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Quin any es va estrenar la primera pel·lícula de Star Wars?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "1977",
+      "incorrect_answers": [
+        "2004",
+        "1989",
+        "1944"
+      ]
+    },
+    {
+      "id": 5,
+      "question": "De quin planeta és Jar Jar Binks?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Naboo",
+      "incorrect_answers": [
+        "Tatooine",
+        "Coruscant",
+        "Alderaan"
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Ewan Macgregor i Alec Guinness interpreten quin personatge?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Obi Wan Kenobi",
+      "incorrect_answers": [
+        "Owen Lars",
+        "C-3PO",
+        "Anakin Skywalker"
+      ]
+    },
+    {
+      "id": 7,
+      "question": "A &quotBlade Runner&quot, els humans artificials es diuen com?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Replicants",
+      "incorrect_answers": [
+        "Recombinants",
+        "Sintezoides",
+        "Androides"
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Qui va dirigir &quotBlade Runner&quot, a més del clàssic de ciència ficció &quotAlien&quot?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Ridley Scott",
+      "incorrect_answers": [
+        "Steven Spielberg",
+        "George Lucas",
+        "M. Night Shyamalan"
+      ]
+    },
+    {
+      "id": 9,
+      "question": "A Interestellar, quin desastre natural està passant a la Terra que finalment provocarà l'extinció de la raça humana?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Tempestes de pols",
+      "incorrect_answers": [
+        "Terratrèmols",
+        "Volcans",
+        "Huracans"
+      ]
+    },
+    {
+      "id": 10,
+      "question": "A Interestellar, què diu el missatge del fantasma a l'habitació de Murphy?",
+      "difficulty": 1,
+      "category": "science fiction",
+      "correct_answer": "Queda't",
+      "incorrect_answers": [
+        "T'estimo",
+        "Ves al planeta de Miller",
+        "Vés-te'n"
+      ]
+    },
+    {
+      "id": 11,
+      "question": "A Interestellar, per què el Dr. Mann menteix sobre el seu planeta?",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "Vol viure - Instint de supervivència",
+      "incorrect_answers": [
+        "Vol que el seu planeta sigui on visquin els humans.",
+        "Ell creu que hi ha 2 planetes en què els humans poden viure.",
+        "No menteix"
+      ]
+    },
+    {
+      "id": 12,
+      "question": "A Matrix, què vol dir exactament prendre la píndola vermella?",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "La pastilla vermella ens permet alliberar-nos de la realitat virtual de Matrix i portar-nos al món real",
+      "incorrect_answers": [
+        "La pastilla vermella et permet oblidar tot el que ha passat i romandre a la realitat virtual de Matrix",
+        "La pastilla vermella permet saltar a una altra dimensió",
+        "La pastilla vermella permet recordar el passat i preveure el futur"
+      ]
+    },
+    {
+      "id": 13,
+      "question": "A Matrix, per trobar Trinity, Neo ha de seguir...",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "Un conill blanc, com a Alícia al país de les meravelles.",
+      "incorrect_answers": [
+        "Una serp blanca",
+        "Un mussol blanc",
+        "Un colom blanc"
+      ]
+    },
+    {
+      "id": 14,
+      "question": "A Matrix, quina era la feina de Thomas Anderson (Neo) abans d'emprendre la seva particular aventura?",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "Programador",
+      "incorrect_answers": [
+        "Servei tecnic informatic",
+        "Dissenyador de maquinari",
+        "Jugador profesional"
+      ]
+    },
+    {
+      "id": 15,
+      "question": "El 2001: A Space Odyssey, Quin nom d'aerolínia va aparèixer a la nau espacial que va prendre el Dr. Heywood Floyd per arribar a l'estació espacial?",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "Pan Am",
+      "incorrect_answers": [
+        "Ryanair",
+        "AmericanAirlines",
+        "easyJet"
+      ]
+    },
+    {
+      "id": 16,
+      "question": "A Retorn al futur, quin tipus de cotxe es converteix en una màquina del temps?",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "DeLorean",
+      "incorrect_answers": [
+        "Dodge",
+        "Mitsubishi",
+        "Ferrari"
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Qui va dirigir Retorn al futur?",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "Robert Zemeckis",
+      "incorrect_answers": [
+        "Steven Spielberg",
+        "George Lucas",
+        "Ron Howard"
+      ]
+    },
+    {
+      "id": 18,
+      "question": "A Retorn al futur, quina velocitat necessitava assolir el DeLorean per poder viatjar en el temps?",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "88mph / 141kmh",
+      "incorrect_answers": [
+        "73mph / 117 kmh",
+        "76mph / 122 kmh",
+        "80mph / 128 kmh"
+      ]
+    },
+    {
+      "id": 19,
+      "question": "A Origen, per què la policia busca Cobb?",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "Va assassinar la seva dona",
+      "incorrect_answers": [
+        "Va robar a una multinacional",
+        "És un assassí en sèrie",
+        "Es cola als somnis dels altres."
+      ]
+    },
+    {
+      "id": 20,
+      "question": "A La Arribada (2016), els extraterrestres es diuen...",
+      "difficulty": 2,
+      "category": "science fiction",
+      "correct_answer": "Heptapods",
+      "incorrect_answers": [
+        "Angosian",
+        "Talaxian",
+        "Xindi"
+      ]
+    },
+    {
+      "id": 21,
+      "question": "En quina pel·lícula apareix la celebre cita: M'encanta l'olor de napalm al matí!&quot?",
+      "difficulty": 2,
+      "category": "action",
+      "correct_answer": "Apocalypse Now",
+      "incorrect_answers": [
+        "Platoon",
+        "El Francotirador",
+        "La Chaqueta Metálica"
+      ]
+    },
+    {
+      "id": 22,
+      "question": "A la pel·lícula El Club de la Lluita de 1999, quina d'aquestes no és una regla del &quot;club de la lluita&quot;?",
+      "difficulty": 2,
+      "category": "action",
+      "correct_answer": "Sempre fes servir una camisa",
+      "incorrect_answers": [
+        "No parles del Club de la Lluita",
+        "Només dos nois per a una baralla",
+        "Les baralles continuaran mentre sigui necessari."
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Quina va ser la primera pel·lícula de James Bond?",
+      "difficulty": 1,
+      "category": "action",
+      "correct_answer": "Agent 007 contra el Dr. No",
+      "incorrect_answers": [
+        "007 contra Goldfinger",
+        "Des de Rússia amb Amor",
+        "Operación Trueno"
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Quins actors componien el trio de &quot;El bueno, el feo y el malo&quot;? ",
+      "difficulty": 2,
+      "category": "action",
+      "correct_answer": "Clint Eastwood, Eli Wallach, and Lee Van Cleef",
+      "incorrect_answers": [
+        "Sergio Leone, Ennio Morricone, and Tonino Delli Colli",
+        "Yul Brynner, Steve McQueen, and Charles Bronson",
+        "Aldo Giuffr&egrave;, Mario Brega, and Luigi Pistilli"
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Quina pel·lícula conté la cita, &quot;¡Saluda a mi amiguito!&quot;?",
+      "difficulty": 1,
+      "category": "action",
+      "correct_answer": "Scarface",
+      "incorrect_answers": [
+        "Reservoir Dogs",
+        "Heat",
+        "Goodfellas"
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Leonardo Di Caprio va guanyar el seu primer Oscar a Millor Actor per la seva actuació en quina pel·lícula?",
+      "difficulty": 1,
+      "category": "action",
+      "correct_answer": "El Renacido",
+      "incorrect_answers": [
+        "El Lobo de Wall Street",
+        "Shutter Island",
+        "Origen"
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Qui interpreta &quot;Bruce Wayne&quot; a la pel·lícula de 2008 &quot;El Cavaller Fosc &quot;?",
+      "difficulty": 1,
+      "category": "action",
+      "correct_answer": "Christian Bale",
+      "incorrect_answers": [
+        "Michael Caine",
+        "Ron Dean",
+        "Heath Ledger"
+      ]
+    },
+    {
+      "id": 28,
+      "question": "A Mad Max Fury Road, com es referia el Guerrer de la carretera, Nux, a Max?",
+      "difficulty": 2,
+      "category": "action",
+      "correct_answer": "Bossa de sang",
+      "incorrect_answers": [
+        "Esclau",
+        "Bossa humana",
+        "Carn"
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Quantes gemmes de l'infinit hi ha a MCU?",
+      "difficulty": 1,
+      "category": "action",
+      "correct_answer": "6",
+      "incorrect_answers": [
+        "5",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Quin tipus de metge és Doctor Strange?",
+      "difficulty": 1,
+      "category": "action",
+      "correct_answer": "Un neurocirurgià",
+      "incorrect_answers": [
+        "Un endocrinòleg",
+        "Un nefròleg",
+        "Un oncòleg"
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Qui és l'assassí a 'Divendres 13'?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Pamela Voorhees",
+      "incorrect_answers": [
+        "Norman Bates",
+        "Jason Voorhees",
+        "Ghostface"
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Qui va dirigir Scream?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "Wes Craven",
+      "incorrect_answers": [
+        "George Romero",
+        "John Carpenter",
+        "Ridley Scott"
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Quina és l'ocupació de Hannibal Lecter, l'assassí en sèrie que apareix en la pel·lícula 'El silenci dels anyells'?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Psiquiatre",
+      "incorrect_answers": [
+        "Pediatrici",
+        "Xef",
+        "Dentista"
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Qui és el dolent de Halloween?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Michael Myers",
+      "incorrect_answers": [
+        "Freddy Krueger",
+        "Pennywise",
+        "Jack Torrance"
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Quin actor va fer el seu debut cinematogràfic a \r\n'Un malson al carrer Elm'?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Jhonny Depp",
+      "incorrect_answers": [
+        "Nicolas Cage",
+        "Robert Englund",
+        "Charlie Sheen"
+      ]
+    },
+    {
+      "id": 36,
+      "question": "Quin dels següents no es basava en una obra de Stephen King?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "L'exorcista",
+      "incorrect_answers": [
+        "Children of The Corn",
+        "Misteri",
+        "Cujo"
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Quin assassí de la vida real va inspirar la pel·lícula Psycho d'Alfred Hitchcock?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "Ed Gein",
+      "incorrect_answers": [
+        "Richard Speck",
+        "Charles Manson",
+        "Joel Rifkin"
+      ]
+    },
+    {
+      "id": 38,
+      "question": "El Leatherface de la massacre de Texas porta una màscara feta de què?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Pell humana",
+      "incorrect_answers": [
+        "Cuir",
+        "Plàstic",
+        "Cap de les anteriors"
+      ]
+    },
+    {
+      "id": 39,
+      "question": "Quina va ser la primera víctima de Michael Myers?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "La seva germana",
+      "incorrect_answers": [
+        "La seva mare",
+        "El seu pare",
+        "La seva mainadera"
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Cuantes vegades has de dir Candyman en front del mirral per a què aparegui?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Cinc",
+      "incorrect_answers": [
+        "Tres",
+        "Quatre",
+        "Sis"
+      ]
+    },
+    {
+      "id": 41,
+      "question": "Quin és el nom del nen que apareix a la pel·lícula 'La profecia'?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "Damien",
+      "incorrect_answers": [
+        "Kevin",
+        "Devon",
+        "Jonathan"
+      ]
+    },
+    {
+      "id": 42,
+      "question": "Quina és la protagonista a la versió de 2020 de la pel·lícula 'L'home Invisible'?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "Elisabeth Moss",
+      "incorrect_answers": [
+        "Florence Pugh",
+        "Toni Collette",
+        "Lupita Nyong'o"
+      ]
+    },
+    {
+      "id": 43,
+      "question": "Quin dels següents títols no és un títol de la saga 'Resident Evil'?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Resident Evil: Absolution",
+      "incorrect_answers": [
+        "Resident Evil: Extiction",
+        "Resident Evil: Afterlife",
+        "Resident Evil: Apocalypse"
+      ]
+    },
+    {
+      "id": 44,
+      "question": "Quina pel·lícula de terror clàssica presenta un assassí en sèrie en una màscara de William Shatner?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Halloween",
+      "incorrect_answers": [
+        "La boira",
+        "Divendres 13",
+        "The Texas Chain Saw Massacre"
+      ]
+    },
+    {
+      "id": 45,
+      "question": "En quina pel·lícula de terror escriu el protagonista un llibre que conté només la línia 'Tot el treball i cap obra fa que Jack sigui un noi avorrit' repetit una vegada i una altra?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "The shining",
+      "incorrect_answers": [
+        "The Devil's rain",
+        "Writer's Block",
+        "La novena porta"
+      ]
+    },
+    {
+      "id": 46,
+      "question": "Quantes persones associades a 'L'exorcista' van morir durant la producció?",
+      "difficulty": 3,
+      "category": "horror",
+      "correct_answer": "9",
+      "incorrect_answers": [
+        "6",
+        "12",
+        "3"
+      ]
+    },
+    {
+      "id": 47,
+      "question": "Quina pel·lícula de terror va ser la primera que va mostrar una dona amb roba íntima?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "Psycho",
+      "incorrect_answers": [
+        "Bride of Frankestein",
+        "The Haunting",
+        "The Wax Museum"
+      ]
+    },
+    {
+      "id": 48,
+      "question": "De quin color és la samarreta de Freddy Krueger?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Vermell i Verd",
+      "incorrect_answers": [
+        "Vermell i Groc",
+        "Vermell i Negre",
+        "Vermell i Blau"
+      ]
+    },
+    {
+      "id": 49,
+      "question": "A quantes persones mata Jason a la PRIMERA pel·lícula de 'Divendres 13'?",
+      "difficulty": 3,
+      "category": "horror",
+      "correct_answer": "0",
+      "incorrect_answers": [
+        "5",
+        "9",
+        "13"
+      ]
+    },
+    {
+      "id": 50,
+      "question": "A la pel·lícula Scream, quina es la regla número 1 a la llista de Randy per sobreviure a les pel·lícules de terror?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "No tenir sexe",
+      "incorrect_answers": [
+        "No beure o pendre drogues",
+        "No surtis fora sol",
+        "No diguis 'Vinc de seguida'"
+      ]
+    },
+    {
+      "id": 51,
+      "question": "Quina pel·lícula de terror va requerir la compra de 500 granotes de Florida i 100  Sud-Americanes?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "The Frogs",
+      "incorrect_answers": [
+        "Pet Sematary",
+        "Invasion of the body Snatchers",
+        "Creature from the black Lagoon"
+      ]
+    },
+    {
+      "id": 52,
+      "question": "Quin es el títol original de 'the Blob'?",
+      "difficulty": 4,
+      "category": "horror",
+      "correct_answer": "The Glob",
+      "incorrect_answers": [
+        "The Lump",
+        "The Spheroid",
+        "The Thing"
+      ]
+    },
+    {
+      "id": 53,
+      "question": "Quina pel·lícula de terror té un assassí en sèrie portant una màscara inspirada en un quadre de Edward Munch?",
+      "difficulty": 1,
+      "category": "horror",
+      "correct_answer": "Scream",
+      "incorrect_answers": [
+        "Halloween",
+        "The man in the black suit",
+        "Henry: Portrait of a serial killer"
+      ]
+    },
+    {
+      "id": 54,
+      "question": "Quina pel·lícula de terror va causar que alguns teatres suggerissin que els espectadors propensos a la malaltia de moviment es trobaven als seients del passadís?",
+      "difficulty": 4,
+      "category": "horror",
+      "correct_answer": "The Blair Witch Project",
+      "incorrect_answers": [
+        "Divendres 13",
+        "Vertigo",
+        "Mimic"
+      ]
+    },
+    {
+      "id": 55,
+      "question": "A Poltergeist, què agafa en Robbie Freeling per la finestra del seu dormitori?",
+      "difficulty": 3,
+      "category": "horror",
+      "correct_answer": "Un arbre",
+      "incorrect_answers": [
+        "Un pallasso",
+        "Un Indi",
+        "Un cub d'aigua"
+      ]
+    },
+    {
+      "id": 56,
+      "question": "Quan temps surt en pantalla Freddy Krueger a la primera pel·lícula de 'A nightmare on Elm Street'?",
+      "difficulty": 3,
+      "category": "horror",
+      "correct_answer": "7 minuts",
+      "incorrect_answers": [
+        "21 minuts",
+        "14 minuts",
+        "3 minuts"
+      ]
+    },
+    {
+      "id": 57,
+      "question": "On té lloc la pel·lícula 'Divendres 13'?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "Camp Crystal Lake",
+      "incorrect_answers": [
+        "Camp Kikiwaka",
+        "Camp Clear Lake",
+        "Camp Crescent Lake"
+      ]
+    },
+    {
+      "id": 58,
+      "question": "Per què Michael Myers no pot ser matat?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "Per una maledicció druida antiga",
+      "incorrect_answers": [
+        "És un Dèu",
+        "És un fantasma",
+        "Simplement té sort"
+      ]
+    },
+    {
+      "id": 59,
+      "question": "Quina actriu infantil se li va oferir originalment el paper de Regan MacNeill a 'L'exorcista'?",
+      "difficulty": 4,
+      "category": "horror",
+      "correct_answer": "Dana Plato",
+      "incorrect_answers": [
+        "Melissa Gilbert",
+        "Lisa Bonet",
+        "Carrie Fisher"
+      ]
+    },
+    {
+      "id": 60,
+      "question": "Quina pel·lícula de terror va ser grabada en només 7 dies?",
+      "difficulty": 3,
+      "category": "horror",
+      "correct_answer": "Paranormal Activity",
+      "incorrect_answers": [
+        "Halloween",
+        "A nightmare on Elm Street",
+        "The Texas chain saw massacre"
+      ]
+    },
+    {
+      "id": 61,
+      "question": "Quina pel·lícula de terror va ser nominada per primera vegada a l'Òscar per millor fotografia?",
+      "difficulty": 2,
+      "category": "horror",
+      "correct_answer": "L'exorcista",
+      "incorrect_answers": [
+        "The Shining",
+        "Psycho",
+        "El silenci dels anyells"
+      ]
+    },
+    {
+        "id": 62,
+        "question": "A les dues primeres pel·lícules de Hellraiser, quants actors diferents van interpretar a Frank Cotton?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "3",
+        "incorrect_answers": [
+           "1",
+           "2",
+           "4"
+        ]
+     },
+      {
+        "id": 63,
+        "question": "Com es diu que el tipus de construcció d'apartaments i Rosemary es traslladen al nadó de Rosemary?",
+        "difficulty": 4,
+        "category": "horror",
+        "correct_answer": "El Bramford",
+        "incorrect_answers": [
+           "El Branson",
+           "El Brockworth",
+           "El Bordsky"
+        ]
+     },
+      {
+        "id": 64,
+        "question": "Qui s’encarrega d’alliberar el virus mortal el 28 dies després?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Activistes en drets dels animals",
+        "incorrect_answers": [
+           "Taxista",
+           "Terrorista islàmic",
+           "El govern xinès"
+        ]
+     },
+      {
+        "id": 65,
+        "question": "A Carrie, què fan els altres estudiants a Carrie a Prom?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Sang del porc",
+        "incorrect_answers": [
+           "Fangs de vaca",
+           "Pintura vermella",
+           "Salsa d’espaguetis"
+        ]
+     },
+      {
+        "id": 66,
+        "question": "Quina habitació li diu a Dick Hallorann a Danny que es quedi allunyat de la brillantor?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "237",
+        "incorrect_answers": [
+           "119",
+           "453",
+           "311"
+        ]
+     },
+      {
+        "id": 67,
+        "question": "De quina pell porta Kirsty a Hellbound: Hellraiser II?",
+        "difficulty": 4,
+        "category": "horror",
+        "correct_answer": "Julia",
+        "incorrect_answers": [
+           "Tiffany's",
+           "Frank's",
+           "Larry's"
+        ]
+     },
+      {
+        "id": 68,
+        "question": "Quina és l’afició de Norman a Psycho?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Taxidermia",
+        "incorrect_answers": [
+           "Model de vaixells",
+           "Fotografia",
+           "Col·lecció de segells"
+        ]
+     },
+      {
+        "id": 69,
+        "question": "Què passa amb la primera mainadera de Damien a l’omen?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Es penja",
+        "incorrect_answers": [
+           "Ella es va boig",
+           "Ella desapareix",
+           "Deixa"
+        ]
+     },
+      {
+        "id": 70,
+        "question": "Qui parla amb Isaac en nens del blat de moro?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "El que camina darrere de les files",
+        "incorrect_answers": [
+           "Aquell que no serà nomenat",
+           "El que no coneix el pecat",
+           "El que ve amb foc"
+        ]
+     },
+      {
+        "id": 71,
+        "question": "Quin era el nom humà de Pinhead?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Elliot",
+        "incorrect_answers": [
+           "Winston",
+           "Gerald",
+           "Duncan"
+        ]
+     },
+      {
+        "id": 72,
+        "question": "Què és inusual de la videoclip al ring?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "No inclou el codi de temps",
+        "incorrect_answers": [
+           "Té més de 100 anys",
+           "No es cremarà al foc",
+           "No es pot copiar"
+        ]
+     },
+      {
+        "id": 73,
+        "question": "Què dóna el xaman nadiu americà a Steve a Poltergeist II?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Potència de fum",
+        "incorrect_answers": [
+           "Poder de pedra",
+           "Poder de la Terra",
+           "Poder dels somnis"
+        ]
+     },
+      {
+        "id": 74,
+        "question": "Qui és l’únic personatge que apareix i sobreviu a les quatre pel·lícules de Jaws?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Michael Brody",
+        "incorrect_answers": [
+           "Martin Brody",
+           "Ellen Brody",
+           "Sean Brody"
+        ]
+     },
+      {
+        "id": 75,
+        "question": "Quin va ser el cognom de Damien a les pel·lícules de Omen?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Espina",
+        "incorrect_answers": [
+           "Deville",
+           "Tròtter",
+           "Evans"
+        ]
+     },
+      {
+        "id": 76,
+        "question": "Com es diu el pallasso a Stephen King's It?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Pennywise",
+        "incorrect_answers": [
+           "Lliura",
+           "Pennyworth",
+           "Cèntim"
+        ]
+     },
+      {
+        "id": 77,
+        "question": "En quina pel·lícula de Slasher va aparèixer Jason Voorhees per primera vegada com l'assassí?",
+        "difficulty": 1,
+        "category": "horror",
+        "correct_answer": "Divendres 13, part 2",
+        "incorrect_answers": [
+           "Divendres 13 de la part 3",
+           "Divendres 13",
+           "Divendres 13, part 4"
+        ]
+     },
+      {
+        "id": 78,
+        "question": "En quin mes s'ha llançat cada pel·lícula de SAW?",
+        "difficulty": 2,
+        "category": "horror",
+        "correct_answer": "Octubre",
+        "incorrect_answers": [
+           "Setembre",
+           "Desembre",
+           "de novembre"
+        ]
+     },
+      {
+        "id": 79,
+        "question": "En total, quantes persones han mort a la sèrie Saw? (Inclosos agents de policia sense nom i altres extres)",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "80",
+        "incorrect_answers": [
+           "100",
+           "20",
+           "40"
+        ]
+     },
+      {
+        "id": 80,
+        "question": "Quin seria el subtítol original per a 'SAW VI'?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Joc final",
+        "incorrect_answers": [
+           "Fi del joc",
+           "Llegat",
+           "Sang i fetge"
+        ]
+     },
+      {
+        "id": 81,
+        "question": "Quantes persones han treballat per a l'assassí de Jigsaw?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "Sis",
+        "incorrect_answers": [
+           "Set",
+           "Cinc",
+           "Quatre"
+        ]
+     },
+      {
+        "id": 82,
+        "question": "Quants anys tenia Jigsaw en el seu moment de mort?",
+        "difficulty": 3,
+        "category": "horror",
+        "correct_answer": "52",
+        "incorrect_answers": [
+           "49",
+           "54",
+           "56"
+        ]
+     },
+      {
+        "id": 83,
+        "question": "On té lloc la primera pel·lícula de ressaca?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "les Vegas",
+        "incorrect_answers": [
+           "París",
+           "Seattle",
+           "Estocolm"
+        ]
+     },
+      {
+        "id": 84,
+        "question": "A la pel·lícula de ressaca, a qui falta el matí després que els nois arribessin a Las Vegas?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Doug",
+        "incorrect_answers": [
+           "Estuma",
+           "Fil",
+           "Allan"
+        ]
+     },
+      {
+        "id": 85,
+        "question": "A la ressaca, quin animal troben els nois al bany?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "tigre",
+        "incorrect_answers": [
+           "Cavall",
+           "Gos",
+           "Gat"
+        ]
+     },
+      {
+        "id": 86,
+        "question": "Quin és el primer nom de la núvia de Ted?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Tami-lynn",
+        "incorrect_answers": [
+           "Sarah-Lynn",
+           "Sandy-Lynn",
+           "Amber-Lynn"
+        ]
+     },
+      {
+        "id": 87,
+        "question": "A Ted, quina de les següents es va trobar al pis de l'apartament, fent que Lori es desprengués?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Un turd",
+        "incorrect_answers": [
+           "Una estació de pipí",
+           "Un preservatiu Usead",
+           "Un conjunt"
+        ]
+     },
+      {
+        "id": 88,
+        "question": "A Ted, a quin dels següents funciona John Bennett?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Una empresa de cotxes de lloguer",
+        "incorrect_answers": [
+           "Una botiga de queviures",
+           "Una institució bancària",
+           "Un restaurant"
+        ]
+     },
+      {
+        "id": 89,
+        "question": "Què fa el cap de Ted quan descobreix que Ted té relacions sexuals a la feina?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "El promou",
+        "incorrect_answers": [
+           "Sacseja el cap",
+           "El dispara",
+           "Li dóna un màxim de cinc"
+        ]
+     },
+      {
+        "id": 90,
+        "question": "A la pel·lícula de Ted, de què han tingut por a John i Ted des de la joventut?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Tro",
+        "incorrect_answers": [
+           "Micos malvats",
+           "Compromís",
+           "Pallassos"
+        ]
+     },
+      {
+        "id": 91,
+        "question": "A Ali G Movie, com es diu el Centre Comunitari Ali per estalviar?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "John Nike Leisure Center",
+        "incorrect_answers": [
+           "Centre d’Esports Fila",
+           "James Adidas Leisure Center",
+           "Puma Community Center"
+        ]
+     },
+      {
+        "id": 92,
+        "question": "A Ali G Movie, de quin color es representa la possibilitat d'Ali?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Groga",
+        "incorrect_answers": [
+           "Blava",
+           "Vermell",
+           "Verd"
+        ]
+     },
+      {
+        "id": 93,
+        "question": "A Ali G, Ali es converteix en l'ambaixador de quin país al final de la pel·lícula?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Jamaica",
+        "incorrect_answers": [
+           "Colòmbia",
+           "Cuba",
+           "Burkina Faso"
+        ]
+     },
+      {
+        "id": 94,
+        "question": "Quin cotxe condueix Ali G.?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Renault groc de 5 gt turbo",
+        "incorrect_answers": [
+           "Blue BMW 318i",
+           "Red Golf GTI",
+           "Green Peugeot 206 GTI"
+        ]
+     },
+      {
+        "id": 95,
+        "question": "A Dumb i Dumber, com es diu la botiga que Harry i Lloyd volen obrir?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Tinc cucs",
+        "incorrect_answers": [
+           "Talls de mutt",
+           "Bonics Hooters",
+           "Store Dumb i Dumber"
+        ]
+     },
+      {
+        "id": 96,
+        "question": "A la pel·lícula Dumb i Dumber, Lloyd i Harry fugen de casa seva perquè pensen que seran assassinats per no pagar ...?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Gas",
+        "incorrect_answers": [
+           "Llogar",
+           "Electricitat",
+           "Regar"
+        ]
+     },
+      {
+        "id": 97,
+        "question": "Qui són els principals actors de Dumb i Dumber?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Jim Carrey i Jeff Daniels",
+        "incorrect_answers": [
+           "Adam Sandler i Jim Carrey",
+           "Brad Pitt i Leonardo DiCaprio",
+           "Dwayne Johnson i Tom Cruise"
+        ]
+     },
+      {
+        "id": 98,
+        "question": "Quina pel·lícula no està protagonitzada per Adam Sandler?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Inici",
+        "incorrect_answers": [
+           "Clic",
+           "Píxels",
+           "Només cal anar -hi"
+        ]
+     },
+      {
+        "id": 99,
+        "question": "A l'Escola de Rock, què anomenen la banda?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "L’Escola de Rock",
+        "incorrect_answers": [
+           "Els nens de la roca",
+           "Sr. S i els nens",
+           "Rock's Band"
+        ]
+     },
+      {
+        "id": 100,
+        "question": "A l'Escola de Rock, quina feina té Dewey/Ned al final de la pel·lícula?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Professor del programa de música extraescolar",
+        "incorrect_answers": [
+           "Programador",
+           "Es troba a la seva antiga banda, toruant l'estat",
+           "Raper"
+        ]
+     },
+      {
+        "id": 101,
+        "question": "A Pitch Perfect, com es diu aquest grup de cant de la Universitat de Barden?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "El Barden Bellas",
+        "incorrect_answers": [
+           "L’harmonia del jardí",
+           "The Barden Divas",
+           "Una direcció"
+        ]
+     },
+      {
+        "id": 102,
+        "question": "A Pitch Perfect, on és la Universitat de Barden?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Atlanta",
+        "incorrect_answers": [
+           "Nova York",
+           "Melbourne",
+           "Sydney"
+        ]
+     },
+      {
+        "id": 103,
+        "question": "A Pitch Perfect, quin és el nom real de Fat Amy?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Patricia",
+        "incorrect_answers": [
+           "Melissa",
+           "Deborah",
+           "Donna"
+        ]
+     },
+      {
+        "id": 104,
+        "question": "En un terreny perfecte, quina dansa especial pot fer Fat Amy?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "La sirena ball",
+        "incorrect_answers": [
+           "La samba",
+           "El Charleston",
+           "Breakdancing"
+        ]
+     },
+      {
+        "id": 105,
+        "question": "En un terreny perfecte, qui toca Fat Amy?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Rebel Wilson",
+        "incorrect_answers": [
+           "Anna Kendrick",
+           "Scarlett Johansson",
+           "Gal Gadot"
+        ]
+     },
+      {
+        "id": 106,
+        "question": "A 'Llocs comercials', quins van ser els rics noms de Duke Brothers?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Randolph i Mortimer",
+        "incorrect_answers": [
+           "Rudolph i Randolph",
+           "Mortimer i Michael",
+           "Randolph i Michael"
+        ]
+     },
+      {
+        "id": 107,
+        "question": "A quina pel·lícula comença a destruir la ciutat de Nova York l'estada Puft Marshmallow?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Fantasmes",
+        "incorrect_answers": [
+           "Esperant a Guffman",
+           "Scoundrels brutes brutes",
+           "Avions, trens i automòbils"
+        ]
+     },
+      {
+        "id": 108,
+        "question": " Quina pel·lícula encaixa aquesta cita?\n'Jim mai vomita a casa.'",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Avió",
+        "incorrect_answers": [
+           "Hall Annie",
+           "Anchorman: The Legend of Ron Burgundy",
+           "Austin Powers: International Man of Mystery"
+        ]
+     },
+      {
+        "id": 109,
+        "question": "Segons Buddy the Elf, els quatre grups alimentaris són caramels, canyes de caramels, blat de moro i ___________?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Xarop",
+        "incorrect_answers": [
+           "Marshmallows",
+           "Mantega de cacauet",
+           "Xocolata amb llet"
+        ]
+     },
+      {
+        "id": 110,
+        "question": "A la botiga professional de Caddyshack, Rodney Dangerfield diu que si compres un barret com Ted Knightyou obtindrà un ______________ gratuït!",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Bol de sopa",
+        "incorrect_answers": [
+           "Caixa de tees",
+           "Lliçó de golf",
+           "Cotxe"
+        ]
+     },
+      {
+        "id": 111,
+        "question": "A 'Dumb and Dumber', amb què beu Lloyd Spike Harrys?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Turbo Lax",
+        "incorrect_answers": [
+           "Alcohol",
+           "Sleep-All-Nite",
+           "Sal"
+        ]
+     },
+      {
+        "id": 112,
+        "question": "Què és l’ocupació de Bill Murray al Dia de la Groundhog?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Meteoròleg",
+        "incorrect_answers": [
+           "Professor escolar",
+           "Dentista",
+           "Venedor"
+        ]
+     },
+      {
+        "id": 113,
+        "question": "Quin és l’esport preferit de Napoleon Dynamite?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Lligam",
+        "incorrect_answers": [
+           "Raqueta",
+           "Ball Bocce",
+           "Voleibol"
+        ]
+     },
+      {
+        "id": 114,
+        "question": "A quina pel·lícula, Jennifer Aniston, li va demanar que portés 37 peces de flaire?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Espai d'oficina",
+        "incorrect_answers": [
+           "Amics amb diners",
+           "Va venir Polly",
+           "Ella es la única"
+        ]
+     },
+      {
+        "id": 115,
+        "question": "Com es deia John Belushidelta Tau Chi a 'Animal House'?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Bluto",
+        "incorrect_answers": [
+           "Volada",
+           "Pinto",
+           "Llúdriga"
+        ]
+     },
+      {
+        "id": 116,
+        "question": "A 'Wedding Crashers 2' Què es calarà el personatge de Ferrell?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Funerals",
+        "incorrect_answers": [
+           "Dutxes per a nadons",
+           "Bar Mitzvahs",
+           "Partits de graduació"
+        ]
+     },
+      {
+        "id": 117,
+        "question": "A 'Crashers de casament', què es bloqueja els personatges principals?",
+        "difficulty": 1,
+        "category": "comedy",
+        "correct_answer": "Casament",
+        "incorrect_answers": [
+           "Funerals",
+           "Bar Mitzvahs",
+           "Partits de graduació"
+        ]
+     },
+      {
+        "id": 118,
+        "question": "Què va ser significatiu de l'escena de la foguera a 'Blazing Saddles'?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Tots els vaqueros tenien gas.",
+        "incorrect_answers": [
+           "Tots els vaqueros tenien mal de cap.",
+           "Tots els vaqueros portaven barrets de rinoceront.",
+           "Tots els vaqueros estaven cantant òpera."
+        ]
+     },
+      {
+        "id": 119,
+        "question": "Qui eren 'en una missió de Déu'?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "John Belushi i Dan Akroyd",
+        "incorrect_answers": [
+           "Steve Martin i John Candy",
+           "Gene Wilder i Richard Pryor",
+           "Eddie Murphy i Dan Akroyd"
+        ]
+     },
+      {
+        "id": 120,
+        "question": "A 'Hi ha alguna cosa sobre Mary', quin jugador de futbol interpreta a Mary Antiga Love Interès?",
+        "difficulty": 4,
+        "category": "comedy",
+        "correct_answer": "Brett Favre",
+        "incorrect_answers": [
+           "John Elway",
+           "Peyton Manning",
+           "Joe Namath"
+        ]
+     },
+      {
+        "id": 121,
+        "question": "Quina pel·lícula encaixa aquesta cita?\n'Els germans no donen la mà. Els germans han d'abraçar -se!'",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Tommy Boy",
+        "incorrect_answers": [
+           "Caigudes de casaments",
+           "Dumb & Dumber",
+           "Els llocs de comerç"
+        ]
+     },
+      {
+        "id": 122,
+        "question": "Quina pel·lícula encaixa aquesta cita?\n'Ooooh, comporteu -vos!'",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Austin Powers",
+        "incorrect_answers": [
+           "As Ventura",
+           "Napoleó Dynamite",
+           "Buddy the Elf"
+        ]
+     },
+      {
+        "id": 123,
+        "question": "Quantes pel·lícules de 'pel·lícula espantosa' són?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "5",
+        "incorrect_answers": [
+           "3",
+           "4",
+           "6"
+        ]
+     },
+      {
+        "id": 124,
+        "question": "Quin personatge espantós paròdia a 'Scary Movie 1'?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Cridar",
+        "incorrect_answers": [
+           "Freddy Krueger",
+           "L'Exorcista",
+           "L'anell"
+        ]
+     },
+      {
+        "id": 125,
+        "question": "Quins personatges de 'pel·lícula espantosa' diuen 'waaaaassuup'?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Crida i shorty",
+        "incorrect_answers": [
+           "Cindy i Brenda",
+           "Crida i Cindy",
+           "Scream i Brenda"
+        ]
+     },
+      {
+        "id": 126,
+        "question": "Qui són els principals actors del '21 Jump Street '?",
+        "difficulty": 2,
+        "category": "comedy",
+        "correct_answer": "Jonah Hill i Channing Tatum",
+        "incorrect_answers": [
+           "Dave Franco i Channing Tatum",
+           "Jonah Hill i Dave Franco",
+           "Dave Franco i Ice Cube"
+        ]
+     },
+      {
+        "id": 127,
+        "question": "A Ghostbusters, a quin edifici es troben Ray, Peter i Egon el seu primer fantasma?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "La Biblioteca Pública de Nova York",
+        "incorrect_answers": [
+           "Grand Central Station",
+           "Apartament de Dana",
+           "L'edifici Empire State"
+        ]
+     },
+      {
+        "id": 128,
+        "question": "Ghostbusters va ser escrit per tots dos ...",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "Dan Aykroyd i Harold Ramis",
+        "incorrect_answers": [
+           "Bill Murray i Dan Aykroyd",
+           "Harold Ramis i Bill Murray",
+           "Moranis i aquell noi amb la barba del gingebre"
+        ]
+     },
+      {
+        "id": 129,
+        "question": "Quina és l'última línia de la pel·lícula ''?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "M'encanta aquesta ciutat",
+        "incorrect_answers": [
+           "M'encanta aquesta feina",
+           "M'encanta Nova York",
+           "M'encanta aquest país"
+        ]
+     },
+      {
+        "id": 130,
+        "question": "Quina alçada té el minionisme mitjà?",
+        "difficulty": 3,
+        "category": "comedy",
+        "correct_answer": "105 cm",
+        "incorrect_answers": [
+           "10 cm",
+           "50 cm",
+           "99 cm"
+        ]
+     },
+    {
+      "id": 131,
+      "question": "Quina de les següents cançons apareix a la banda sonora de 'Vaiana'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "On aniré",
+      "incorrect_answers": [
+        "On anirem",
+        "On anireu",
+        "On vas"
+      ]
+    },
+    {
+      "id": 132,
+      "question": "Com es diu el poble de 'Pesadilla antes de Navidad'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Halloween Town",
+      "incorrect_answers": [
+        "Christmas Town",
+        "Skeletown",
+        "Gateshead"
+      ]
+    },
+    {
+      "id": 133,
+      "question": "Quin tipus de primat és el personatge d'El Rey León, Rafiki?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Mandril",
+      "incorrect_answers": [
+        "Babuí",
+        "Mono aranya",
+        "Tarsero"
+      ]
+    },
+    {
+      "id": 134,
+      "question": "Com es diu el protagonista de la pel·lícula Coco?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Miguel",
+      "incorrect_answers": [
+        "Andreas",
+        "Paulo",
+        "Max"
+      ]
+    },
+    {
+      "id": 135,
+      "question": "Qui va ser el director de la pel·lícula animada 'El niño y la bestia'?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "Mamoru Hosoda",
+      "incorrect_answers": [
+        "Hayao Miyazaki",
+        "Tatsuyuki Nagai",
+        "Seiji Mizushima"
+      ]
+    },
+    {
+      "id": 136,
+      "question": "Com es diuen els personatges principals de la pel·lícula animada 'La ruta hacia El Dorado'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Tulio and Miguel",
+      "incorrect_answers": [
+        "Tulio and Marco",
+        "Manuel and Julio",
+        "Hector and Miguel"
+      ]
+    },
+    {
+      "id": 137,
+      "question": "En què es va transformar l'Altra Mare a 'Coraline' prop del final de la pel·lícula?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Aranya",
+      "incorrect_answers": [
+        "Papallona",
+        "Vespa",
+        "Fromiga"
+      ]
+    },
+    {
+      "id": 138,
+      "question": "Quan es va estrenar la pel·lícula 'Lilo & Stitch'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "2002",
+      "incorrect_answers": [
+        "2004",
+        "2000",
+        "2007"
+      ]
+    },
+    {
+      "id": 139,
+      "question": "Quina de les següents és una pel·lícula de Studio Ghibli?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "La princesa Mononoke (1997)",
+      "incorrect_answers": [
+        "Una Voz Silenciosa (Koe No Katachi) (2016)",
+        "Children Who Chase Lost Voices (2011)",
+        "Your Name (2016)"
+      ]
+    },
+    {
+      "id": 140,
+      "question": "Quin és el nom complet de Jack a la pel·lícula 'Pesadilla antes de Navidad'?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Jack Skellington",
+      "incorrect_answers": [
+        "Jack Skeleton",
+        "Jack Stalfos",
+        "Jack Skulltula"
+      ]
+    },
+    {
+      "id": 141,
+      "question": "En quin animal es va convertir Kuzco a la pel·lícula 'The Emperor's New Groove'?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Llama",
+      "incorrect_answers": [
+        "Ruc",
+        "Cavall",
+        "Cabra"
+      ]
+    },
+    {
+      "id": 142,
+      "question": "Com es diu l'animal que acompanya Shrek?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Ase",
+      "incorrect_answers": [
+        "Mula",
+        "Manel",
+        "Lluís"
+      ]
+    },
+    {
+      "id": 143,
+      "question": "Quin ha estat l'únic 'anime' que ha guanyat un Oscar actualment?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "El Viaje de Chihiro (2001)",
+      "incorrect_answers": [
+        "El cuento de la princesa Kaguya (2013)",
+        "El Castillo Ambulante (2004)",
+        "El Viento se Levanta (2013)"
+      ]
+    },
+    {
+      "id": 144,
+      "question": "Quin estudi d'animació va produir la pel·lícula animada 'Spirit: El Corcel Indomable'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Dreamworks Animation",
+      "incorrect_answers": [
+        "A-1 Pictures",
+        "Walt Disney Animation Studios",
+        "Bones Inc."
+      ]
+    },
+    {
+      "id": 145,
+      "question": "Quin és el segon nom de Singlot Sardina III a 'Com ensinistrar un drac'?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "Horrorós",
+      "incorrect_answers": [
+        "Horrible",
+        "Horrent",
+        "Howards"
+      ]
+    },
+    {
+      "id": 146,
+      "question": "¿Qué villano amenaza a todo el universo Lego en 'La Lego pel·lícula'?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "Mega Dolent",
+      "incorrect_answers": [
+        "Super Dolent",
+        "Mega empresari",
+        "Super empresari"
+      ]
+    },
+    {
+      "id": 147,
+      "question": "'Fantastic Mr. Fox' està basat en un llibre infantil de quin autor?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Roald Dahl",
+      "incorrect_answers": [
+        "Dr. Seuss",
+        "J. K. Rowling",
+        "Beverly Cleary"
+      ]
+    },
+    {
+      "id": 148,
+      "question": "Quin drac munta Singlot a les pel·lícules de 'Com ensinistrar un drac'?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Esdentegat ",
+      "incorrect_answers": [
+        "Desterrat",
+        "Desdentat ",
+        "Esmaixellat"
+      ]
+    },
+    {
+      "id": 149,
+      "question": "'Dumbo' de Disney tenia extremadament gran què?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Orelles",
+      "incorrect_answers": [
+        "Ullals",
+        "Peus",
+        "Ungles"
+      ]
+    },
+    {
+      "id": 150,
+      "question": "Dash és un personatge de quina pel·lícula animada?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Los Increíbles",
+      "incorrect_answers": [
+        "Shrek",
+        "Toy Story",
+        "Madagascar"
+      ]
+    },
+    {
+      "id": 151,
+      "question": "Quina família dirigeix ​​la granja de pollastres a 'Chicken Run'?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "The Tweedys",
+      "incorrect_answers": [
+        "The Twiddles",
+        "The Twaddys",
+        "The Tweedles"
+      ]
+    },
+    {
+      "id": 152,
+      "question": "De qui s'enamora Ase a 'Shrek'?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "La Dragona",
+      "incorrect_answers": [
+        "La Gegant",
+        "La Fada Madrina",
+        "Lord Farquaad"
+      ]
+    },
+    {
+      "id": 153,
+      "question": "Qui va dirigir la pel·lícula d'animació stop motion 'La novia cadàver'?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Tim Burton",
+      "incorrect_answers": [
+        "Brad Bird",
+        "Wes Anderson",
+        "Edgar Wright"
+      ]
+    },
+    {
+      "id": 154,
+      "question": "Quin nom dóna Homer al seu estimat porc adoptiu a 'The Simpsons Movie'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Spider-Cerdo",
+      "incorrect_answers": [
+        "Capitán Cerdo",
+        "El Increible Cerdo",
+        "Cerlobo"
+      ]
+    },
+    {
+      "id": 155,
+      "question": "Quin any es va estrenar la pel·lícula 'Ratatouille'?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "2007",
+      "incorrect_answers": [
+        "2005",
+        "2004",
+        "2002"
+      ]
+    },
+    {
+      "id": 156,
+      "question": "Com es va anomenar la pel·lícula derivada de 'Cars' que es va estrenar el 2013?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Avions",
+      "incorrect_answers": [
+        "Vaixells",
+        "Trens",
+        "Bicis"
+      ]
+    },
+    {
+      "id": 157,
+      "question": "Quin tipus de peix és el personatge principal de la pel·lícula de Pixar 'Buscando a Nemo'?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Peix Pallasso",
+      "incorrect_answers": [
+        "Peix Neu",
+        "Blowfish",
+        "Peix Lleó"
+      ]
+    },
+    {
+      "id": 158,
+      "question": "¿Completa el títol de la seqüela de 'Madagascar' 'Escape to...'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Africa",
+      "incorrect_answers": [
+        "Asia",
+        "Europa",
+        "Latinoamérica"
+      ]
+    },
+    {
+      "id": 159,
+      "question": "Quin any es va vendre Pixar a Disney?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "2006",
+      "incorrect_answers": [
+        "2012",
+        "1996",
+        "2003"
+      ]
+    },
+    {
+      "id": 160,
+      "question": "Qui va dirigir 'Perfect Blue'?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "Satoshi Kon",
+      "incorrect_answers": [
+        "Makoto Shinkai",
+        "Katsuhiro Otomo",
+        "Yoshikazu Takeuchi"
+      ]
+    },
+    {
+      "id": 161,
+      "question": "A 'Perfect Blue', amb què mata Mima el seu assetjador?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "Martell",
+      "incorrect_answers": [
+        "Pistola",
+        "Tornavís",
+        "Ganivet"
+      ]
+    },
+    {
+      "id": 162,
+      "question": "A 'Perfect Blue', quin és el nom del lloc web que visita Mima?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "El cuarto de Mima",
+      "incorrect_answers": [
+        "El sitio de Mima",
+        "La casa de Mima",
+        "El dominio de Mima"
+      ]
+    },
+    {
+      "id": 163,
+      "question": "A 'El viatge de Chihiro', en què es converteixen els pares de Chihiro?",
+      "difficulty": 1,
+      "category": "animation",
+      "correct_answer": "Porcs",
+      "incorrect_answers": [
+        "Gats",
+        "Esperits",
+        "Sushi"
+      ]
+    },
+    {
+      "id": 164,
+      "question": "Quin és el vehicle a 'Mi Vecino Totoro'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Un Gat-Bus",
+      "incorrect_answers": [
+        "Un Gat-Avió",
+        "Un Gat-Vaixell",
+        "Un Pop-Tren"
+      ]
+    },
+    {
+      "id": 165,
+      "question": "Com es diu el príncep guerrer de 'La princesa Mononoke'?",
+      "difficulty": 2,
+      "category": "animation",
+      "correct_answer": "Ashitaka",
+      "incorrect_answers": [
+        "Aoki",
+        "Kenji",
+        "San"
+      ]
+    },
+    {
+      "id": 166,
+      "question": "A 'Princesa Mononoke', com es manifesta físicament la maledicció d'Ashitaka?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "en una infecció que s'estén pel braç",
+      "incorrect_answers": [
+        "tus cucs negres",
+        "se li posen els ulls vermells",
+        "li cau els cabells"
+      ]
+    },
+    {
+      "id": 167,
+      "question": "El Rey León s'inspira en quina obra de Shakespeare?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "Hamlet",
+      "incorrect_answers": [
+        "King Lear",
+        "Henry IV",
+        "The Tempest"
+      ]
+    },
+    {
+      "id": 168,
+      "question": "Els dos ratolins de Ventafocs es diuen:",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "Jaq and Gus",
+      "incorrect_answers": [
+        "Jaq and Gary",
+        "Jaq and Maurice",
+        "Jaq and Daxter"
+      ]
+    },
+    {
+      "id": 169,
+      "question": "A 'La Sirenita', quin és el nom complet de Sebastian?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "Horatio Thelonious Ignacious Crustaceous Sebastian",
+      "incorrect_answers": [
+        "Horatio Thelonious Pugnacious Crustaceous Sebastian",
+        "Horatio Thelonious Keith Crustaceous Sebastian",
+        "Johann Sebastian Bach"
+      ]
+    },
+    {
+      "id": 170,
+      "question": "Quin dels següents no era un dels Set Nans?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "Juganer",
+      "incorrect_answers": [
+        "Rondinaire",
+        "Mudet",
+        "Esternuts"
+      ]
+    },
+    {
+      "id": 171,
+      "question": "A 'La Bella Dorment', quin nom fa servir Aurora mentre viu al bosc amb les seves Fades Madrines?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "Briar Rose",
+      "incorrect_answers": [
+        "May Fern",
+        "Jasmine Fuschia",
+        "Lily Magenta"
+      ]
+    },
+    {
+      "id": 172,
+      "question": "Com es diu la mare de Simba?",
+      "difficulty": 3,
+      "category": "animation",
+      "correct_answer": "Sarabi",
+      "incorrect_answers": [
+        "Zoya",
+        "Shenzi",
+        "Nala"
+      ]
+    },
+    {
+      "id": 173,
+      "question": "Quina va ser la pel·lícula més llarga de Disney?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "Fantasia",
+      "incorrect_answers": [
+        "101 dálmatas",
+        "Pinocho",
+        "Vaiana"
+      ]
+    },
+    {
+      "id": 174,
+      "question": "Quants llops van atacar Bella quan va intentar fugir del castell de Bèstia?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "4",
+      "incorrect_answers": [
+        "5",
+        "3",
+        "2"
+      ]
+    },
+    {
+      "id": 175,
+      "question": "Com es diu la taverna d'Enredats?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "El Patito Frito",
+      "incorrect_answers": [
+        "El Oso Asado",
+        "La Serpiente Deslizante",
+        "El Perro Anadón"
+      ]
+    },
+    {
+      "id": 176,
+      "question": "Quin era el musical preferit de Wall-E?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "Hello Dolly",
+      "incorrect_answers": [
+        "The Sound Of Music",
+        "The Wizard Of Oz",
+        "My Fair Lady"
+      ]
+    },
+    {
+      "id": 177,
+      "question": "A Aladdin, quants anys diu el Geni que ha estat atrapat a la làmpara?",
+      "difficulty": 4,
+      "category": "animation",
+      "correct_answer": "10.000",
+      "incorrect_answers": [
+        "100.000",
+        "1.000.000",
+        "1.000.000.000.000"
+      ]
+    },
+    {
+        "id": 178,
+        "question": "Qui és l’actor principal de la pel·lícula “Casino Royale”?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "Daniel Craig",
+        "incorrect_answers": [
+           "Bruce Willis",
+           "Ben Affleck",
+           "Roger Moore"
+        ]
+     },
+      {
+        "id": 179,
+        "question": "Tom Cruise és famós per quines d’aquestes pel·lícules d’acció?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "Missió impossible",
+        "incorrect_answers": [
+           "Una parella explosiva",
+           "pirates del Carib",
+           "James Bond"
+        ]
+     },
+      {
+        "id": 180,
+        "question": "Qui és l'heroi de la pel·lícula 'Predator' de 1987?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "Arnold Schwarzenegger",
+        "incorrect_answers": [
+           "Sylvester Stallone",
+           "Brad Pitt",
+           "Bruce Willis"
+        ]
+     },
+      {
+        "id": 181,
+        "question": "Harrison Ford interpreta Indiana Jones, però també, quines d'aquestes altres pel·lícules d'acció van protagonitzar?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "Avió presidencial",
+        "incorrect_answers": [
+           "Risc total",
+           "Passatger 57",
+           "Terror a bord"
+        ]
+     },
+      {
+        "id": 182,
+        "question": "Quina d'aquestes actrius va començar el 1986 per actuar a la saga de terror?",
+        "difficulty": 1,
+        "category": "action",
+        "correct_answer": "Sigourney Weaver",
+        "incorrect_answers": [
+           "Susan Sarandon",
+           "Bette Midler",
+           "Camp Sally"
+        ]
+     },
+      {
+        "id": 183,
+        "question": "Linda Hamilton és la protagonista de quina pel·lícula en què també va participar Arnold Schwarzenegger?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Terminator 2: el judici final",
+        "incorrect_answers": [
+           "Infern vermell",
+           "Veritables mentides",
+           "Un policia al Kinder 2"
+        ]
+     },
+      {
+        "id": 184,
+        "question": "Qui és l'estrella de les pel·lícules \"Kill Bill\"?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Uma Thurman",
+        "incorrect_answers": [
+           "Julia Roberts",
+           "Melissa McCarthy",
+           "Sandra Bullock"
+        ]
+     },
+      {
+        "id": 185,
+        "question": "Quina d’aquestes pel·lícules d’acció que no protagonitza Keanu Reeves?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Velocitat màxima 2",
+        "incorrect_answers": [
+           "Matriu",
+           "Punt límit",
+           "John Wick"
+        ]
+     },
+      {
+        "id": 186,
+        "question": "Quina d'aquestes pel·lícules d'acció no està protagonitzada per Charlize Theron?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "El malvat convidat",
+        "incorrect_answers": [
+           "Mad Max: Fúria a la carretera",
+           "Atòmic",
+           "Æon Flux"
+        ]
+     },
+      {
+        "id": 187,
+        "question": "Quin és el model Revolver que va fer famós Harry Callahan de Clint Eastwood?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Model Smith & Wesson 29 .44 Magnum",
+        "incorrect_answers": [
+           "Remington Model 1858",
+           "Apache Revolver",
+           "Revòlver automàtic"
+        ]
+     },
+      {
+        "id": 188,
+        "question": "Quina estrella de cinema d’acció Nicolas Cage i John Travolta junts?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Comptador",
+        "incorrect_answers": [
+           "Blanc humà",
+           "El sou",
+           "Codi: Rota Arrow"
+        ]
+     },
+      {
+        "id": 189,
+        "question": "Qui és el protagonista de la saga de \"Bourne\"?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Matt Damon",
+        "incorrect_answers": [
+           "Brad Pitt",
+           "Ben Affleck",
+           "Joaquin Phoenix"
+        ]
+     },
+      {
+        "id": 190,
+        "question": "Quina d’aquestes pel·lícules d’acció no està protagonitzada per Angelina Jolie?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Ràpid i furiós 8",
+        "incorrect_answers": [
+           "Desitjat",
+           "Agent de sal",
+           "Lara Croft: Tomb Raider"
+        ]
+     },
+      {
+        "id": 191,
+        "question": "Quina d'aquestes pel·lícules d'acció trobareu a Bruce Willis?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Difícil de matar",
+        "incorrect_answers": [
+           "Un altre dia per morir",
+           "Romeo ha de morir",
+           "Viure i morir a LA"
+        ]
+     },
+      {
+        "id": 192,
+        "question": "Quina d'aquestes pel·lícules d'acció protagonitza Dwayne Johnson?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Tots ells",
+        "incorrect_answers": [
+           "Rampage: devastació",
+           "Guardians de la Badia",
+           "Gratacels: rescat a les altures"
+        ]
+     },
+      {
+        "id": 193,
+        "question": "Quina pel·lícula d’acció protagonitza Sylvester Stallone, Bruce Willis i Arnold Schwarzenegger?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "L’indestructible 2",
+        "incorrect_answers": [
+           "Escape impossible",
+           "Cobra, el braç fort de la llei",
+           "Difícil de matar 3 - venjança"
+        ]
+     },
+      {
+        "id": 194,
+        "question": "En quin personatge de DC es basa en Deadpool?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Cop mortal",
+        "incorrect_answers": [
+           "Cop de mort",
+           "Res",
+           "Ambdós"
+        ]
+     },
+      {
+        "id": 195,
+        "question": "Quin és el nom real de Deadpool?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Wade Wilson",
+        "incorrect_answers": [
+           "Banner de Bruce",
+           "Clint Barton",
+           "Tony Stark"
+        ]
+     },
+      {
+        "id": 196,
+        "question": "Com es diu que Thor posa al seu martell?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Mjolnir",
+        "incorrect_answers": [
+           "Milonrj",
+           "Minuet",
+           "Minourl"
+        ]
+     },
+      {
+        "id": 197,
+        "question": "Què és l'escut de Captain America?",
+        "difficulty": 2,
+        "category": "action",
+        "correct_answer": "Vibrani",
+        "incorrect_answers": [
+           "Urani",
+           "Acer",
+           "Diamant"
+        ]
+     },
+      {
+        "id": 198,
+        "question": "Poseu un nom a la pel·lícula que coincideixi amb el resum de la trama següent: \"Els presos de guerra tenen previst escapar d'un camp alemany durant la Segona Guerra Mundial\"",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "La gran evasió",
+        "incorrect_answers": [
+           "Esgarrifosa",
+           "Bill Bill: Vol. 1",
+           "Hi haurà sang"
+        ]
+     },
+      {
+        "id": 199,
+        "question": "Paul Rudd interpreta el paper de quin personatge a l’univers cinematogràfic de Marvel?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Formiga",
+        "incorrect_answers": [
+           "Spiderman. Home-aranya",
+           "Hombre de Hierro",
+           "Pantera Negra"
+        ]
+     },
+      {
+        "id": 200,
+        "question": "Quin actor té el paper d’Odin a l’univers cinematogràfic Marvel?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Anthony Hopkins",
+        "incorrect_answers": [
+           "Jon Favreau",
+           "Benedict Cumberbatch",
+           "Roberto Redford"
+        ]
+     },
+      {
+        "id": 201,
+        "question": "Qui va interpretar el personatge de Sing a \"Kung Fu Hustle\"?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Stephen Chow",
+        "incorrect_answers": [
+           "Li Yun",
+           "Jackie Chan",
+           "Zhi Chow Young"
+        ]
+     },
+      {
+        "id": 202,
+        "question": "Qui va jugar a Batman a \"Batman Begins\"?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Bale cristiana",
+        "incorrect_answers": [
+           "Toby McGuare",
+           "Christopher Bale",
+           "Leonardo DiCaprio"
+        ]
+     },
+      {
+        "id": 203,
+        "question": "A \"The Legend of Drunken Master\", a qui va jugar a Jackie Chan?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Wong Fei-Hong",
+        "incorrect_answers": [
+           "Wong Kei-tyn",
+           "Fu Wen-chi",
+           "Ye San Hon"
+        ]
+     },
+      {
+        "id": 204,
+        "question": "A Terminator 2: Dia del Judici, quina part del cos de l’anterior Terminator ha provocat la investigació de Miles Dyson?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Braç de mà",
+        "incorrect_answers": [
+           "Cama",
+           "Cap",
+           "Tors"
+        ]
+     },
+      {
+        "id": 205,
+        "question": "A la recerca de l'Arca perduda, com es deia el pou ple de serps que van llançar Indy i Marion?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "El pou de les ànimes",
+        "incorrect_answers": [
+           "La gespa de la mortalitat",
+           "La cova de la humanitat",
+           "La dama del pecat"
+        ]
+     },
+      {
+        "id": 206,
+        "question": "John Rambo és un veterà de quina guerra?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Guerra del Vietnam",
+        "incorrect_answers": [
+           "Primera Guerra Mundial",
+           "Segona Guerra Mundial",
+           "Guerra de Corea"
+        ]
+     },
+      {
+        "id": 207,
+        "question": "On funciona Harry el brut?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Departament de Policia de San Francisco",
+        "incorrect_answers": [
+           "Policia de Nova York",
+           "Lapd",
+           "DPC"
+        ]
+     },
+      {
+        "id": 208,
+        "question": "On troba el Terminator el veritable Sarah Connor?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Una discoteca",
+        "incorrect_answers": [
+           "Un parc",
+           "Una botiga de queviures",
+           "El seu apartament"
+        ]
+     },
+      {
+        "id": 209,
+        "question": "Quin pebre vermell calent fa una breu aparició a la pel·lícula \"Point Break\"?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Anthony Kiedis",
+        "incorrect_answers": [
+           "Chad Smith",
+           "Poll",
+           "John Frusciante"
+        ]
+     },
+      {
+        "id": 210,
+        "question": "Qui va ser l'actor que va interpretar a James Bond a Goldeneye?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Pierce Brosnan",
+        "incorrect_answers": [
+           "Daniel Craig",
+           "Sean Connery",
+           "George Lazenby"
+        ]
+     },
+      {
+        "id": 211,
+        "question": "Qui eren els protagonistes del senyor i la senyora Smith?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Brad Pitt i Angelina Jolie",
+        "incorrect_answers": [
+           "Tom Cruise i Penèlope Cruz",
+           "Johnny Depp i Amber Heard",
+           "Javier Bardem i Scarlett Johansson"
+        ]
+     },
+      {
+        "id": 212,
+        "question": "Als \"Jocs de la fam\", qui substitueix Katniss quan s'ofereix com a voluntari?",
+        "difficulty": 3,
+        "category": "action",
+        "correct_answer": "Prim",
+        "incorrect_answers": [
+           "Peeta",
+           "Rue",
+           "Vendals"
+        ]
+     },
+      {
+        "id": 213,
+        "question": "A quina velocitat ha de caure l’autobús en el thriller d’acció de 1994?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "50 mph / 80kmh",
+        "incorrect_answers": [
+           "70 mph / 115kmh",
+           "55 mph / 90kmh",
+           "60 mph / 100kmh"
+        ]
+     },
+      {
+        "id": 214,
+        "question": "Peter Weller va interpretar quina icona de la pel·lícula Action el 1987 i després de nou el 1990?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Robocop",
+        "incorrect_answers": [
+           "James Bond",
+           "Jutge Dredd",
+           "Ash Williams"
+        ]
+     },
+      {
+        "id": 215,
+        "question": "Qui és l'objectiu de Terminator a la pel·lícula original de 1984?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Sara",
+        "incorrect_answers": [
+           "Joi",
+           "Paul",
+           "bonic"
+        ]
+     },
+      {
+        "id": 216,
+        "question": "Quina pel·lícula d’acció i comèdia de 1995 van ser Smith i Martin Lawrence?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Nois dolents",
+        "incorrect_answers": [
+           "Kick-Ass",
+           "Hora punta",
+           "Homes de negre"
+        ]
+     },
+      {
+        "id": 217,
+        "question": "Com es diu el personatge principal de la pel·lícula de 1983 \"Scarface\"?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Tony Montana",
+        "incorrect_answers": [
+           "Jeffrey Fontana",
+           "Brian Havana",
+           "Tony Pontine"
+        ]
+     },
+      {
+        "id": 218,
+        "question": "Protagonitzada per Arnold Schwarzenegger, la pel·lícula 'The Running Man' de 1987 es basa en una novel·la de qui?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Holly",
+        "incorrect_answers": [
+           "Polly",
+           "Muty",
+           "Sara"
+        ]
+     },
+      {
+        "id": 219,
+        "question": "Quin és el primer nom de la dona de John McLane a les pel·lícules Die Hard?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Holly",
+        "incorrect_answers": [
+           "Polly",
+           "Muty",
+           "Sara"
+        ]
+     },
+      {
+        "id": 220,
+        "question": "Quantes ocasions va tenir Timothy Dalton el paper de James Bond?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "2",
+        "incorrect_answers": [
+           "1",
+           "3",
+           "4"
+        ]
+     },
+      {
+        "id": 221,
+        "question": "Quin actor dóna a Batman de Christopher Nolan?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Chris Bale",
+        "incorrect_answers": [
+           "Brad Pitt",
+           "Conductor Adam",
+           "Jeremy Renner"
+        ]
+     },
+      {
+        "id": 222,
+        "question": "Quin districte Katniss arriba als jocs de fam?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "12",
+        "incorrect_answers": [
+           "13",
+           "9",
+           "5"
+        ]
+     },
+      {
+        "id": 223,
+        "question": "Quina és la franquícia centrada en sèries i pel·lícules basades en personatges de Marvel Comics?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Univers cinematogràfic de Marvel",
+        "incorrect_answers": [
+           "Corrent corrent",
+           "Sony",
+           "Pixar"
+        ]
+     },
+      {
+        "id": 224,
+        "question": "Arnold Schwarzenegger interpreta l’operador de la Força Delta, el coronel John Matrix, en quina pel·lícula d’acció?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Comandament",
+        "incorrect_answers": [
+           "L'últim bastió",
+           "Depredador",
+           "Veritables mentides"
+        ]
+     },
+      {
+        "id": 225,
+        "question": "Rogue Nation 'va ser un lliurament en quina sèrie de pel·lícules d'acció?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Missió impossible",
+        "incorrect_answers": [
+           "Star Trek",
+           "Divergent",
+           "Guerra de les galàxies"
+        ]
+     },
+      {
+        "id": 226,
+        "question": "A quina ciutat té lloc la pel·lícula de desastres de l'Oscar de 1974 \"The Towering Inferno\"?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "San Francisco",
+        "incorrect_answers": [
+           "Miami",
+           "Nova York",
+           "Els àngels"
+        ]
+     },
+      {
+        "id": 227,
+        "question": "Quina pel·lícula d’acció futurista de 1973 es va convertir en un programa de televisió del 2016?",
+        "difficulty": 4,
+        "category": "action",
+        "correct_answer": "Westworld",
+        "incorrect_answers": [
+           "Soldados de la Nava Estella",
+           "Serenitat",
+           "Recuperació total"
+        ]
+     }
+  ]
