@@ -2722,5 +2722,389 @@
       "Serenitat",
       "Recuperació total"
     ]
+  },
+  {
+    "id": 228,
+    "question": "El show de quiz, dirigit per Robert Redford, va ser un èxit crític, però només es va realitzar moderadament a la taquilla. La pel·lícula narra la història d’un escàndol que implica participants en quin programa de proves de televisió dels anys cinquanta?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Vint-i-u",
+    "incorrect_answers": [
+      "La gran sorpresa",
+      "Dotto",
+      "La pregunta de 64.000 dòlars en dòlar"
+    ]
+  },
+  {
+    "id": 229,
+    "question": "Spotlight, dirigit per Tom McCarthy, se centra en una investigació sobre l'església per un equip de periodistes d'un destacat diari. Com es diu el tabloide?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Boston Globe",
+    "incorrect_answers": [
+      "Noticies de Nova York",
+      "Whasington Post",
+      "Chicago Tribune"
+    ]
+  },
+  {
+    "id": 230,
+    "question": "A \"Truca'm pel teu nom\", qui són els personatges principals?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Elio i Oliver",
+    "incorrect_answers": [
+      "Sara i Oliver",
+      "Peeta i Katniss",
+      "David i Tomas"
+    ]
+  },
+  {
+    "id": 231,
+    "question": "A \"La La Land\", qui són els principals actors?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Emma Stone i Rian Gosling",
+    "incorrect_answers": [
+      "Jessica Rothe i Riand Gosling",
+      "John Legend i Emma Stone",
+      "J.K Simons i Rian Gosling"
+    ]
+  },
+  {
+    "id": 232,
+    "question": "A \"A Beautiful Mind\", quin problema mental té el personatge principal (John Nash)?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Esquizofrènia",
+    "incorrect_answers": [
+      "Depressió",
+      "Demència",
+      "Desordre bipolar"
+    ]
+  },
+  {
+    "id": 233,
+    "question": "Quin any es va publicar \"West Side Story\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "2022",
+    "incorrect_answers": [
+      "2020",
+      "2021",
+      "2019"
+    ]
+  },
+  {
+    "id": 234,
+    "question": "A \"Saving Private Ryan\", qui era el capità i l'actor principal?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Tom Hanks",
+    "incorrect_answers": [
+      "Leonardo DiCaprio",
+      "Brad Pitt",
+      "Matt Damon"
+    ]
+  },
+  {
+    "id": 235,
+    "question": "\"Fury\" és una pel·lícula de guerra nord -americana del 2014 protagonitzada per Brad Pitt, establerta durant quin conflicte?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Segona Guerra Mundial",
+    "incorrect_answers": [
+      "Guerra de Corea",
+      "Primera Guerra Mundial",
+      "Guerra del Vietnam"
+    ]
+  },
+  {
+    "id": 236,
+    "question": "A \"Fury\", quin d'aquests actors interpreta el protagonista de la pel·lícula?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Brad Pitt",
+    "incorrect_answers": [
+      "Robert Downey Jr.",
+      "Ashton Kutcher",
+      "Leonardo DiCaprio"
+    ]
+  },
+  {
+    "id": 237,
+    "question": "A \"The Social Network\", el personatge principal va trobar una empresa, com es diu l'empresa?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Facebook",
+    "incorrect_answers": [
+      "Twitter",
+      "Snapchat",
+      "Tik Tok"
+    ]
+  },
+  {
+    "id": 238,
+    "question": "A \"Club de lluita\", quina és la primera regla del club?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "No parles de Fight Club",
+    "incorrect_answers": [
+      "Només dos nois a una baralla",
+      "Una lluita a la vegada",
+      "Les baralles continuaran sempre que ho facin"
+    ]
+  },
+  {
+    "id": 239,
+    "question": "Qui és l’actor principal de “la recerca de la felicitat”?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Will Smith",
+    "incorrect_answers": [
+      "Tom Hanks",
+      "Rian Gosling",
+      "Matt Damon"
+    ]
+  },
+  {
+    "id": 240,
+    "question": "Quin músic va inspirar la pel·lícula \"Bohemian Rhapsody\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Reina",
+    "incorrect_answers": [
+      "John Lennon",
+      "Elvis Presley",
+      "Gargot"
+    ]
+  },
+  {
+    "id": 241,
+    "question": "Qui és l'actor principal de \"The Truman Show\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Jim Carrey",
+    "incorrect_answers": [
+      "Joaquin Phoenix",
+      "Nicolas Cage",
+      "Leonardo DiCaprio"
+    ]
+  },
+  {
+    "id": 242,
+    "question": "Quin director italià, també conegut per \"Melissa P.\", \"I Am Love\" i \"A Bigger Splash\", dirigit \"Call Me by Your Name\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Luca Guadagnino",
+    "incorrect_answers": [
+      "Paolo Sorrentino",
+      "Matteo Garrone",
+      "Alice Rohrwacher"
+    ]
+  },
+  {
+    "id": 243,
+    "question": "A Elio no li agrada especialment Oliver quan arriba a casa. Quin dels següents és un dels principals motius?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Elio ha de renunciar al seu dormitori a Oliver.",
+    "incorrect_answers": [
+      "A Oliver li agrada tocar música tecnològica en veu alta al jardí.",
+      "Oliver presta la bicicleta d'Elio i punxa un pneumàtic.",
+      "Els pares d’Elio li demanen que esmorzés Oliver."
+    ]
+  },
+  {
+    "id": 244,
+    "question": "Quants Oscars ha guanyat 'Joker'?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "2",
+    "incorrect_answers": [
+      "0",
+      "1",
+      "5"
+    ]
+  },
+  {
+    "id": 245,
+    "question": "Qui és l'actor principal de \"Joker\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Joaquin Phoenix",
+    "incorrect_answers": [
+      "Tom Hanks",
+      "Leonardo DiCaprio",
+      "David Phoenix"
+    ]
+  },
+  {
+    "id": 246,
+    "question": "Quin famós músic interpreta un personatge principal a \"A Star Is Born\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Lady Gaga",
+    "incorrect_answers": [
+      "Katty Perry",
+      "Madona",
+      "Demi Lovato"
+    ]
+  },
+  {
+    "id": 247,
+    "question": "Quantes pel·lícules té la saga \"Rocky\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "2",
+      "8",
+      "7"
+    ]
+  },
+  {
+    "id": 248,
+    "question": "Quin any es va publicar \"cinquanta ombres de gris\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "2015",
+    "incorrect_answers": [
+      "2020",
+      "2018",
+      "2013"
+    ]
+  },
+  {
+    "id": 249,
+    "question": "A \"Saga crepuscular\", quants anys tenia Edward quan va morir?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "17",
+    "incorrect_answers": [
+      "18",
+      "19",
+      "104"
+    ]
+  },
+  {
+    "id": 250,
+    "question": "A \"Twilight Saga\", quina cançó tocava durant la promoció quan Bella i Edward van ballar a la primera pel·lícula?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "\"Ocell sense vol, boca americana\" de ferro i vi",
+    "incorrect_answers": [
+      "\"Mil anys\" de Christina Perri",
+      "\"Eyes on Fire\" de Blue Foundation",
+      "\"Decodir\" de Paramore"
+    ]
+  },
+  {
+    "id": 251,
+    "question": "A \"La La Land\", quan Sebastian i Mia es posen els ulls?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "En un embús de trànsit quan li dóna la banya",
+    "incorrect_answers": [
+      "En un club de jazz",
+      "En una festa de la piscina",
+      "En una botiga de cafès"
+    ]
+  },
+  {
+    "id": 252,
+    "question": "Qui va dirigir la pel·lícula del 2019 The Joker?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Todd Phillips",
+    "incorrect_answers": [
+      "Pillip Tod",
+      "Tim Burton",
+      "Timothy Dalton"
+    ]
+  },
+  {
+    "id": 253,
+    "question": "Quina va ser l'última actuació de Queen que apareix a la pel·lícula \"Bohemian Rhapsody\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Ajuda en directe",
+    "incorrect_answers": [
+      "Fusta",
+      "Glastonbury",
+      "Rock a Rio"
+    ]
+  },
+  {
+    "id": 254,
+    "question": "Qui és el personatge principal del Truman Show?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Truman Burbank",
+    "incorrect_answers": [
+      "Truman Portland",
+      "Truman Jersey",
+      "Truman Carolina"
+    ]
+  },
+  {
+    "id": 255,
+    "question": "L’espectacle Truman tracta d’un home que no sap que és l’estrella d’aquest tipus de programes de televisió.",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "programa de televisió de realitat",
+    "incorrect_answers": [
+      "programa de xerrades",
+      "concurs de TV",
+      "Espectacle de notícies"
+    ]
+  },
+  {
+    "id": 256,
+    "question": "Qui va escriure la novel·la \"Fight Club\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Chuck Palahniuk",
+    "incorrect_answers": [
+      "David Foster Wallace",
+      "Jonathan Safran Foer",
+      "Joe Rogan"
+    ]
+  },
+  {
+    "id": 257,
+    "question": "Qui va dir: \"Estalviar privat Ryan\"?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Capità Miller",
+    "incorrect_answers": [
+      "Sgt. Horvath",
+      "Cpl. UNMAM",
+      "Pvt. Dolç"
+    ]
+  },
+  {
+    "id": 258,
+    "question": "Quan el personatge de Tom Hanks, John Miller, explica a la resta de la unitat el que fa per viure a casa seva, el discurs de Hanks va ser molt més llarg en el guió original. Per què es va escurçar l'escena?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Hanks va sentir que el seu personatge hauria de parlar menys",
+    "incorrect_answers": [
+      "La pel·lícula estava decidida a ser massa llarga",
+      "Hanks va oblidar les seves línies",
+      "La càmera es va quedar sense cinema"
+    ]
+  },
+  {
+    "id": 259,
+    "question": "Steven Spielberg ha afirmat que va dirigir el privat Ryan com a homenatge a qui?",
+    "difficulty": 4,
+    "category": "action",
+    "correct_answer": "Jack Churchill",
+    "incorrect_answers": [
+      "John F. Kennedy",
+      "Sir Alec Guinness",
+      "Kurt Vonnegut"
+    ]
   }
 ]

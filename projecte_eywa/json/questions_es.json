@@ -2722,5 +2722,389 @@
       "Serenidad",
       "Recuperación total"
     ]
+  },
+  {
+    "id": 228,
+    "question": "Quiz Show, dirigido por Robert Redford, fue un éxito crítico pero solo funcionó moderadamente en la taquilla. La película cuenta la historia de un escándalo que involucra a los participantes en qué programa de cuestionarios de televisión de la década de 1950?",
+    "difficulty": 3,
+    "category": "drama",
+    "correct_answer": "Veintiún",
+    "incorrect_answers": [
+      "La gran sorpresa",
+      "Punto",
+      "La pregunta de 64.000 $ dólar"
+    ]
+  },
+  {
+    "id": 229,
+    "question": "Spotlight, dirigido por Tom McCarthy, se centra en una investigación sobre la iglesia por un equipo de periodistas de un destacado periódico. ¿Cuál es el nombre del tabloide?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Boston Globe",
+    "incorrect_answers": [
+      "New York Times",
+      "Whasington Post",
+      "Tribune de Chicago"
+    ]
+  },
+  {
+    "id": 230,
+    "question": "En 'Call Me by Your Name', ¿quiénes son los personajes principales?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Elio y Oliver",
+    "incorrect_answers": [
+      "Sara y Oliver",
+      "Peeta y Katniss",
+      "David y Tomás"
+    ]
+  },
+  {
+    "id": 231,
+    "question": "En 'La La Land', ¿quiénes son los principales actores?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Emma Stone y Rian Gosling",
+    "incorrect_answers": [
+      "Jessica Rothe y Riand Gosling",
+      "John Legend y Emma Stone",
+      "J.K Simons y Rian Gosling"
+    ]
+  },
+  {
+    "id": 232,
+    "question": "En 'A Beautiful Mind', ¿qué problema mental tiene el personaje principal (John Nash)?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Esquizofrenia",
+    "incorrect_answers": [
+      "Depresión",
+      "Demencia",
+      "Trastorno bipolar"
+    ]
+  },
+  {
+    "id": 233,
+    "question": "¿En qué año se lanza la remake de 'West Side Story'?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "2022",
+    "incorrect_answers": [
+      "2020",
+      "2021",
+      "2019"
+    ]
+  },
+  {
+    "id": 234,
+    "question": "En 'Saving Private Ryan', ¿quién era el capitán y el actor principal?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Tom Hanks",
+    "incorrect_answers": [
+      "Leonardo DiCaprio",
+      "Brad Pitt",
+      "Matt Damon"
+    ]
+  },
+  {
+    "id": 235,
+    "question": "'Fury' es una película de guerra estadounidense de 2014 protagonizada por Brad Pitt, ambientada durante qué conflicto?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Segunda Guerra Mundial",
+    "incorrect_answers": [
+      "guerra coreana",
+      "Primera Guerra Mundial",
+      "guerra de Vietnam"
+    ]
+  },
+  {
+    "id": 236,
+    "question": "En 'Fury', ¿cuál de estos actores juega el liderazgo en la película?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Brad Pitt",
+    "incorrect_answers": [
+      "Robert Downey jr.",
+      "Ashton Kutcher",
+      "Leonardo DiCaprio"
+    ]
+  },
+  {
+    "id": 237,
+    "question": "En 'The Social Network', el personaje principal encontró una empresa, ¿cuál es el nombre de la empresa?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Facebook",
+    "incorrect_answers": [
+      "Gorjeo",
+      "Snapchat",
+      "Tik Tok"
+    ]
+  },
+  {
+    "id": 238,
+    "question": "En 'Fight Club', ¿cuál es la primera regla del club?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "No hablas de Fight Club",
+    "incorrect_answers": [
+      "Solo dos chicos para una pelea",
+      "Una pelea a la vez",
+      "Las peleas continuarán mientras tengan que"
+    ]
+  },
+  {
+    "id": 239,
+    "question": "¿Quién es el actor principal en 'La búsqueda de la felicidad'?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Will Smith",
+    "incorrect_answers": [
+      "Tom Hanks",
+      "Rian Gosling",
+      "Matt Damon"
+    ]
+  },
+  {
+    "id": 240,
+    "question": "¿Qué músico inspiró la película 'Bohemian Rhapsody'?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Reina",
+    "incorrect_answers": [
+      "John Lennon",
+      "Elvis Presley",
+      "Pato"
+    ]
+  },
+  {
+    "id": 241,
+    "question": "¿Quién es el actor principal en 'The Truman Show'?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "Jim Carrey",
+    "incorrect_answers": [
+      "Joaquin Phoenix",
+      "Nicolas Cage",
+      "Leonardo DiCaprio"
+    ]
+  },
+  {
+    "id": 242,
+    "question": "¿Qué director italiano, también conocido por 'Melissa P.', 'I Am Love' y 'A Bigger Splash', dirigido 'llamarme por tu nombre'?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "Luca guadagnino",
+    "incorrect_answers": [
+      "Paolo Sorrentino",
+      "Matteo Garrone",
+      "Alice Rohrwacher"
+    ]
+  },
+  {
+    "id": 243,
+    "question": "A Elio no le gusta especialmente Oliver cuando llega a la casa. ¿Cuál de las siguientes es una de las principales razones para esto?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "Elio tiene que renunciar a su habitación a Oliver.",
+    "incorrect_answers": [
+      "A Oliver le gusta tocar música techno fuerte en el jardín.",
+      "Oliver toma prestado la bicicleta de Elio y perfora un neumático.",
+      "Los padres de Elio le piden que prepare el desayuno de Oliver."
+    ]
+  },
+  {
+    "id": 244,
+    "question": "¿Cuántos Oscar ha ganado 'Joker'?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "2",
+    "incorrect_answers": [
+      "0",
+      "1",
+      "5"
+    ]
+  },
+  {
+    "id": 245,
+    "question": "¿Quién es el actor principal en 'Joker'?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Joaquin Phoenix",
+    "incorrect_answers": [
+      "Tom Hanks",
+      "Leonardo DiCaprio",
+      "David Phoenix"
+    ]
+  },
+  {
+    "id": 246,
+    "question": "¿Qué músico famoso interpreta a un personaje principal en 'A Star Is Born'?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "Lady Gaga",
+    "incorrect_answers": [
+      "Katty Perry",
+      "Madona",
+      "Demi Lovato"
+    ]
+  },
+  {
+    "id": 247,
+    "question": "¿Cuántas películas tiene la saga 'Rocky'?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "2",
+      "8",
+      "7"
+    ]
+  },
+  {
+    "id": 248,
+    "question": "¿En qué año se lanzó 'Fifty Shades of Grey'?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "2015",
+    "incorrect_answers": [
+      "2020",
+      "2018",
+      "2013"
+    ]
+  },
+  {
+    "id": 249,
+    "question": "En 'Twilight Saga', ¿cuántos años tenía Edward cuando murió?",
+    "difficulty": 4,
+    "category": "drama",
+    "correct_answer": "17",
+    "incorrect_answers": [
+      "18",
+      "19",
+      "104"
+    ]
+  },
+  {
+    "id": 250,
+    "question": "En 'Twilight Saga' ¿Qué canción se reproducía durante el baile de graduación cuando Bella y Edward bailaron en la primera película?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "\"Birdless Bird, American Mouth\" de Iron & Wine",
+    "incorrect_answers": [
+      "\"Mil años\" de Christina Perri",
+      "\"Eyes on Fire\" de Blue Foundation",
+      "\"Decode\" por Paramore"
+    ]
+  },
+  {
+    "id": 251,
+    "question": "En 'La La Land', ¿cuándo Sebastian y Mia se miran por primera vez el uno al otro?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "En un atasco de tráfico cuando le bocina la bocina",
+    "incorrect_answers": [
+      "En un club de jazz",
+      "En una fiesta en la piscina",
+      "En una cafetería"
+    ]
+  },
+  {
+    "id": 252,
+    "question": "¿Quién dirigió la película de 2019 The Joker?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "Todd Phillips",
+    "incorrect_answers": [
+      "Píldora",
+      "Tim Burton",
+      "Timothy Dalton"
+    ]
+  },
+  {
+    "id": 253,
+    "question": "¿Cuál fue la última actuación de Queen que aparece en la película 'Bohemian Rhapsody'?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "Ayuda de vida",
+    "incorrect_answers": [
+      "Estrogia",
+      "Glastonbury",
+      "Rock in Rio"
+    ]
+  },
+  {
+    "id": 254,
+    "question": "¿Quién es el personaje principal del show de Truman?",
+    "difficulty": 1,
+    "category": "drama",
+    "correct_answer": "Truman Burbank",
+    "incorrect_answers": [
+      "Truman Portland",
+      "Camiseta de Truman",
+      "Truman Carolina"
+    ]
+  },
+  {
+    "id": 255,
+    "question": "El programa Truman trata sobre un hombre que no sabe que es la estrella de este tipo de programa de televisión.",
+    "difficulty": 3,
+    "category": "drama",
+    "correct_answer": "programa de tele-realidad",
+    "incorrect_answers": [
+      "programa de entrevistas",
+      "programa de juegos",
+      "programa de noticias"
+    ]
+  },
+  {
+    "id": 256,
+    "question": "¿Quién escribió la novela 'Fight Club'?",
+    "difficulty": 2,
+    "category": "drama",
+    "correct_answer": "Chuck Palahniuk",
+    "incorrect_answers": [
+      "David Foster Wallace",
+      "Jonathan Safran Foer",
+      "Joe Rogan"
+    ]
+  },
+  {
+    "id": 257,
+    "question": "¿Quién dijo: 'Salvar al soldado Ryan'?",
+    "difficulty": 3,
+    "category": "drama",
+    "correct_answer": "Capitán Miller",
+    "incorrect_answers": [
+      "Sargento Horvath",
+      "Cpl. Upham",
+      "Pvt. Malhumorado"
+    ]
+  },
+  {
+    "id": 258,
+    "question": "Cuando el personaje de Tom Hanks, John Miller, le dice al resto de la unidad lo que hace para vivir en casa, el discurso de Hanks fue en realidad mucho más largo en el guión original. ¿Por qué se acortó la escena?",
+    "difficulty": 3,
+    "category": "drama",
+    "correct_answer": "Hanks sintió que su personaje debería hablar menos",
+    "incorrect_answers": [
+      "La película estaba decidida a ser demasiado larga",
+      "Hanks olvidó sus líneas",
+      "La cámara se quedó sin película"
+    ]
+  },
+  {
+    "id": 259,
+    "question": "Steven Spielberg ha afirmado que dirigió al soldado Ryan como un homenaje a quién?",
+    "difficulty": 4,
+    "category": "drama",
+    "correct_answer": "Jack Churchill",
+    "incorrect_answers": [
+      "John F. Kennedy",
+      "Sir Alec Guinness",
+      "Kurt Vonnegut"
+    ]
   }
 ]
