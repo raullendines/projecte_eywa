@@ -686,10 +686,6 @@
             this.correctanswerDataGridViewTextBoxColumn.Name = "correctanswerDataGridViewTextBoxColumn";
             this.correctanswerDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // quizQuestionsBindingSource
-            // 
-            this.quizQuestionsBindingSource.DataSource = typeof(projecte_eywa.QuizQuestion);
-            // 
             // FormQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);

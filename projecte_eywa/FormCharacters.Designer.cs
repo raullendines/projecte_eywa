@@ -731,22 +731,6 @@
             this.buttonCatalan.UseVisualStyleBackColor = true;
             this.buttonCatalan.Click += new System.EventHandler(this.buttonCatalan_Click);
             // 
-            // formCharactersBindingSource2
-            // 
-            this.formCharactersBindingSource2.DataSource = typeof(projecte_eywa.FormCharacters);
-            // 
-            // formCharactersBindingSource
-            // 
-            this.formCharactersBindingSource.DataSource = typeof(projecte_eywa.FormCharacters);
-            // 
-            // formCharactersBindingSource1
-            // 
-            this.formCharactersBindingSource1.DataSource = typeof(projecte_eywa.FormCharacters);
-            // 
-            // formCharactersBindingSource3
-            // 
-            this.formCharactersBindingSource3.DataSource = typeof(projecte_eywa.FormCharacters);
-            // 
             // FormCharacters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

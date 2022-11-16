@@ -505,7 +505,7 @@ namespace projecte_eywa
                      buttonAdd.Visible = false;
                     buttonModify.Visible = false;
                     buttonDelete.Visible = false;
-                    buttonSave.Visible = false;
+                    buttonSaveJSON.Visible = false;
                     buttonSaveJSON.Location = new Point(142, 50);
 
                     break;
