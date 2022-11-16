@@ -19,6 +19,8 @@ namespace projecte_eywa
         const string PATH = @"..\..\json\characters.json";
 
         BindingList<QuizCharacter> characters = new BindingList<QuizCharacter>();
+        List<QuizCharacter> tempCharacters = new List<QuizCharacter>();
+
         QuizCharacter quizCharacter;
         int index;
         bool add = false;
@@ -228,7 +230,7 @@ namespace projecte_eywa
         private void buttonSave_Click(object sender, EventArgs e)
         {
             //Text to add
-            String name, film, category, difficulty, description, imgUrl;
+            String name, film, category = "", difficulty, description, imgUrl;
             int correctNum;
 
             name = textBoxNameCharacter.Text;
@@ -286,13 +288,12 @@ namespace projecte_eywa
                             }
                             quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
                             dataGridViewCharacters.DataSource = quizCharactersBindingSource;
-                            for (int i = 0; i < characters.Count; ++i)
+
+                            category = null;
+                        
+                            if (comboBoxFilter.Text != "" && comboBoxFilter.Text == quizCharacter.category)
                             {
-                                if (!characters[i].category.Equals(category))
-                                {
-                                    dataGridViewCharacters.CurrentCell = null;
-                                    dataGridViewCharacters.Rows[i].Visible = false;
-                                }
+                                tempCharacters.Add(characters.Last());
                             }
 
                         }
@@ -347,6 +348,7 @@ namespace projecte_eywa
             //Valores restablecidos
             add = false;
             modify = false;
+
         }
 
         private void dataGridViewCharacters_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -392,54 +394,47 @@ namespace projecte_eywa
 
         private void buttonApplyFilters_Click(object sender, EventArgs e)
         {
+
             isFiltered = true;
-            string category = null;
-            for (int i = 0; i < characters.Count; ++i)
+
+            tempCharacters.Clear();
+            dataGridViewCharacters.CurrentCell = null;
+            String category = "";
+            int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
+                            switch (index)
+                            {
+                                case 0:
+                                    category = "science fiction";
+
+                                    break;
+                                case 1:
+                                    category = "action";
+                                    break;
+                                case 2:
+                                    category = "comedy";
+                                    break;
+                                case 3:
+                                    category = "horror";
+                                    break;
+                                case 4:
+                                    category = "animation";
+                                    break;
+                                case 5:
+                                    category = "drama";
+                                    break;
+                                default:
+                                    MessageBox.Show("ERROR");
+                                    break;
+                            }
+
+
+
+            if (comboBoxFilter.Text != "")
             {
-
-                dataGridViewCharacters.CurrentCell = null;
-                dataGridViewCharacters.Rows[i].Visible = true;
-
-            }
-
-            if (comboBoxFilter != null && comboBoxFilter.SelectedItem != null)
-            {
-                int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
-                switch (index)
-                {
-                    case 0:
-                        category = "science fiction";
-                        break;
-                    case 1:
-                        category = "action";
-                        break;
-                    case 2:
-                        category = "comedy";
-                        break;
-                    case 3:
-                        category = "horror";
-                        break;
-                    case 4:
-                        category = "animation";
-                        break;
-                    case 5:
-                        category = "drama";
-                        break;
-                    default:
-                        MessageBox.Show("ERROR");
-                        break;
-                }
-
-
-                for (int i = 0; i < characters.Count; ++i)
-                {
-                    if (!characters[i].category.Equals(category))
-                    {
-                        dataGridViewCharacters.CurrentCell = null;
-                        dataGridViewCharacters.Rows[i].Visible = false;
-                    }
-                }
-
+                tempCharacters = characters.Where(i => i.category.Equals(category)).ToList();
+                var listBinding = new BindingList<QuizCharacter>(tempCharacters);
+                quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(tempCharacters);
+                dataGridViewCharacters.DataSource = quizCharactersBindingSource;
             }
         }
 
@@ -453,7 +448,7 @@ namespace projecte_eywa
             {
 
                 dataGridViewCharacters.CurrentCell = null;
-                dataGridViewCharacters.Rows[i].Visible = true;
+                dataGridViewCharacters.DataSource = characters;
 
             }
         }
@@ -507,6 +502,10 @@ namespace projecte_eywa
                     controlBtnsDisabled();
                     buttonQuestionsIcon.Visible = true;
                     buttonUsersIcon.Visible = false;
+                     buttonAdd.Visible = false;
+                    buttonModify.Visible = false;
+                    buttonDelete.Visible = false;
+                    buttonSave.Visible = false;
                     buttonSaveJSON.Location = new Point(142, 50);
 
                     break;

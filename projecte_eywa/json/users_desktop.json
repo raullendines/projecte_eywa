@@ -33,5 +33,15 @@
     "username": "Paz",
     "password": "$2a$11$Iv5Ay4gkwgLnnayG4fLe8eRmMF2sUfNmCS924cgg6sVgnJ1BPhcxK",
     "type": "user"
+  },
+  {
+    "username": "1",
+    "password": "$2a$11$suRmUZPlhvZcC3ri.Etzsexc43iCtoW2251kCTMIKCYtN57fAdJLW",
+    "type": "superadmin"
+  },
+  {
+    "username": "2",
+    "password": "$2a$11$WH3YVRLfywG0OFCyGSOfxeWbE6oZwFpxkXfhZ4WBXs6lIRV/YMBfC",
+    "type": "user"
   }
 ]
