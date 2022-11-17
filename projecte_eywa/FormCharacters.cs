@@ -39,7 +39,7 @@ namespace projecte_eywa
         private void saveJSON()
         {
 
-            JArray QuizCharacters = (JArray)JToken.FromObject(quizCharacter);
+            JArray QuizCharacters = (JArray)JToken.FromObject(characters);
             File.WriteAllText(PATH, QuizCharacters.ToString());
 
         }
@@ -230,23 +230,44 @@ namespace projecte_eywa
         private void buttonSave_Click(object sender, EventArgs e)
         {
             //Text to add
-            String name, film, category = "", difficulty, description, imgUrl;
-            int correctNum;
+            String name, film, category = "", description, imgUrl;
+            int correctNum, difficulty = 1;
 
             name = textBoxNameCharacter.Text;
             film = textBoxFilmCharacter.Text;
             category = comboBoxCategoryCharacter.Text;
-            difficulty = comboBoxDifficulty.Text;
             correctNum = (int)numericUpDownCorrectNum.Value;
             description = textBoxDescriptionCharacterEsp.Text;
             imgUrl = textBoxImgUrlCharacter.Text;
+
+            String difficultyCharacter = comboBoxDifficulty.Text;
+            switch (difficultyCharacter)
+            {
+                case "E":
+                    difficulty = 1;
+                    break;
+                case "M":
+                    difficulty = 2;
+                    break;
+                case "D":
+                    difficulty = 3;
+                    break;
+                case "L":
+                    difficulty = 4;
+                    break;
+                default:
+                    MessageBox.Show("ERROR");
+                    break;
+            }
 
             if (add == true)
             {
                 if (correctNum >= 0 || correctNum <= 5)
                 {
-                    if (name != null && film != null && category != null && difficulty != null && description != null && imgUrl != null)
+                    if (name != null && film != null && category != null && description != null && imgUrl != null)
                     {
+                       
+
                         characters.Add(new QuizCharacter
                         {
                             name = name,
@@ -318,16 +339,44 @@ namespace projecte_eywa
                         );
                 }
             }
+
             else if (modify == true)
             {
-                quizCharacter.name = textBoxNameCharacter.Text;
-                quizCharacter.description_esp = textBoxDescriptionCharacterEsp.Text;
-                quizCharacter.difficulty = comboBoxDifficulty.Text;
-                quizCharacter.film = textBoxFilmCharacter.Text;
-                quizCharacter.category = comboBoxCategoryCharacter.Text;
-                quizCharacter.image = textBoxImgUrlCharacter.Text;
-                quizCharacter.num_correct = numericUpDownCorrectNum.Value;
-                
+
+                String dificultad = comboBoxDifficulty.Text;
+                switch (dificultad)
+                {
+                    case "E":
+                        difficulty = 1;
+                        break;
+                    case "M":
+                        difficulty = 2;
+                        break;
+                    case "D":
+                        difficulty = 3;
+                        break;
+                    case "L":
+                        difficulty = 4;
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
+
+                index = dataGridViewCharacters.CurrentCell.RowIndex;
+                characters[index].name = textBoxNameCharacter.Text;
+                characters[index].difficulty = difficulty;
+                characters[index].description_esp = textBoxDescriptionCharacterEsp.Text;
+                characters[index].film = textBoxFilmCharacter.Text;
+                characters[index].category = comboBoxCategoryCharacter.Text;
+                characters[index].image = textBoxImgUrlCharacter.Text;
+                characters[index].num_correct = numericUpDownCorrectNum.Value;
+
+                MessageBox.Show(characters[index].difficulty.ToString());
+
+                quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
+                dataGridViewCharacters.DataSource = quizCharactersBindingSource;
+
                 changes = true;
             }
 
@@ -354,15 +403,37 @@ namespace projecte_eywa
         private void dataGridViewCharacters_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int temporal = index;
+
+          
+
             index = dataGridViewCharacters.CurrentCell.RowIndex;
             if (temporal != index && index < dataGridViewCharacters.RowCount - 1)
             {
-                
+                int difficulty = characters[index].difficulty;
+                switch (difficulty)
+                {
+                    case 1:
+                        comboBoxDifficulty.Text = "E";
+                        break;
+                    case 2:
+                        comboBoxDifficulty.Text = "M";
+                        break;
+                    case 3:
+                        comboBoxDifficulty.Text = "D";
+                        break;
+                    case 4:
+                        comboBoxDifficulty.Text = "L";
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
+
+
                 textBoxNameCharacter.Text = characters[index].name;
                 textBoxDescriptionCharacterEsp.Text = characters[index].description_esp;
                 textBoxDescriptionCharacterCat.Text = characters[index].description_cat;
                 textBoxDescriptionCharacterEng.Text = characters[index].description_eng;
-                comboBoxDifficulty.Text = characters[index].difficulty;
                 textBoxFilmCharacter.Text = characters[index].film;
                 comboBoxCategoryCharacter.Text = characters[index].category;
                 textBoxImgUrlCharacter.Text = characters[index].image;
@@ -550,7 +621,7 @@ namespace projecte_eywa
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //saveJSON();
+            saveJSON();
         }
 
         private void FormCharacters_FormClosing(object sender, FormClosingEventArgs e)
@@ -560,7 +631,7 @@ namespace projecte_eywa
                 DialogResult dialogResult = MessageBox.Show("Do you want to save changes?", "Exit", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    //saveJSON();
+                    saveJSON();
                 }
             }
         }

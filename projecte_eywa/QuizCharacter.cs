@@ -13,7 +13,7 @@ namespace projecte_eywa
         public String name { get; set; }
         public String film { get; set; }
         public String category { get; set; }
-        public String difficulty { get; set; }
+        public int difficulty { get; set; }
         public decimal num_correct { get; set; }
         public String image { get; set; }
         public String description_cat { get; set; }
@@ -27,7 +27,7 @@ namespace projecte_eywa
         }
 
 
-        public QuizCharacter(String nameCharacter, String filmCharacter, String categoryCharacter, String difficultyCharacter, int correctNumCharacter, String urlImageCharacter, String descCharacterEsp, String descCharacterEng, String descCharacterCat)
+        public QuizCharacter(String nameCharacter, String filmCharacter, String categoryCharacter, int difficultyCharacter, int correctNumCharacter, String urlImageCharacter, String descCharacterEsp, String descCharacterEng, String descCharacterCat)
         {
             this.name = nameCharacter;
             this.film = filmCharacter;

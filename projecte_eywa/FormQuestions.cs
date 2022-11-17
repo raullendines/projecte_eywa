@@ -285,8 +285,6 @@ namespace projecte_eywa
                         break;
                 }
                 quizQuestions[index].difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
-                quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
-                dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
 
                 // Enable dataGrid 
                 dataGridViewQuestions.Enabled = true;
@@ -306,6 +304,7 @@ namespace projecte_eywa
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
+            index = dataGridViewQuestions.CurrentCell.RowIndex;
             if (index != -1)
             {
                 // Disable dataGrid 
@@ -321,9 +320,6 @@ namespace projecte_eywa
             {
                 MessageBox.Show("Please, select a question first");
             }
-            
-
-
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)
