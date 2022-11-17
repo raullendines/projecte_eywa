@@ -404,8 +404,6 @@ namespace projecte_eywa
         {
             int temporal = index;
 
-          
-
             index = dataGridViewCharacters.CurrentCell.RowIndex;
             if (temporal != index && index < dataGridViewCharacters.RowCount - 1)
             {

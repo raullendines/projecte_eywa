@@ -168,9 +168,28 @@ namespace projecte_eywa
 
                 question.id = last;
                 question.question = textBoxQuestionDescription.Text;
-                question.difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
-                
-                    if (comboBoxCategoryDescription != null && comboBoxCategoryDescription.SelectedItem != null)
+
+                String difficultyCharacter = comboBoxDifficultDescription.Text;
+                switch (difficultyCharacter)
+                {
+                    case "Easy":
+                        question.difficulty = 1;
+                        break;
+                    case "Medium":
+                        question.difficulty = 2;
+                        break;
+                    case "Hard":
+                        question.difficulty = 3;
+                        break;
+                    case "Legend":
+                        question.difficulty = 4;
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
+
+                if (comboBoxCategoryDescription != null && comboBoxCategoryDescription.SelectedItem != null)
                     {
                         int index = comboBoxCategoryDescription.Items.IndexOf(comboBoxCategoryDescription.SelectedItem);
                         switch (index)
@@ -253,12 +272,33 @@ namespace projecte_eywa
             }
             else if (modifyQuestion)
             {
+                int difficulty = 1;
+                String dificultad = comboBoxDifficultDescription.Text;
+                switch (dificultad)
+                {
+                    case "Easy":
+                        difficulty = 1;
+                        break;
+                    case "Medium":
+                        difficulty = 2;
+                        break;
+                    case "Hard":
+                        difficulty = 3;
+                        break;
+                    case "Legend":
+                        difficulty = 4;
+                        break;
+                    default:
+                        MessageBox.Show("ERROR");
+                        break;
+                }
                 index = dataGridViewQuestions.CurrentCell.RowIndex;
                 quizQuestions[index].question = textBoxQuestionDescription.Text;
                 quizQuestions[index].correct_answer = textBoxCorrectAnswer.Text;
                 quizQuestions[index].incorrect_answers[0] = textBoxIncorrectAnswer1.Text;
                 quizQuestions[index].incorrect_answers[1] = textBoxIncorrectAnswer2.Text;
                 quizQuestions[index].incorrect_answers[2] = textBoxIncorrectAnswer3.Text;
+                quizQuestions[index].difficulty = difficulty;
                 int indice = comboBoxCategoryDescription.Items.IndexOf(comboBoxCategoryDescription.SelectedItem);
                 switch (indice)
                 {
@@ -284,7 +324,6 @@ namespace projecte_eywa
                         MessageBox.Show("ERROR");
                         break;
                 }
-                quizQuestions[index].difficulty = comboBoxDifficultDescription.SelectedIndex + 1;
 
                 // Enable dataGrid 
                 dataGridViewQuestions.Enabled = true;
@@ -301,6 +340,8 @@ namespace projecte_eywa
                 dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
             }
         }
+
+
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
@@ -635,15 +676,6 @@ namespace projecte_eywa
             
         }
 
-        private void labelFilter_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void userManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -730,6 +762,7 @@ namespace projecte_eywa
             string value = dataGridViewQuestions.CurrentRow.Cells[1].Value.ToString();
             int id = 0, difficulty = 0;
             String category = "", question = "", correctAnswer = "", incorrectAnswer1 = "", incorrectAnswer2 = "", incorrectAnswer3 = "";
+
             foreach (QuizQuestion idQuestion in quizQuestions.Where(i => i.question == value))
             {
                 id = idQuestion.id;
@@ -740,6 +773,8 @@ namespace projecte_eywa
                 incorrectAnswer2 = idQuestion.incorrect_answers[1];
                 incorrectAnswer3 = idQuestion.incorrect_answers[2];
                 difficulty = idQuestion.difficulty;
+                comboBoxDifficultDescription.SelectedIndex =difficulty - 1;
+               
             }
 
             textBoxIdDescription.Text = id.ToString();
@@ -749,7 +784,10 @@ namespace projecte_eywa
             textBoxIncorrectAnswer2.Text = incorrectAnswer2;
             textBoxIncorrectAnswer3.Text = incorrectAnswer3;
 
-            switch (category)
+           
+
+
+                switch (category)
             {
                 case "science fiction":
                     comboBoxCategoryDescription.SelectedIndex = 0;

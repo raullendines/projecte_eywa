@@ -452,7 +452,6 @@
             this.labelFilter.Size = new System.Drawing.Size(87, 36);
             this.labelFilter.TabIndex = 9;
             this.labelFilter.Text = "Filter";
-            this.labelFilter.Click += new System.EventHandler(this.labelFilter_Click);
             // 
             // comboBoxFilter
             // 
@@ -464,7 +463,6 @@
             this.comboBoxFilter.Name = "comboBoxFilter";
             this.comboBoxFilter.Size = new System.Drawing.Size(790, 44);
             this.comboBoxFilter.TabIndex = 10;
-            this.comboBoxFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilter_SelectedIndexChanged);
             // 
             // buttonApplyFilter
             // 
