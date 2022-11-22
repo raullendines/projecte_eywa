@@ -51,7 +51,7 @@ namespace projecte_eywa
 
         private void saveJSON()
         {
-
+            changes = false;
             //needs to delete the previous document
             JArray QuizQuestionsArrayEN = (JArray)JToken.FromObject(quizQuestionsEN);
             File.WriteAllText(EN_PATH, QuizQuestionsArrayEN.ToString());
@@ -72,9 +72,6 @@ namespace projecte_eywa
             quizQuestionsCA = LoadQuestionsCA.ToObject<BindingList<QuizQuestion>>();
             
             changeSheets();
-               
-
-
         }
 
         private void changeSheets()
@@ -143,8 +140,6 @@ namespace projecte_eywa
             disableAddModifyDeleteButtons();
             disableLanguageButtons();
             
-
-
         }
 
 
@@ -710,11 +705,17 @@ namespace projecte_eywa
                     buttonModify.Visible = false;
                     buttonDelete.Visible = false;
                     buttonSave.Visible = false;
-                    buttonSave.Location = new Point(142, 50);
+                    buttonCharactersIcon.Location = new Point(982, 65);
+                    label1.Location = new Point(975, 138);
+                    label2.Visible = false;
+                    label3.Visible = false;
+
                     break;
                 case "admin":
                     buttonUsersIcon.Visible = false;
-                    buttonSave.Location = new Point(142, 50);
+                    buttonSave.Location = new Point(982, 65);
+                    label3.Location = new Point(991, 138);
+                    label2.Visible = false;
                     break;
                 default:
                     

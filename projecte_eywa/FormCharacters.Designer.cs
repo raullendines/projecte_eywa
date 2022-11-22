@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCharacters));
             this.groupBoxCharacter = new System.Windows.Forms.GroupBox();
             this.textBoxDescriptionCharacterCat = new System.Windows.Forms.TextBox();
@@ -89,6 +89,10 @@
             this.formCharactersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.formCharactersBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.pictureBoxCharacters = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBoxCharacter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCorrectNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCharacters)).BeginInit();
@@ -99,10 +103,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCharacters)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxCharacter
             // 
+            this.groupBoxCharacter.Controls.Add(this.pictureBoxCharacters);
             this.groupBoxCharacter.Controls.Add(this.textBoxDescriptionCharacterCat);
             this.groupBoxCharacter.Controls.Add(this.comboBoxDifficulty);
             this.groupBoxCharacter.Controls.Add(this.textBoxDescriptionCharacterEng);
@@ -123,7 +129,7 @@
             this.groupBoxCharacter.Controls.Add(this.textBoxNameCharacter);
             this.groupBoxCharacter.Controls.Add(this.labelNameCharacter);
             this.groupBoxCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBoxCharacter.Location = new System.Drawing.Point(1083, 231);
+            this.groupBoxCharacter.Location = new System.Drawing.Point(1083, 270);
             this.groupBoxCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxCharacter.Name = "groupBoxCharacter";
             this.groupBoxCharacter.Padding = new System.Windows.Forms.Padding(2);
@@ -150,14 +156,14 @@
             this.comboBoxDifficulty.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxDifficulty.FormattingEnabled = true;
             this.comboBoxDifficulty.Items.AddRange(new object[] {
-            "E",
-            "M",
-            "H",
-            "I"});
+            "Easy",
+            "Medium",
+            "Hard",
+            "Legend"});
             this.comboBoxDifficulty.Location = new System.Drawing.Point(246, 224);
             this.comboBoxDifficulty.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxDifficulty.Name = "comboBoxDifficulty";
-            this.comboBoxDifficulty.Size = new System.Drawing.Size(482, 33);
+            this.comboBoxDifficulty.Size = new System.Drawing.Size(254, 33);
             this.comboBoxDifficulty.TabIndex = 20;
             // 
             // textBoxDescriptionCharacterEng
@@ -198,7 +204,7 @@
             this.comboBoxCategoryCharacter.Location = new System.Drawing.Point(246, 164);
             this.comboBoxCategoryCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxCategoryCharacter.Name = "comboBoxCategoryCharacter";
-            this.comboBoxCategoryCharacter.Size = new System.Drawing.Size(482, 33);
+            this.comboBoxCategoryCharacter.Size = new System.Drawing.Size(254, 33);
             this.comboBoxCategoryCharacter.TabIndex = 17;
             // 
             // buttonCancel
@@ -330,7 +336,7 @@
             this.textBoxFilmCharacter.Location = new System.Drawing.Point(246, 104);
             this.textBoxFilmCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxFilmCharacter.Name = "textBoxFilmCharacter";
-            this.textBoxFilmCharacter.Size = new System.Drawing.Size(482, 30);
+            this.textBoxFilmCharacter.Size = new System.Drawing.Size(254, 30);
             this.textBoxFilmCharacter.TabIndex = 3;
             // 
             // label1
@@ -349,7 +355,7 @@
             this.textBoxNameCharacter.Location = new System.Drawing.Point(246, 44);
             this.textBoxNameCharacter.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxNameCharacter.Name = "textBoxNameCharacter";
-            this.textBoxNameCharacter.Size = new System.Drawing.Size(482, 30);
+            this.textBoxNameCharacter.Size = new System.Drawing.Size(254, 30);
             this.textBoxNameCharacter.TabIndex = 1;
             // 
             // labelNameCharacter
@@ -371,7 +377,7 @@
             this.buttonModify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonModify.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.buttonModify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonModify.Location = new System.Drawing.Point(169, 901);
+            this.buttonModify.Location = new System.Drawing.Point(169, 940);
             this.buttonModify.Margin = new System.Windows.Forms.Padding(2);
             this.buttonModify.Name = "buttonModify";
             this.buttonModify.Size = new System.Drawing.Size(103, 49);
@@ -387,7 +393,7 @@
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.buttonDelete.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonDelete.Location = new System.Drawing.Point(291, 901);
+            this.buttonDelete.Location = new System.Drawing.Point(291, 940);
             this.buttonDelete.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(103, 49);
@@ -403,7 +409,7 @@
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.buttonAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(70)))), ((int)(((byte)(185)))));
-            this.buttonAdd.Location = new System.Drawing.Point(52, 901);
+            this.buttonAdd.Location = new System.Drawing.Point(52, 940);
             this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(103, 49);
@@ -417,14 +423,14 @@
             this.dataGridViewCharacters.AllowUserToOrderColumns = true;
             this.dataGridViewCharacters.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.dataGridViewCharacters.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCharacters.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle50.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCharacters.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.dataGridViewCharacters.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCharacters.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nameCharacter,
@@ -434,30 +440,30 @@
             this.categoryCharacter,
             this.difficultyCharacter,
             this.filmCharacter});
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewCharacters.DefaultCellStyle = dataGridViewCellStyle19;
-            this.dataGridViewCharacters.Location = new System.Drawing.Point(52, 231);
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewCharacters.DefaultCellStyle = dataGridViewCellStyle54;
+            this.dataGridViewCharacters.Location = new System.Drawing.Point(52, 270);
             this.dataGridViewCharacters.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewCharacters.MultiSelect = false;
             this.dataGridViewCharacters.Name = "dataGridViewCharacters";
             this.dataGridViewCharacters.ReadOnly = true;
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewCharacters.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle55.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewCharacters.RowHeadersDefaultCellStyle = dataGridViewCellStyle55;
             this.dataGridViewCharacters.RowHeadersWidth = 62;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dataGridViewCharacters.RowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.dataGridViewCharacters.RowsDefaultCellStyle = dataGridViewCellStyle56;
             this.dataGridViewCharacters.RowTemplate.Height = 28;
             this.dataGridViewCharacters.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewCharacters.Size = new System.Drawing.Size(973, 652);
@@ -468,10 +474,10 @@
             // 
             this.nameCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.nameCharacter.DataPropertyName = "name";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
-            this.nameCharacter.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.Black;
+            this.nameCharacter.DefaultCellStyle = dataGridViewCellStyle51;
             this.nameCharacter.HeaderText = "Name";
             this.nameCharacter.MinimumWidth = 8;
             this.nameCharacter.Name = "nameCharacter";
@@ -511,9 +517,9 @@
             // 
             this.categoryCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.categoryCharacter.DataPropertyName = "category";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.categoryCharacter.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.categoryCharacter.DefaultCellStyle = dataGridViewCellStyle52;
             this.categoryCharacter.HeaderText = "Category";
             this.categoryCharacter.MinimumWidth = 8;
             this.categoryCharacter.Name = "categoryCharacter";
@@ -533,9 +539,9 @@
             // 
             this.filmCharacter.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.filmCharacter.DataPropertyName = "film";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.filmCharacter.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.filmCharacter.DefaultCellStyle = dataGridViewCellStyle53;
             this.filmCharacter.HeaderText = "Film";
             this.filmCharacter.MinimumWidth = 8;
             this.filmCharacter.Name = "filmCharacter";
@@ -553,7 +559,7 @@
             "Terror",
             "Animació",
             "Drama"});
-            this.comboBoxFilter.Location = new System.Drawing.Point(140, 170);
+            this.comboBoxFilter.Location = new System.Drawing.Point(140, 209);
             this.comboBoxFilter.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxFilter.Name = "comboBoxFilter";
             this.comboBoxFilter.Size = new System.Drawing.Size(528, 33);
@@ -567,7 +573,7 @@
             this.buttonApplyFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonApplyFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.buttonApplyFilters.ForeColor = System.Drawing.Color.Black;
-            this.buttonApplyFilters.Location = new System.Drawing.Point(780, 163);
+            this.buttonApplyFilters.Location = new System.Drawing.Point(780, 202);
             this.buttonApplyFilters.Margin = new System.Windows.Forms.Padding(2);
             this.buttonApplyFilters.Name = "buttonApplyFilters";
             this.buttonApplyFilters.Size = new System.Drawing.Size(103, 49);
@@ -583,7 +589,7 @@
             this.buttonClearFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClearFilters.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.buttonClearFilters.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonClearFilters.Location = new System.Drawing.Point(922, 163);
+            this.buttonClearFilters.Location = new System.Drawing.Point(922, 202);
             this.buttonClearFilters.Margin = new System.Windows.Forms.Padding(2);
             this.buttonClearFilters.Name = "buttonClearFilters";
             this.buttonClearFilters.Size = new System.Drawing.Size(103, 49);
@@ -596,7 +602,7 @@
             // 
             this.Filter.AutoSize = true;
             this.Filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Filter.Location = new System.Drawing.Point(55, 173);
+            this.Filter.Location = new System.Drawing.Point(55, 212);
             this.Filter.Name = "Filter";
             this.Filter.Size = new System.Drawing.Size(60, 25);
             this.Filter.TabIndex = 21;
@@ -655,7 +661,7 @@
             this.buttonSaveJSON.FlatAppearance.BorderSize = 0;
             this.buttonSaveJSON.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSaveJSON.Image = ((System.Drawing.Image)(resources.GetObject("buttonSaveJSON.Image")));
-            this.buttonSaveJSON.Location = new System.Drawing.Point(232, 50);
+            this.buttonSaveJSON.Location = new System.Drawing.Point(1083, 60);
             this.buttonSaveJSON.Name = "buttonSaveJSON";
             this.buttonSaveJSON.Size = new System.Drawing.Size(70, 70);
             this.buttonSaveJSON.TabIndex = 24;
@@ -668,7 +674,7 @@
             this.buttonUsersIcon.FlatAppearance.BorderSize = 0;
             this.buttonUsersIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUsersIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonUsersIcon.Image")));
-            this.buttonUsersIcon.Location = new System.Drawing.Point(142, 50);
+            this.buttonUsersIcon.Location = new System.Drawing.Point(985, 60);
             this.buttonUsersIcon.Name = "buttonUsersIcon";
             this.buttonUsersIcon.Size = new System.Drawing.Size(70, 70);
             this.buttonUsersIcon.TabIndex = 23;
@@ -681,7 +687,7 @@
             this.buttonQuestionsIcon.FlatAppearance.BorderSize = 0;
             this.buttonQuestionsIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuestionsIcon.Image = ((System.Drawing.Image)(resources.GetObject("buttonQuestionsIcon.Image")));
-            this.buttonQuestionsIcon.Location = new System.Drawing.Point(52, 50);
+            this.buttonQuestionsIcon.Location = new System.Drawing.Point(879, 60);
             this.buttonQuestionsIcon.Name = "buttonQuestionsIcon";
             this.buttonQuestionsIcon.Size = new System.Drawing.Size(70, 70);
             this.buttonQuestionsIcon.TabIndex = 15;
@@ -694,7 +700,7 @@
             this.buttonSpanish.FlatAppearance.BorderSize = 0;
             this.buttonSpanish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSpanish.Image = global::projecte_eywa.Properties.Resources.españa_boton1;
-            this.buttonSpanish.Location = new System.Drawing.Point(1183, 176);
+            this.buttonSpanish.Location = new System.Drawing.Point(1183, 215);
             this.buttonSpanish.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSpanish.Name = "buttonSpanish";
             this.buttonSpanish.Size = new System.Drawing.Size(103, 49);
@@ -708,7 +714,7 @@
             this.buttonEnglish.FlatAppearance.BorderSize = 0;
             this.buttonEnglish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEnglish.Image = global::projecte_eywa.Properties.Resources.bandera_england__1_;
-            this.buttonEnglish.Location = new System.Drawing.Point(1292, 176);
+            this.buttonEnglish.Location = new System.Drawing.Point(1292, 215);
             this.buttonEnglish.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEnglish.Name = "buttonEnglish";
             this.buttonEnglish.Size = new System.Drawing.Size(103, 49);
@@ -723,7 +729,7 @@
             this.buttonCatalan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCatalan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
             this.buttonCatalan.Image = global::projecte_eywa.Properties.Resources.cataluña_bandera__1_;
-            this.buttonCatalan.Location = new System.Drawing.Point(1083, 176);
+            this.buttonCatalan.Location = new System.Drawing.Point(1083, 215);
             this.buttonCatalan.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCatalan.Name = "buttonCatalan";
             this.buttonCatalan.Size = new System.Drawing.Size(103, 49);
@@ -731,12 +737,53 @@
             this.buttonCatalan.UseVisualStyleBackColor = true;
             this.buttonCatalan.Click += new System.EventHandler(this.buttonCatalan_Click);
             // 
+            // pictureBoxCharacters
+            // 
+            this.pictureBoxCharacters.Location = new System.Drawing.Point(513, 44);
+            this.pictureBoxCharacters.Name = "pictureBoxCharacters";
+            this.pictureBoxCharacters.Size = new System.Drawing.Size(215, 213);
+            this.pictureBoxCharacters.TabIndex = 23;
+            this.pictureBoxCharacters.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(1095, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 20);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Save";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(994, 134);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 20);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Users";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(874, 133);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(81, 20);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Questions";
+            // 
             // FormCharacters
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(212)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonSaveJSON);
             this.Controls.Add(this.buttonUsersIcon);
             this.Controls.Add(this.buttonQuestionsIcon);
@@ -771,6 +818,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.formCharactersBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCharacters)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -829,6 +877,10 @@
         private System.Windows.Forms.Button buttonQuestionsIcon;
         private System.Windows.Forms.Button buttonUsersIcon;
         private System.Windows.Forms.Button buttonSaveJSON;
+        private System.Windows.Forms.PictureBox pictureBoxCharacters;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

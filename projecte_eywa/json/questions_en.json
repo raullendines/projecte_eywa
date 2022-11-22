@@ -2,7 +2,7 @@
   {
     "id": 1,
     "question": "Name the administrator of Cloud City who appears in The Empire Strikes Back?",
-    "difficulty": 1,
+    "difficulty": 2,
     "category": "science fiction",
     "correct_answer": "Lando Calrissian ",
     "incorrect_answers": [

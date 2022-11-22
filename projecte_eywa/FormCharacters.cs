@@ -38,7 +38,7 @@ namespace projecte_eywa
 
         private void saveJSON()
         {
-
+            changes = false;
             JArray QuizCharacters = (JArray)JToken.FromObject(characters);
             File.WriteAllText(PATH, QuizCharacters.ToString());
 
@@ -243,16 +243,16 @@ namespace projecte_eywa
             String difficultyCharacter = comboBoxDifficulty.Text;
             switch (difficultyCharacter)
             {
-                case "E":
+                case "Easy":
                     difficulty = 1;
                     break;
-                case "M":
+                case "Medium":
                     difficulty = 2;
                     break;
-                case "D":
+                case "Hard":
                     difficulty = 3;
                     break;
-                case "L":
+                case "Legend":
                     difficulty = 4;
                     break;
                 default:
@@ -346,16 +346,16 @@ namespace projecte_eywa
                 String dificultad = comboBoxDifficulty.Text;
                 switch (dificultad)
                 {
-                    case "E":
+                    case "Easy":
                         difficulty = 1;
                         break;
-                    case "M":
+                    case "Medium":
                         difficulty = 2;
                         break;
-                    case "D":
+                    case "Hard":
                         difficulty = 3;
                         break;
-                    case "L":
+                    case "Legend":
                         difficulty = 4;
                         break;
                     default:
@@ -371,8 +371,6 @@ namespace projecte_eywa
                 characters[index].category = comboBoxCategoryCharacter.Text;
                 characters[index].image = textBoxImgUrlCharacter.Text;
                 characters[index].num_correct = numericUpDownCorrectNum.Value;
-
-                MessageBox.Show(characters[index].difficulty.ToString());
 
                 quizCharactersBindingSource.DataSource = DataUtilities.ToDataTable(characters);
                 dataGridViewCharacters.DataSource = quizCharactersBindingSource;
@@ -411,16 +409,16 @@ namespace projecte_eywa
                 switch (difficulty)
                 {
                     case 1:
-                        comboBoxDifficulty.Text = "E";
+                        comboBoxDifficulty.Text = "Easy";
                         break;
                     case 2:
-                        comboBoxDifficulty.Text = "M";
+                        comboBoxDifficulty.Text = "Medium";
                         break;
                     case 3:
-                        comboBoxDifficulty.Text = "D";
+                        comboBoxDifficulty.Text = "Hard";
                         break;
                     case 4:
-                        comboBoxDifficulty.Text = "L";
+                        comboBoxDifficulty.Text = "Legend";
                         break;
                     default:
                         MessageBox.Show("ERROR");
@@ -436,6 +434,9 @@ namespace projecte_eywa
                 comboBoxCategoryCharacter.Text = characters[index].category;
                 textBoxImgUrlCharacter.Text = characters[index].image;
                 numericUpDownCorrectNum.Value = characters[index].num_correct;
+
+                pictureBoxCharacters.Image = Image.FromFile(@"..\..\Resources\characters\" + textBoxImgUrlCharacter.Text + ".jpeg");
+                pictureBoxCharacters.SizeMode = PictureBoxSizeMode.CenterImage;
 
             }
         }
@@ -571,22 +572,27 @@ namespace projecte_eywa
                     controlBtnsDisabled();
                     buttonQuestionsIcon.Visible = true;
                     buttonUsersIcon.Visible = false;
-                     buttonAdd.Visible = false;
+                    buttonAdd.Visible = false;
                     buttonModify.Visible = false;
                     buttonDelete.Visible = false;
                     buttonSaveJSON.Visible = false;
-                    buttonSaveJSON.Location = new Point(142, 50);
+                    buttonQuestionsIcon.Location = new Point(982, 65);
+                    label5.Location = new Point(975, 138);
+                    label4.Visible = false;
+                    label3.Visible = false;
 
                     break;
                 case "admin":
                     buttonQuestionsIcon.Visible=true;
                     buttonUsersIcon.Visible = false;
-                    buttonSaveJSON.Location = new Point(142, 50);
+                    buttonSaveJSON.Location = new Point(985, 60);
+                    label3.Location = new Point(994, 134);
+
                     break;
                 default:
                     buttonQuestionsIcon.Visible = true;
                     buttonUsersIcon.Visible = true;
-                    buttonSaveJSON.Location = new Point(232, 50);
+                    buttonSaveJSON.Location = new Point(1083, 60);
 
                     break;
             }

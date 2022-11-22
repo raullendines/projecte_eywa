@@ -43,5 +43,10 @@
     "username": "2",
     "password": "$2a$11$WH3YVRLfywG0OFCyGSOfxeWbE6oZwFpxkXfhZ4WBXs6lIRV/YMBfC",
     "type": "user"
+  },
+  {
+    "username": "3",
+    "password": "$2a$11$0jePP18vohmxUYCXeI6oSugN0kTZgnx/hXkuxDYhBtjQgoD/KEMHq",
+    "type": "admin"
   }
 ]

@@ -404,6 +404,7 @@ namespace projecte_eywa
 
         private void saveData()
         {
+            changes = false;
             JArray DesktopUsersArray = (JArray)JToken.FromObject(DesktopList);
             File.WriteAllText(USERS_DESKTOP_PATH, DesktopUsersArray.ToString());
 
@@ -620,7 +621,7 @@ namespace projecte_eywa
 
         private void buttonSaveJSON_Click(object sender, EventArgs e)
         {
-            //saveData();
+            saveData();
         }
     }
 }
