@@ -68,7 +68,7 @@ namespace projecte_eywa
 
                 if (checkCorrectUser())
                 {
-                    FormQuestions myNextForm = new FormQuestions(user);
+                    Menu myNextForm = new Menu(user);
                     Program.changingForms = true;
                     myNextForm.Show();
                     this.Close();

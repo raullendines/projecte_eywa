@@ -96,7 +96,7 @@ namespace projecte_eywa
             }
             initializeEmptyBoxes();
             quizQuestionsBindingSource.DataSource = DataUtilities.ToDataTable(quizQuestions);
-            dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
+            //dataGridViewQuestions.DataSource = quizQuestionsBindingSource;
         }
         private void saveSheet()
         {

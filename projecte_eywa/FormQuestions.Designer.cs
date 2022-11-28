@@ -75,6 +75,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Difficulty = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewQuestions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quizQuestionsBindingSource)).BeginInit();
             this.groupBoxQuestionDescription.SuspendLayout();
@@ -83,7 +87,8 @@
             // 
             // dataGridViewQuestions
             // 
-            this.dataGridViewQuestions.AllowUserToOrderColumns = true;
+            this.dataGridViewQuestions.AllowUserToAddRows = false;
+            this.dataGridViewQuestions.AllowUserToDeleteRows = false;
             this.dataGridViewQuestions.AutoGenerateColumns = false;
             this.dataGridViewQuestions.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
             this.dataGridViewQuestions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -96,6 +101,11 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewQuestions.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewQuestions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewQuestions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.Column1,
+            this.Category,
+            this.Difficulty});
             this.dataGridViewQuestions.DataSource = this.quizQuestionsBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -601,12 +611,43 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Save";
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "Id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.DataPropertyName = "question";
+            this.Column1.HeaderText = "Question";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Category
+            // 
+            this.Category.DataPropertyName = "category";
+            this.Category.HeaderText = "Category";
+            this.Category.Name = "Category";
+            this.Category.ReadOnly = true;
+            this.Category.Width = 300;
+            // 
+            // Difficulty
+            // 
+            this.Difficulty.DataPropertyName = "difficulty";
+            this.Difficulty.HeaderText = "Difficulty";
+            this.Difficulty.Name = "Difficulty";
+            this.Difficulty.ReadOnly = true;
+            this.Difficulty.Width = 200;
+            // 
             // FormQuestions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(212)))), ((int)(((byte)(223)))));
-            this.ClientSize = new System.Drawing.Size(1854, 1083);
+            this.ClientSize = new System.Drawing.Size(1854, 1061);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -690,6 +731,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Difficulty;
     }
 }
 
