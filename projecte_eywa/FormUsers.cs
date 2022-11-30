@@ -1,23 +1,26 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-
+using File = System.IO.File;
 
 namespace projecte_eywa
 {
     public partial class FormUsers : Form
     {
-
+        Image FileImage;
         List<UserDesktop> DesktopList;
         List<UserAndroid> AndroidList = new List<UserAndroid>();
         UserDesktop user;
@@ -76,8 +79,7 @@ namespace projecte_eywa
                 dataGridViewUsers.DataSource = userDesktopBindingSource;
                 type.Visible = true;
                 image.Visible = false;
-                gender.Visible = false;
-                age.Visible = false;
+
                 
                 labelType.Visible = true;
                 comboBoxType.Visible = true;
@@ -85,10 +87,9 @@ namespace projecte_eywa
 
                 labelImage.Visible = false;
                 textBoxImage.Visible = false;
-                labelGender.Visible = false;
-                textBoxGender.Visible = false;
-                labelAge.Visible = false;
-                textBoxAge.Visible = false;
+                labelDate.Visible = false;
+                textBoxDate.Visible = false;
+                labelDateRegister.Visible = false;
 
             }
         }
@@ -102,18 +103,16 @@ namespace projecte_eywa
                 dataGridViewUsers.DataSource = userAndroidBindingSource;
                 type.Visible = false;
                 image.Visible = true;
-                gender.Visible = true;
-                age.Visible = true;
+
 
                 labelType.Visible = false;
                 comboBoxType.Visible = false;
 
                 labelImage.Visible = true;
                 textBoxImage.Visible = true;
-                labelGender.Visible = true;
-                textBoxGender.Visible = true;
-                labelAge.Visible = true;
-                textBoxAge.Visible = true;
+                labelDate.Visible = true;
+                textBoxDate.Visible = true;
+                labelDateRegister.Visible = true;
             }
         }
 
@@ -137,9 +136,7 @@ namespace projecte_eywa
                     textBoxUsername.Text = AndroidList[index].username.ToString();
                     textBoxPassword.Text = AndroidList[index].password.ToString();
                     textBoxImage.Text = AndroidList[index].image.ToString();
-                    textBoxGender.Text = AndroidList[index].gender.ToString();
-                    textBoxAge.Text = AndroidList[index].age.ToString();
-
+                 
                 }
             }
         }
@@ -151,7 +148,6 @@ namespace projecte_eywa
             clearTextBox();
             AddUser = true;
             disableButtons();
-
 
         }
 
@@ -174,6 +170,7 @@ namespace projecte_eywa
         {
             textBoxUsername.Text = "";
             textBoxPassword.Text = "";
+            
             if (DesktopForm)
             {
                 comboBoxType.SelectedIndex = 0;
@@ -181,14 +178,29 @@ namespace projecte_eywa
             else
             {
                 textBoxImage.Text = "";
-                textBoxGender.Text = "";
-                textBoxAge.Text = "";
+                textBoxDate.Text = "";
+
+
+                for (int i = 0; i < 20; i++)
+                {
+                    foreach (int achievement in AndroidList[index].quizAchievementList)
+                    {
+                        if (achievement.Equals(i))
+                        {
+                            listBoxAchievements.SelectedIndex = -1;
+                        }
+
+                    }
+                }
+
+                pictureBoxCharacters.Image = null;
             }
             
         }
 
         private void enableTextBox()
         {
+            buttonBuscar.Enabled = true;
             textBoxUsername.ReadOnly = false;
             buttonSave.Visible = true;
             buttonCancel.Visible = true;
@@ -199,14 +211,15 @@ namespace projecte_eywa
             }
             else
             {
+                buttonBuscar.Visible = true;
                 textBoxImage.ReadOnly = false;
-                textBoxGender.ReadOnly = false;
-                textBoxAge.ReadOnly = false;
+                textBoxDate.ReadOnly = false;
             }
         }
 
         private void disableTextBox()
         {
+            buttonBuscar.Enabled = false;
             textBoxUsername.ReadOnly = true;
             textBoxPassword.ReadOnly = true;
             buttonSave.Visible = false;
@@ -219,8 +232,7 @@ namespace projecte_eywa
             else
             {
                 textBoxImage.ReadOnly = true;
-                textBoxGender.ReadOnly = true;
-                textBoxAge.ReadOnly = true;
+                textBoxDate.ReadOnly = true;
             }
         }
 
@@ -318,13 +330,11 @@ namespace projecte_eywa
                 string username = textBoxUsername.Text;
                 string password = BCrypt.Net.BCrypt.EnhancedHashPassword(textBoxPassword.Text);
                 string image = textBoxImage.Text;
-                string gender = textBoxGender.Text;
-                int age;
-                if (!int.TryParse(textBoxAge.Text, out age))
-                {
-                    MessageBox.Show("Cositas");
-                }
-                AndroidList.Add(new UserAndroid(username, password, image, gender, age));
+                string dateOfRegister = DateTime.Today.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+                
+                List<int> quizAchievementList = new List<int>();
+              
+                AndroidList.Add(new UserAndroid(username, password, image, dateOfRegister, quizAchievementList));
 
                 userAndroidBindingSource.DataSource = DataUtilities.ToDataTable(AndroidList);
 
@@ -332,23 +342,14 @@ namespace projecte_eywa
             }
             else
             {
-                //TODO MODIFY
-                int age;
-                if(!int.TryParse(textBoxAge.Text, out age))
-                {
-                    MessageBox.Show("No se puede parsear la edad");
-                }
-                else
-                {
+               
                     AndroidList[index].username = textBoxUsername.Text;
                     AndroidList[index].image = textBoxImage.Text;
-                    AndroidList[index].gender = textBoxGender.Text;
-                    AndroidList[index].age = age;
 
                     userAndroidBindingSource.DataSource = DataUtilities.ToDataTable(AndroidList);
 
                     dataGridViewUsers.DataSource = userAndroidBindingSource;
-                }
+                
                 
             }
             
@@ -356,7 +357,6 @@ namespace projecte_eywa
 
         private bool checkValues()
         {
-            int age;
             if (DesktopForm)
             {
                 if (string.IsNullOrEmpty(textBoxUsername.Text))
@@ -383,21 +383,11 @@ namespace projecte_eywa
                 {
                     return false;
                 }
-                if (string.IsNullOrEmpty(textBoxGender.Text))
+                if (string.IsNullOrEmpty(textBoxDate.Text))
                 {
                     return false;
                 }
-                if (int.TryParse(textBoxAge.Text, out age))
-                {
-                    if(age < 6 || age > 120)
-                    {
-                        return false;
-                    }
-                }
-                else
-                {
-                    return false;
-                }
+             
             }
             return true;
         }
@@ -445,8 +435,32 @@ namespace projecte_eywa
                     textBoxUsername.Text = AndroidList[index].username.ToString();
                     textBoxPassword.Text = AndroidList[index].password.ToString();
                     textBoxImage.Text = AndroidList[index].image.ToString();
-                    textBoxGender.Text = AndroidList[index].gender.ToString();
-                    textBoxAge.Text = AndroidList[index].age.ToString();
+                    textBoxDate.Text = AndroidList[index].dateOfRegister.ToString();
+                    for (int i = 0; i < 20; i++)
+                    {
+                        foreach (int achievement in AndroidList[index].quizAchievementList)
+                        {
+                            if (achievement.Equals(i))
+                            {
+                                listBoxAchievements.SelectedIndex = i;
+                            }
+
+                        }
+                    }
+                    Image nameImage= Image.FromFile(@"..\..\Resources\characters\" + textBoxImage.Text + ".jpeg");
+
+                    if (nameImage.Width < pictureBoxCharacters.ClientSize.Width || nameImage.Height < pictureBoxCharacters.ClientSize.Height)
+                    {
+                        pictureBoxCharacters.SizeMode = PictureBoxSizeMode.Zoom;
+                    }
+                    else
+                    {
+                        pictureBoxCharacters.SizeMode = PictureBoxSizeMode.CenterImage;
+                    }
+
+                    pictureBoxCharacters.Image = nameImage;
+
+
 
                 }
             }
@@ -511,10 +525,10 @@ namespace projecte_eywa
                 userDesktopBindingSource.DataSource = DataUtilities.ToDataTable(DesktopList);
                 dataGridViewUsers.DataSource = null;
                 dataGridViewUsers.DataSource = userDesktopBindingSource;
-                type.Visible = true;
+                dateregister.Visible = true;
                 image.Visible = false;
-                gender.Visible = false;
-                age.Visible = false;
+                dateregister.Visible = false;
+                pictureBoxCharacters.Visible = false;
 
                 labelType.Visible = true;
                 comboBoxType.Visible = true;
@@ -522,10 +536,12 @@ namespace projecte_eywa
 
                 labelImage.Visible = false;
                 textBoxImage.Visible = false;
-                labelGender.Visible = false;
-                textBoxGender.Visible = false;
-                labelAge.Visible = false;
-                textBoxAge.Visible = false;
+                labelDate.Visible = false;
+                textBoxDate.Visible = false;
+                labelDateRegister.Visible = false;
+                labelAchievements.Visible = false;
+                labelImageCharacter.Visible = false;
+                listBoxAchievements.Visible = false;
 
                 DesktopForm = true;
                 AndroidForm = false;
@@ -541,18 +557,20 @@ namespace projecte_eywa
                 dataGridViewUsers.DataSource = userAndroidBindingSource;
                 type.Visible = false;
                 image.Visible = true;
-                gender.Visible = true;
-                age.Visible = true;
+                dateregister.Visible = true;
+                pictureBoxCharacters.Visible = true;
 
                 labelType.Visible = false;
                 comboBoxType.Visible = false;
 
                 labelImage.Visible = true;
                 textBoxImage.Visible = true;
-                labelGender.Visible = true;
-                textBoxGender.Visible = true;
-                labelAge.Visible = true;
-                textBoxAge.Visible = true;
+                labelDate.Visible = true;
+                textBoxDate.Visible = true;
+                labelDateRegister.Visible = true;
+                labelAchievements.Visible = true;
+                labelImageCharacter.Visible = true;
+                listBoxAchievements.Visible = true;
 
                 AndroidForm = true;
                 DesktopForm = false;
@@ -622,6 +640,18 @@ namespace projecte_eywa
         private void buttonSaveJSON_Click(object sender, EventArgs e)
         {
             saveData();
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "JPEG(*JPEG)|*.jpeg";
+
+            if(ofd.ShowDialog() == DialogResult.OK)
+            {
+                FileImage = Image.FromFile(ofd.FileName);
+                pictureBoxCharacters.Image = FileImage;
+            }
         }
     }
 }

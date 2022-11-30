@@ -10,17 +10,21 @@ namespace projecte_eywa
     {
         public string username { get; set; }
         public string password { get; set; }
+        public string dateOfRegister { get; set; }
+        public List<int> quizAchievementList { get; set; }
         public string image { get; set; }
-        public string gender { get; set; }
-        public int age { get; set; }
 
-        public UserAndroid(string username, string password, string image, string gender, int age)
+        public UserAndroid(string username, string password, string image, string dateOfRegister, List<int> quizAchievementList)
         {
             this.username = username;
             this.password = password;
             this.image = image;
-            this.gender = gender;
-            this.age = age;
+            this.dateOfRegister = dateOfRegister;
+            this.quizAchievementList = quizAchievementList;
+        }
+
+        public UserAndroid()
+        {
 
         }
     }
