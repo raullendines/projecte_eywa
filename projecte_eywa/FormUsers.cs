@@ -9,6 +9,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,8 +25,8 @@ namespace projecte_eywa
         List<UserDesktop> DesktopList;
         List<UserAndroid> AndroidList = new List<UserAndroid>();
         UserDesktop user;
-        
-        
+
+        string path;
         const string PATH = @"..\..\json\";
         const string USERS_DESKTOP_PATH = PATH + "users_desktop.json";
         const string USERS_ANDROID_PATH = PATH + "users_android.json";
@@ -143,18 +144,55 @@ namespace projecte_eywa
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+           
+            AddUser = true;
             enableTextBox();
+            textBoxPassword.Visible = true;
+            labelPassword.Visible = true;
+            locationImages();
+            if (pictureBoxCharacters.Image != null)
+            {
+                pictureBoxCharacters.Image.Dispose();
+            }
             textBoxPassword.ReadOnly = false;
             clearTextBox();
-            AddUser = true;
             disableButtons();
+            var dateTime = DateTime.Now;
+            var dateValue = dateTime.ToString("dd/MM/yyyy");
+            textBoxDate.Text = dateValue;
 
+        }
+        private void locationImages()
+        {
+            if (!DesktopForm)
+            {
+                labelPassword.Location = new Point(32, 179);
+                textBoxPassword.Location = new Point(237, 179);
+                if (AddUser == true)
+                {
+                    labelImageCharacter.Location = new Point(32, 232);
+                    pictureBoxCharacters.Location = new Point(237, 232);
+                }
+                else
+                {
+                    labelImageCharacter.Location = new Point(32, 179);
+                    pictureBoxCharacters.Location = new Point(237, 179);
+                }
+            }
+            else
+            {
+                labelPassword.Location = new Point(32, 131);
+                textBoxPassword.Location = new Point(237, 128);
+            }
+           
+            
         }
 
         private void buttonModify_Click(object sender, EventArgs e)
         {
             if(index != -1)
             {
+                locationImages();
                 loadDataToTextBox();
                 enableTextBox();
                 disableButtons();
@@ -180,22 +218,12 @@ namespace projecte_eywa
                 textBoxImage.Text = "";
                 textBoxDate.Text = "";
 
-
-                for (int i = 0; i < 20; i++)
+                if (pictureBoxCharacters.Image != null)
                 {
-                    foreach (int achievement in AndroidList[index].quizAchievementList)
-                    {
-                        if (achievement.Equals(i))
-                        {
-                            listBoxAchievements.SelectedIndex = -1;
-                        }
-
-                    }
+                    pictureBoxCharacters.Image.Dispose();
+                    pictureBoxCharacters.Image = null;
                 }
-
-                pictureBoxCharacters.Image = null;
             }
-            
         }
 
         private void enableTextBox()
@@ -207,13 +235,10 @@ namespace projecte_eywa
             if (DesktopForm)
             {
                 comboBoxType.Enabled = true;
-
             }
             else
             {
                 buttonBuscar.Visible = true;
-                textBoxImage.ReadOnly = false;
-                textBoxDate.ReadOnly = false;
             }
         }
 
@@ -231,7 +256,7 @@ namespace projecte_eywa
             }
             else
             {
-                textBoxImage.ReadOnly = true;
+                buttonBuscar.Visible = false;
                 textBoxDate.ReadOnly = true;
             }
         }
@@ -242,11 +267,14 @@ namespace projecte_eywa
             clearTextBox();
             disableTextBox();
             enableButtons();
-
+            dataGridViewUsers.Enabled = true;
+            textBoxPassword.Visible = false;
+            labelPassword.Visible = false;
         }
 
         private void disableButtons()
         {
+            dataGridViewUsers.Enabled = false;
             buttonAdd.Enabled = false;
             buttonModify.Enabled = false;
             buttonAndroid.Enabled = false;
@@ -256,6 +284,7 @@ namespace projecte_eywa
 
         private void enableButtons()
         {
+            dataGridViewUsers.Enabled = true;
             buttonAdd.Enabled = true;
             buttonModify.Enabled = true;
             buttonAndroid.Enabled = true;
@@ -279,12 +308,16 @@ namespace projecte_eywa
                     enableButtons();
                     changes = true;
                 }
-
             }
             else
             {
                 if (checkValues())
                 {
+                    string name = Path.GetFileNameWithoutExtension(path);
+                    if (!File.Exists(path))
+                    {
+                        File.Copy(path, @"..\..\Resources\characters\" + name + ".jpeg");
+                    }
                     addNewAndroidUser();
                     AddUser = false;
                     buttonSave.Visible = false;
@@ -295,6 +328,8 @@ namespace projecte_eywa
                     changes = true;
                 }
             }
+            textBoxPassword.Visible = false;
+            labelPassword.Visible = false;
         }
 
         private void addNewDesktopUser()
@@ -436,17 +471,7 @@ namespace projecte_eywa
                     textBoxPassword.Text = AndroidList[index].password.ToString();
                     textBoxImage.Text = AndroidList[index].image.ToString();
                     textBoxDate.Text = AndroidList[index].dateOfRegister.ToString();
-                    for (int i = 0; i < 20; i++)
-                    {
-                        foreach (int achievement in AndroidList[index].quizAchievementList)
-                        {
-                            if (achievement.Equals(i))
-                            {
-                                listBoxAchievements.SelectedIndex = i;
-                            }
 
-                        }
-                    }
                     Image nameImage= Image.FromFile(@"..\..\Resources\characters\" + textBoxImage.Text + ".jpeg");
 
                     if (nameImage.Width < pictureBoxCharacters.ClientSize.Width || nameImage.Height < pictureBoxCharacters.ClientSize.Height)
@@ -457,7 +482,6 @@ namespace projecte_eywa
                     {
                         pictureBoxCharacters.SizeMode = PictureBoxSizeMode.CenterImage;
                     }
-
                     pictureBoxCharacters.Image = nameImage;
 
 
@@ -539,9 +563,7 @@ namespace projecte_eywa
                 labelDate.Visible = false;
                 textBoxDate.Visible = false;
                 labelDateRegister.Visible = false;
-                labelAchievements.Visible = false;
                 labelImageCharacter.Visible = false;
-                listBoxAchievements.Visible = false;
 
                 DesktopForm = true;
                 AndroidForm = false;
@@ -568,9 +590,7 @@ namespace projecte_eywa
                 labelDate.Visible = true;
                 textBoxDate.Visible = true;
                 labelDateRegister.Visible = true;
-                labelAchievements.Visible = true;
                 labelImageCharacter.Visible = true;
-                listBoxAchievements.Visible = true;
 
                 AndroidForm = true;
                 DesktopForm = false;
@@ -649,8 +669,21 @@ namespace projecte_eywa
 
             if(ofd.ShowDialog() == DialogResult.OK)
             {
-                FileImage = Image.FromFile(ofd.FileName);
-                pictureBoxCharacters.Image = FileImage;
+                try
+                {
+                    FileImage = Image.FromFile(ofd.FileName);
+                    pictureBoxCharacters.Image = FileImage;
+                    path = ofd.FileName;
+                    textBoxImage.Text = Path.GetFileNameWithoutExtension(path);
+                }
+                catch (OutOfMemoryException ex)
+                {
+                    Image nameImage = Image.FromFile(@"..\..\Resources\characters\error.jpeg");
+                    path = ofd.FileName;
+                    textBoxImage.Text = Path.GetFileNameWithoutExtension(path);
+                    pictureBoxCharacters.Image = nameImage;
+                }
+               
             }
         }
     }

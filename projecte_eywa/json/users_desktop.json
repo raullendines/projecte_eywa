@@ -48,5 +48,10 @@
     "username": "3",
     "password": "$2a$11$0jePP18vohmxUYCXeI6oSugN0kTZgnx/hXkuxDYhBtjQgoD/KEMHq",
     "type": "admin"
+  },
+  {
+    "username": "paco",
+    "password": "$2a$11$pLyY5R1HGK3g9TJH2RVuYe96ANmy7PqKjyAtkI33RTj.dt/mUjjTq",
+    "type": "user"
   }
 ]

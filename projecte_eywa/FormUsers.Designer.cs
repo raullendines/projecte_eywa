@@ -46,11 +46,11 @@
             this.labelActualUserData = new System.Windows.Forms.Label();
             this.labelActualUserIcon = new System.Windows.Forms.Label();
             this.groupBoxUsers = new System.Windows.Forms.GroupBox();
+            this.labelPassword = new System.Windows.Forms.Label();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.labelImageCharacter = new System.Windows.Forms.Label();
             this.pictureBoxCharacters = new System.Windows.Forms.PictureBox();
-            this.labelAchievements = new System.Windows.Forms.Label();
-            this.listBoxAchievements = new System.Windows.Forms.ListBox();
             this.comboBoxType = new System.Windows.Forms.ComboBox();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
@@ -62,7 +62,6 @@
             this.labelImage = new System.Windows.Forms.Label();
             this.labelType = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
-            this.textBoxPassword = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonModify = new System.Windows.Forms.Button();
@@ -205,11 +204,11 @@
             // 
             // groupBoxUsers
             // 
+            this.groupBoxUsers.Controls.Add(this.labelPassword);
+            this.groupBoxUsers.Controls.Add(this.textBoxPassword);
             this.groupBoxUsers.Controls.Add(this.buttonBuscar);
             this.groupBoxUsers.Controls.Add(this.labelImageCharacter);
             this.groupBoxUsers.Controls.Add(this.pictureBoxCharacters);
-            this.groupBoxUsers.Controls.Add(this.labelAchievements);
-            this.groupBoxUsers.Controls.Add(this.listBoxAchievements);
             this.groupBoxUsers.Controls.Add(this.comboBoxType);
             this.groupBoxUsers.Controls.Add(this.buttonCancel);
             this.groupBoxUsers.Controls.Add(this.buttonSave);
@@ -227,10 +226,31 @@
             this.groupBoxUsers.TabIndex = 3;
             this.groupBoxUsers.TabStop = false;
             // 
+            // labelPassword
+            // 
+            this.labelPassword.AutoSize = true;
+            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPassword.Location = new System.Drawing.Point(32, 179);
+            this.labelPassword.Name = "labelPassword";
+            this.labelPassword.Size = new System.Drawing.Size(106, 25);
+            this.labelPassword.TabIndex = 28;
+            this.labelPassword.Text = "Password";
+            this.labelPassword.Visible = false;
+            // 
+            // textBoxPassword
+            // 
+            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Location = new System.Drawing.Point(237, 176);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.ReadOnly = true;
+            this.textBoxPassword.Size = new System.Drawing.Size(498, 30);
+            this.textBoxPassword.TabIndex = 27;
+            this.textBoxPassword.Visible = false;
+            // 
             // buttonBuscar
             // 
             this.buttonBuscar.BackColor = System.Drawing.Color.White;
-            this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBuscar.Location = new System.Drawing.Point(641, 128);
             this.buttonBuscar.Name = "buttonBuscar";
             this.buttonBuscar.Size = new System.Drawing.Size(94, 30);
@@ -244,7 +264,7 @@
             // 
             this.labelImageCharacter.AutoSize = true;
             this.labelImageCharacter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelImageCharacter.Location = new System.Drawing.Point(32, 383);
+            this.labelImageCharacter.Location = new System.Drawing.Point(32, 179);
             this.labelImageCharacter.Name = "labelImageCharacter";
             this.labelImageCharacter.Size = new System.Drawing.Size(167, 25);
             this.labelImageCharacter.TabIndex = 25;
@@ -253,58 +273,11 @@
             // 
             // pictureBoxCharacters
             // 
-            this.pictureBoxCharacters.Location = new System.Drawing.Point(352, 383);
+            this.pictureBoxCharacters.Location = new System.Drawing.Point(237, 178);
             this.pictureBoxCharacters.Name = "pictureBoxCharacters";
-            this.pictureBoxCharacters.Size = new System.Drawing.Size(218, 199);
+            this.pictureBoxCharacters.Size = new System.Drawing.Size(494, 351);
             this.pictureBoxCharacters.TabIndex = 24;
             this.pictureBoxCharacters.TabStop = false;
-            // 
-            // labelAchievements
-            // 
-            this.labelAchievements.AutoSize = true;
-            this.labelAchievements.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAchievements.Location = new System.Drawing.Point(32, 175);
-            this.labelAchievements.Name = "labelAchievements";
-            this.labelAchievements.Size = new System.Drawing.Size(148, 25);
-            this.labelAchievements.TabIndex = 16;
-            this.labelAchievements.Text = "Achievements";
-            this.labelAchievements.Visible = false;
-            // 
-            // listBoxAchievements
-            // 
-            this.listBoxAchievements.Enabled = false;
-            this.listBoxAchievements.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBoxAchievements.FormattingEnabled = true;
-            this.listBoxAchievements.ItemHeight = 25;
-            this.listBoxAchievements.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"});
-            this.listBoxAchievements.Location = new System.Drawing.Point(237, 175);
-            this.listBoxAchievements.Margin = new System.Windows.Forms.Padding(2);
-            this.listBoxAchievements.Name = "listBoxAchievements";
-            this.listBoxAchievements.ScrollAlwaysVisible = true;
-            this.listBoxAchievements.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listBoxAchievements.Size = new System.Drawing.Size(498, 179);
-            this.listBoxAchievements.TabIndex = 15;
-            this.listBoxAchievements.Visible = false;
             // 
             // comboBoxType
             // 
@@ -433,16 +406,6 @@
             this.labelUsername.Size = new System.Drawing.Size(110, 25);
             this.labelUsername.TabIndex = 0;
             this.labelUsername.Text = "Username";
-            // 
-            // textBoxPassword
-            // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassword.Location = new System.Drawing.Point(1869, 828);
-            this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.ReadOnly = true;
-            this.textBoxPassword.Size = new System.Drawing.Size(12, 30);
-            this.textBoxPassword.TabIndex = 7;
-            this.textBoxPassword.Visible = false;
             // 
             // imageList1
             // 
@@ -637,7 +600,6 @@
             this.Controls.Add(this.buttonCharactersIcon);
             this.Controls.Add(this.buttonQuestionsIcon);
             this.Controls.Add(this.buttonAndroid);
-            this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.buttonDesktop);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonModify);
@@ -676,7 +638,6 @@
         private System.Windows.Forms.GroupBox groupBoxUsers;
         private System.Windows.Forms.TextBox textBoxDate;
         private System.Windows.Forms.TextBox textBoxImage;
-        private System.Windows.Forms.TextBox textBoxPassword;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.Label labelDateRegister;
         private System.Windows.Forms.Label labelDate;
@@ -698,9 +659,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBoxType;
-        private System.Windows.Forms.Label labelAchievements;
-        private System.Windows.Forms.ListBox listBoxAchievements;
         private System.Windows.Forms.Label labelImageCharacter;
         private System.Windows.Forms.PictureBox pictureBoxCharacters;
         private System.Windows.Forms.Button buttonBuscar;
@@ -710,5 +668,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn type;
         private System.Windows.Forms.DataGridViewTextBoxColumn image;
+        private System.Windows.Forms.ComboBox comboBoxType;
+        private System.Windows.Forms.Label labelPassword;
+        private System.Windows.Forms.TextBox textBoxPassword;
     }
 }

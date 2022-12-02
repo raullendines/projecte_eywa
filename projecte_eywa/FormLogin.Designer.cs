@@ -45,39 +45,39 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Bold);
+            this.labelPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.labelPassword.Location = new System.Drawing.Point(631, 610);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(109, 26);
+            this.labelPassword.Size = new System.Drawing.Size(100, 24);
             this.labelPassword.TabIndex = 1;
             this.labelPassword.Text = "Password";
             // 
             // labelUser
             // 
             this.labelUser.AutoSize = true;
-            this.labelUser.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Bold);
+            this.labelUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.labelUser.Location = new System.Drawing.Point(631, 548);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(114, 26);
+            this.labelUser.Size = new System.Drawing.Size(105, 24);
             this.labelUser.TabIndex = 0;
             this.labelUser.Text = "Username";
             // 
             // textBoxUser
             // 
-            this.textBoxUser.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUser.Location = new System.Drawing.Point(836, 545);
             this.textBoxUser.Name = "textBoxUser";
-            this.textBoxUser.Size = new System.Drawing.Size(441, 33);
+            this.textBoxUser.Size = new System.Drawing.Size(441, 31);
             this.textBoxUser.TabIndex = 2;
             this.textBoxUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxUser_KeyPress);
             // 
             // textBoxPassword
             // 
-            this.textBoxPassword.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(836, 610);
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.PasswordChar = '*';
-            this.textBoxPassword.Size = new System.Drawing.Size(441, 33);
+            this.textBoxPassword.Size = new System.Drawing.Size(441, 31);
             this.textBoxPassword.TabIndex = 3;
             this.textBoxPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxPassword_KeyPress);
             // 
@@ -86,7 +86,7 @@
             this.buttonLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonLogin.FlatAppearance.BorderSize = 0;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLogin.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.Location = new System.Drawing.Point(1130, 667);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(147, 34);
@@ -98,21 +98,21 @@
             // labelConfirmPassword
             // 
             this.labelConfirmPassword.AutoSize = true;
-            this.labelConfirmPassword.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Bold);
+            this.labelConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.labelConfirmPassword.Location = new System.Drawing.Point(631, 672);
             this.labelConfirmPassword.Name = "labelConfirmPassword";
-            this.labelConfirmPassword.Size = new System.Drawing.Size(194, 26);
+            this.labelConfirmPassword.Size = new System.Drawing.Size(178, 24);
             this.labelConfirmPassword.TabIndex = 8;
             this.labelConfirmPassword.Text = "Confirm Password";
             this.labelConfirmPassword.Visible = false;
             // 
             // textBoxConfirmPassword
             // 
-            this.textBoxConfirmPassword.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxConfirmPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxConfirmPassword.Location = new System.Drawing.Point(836, 668);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.PasswordChar = '*';
-            this.textBoxConfirmPassword.Size = new System.Drawing.Size(441, 33);
+            this.textBoxConfirmPassword.Size = new System.Drawing.Size(441, 31);
             this.textBoxConfirmPassword.TabIndex = 4;
             this.textBoxConfirmPassword.Visible = false;
             this.textBoxConfirmPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxConfirmPassword_KeyPress);
@@ -142,21 +142,21 @@
             // labelChangeFormsText
             // 
             this.labelChangeFormsText.AutoSize = true;
-            this.labelChangeFormsText.Font = new System.Drawing.Font("Montserrat", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChangeFormsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChangeFormsText.Location = new System.Drawing.Point(833, 674);
             this.labelChangeFormsText.Name = "labelChangeFormsText";
-            this.labelChangeFormsText.Size = new System.Drawing.Size(95, 21);
+            this.labelChangeFormsText.Size = new System.Drawing.Size(93, 18);
             this.labelChangeFormsText.TabIndex = 11;
             this.labelChangeFormsText.Text = "New here? ";
             // 
             // labelChangeForms
             // 
             this.labelChangeForms.AutoSize = true;
-            this.labelChangeForms.Font = new System.Drawing.Font("Montserrat", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChangeForms.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelChangeForms.ForeColor = System.Drawing.Color.Blue;
             this.labelChangeForms.Location = new System.Drawing.Point(922, 674);
             this.labelChangeForms.Name = "labelChangeForms";
-            this.labelChangeForms.Size = new System.Drawing.Size(152, 21);
+            this.labelChangeForms.Size = new System.Drawing.Size(146, 18);
             this.labelChangeForms.TabIndex = 12;
             this.labelChangeForms.Text = "Create an account";
             this.labelChangeForms.Click += new System.EventHandler(this.labelChangeForms_Click);
