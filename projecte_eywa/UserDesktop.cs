@@ -22,5 +22,10 @@ namespace projecte_eywa
 
         }
 
+        public bool Equals (UserDesktop otherUser)
+        {
+            return this.username == otherUser.username && this.password == otherUser.password && this.type == otherUser.type;
+        }
+
     }
 }

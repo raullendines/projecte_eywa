@@ -524,12 +524,20 @@ namespace projecte_eywa
         {
             if (DesktopForm)
             { 
-                DesktopList.RemoveAt(dataGridViewUsers.CurrentCell.RowIndex);
-                userDesktopBindingSource.DataSource = DataUtilities.ToDataTable(DesktopList);
+                if (user.Equals(DesktopList[dataGridViewUsers.CurrentCell.RowIndex]))
+                {
+                    MessageBox.Show("You can't delete your own account like this");
+                    
+                } else
+                {
+                    DesktopList.RemoveAt(dataGridViewUsers.CurrentCell.RowIndex);
+                    userDesktopBindingSource.DataSource = DataUtilities.ToDataTable(DesktopList);
 
-                dataGridViewUsers.DataSource = userDesktopBindingSource;
-                clearTextBox();
-                changes = true;
+                    dataGridViewUsers.DataSource = userDesktopBindingSource;
+                    clearTextBox();
+                    changes = true;
+                }
+                
             }
             else
             {

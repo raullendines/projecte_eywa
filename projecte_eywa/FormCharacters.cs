@@ -28,11 +28,14 @@ namespace projecte_eywa
         bool isFiltered = false;
         bool changes = false;
         UserDesktop user;
+        String lang = "en";
         public FormCharacters(UserDesktop user)
         {
             InitializeComponent();
             this.user = user;
             getData();
+            textBoxDescriptionCharacterEsp.Visible = false;
+            textBoxDescriptionCharacterEng.Visible = true;
 
         }
 
@@ -59,6 +62,8 @@ namespace projecte_eywa
         {
 
             add = true;
+            buttonImage.Visible = true;
+            pictureBoxCharacters.Image = null;
 
             visibleButtons();
 
@@ -174,8 +179,18 @@ namespace projecte_eywa
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
+
+            if (add)
+            {
+                pictureBoxCharacters.Image = null;
+                textBoxImgUrlCharacter.Text = "";
+                nullTextBoxes();
+            }
+
             modify = false;
             add = false;
+
+            buttonImage.Visible = false;
 
             invisibleButtons();
 
@@ -194,6 +209,7 @@ namespace projecte_eywa
         {
             if (dataGridViewCharacters.CurrentCell.RowIndex != -1)
             {
+                buttonImage.Visible = true;
                 modify = true;
 
                 visibleButtons();
@@ -229,6 +245,9 @@ namespace projecte_eywa
         }
         private void buttonSave_Click(object sender, EventArgs e)
         {
+            //Find lang
+
+
             //Text to add
             String name, film, category = "", description, imgUrl;
             int correctNum, difficulty = 1;
@@ -237,7 +256,22 @@ namespace projecte_eywa
             film = textBoxFilmCharacter.Text;
             category = comboBoxCategoryCharacter.Text;
             correctNum = (int)numericUpDownCorrectNum.Value;
-            description = textBoxDescriptionCharacterEsp.Text;
+            switch (lang)
+            {
+                case "ca": 
+                    description = textBoxDescriptionCharacterCat.Text;
+                    break;
+                case "es":
+                    description = textBoxDescriptionCharacterEsp.Text;
+                    break;
+                case "en":
+                    description = textBoxDescriptionCharacterEng.Text;
+                    break;
+                default:
+                    description = textBoxDescriptionCharacterEsp.Text;
+                    break;
+            }
+            
             imgUrl = textBoxImgUrlCharacter.Text;
 
             String difficultyCharacter = comboBoxDifficulty.Text;
@@ -266,19 +300,64 @@ namespace projecte_eywa
                 {
                     if (name != null && film != null && category != null && description != null && imgUrl != null)
                     {
-                       
 
-                        characters.Add(new QuizCharacter
+                        switch (lang)
                         {
-                            name = name,
-                            film = film,
-                            category = category,
-                            difficulty = difficulty,
-                            num_correct = correctNum,
-                            description_esp = description,
-                            image = imgUrl
-                        }
+                            case "ca":
+                                characters.Add(new QuizCharacter
+                                {
+                                    name = name,
+                                    film = film,
+                                    category = category,
+                                    difficulty = difficulty,
+                                    num_correct = correctNum,
+                                    description_cat = description,
+                                    image = imgUrl
+                                }
                         );
+                                break;
+                            case "es":
+                                characters.Add(new QuizCharacter
+                                {
+                                    name = name,
+                                    film = film,
+                                    category = category,
+                                    difficulty = difficulty,
+                                    num_correct = correctNum,
+                                    description_esp = description,
+                                    image = imgUrl
+                                }
+                        );
+                                break;
+                            case "en":
+                                characters.Add(new QuizCharacter
+                                {
+                                    name = name,
+                                    film = film,
+                                    category = category,
+                                    difficulty = difficulty,
+                                    num_correct = correctNum,
+                                    description_eng = description,
+                                    image = imgUrl
+                                }
+                        );
+                                break;
+                            default:
+                                characters.Add(new QuizCharacter
+                                {
+                                    name = name,
+                                    film = film,
+                                    category = category,
+                                    difficulty = difficulty,
+                                    num_correct = correctNum,
+                                    description_esp = description,
+                                    image = imgUrl
+                                }
+                        );
+                                break;
+                        }
+
+
                         if (isFiltered)
                         {
                             int index = comboBoxFilter.Items.IndexOf(comboBoxFilter.SelectedItem);
@@ -366,7 +445,9 @@ namespace projecte_eywa
                 index = dataGridViewCharacters.CurrentCell.RowIndex;
                 characters[index].name = textBoxNameCharacter.Text;
                 characters[index].difficulty = difficulty;
+                characters[index].description_cat = textBoxDescriptionCharacterCat.Text;
                 characters[index].description_esp = textBoxDescriptionCharacterEsp.Text;
+                characters[index].description_eng = textBoxDescriptionCharacterEng.Text;
                 characters[index].film = textBoxFilmCharacter.Text;
                 characters[index].category = comboBoxCategoryCharacter.Text;
                 characters[index].image = textBoxImgUrlCharacter.Text;
@@ -390,7 +471,7 @@ namespace projecte_eywa
 
             enabledDataGrid();
 
-            
+            buttonImage.Visible = false;
 
             //Valores restablecidos
             add = false;
@@ -435,7 +516,16 @@ namespace projecte_eywa
                 textBoxImgUrlCharacter.Text = characters[index].image;
                 numericUpDownCorrectNum.Value = characters[index].num_correct;
 
-                pictureBoxCharacters.Image = Image.FromFile(@"..\..\Resources\characters\" + textBoxImgUrlCharacter.Text + ".jpeg");
+                try
+                {
+                    pictureBoxCharacters.Image = Image.FromFile(@"..\..\Resources\characters\" + textBoxImgUrlCharacter.Text + ".jpeg");
+                    
+                } catch (OutOfMemoryException ex)
+                {
+                    MessageBox.Show("This image can't be opened.");
+                    pictureBoxCharacters.Image = Image.FromFile(@"..\..\Resources\characters\" + "error" + ".jpeg");
+                }
+
                 pictureBoxCharacters.SizeMode = PictureBoxSizeMode.CenterImage;
 
             }
@@ -443,23 +533,136 @@ namespace projecte_eywa
 
         private void buttonCatalan_Click(object sender, EventArgs e)
         {
-            textBoxDescriptionCharacterEsp.Visible = false;
-            textBoxDescriptionCharacterEng.Visible = false;
-            textBoxDescriptionCharacterCat.Visible = true;
+            if (!lang.Equals("ca"))
+            {
+                textBoxDescriptionCharacterEsp.Visible = false;
+                textBoxDescriptionCharacterEng.Visible = false;
+                textBoxDescriptionCharacterCat.Visible = true;
+                changeLangCA();
+                lang = "ca";
+            }
+            
         }
 
         private void buttonSpanish_Click(object sender, EventArgs e)
         {
-            textBoxDescriptionCharacterEsp.Visible = true;
-            textBoxDescriptionCharacterEng.Visible = false;
-            textBoxDescriptionCharacterCat.Visible = false;
+            if (!lang.Equals("es"))
+            {
+                textBoxDescriptionCharacterEsp.Visible = true;
+                textBoxDescriptionCharacterEng.Visible = false;
+                textBoxDescriptionCharacterCat.Visible = false;
+                changeLangES();
+                lang = "es";
+            }
+            
         }
 
         private void buttonEnglish_Click(object sender, EventArgs e)
         {
-            textBoxDescriptionCharacterEsp.Visible = false;
-            textBoxDescriptionCharacterEng.Visible = true;
-            textBoxDescriptionCharacterCat.Visible = false;
+            if (!lang.Equals("en"))
+            {
+                textBoxDescriptionCharacterEsp.Visible = false;
+                textBoxDescriptionCharacterEng.Visible = true;
+                textBoxDescriptionCharacterCat.Visible = false;
+                changeLangEN();
+                lang = "en";
+            }
+            
+        }
+
+        private void changeLangCA()
+        {
+            //LABELS
+            labelNameCharacter.Text = "Nom";
+            labelFilmCharacter.Text = "Pel·lícula";
+            labelCategoryCharacter.Text = "Categoria";
+            labelDifficultyCharacter.Text = "Dificultat";
+            labelNumCorrecto.Text = "Respostes correctes";
+            labelImgUrl.Text = "Imatge URL";
+            labelDescriptionCharacter.Text = "Descripció";
+            // Change ADD, MODIFY, DELETE buttons
+            buttonAdd.Text = "Afegir";
+            buttonModify.Text = "Modificar";
+            buttonDelete.Text = "Eliminar";
+            // Change OK, CANCEL buttons
+            buttonSave.Text = "Guardar";
+            buttonCancel.Text = "Cancelar";
+            // Category Filter
+            comboBoxFilter.Items.Clear();
+            comboBoxFilter.Items.Add("Ciència Ficció");
+            comboBoxFilter.Items.Add("Acció");
+            comboBoxFilter.Items.Add("Comedia");
+            comboBoxFilter.Items.Add("Terror");
+            comboBoxFilter.Items.Add("Animació");
+            comboBoxFilter.Items.Add("Drama");
+            // Change FilterComboBox language
+            labelFilter.Text = "Filtre";
+            buttonApplyFilters.Text = "Aplicar filtre";
+            buttonClearFilters.Text = "Netejar filtre";
+
+
+        }
+
+        private void changeLangES()
+        {
+            //LABELS
+            labelNameCharacter.Text = "Nombre";
+            labelFilmCharacter.Text = "Película";
+            labelCategoryCharacter.Text = "Categoría";
+            labelDifficultyCharacter.Text = "Dificultad";
+            labelNumCorrecto.Text = "Respuestas correctas";
+            labelImgUrl.Text = "Imagen URL";
+            labelDescriptionCharacter.Text = "Descripción";
+            // Change ADD, MODIFY, DELETE buttons
+            buttonAdd.Text = "Añadir";
+            buttonModify.Text = "Modificar";
+            buttonDelete.Text = "Eliminar";
+            // Change OK, CANCEL buttons
+            buttonSave.Text = "Guardar";
+            buttonCancel.Text = "Cancelar";
+            // Category Filter
+            comboBoxFilter.Items.Clear();
+            comboBoxFilter.Items.Add("Ciencia Ficción");
+            comboBoxFilter.Items.Add("Acción");
+            comboBoxFilter.Items.Add("Comedia");
+            comboBoxFilter.Items.Add("Terror");
+            comboBoxFilter.Items.Add("Animación");
+            comboBoxFilter.Items.Add("Drama");
+            // Change FilterComboBox language
+            labelFilter.Text = "Filtro";
+            buttonApplyFilters.Text = "Aplicar filtro";
+            buttonClearFilters.Text = "Limpiar filtro";
+        }
+
+        private void changeLangEN()
+        {
+            //LABELS
+            labelNameCharacter.Text = "Name";
+            labelFilmCharacter.Text = "Film";
+            labelCategoryCharacter.Text = "Category";
+            labelDifficultyCharacter.Text = "Difficulty";
+            labelNumCorrecto.Text = "Correct Number";
+            labelImgUrl.Text = "Image URL";
+            labelDescriptionCharacter.Text = "Description";
+            // Change ADD, MODIFY, DELETE buttons
+            buttonAdd.Text = "Add";
+            buttonModify.Text = "Modify";
+            buttonDelete.Text = "Delete";
+            // Change OK, CANCEL buttons
+            buttonSave.Text = "Save";
+            buttonCancel.Text = "Cancel";
+            // Category Filter
+            comboBoxFilter.Items.Clear();
+            comboBoxFilter.Items.Add("Science Fiction");
+            comboBoxFilter.Items.Add("Action");
+            comboBoxFilter.Items.Add("Comedy");
+            comboBoxFilter.Items.Add("Horror");
+            comboBoxFilter.Items.Add("Animation");
+            comboBoxFilter.Items.Add("Drama");
+            // Change FilterComboBox language
+            labelFilter.Text = "Filter";
+            buttonApplyFilters.Text = "Apply filter";
+            buttonClearFilters.Text = "Clear filter";
         }
 
         private void buttonApplyFilters_Click(object sender, EventArgs e)
@@ -643,6 +846,31 @@ namespace projecte_eywa
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "JPEG(*JPEG)|*.jpeg";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    Image FileImage = Image.FromFile(ofd.FileName);
+                    pictureBoxCharacters.Image = FileImage;
+                    String path = ofd.FileName;
+                    textBoxImgUrlCharacter.Text = Path.GetFileNameWithoutExtension(path);
+                }
+                catch (OutOfMemoryException ex)
+                {
+                    Image nameImage = Image.FromFile(@"..\..\Resources\characters\error.jpeg");
+                    String path = ofd.FileName;
+                    textBoxImgUrlCharacter.Text = Path.GetFileNameWithoutExtension(path);
+                    pictureBoxCharacters.Image = nameImage;
+                }
+
+            }
         }
     }
 }
