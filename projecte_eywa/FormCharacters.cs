@@ -523,7 +523,7 @@ namespace projecte_eywa
                 } catch (OutOfMemoryException ex)
                 {
                     MessageBox.Show("This image can't be opened.");
-                    pictureBoxCharacters.Image = Image.FromFile(@"..\..\Resources\characters\" + "error" + ".jpeg");
+                    pictureBoxCharacters.Image = Image.FromFile(@"..\..\Resources\Exceptions\" + "error" + ".jpeg");
                 }
 
                 pictureBoxCharacters.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -864,7 +864,7 @@ namespace projecte_eywa
                 }
                 catch (OutOfMemoryException ex)
                 {
-                    Image nameImage = Image.FromFile(@"..\..\Resources\characters\error.jpeg");
+                    Image nameImage = Image.FromFile(@"..\..\Resources\Exceptions\error.jpeg");
                     String path = ofd.FileName;
                     textBoxImgUrlCharacter.Text = Path.GetFileNameWithoutExtension(path);
                     pictureBoxCharacters.Image = nameImage;

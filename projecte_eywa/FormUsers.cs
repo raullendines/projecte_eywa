@@ -686,7 +686,7 @@ namespace projecte_eywa
                 }
                 catch (OutOfMemoryException ex)
                 {
-                    Image nameImage = Image.FromFile(@"..\..\Resources\characters\error.jpeg");
+                    Image nameImage = Image.FromFile(@"..\..\Resources\Exception\error.jpeg");
                     path = ofd.FileName;
                     textBoxImage.Text = Path.GetFileNameWithoutExtension(path);
                     pictureBoxCharacters.Image = nameImage;
