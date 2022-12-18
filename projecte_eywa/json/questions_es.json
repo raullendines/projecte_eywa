@@ -3106,5 +3106,245 @@
       "Sir Alec Guinness",
       "Kurt Vonnegut"
     ]
+  },
+  {
+    "id": 260,
+    "question": "¿Cómo se llamaba el mayordomo de Batman?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Alfred",
+    "incorrect_answers": [
+      "Albert",
+      "Robert",
+      "Alfie"
+    ]
+  },
+  {
+    "id": 261,
+    "question": "¿Cómo lograron que los dinosaurios de Jurassic Park volvieran a la vida?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Mediante ADN en el interior de un mosquito",
+    "incorrect_answers": [
+      "Por un huevo encontrado",
+      "Residuos petrificados",
+      "Mediante mutaciones"
+    ]
+  },
+  {
+    "id": 262,
+    "question": "¿Cuál es el componente principal que necesitaban en Volver al Futuro para viajar en el tiempo?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Condesador de flujos",
+    "incorrect_answers": [
+      "Baterías ácidas ",
+      "Condesador de bujías",
+      "Transistores"
+    ]
+  },
+  {
+    "id": 263,
+    "question": "¿Qué actriz participó en la película 'El Hombre sin Sombra (Hollow man)'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Elisabeth Sue",
+    "incorrect_answers": [
+      "Angelina Jolie",
+      "Kirsten Dunst",
+      "Bridget Fonda"
+    ]
+  },
+  {
+    "id": 264,
+    "question": "¿Quien es la actor principal de la película '12 Monos (Twelve monkeys)'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Bruce Willis",
+    "incorrect_answers": [
+      "Sean Penn",
+      "Kevin Costner",
+      "Nicolas Cage"
+    ]
+  },
+  {
+    "id": 265,
+    "question": "¿Qué actriz participó en la película 'El Quinto Elemento (The fifth element)'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Mila Jovovich",
+    "incorrect_answers": [
+      "Franka Potente",
+      "Elisabeth Sue",
+      "Angelina Jolie"
+    ]
+  },
+  {
+    "id": 266,
+    "question": "¿Cuál fue el nombre de la tercera película de Indiana Jones?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Indiana Jones y la última cruzada",
+    "incorrect_answers": [
+      "Indiana Jones y el reino de la calavera de cristal​",
+      "Indiana Jones y los cazadores del arca perdida",
+      "Indiana Jones y el templo de la perdición"
+    ]
+  },
+  {
+    "id": 267,
+    "question": "¿A quién se encuentran Ron, Hermione y Harry en el bosque en 'Las reliquias de la muerte'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Fenrir Greyback",
+    "incorrect_answers": [
+      "Lucius Malfoy​",
+      "Voldemort",
+      "Dobby"
+    ]
+  },
+  {
+    "id": 268,
+    "question": "¿Quién fue el comentarista de quidditch en los primeros años de Harry Potter?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Lee Jordan",
+    "incorrect_answers": [
+      "Dean Thomas",
+      "Angela Johnson",
+      "Ron Weasley"
+    ]
+  },
+  {
+    "id": 269,
+    "question": "En el señor de los anillos, ¿Cuál de estos países NO cruzan Frodo y Sam durante la saga?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "El Bosque de Fangorn",
+    "incorrect_answers": [
+      "Emyn Muil",
+      "La Ciénaga de los muertos",
+      "Ithilien"
+    ]
+  },
+  {
+    "id": 270,
+    "question": "¿Cómo se llamaba el mayordomo de Batman?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Alfred",
+    "incorrect_answers": [
+      "Albert",
+      "Robert",
+      "Alfie"
+    ]
+  },
+  {
+    "id": 271,
+    "question": "¿Cómo lograron que los dinosaurios de Jurassic Park volvieran a la vida?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Mediante ADN en el interior de un mosquito",
+    "incorrect_answers": [
+      "Por un huevo encontrado",
+      "Residuos petrificados",
+      "Mediante mutaciones"
+    ]
+  },
+  {
+    "id": 272,
+    "question": "¿Cuál es el componente principal que necesitaban en Volver al Futuro para viajar en el tiempo?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Condesador de flujos",
+    "incorrect_answers": [
+      "Baterías ácidas ",
+      "Condesador de bujías",
+      "Transistores"
+    ]
+  },
+  {
+    "id": 273,
+    "question": "¿Qué actriz participó en la película 'El Hombre sin Sombra (Hollow man)'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Elisabeth Sue",
+    "incorrect_answers": [
+      "Angelina Jolie",
+      "Kirsten Dunst",
+      "Bridget Fonda"
+    ]
+  },
+  {
+    "id": 274,
+    "question": "¿Quien es la actor principal de la película '12 Monos (Twelve monkeys)'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Bruce Willis",
+    "incorrect_answers": [
+      "Sean Penn",
+      "Kevin Costner",
+      "Nicolas Cage"
+    ]
+  },
+  {
+    "id": 275,
+    "question": "¿Qué actriz participó en la película 'El Quinto Elemento (The fifth element)'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Mila Jovovich",
+    "incorrect_answers": [
+      "Franka Potente",
+      "Elisabeth Sue",
+      "Angelina Jolie"
+    ]
+  },
+  {
+    "id": 276,
+    "question": "¿Cuál fue el nombre de la tercera película de Indiana Jones?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Indiana Jones y la última cruzada",
+    "incorrect_answers": [
+      "Indiana Jones y el reino de la calavera de cristal​",
+      "Indiana Jones y los cazadores del arca perdida",
+      "Indiana Jones y el templo de la perdición"
+    ]
+  },
+  {
+    "id": 277,
+    "question": "¿A quién se encuentran Ron, Hermione y Harry en el bosque en 'Las reliquias de la muerte'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Fenrir Greyback",
+    "incorrect_answers": [
+      "Lucius Malfoy​",
+      "Voldemort",
+      "Dobby"
+    ]
+  },
+  {
+    "id": 278,
+    "question": "¿Quién fue el comentarista de quidditch en los primeros años de Harry Potter?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Lee Jordan",
+    "incorrect_answers": [
+      "Dean Thomas",
+      "Angela Johnson",
+      "Ron Weasley"
+    ]
+  },
+  {
+    "id": 279,
+    "question": "En el señor de los anillos, ¿Cuál de estos países NO cruzan Frodo y Sam durante la saga?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "El Bosque de Fangorn",
+    "incorrect_answers": [
+      "Emyn Muil",
+      "La Ciénaga de los muertos",
+      "Ithilien"
+    ]
   }
 ]

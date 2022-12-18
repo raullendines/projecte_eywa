@@ -3106,5 +3106,245 @@
       "Sir Alec Guinness",
       "Kurt Vonnegut"
     ]
+  },
+  {
+    "id": 260,
+    "question": "Com es deia el majordom de Batman?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Alfred",
+    "incorrect_answers": [
+      "Albert",
+      "Robert",
+      "Alfie"
+    ]
+  },
+  {
+    "id": 261,
+    "question": "Com van aconseguir que els dinosaures de Parc Juràssic tornessin a la vida?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Mitjançant l'ADN a l'interior d'un mosquit",
+    "incorrect_answers": [
+      "By finding an egg",
+      "Petrified remains",
+      "By mutations"
+    ]
+  },
+  {
+    "id": 262,
+    "question": "En el senyor dels anells, quin d'aquests països NO creuen Frodo i Sam durant la saga?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "El Bosc de Fangorn",
+    "incorrect_answers": [
+      "Emyn Muil",
+      "La Ciència dels morts",
+      "Ithilien"
+    ]
+  },
+  {
+    "id": 263,
+    "question": "Quin és el component principal que necessitaven a Volver al Futuro per viatjar en el temps?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Condensador de fluxos",
+    "incorrect_answers": [
+      "Bateries àcides",
+      "Condensador de bujies",
+      "Transistors"
+    ]
+  },
+  {
+    "id": 264,
+    "question": "Quina actriu va participar en la pel·lícula 'L'Home sense Ombra (Hollow man)'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Elisabeth Sue",
+    "incorrect_answers": [
+      "Angelina Jolie",
+      "Kirsten Dunst",
+      "Bridget Fonda"
+    ]
+  },
+  {
+    "id": 265,
+    "question": "Qui és l'actor principal de la pel·lícula '12 Monos (Twelve monkeys)'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Bruce Willis",
+    "incorrect_answers": [
+      "Sean Penn",
+      "Kevin Costner",
+      "Nicolas Cage"
+    ]
+  },
+  {
+    "id": 266,
+    "question": "Quina actriu va participar en la pel·lícula 'El Cinquè Element (The fifth element)'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Mila Jovovich",
+    "incorrect_answers": [
+      "Franka Potente",
+      "Elisabeth Sue",
+      "Angelina Jolie"
+    ]
+  },
+  {
+    "id": 267,
+    "question": "Quin va ser el nom de la tercera pel·lícula d'Indiana Jones?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Indiana Jones i l'última croada",
+    "incorrect_answers": [
+      "Indiana Jones i el regne de la calavera de cristall​",
+      "Indiana Jones i els cazadors de l'arca perduda",
+      "Indiana Jones i el temple de la perdició"
+    ]
+  },
+  {
+    "id": 268,
+    "question": "A qui es troben Ron, Hermione i Harry al bosc a 'Les relíquies de la mort'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Fenrir Greyback",
+    "incorrect_answers": [
+      "Lucius Malfoy​",
+      "Voldemort",
+      "Dobby"
+    ]
+  },
+  {
+    "id": 269,
+    "question": "Qui va ser el comentarista de quidditch als primers anys de Harry Potter?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Lee Jordan",
+    "incorrect_answers": [
+      "Dean Thomas",
+      "Angela Johnson",
+      "Ron Weasley"
+    ]
+  },
+  {
+    "id": 270,
+    "question": "Com es deia el majordom de Batman?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Alfred",
+    "incorrect_answers": [
+      "Albert",
+      "Robert",
+      "Alfie"
+    ]
+  },
+  {
+    "id": 271,
+    "question": "Com van aconseguir que els dinosaures de Parc Juràssic tornessin a la vida?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Mitjançant l'ADN a l'interior d'un mosquit",
+    "incorrect_answers": [
+      "By finding an egg",
+      "Petrified remains",
+      "By mutations"
+    ]
+  },
+  {
+    "id": 272,
+    "question": "En el senyor dels anells, quin d'aquests països NO creuen Frodo i Sam durant la saga?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "El Bosc de Fangorn",
+    "incorrect_answers": [
+      "Emyn Muil",
+      "La Ciència dels morts",
+      "Ithilien"
+    ]
+  },
+  {
+    "id": 273,
+    "question": "Quin és el component principal que necessitaven a Volver al Futuro per viatjar en el temps?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Condensador de fluxos",
+    "incorrect_answers": [
+      "Bateries àcides",
+      "Condensador de bujies",
+      "Transistors"
+    ]
+  },
+  {
+    "id": 274,
+    "question": "Quina actriu va participar en la pel·lícula 'L'Home sense Ombra (Hollow man)'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Elisabeth Sue",
+    "incorrect_answers": [
+      "Angelina Jolie",
+      "Kirsten Dunst",
+      "Bridget Fonda"
+    ]
+  },
+  {
+    "id": 275,
+    "question": "Qui és l'actor principal de la pel·lícula '12 Monos (Twelve monkeys)'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Bruce Willis",
+    "incorrect_answers": [
+      "Sean Penn",
+      "Kevin Costner",
+      "Nicolas Cage"
+    ]
+  },
+  {
+    "id": 276,
+    "question": "Quina actriu va participar en la pel·lícula 'El Cinquè Element (The fifth element)'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Mila Jovovich",
+    "incorrect_answers": [
+      "Franka Potente",
+      "Elisabeth Sue",
+      "Angelina Jolie"
+    ]
+  },
+  {
+    "id": 277,
+    "question": "Quin va ser el nom de la tercera pel·lícula d'Indiana Jones?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Indiana Jones i l'última croada",
+    "incorrect_answers": [
+      "Indiana Jones i el regne de la calavera de cristall​",
+      "Indiana Jones i els cazadors de l'arca perduda",
+      "Indiana Jones i el temple de la perdició"
+    ]
+  },
+  {
+    "id": 278,
+    "question": "A qui es troben Ron, Hermione i Harry al bosc a 'Les relíquies de la mort'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Fenrir Greyback",
+    "incorrect_answers": [
+      "Lucius Malfoy​",
+      "Voldemort",
+      "Dobby"
+    ]
+  },
+  {
+    "id": 279,
+    "question": "Qui va ser el comentarista de quidditch als primers anys de Harry Potter?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Lee Jordan",
+    "incorrect_answers": [
+      "Dean Thomas",
+      "Angela Johnson",
+      "Ron Weasley"
+    ]
   }
 ]

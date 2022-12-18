@@ -3106,5 +3106,245 @@
       "Sir Alec Guinness",
       "Kurt Vonnegut"
     ]
+  },
+  {
+    "id": 260,
+    "question": "What was the name of Batman's butler?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Alfred",
+    "incorrect_answers": [
+      "Albert",
+      "Robert",
+      "Alfie"
+    ]
+  },
+  {
+    "id": 261,
+    "question": "How did they manage to bring the dinosaurs in Jurassic Park back to life?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "By using DNA inside a mosquito",
+    "incorrect_answers": [
+      "By finding an egg",
+      "Petrified remains",
+      "By mutations"
+    ]
+  },
+  {
+    "id": 262,
+    "question": "What is the main component needed in Back to the Future to travel through time?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Mediante ADN en el interior de un mosquito",
+    "incorrect_answers": [
+      "Por un huevo encontrado",
+      "Residuos petrificados",
+      "Mediante mutaciones"
+    ]
+  },
+  {
+    "id": 263,
+    "question": "In The Lord of the Rings, which of these countries do Frodo and Sam NOT cross during the saga?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Fangorn Forest",
+    "incorrect_answers": [
+      "Emyn Muil",
+      "The Dead Marshes",
+      "Ithilien"
+    ]
+  },
+  {
+    "id": 264,
+    "question": "Which actress appeared in the movie 'The Hollow Man'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Elisabeth Sue",
+    "incorrect_answers": [
+      "Angelina Jolie",
+      "Kirsten Dunst",
+      "Bridget Fonda"
+    ]
+  },
+  {
+    "id": 265,
+    "question": "Who is the main actor in the movie 'Twelve Monkeys'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Bruce Willis",
+    "incorrect_answers": [
+      "Sean Penn",
+      "Kevin Costner",
+      "Nicolas Cage"
+    ]
+  },
+  {
+    "id": 266,
+    "question": "Which actress appeared in the movie 'The Fifth Element'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Mila Jovovich",
+    "incorrect_answers": [
+      "Franka Potente",
+      "Elisabeth Sue",
+      "Angelina Jolie"
+    ]
+  },
+  {
+    "id": 267,
+    "question": "What was the name of the third Indiana Jones movie?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Indiana Jones and the Last Crusade",
+    "incorrect_answers": [
+      "Indiana Jones and the Kingdom of the Crystal Skull​",
+      "Indiana Jones and the Raiders of the Lost Ark",
+      "Indiana Jones and the Temple of Doom"
+    ]
+  },
+  {
+    "id": 268,
+    "question": "Who do Ron, Hermione, and Harry meet in the forest in 'Deathly Hallows'?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Fenrir Greyback",
+    "incorrect_answers": [
+      "Lucius Malfoy​",
+      "Voldemort",
+      "Dobby"
+    ]
+  },
+  {
+    "id": 269,
+    "question": "Who was the Quidditch commentator in Harry Potter's first years?",
+    "difficulty": 3,
+    "category": "science fiction",
+    "correct_answer": "Lee Jordan",
+    "incorrect_answers": [
+      "Dean Thomas",
+      "Angela Johnson",
+      "Ron Weasley"
+    ]
+  },
+  {
+    "id": 270,
+    "question": "What was the name of Batman's butler?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Alfred",
+    "incorrect_answers": [
+      "Albert",
+      "Robert",
+      "Alfie"
+    ]
+  },
+  {
+    "id": 271,
+    "question": "How did they manage to bring the dinosaurs in Jurassic Park back to life?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "By using DNA inside a mosquito",
+    "incorrect_answers": [
+      "By finding an egg",
+      "Petrified remains",
+      "By mutations"
+    ]
+  },
+  {
+    "id": 272,
+    "question": "What is the main component needed in Back to the Future to travel through time?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Mediante ADN en el interior de un mosquito",
+    "incorrect_answers": [
+      "Por un huevo encontrado",
+      "Residuos petrificados",
+      "Mediante mutaciones"
+    ]
+  },
+  {
+    "id": 273,
+    "question": "In The Lord of the Rings, which of these countries do Frodo and Sam NOT cross during the saga?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Fangorn Forest",
+    "incorrect_answers": [
+      "Emyn Muil",
+      "The Dead Marshes",
+      "Ithilien"
+    ]
+  },
+  {
+    "id": 274,
+    "question": "Which actress appeared in the movie 'The Hollow Man'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Elisabeth Sue",
+    "incorrect_answers": [
+      "Angelina Jolie",
+      "Kirsten Dunst",
+      "Bridget Fonda"
+    ]
+  },
+  {
+    "id": 275,
+    "question": "Who is the main actor in the movie 'Twelve Monkeys'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Bruce Willis",
+    "incorrect_answers": [
+      "Sean Penn",
+      "Kevin Costner",
+      "Nicolas Cage"
+    ]
+  },
+  {
+    "id": 276,
+    "question": "Which actress appeared in the movie 'The Fifth Element'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Mila Jovovich",
+    "incorrect_answers": [
+      "Franka Potente",
+      "Elisabeth Sue",
+      "Angelina Jolie"
+    ]
+  },
+  {
+    "id": 277,
+    "question": "What was the name of the third Indiana Jones movie?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Indiana Jones and the Last Crusade",
+    "incorrect_answers": [
+      "Indiana Jones and the Kingdom of the Crystal Skull​",
+      "Indiana Jones and the Raiders of the Lost Ark",
+      "Indiana Jones and the Temple of Doom"
+    ]
+  },
+  {
+    "id": 278,
+    "question": "Who do Ron, Hermione, and Harry meet in the forest in 'Deathly Hallows'?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Fenrir Greyback",
+    "incorrect_answers": [
+      "Lucius Malfoy​",
+      "Voldemort",
+      "Dobby"
+    ]
+  },
+  {
+    "id": 279,
+    "question": "Who was the Quidditch commentator in Harry Potter's first years?",
+    "difficulty": 4,
+    "category": "science fiction",
+    "correct_answer": "Lee Jordan",
+    "incorrect_answers": [
+      "Dean Thomas",
+      "Angela Johnson",
+      "Ron Weasley"
+    ]
   }
 ]
