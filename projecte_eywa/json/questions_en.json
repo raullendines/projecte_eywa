@@ -3346,5 +3346,41 @@
       "Angela Johnson",
       "Ron Weasley"
     ]
+  },
+  {
+    "id": 280,
+    "question": "¿Cuantas tribus hay en Avatar?",
+    "difficulty": 2,
+    "category": "science fiction",
+    "correct_answer": "3",
+    "incorrect_answers": [
+      "4",
+      "1",
+      "2"
+    ]
+  },
+  {
+    "id": 281,
+    "question": "En \"Super Salidos\", quien le compra el alchol a Mclovin ? ",
+    "difficulty": 2,
+    "category": "comedy",
+    "correct_answer": "Policias",
+    "incorrect_answers": [
+      "Hombre mayor de edad ",
+      "Uno de sus amigos",
+      "Vagabundo"
+    ]
+  },
+  {
+    "id": 282,
+    "question": "What was Narutos's dream?",
+    "difficulty": 1,
+    "category": "animation",
+    "correct_answer": "To be Hokage",
+    "incorrect_answers": [
+      "To be Uchiha",
+      "To be with Sakura",
+      "To be a Hero"
+    ]
   }
 ]

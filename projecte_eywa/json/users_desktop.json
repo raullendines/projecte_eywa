@@ -15,7 +15,7 @@
     "type": "superadmin"
   },
   {
-    "username": "Test",
+    "username": "Paco",
     "password": "$2a$11$z9kyVJIqr5n.GQfP0U1Da.AtG7zWIHTWzbQwx9.xdh4GD7hvvjYnC",
     "type": "user"
   },
@@ -35,23 +35,28 @@
     "type": "user"
   },
   {
-    "username": "1",
+    "username": "Maria",
     "password": "$2a$11$suRmUZPlhvZcC3ri.Etzsexc43iCtoW2251kCTMIKCYtN57fAdJLW",
     "type": "superadmin"
   },
   {
-    "username": "2",
+    "username": "Paz",
     "password": "$2a$11$WH3YVRLfywG0OFCyGSOfxeWbE6oZwFpxkXfhZ4WBXs6lIRV/YMBfC",
     "type": "user"
   },
   {
-    "username": "3",
+    "username": "Lluisa",
     "password": "$2a$11$0jePP18vohmxUYCXeI6oSugN0kTZgnx/hXkuxDYhBtjQgoD/KEMHq",
     "type": "admin"
   },
   {
-    "username": "paco",
-    "password": "$2a$11$pLyY5R1HGK3g9TJH2RVuYe96ANmy7PqKjyAtkI33RTj.dt/mUjjTq",
+    "username": "1",
+    "password": "$2a$11$LFAXAZiyJueSwzkd9PPhm.lwESqQOkxvL7KLoay/I49R860yEU1Cm",
+    "type": "user"
+  },
+  {
+    "username": "pol",
+    "password": "$2a$11$Nn7Xtve3iYuFUABaY3bNBeSk3RSBja7rUx0Q4COCzOhj64cLhOD9m",
     "type": "user"
   }
 ]

@@ -3346,5 +3346,17 @@
       "La Ciénaga de los muertos",
       "Ithilien"
     ]
+  },
+  {
+    "id": 280,
+    "question": "Cual es la frase de terminator?",
+    "difficulty": 1,
+    "category": "action",
+    "correct_answer": "Sayonara baby",
+    "incorrect_answers": [
+      "mayonesa baby",
+      "arrivr verchie",
+      "bye"
+    ]
   }
 ]
